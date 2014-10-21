@@ -32,6 +32,7 @@
 thesis.txt*
 thesis.bcf*
 thesis.run.xml*
+thesis.pdf
 *run.xml*
 *.latexmkrc*
 *_latexmk*
