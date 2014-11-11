@@ -40,7 +40,8 @@
                                         "*run.xml*",
                                         "*.latexmkrc*",
                                         "*_latexmk*",
-                                        ".*.yml"]
+                                        ".*.yml",
+					"*sublime-workspace"]
 		}
 	]
 }
