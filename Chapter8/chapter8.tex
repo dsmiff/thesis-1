@@ -1,4 +1,4 @@
-\chapter{Results}
+\chapter{Analysis Crosschecks}
 
 % **************************** Define Graphics Path **************************
 \ifpdf
@@ -8,19 +8,58 @@
 \fi
 
 %********************************** % First Section  *************************************
-\section{Likelihood model}  %Section - 1.1 
-\label{sec:results_likelihood}
-Overview of the likelihood model.
-Put main emphasis on the fact that it is used to gain our final numbers used for
-interpretations.
+\section{Overview}  %Section - 1.1 
+\label{sec:crosschecks_overview}
+Explain the fact that there is an excess. Numerous features and areas of the 
+analysis were probed
 
+\section{Remove SITV}
+\label{sec:crosschecks_nositv}
+Is the excess still there if we remove the SITV? Yes
 
-%********************************** % Second Section  *************************************
-\section{Results}  %Section - 1.2
-\label{sec:results_results}
+\section{What other cross checks have we performed?}
+\label{sec:crosschecks_other}
+Going lower in alphaT...see more excess!
 
-\subsection{Control samples only - Green}
+\section{bDPhiStar}
+\label{sec:crosschecks_dphi}
+Can use this variable to check for jet mis-measurements due to jet-
+mismeasurement. We noticed the excess manifests itself at low-values of dphi and
+so numerous investigations have been made.
 
-\subsection{With signal region - Blue, full}
+\subsection{Apply >0.3 requirement}
 
-\subsection{Pulls and p-values}
+Might be a nice idea, but it kills a lot of signal too...
+
+\subsection{Signal dphi distro}
+Show the T2cc plots - the deadECAL's effect on these (removes peak around zero)
+
+in this respect, signal can look like QCD to this variable!
+
+\subsection{Soft muon}
+Requirement a soft muon, thereby nearly entirely removing QCD from the 
+selection
+
+\subsection{Object veto checks}
+Can probe how well the various vetoes are working by allowing a soft [relevant 
+object] to pass the selection (pT less than the object selection requirement, 
+but greater than the ID requirement)
+
+\subsubsection{Muon}
+quite impressive closure of this test! No excess seen.
+
+\subsubsection{Electron}
+No excess seen.
+
+\subsubsection{Photon}
+No excess seen.
+
+\subsubsection{SIT}
+Excess seen.
+
+Are currently implementing a dPhi>0.3 cut to see whether it remains.
+
+Potential explanation is the isolation used with the analysis objects. Can 
+replace this with the tracker isolation found in the SIT (to do!) 
+
+\section{Any more we do...}
