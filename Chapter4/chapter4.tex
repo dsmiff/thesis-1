@@ -13,14 +13,40 @@
 \label{sec:objects_introduction}
 What is an object in CMS?
 
+Physics objects are observed as energy deposits in the various detector 
+subsystems throughout the CMS detector. Specific definitions for the different 
+objects are provided by the Physics Object Groups (POGs) and are used in this 
+analysis. The follow sections describe the objects used.
+
 
 %********************************** % Second Section  *************************************
 \section{Jets}  %Section - 1.2
 \label{sec:objects_jets}
 calojets used exclusively in analysis
 
+Jets are produced when a single quark or gluon is produced, subsequently 
+hadronizing and showering throughout the calorimeter systems. Energy deposits in
+the hadronic calorimeter are clustered using the anti$-k_T$ algorithm [ref] with
+a 0.5 cone size parameter. The raw energy measurements can be affected by 
+effects from overlapping pp collisions, known as pileup (PU) [first place 
+mentioned?], therefore corrections are made to account for this. Clustered jets 
+are also corrected to establish a uniform response in $\eta$ and pT [mathchange].
+Table~\ref{tab:jet_id_loose} summarises the ID requirements used in this 
+analysis, which correspond to the ``Loose'' working point [ref]. Jets are also 
+corrected according to the L1FastJet, L2, L3, and L2L3Residual corrections [ref].
+
+
+TABLE HERE!
+
 \subsection{Tagging jets from b-quarks}
 discuss the basic tagging algorithm used and working points
+
+Jets originating from b-quarks can be identified using information from the 
+vertex detector due to their increased lifetime with respect to light quarks. 
+B-tagging algorithms are designed to determine the probability that a jet 
+originates from a b-quark, given the jet's tracks displacement from the primary 
+vertex (PV). The Combined Secondary Vertex (CSV) is used in this analysis, using
+the ``Medium'' working point.
 
 %********************************** % Third Section  *************************************
 \section{Electrons}  %Section - 1.3
