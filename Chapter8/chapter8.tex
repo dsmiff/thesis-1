@@ -45,6 +45,26 @@ Can probe how well the various vetoes are working by allowing a soft [relevant
 object] to pass the selection (pT less than the object selection requirement, 
 but greater than the ID requirement)
 
+
+we expect an under prediction to explain the excess we see. 
+take the example of the soft SIT. we want the prediction we see within the 
+analysis to be too low. this will only happen if N(signal, MC) is too low, in 
+the transfer factor eqn.
+
+\begin{equation}
+N_{pred}^{sig} = N_{MC}^{sig} \times \frac{N_{Data}^{cont}}{N_{MC}^{cont}}
+\end{equation}
+
+The control sample doesn't change in data or MC, so only a change in the signal 
+MC can affect the prediction. We want this to be lower than we expect - in other
+words we want there to be more soft SITs (which will be vetoed by the SITV) in 
+the MC, thereby lowering the MC signal yield that enters the above equation. If 
+we actually require soft SITs, we want to see there are more in MC than data, in
+other words the N MC sig will be high, and therefore we want to see an over 
+prediction. However, in the latest numbers we see an underprediction...oh shit 
+yo!
+
+
 \subsubsection{Muon}
 quite impressive closure of this test! No excess seen.
 
