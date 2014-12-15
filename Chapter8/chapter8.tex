@@ -82,4 +82,31 @@ Are currently implementing a dPhi>0.3 cut to see whether it remains.
 Potential explanation is the isolation used with the analysis objects. Can 
 replace this with the tracker isolation found in the SIT (to do!) 
 
+\subsection{Is it QCD like?}
+We invite QCD into our selection and test whether it gives us the same features
+as the excess. We can do this is a variety of ways: lower alphaT threshold in
+the 200 bin, remove MHTovMET cut, remove deadECAL.
+
+One important test is whether we see the excess dissapear with higher btag
+requirements. This would be a good test to prove it's QCD, as QCD btags
+predominantly only come from btag mistags (check this statement!). If we use
+a zero btag source hypothesis - in other words, we only have 0btag events in our
+selection), can we explain the yields we observe at higher mutliplicities using
+just mistag probability arguements (get equations from rob's slides).
+
+\subsubsection{Lower aT in 200}
+This should invite in QCD. We stepped through a number of looser alphaT thresholds
+and can observe the change of the distribution in the 200 bin, as well as the preds.
+
+\subsubsection{Remove MHTovMET cut}
+The MHTovMET cut is designed to remove QCD events that contain jets below threshold
+which can conspire to give us significant missing energy. By removing this cut, this
+form of QCD is allowed in.
+
+\subsubsection{Remove DeadECAL}
+The dead ECAL filter protects us from QCD events where a jet is mis-measured due
+to hitting an area of the ECAL which is known to be faulty. This would give a
+significant mismeasurement of a single jet, thereby potentially giving non-neglible
+missing energy.
+
 \section{Any more we do...}
