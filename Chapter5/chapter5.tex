@@ -51,11 +51,70 @@ plots of where events sit in alphaT vs X (not sure!) plane for different samples
 
 basically motivate alphaT
 
+QCD multijet events dominate the SM background in any jets and \met search, and 
+so each analysis must find a way to account for it. Jet mis-measurements in a 
+purely QCD multijet event can lead to non-negligible amounts of \mht, and will 
+therefore pass the signal selection. 
+Other analyses attempt
+to measure the contribution with very small associated errors. This is however 
+made very difficult given the hadronic environment of the LHC, and the lack of 
+precise measurements and calculations of multijet cross sections. As an 
+alternative approach, the goal of the 
+\alphat analysis is to reduce QCD down to an entirely negligible level so that 
+it can be removed entirely from the analysis. This is 
+achieved with the novel kinematic variable, \alphat, defined for dijets as [REF]:
+
+\begin{equation}
+\alphat = \frac{E_T^{j_2}}{M_T}
+\label{eq:alphat_dijet}
+\end{equation}
+
+where $E_T^{j_2}$ is the transverse energy of the less energetic jet and $M_T$ 
+is the transverse mass of the dijet system, defined as (MAKE BRACKETS BIGGER!):
+
+\begin{equation}
+M_T = \sqrt{(\sum^2_{i=1}{E_T^{j_i}})^2 - (\sum^2_{i=1}{p_x^{j_i}})^2 - (\sum^2_{i=1}{p_y^{j_i}})^2}
+\label{eq:mt}
+\end{equation}
+
+where $E_T^{j_i}$, $p_x^{j_i}$ and $p_y^{j_i}$ are the transverse energy and 
+transverse momentum in the x and y plane, for the jet $j_i$.
+
+A perfectly measured dijet that contains back to back jets in $\phi$ will have an
+\alphat value of 0.5, whereas 
+events containing \mht from jet mis-measurements will have values of $\alphat<0.5$.
+Events
+containing processed with sources of genuine \met, whether from SM or SUSY 
+sources, will have values of $\alphat > 0.5$. 
+
+The \alphat variable can be generalised to an n-jet case by constructing a 
+pseudo-dijet event, constructing each pseudo-jet such that the difference in \HT
+between the two pseudo-jets, \deltaHT, is minimised. \alphat then takes the 
+form:
+
+\begin{equation}
+\alphat = \frac{1}{2} \times \frac{\HT-\deltaHT}{\sqrt{\HT^2 - \mht^2}} = 
+\frac{1}{2} \times \frac{1-\frac{\deltaHT}{\HT}}{\sqrt{1 - \frac{\mht}{\HT}^2}}
+\label{eq:alphat_njet}
+\end{equation}
+
+show some sweet plots about correlations between \mht and \deltaHT for QCD, 
+signal, SM real MET etc.
+
+
 %********************************** % First Section  *************************************
 \section{Hadronic Signal Region}
 \label{sec:selection_hadronic}
 The signal region. Jets + MET selection.
-Introduce that QCD is a dominant background due to jet mis-measurement.
+% Introduce that QCD is a dominant background due to jet mis-measurement.
+
+\subsection{SM Backgrounds}
+\subsubsection{Genuine EWK MET}
+\subsubsection{Fake MET}
+already partly described above - perhaps move the meaty descriptions here?
+
+can explain here the MHT/MET cut, and how that removes jets under threshold 
+which can conspire to give significant met or mht whatever
 
 \subsection{Selection Criteria}
 
@@ -67,10 +126,6 @@ Add emphasis on parked trigger, as it opens up phase space to compressed susy mo
 
 tie in with the split into nb and nj categories - necessary as stats will reduce, so we use
 this `trick' to reduce errors
-
-\subsection{SM Backgrounds}
-\subsubsection{Genuine EWK MET}
-\subsubsection{Fake MET}
 
 
 
