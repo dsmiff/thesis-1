@@ -265,7 +265,7 @@ HT bin (\gev) & HLT Trigger            \\ \hline
 775-875       & HLT\_HT400\_AlphaT0p51 \\
 875-975       & HLT\_HT400\_AlphaT0p51 \\
 975-1075      & HLT\_HT400\_AlphaT0p51 \\
-1075-$\inf$   & HLT\_HT400\_AlphaT0p51 \\                       
+1075-$\inf$   & HLT\_HT400\_AlphaT0p51 \\
 \end{tabular}
 \label{tab:sig_trigs}
 \end{table}
@@ -278,8 +278,8 @@ All triggers were present throughout 2012 (is 8\tev just 2012?), however the
 data which was reconstructed at a later data, following the active data-taking 
 period.
 
-Trigger efficiencies are measured using a muon reference trigger, \verb!
-HLT_IsoMu24_eta2p1!, using a muon tag and probe method (EXPAND?). An efficiency 
+Trigger efficiencies are measured using a muon reference trigger,
+\verb!HLT_IsoMu24_eta2p1!, using a muon tag and probe method (EXPAND?). An efficiency 
 is determined for each analysis category and for each trigger.
 
 - show trig effs table and maybe some plots?
@@ -294,4 +294,149 @@ this `trick' to reduce errors
 
 \section{Datasets and MC samples}
 
+\subsection{Datasets}
+
+The datasets used in this analysis are listed in Table~\ref{tab:datasets}. These
+include the primary signal sample datasets, named `HTMHTParked', for which there
+are only Run2012A is absent as the parked trigger was only present during the 
+run period's B, C and D. All of datasets contain events from triggers used for 
+background estimation, as described in detail in Chapter~\ref{ch:6}.
+
+\begin{table}[h]
+  \caption{Datasets.}
+  \label{tab:datasets}
+  \centering
+  \scriptsize
+  \begin{tabular}{ lc }
+    \hline
+    \hline
+    Dataset & Luminosity (fb$^{-1}$) \\
+    \hline
+    \verb!/HTMHTParked/Run2012B-22Jan2013-v1/AOD! & 4.41 \\
+    \verb!/HTMHTParked/Run2012C-22Jan2013-v1/AOD! & 6.80 \\
+    \verb!/HTMHTParked/Run2012D-22Jan2013-v1/AOD! & 7.29 \\
+    \multicolumn{1}{r}{Total} & 18.49 \\ [0.5ex]
+    \verb!/HT/Run2012A-22Jan2013-v1/AOD! & n/a \\
+    \verb!/JetHT/Run2012B-22Jan2013-v1/AOD! & n/a \\
+    \verb!/JetHT/Run2012C-22Jan2013-v1/AOD! & n/a \\
+    \verb!/JetHT/Run2012D-22Jan2013-v1/AOD! & n/a \\
+    \multicolumn{1}{r}{Total} & 18.33 \\ [0.5ex]
+    \verb!/SingleMu/Run2012A-22Jan2013-v1/AOD! & 0.69 \\
+    \verb!/SingleMu/Run2012B-22Jan2013-v1/AOD! & 4.40 \\
+    \verb!/SingleMu/Run2012C-22Jan2013-v1/AOD! & 6.77 \\
+    \verb!/SingleMu/Run2012D-22Jan2013-v1/AOD! & 7.27 \\
+    \multicolumn{1}{r}{Total} & 19.13 \\ [0.5ex] % 19.13
+    \verb!/Photon/Run2012A-22Jan2013-v1/AOD! & 0.68 \\
+    \verb!/SinglePhoton/Run2012B-22Jan2013-v1/AOD! & 4.40 \\
+    \verb!/SinglePhoton/Run2012C-22Jan2013-v1/AOD! & 6.77 \\
+    \verb!/SinglePhotonParked/Run2012D-22Jan2013-v1/AOD! & 7.27 \\
+    \multicolumn{1}{r}{Total} & 19.12 \\ [0.5ex] % 19.18
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+\subsection{Montecarlo Background and Signal samples}
+
+The full list of montecarlo (MC) samples used in this analysis are listed in 
+Table~\ref{tab:mc-sm} along with the number of events, LO (not NNLO?) cross 
+section and effective integrated luminosity for each.
+
 can describe the different methods of MC generation
+
+Each sample is weighted such that it's effective integrated luminosity is 
+made equivalent to the relevant dataset luminosity. Event-by-event weights are applied 
+such that the sample's PU distribution matches that as measured in data (MORE 
+DETAIL?).
+
+\begin{landscape}
+  \begin{center}
+    \begin{table}[h]
+      \caption{MC samples for Standard Model processes.}
+      \label{tab:mc-sm}
+      \centering
+      \tiny
+      \begin{tabular}{ lrrrr }
+        \hline
+        Sample & N$_{\textrm{event}}$ & Cross section (pb) & Corrected Cross section (pb) & Luminosity (fb$^{-1}$) \\
+        \hline
+        \hline
+        \verb!/WJetsToLNu_TuneZ2Star_8TeV-madgraph-tarball/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!           & 57661905 & 37509.0 & 34133.2 & 1.5     \\
+        \verb!/WJetsToLNu_HT-150To200_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7C-v1/AODSIM!                  & 21414209 & 253.8   & 234.53  & 84.4    \\
+        \verb!/WJetsToLNu_HT-200To250_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7C-v1/AODSIM!                  & 9895771  & 116.5   & 103.94  & 84.9    \\
+        \verb!/WJetsToLNu_HT-250To300_8TeV-madgraph_v2/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!               & 4924990  & 57.6    & 51.34   & 85.5    \\
+        \verb!/WJetsToLNu_HT-300To400_8TeV-madgraph_v2/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!               & 5141023  & 48.4    & 42.41   & 106.2   \\
+        \verb!/WJetsToLNu_HT-400ToInf_8TeV-madgraph_v2/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!               & 4923847  & 30.8    & 26.36   & 159.9   \\
+        \verb!/ZJetsToNuNu_50_HT_100_TuneZ2Star_8TeV_madgraph(_ext)/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!  & 23743998 & 452.8   & 405.21  & 52.4    \\
+        \verb!/ZJetsToNuNu_100_HT_200_TuneZ2Star_8TeV_madgraph(_ext)/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM! & 9876059  & 190.4   & 173.76  & 51.9    \\
+        \verb!/ZJetsToNuNu_200_HT_400_TuneZ2Star_8TeV_madgraph(_ext)/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM! & 9649619  & 45.1    & 42.41   & 214.0   \\
+        \verb!/ZJetsToNuNu_400_HT_inf_TuneZ2Star_8TeV_madgraph(_ext)/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM! & 5079710  & 6.26    & 5.81    & 811.5   \\
+        \verb!/TT_CT10_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1(v2)/AODSIM!             & 27094723 & 234.0   & 271.44  & 115.8   \\
+        \verb!/TTZJets_8TeV-madgraph_v2/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!                              & 210160   & 0.172   & 0.172   & 1221.9  \\
+        \verb!/T_t-channel_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!             & 3710227  & 56.4    & 56.4    & 65.8    \\
+        \verb!/Tbar_t-channel_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!          & 1935072  & 30.7    & 30.7    & 63.0    \\
+        \verb!/T_s-channel_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!             & 243961   & 3.79    & 3.79    & 64.4    \\
+        \verb!/Tbar_s-channel_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!          & 139974   & 1.76    & 1.76    & 79.5    \\
+        \verb!/T_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!         & 497658   & 11.1    & 11.1    & 44.8    \\
+        \verb!/Tbar_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!      & 493460   & 11.1    & 11.1    & 44.5    \\
+        \verb!/DYJetsToLL_M-10To50filter_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!               & 7116223  & 13124.1 & 12205.4 & 0.5     \\
+        \verb!/DYJetsToLL_M-50_TuneZ2Star_8TeV-madgraph-tarball/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!      & 30171503 & 3503.7  & 3258.45 & 8.6     \\
+        \verb!/DYJetsToLL_HT-200To400_TuneZ2Star_8TeV-madgraph(_ext)/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM! & 6892777  & 24.3    & 22.24   & 283.7   \\
+        \verb!/DYJetsToLL_HT-400ToInf_TuneZ2Star_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!       & 2695789  & 3.36    & 3.11    & 802.3   \\
+        \verb!/GJets_HT-200To400_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!                       & 57891147 & 1140.8  & 1060.9  & 50.7    \\
+        \verb!/GJets_HT-400ToInf_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!                       & 9459562  & 124.7   & 115.97  & 75.9    \\
+        \verb!/WW_TuneZ2star_8TeV_pythia6_tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!                     & 9888431  & 57.1    & 57.1    & 173.2   \\
+        \verb!/WZ_TuneZ2star_8TeV_pythia6_tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!                     & 9841248  & 12.6    & 12.6    & 781.1   \\
+        \verb!/ZZ_TuneZ2star_8TeV_pythia6_tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!                     & 9751908  & 8.26    & 8.26    & 1180.6  \\
+        \verb!/QCD_Pt-50to80_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2!                        & 5950860  & 8148778 & 8148778 (LO) & 0.001   \\
+        \verb!/QCD_Pt-80to120_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3!                       & 5962864  & 1033680 & 1033680 (LO) & 0.006   \\
+        \verb!/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3!                      & 5985732  & 156293  & 156293  (LO) & 0.038   \\
+        \verb!/QCD_Pt-170to300_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1(v2)!                  & 20155180 & 34138   & 34138   (LO) & 0.590   \\
+        \verb!/QCD_Pt-300to470_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1(v2,v3)!               & 23588100 & 1759.5  & 1759.5  (LO) & 13.4    \\
+        \verb!/QCD_Pt-470to600_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2!                      & 3978848  & 113.9   & 113.9   (LO) & 34.9    \\
+        \verb!/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2!                      & 3964864  & 27.0    & 27.0    (LO) & 146.8   \\
+        \verb!/QCD_Pt-800to1000_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2!                     & 3854563  & 3.55    & 3.55    (LO) & 1085.8  \\
+        \verb!/QCD_Pt-1000to1400_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1!                    & 1964088  & 0.738   & 0.738   (LO) & 2661.4  \\
+        \verb!/QCD_Pt-1400to1800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1!                    & 1988062  & 0.0335  & 0.0335  (LO) & 59345.1 \\
+        \verb!/QCD_Pt-1800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1!                          & 977586   & 0.00183 & 0.00183 (LO) & 534200  \\
+        \hline
+      \end{tabular}
+    \end{table}
+  \end{center}
+\end{landscape}
+
+Interpretations are made using signal MC samples, each representing a scan in 
+phase space of a specific SMS model. The samples used are listed in Table~\ref{tab:mc-
+signal}. Each sample is generated at the parton level using \MADGRAPH and then
+decayed using \PYTHIA (too vague?). Up to two additional partons are simulated 
+in the initial generation step to ensure good modelling of initial state 
+radiation (ISR), however additional small samples were produced with up to three
+additional partons to allow for systematic studies into the effect on the 
+analysis.
+
+\begin{landscape}
+  \begin{center}
+    \begin{table}[h]
+      \caption{MC samples for simplified models.}
+      \label{tab:mc-signal}
+      \centering
+      \tiny
+      \begin{tabular}{ lll }
+        \hline
+        Model & Sample & Description \\
+        \hline
+        \hline
+        \verb!T2cc! & \verb!/SMS-MadGraph_2J_T2cc_NoFilter_mStop-100to250_mLSP-20to230_8TeV-Pythia6Zstar/Summer12-START52_V9_FSIM-v1/AODSIM! & Original scan \\
+        \verb!T2cc! & \verb!/SMS-T2cc_NoFilter_mStop-175to250_mLSP-95to240_8TeV-Pythia6Z/Summer12-START52_V9_FSIM-v1/AODSIM! & Original scan \\
+        \verb!T2cc! & \verb!/SMS-T2cc_2J_mStop-250to350_mLSP-195to340_TuneZ2star_8TeV-madgraph-tauola/Summer12-START53_V19_FSIM-v2/AODSIM! & Scan extension \\
+        \verb!T2cc! & \verb!/SMS-8TeV_Pythia6Z_T2cc_3jets_mStop-200_mLSP-120/Summer12-START52_V9_FSIM-v1/AODSIM! & 3-parton sample \\
+        \verb!T2cc! & \verb!/SMS-8TeV_Pythia6Z_T2cc_3jets_mStop-200_mLSP-190/Summer12-START52_V9_FSIM-v1/AODSIM! & 3-parton sample \\
+        \hline
+        \hline
+      \end{tabular}
+    \end{table}
+  \end{center}
+\end{landscape}
+
+\subsection{Correcting SM sample cross sections}
+Stuff about correcting cross sections
