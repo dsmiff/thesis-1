@@ -38,6 +38,7 @@ AlphaT analysis
 - polish alphat equations - make brackets bigger
 - add in some alphaT correlation plots for various background sources/signal
 etc
+- fix verb printing of triggers - currently too long for latex output
 
 %%%%%%%%%%%%%%
 Chapter 6
