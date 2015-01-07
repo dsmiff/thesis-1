@@ -37,3 +37,4 @@ thesis.pdf
 *.latexmkrc*
 *_latexmk*
 thesis.sublime-workspace
+figures/
