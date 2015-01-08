@@ -439,4 +439,42 @@ analysis.
 \end{landscape}
 
 \subsection{Correcting SM sample cross sections}
-Stuff about correcting cross sections
+In order to increase statistics this analysis makes use of MC samples binned in 
+parton-level \HT (\HTpart). Leading order (LO) cross-sections are provided with 
+these samples, which are translated into next-to-next-to leading order (NNLO) 
+cross-sections using translation-factors (k-factors) derived from corresponding 
+inclusive samples. However, following recent studies within CMS (REF) it has 
+been found that LO cross-sections provided with the \HTpart binned samples can 
+be incorrect by up to 10\%. This feature is shown by the ratio plot in figure~
+\ref{fig:xsec_study_before}, where steps are present when comparing the \zj binned
+sample with the \dyj inclusive sample.
+
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{/Users/chrislucas/SUSY/thesis/Figs/xs_study/compar_genPartonHT_zmass_0_inc_inc_DYZJets_noCuts_sitv_log_HCPxS.pdf}
+    % \includegraphics[width=\textwidth]{compar_genPartonHT_zmass_0_inc_inc_DYZJets_noCuts_sitv_log_HCPxS}
+    \caption{No corrections.}
+    \label{fig:xsec_study_before}
+  \end{subfigure}             
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{/Users/chrislucas/SUSY/thesis/Figs/xs_study/compar_genPartonHT_zmass_0_inc_inc_DYZJets_noCuts_sitv_log.pdf}
+    \caption{With corrections.}
+    \label{fig:xsec_study_after}
+  \end{subfigure}             
+  \caption{Generator-level \HTpart distributions from the
+    inclusive DY + jets and the \HTpart-binned \zj
+    samples.}
+  \label{fig:xsec_study}
+\end{figure}
+
+Two of the binned samples have corresponding inclusive samples to allow for 
+this comparison to be made, namely \wj and \dyj. For these two cases, the 
+derivation of corrections for each \HTpart binned sample is simple. However, for
+the \zj and \gj, no such inclusive samples exist. These binned samples are 
+compared against the inclusive \dyj sample, where the overall normalisation is 
+set according to the relative branching fraction of \zinv and GAMMA to
+$Z \to \ell\ell$, set as 0.505 and VALUE, respectively. An example ratio plot is
+shown in figure~\ref{fig:xsec_study_after}, where a constant ratio between the 
+samples is found.
+
