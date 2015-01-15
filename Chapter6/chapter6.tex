@@ -13,10 +13,6 @@ Maybe some stuff here introducing the chapter...
 %********************************** % First Section  *************************************
 \section{Overview of TF method}  %Section - 1.1 
 \label{sec:background_overview}
-Introduce transfer factor techniques.
-
-Aimed to remove dependency on MC as much as possible - (hopefully) everything cancels in 
-the ratio!
 
 Contributions from Standard Model background processes are estimated using a data-driven 
 prediction technique which makes use of control samples in the analysis. The 
@@ -31,7 +27,8 @@ TF = \frac{N_{MC}^{signal}\big(\HT, \nj, \nb\big)}{N_{MC}^{control}\big(\HT, \nj
 \label{eq:transfer_factor}
 \end{equation}
 
-The TF is used to extrapolate yields in data from the control region, $N_{Data}^{control}\big(\HT, \nj, \nb\big)$
+For a given \HT, \nj and \nb bin, the TF is used to extrapolate yields in data from
+the control region, $N_{Data}^{control}\big(\HT, \nj, \nb\big)$
 to the signal region $N_{Data}^{signal}\big(\HT, \nj, \nb\big)$, as shown in
 equation~\ref{eq:transfer_equation}.
 
@@ -45,10 +42,37 @@ N_{Data}^{signal}\big(\HT, \nj, \nb\big) = N_{Data}^{control}\big(\HT, \nj, \nb\
 Introduce the control samples and which is used for what background. ``Will 
 describe in more detail in the following section''
 
+outline all of the MC yields used (i.e. which sample where)
+
+explain that the predictions calculated here are not used for results and 
+interpretation, but instead the TF's are constructed as part of the likelihood 
+function which performs a simultaneous fit of all control regions to produce 
+final yields.
+
+for 0, 1 b, use mu for everything, except Zinv where we use dimu and gamma.
+we use dimu and gamma together, but later everything is fit.
+
+for >= 2b, we use mu for everything, including zinv. in this region, dimu and 
+gamma will have negligible events because of the high b-tag multiplicity.
+
+summary table of what's predicted from where!
+
+Aimed to remove dependency on MC as much as possible - (hopefully) everything cancels in 
+the ratio!
+- MC mismodelling
+    - kinematics (affecting acceptances)
+    - instrumental affects (affecting object reconstruction efficiencies)
+
 
 %********************************** % Second Section  *************************************
 \section{Control samples}  %Section - 1.2
 \label{sec:background_control}
+
+control sample selection is very close to signal region. only differences are `
+tags' used to get mu, mumu, pho, which are then ignored for kin variables. also
+some mass windows  and minor kinematic cuts used to enrich samples in certain
+processes. they are statistically independent, no correlation, due to 
+requirement of the tagged particles, therefore surpressing signal contamination.
 
 \subsection{mu+jets}
 Overview
