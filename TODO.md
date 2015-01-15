@@ -43,12 +43,11 @@ normalisation
 - background breakdown in graph form
 - do entire fake MET section - describe the background, it's sources and what we
 do about it, with our various cuts
-- fix verb printing of triggers - currently too long for latex output
-- elaborate on L1 seed and it's effect on trigger effs
-- expand the description of trigger efficiency measurement
-    - add an example trig eff turn on curve
+- finish trigger section
+- why are trig eff subfigures not side by side?
 - formula method section
 - describe MC generation - can get from AN
+- add QCD MG samples to samples list
 - add section about T2_4body boost corrections
 
 %%%%%%%%%%%%%%
