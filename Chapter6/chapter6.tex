@@ -8,6 +8,7 @@
     \graphicspath{{Chapter6/Figs/Vector/}{Chapter6/Figs/}}
 \fi
 
+Maybe some stuff here introducing the chapter...
 
 %********************************** % First Section  *************************************
 \section{Overview of TF method}  %Section - 1.1 
@@ -16,6 +17,33 @@ Introduce transfer factor techniques.
 
 Aimed to remove dependency on MC as much as possible - (hopefully) everything cancels in 
 the ratio!
+
+Contributions from Standard Model background processes are estimated using a data-driven 
+prediction technique which makes use of control samples in the analysis. The 
+technique uses a transfer factor (TF), constructed from MC samples as the ratio 
+of the MC yield in the signal region, $N_{MC}^{signal}\big(\HT, \nj, \nb\big)$,
+and the MC yield of a given control region, $N_{Data}^{control}\big(\HT, \nj, \nb\big)$,
+as a function of the analysis binning, \HT, \nj and \nb, as shown by
+equation~\ref{eq:transfer}.
+
+\begin{equation}
+TF = \frac{N_{MC}^{signal}\big(\HT, \nj, \nb\big)}{N_{MC}^{control}\big(\HT, \nj, \nb\big)}
+\label{eq:transfer_factor}
+\end{equation}
+
+The TF is used to extrapolate yields in data from the control region, $N_{Data}^{control}\big(\HT, \nj, \nb\big)$
+to the signal region $N_{Data}^{signal}\big(\HT, \nj, \nb\big)$, as shown in
+equation~\ref{eq:transfer_equation}.
+
+\begin{equation}
+N_{Data}^{signal}\big(\HT, \nj, \nb\big) = N_{Data}^{control}\big(\HT, \nj, \nb\big)
+\times TF
+\label{eq:transfer_equation}
+\end{equation}
+
+
+Introduce the control samples and which is used for what background. ``Will 
+describe in more detail in the following section''
 
 
 %********************************** % Second Section  *************************************
