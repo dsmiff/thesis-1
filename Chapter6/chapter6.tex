@@ -15,19 +15,19 @@ Maybe some stuff here introducing the chapter...
 \label{sec:background_overview}
 
 Contributions from Standard Model background processes are estimated using a data-driven 
-prediction technique which makes use of control samples in the analysis. The 
+prediction technique, using of dedicated control samples. The 
 technique uses a transfer factor (TF), constructed from MC samples as the ratio 
 of the MC yield in the signal region, $N_{MC}^{signal}\big(\HT, \nj, \nb\big)$,
-and the MC yield of a given control region, $N_{Data}^{control}\big(\HT, \nj, \nb\big)$,
+and the MC yield of a given control region, \\$N_{Data}^{control}\big(\HT, \nj, \nb\big)$,
 as a function of the analysis binning, \HT, \nj and \nb, as shown by
-equation~\ref{eq:transfer}.
+equation~\ref{eq:transfer_factor}.
 
 \begin{equation}
 TF = \frac{N_{MC}^{signal}\big(\HT, \nj, \nb\big)}{N_{MC}^{control}\big(\HT, \nj, \nb\big)}
 \label{eq:transfer_factor}
 \end{equation}
 
-For a given \HT, \nj and \nb bin, the TF is used to extrapolate yields in data from
+For a given \HT, \nj and \nb bin, the TF is used to extrapolate a yield in data from
 the control region, $N_{Data}^{control}\big(\HT, \nj, \nb\big)$
 to the signal region $N_{Data}^{signal}\big(\HT, \nj, \nb\big)$, as shown in
 equation~\ref{eq:transfer_equation}.
@@ -38,24 +38,92 @@ N_{Data}^{signal}\big(\HT, \nj, \nb\big) = N_{Data}^{control}\big(\HT, \nj, \nb\
 \label{eq:transfer_equation}
 \end{equation}
 
+The control samples are statistically independent and each used for predicting 
+specific background processes, the specific details of which are described in 
+the following section, section~\ref{sec:background_control}.
 
-Introduce the control samples and which is used for what background. ``Will 
-describe in more detail in the following section''
+To construct the MC yields, the following samples are considered: W + jets (\numw),
+\ttbar + jets (\numtt), DY + jets (\numdy), $\gamma$ + jets(\numgam),
+single top + jets (\numtop), WW + jets, WZ + jets and ZZ + jets (\numdibo), and
+\zinv + jets (\numzinv).
 
-outline all of the MC yields used (i.e. which sample where)
+The predictions made using this technique alone are considered as ``na\"{i}ve'' 
+predictions and are only used in analysis development and background systematics
+derivation. In order to determine final yields for use in interpretation and 
+limit-setting, a fit is made across all signal and control regions, using the 
+full likelihood model, as described later in chapter~REF. For this, the derived 
+transfer factors and individual yields enter as terms in the likelihood, where 
+all related systematics and potential correlations are accounted for in the fit. 
 
-explain that the predictions calculated here are not used for results and 
-interpretation, but instead the TF's are constructed as part of the likelihood 
-function which performs a simultaneous fit of all control regions to produce 
-final yields.
+The denominator of each transfer factor is constructed using the sum of all MC
+sample yields, for a given control region and category:
 
-for 0, 1 b, use mu for everything, except Zinv where we use dimu and gamma.
-we use dimu and gamma together, but later everything is fit.
+\begin{equation}
+N_{MC}^{control}\big(\HT, \nj, \nb\big) = \numw + \numtt + \numdy + \numgam + 
+\numtop + \numdibo + \numzinv
+\label{eq:trans_fact_denom}
+\end{equation}
 
-for >= 2b, we use mu for everything, including zinv. in this region, dimu and 
-gamma will have negligible events because of the high b-tag multiplicity.
+However, the numerator is constructed according to the b-tag mutliplicity being 
+considered. For $\nb \leq 1$, the \mj control region is used to predict 
+predominantly \ttbar + jets and W + jets, however an estimate for all other 
+residual backgrounds is produced. All MC samples are used with the exception of
+\zinv:
 
-summary table of what's predicted from where!
+\begin{equation}
+N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1\big) = \numw + \numtt + \numdy + \numgam + 
+\numtop + \numdibo
+\label{eq:trans_fact_num_le1b_noz}
+\end{equation}
+
+Whereas the \zinv + jets component of the background is predicted using the \mmj
+and \gj control samples, using only the \zinv MC yields:
+
+\begin{equation}
+N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1 \big) = \numzinv
+\label{eq:trans_fact_num_le1b_z}
+\end{equation}
+
+Again, it should be noted here that although two seperate control samples are 
+used to estimate this background, but result of each is considered by the global fit
+used to produce the final background prediction.
+
+For $\nb \geq 2$, the \mj sample is used to produce a prediction for all 
+SM processes, including \zinv, therefore the numerator of the TF is defined as:
+
+\begin{equation}
+N_{MC}^{signal}\big(\HT, \nj, \nb \geq 2 \big) = \numw + \numtt + \numdy + \numgam + 
+\numtop + \numdibo + \numzinv
+\label{eq:trans_fact_num_geq2b}
+\end{equation}
+
+The \mmj and \gj control samples are not used beyond the $\nb \leq 1$ categories
+due to the statistical limitations of such samples at high b-tag multiplicities.
+A full summary of the control regions used for predictions per analysis category
+is shown in table~\ref{tab:control_prediction_summary}.
+
+\begin{table}[h!]
+  \caption{Summary of control samples used to predict the SM
+    background for each event category. REWORD}
+  \label{tab:control_prediction_summary}
+  \centering
+  \begin{tabular}{ lll }
+    \hline
+    \hline
+    \nj     & \nb     & Control samples \\ [1.0ex]
+    \hline
+    2--3    & 0       & \mj, \mmj, \gj  \\
+    2--3    & 1       & \mj, \mmj, \gj  \\
+    2--3    & 2       & \mj             \\
+    $\geq$4 & 0       & \mj, \mmj, \gj  \\
+    $\geq$4 & 1       & \mj, \mmj, \gj  \\
+    $\geq$4 & 2       & \mj             \\
+    $\geq$4 & 3       & \mj             \\
+    $\geq$4 & $\geq4$ & \mj             \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
 Aimed to remove dependency on MC as much as possible - (hopefully) everything cancels in 
 the ratio!
@@ -74,19 +142,19 @@ some mass windows  and minor kinematic cuts used to enrich samples in certain
 processes. they are statistically independent, no correlation, due to 
 requirement of the tagged particles, therefore surpressing signal contamination.
 
-\subsection{mu+jets}
+\subsection{mu + jets}
 Overview
 Targetted backgrounds
 \subsubsection{Triggers}
 \subsubsection{Selection Criteria}
 
-\subsection{mumu+jets}
+\subsection{mumu + jets}
 Overview
 Targetted backgrounds
 \subsubsection{Triggers}
 \subsubsection{Selection Criteria}
 
-\subsection{photon+jets}
+\subsection{photon + jets}
 Overview
 Targetted backgrounds
 \subsubsection{Triggers}
