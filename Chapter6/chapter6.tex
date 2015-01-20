@@ -15,7 +15,7 @@ Maybe some stuff here introducing the chapter...
 \label{sec:background_overview}
 
 Contributions from Standard Model background processes are estimated using a data-driven 
-prediction technique, using of dedicated control samples. The 
+prediction technique, using dedicated control samples. The 
 technique uses a transfer factor (TF), constructed from MC samples as the ratio 
 of the MC yield in the signal region, $N_{MC}^{signal}\big(\HT, \nj, \nb\big)$,
 and the MC yield of a given control region, \\$N_{Data}^{control}\big(\HT, \nj, \nb\big)$,
@@ -39,10 +39,11 @@ N_{Data}^{signal}\big(\HT, \nj, \nb\big) = N_{Data}^{control}\big(\HT, \nj, \nb\
 \end{equation}
 
 The control samples are statistically independent and each used for predicting 
-specific background processes, the specific details of which are described in 
+specific background processes, the details of which are described in 
 the following section, section~\ref{sec:background_control}.
 
-To construct the MC yields, the following samples are considered: W + jets (\numw),
+To construct the MC yields, the following process-specific samples are considered:
+W + jets (\numw),
 \ttbar + jets (\numtt), DY + jets (\numdy), $\gamma$ + jets(\numgam),
 single top + jets (\numtop), WW + jets, WZ + jets and ZZ + jets (\numdibo), and
 \zinv + jets (\numzinv).
@@ -85,11 +86,11 @@ N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1 \big) = \numzinv
 \end{equation}
 
 Again, it should be noted here that although two seperate control samples are 
-used to estimate this background, but result of each is considered by the global fit
-used to produce the final background prediction.
+used to estimate the \zinv background contribution, the result of each is
+considered by the global fit used to produce the final background prediction.
 
 For $\nb \geq 2$, the \mj sample is used to produce a prediction for all 
-SM processes, including \zinv, therefore the numerator of the TF is defined as:
+SM processes, including \zinv, and therefore the numerator of the TF is defined as:
 
 \begin{equation}
 N_{MC}^{signal}\big(\HT, \nj, \nb \geq 2 \big) = \numw + \numtt + \numdy + \numgam + 
@@ -125,22 +126,34 @@ is shown in table~\ref{tab:control_prediction_summary}.
   \end{tabular}
 \end{table}
 
-Aimed to remove dependency on MC as much as possible - (hopefully) everything cancels in 
-the ratio!
-- MC mismodelling
-    - kinematics (affecting acceptances)
-    - instrumental affects (affecting object reconstruction efficiencies)
+By employing a technique that uses a ratio of MC yields, reliance on MC is 
+greatly reduced. Errors inherent to MC samples, such as mismodelling effects, 
+will cancel in the ratio. These errors potentially include kinematic
+mismodelling, which would affect analysis acceptance, and mismodelling of 
+instrumental effects, which could have an affect on object 
+reconstruction efficiencies. However, any remaining systematics such as these
+and others 
+are probed using Closure Tests (CT), described in detail in a later section.
 
 
 %********************************** % Second Section  *************************************
 \section{Control samples}  %Section - 1.2
 \label{sec:background_control}
 
-control sample selection is very close to signal region. only differences are `
-tags' used to get mu, mumu, pho, which are then ignored for kin variables. also
-some mass windows  and minor kinematic cuts used to enrich samples in certain
-processes. they are statistically independent, no correlation, due to 
-requirement of the tagged particles, therefore surpressing signal contamination.
+Control sample definitions are designed such that they are as close as possible 
+to that of the signal region, with the exception of a selected `tag' muon or 
+photon, which is subsequently ignored for the calculation of all analysis 
+variables, such as \HT, \MHT, \alphat etc. Other differences include mass-window
+and minor kinematic cuts, used to enrich the control samples in certain processes. 
+The samples themselves are statistically independent, and orthogonal to the 
+signal region due to the selection of the tagged particle minimising any 
+possible signal contamination. However, a full treatment of the
+signal-contamination and sample cross-correlation is taken into account in the
+background fit and final limit-setting. 
+
+This section will describe the main control regions in more detail, including 
+their tagetted background estimations, selection cuts specific to each and their
+trigger requirements.
 
 \subsection{mu + jets}
 Overview
