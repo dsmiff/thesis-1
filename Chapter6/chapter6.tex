@@ -143,7 +143,7 @@ are probed using Closure Tests (CT), described in detail in a later section.
 Control sample definitions are designed such that they are as close as possible 
 to that of the signal region, with the exception of a selected `tag' muon or 
 photon, which is subsequently ignored for the calculation of all analysis 
-variables, such as \HT, \MHT, \alphat etc. Other differences include mass-window
+variables, such as \HT, \mht, \alphat etc. Other differences include mass-window
 and minor kinematic cuts, used to enrich the control samples in certain processes. 
 The samples themselves are statistically independent, and orthogonal to the 
 signal region due to the selection of the tagged particle minimising any 
@@ -180,6 +180,41 @@ Targetted backgrounds
 \subsubsection{Selection Criteria}
 
 \subsection{HT sideband normalisation}
+As mentioned previously in section~\ref{sec:mc_xsec_corrs}, absolute MC 
+normalisation has always been mis-modelled in the high-\met (CHECK) region of 
+phase-space that SUSY analyses tend to search in. As such, data and MC appear to
+disagree using `out-of-the-box' MC samples and cross-sections. While data and MC
+comparisons are not explicitly used in this analysis, ratios of MC yields are, 
+and so a sideband in \HT is used to extract a cross-section correction factor for the main 
+MC processes. Correction factors are determined as the data to MC ratio in the $
+150 \leq \HT < 200 \gev$ sideband region, in a given control sample with a 
+given selection, designed to produce a pure sample of a background process. A
+summary of the selections and their relevant purities is given in table~\ref{tab:ht_sideband}.
+
+\begin{table}[!ht]
+  \caption{Correction factors determined from a data sideband for the different
+    MC samples. All Correction factors are relative to theoretical cross
+    sections calculated at NNLO. The corrections measured for the W +
+    jets and Z + jets processes, which are in agreement, are also
+    applied to the \zinv + jets and \gj samples. ``Corrected yield''
+    reflects the observed data yield minus the contamination as given
+    by MC. REWORD}
+  \label{tab:ht_sideband}
+  \centering
+  \scriptsize
+  \begin{tabular}{ llcccc }
+    \hline
+    \hline
+    Process                       & Selection                         & Purity & Corrected yield & MC expectation      & Correction factor        \\
+    \hline
+    W + jets                      & \mj, \njlow, $\nb = 0$          & 0.91   & 25737           & $27529.0 \pm 350.7$ & $0.93 \pm 0.01$ \\
+    Z($\rightarrow\mu\mu$) + jets & \mmj, \njlow, $\nb = 0$         & 0.98   & 1826            & $1947.3 \pm 59.5$   & $0.94 \pm 0.04$ \\
+%    \ttbar                       & \mj, $\nj \geq 2$, $\nb \geq 2$ & 0.73   & 505             & $404.3 \pm 6.6$     & $1.25 \pm 0.05$ \\
+    \ttbar                        & \mj, $\nj \geq 2$, $\nb \geq 2$ & 0.87   & 583             & $482.0 \pm 7.3$     & $1.21 \pm 0.05$ \\ % includes single top
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
 %********************************** % Third Section  *************************************
 \section{Estimating multijet backgrounds}  %Section - 1.3
