@@ -244,19 +244,61 @@ SECTION STILL NEEDED?
 Maybe just do basic results after all corrections applied, as described above.
 
 %********************************** % Fifth Section  *************************************
-\section{Uncertainties on SM background predictions}  %Section - 1.5
+\section{Systematic uncertainties on SM background predictions}  %Section - 1.5
 \label{sec:background_systematics}
+
+As mentioned previously, TF's are constructed entirely from MC yields and are 
+therefore susceptible to the various uncertainties that originate from MC mis-
+modelling. To probe this, a statistically powerful ensemble of Closure Tests
+(CT's) have been designed to assess the levels at which the transfer factors are 
+sensitive to these uncertainties. The CT method works by constructing a TF which
+extrapolate from one sub-region of a particular control sample, to another 
+control sample sub-region. In doing so, tests can be designed to specifically 
+probe any potential sources of bias in the transfer factors.
 
 Introduction to closure test method
 Designed to probe the various areas of uncertainty in the analysis
 `statistically powerfull'
 
 \subsection{Closure tests}
-Show closure test summary plots as well as some specific tests on their own
+
+The closure tests are performed as a function of \HT and in the two \nj categories,
+\njlow and \njhigh. The level of closure represents the statistical 
+consistency between predicted and observed yields for each test, in the absence 
+of any assumed systematic uncertainty. The test statistic is defined as $(N_{obs}
+- N_{pred}) / N_{pred}$, with any bias being observed as a statistically 
+significant deviation from zero, or a trend in \HT.
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.7\textwidth}
+    \includegraphics[width=\textwidth]{Figs/syst/v0/le3j/summary_plot}
+    \caption{$2 \leq \nj \leq 3$}
+    \label{fig:closure_summary_le3j}
+  \end{subfigure}             
+  \begin{subfigure}[b]{0.7\textwidth}
+    \includegraphics[width=\textwidth]{Figs/syst/v0/ge4j/summary_plot}
+    \caption{$\nj \geq 4$}
+    \label{fig:closure_summary_ge4j}
+  \end{subfigure}             
+  \caption{Sets of closure tests (open symbols) overlaid on top of
+      the systematic uncertainty used for each of the five \HT
+      regions (shaded bands) and for the two different jet
+      multiplicity bins: (a) $2 \leq \nj \leq 3$ and (b) $\nj \geq
+      4$.}
+  \label{fig:closure_summary}
+\end{figure}
+
+Describe the summary closure tests and what each test is probing. Figure~\ref{fig:closure_summary}
+
+Maybe also include a couple other relevant tests.
 
 may also include SITV closure tests
 
 \subsection{Background uncertainty summary}
+Under the assumption of closure for the eight core tests 
+
+
 split into HT regions
 
 summary of determined systematics
