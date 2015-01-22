@@ -62,6 +62,7 @@ Background est
 - add some more detail on level of closure from const and linear fit results
 - read through and maybe summarise the extra section in AN about BG systs 
 conservatism
+- find photon trig turn on plots!
 
 
 %%%%%%%%%%%%%%
