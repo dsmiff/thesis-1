@@ -285,7 +285,7 @@ significant deviation from zero, or a trend in \HT.
       the systematic uncertainty used for each of the five \HT
       regions (shaded bands) and for the two different jet
       multiplicity bins: (a) $2 \leq \nj \leq 3$ and (b) $\nj \geq
-      4$.}
+      4$. REWORD}
   \label{fig:closure_summary}
 \end{figure}
 
@@ -329,15 +329,176 @@ testing the jet reconstruction and modelling. This test is also considered very
 conservative as the analysis only predicts between identical \nj categories in 
 the control and signal regions.
 
+The summary plots of these eight tests shown in figure~\ref{fig:closure_summary} 
+indicate that there is no stastically significant biases or \HT dependencies. 
+Figures~\ref{fig:closure_fit_le3j_pol0} and \ref{fig:closure_fit_ge4j_pol0} show
+zeroeth order polynominal fit (blue lines) is made to each individual test to assess the 
+level of any potential bias present. In addition, a first order polynominal fit 
+(red lines) is 
+also made to assess any potential \HT dependence present in the tests.
+The best-fit values, $\chi^2$ and $p$-values 
+obtained from both fits are summarised for each \nj category in
+tables~\ref{tab:syst-fits-le3j}, \ref{tab:syst-fits-ge4j} and
+\ref{tab:syst-fits-njet}.
+
+As expected, the fits show no significant biases or trends, and therefore 
+indicate good closure. The only exception is the 0 b-jets \ra 1 b-jet (\mj) test
+for the \njhigh category
+which showed a sub-optimal goodness of fit value. After investigation this was 
+attributed to an upwards and downwards fluctuation in the 475-575 \gev and 575-
+675 \gev bins respectively. Also shown in table~\ref{tab:syst-fits-ge4j} is the 
+same fit made when summing these two bins - a fit which returns significantly 
+improved fit values. This leads to the conclusion that these two bins contian a 
+statistical fluctuation as opposed to a systematic bias.
+
+could go into more detail describing the outcomes of the fits...
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{figures/syst/v0/le3j/summary_plot_pol0}
+    \caption{$2 \leq \nj \leq 3$ (zeroeth order polynomial fits)}
+    \label{fig:closure_fit_le3j_pol0}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{figures/syst/v0/le3j/summary_plot_pol1}
+    \caption{$2 \leq \nj \leq 3$ (first order polynomial fits)}
+    \label{fig:closure_fit_le3j_pol1}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{figures/syst/v0/ge4j/summary_plot_pol0}
+    \caption{$\nj \geq 4$ (zeroeth order polynomial fits)}
+    \label{fig:closure_fit_ge4j_pol0}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{figures/syst/v0/ge4j/summary_plot_pol1}
+    \caption{$\nj \geq 4$ (first order polynomial fits)}
+    \label{fig:closure_fit_ge4j_pol1}
+  \end{subfigure}
+  \caption{Sets of closure tests (open symbols) overlaid on top of
+      the systematic uncertainty used for each of the five \HT
+      regions (shaded bands), for the two different jet multiplicity
+      bins (top row) $2 \leq \nj \leq 3$ and (bottom row) $\nj
+      \geq 4$, and with zeroeth (left column) and first (right column)
+      order polynomial fits to each set of closure tests. REWORD}
+  \label{fig:closure_fits}
+\end{figure}
+
+\begin{table}[!h]
+  \caption{A summary of the results obtained from fits of zeroeth
+    order polynomials (i.e. a constant) to five sets of closure tests
+    performed in the \njlow bin. The final two columns show the best
+    fit value for the slope obtained when performing a linear fit and
+    the $p$-value for the linear fit. REWORD}
+  \label{tab:syst-fits-le3j}
+  \centering
+  \scriptsize
+  \begin{tabular}{ llrccccrc }
+    \hline
+    \hline
+                                              &          & \multicolumn{4}{c}{Constant fit} &          & \multicolumn{2}{c}{Linear fit}                        \\
+    \cline{3-6}\cline{8-9}                                                                  
+    Closure test                              & Symbol   & Best fit value                   & $\chi^2$ & d.o.f. & $p$-value &  & Slope ($10^{-4}$) & $p$-value \\
+    \hline                                                                                                                                  
+    $\alphat < 0.55 \ra \alphat > 0.55$ (\mj) & Circle   & $-0.02 \pm 0.01$                 & 11.3     & 10     & 0.34      &  & $-2.9 \pm 1.1$    & 0.83      \\ 
+    0 b-jets \ra 1 b-jet (\mj)                & Times    & $ 0.04 \pm 0.01$                 & 5.8      & 10     & 0.83      &  & $-1.5 \pm 0.9$    & 0.97      \\ 
+    1 b-jet \ra 2 b-jets (\mj)                & Square   & $-0.03 \pm 0.02$                 & 5.3      & 10     & 0.87      &  & $-3.0 \pm 1.7$    & 0.99      \\ 
+    \mj \ra \mmj                              & Triangle & $ 0.03 \pm 0.02$                 & 12.3     & 10     & 0.27      &  & $-1.3 \pm 1.1$    & 0.28      \\ 
+    \gj \ra \mmj                              & Cross    & $-0.02 \pm 0.03$                 & 3.0      & 7      & 0.88      &  & $ 0.0 \pm 2.7$    & 0.81      \\ 
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[!h]
+  \caption{A summary of the results obtained from fits of zeroeth
+    order polynomials (i.e. a constant) to five sets of closure tests
+    performed in the \njhigh bin. The final two columns show the best
+    fit value for the slope obtained when performing a linear fit and
+    the $p$-value for the linear fit. $^{\dag} $See text for details
+    on this particular fit. REWORD} 
+  \label{tab:syst-fits-ge4j}
+  \centering
+  \scriptsize
+  \begin{tabular}{ llrccccrc }
+    \hline
+    \hline
+                                              &          & \multicolumn{4}{c}{Constant fit} &          & \multicolumn{2}{c}{Linear fit}                        \\
+    \cline{3-6}\cline{8-9}                                                                  
+    Closure test                              & Symbol   & Best fit value                   & $\chi^2$ & d.o.f. & $p$-value &  & Slope ($10^{-4}$) & $p$-value \\
+    \hline                                                                                                                                 
+    $\alphat < 0.55 \ra \alphat > 0.55$ (\mj) & Circle   & $-0.02 \pm    0.02$              & 17.6     & 10     & 0.06      &  & $-3.1 \pm 1.7$    & 0.11      \\ 
+    0 b-jets \ra 1 b-jet (\mj)                & Times    & $-0.06 \pm 0.02$                 & 31.2     & 10     & 0.00      &  & $-4.1 \pm 1.2$    & 0.02      \\ 
+    0 b-jets \ra 1 b-jet (\mj)$^{ \dag}$      & Times    & $-0.05 \pm 0.02$                 & 13.4     & 9      & 0.15      &  & $-3.9 \pm 1.3$    & 0.78      \\ 
+    1 b-jet \ra 2 b-jets (\mj)                & Square   & $ 0.06 \pm    0.02$              & 13.7     & 10     & 0.19      &  & $ 2.5 \pm 1.6$    & 0.28      \\ 
+    \mj \ra \mmj                              & Triangle & $ 0.11 \pm    0.05$              & 4.8      & 10     & 0.90      &  & $ 0.4 \pm 2.7$    & 0.85      \\ 
+    \gj \ra \mmj                              & Cross    & $-0.00 \pm 0.07$                 & 2.3      & 7      & 0.94      &  & $-5.3 \pm 4.7$    & 0.99      \\ 
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[!h]
+  \caption{A summary of the results obtained from fits of zeroeth
+    order polynomials (i.e. a constant) to three sets of closure tests
+    (\njlow \ra \njhigh) that probe the accuracy of the MC
+    modelling of the \nj distribution observed in data, using the
+    three data control samples.  REWORD} 
+  \label{tab:syst-fits-njet}
+  \centering
+  \footnotesize
+  \begin{tabular}{ llrccccrc }
+    \hline
+    \hline
+           &                   & \multicolumn{4}{c}{Constant fit} &          & \multicolumn{2}{c}{Linear fit}                        \\
+    \cline{3-6}\cline{8-9}
+    Sample & Symbol            & Best fit value                   & $\chi^2$ & d.o.f. & $p$-value &  & Slope ($10^{-4}$) & $p$-value \\
+    \hline                                                                                                            
+    \mj    & Star              & $-0.08 \pm 0.01$                 & 9.3      & 10     & 0.50      &  & $0.6 \pm 0.7$     & 0.48      \\ 
+    \gj    & Inverted triangle & $ 0.09 \pm 0.04$                 & 3.7      & 7      & 0.82      &  & $5.1 \pm 3.2$     & 0.98      \\ 
+    \mmj   & Diamond           & $-0.00 \pm 0.05$                 & 4.7      & 10     & 0.91      &  & $2.5 \pm 2.9$     & 0.92      \\ 
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
 Maybe also include a couple other relevant tests.
 
 may also include SITV closure tests
 
 
 \subsection{Background uncertainty summary}
-Under the assumption of closure for the eight core tests 
+Under the assumption of closure for the eight core tests, as determined in the 
+previous section, systematic errors are assigned in seven regions of \HT, for 
+each \nj category.
 
+Values are calculated by summing in quadrature the weighted mean and sample 
+variance for all eight tests in a given \HT region. These values are summarised 
+in table~\ref{tab:syst_values} and also in the summary plots of figure~\ref{fig:closure_summary},
+shown as grey bands.
 
-split into HT regions
+\begin{table}[!h]
+  \caption{A summary of the magnitude of the systematic uncertainties (\%)
+    assigned to the transfer factors, according to \nj and \HT
+    region. REWORD}
+  \label{tab:syst_values}
+  \centering
+  \footnotesize
+  \begin{tabular}{ cccccccc }
+    \hline
+    \hline
+            & \multicolumn{7}{c}{\HT region (GeV)}                                \\
+    \cline{2-8}
+    \nj   & 200--275 & 275--325 & 325--375 & 375--575 & 575--775 & 775-975 & $>975$ \\
+    \hline                                                                                                                                  
+    2--3    & 4        & 6        & 6        & 8        & 12       & 17      & 19     \\
+    $\geq$4 & 6        & 6        & 11       & 11       & 18       & 20      & 26     \\
+    \hline                                                                                                                                  
+    \hline
+  \end{tabular}
+\end{table}
 
-summary of determined systematics
+Systematic values are here considered as fully uncorrelated between the 
+different analysis categories and the \HT regions defined here, which is again 
+considered as a conservative approach given that some correlation is to be 
+expected between adjacent \HT bins, for example.
