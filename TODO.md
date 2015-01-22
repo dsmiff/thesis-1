@@ -62,6 +62,7 @@ Background est
 - add some more detail on level of closure from const and linear fit results
 - read through and maybe summarise the extra section in AN about BG systs 
 conservatism
+- fix mu trig eff table to get rid of mujets title
 
 
 %%%%%%%%%%%%%%
