@@ -278,9 +278,39 @@ veto is made on events satisfying $\Delta R(\mu_i, jet_j) < 0.5$, for every muon
 $i$ and every jet $j$.
 
 \subsection{photon + jets}
-Overview
-Targetted backgrounds
+The \gj sample is used to predict the \zinv background contribution, given it's 
+similar kinematics (once the $\gamma$ is ignored from the event) and larger 
+production cross section compared to \mmj. Given the trigger thresholds, the \gj
+sample cannot make predictions for $\HT<375\gev$, and so is complimentarily used
+alongside the \mmj sample.
+
 \subsubsection{Triggers}
+Events are collected using the \verb!HLT_Photon150! trigger. The trigger's 
+efficiency is measured using the \verb!HLT_Photon90! trigger as a reference, and
+is found to be 100$\%$ efficient for $E_T^{photon}>165\gev$ and $\HT>375\gev$, 
+as shown by the turn on curves in figure~
+
+% \begin{figure}[h!]
+%   \centering
+%   \begin{subfigure}[b]{0.48\textwidth}
+%     \includegraphics[width=\textwidth, page=3,trim=40 50 160 120,clip=true]{figures/trigger/g_barrel_375_caloJet_le3j.pdf}
+%     \caption{\njlow}
+%     \label{fig:photon_control_trigeff_le3j}
+%   \end{subfigure}
+%   \begin{subfigure}[b]{0.48\textwidth}
+%     \includegraphics[width=\textwidth, page=3,trim=40 50 160 120,clip=true]{figures/trigger/g_barrel_375_caloJet_ge4j.pdf}
+%     \caption{\njhigh}
+%     \label{fig:photon_control_trigeff_ge4j}
+%   \end{subfigure}
+%   \caption{Efficiency turn-on curves for
+%       the \verb!HLTPhoton150! trigger that records events that
+%       satisfy the \gj selection criteria, $E_{T}^{photon} >
+%       165\gev$, $\HT > 375\gev$, and \njlow (Left) and \njhigh
+%       (Right). REWORD}
+%   \label{fig:photon_control_trigeff}
+% \end{figure}
+
+
 \subsubsection{Selection Criteria}
 
 \subsection{jets}
