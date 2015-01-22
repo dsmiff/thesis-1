@@ -156,16 +156,126 @@ their tagetted background estimations, selection cuts specific to each and their
 trigger requirements.
 
 \subsection{mu + jets}
-Overview
-Targetted backgrounds
+
+The \mj control sample is constructed by selecting a single muon and associated 
+jets. This region is used to predict backgrounds from processes such as \wj and
+\ttj. This covers not only the leptonic decays of such productions, where the 
+lepton is unidentified for whatever reason, but also the hadronic decays of tau 
+leptons [from high-\Pt W bosons]. The event selection therefore is optimised to 
+select W bosons decaying to a muon and a neutrino in the phase-space of the 
+signal.
+
 \subsubsection{Triggers}
+\label{sec:mujets_control_trigger}
+Events are collected using the loosely-isolated, $\eta$-restricted
+\verb!HLT_IsoMu24_eta2p1! trigger, which was in place throughout the 8\tev
+data-taking period. The efficiency of this trigger was measured by the muon POG 
+using a tag-and-probe method, in bins of the muon \Pt and $\eta$, as summarised 
+in table~\ref{tab:muon-trig-effs}. [mention non-dependency on HT?]
+
+\begin{table}[!h]
+  \caption{Muon trigger efficiencies (\%). Statistical uncertainties
+    are at the per-mille level, while a relative systematic
+    uncertainty on all measurements is assumed to be 1\%. REWORD}
+  \label{tab:muon-trig-effs}
+  \centering
+  \footnotesize
+  \begin{tabular}{ cccc }
+    \hline
+    \hline
+    \HT (GeV) & 2-3 & $\geq$4 \\ [0.5ex]
+    \hline
+%    200--275  & 89.1 & 89.8  \\
+%    275--325  & 89.3 & 89.8  \\
+%    325--375  & 89.5 & 90.0  \\
+%    375--475  & 89.7 & 90.3  \\
+%    475--575  & 89.8 & 90.5  \\
+%    575--675  & 90.0 & 90.6  \\
+%    675--775  & 90.1 & 90.7  \\
+%    775--875  & 90.2 & 90.8  \\
+%    875--975  & 90.4 & 90.6  \\
+%    975--1075 & 90.3 & 90.6  \\
+%    $>$1075   & 90.0 & 91.2  \\
+    150--200  & 87.2 & 88.1  \\
+    200--275  & 87.5 & 88.1  \\
+    275--325  & 87.8 & 88.2  \\
+    325--375  & 87.9 & 88.4  \\
+    375--475  & 88.1 & 88.6  \\
+    475--575  & 88.2 & 88.8  \\
+    575--675  & 88.4 & 88.9  \\
+    675--775  & 88.5 & 89.0  \\
+    775--875  & 88.6 & 89.1  \\
+    875--975  & 88.8 & 89.0  \\
+    975--1075 & 88.7 & 89.0  \\
+    $>$1075   & 88.4 & 89.6  \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
 \subsubsection{Selection Criteria}
+\label{sec:mujets_control_selection}
+A single tight isolated muon is selected, with \Pt > 30\gev and $|\eta| <$2.1, 
+due to trigger requirements. The transverse mass of the W, reconstructed by the 
+$\mu$ and the \met (originating from the $\nu_{\mu}$), is required to be in a 
+loose window around $m_Z$, $30 < M(\mu, \met) < 125\gev$, in order to surpress 
+QCD mutlijet contributions. Events are vetoed if $\Delta R(\mu, jet_{i}) < 0.5$,
+for all jets $i$ in the event. To keep the selection as close to the signal 
+region as possible, other cuts such as the single isolated track veto and 
+\mhtmet cuts are also applied.
 
 \subsection{mumu + jets}
-Overview
-Targetted backgrounds
+The \mmj sample is constructed to predict background contributions from \zinv 
+decays, mimicking this decay via the $Z\to\mu\mu + jets$ process, where both 
+muons are subsequently ignored, which is kinematically very similar.
+The sample is used to provide low \HT coverage for the \zinv background 
+prediction, where the \gj sample is unable to do so.
+
 \subsubsection{Triggers}
+The trigger used is the same as for the \mj sample, as described in
+section~\ref{sec:mujets_control_trigger}. For the dimuon selection, however, 
+trigger efficiencies are slightly improved given that either of the muons 
+present can cause the positive trigger decision, summarised in 
+
+\begin{table}[!h]
+  \caption{Muon trigger efficiencies (\%). Statistical uncertainties
+    are at the per-mille level, while a relative systematic
+    uncertainty on all measurements is assumed to be 1\%. REWORD}
+  \label{tab:dimuon-trig-effs}
+  \centering
+  \footnotesize
+  \begin{tabular}{ cccc }
+    \hline
+    \hline
+    \HT (GeV) & 2-3 & $\geq$4 \\ [0.5ex]
+                                       
+    \hline
+    150--200  & 98.4 & 98.4  \\
+    200--275  & 98.5 & 98.4  \\
+    275--325  & 98.5 & 98.4  \\
+    325--375  & 98.6 & 98.6  \\
+    375--475  & 98.6 & 98.5  \\
+    475--575  & 98.6 & 98.6  \\
+    575--675  & 98.6 & 98.6  \\
+    675--775  & 98.7 & 98.6  \\
+    775--875  & 98.6 & 98.6  \\
+    875--975  & 98.7 & 98.6  \\
+    975--1075 & 98.7 & 98.8  \\
+    $>$1075   & 98.7 & 98.7  \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
 \subsubsection{Selection Criteria}
+The selection for the \mmj sample is very similar to that of the \mj sample, 
+described in section~\ref{sec:mujets_control_selection}, with differences chosen
+to enrich the sample in Z bosons decaying to pairs of muons in the kinematic 
+phase space of the signal region. Two tight isolated muons are selected, each 
+with $\Pt > 30\gev$ and $|\eta| < 2.1$, and their invariant mass is chosen to be
+tight around $m_Z$, $m_Z - 25 < M_{\mu_1\mu_2} < m_Z + 25 \gev$. Furthermore, a 
+veto is made on events satisfying $\Delta R(\mu_i, jet_j) < 0.5$, for every muon 
+$i$ and every jet $j$.
 
 \subsection{photon + jets}
 Overview
