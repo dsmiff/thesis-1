@@ -54,6 +54,14 @@ do about it, with our various cuts
 Chapter 6
 Background est
 %%%%%%%%%%%%%%
+- introduction paragraph
+- do section on MHTMET MJ background estimation
+- check what susy phase space screws MC normalisation
+- details of control sample selections
+- reword table and figure titles
+- add some more detail on level of closure from const and linear fit results
+- read through and maybe summarise the extra section in AN about BG systs 
+conservatism
 
 
 %%%%%%%%%%%%%%
