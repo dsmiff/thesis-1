@@ -15,9 +15,9 @@ Maybe some stuff here introducing the chapter...
 \label{sec:background_overview}
 
 Contributions from Standard Model background processes are estimated using a data-driven 
-prediction technique, using dedicated control samples. The 
-technique uses a transfer factor (TF), constructed from MC samples as the ratio 
-of the MC yield in the signal region, $N_{MC}^{signal}\big(\HT, \nj, \nb\big)$,
+prediction technique, employing dedicated control samples. A transfer factor (TF) 
+is used, constructed from MC samples as the ratio 
+of the MC yield in the signal region, \\$N_{MC}^{signal}\big(\HT, \nj, \nb\big)$,
 and the MC yield of a given control region, \\$N_{Data}^{control}\big(\HT, \nj, \nb\big)$,
 as a function of the analysis binning, \HT, \nj and \nb, as shown by
 equation~\ref{eq:transfer_factor}.
@@ -49,12 +49,13 @@ single top + jets (\numtop), WW + jets, WZ + jets and ZZ + jets (\numdibo), and
 \zinv + jets (\numzinv).
 
 The predictions made using this technique alone are considered as ``na\"{i}ve'' 
-predictions and are only used in analysis development and background systematics
-derivation. In order to determine final yields for use in interpretation and 
+predictions and are only used in analysis development and the derivation of 
+background systematics. In order to determine final yields for use in interpretation and 
 limit-setting, a fit is made across all signal and control regions, using the 
 full likelihood model, as described later in chapter~REF. For this, the derived 
 transfer factors and individual yields enter as terms in the likelihood, where 
-all related systematics and potential correlations are accounted for in the fit. 
+all related systematics, potential correlations and signal contamination are
+accounted for in the fit. 
 
 The denominator of each transfer factor is constructed using the sum of all MC
 sample yields, for a given control region and category:
@@ -65,7 +66,7 @@ N_{MC}^{control}\big(\HT, \nj, \nb\big) = \numw + \numtt + \numdy + \numgam +
 \label{eq:trans_fact_denom}
 \end{equation}
 
-However, the numerator is constructed according to the b-tag mutliplicity being 
+The numerator is constructed according to the b-tag mutliplicity being 
 considered. For $\nb \leq 1$, the \mj control region is used to predict 
 predominantly \ttbar + jets and W + jets, however an estimate for all other 
 residual backgrounds is produced. All MC samples are used with the exception of
@@ -77,7 +78,7 @@ N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1\big) = \numw + \numtt + \numdy + \numga
 \label{eq:trans_fact_num_le1b_noz}
 \end{equation}
 
-Whereas the \zinv + jets component of the background is predicted using the \mmj
+The \zinv + jets component of the background is predicted using the \mmj
 and \gj control samples, using only the \zinv MC yields:
 
 \begin{equation}
@@ -86,7 +87,7 @@ N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1 \big) = \numzinv
 \end{equation}
 
 Again, it should be noted here that although two seperate control samples are 
-used to estimate the \zinv background contribution, the result of each is
+used to estimate the \zinv background contribution, the result of each
 considered by the global fit used to produce the final background prediction.
 
 For $\nb \geq 2$, the \mj sample is used to produce a prediction for all 
@@ -128,12 +129,12 @@ is shown in table~\ref{tab:control_prediction_summary}.
 
 By employing a technique that uses a ratio of MC yields, reliance on MC is 
 greatly reduced. Errors inherent to MC samples, such as mismodelling effects, 
-will cancel in the ratio. These errors potentially include kinematic
+will cancel in the ratio. These errors can potentially include kinematic
 mismodelling, which would affect analysis acceptance, and mismodelling of 
 instrumental effects, which could have an affect on object 
 reconstruction efficiencies. However, any remaining systematics such as these
 and others 
-are probed using Closure Tests (CT), described in detail in a later section.
+are probed using Closure Tests (CT), described in detail in a later section REF.
 
 
 %********************************** % Second Section  *************************************
@@ -143,21 +144,21 @@ are probed using Closure Tests (CT), described in detail in a later section.
 Control sample definitions are designed such that they are as close as possible 
 to that of the signal region, with the exception of a selected `tag' muon or 
 photon, which is subsequently ignored for the calculation of all analysis 
-variables, such as \HT, \mht, \alphat etc. Other differences include mass-window
+variables, such as \HT, \met, \alphat etc. Other differences include mass-window
 and minor kinematic cuts, used to enrich the control samples in certain processes. 
 The samples themselves are statistically independent, and orthogonal to the 
-signal region due to the selection of the tagged particle minimising any 
+signal region due to the selection of the tagged lepton or photon minimising any 
 possible signal contamination. However, a full treatment of the
 signal-contamination and sample cross-correlation is taken into account in the
 background fit and final limit-setting. 
 
 This section will describe the main control regions in more detail, including 
-their tagetted background estimations, selection cuts specific to each and their
+their targetted background estimations, selection cuts specific to each and their
 trigger requirements.
 
 \subsection{mu + jets}
 
-The \mj control sample is constructed by selecting a single muon and associated 
+The \mj control sample is constructed by selecting a single muon with associated 
 jets. This region is used to predict backgrounds from processes such as \wj and
 \ttj. This covers not only the leptonic decays of such productions, where the 
 lepton is unidentified for whatever reason, but also the hadronic decays of tau 
@@ -170,7 +171,7 @@ signal.
 Events are collected using the loosely-isolated, $\eta$-restricted
 \verb!HLT_IsoMu24_eta2p1! trigger, which was in place throughout the 8\tev
 data-taking period. The efficiency of this trigger was measured by the muon POG 
-using a tag-and-probe method, in bins of the muon \Pt and $\eta$, as summarised 
+using a tag-and-probe method [REF], in bins of the muon \Pt and $\eta$, as summarised 
 in table~\ref{tab:muon-trig-effs}. [mention non-dependency on HT?]
 
 \begin{table}[!h]
@@ -216,9 +217,10 @@ in table~\ref{tab:muon-trig-effs}. [mention non-dependency on HT?]
 \subsubsection{Selection Criteria}
 \label{sec:mujets_control_selection}
 A single tight isolated muon is selected, with \Pt > 30\gev and $|\eta| <$2.1, 
-due to trigger requirements. The transverse mass of the W, reconstructed by the 
+with the thresholds chosen due to trigger requirements. The transverse mass
+of the W, reconstructed by the 
 $\mu$ and the \met (originating from the $\nu_{\mu}$), is required to be in a 
-loose window around $m_Z$, $30 < M(\mu, \met) < 125\gev$, in order to surpress 
+loose window around $m_W$, $30 < M(\mu, \met) < 125\gev$, in order to surpress 
 QCD mutlijet contributions. Events are vetoed if $\Delta R(\mu, jet_{i}) < 0.5$,
 for all jets $i$ in the event. To keep the selection as close to the signal 
 region as possible, other cuts such as the single isolated track veto and 
@@ -226,7 +228,7 @@ region as possible, other cuts such as the single isolated track veto and
 
 \subsection{mumu + jets}
 The \mmj sample is constructed to predict background contributions from \zinv 
-decays, mimicking this decay via the $Z\to\mu\mu + jets$ process, where both 
+decays, mimicking this decay via the $Z\to\mu\mu + jets$ process where both 
 muons are subsequently ignored, which is kinematically very similar.
 The sample is used to provide low \HT coverage for the \zinv background 
 prediction, where the \gj sample is unable to do so.
@@ -235,7 +237,8 @@ prediction, where the \gj sample is unable to do so.
 The trigger used is the same as for the \mj sample, as described in
 section~\ref{sec:mujets_control_trigger}. For the dimuon selection, however, 
 trigger efficiencies are slightly improved given that either of the muons 
-present can cause the positive trigger decision, summarised in 
+present can cause the positive trigger decision. The trigger efficiencies
+for the \mmj selection are summarised in table~\ref{tab:dimuon-trig-effs}.
 
 \begin{table}[!h]
   \caption{Muon trigger efficiencies (\%). Statistical uncertainties
@@ -279,10 +282,10 @@ $i$ and every jet $j$.
 
 \subsection{photon + jets}
 The \gj sample is used to predict the \zinv background contribution, given it's 
-similar kinematics (once the $\gamma$ is ignored from the event) and larger 
-production cross section compared to \mmj. Given the trigger thresholds, the \gj
+similar kinematics when the $\gamma$ is ignored from the event, and larger 
+production cross section relative to \mmj. Given the trigger thresholds, the \gj
 sample cannot make predictions for $\HT<375\gev$, and so is complimentarily used
-alongside the \mmj sample.
+alongside the \mmj sample prediction.
 
 \subsubsection{Triggers}
 Events are collected using the \verb!HLT_Photon150! trigger. The trigger's 
@@ -290,28 +293,30 @@ efficiency is measured using the \verb!HLT_Photon90! trigger as a reference, and
 is found to be 100$\%$ efficient for $E_T^{photon}>165\gev$ and $\HT>375\gev$, 
 as shown by the turn on curves in figure~
 
-% \begin{figure}[h!]
-%   \centering
-%   \begin{subfigure}[b]{0.48\textwidth}
-%     \includegraphics[width=\textwidth, page=3,trim=40 50 160 120,clip=true]{figures/trigger/g_barrel_375_caloJet_le3j.pdf}
-%     \caption{\njlow}
-%     \label{fig:photon_control_trigeff_le3j}
-%   \end{subfigure}
-%   \begin{subfigure}[b]{0.48\textwidth}
-%     \includegraphics[width=\textwidth, page=3,trim=40 50 160 120,clip=true]{figures/trigger/g_barrel_375_caloJet_ge4j.pdf}
-%     \caption{\njhigh}
-%     \label{fig:photon_control_trigeff_ge4j}
-%   \end{subfigure}
-%   \caption{Efficiency turn-on curves for
-%       the \verb!HLTPhoton150! trigger that records events that
-%       satisfy the \gj selection criteria, $E_{T}^{photon} >
-%       165\gev$, $\HT > 375\gev$, and \njlow (Left) and \njhigh
-%       (Right). REWORD}
-%   \label{fig:photon_control_trigeff}
-% \end{figure}
-
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\textwidth, page=3,trim=40 50 160 120,clip=true]{figures/trigger/g_barrel_375_caloJet_le3j.pdf}
+    \caption{\njlow}
+    \label{fig:photon_control_trigeff_le3j}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\textwidth, page=3,trim=40 50 160 120,clip=true]{figures/trigger/g_barrel_375_caloJet_ge4j.pdf}
+    \caption{\njhigh}
+    \label{fig:photon_control_trigeff_ge4j}
+  \end{subfigure}
+  \caption{Efficiency turn-on curves for
+      the photon trigger that records events that
+      satisfy the \gj selection criteria, $E_{T}^{photon} > 165\gev$, $\HT > 375\gev$, and \njlow (Left) and \njhigh
+      (Right). REWORD}
+  \label{fig:photon_control_trigeff}
+\end{figure}
 
 \subsubsection{Selection Criteria}
+Exactly one photon satisying tight isolation criteria is required, with 
+$\Pt > 165\gev$ and $|\eta|<1.45$. In addition, events are vetoed if
+$\Delta R(\gamma, jet_i)<1.0$ is satisfied, for all of the events $i$ jets.
+
 
 \subsection{jets}
 Overview
