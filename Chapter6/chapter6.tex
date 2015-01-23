@@ -226,6 +226,14 @@ for all jets $i$ in the event. To keep the selection as close to the signal
 region as possible, other cuts such as the single isolated track veto and 
 \mhtmet cuts are also applied.
 
+Specifically for the \mj (and \mmj) control samples, no \alphat requirement is
+made in order to increase the statistics and therefore the predictive power of 
+the samples. This is possible as the other requirements, in particular the 
+requirement of
+a single muon and a specific invariant mass window, greatly reduce any potential
+contamination from QCD MJ events. The ability to do this is specifically tested, 
+in a dedicated closure test as described later in section~\ref{sec:closure_tests}.
+
 \subsection{mumu + jets}
 The \mmj sample is constructed to predict background contributions from \zinv 
 decays, mimicking this decay via the $Z\to\mu\mu + jets$ process where both 
@@ -278,7 +286,8 @@ phase space of the signal region. Two tight isolated muons are selected, each
 with $\Pt > 30\gev$ and $|\eta| < 2.1$, and their invariant mass is chosen to be
 tight around $m_Z$, $m_Z - 25 < M_{\mu_1\mu_2} < m_Z + 25 \gev$. Furthermore, a 
 veto is made on events satisfying $\Delta R(\mu_i, jet_j) < 0.5$, for every muon 
-$i$ and every jet $j$.
+$i$ and every jet $j$. Similarly as in the \mj sample selection, no \alphat
+requirement is made.
 
 \subsection{photon + jets}
 The \gj sample is used to predict the \zinv background contribution, given it's 
@@ -293,7 +302,7 @@ efficiency is measured using the \verb!HLT_Photon90! trigger as a reference, and
 is found to be 100$\%$ efficient for $E_T^{photon}>165\gev$ and $\HT>375\gev$, 
 as shown by the turn on curves in figure~
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth, page=3,trim=40 50 160 120,clip=true]{figures/trigger/g_barrel_375_caloJet_le3j.pdf}
@@ -402,6 +411,7 @@ control sample sub-region. In doing so, tests can be designed to specifically
 probe any potential sources of bias in the transfer factors.
 
 \subsection{Closure tests}
+\label{sec:closure_tests}
 
 The closure tests are performed as a function of \HT and in the two \nj categories,
 \njlow and \njhigh. The level of closure represents the statistical 
