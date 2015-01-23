@@ -14,6 +14,12 @@
 layout the likelihood model used to perform the simultaneous fit to get the 
 background numbers
 
+lognormal instead of gaussian PDF
+
+if you had a parameter with mean of 0.3 and variance of 0.1, you could have a 
+distro which would give you negative values of your PDF, if you used gaussian. 
+therefore we use lognormal.
+
 %********************************** % Second Section  *************************************
 \section{Fit Results}  %Section - 1.2
 \label{sec:results_fit}
