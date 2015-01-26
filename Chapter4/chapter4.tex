@@ -78,7 +78,50 @@ pT dependent efficiency in the range of 60-70\% (plot?) [refs].
 %********************************** % Fourth Section  *************************************
 \section{Muons}  %Section - 1.4
 \label{sec:objects_muons}
+Muons are identified using the muon POGs Tight working point definition, as 
+summarised in table~\ref{tab:muon-id}. This definition is used for both muon 
+selection in the \mj and \mmj control regions, and the muon veto in the hadronic
+signal region.
 
+\begin{table}[ht!]
+  \caption{Muon identification (Tight working point).\label{tab:muon-id}}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcp{8cm} }
+    \hline
+    \hline
+    Global Muon                            & True      & Muon object 
+    is reconstructed from both hits in the muon systems and matched hits in the 
+    silicon tracker \\
+    PFMuon                                 & True      & FIXME \\
+    $\chi^{2} /ndof$ of fit                & $<10$     & Goodness of fit 
+    of the global muon track fit. Suppresses hadronic punch-through and muons 
+    decaying in flight.\\
+    Muon chamber hits                      & $>0$      & At least 1 hit in a 
+    muon chamber. Suppresses hadronic punch-through and muons 
+    decaying in flight.\\
+    Muon station hits                      & $>1$      & Muon hits in at least 2
+    muon stations. Suppresses punch-through and accidental track-to-segment matches.
+    (Also makes consistent with trigger muon requirements.) \\
+    Transverse impact $d_{xy}$             & $<0.2mm$ & Tracker track is close 
+    to PV (define?) in the x-y plane. Helps suppress cosmic ray muons and muons 
+    from decays in flight. \\
+    Longitudinal dist $d_{z}$              & $<0.5mm$ & Tracker track is close 
+    to PV in z-direction. Suppresses muons from cosmic rays, decays in flight 
+    and PU. \\
+    Pixel hits                             & $>0$      & At least 1 pixel hit. 
+    Suppresses muons from decays in flight. \\
+    Track layer hits                       & $>5$      & Guarantees good \Pt 
+    measurement. \\
+    PF Isolation ($\Delta\beta$ corrected) & $<0.12$   & Particle Flow based 
+    isolation, based on a cone size of $\Delta R < 0.4$, with ``$\Delta \beta$'' 
+    PU corrections applied. \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+LOOKUP: ``muons from decays in flight''
 
 %********************************** % Fifth Section  *************************************
 \section{Photons}  %Section - 1.5
