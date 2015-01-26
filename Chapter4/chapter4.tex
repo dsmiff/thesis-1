@@ -11,18 +11,16 @@
 %********************************** % First Section  *************************************
 \section{Introduction}  %Section - 1.1 
 \label{sec:objects_introduction}
-What is an object in CMS?
 
 Physics objects are observed as energy deposits in the various detector 
 subsystems throughout the CMS detector. Specific definitions for the different 
 objects are provided by the Physics Object Groups (POGs) and are used in this 
-analysis. The follow sections describe the objects used.
+analysis. The following sections describe the objects used.
 
 
 %********************************** % Second Section  *************************************
 \section{Jets}  %Section - 1.2
 \label{sec:objects_jets}
-calojets used exclusively in analysis
 
 Jets are produced when a single quark or gluon is produced, subsequently 
 hadronizing and showering throughout the calorimeter systems. Energy deposits in
@@ -30,16 +28,27 @@ the hadronic calorimeter are clustered using the anti$-k_T$ algorithm [ref] with
 a 0.5 cone size parameter. The raw energy measurements can be affected by 
 effects from overlapping pp collisions, known as pileup (PU) [first place 
 mentioned?], therefore corrections are made to account for this. Clustered jets 
-are also corrected to establish a uniform response in $\eta$ and pT [mathchange].
+are also corrected to establish a uniform response in $\eta$ and \Pt.
 Table~\ref{tab:jet_id_loose} summarises the ID requirements used in this 
 analysis, which correspond to the ``Loose'' working point [ref]. Jets are also 
 corrected according to the L1FastJet, L2, L3, and L2L3Residual corrections [ref].
 
-
-\begin{table}
-TABLE
-\caption{Loose calojet working point description}
-\label{tab:jet_id_loose}
+\begin{table}[!ht]
+  \caption{Criteria for the ``loose'' jet ID working point.\label{tab:jet_id_loose}REWORD}
+  \footnotesize
+  \begin{center}
+    \begin{tabular}{ll}
+      \hline
+      \hline
+      Requirement                & Definition                                                       \\
+      \hline
+      f$_{HPD} < 0.98$           & Fractional contribution from the ``hottest'' Hybrid Photo Diode. \\
+      f$_{EM} > 0.01$            & Minimum electromagnetic fractional component.                    \\
+      N$^{90}_{\rm hits} \geq$ 2 & Number of channels containing at least 90\% of total energy      \\
+      \hline
+      \hline
+    \end{tabular}
+  \end{center}
 \end{table}
 
 
