@@ -29,7 +29,13 @@ Detector
 Chapter 4
 Objects
 %%%%%%%%%%%%%%
-
+- fix photon table - make pf description fit centrally across all 3 PF iso 
+entries
+- look up and describe rho PU corrections
+- placeholders and entries for references
+- what is sigma_ietaieta?
+- add ID effs? probably should...
+- do rest of descriptions in the electron ID table
 
 %%%%%%%%%%%%%%
 Chapter 5
