@@ -40,7 +40,7 @@ corrected according to the L1FastJet, L2, L3, and L2L3Residual corrections [ref]
     \begin{tabular}{ll}
       \hline
       \hline
-      Requirement                & Definition                                                       \\
+      Requirement                & Description                                                      \\
       \hline
       f$_{HPD} < 0.98$           & Fractional contribution from the ``hottest'' Hybrid Photo Diode. \\
       f$_{EM} > 0.01$            & Minimum electromagnetic fractional component.                    \\
@@ -69,11 +69,6 @@ using the ``Medium'' working point, or a discriminate threshold of $>0.679$. Thi
 working point corresponds to a mistag rate for gluons/light-quarks of 1\%, and a
 pT dependent efficiency in the range of 60-70\% (plot?) [refs].
 
-%********************************** % Third Section  *************************************
-\section{Electrons}  %Section - 1.3
-\label{sec:objects_electrons}
-
-
 
 %********************************** % Fourth Section  *************************************
 \section{Muons}  %Section - 1.4
@@ -89,6 +84,8 @@ signal region.
   \footnotesize
   \begin{tabular}{ lcp{8cm} }
     \hline
+    \hline
+    Varible & Requirment & Description \\
     \hline
     Global Muon                            & True      & Muon object 
     is reconstructed from both hits in the muon systems and matched hits in the 
@@ -127,6 +124,83 @@ LOOKUP: ``muons from decays in flight''
 \section{Photons}  %Section - 1.5
 \label{sec:objects_photons}
 
+Photons defintions are made relative to their position in the detector, either 
+in the barrel or the endcap, summarised in table~\ref{tab:photon-id-egamma}. 
+This Tight working point ID is defined by the POG group and used for both photon
+selection in the \gj control sample and as a veto in the hadronic signal region.
+BRIEFLY MENTION THE PF-BASED RHO PU CORRECTIONS
+
+\begin{table}[ht!]
+  \caption{Photon identification (Tight working point).\label{tab:photon-id-egamma}}
+  \centering
+  \footnotesize
+  \begin{tabular}{ cccp{4cm} }
+    \hline
+    \hline
+    Categories                    & Barrel                             & EndCap 
+    & Description                         \\
+    \hline
+    % Conversion safe electron veto & Yes                                & Yes &
+% https://twiki.cern.ch/twiki/bin/viewauth/CMS/ConversionTools#Conversion_safe_electron_veto_fo  \\
+    Single Tower H/E              & 0.05                               & 0.05                               
+    & Ratio of energy deposited in the HCAL towers within $\Delta R<0.15$ of the ECAL 
+    supercluster, and the ECAL supercluster itself. \\
+    $\sigma_{i\eta i\eta}$        & 0.11                               & 0.31 & 
+    FIXME \\
+    PF charged hadron isolation   & 0.70                               & 0.50                               & \\
+    PF neutral hadron isolation   & 0.4 + 0.04 $\times$ $\Pt^{\gamma}$  & 1.5 + 0.04 $\times$ $\Pt^{\gamma}$&
+    PF-based isolation requirements to ensure no hadronic or electromagnetic 
+    activity with a cone defined by $\Delta R < 0.3$. RHO CORRECTION    \\
+    PF photon isolation           & 0.5 + 0.005 $\times$ $\Pt^{\gamma}$ & 1.0 + 0.005 $\times$ $\Pt^{\gamma}$& \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+%********************************** % Third Section  *************************************
+\section{Electrons}  %Section - 1.3
+\label{sec:objects_electrons}
+The Electron POGs Loose working point ID is used in this analysis to veto 
+electrons from all areas of the analysis. This cut based identification is 
+defined seperately for the barrel and endcap regions of the detector and is
+summarised in table~\ref{tab:ele-id}.
+
+\begin{table}[h!]
+  \caption{Electron identification (Loose working point).\label{tab:ele-id}}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lccp{8cm} }
+    \hline
+    \hline
+    Categories                                               & Barrel    & EndCap    & 
+    Description \\
+    \hline
+    $\Delta \eta_{In}$                                       & 0.007     & 0.009     & 
+    The difference between the track and ECAL supercluser in the $\eta$ dimension. \\
+    $\Delta \phi_{In}$                                       & 0.15      & 0.10      &
+    The difference between the track and ECAL supercluser in the $\phi$ dimension. \\
+    $\sigma_{i\eta i\eta}$                                   & 0.01      & 0.03      & 
+    The cluster shape covariance of the ECAL supercluster in the $\eta$ dimension. \\
+    H/E                                                      & 0.12      & 0.10      &
+    Ratio of energy deposited in the HCAL towers within $\Delta R<0.15$ of the ECAL 
+    supercluster, and the ECAL supercluster itself. \\
+    d0 (vtx)                                                 & 0.02      & 0.02      &
+    The [transverse] distance of the track from the PV. \\
+    dZ (vtx)                                                 & 0.2       & 0.20      &
+    The distance of the track from the PV in the $z$ dimension. \\
+    $\lvert(1/E_{\textrm{ECAL}} - 1/p_{\textrm{trk}})\rvert$ & 0.05      & 0.05      &
+    Comparison of the ECAL supercluster energy and the track \Pt. Suppresses low 
+    \Pt fakes. \\
+    PF relative isolation                                    & 0.15      & 0.15      &
+    FIXME \\
+    Vertex fit probability                                   & 10$^{-6}$ & 10$^{-6}$ &
+    FIXME \\
+    Missing hits                                             & 1         & 1         &
+    FIXME \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
 %********************************** % Sixth Section  *************************************
 \section{Energy Sums}  %Section - 1.6
