@@ -205,12 +205,26 @@ summarised in table~\ref{tab:ele-id}.
 %********************************** % Sixth Section  *************************************
 \section{Energy Sums}  %Section - 1.6
 \label{sec:objects_energy_sums}
+Physics objects are combined in the form of kinematic variables known as energy 
+sums. These are done on the fly in the analysis using identified objects, with
+the exception of \met which is constructed from PF objects and subject to type-I
+corrections (DEFINE).
 
+The definitions of the energy sum variables are:
 
-\subsection{ET}
-\subsection{HT}
-\subsection{MET}
-\subsection{MHT}
+\begin{equation}
+    \begin{split}
+    \Et = \sum_{i}^{\textrm{all objects}} \Pt_i\\
+    \met = -\sum_{i}^{\textrm{all objects}} \Pt_i\\
+    \HT = \sum_{i}^{\textrm{jets}} \Pt_i\\
+    \mht = -\sum_{i}^{\textrm{jets}} \Pt_i\\
+    \end{split}
+\label{eq:energy_sums}
+\end{equation}
+
+A full set of \met filters are defined by the MET-POG which account for various 
+physics and detector effects which can give un-physical or spurious \met 
+signals. EXPLICITLY LIST?
 
 %********************************** % Seventh Section  *************************************
 \section{Single Isolated Tracks}  %Section - 1.7
