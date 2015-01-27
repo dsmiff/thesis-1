@@ -229,5 +229,30 @@ signals. EXPLICITLY LIST?
 %********************************** % Seventh Section  *************************************
 \section{Single Isolated Tracks}  %Section - 1.7
 \label{sec:objects_sit}
-Selection criteria for a single isolated track - used later in the analysis for soft-lepton/
-had tau rejection
+Single Isolated Tracks are used to identify hadronically decaying $\tau$ leptons
+and leptonically decaying W bosons where the corresonding lepton has been
+unidentified for whatever reason. 
+The selection is based on particle flow candidates and is summarised in
+table~\ref{tab:sit-id}. The ID is used as a veto in all selections, with the 
+selected `tag' lepton ignored in the \mj and \mmj control selections. The ID 
+criteria are taken from SINGLE LEPTON SUSY ANALYSIS REFERENCE.
+
+\begin{table}[ht!]
+  \caption{Single Isolated Track identification.\label{tab:sit-id}}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcp{8cm} }
+    \hline
+    \hline
+    Varible & Requirment & Description \\
+    \hline
+    Charge                      & $\neq 0$      & Candidate is charged. \\
+    Track \Pt                   & $> 10 \gev$   & Track transverse momentum. \\
+    $\Delta z(track, PV)$       & $<0.05cm$     & Longitudinal distance of track 
+    from primary vertex. \\
+    Relative Track Isolation    & $<0.1$        & Isolation relative to other PF 
+    candidate tracks in cone of $\Delta R <0.3$ \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
