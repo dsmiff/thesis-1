@@ -64,6 +64,7 @@ Chapter 6
 Background est
 %%%%%%%%%%%%%%
 - introduction paragraph
+- section on HD sideband region
 - do section on MHTMET MJ background estimation
 - check what susy phase space screws MC normalisation
 - reword table and figure titles
