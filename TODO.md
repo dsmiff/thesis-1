@@ -36,6 +36,9 @@ entries
 - what is sigma_ietaieta?
 - add ID effs? probably should...
 - do rest of descriptions in the electron ID table
+- define type-I corrections for PFMet
+- find SIT ID ref for single lepton susy search
+- fix positioning of tables
 
 %%%%%%%%%%%%%%
 Chapter 5
