@@ -28,31 +28,29 @@ backgrounds from SM sources of both genuine \met [with associated jet production
 and fake \met, predominantly originating from jet mis-measurement. The \alphat 
 analysis makes predictions for the former using a data-driven transfer factor 
 technique to extrapolate yields from statistically independent control samples 
-into the signal region. However the latter, sources of fake \met predominantly 
-(entirely?) from QCD, are reduced to a negligible level using the kinematic 
+into the signal region. However the latter, sources of fake \met from QCD multijet events,
+are reduced to a negligible level using the kinematic 
 variable \alphat, as described in section~\ref{sec:alphat}.
 
 The main analysis signal region is described in the remainder of this chapter,
-with background prediction techniques described in detail later in
-chapter~\ref{ch:6}.
+with background prediction techniques detailed later in chapter~\ref{ch:6}.
 
 
 \subsection{The AlphaT kinematic variable}
 \label{sec:alphat}
 
 QCD multijet events dominate the SM background in any search with multiple jets 
-in the final state, and 
-so each analysis must find a way to account for this (???). Jet mis-measurements in a 
+in the final state. Jet mis-measurements in a 
 purely QCD multijet event can lead to non-negligible amounts of \mht, and will 
 therefore pass the signal selection. 
-Other analyses attempt
-to measure the contribution with very small associated errors. This is however 
+Some analyses attempt
+to measure this contribution with very small associated errors. This is however 
 made very difficult given the hadronic environment of the LHC, and the lack of 
-precise measurements and calculations of multijet cross sections. As an 
+precise measurements and calculations of large multijet cross sections. As an 
 alternative approach, the goal of the 
-\alphat analysis is to reduce QCD down to an entirely negligible level so that 
-it can be removed entirely from the analysis. This is 
-achieved with the novel kinematic variable, \alphat, defined for dijets as [REF]:
+\alphat analysis is to reduce QCD down to an entirely negligible level such that 
+it can be removed entirely from consideration within the analysis. This is 
+achieved with the novel kinematic variable, \alphat [REF], defined for dijets as:
 
 \begin{equation}
 \alphat = \frac{E_T^{j_2}}{M_T}
@@ -60,7 +58,7 @@ achieved with the novel kinematic variable, \alphat, defined for dijets as [REF]
 \end{equation}
 
 where $E_T^{j_2}$ is the transverse energy of the less energetic jet and $M_T$ 
-is the transverse mass of the dijet system, defined as (MAKE BRACKETS BIGGER!):
+is the transverse mass of the dijet system, defined as:
 
 \begin{equation}
 M_T = \sqrt{\bigg(\sum^2_{i=1}{E_T^{j_i}}\bigg)^2 - \bigg(\sum^2_{i=1}{p_x^{j_i}}\bigg)^2 - \bigg(\sum^2_{i=1}{p_y^{j_i}}\bigg)^2}
@@ -70,16 +68,16 @@ M_T = \sqrt{\bigg(\sum^2_{i=1}{E_T^{j_i}}\bigg)^2 - \bigg(\sum^2_{i=1}{p_x^{j_i}
 where $E_T^{j_i}$, $p_x^{j_i}$ and $p_y^{j_i}$ are the transverse energy and 
 transverse momentum in the x and y plane, for the jet $j_i$.
 
-A perfectly measured dijet that contains back to back jets in $\phi$ will have an
+A perfectly measured dijet event that contains back to back jets in $\phi$ will have an
 \alphat value of 0.5, whereas 
-events containing \mht from jet mis-measurements will have values of $\alphat<0.5$.
-Events
-containing processed with sources of genuine \met, whether from SM or SUSY 
+events with \mht originating from jet mis-measurements will have values of $\alphat<0.5$.
+Furthermore, events
+containing sources of genuine \met, whether from SM or SUSY 
 sources, have values of $\alphat > 0.5$. 
 
-The \alphat variable can be generalised to an n-jet case by constructing a 
-pseudo-dijet event, constructing each pseudo-jet such that the difference in \HT
-between the two pseudo-jets, \deltaHT, is minimised. \alphat then takes the 
+The \alphat variable can be generalised to an n-jet case by considering the event as a 
+pseudo-dijet system, constructing each pseudo-jet such that the difference in \HT
+between them, \deltaHT, is minimised. \alphat then takes the 
 form:
 
 \begin{equation}
@@ -100,33 +98,32 @@ LOADS MORE
 % Introduce that QCD is a dominant background due to jet mis-measurement.
 
 This section outlines the relevant background sources of this analysis, and
-then goes on to describ ebasic hadronic pre-selection made for the signal 
-region considered, as well as the relevant trigger requirements and data and 
+describes the basic hadronic pre-selection made for the signal 
+region, as well as the relevant trigger requirements and data and 
 montecarlo samples used.
 
 \subsection{SM Backgrounds}
-Following the generic hadronic signal region selection criteria described in 
-Section~\ref{sec:selec_crit}, remaining SM backgrounds are divided into two 
-categories, as described in the following sections.
+SM backgrounds are subdivided into two categories, sources of genuine and fake 
+missing energy.
 
 \subsubsection{Genuine EWK MET}
-While the lepton and photon vetoes employed in the signal region surpress 
+While lepton and photon vetoes employed in the signal region surpress 
 significant amounts of background from events with neutrinos, such events can 
 still persist if, for example, the lepton is not identified.
-Examples of such processes are \ttbar or W-boson production, where the 
-W decays via \wlnu. If the lepton is `lost' and therefore evades our 
-lepton vetoes significant missing energy can be produced not only from missing 
-the lepton, but from the presence of the neutrino. When such processed are accompanied 
+Such processes are predominantly from \ttbar or W-boson production, where the 
+W decays via \wlnu. If the lepton is `lost' and evades our 
+lepton vetoes, significant missing energy can be produced not only from missing 
+the lepton, but from the presence of the neutrino. When such processes are accompanied 
 by associated jet production they are then able to pass our signal region selection.
 
 Leptons can be `lost' for a variety different reasons, but ultimately for failing
-our lepton ID criteria. This can be for a number of different reasons, with the 
+the lepton ID criteria. There are numerous potential causes, the 
 most prevelant being soft-leptons below ID threshold or non-isolated leptons 
 which pass the ID quality cuts but fail the isolation requirement.
 
 SHOW TABLE WITH THE BACKGROUND BREAKDOWN - PUT INTO GRAPHICAL FORM?
 
-It is possible to reduce lost-lepton backgrounds by vetoing events contain a single 
+Lost lepton backgrounds can be further reduced by vetoing events containing a single 
 isolated track (SIT) in the tracker, as defined in Section~\ref{sec:objects_sit}. TALK 
 MORE ABOUT THIS CUT!
 
@@ -165,8 +162,8 @@ QCD MJ events can also appear to contain non-zero missing energy at the analysis
 level due to the threshold requirements of jet objects. If an event contains 
 one or more jets below the threshold at which they are considered, then it is 
 possible for such topologies to produce \mht. Events such as these are also 
-removed with the \alphat requirement, however in addition the ratio \mhtmet is 
-required to be less than 1.25.
+removed with the \alphat requirement, however in addition a requirement is made on the
+ratio \mhtmet.
 
 DESCRIBE AN OUTLINE OF THE QCD PREDICTION METHOD AND HOW WE CAN THEN CLAIM IT'S 
 NEGLIGIBLE AFTER ALL OF THE ABOVE
@@ -176,10 +173,10 @@ NEGLIGIBLE AFTER ALL OF THE ABOVE
 As introduced earlier, the signature considered by this analysis is that of 
 mutliple jets and \met. Therefore, in the so-called `hadronic' signal region we 
 require at least 2 jets and that this topology has a value of \alphat greater than
-at least 0.55. While no absolute \met requirement is made, the requirement on 
-\alphat imposes an implied requirement, which allows us to maintain 
+at least 0.55. While no absolute \met requirement is made, the cut on 
+\alphat imposes an implied threshold, which allows us to maintain 
 sensitivity to much lower regions in \met than other analyses are able to 
-probe. Events are required to have at least $\HT > 200$\gev so significant
+probe. Events are also required to have at least $\HT > 200$\gev so significant
 hadronic activity is present.
 
 We veto the presence of any leptonic or 
@@ -239,6 +236,10 @@ as shown in Table~\ref{tab:jet_pt_thresholds}.
     \hline
   \end{tabular}
 \end{table}
+
+VALUE OF MHTMET THRESHOLD HERE
+
+DETAILS ON DEADECAL FILTER (INCLUDING DPHISTAR EXPLANATION)
 
 \subsection{Signal Triggers}
 
