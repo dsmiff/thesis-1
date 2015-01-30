@@ -147,11 +147,13 @@ BRIEFLY MENTION THE PF-BASED RHO PU CORRECTIONS
     supercluster, and the ECAL supercluster itself. \\
     $\sigma_{i\eta i\eta}$        & 0.11                               & 0.31 & 
     FIXME \\
+    &&&\multirow{5}{4cm}{PF-based isolation requirements to ensure no hadronic or electromagnetic 
+    activity with a cone defined by $\Delta R < 0.3$. RHO CORRECTION}\\
     PF charged hadron isolation   & 0.70                               & 0.50                               & \\
     PF neutral hadron isolation   & 0.4 + 0.04 $\times$ $\Pt^{\gamma}$  & 1.5 + 0.04 $\times$ $\Pt^{\gamma}$&
-    PF-based isolation requirements to ensure no hadronic or electromagnetic 
-    activity with a cone defined by $\Delta R < 0.3$. RHO CORRECTION    \\
+    \\
     PF photon isolation           & 0.5 + 0.005 $\times$ $\Pt^{\gamma}$ & 1.0 + 0.005 $\times$ $\Pt^{\gamma}$& \\
+    \\
     \hline
     \hline
   \end{tabular}
@@ -214,10 +216,10 @@ The definitions of the energy sum variables are:
 
 \begin{equation}
     \begin{split}
-    \Et = \sum_{i}^{\textrm{all objects}} \Pt_i\\
-    \met = -\sum_{i}^{\textrm{all objects}} \Pt_i\\
-    \HT = \sum_{i}^{\textrm{jets}} \Pt_i\\
-    \mht = -\sum_{i}^{\textrm{jets}} \Pt_i\\
+    \Et = \sum_{i}^{\textrm{all objects}} |\Ptvect_i|\\
+    \met = -\big|\sum_{i}^{\textrm{all objects}} \Ptvect_i\big|\\
+    \HT = \sum_{i}^{\textrm{jets}} |\Ptvect_i|\\
+    \mht = -\big|\sum_{i}^{\textrm{jets}} \Ptvect_i\big|\\
     \end{split}
 \label{eq:energy_sums}
 \end{equation}
