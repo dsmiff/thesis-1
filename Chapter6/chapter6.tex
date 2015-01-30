@@ -52,7 +52,7 @@ The predictions made using this technique alone are considered as ``na\"{i}ve''
 predictions and are only used in analysis development and the derivation of 
 background systematics. In order to determine final yields for use in interpretation and 
 limit-setting, a fit is made across all signal and control regions, using the 
-full likelihood model, as described later in chapter~REF. For this, the derived 
+full likelihood model, as described later in chapter~\ref{ch:7}. For this, the derived 
 transfer factors and individual yields enter as terms in the likelihood, where 
 all related systematics, potential correlations and signal contamination are
 accounted for in the fit. 
@@ -327,11 +327,55 @@ $\Pt > 165\gev$ and $|\eta|<1.45$. In addition, events are vetoed if
 $\Delta R(\gamma, jet_i)<1.0$ is satisfied, for all of the events $i$ jets.
 
 
-\subsection{jets}
-Overview
-Targetted backgrounds
+\subsection{Multijet}
+In order to predict the contamination of QCD MJ events in the signal region a 
+control region of hadronic events is constructed.
+
 \subsubsection{Triggers}
+Events are collected using a suite of triggers requiring various thresholds of 
+\HT. The high rates expected through these triggers were maintained throughout 
+the 2012 run with a variety of prescales. Each trigger seeds a single \HT bin in
+the analysis, with a 25\gev offset between the online trigger requirement and 
+the offline threshold. Efficiencies are measured with the same technique as the
+signal triggers, using the \verb!HLT_IsoMu24_eta2p1! trigger as a reference. 
+The efficiencies of these triggers are summarised in table~\ref{tab:ht-triggers}.
+
+\begin{table}[!ht]
+  \caption{List of \texttt{HTxxx} triggers and their efficiencies
+    (\%), as measured in data. For the ``\HT leg signal
+    eff.'' columns, see text for further details. REWORD}
+  \label{tab:ht-triggers}
+  \centering
+  \tiny
+  \begin{tabular}{ ccccllll }
+    \hline
+    \hline
+    Offline \HT & L1 seed (\verb!L1_?!) & Trigger (\verb!HLT_?!) &    Typical & \multicolumn{2}{c}{Efficiency (\%)} &    \multicolumn{2}{c}{\HT leg signal eff. (\%)} \\ [0.5ex]
+   region (\gev) & (highest thresholds) &  & prescale & \multicolumn{1}{c}{$2 \leq \nj \leq 3$} & \multicolumn{1}{c}{$\nj \geq 4$} & \multicolumn{1}{c}{$2 \leq \nj \leq 3$} & \multicolumn{1}{c}{$\nj \geq 4$} \\ [0.5ex]
+
+    \hline
+    $200 < \HT < 275$  & \verb!DoubleJetC64!           & \verb!HT250! & 4800     & $\phantom{1}66.4 \pm 14.1$                & $154.3 \pm 154.3$                     & $\phantom{1}81.9 \pm \phantom{1}0.4$ & $\phantom{1}88.5 \pm \phantom{1}0.4$ \\
+    $275 < \HT < 325$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT250! & 2400     & $\phantom{1}97.3 \pm 23.0$                & $\phantom{1}91.7 \pm \phantom{1}53.1$ & $\phantom{1}95.2 \pm \phantom{1}0.4$ & $\phantom{1}93.8 \pm \phantom{1}1.2$ \\
+    $325 < \HT < 375$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT300! & 1200     & $\phantom{1}79.5 \pm 20.6$                & $198.1 \pm \phantom{1}81.2$           & $\phantom{1}98.0 \pm \phantom{1}0.3$ & $\phantom{1}95.9 \pm \phantom{1}1.2$ \\
+    $375 < \HT < 475$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT350! & 600      & $108.7 \pm 18.7$                          & $\phantom{1}54.5 \pm \phantom{1}31.6$ & $\phantom{1}99.5 \pm \phantom{1}0.2$ & $\phantom{1}99.4 \pm \phantom{1}0.4$ \\
+    $475 < \HT < 575$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT450! & 150      & $110.6 \pm 15.9$                          & $106.4 \pm \phantom{1}26.8$           & $100.0 \pm \phantom{1}0.3$ & $100.0 \pm \phantom{1}1.1$ \\
+    $575 < \HT < 675$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT550! & 70       & $\phantom{1}96.1 \pm 14.7$                & $104.4 \pm \phantom{1}23.1$           & $100.0 \pm \phantom{1}1.0$ & $100.0 \pm \phantom{1}2.5$ \\
+    $675 < \HT < 775$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT650! & 25       & $\phantom{1}94.3 \pm 15.4$                & $101.2 \pm \phantom{1}21.5$           & $100.0 \pm \phantom{1}3.4$ & $100.0 \pm \phantom{1}9.8$ \\
+    $775 < \HT < 875$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT750! & 1        & $\phantom{1}96.9 \pm \phantom{1}6.1$      & $\phantom{1}94.4 \pm \phantom{11}8.3$ & $100.0 \pm \phantom{1}7.1$ & $100.0 \pm 53.5$ \\
+    $875 < \HT < 975$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT750! & 1        & $100.0 \pm \phantom{1}8.4$                & $100.0 \pm \phantom{1}12.6$           & $100.0 \pm 19.8$ & $100.0 \pm 60.0$ \\
+    $975 < \HT < 1075$ & \verb!DoubleJetC64 OR HTT175! & \verb!HT750! & 1        & $100.0 \pm 11.2$                          & $100.0 \pm \phantom{1}15.3$           & $100.0 \pm 30.0$ & $100.0 \pm 70.0$ \\
+    $\HT > 1075$       & \verb!DoubleJetC64 OR HTT175! & \verb!HT750! & 1        & $100.0 \pm 15.0$                          & $100.0 \pm \phantom{1}22.9$           & $100.0 \pm 40.0$ & $100.0 \pm 80.0$ \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
 \subsubsection{Selection Criteria}
+The selection of this sample matches that of the hadronic signal region, with 
+the exception that both the \alphat and \mhtmet requirements are removed. This 
+selection ensures a very high number of QCD events with respect to the signal 
+region.
+
 
 \subsection{HT sideband normalisation}
 As mentioned previously in section~\ref{sec:mc_xsec_corrs}, absolute MC 
