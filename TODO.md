@@ -29,8 +29,7 @@ Detector
 Chapter 4
 Objects
 %%%%%%%%%%%%%%
-- fix photon table - make pf description fit centrally across all 3 PF iso 
-entries
+- fix photon table - make pf description fit in table
 - look up and describe rho PU corrections
 - placeholders and entries for references
 - what is sigma_ietaieta?
