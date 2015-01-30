@@ -154,19 +154,15 @@ systems, or due to stochastic fluctuations within the jet-resolution of the
 detector. The former is protected against using a `dead ECAL filter', where 
 events are vetoed if they contain significant energy deposits within a given 
 distance from areas of the calorimeter system known to be either dead or 
-damaged. The latter is dealt with using a cut on the \alphat variable where, as described
-earlier in section~\ref{sec:alphat}, as events with fake missing energy signatures
-give values $<0.5$.
+damaged. The latter is dealt with using a cut on the \alphat variable where 
+events with fake missing energy signatures give values $<0.5$.
 
-QCD MJ events can also appear to contain non-zero missing energy at the analysis
-level due to the threshold requirements of jet objects. If an event contains 
-one or more jets below the threshold at which they are considered, then it is 
-possible for such topologies to produce \mht. Events such as these are also 
+QCD MJ events can also appear to contain non-zero missing energy 
+due to the threshold requirements of jets. If an event contains 
+one or more jets below the threshold at which they are considered, then the 
+event becomes imbalanced and will contain \mht. Events such as these are largely 
 removed with the \alphat requirement, however in addition a requirement is made on the
 ratio \mhtmet.
-
-DESCRIBE AN OUTLINE OF THE QCD PREDICTION METHOD AND HOW WE CAN THEN CLAIM IT'S 
-NEGLIGIBLE AFTER ALL OF THE ABOVE
 
 \subsection{Selection Criteria}
 \label{sec:selec_crit}
@@ -236,6 +232,9 @@ as shown in Table~\ref{tab:jet_pt_thresholds}.
     \hline
   \end{tabular}
 \end{table}
+
+ALPHAT THRESHOLD CHOSEN SUCH THAT QCD CONTAMINATION IS NEGLIGIBLE WRT EWK 
+BACKGROUNDS
 
 VALUE OF MHTMET THRESHOLD HERE
 
