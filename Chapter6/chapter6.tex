@@ -248,7 +248,7 @@ trigger efficiencies are slightly improved given that either of the muons
 present can cause the positive trigger decision. The trigger efficiencies
 for the \mmj selection are summarised in table~\ref{tab:dimuon-trig-effs}.
 
-\begin{table}[!h]
+\begin{table}[!ht]
   \caption{Muon trigger efficiencies (\%). Statistical uncertainties
     are at the per-mille level, while a relative systematic
     uncertainty on all measurements is assumed to be 1\%. REWORD}
@@ -376,7 +376,6 @@ the exception that both the \alphat and \mhtmet requirements are removed. This
 selection ensures a very high number of QCD events with respect to the signal 
 region.
 
-
 \subsection{HT sideband normalisation}
 As mentioned previously in section~\ref{sec:mc_xsec_corrs}, absolute MC 
 normalisation has always been mis-modelled in the high-\met (CHECK) region of 
@@ -429,8 +428,101 @@ developed to determine the necessary \alphat requirement, per \HT bin,
 such that QCD is at the sub-percent level with respect to the total EWK 
 background.
 
-\subsection{MHT/MET sideband}
-Describe method here.
+Events from the hadronic control sample are used to populate a plane of \mhtmet 
+vs \alphat. A prediction of the EWK contribution to this sample is determined 
+from the \mj control sample with the \mhtmet requirement removed, using the TF 
+factor method described in section~\ref{sec:background_overview}. This is 
+subtracted from the hadronic control sample yields as a function of \mhtmet and
+\alphat, subsequently leaving a very pure sample of QCD MJ events (SHOW PLOTS?).
+By considering events both above and below the nominal \mhtmet threshold of
+1.25, the ratio \rmhtmet is constructed, defined as:
+
+\begin{equation}
+\label{eq:rmhtmet}
+\rmhtmet = \frac{N(\mhtmet<1.25)}{N(\mhtmet>1.25)}
+\end{equation}
+
+A fit is made to this variable as a function of \alphat, using an exponential 
+functional form:
+
+\begin{equation}
+\label{eq:fit_exp}
+\rmhtmet(\alphat) = e^{{-(a+b.\alphat)}^n}
+\end{equation}
+
+where fits are made for $n=0$ and also where $n$ is allowed to float as a free 
+parameter within the range $0-2$ in order to span the range from flat to a 
+gaussian form. Example distributions and fits are shown in FIGURE.
+
+Subsequent predictions are made and compared with the relevant EWK background 
+contributions in table~\ref{tab:qcd-pred-data}. \alphat thresholds are chosen 
+for each \HT bin such that the ratio of QCD to EWK is at the sub-percent level. 
+The chosen \alphat threshold values are summarised in
+table~\ref{tab:alphat_thresholds_qcd}.
+
+\begin{table}[h!]
+\centering
+\scriptsize
+\caption{Summary of the predicted QCD multijet background contribution
+  and, for comparison, the expected non-multijet (EWK) background
+  contribution and the ratio (QCD/EWK) as determined in data for
+  events satisfying the various \nj, \nb, \HT, and \alphat
+  threshold requirements. For each QCD prediction, the value quoted
+  is (expected $\pm$ stat. $\pm$ syst.) while for the EWK prediction,
+  the uncertainty comprises both stat. and syst. components. REWORD}
+\label{tab:qcd-pred-data}
+\begin{tabular}{ccccrrr}
+\hline
+\hline
+\nj & \nb & \HT (GeV) & Bkgd & \multicolumn{3}{c}{\alphat threshold} \\
+\cline{5-7}
+ & & & & \multicolumn{1}{c}{0.550}   & \multicolumn{1}{c}{0.600}   & \multicolumn{1}{c}{0.650} \\
+\hline
+2--3 & 0 & 200--275 & QCD  & $\left(3.8 \pm 1.3 \pm 1.2 \right) \times 10^{3}$ & $\left(4.1 \pm 2.4 \pm 3.0 \right) \times 10^{1}$ & $\left(0.9 \pm 0.8 \pm 1.5 \right) \times 10^{0}$\\
+2--3 & 0 & 200--275 & EWK  & $\left(2.1 \pm 0.1\right) \times 10^{4}$ & $\left(1.5 \pm 0.0\right) \times 10^{4}$ & $\left(1.2 \pm 0.0\right) \times 10^{4}$\\
+2--3 & 0 & 200--275 & Ratio  & $0.2 \pm 0.1$ & $0.003 \pm 0.003$ & $0.0001 \pm 0.0001$\\ [1.0ex]
+2--3 & 0 & 275--325 & QCD  & $\left(1.0 \pm 0.3 \pm 1.5 \right) \times 10^{4}$ & $\left(0.2 \pm 0.1 \pm 0.7 \right) \times 10^{0}$ & $\left(0.8 \pm 0.3 \pm 4.8 \right) \times 10^{-3}$\\
+2--3 & 0 & 275--325 & EWK  & $\left(7.9 \pm 0.2\right) \times 10^{3}$ & $\left(5.3 \pm 0.2\right) \times 10^{3}$ & $\left(4.0 \pm 0.2\right) \times 10^{3}$\\
+2--3 & 0 & 275--325 & Ratio  & $1 \pm 2$ & $0.0000 \pm 0.0001$ & $\left(0 \pm 1\right) \times 10^{-6}$\\ [1.0ex]
+2--3 & 0 & 325--375 & QCD  & $\left(2.8 \pm 0.4 \pm 2.1 \right) \times 10^{1}$ & $\left(0.9 \pm 0.2 \pm 1.3 \right) \times 10^{-1}$ & $\left(0.6 \pm 0.4 \pm 1.2 \right) \times 10^{-3}$\\
+2--3 & 0 & 325--375 & EWK  & $\left(3.4 \pm 0.1\right) \times 10^{3}$ & $\left(2.2 \pm 0.1\right) \times 10^{3}$ & $\left(1.7 \pm 0.1\right) \times 10^{3}$\\
+2--3 & 0 & 325--375 & Ratio  & $0.008 \pm 0.006$ & $\left(4 \pm 6\right) \times 10^{-5}$ & $\left(4 \pm 8\right) \times 10^{-7}$\\ [1.0ex]
+$\geq 4$ & 0 & 200--275 & QCD  & $\left(2.8 \pm 1.5 \pm 1.3 \right) \times 10^{3}$ & $\left(1.1 \pm 0.7 \pm 0.2 \right) \times 10^{1}$ & $\left(0.2 \pm 0.2 \pm 0.0 \right) \times 10^{0}$\\
+$\geq 4$ & 0 & 200--275 & EWK  & $\left(4.3 \pm 0.3\right) \times 10^{2}$ & $\left(2.0 \pm 0.1\right) \times 10^{2}$ & $\left(1.0 \pm 0.1\right) \times 10^{2}$\\
+$\geq 4$ & 0 & 200--275 & Ratio  & $7 \pm 5$ & $0.06 \pm 0.04$ & $0.002 \pm 0.002$\\ [1.0ex]
+$\geq 4$ & 0 & 275--325 & QCD  & $\left(1.5 \pm 1.2 \pm 1.0 \right) \times 10^{4}$ & $\left(1.5 \pm 1.7 \pm 0.3 \right) \times 10^{0}$ & $\left(0.1 \pm 0.2 \pm 0.0 \right) \times 10^{-1}$\\
+$\geq 4$ & 0 & 275--325 & EWK  & $\left(1.2 \pm 0.0\right) \times 10^{3}$ & $\left(5.3 \pm 0.2\right) \times 10^{2}$ & $\left(2.9 \pm 0.1\right) \times 10^{2}$\\
+$\geq 4$ & 0 & 275--325 & Ratio  & $\left(1 \pm 1\right) \times 10^{1}$ & $0.003 \pm 0.003$ & $\left(4 \pm 7\right) \times 10^{-5}$\\ [1.0ex]
+$\geq 4$ & 0 & 325--375 & QCD  & $\left(0.7 \pm 0.1 \pm 0.8 \right) \times 10^{0}$ & $\left(2.5 \pm 0.6 \pm 6.5 \right) \times 10^{-5}$ & $\left(0.7 \pm 0.3 \pm 2.8 \right) \times 10^{-8}$\\
+$\geq 4$ & 0 & 325--375 & EWK  & $\left(4.8 \pm 0.3\right) \times 10^{2}$ & $\left(2.0 \pm 0.1\right) \times 10^{2}$ & $\left(1.1 \pm 0.1\right) \times 10^{2}$\\
+$\geq 4$ & 0 & 325--375 & Ratio  & $0.002 \pm 0.002$ & $\left(1 \pm 3\right) \times 10^{-7}$ & $\left(1 \pm 3\right) \times 10^{-10}$\\ [1.0ex]
+%2--3 & $\geq 1$ & 200--275 & QCD  & $\left(2.2 \pm 1.1 \pm 4.5 \right) \times 10^{2}$ & $\left(0.5 \pm 0.2 \pm 3.2 \right) \times 10^{0}$ & $\left(0.3 \pm 0.1 \pm 4.5 \right) \times 10^{-2}$\\
+%2--3 & $\geq 1$ & 200--275 & EWK  & $\left(3.7 \pm 0.1\right) \times 10^{3}$ & $\left(2.5 \pm 0.1\right) \times 10^{3}$ & $\left(1.9 \pm 0.1\right) \times 10^{3}$\\
+%2--3 & $\geq 1$ & 200--275 & Ratio  & $0.1 \pm 0.1$ & $0.000 \pm 0.001$ & $\left(0 \pm 2\right) \times 10^{-5}$\\ [1.0ex]
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!h]
+  \caption{\alphat thresholds for each analysis \HT bin as determined from the 
+  QCD MJ prediction method, such that QCD is at the sub-percent level.}
+  \label{tab:alphat_thresholds_qcd}
+  \centering
+  \footnotesize
+  \begin{tabular}{ cc }
+    \hline
+    \hline
+    \HT (GeV) & \alphat threshold \\ [0.5ex]
+                                       
+    \hline
+    200--275  & 0.65 \\
+    275--325  & 0.60 \\
+    >325  & 0.55 \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
 %********************************** % Fourth Section  *************************************
 \section{Naive predictions from Transfer Factors}  %Section - 1.4
