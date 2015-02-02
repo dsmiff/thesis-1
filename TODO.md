@@ -29,7 +29,8 @@ Detector
 Chapter 4
 Objects
 %%%%%%%%%%%%%%
-- fix photon table - make pf description fit in table
+- look up and briefly describe jet corrections.
+- look up delatBeta corrections 
 - look up and describe rho PU corrections
 - placeholders and entries for references
 - what is sigma_ietaieta?
@@ -37,7 +38,6 @@ Objects
 - do rest of descriptions in the electron ID table
 - define type-I corrections for PFMet
 - find SIT ID ref for single lepton susy search
-- fix positioning of tables
 
 %%%%%%%%%%%%%%
 Chapter 5
@@ -63,8 +63,8 @@ Chapter 6
 Background est
 %%%%%%%%%%%%%%
 - introduction paragraph
-- section on HD sideband region
-- do section on MHTMET MJ background estimation
+- MJ background estimation systematics???
+- final column in prescaled trig eff table???
 - check what susy phase space screws MC normalisation
 - reword table and figure titles
 - add some more detail on level of closure from const and linear fit results
