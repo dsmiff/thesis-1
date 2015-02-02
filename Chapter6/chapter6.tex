@@ -175,10 +175,10 @@ data-taking period. The efficiency of this trigger was measured by the muon POG
 using a tag-and-probe method [REF], in bins of the muon \Pt and $\eta$, as summarised 
 in table~\ref{tab:muon-trig-effs}. Statistical undertainties are at the per-
 mille level, and systematics are assumed to be 1\%.
-[mention non-dependency on HT?]
 
 \begin{table}[!h]
-  \caption{Muon trigger efficiencies (\%) listed by \HT bin and \nj category.}
+  \caption{Muon trigger efficiencies (\%) for the \mj selection listed by \HT bin and
+  \nj category.}
   \label{tab:muon-trig-effs}
   \centering
   \footnotesize
@@ -217,37 +217,38 @@ mille level, and systematics are assumed to be 1\%.
 
 \subsubsection{Selection Criteria}
 \label{sec:mujets_control_selection}
-A single tight isolated muon is selected, with \Pt > 30\gev and $|\eta| <$2.1, 
-with the thresholds chosen due to trigger requirements. The transverse mass
-of the W, reconstructed by the 
+A single tight isolated muon is selected, with \Pt > 30\gev and $|\eta| <$2.1.
+The transverse mass of the W, reconstructed by the 
 $\mu$ and the \met (originating from the $\nu_{\mu}$), is required to be in a 
-loose window around $m_W$, $30 < M(\mu, \met) < 125\gev$, in order to surpress 
-QCD mutlijet contributions. Events are vetoed if $\Delta R(\mu, jet_{i}) < 0.5$,
+loose window around $m_W$, $30 < M(\mu, \met) < 125\gev$. Events are vetoed if
+$\Delta R(\mu, jet_{i}) < 0.5$,
 for all jets $i$ in the event. To keep the selection as close to the signal 
 region as possible, other cuts such as the single isolated track veto and 
 \mhtmet cuts are also applied.
 
 Specifically for the \mj (and \mmj) control samples, no \alphat requirement is
 made in order to increase the statistics and therefore the predictive power of 
-the samples. This is possible as the other requirements, in particular the 
+the samples. This is possible as other requirements, in particular the 
 requirement of
 a single muon and a specific invariant mass window, greatly reduce any potential
-contamination from QCD MJ events. The ability to do this is specifically tested, 
-in a dedicated closure test as described later in section~\ref{sec:closure_tests}.
+contamination from QCD MJ events. The viability of this is specifically tested 
+by a dedicated closure test, described later in section~\ref{sec:closure_tests}.
+
 
 \subsection{mumu + jets}
 The \mmj sample is constructed to predict background contributions from \zinv 
-decays, mimicking this decay via the $Z\to\mu\mu + jets$ process where both 
-muons are subsequently ignored, which is kinematically very similar.
+decays, mimicking this decay via the kinematically similar $Z\to\mu\mu + jets$
+process where both muons are subsequently ignored.
 The sample is used to provide low \HT coverage for the \zinv background 
 prediction, where the \gj sample is unable to do so.
 
 \subsubsection{Triggers}
 The trigger used is the same as for the \mj sample, as described in
-section~\ref{sec:mujets_control_trigger}. For the dimuon selection, however, 
-trigger efficiencies are slightly improved given that either of the muons 
-present can cause the positive trigger decision. The trigger efficiencies
-for the \mmj selection are summarised in table~\ref{tab:dimuon-trig-effs}.
+section~\ref{sec:mujets_control_trigger}. Trigger efficiencies are slightly
+improved for the dimuon selection given that either of the muons 
+can cause a positive trigger decision. The trigger efficiencies
+for the \mmj selection are summarised in table~\ref{tab:dimuon-trig-effs}. 
+Relative errors are considered the same as for the \mj trigger efficiencies.
 
 \begin{table}[!ht]
   \caption{Muon trigger efficiencies (\%) for the \mmj selection listed by
@@ -283,22 +284,23 @@ The selection for the \mmj sample is very similar to that of the \mj sample,
 described in section~\ref{sec:mujets_control_selection}, with differences chosen
 to enrich the sample in Z bosons decaying to pairs of muons in the kinematic 
 phase space of the signal region. Two tight isolated muons are selected, each 
-with $\Pt > 30\gev$ and $|\eta| < 2.1$, and their invariant mass is chosen to be
+with $\Pt > 30\gev$ and $|\eta| < 2.1$. Their invariant mass is chosen to be
 tight around $m_Z$, $m_Z - 25 < M_{\mu_1\mu_2} < m_Z + 25 \gev$. Furthermore, a 
 veto is made on events satisfying $\Delta R(\mu_i, jet_j) < 0.5$, for every muon 
 $i$ and every jet $j$. Similarly as in the \mj sample selection, no \alphat
 requirement is made.
 
+
 \subsection{photon + jets}
 The \gj sample is used to predict the \zinv background contribution, given it's 
 similar kinematics when the $\gamma$ is ignored from the event, and larger 
-production cross section relative to \mmj. Given the trigger thresholds, the \gj
+production cross section relative to \mmj. Due to trigger thresholds, the \gj
 sample cannot make predictions for $\HT<375\gev$, and so is complimentarily used
 alongside the \mmj sample prediction.
 
 \subsubsection{Triggers}
 Events are collected using the \verb!HLT_Photon150! trigger. The trigger's 
-efficiency is measured using the \verb!HLT_Photon90! trigger as a reference, and
+efficiency is measured using the \verb!HLT_Photon90! trigger as a reference and
 is found to be 100$\%$ efficient for $E_T^{photon}>165\gev$ and $\HT>375\gev$, 
 as shown by the turn on curves in figure~
 
@@ -370,6 +372,8 @@ The efficiencies of these triggers are summarised in table~\ref{tab:ht-triggers}
   \end{tabular}
 \end{table}
 
+WHAT IS THIS FINAL COLUMN?
+
 \subsubsection{Selection Criteria}
 The selection of this sample matches that of the hadronic signal region, with 
 the exception that both the \alphat and \mhtmet requirements are removed. This 
@@ -378,13 +382,13 @@ region.
 
 \subsection{HT sideband normalisation}
 As mentioned previously in section~\ref{sec:mc_xsec_corrs}, absolute MC 
-normalisation has always been mis-modelled in the high-\met (CHECK) region of 
-phase-space that SUSY analyses search in. As such, data and MC appear to
+normalisation is not well modelled in the high-\met (CHECK) region of 
+phase-space in which many SUSY analyses search. As such, data and MC appear to
 disagree using `out-of-the-box' MC samples and cross-sections. While data and MC
 comparisons are not explicitly used in this analysis, ratios of MC yields are, 
-and so a sideband in \HT is used to extract a cross-section correction factor for the main 
-MC processes. Correction factors are determined by the data to MC ratio in the $
-150 \leq \HT < 200 \gev$ sideband region, in a given control sample with a 
+and so cross-section correction factors for the main 
+MC processes are determined. These are measured as the data to MC ratio in the
+$150 \leq \HT < 200 \gev$ sideband region, in a given control sample with a 
 given selection, designed to produce a pure sample of a background process. A
 summary of the selections and their relevant purities are given in table~\ref{tab:ht_sideband}.
 
@@ -399,15 +403,15 @@ summary of the selections and their relevant purities are given in table~\ref{ta
   \label{tab:ht_sideband}
   \centering
   \scriptsize
-  \begin{tabular}{ llcccc }
+  \begin{tabular}{ llcc }
     \hline
     \hline
-    Process                       & Selection                         & Purity & Corrected yield & MC expectation      & Correction factor        \\
+    Process                       & Selection                         & Purity & Correction factor        \\
     \hline
-    W + jets                      & \mj, \njlow, $\nb = 0$          & 0.91   & 25737           & $27529.0 \pm 350.7$ & $0.93 \pm 0.01$ \\
-    Z($\rightarrow\mu\mu$) + jets & \mmj, \njlow, $\nb = 0$         & 0.98   & 1826            & $1947.3 \pm 59.5$   & $0.94 \pm 0.04$ \\
-%    \ttbar                       & \mj, $\nj \geq 2$, $\nb \geq 2$ & 0.73   & 505             & $404.3 \pm 6.6$     & $1.25 \pm 0.05$ \\
-    \ttbar                        & \mj, $\nj \geq 2$, $\nb \geq 2$ & 0.87   & 583             & $482.0 \pm 7.3$     & $1.21 \pm 0.05$ \\ % includes single top
+    W + jets                      & \mj, \njlow, $\nb = 0$          & 0.91   & $0.93 \pm 0.01$ \\
+    Z($\rightarrow\mu\mu$) + jets & \mmj, \njlow, $\nb = 0$         & 0.98   & $0.94 \pm 0.04$ \\
+%    \ttbar                       & \mj, $\nj \geq 2$, $\nb \geq 2$ & 0.73   & $1.25 \pm 0.05$ \\
+    \ttbar                        & \mj, $\nj \geq 2$, $\nb \geq 2$ & 0.87   & $1.21 \pm 0.05$ \\ % includes single top
     \hline
     \hline
   \end{tabular}
