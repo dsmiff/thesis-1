@@ -13,10 +13,7 @@
 \section{Analysis Overview}  %Section - 1.1 
 \label{sec:selection_analysis_overview}
 
-The \alphat analysis is a generic search for SUSY in the jets and 
-\met channel. The aim of the analysis is to remain as inclusive as possible to a
-wide range of potential SUSY signatures by covering as broad a region of phase 
-space as possible. Events are binned in exclusive categories of \HT, 
+Events are binned in exclusive categories of \HT, 
 and the multiplicity of jets and b-tagged jets,  
 \nj and \nb. Such binning allows for targetted interpretations across
 the vast array of
@@ -25,12 +22,12 @@ minimum.
 
 Analyses searching in the jets and \met final state encounter significant 
 backgrounds from SM sources of both genuine \met [with associated jet production] 
-and fake \met, predominantly originating from jet mis-measurement. The \alphat 
+and fake \met, originating from jet mis-measurement. The \alphat 
 analysis makes predictions for the former using a data-driven transfer factor 
 technique to extrapolate yields from statistically independent control samples 
 into the signal region. However the latter, sources of fake \met from QCD multijet events,
 are reduced to a negligible level using the kinematic 
-variable \alphat, as described in section~\ref{sec:alphat}.
+variable \alphat.
 
 The main analysis signal region is described in the remainder of this chapter,
 with background prediction techniques detailed later in chapter~\ref{ch:6}.
@@ -39,18 +36,17 @@ with background prediction techniques detailed later in chapter~\ref{ch:6}.
 \subsection{The AlphaT kinematic variable}
 \label{sec:alphat}
 
-QCD multijet events dominate the SM background in any search with multiple jets 
+QCD multijet (MJ) events dominate the SM background in any search with multiple jets 
 in the final state. Jet mis-measurements in a 
-purely QCD multijet event can lead to non-negligible amounts of \mht, and will 
-therefore pass the signal selection. 
-Some analyses attempt
-to measure this contribution with very small associated errors. This is however 
+purely QCD MJ event can lead to non-negligible amounts of \mht, therefore 
+passing the signal selection. Attempting
+to accurately measure this contribution is
 made very difficult given the hadronic environment of the LHC, and the lack of 
-precise measurements and calculations of large multijet cross sections. As an 
-alternative approach, the goal of the 
-\alphat analysis is to reduce QCD down to an entirely negligible level such that 
-it can be removed entirely from consideration within the analysis. This is 
-achieved with the novel kinematic variable, \alphat [REF], defined for dijets as:
+precise measurements and calculations of the large multijet cross sections. As an 
+alternative approach, the goal of this analysis is to reduce QCD down to an
+entirely negligible level. This is 
+achieved with the dimensionless kinematic variable, \alphat [REF]. This is defined
+for dijets as:
 
 \begin{equation}
 \alphat = \frac{E_T^{j_2}}{M_T}
@@ -68,16 +64,9 @@ M_T = \sqrt{\bigg(\sum^2_{i=1}{E_T^{j_i}}\bigg)^2 - \bigg(\sum^2_{i=1}{p_x^{j_i}
 where $E_T^{j_i}$, $p_x^{j_i}$ and $p_y^{j_i}$ are the transverse energy and 
 transverse momentum in the $x$ and $y$ planes, for the jet $j_i$.
 
-A perfectly measured dijet event that contains back to back jets in $\phi$ will have an
-\alphat value of 0.5, whereas 
-events with \mht originating from jet mis-measurements will have values of $\alphat<0.5$.
-Furthermore, events
-containing sources of genuine \met, whether from SM or SUSY 
-sources, have values of $\alphat > 0.5$. 
-
 The \alphat variable can be generalised to an n-jet case by considering the event as a 
 pseudo-dijet system, constructing each pseudo-jet such that the difference in \HT
-between them, \deltaHT, is minimised. \alphat then takes the 
+between each pseudo-jet system, \deltaHT, is minimised. \alphat then takes the 
 form:
 
 \begin{equation}
@@ -85,6 +74,13 @@ form:
 \frac{1}{2} \times \frac{1-\frac{\deltaHT}{\HT}}{\sqrt{1 - \frac{\mht}{\HT}^2}}
 \label{eq:alphat_njet}
 \end{equation}
+
+A perfectly measured dijet event containing back to back jets in $\phi$ will have an
+\alphat value of 0.5, whereas 
+events with \mht originating from jet mis-measurements will have values of $\alphat<0.5$.
+Events
+containing sources of genuine \met, whether from SM or BSM 
+sources, have values of $\alphat > 0.5$.
 
 show some sweet plots about correlations between \mht and \deltaHT for QCD, 
 signal, SM real MET etc.
@@ -100,10 +96,10 @@ LOADS MORE
 This section outlines the relevant background sources of this analysis, and
 describes the basic hadronic pre-selection made for the signal 
 region, as well as the relevant trigger requirements and data and 
-montecarlo samples used.
+simulation samples used.
 
 \subsection{SM Backgrounds}
-SM backgrounds are subdivided into two categories, sources of genuine and fake 
+SM backgrounds are categorized into sources of genuine and fake 
 missing energy.
 
 \subsubsection{Genuine EWK MET}
