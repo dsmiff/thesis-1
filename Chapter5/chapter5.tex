@@ -175,11 +175,31 @@ require at least 2 jets and that the topology has a value of \alphat greater tha
 sensitivity to very low regions of \met. Events are also required to have at least
 $\HT > 200$\gev ensuring significant hadronic activity is present.
 
-We veto the presence of any leptonic or 
-photonic activity to ensure purely hadronic events are considered, thereby 
-surpressing events with genuine \met from leptonic decays to neutrinos.
+Any events containing leptons or photons are vetoed to ensure purely hadronic events
+are considered, thereby surpressing events with genuine \met from leptonic decays to
+neutrinos.
 
-Following this basic preselection events are further categorized into the three 
+It is possible for events to acquire significant amounts of \mht without having any
+real \met present when multiple jets are below the analysis threshold. To protect against 
+this, events are required to have a low ratio of the two variables, specifically
+\mhtmet < 1.25.
+
+Events can also acquire fake \mht if they overlap with areas of the calorimater 
+system which are damaged or known to be faulty, where jets can be mis-measured or 
+lost as a result. To protect against this the angular seperation between the 
+event \mht and a given jet is used, defined as:
+
+\begin{equation}
+\Delta \phi^*_j = \Delta \phi\big(\overrightarrow{\Pt}_j,-\sum_{i\neq j}{\overrightarrow{\Pt}_i}\big)
+\label{eq:biasdphi}
+\end{equation}
+
+A small value of $\Delta \phi^*_j$ indicates that the vector of the $j_{th}$ jet
+is aligned with the \mht vector, implying the jet is mis-measured. Events are 
+vetoed if a jet with $\Delta \phi^*_j<0.5$ is within $\Delta R < 0.3$ of a known
+`dead' region of the ECAL.
+
+Following this preselection, events are further categorized into the three 
 binning dimenions of \HT, \nb and \nj, as shown in table~\ref{tab:ht-bins}. Two 
 jet multiplicity categories are defined as 2 or 3 jets, and 4 or more. B-tagged 
 jet multiplicities are exactly 0, 1, 2, 3 or 4 and more. Combinations of these 
@@ -232,13 +252,6 @@ as shown in Table~\ref{tab:jet_pt_thresholds}.
     \hline
   \end{tabular}
 \end{table}
-
-\emph{ALPHAT THRESHOLD CHOSEN SUCH THAT QCD CONTAMINATION IS NEGLIGIBLE WRT EWK
-BACKGROUNDS}
-
-\emph{VALUE OF MHTMET THRESHOLD HERE}
-
-\emph{DETAILS ON DEADECAL FILTER (INCLUDING DPHISTAR EXPLANATION)}
 
 Example distributions are shown in figure~\ref{fig:datamc_had_inc}, comparing data 
 against MC.
