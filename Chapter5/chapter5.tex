@@ -240,7 +240,34 @@ BACKGROUNDS}
 
 \emph{DETAILS ON DEADECAL FILTER (INCLUDING DPHISTAR EXPLANATION)}
 
-\emph{EXAMPLE DISTRIBUTIONS IN HAD SELECTION}
+Example distributions are shown in figure~\ref{fig:datamc_had_inc}, comparing data 
+against MC.
+
+\begin{figure}[!ht]
+  \centering
+    
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth,page=11]{Figs/datamc/Stacked_AlphaT_all_200_upwards}
+      \caption{\alphat}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth,page=18]{Figs/datamc/Stacked_HT_all_200_upwards}
+      \caption{\HT}
+    \end{subfigure} \\
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth,page=11]{Figs/datamc/Stacked_MHT_all_200_upwards}
+      \caption{\mht}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth,page=18]{Figs/datamc/Stacked_CommonJetPt_all_200_upwards}
+      \caption{Common Jet \Pt}
+    \end{subfigure} \\
+  
+    \caption{\label{fig:datamc_had_inc}
+    Comparison of data with MC for the full hadronic signal selection. Plots 
+    are for $\HT>200\gev, \nj\geq2, \nb\geq0$.
+    }
+\end{figure}
 
 \subsection{Signal Triggers}
 
@@ -560,7 +587,6 @@ and the \dyj inclusive sample.
   \centering
   \begin{subfigure}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{/Users/chrislucas/SUSY/thesis/Figs/xs_study/compar_genPartonHT_zmass_0_inc_inc_DYZJets_noCuts_sitv_log_HCPxS.pdf}
-    % \includegraphics[width=\textwidth]{compar_genPartonHT_zmass_0_inc_inc_DYZJets_noCuts_sitv_log_HCPxS}
     \caption{No corrections.}
     \label{fig:xsec_study_before}
   \end{subfigure}             
@@ -577,8 +603,8 @@ and the \dyj inclusive sample.
 
 Two of the binned samples have corresponding inclusive samples to allow for 
 this comparison to be made, namely \wj and \dyj. For these two cases, the 
-derivation of corrections for each \HTpart binned sample is simple. However, for
-the \zj and \gj, no such inclusive samples exist. These binned samples are 
+derivation of corrections for each \HTpart binned sample is simple. However, for 
+\zj and \gj, no such inclusive samples exist. These binned samples are 
 compared against the inclusive \dyj sample, where the overall normalisation is 
 set according to the relative branching fraction of \zinv and GAMMA to
 $Z \to \ell\ell$, set as 0.505 and VALUE, respectively. An example ratio plot is
