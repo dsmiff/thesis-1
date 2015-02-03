@@ -235,6 +235,24 @@ a single muon and a specific invariant mass window, greatly reduce any potential
 contamination from QCD MJ events. The viability of this is specifically tested 
 by a dedicated closure test, described later in section~\ref{sec:closure_tests}.
 
+Example distributions for this selection are shown in figure~\ref{fig:datamc_mu_inc}.
+
+\begin{figure}[!ht]
+  \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Figs/datamc/mu/Stacked_MuPt_all_OneMuon_200_upwards}
+      \caption{$\mu$\Pt}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Figs/datamc/mu/Stacked_MET_Corrected_all_OneMuon_200_upwards}
+      \caption{\met (corrected for $\mu$)}
+    \end{subfigure} \\
+    \caption{\label{fig:datamc_mu_inc}
+    Comparison of data with MC for the muon control selection. Plots 
+    are for $\HT>200\gev, \nj\geq2, \nb\geq0$.
+    }
+\end{figure}
+
 
 \subsection{mumu + jets}
 The \mmj sample is constructed to predict background contributions from \zinv 
@@ -291,6 +309,23 @@ veto is made on events satisfying $\Delta R(\mu_i, jet_j) < 0.5$, for every muon
 $i$ and every jet $j$. Similarly as in the \mj sample selection, no \alphat
 requirement is made.
 
+Example distributions for this selection are shown in figure~\ref{fig:datamc_mumu_inc}.
+
+\begin{figure}[!ht]
+  \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Figs/datamc/mumu/Stacked_DiMuon_Mass_all_DiMuon_200_upwards}
+      \caption{$M_T(\mu, \mu)$}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Figs/datamc/mumu/Stacked_SecondMuPt_all_DiMuon_200_upwards}
+      \caption{Second $\mu$ \Pt}
+    \end{subfigure} \\
+    \caption{\label{fig:datamc_mumu_inc}
+    Comparison of data with MC for the dimuon control selection. Plots 
+    are for $\HT>200\gev, \nj\geq2, \nb\geq0$.
+    }
+\end{figure}
 
 \subsection{photon + jets}
 The \gj sample is used to predict the \zinv background contribution, given it's 
@@ -794,3 +829,24 @@ Systematic values are here considered as fully uncorrelated between the
 different analysis categories and the \HT regions defined here, which is again 
 considered as a conservative approach given that some correlation is to be 
 expected, for example between adjacent \HT bins.
+
+\clearpage
+All plots currently from:
+
+\begin{lstlisting}
+        out_dict["28Jan_fullLatestReRun_dPhi_gt0p3_v0"] = {
+
+                "path_name": "rootfiles/Root_Files_28Jan_fullLatestReRun_dPhi_gt0p3_v0",
+
+                # All Runs
+                "had_lumi": 18.493,
+                "mu_lumi": 19.131,
+                "ph_lumi": 19.12,
+
+                # taken from parked final (change if necessary)
+                "wj_corr": 0.94,
+                "dy_corr": 0.94,
+                "tt_corr": 1.17,
+
+        }
+\end{lstlisting}
