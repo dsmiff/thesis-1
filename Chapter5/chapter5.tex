@@ -127,14 +127,14 @@ which pass the ID quality cuts but fail the isolation requirement.
 
 \emph{SHOW TABLE WITH THE BACKGROUND BREAKDOWN - PUT INTO GRAPHICAL FORM?}
 
-Lost lepton backgrounds can be further reduced by vetoing events containing a single 
-isolated track (SIT) in the tracker, as defined in Section~\ref{sec:objects_sit}. 
-\emph{TALK MORE ABOUT THIS CUT!}
+Events containing a Single Isolated Track (SIT) are vetoed from the signal 
+region. While originally designed to target hadronically decaying tau leptons, 
+this requirement reduces the remaining lost-lepton backgrounds also.
 
 The dominant EWK source of genuine missing energy comes from a Z-boson 
 production where the Z decays
 via neutrinos, \zinv, with associated jet production. This source of background
-is considered irreducible. \emph{SHOULD EMPHASISE THIS MORE STRONGLY.}
+is considered irreducible.
 
 Following the reduction of such processes using the lepton, photon and SIT vetoes,
 any remaining contributions from SM EWK backgrounds are estimated using a 
@@ -168,12 +168,12 @@ ratio \mhtmet.
 
 \subsection{Selection Criteria}
 \label{sec:selec_crit}
-In the hadronic signal region we 
-require at least 2 jets and that the topology has a value of \alphat greater than
+The hadronic signal region
+requires at least 2 jets and that the topology has a value of \alphat greater than
 0.55. While no absolute \met requirement is made, the cut on 
 \alphat imposes an implied threshold, which maintains the analysis'
 sensitivity to very low regions of \met. Events are also required to have at least
-$\HT > 200$\gev ensuring significant hadronic activity is present.
+$\HT > 200$\gev ensuring the presence of significant hadronic activity.
 
 Any events containing leptons or photons are vetoed to ensure purely hadronic events
 are considered, thereby surpressing events with genuine \met from leptonic decays to
@@ -181,22 +181,23 @@ neutrinos.
 
 It is possible for events to acquire significant amounts of \mht without having any
 real \met present when multiple jets are below the analysis threshold. To protect against 
-this, events are required to have a low ratio of the two variables, specifically
+this scenario, events are required to have a low ratio of the two variables, specifically
 \mhtmet < 1.25.
 
 Events can also acquire fake \mht if they overlap with areas of the calorimater 
 system which are damaged or known to be faulty, where jets can be mis-measured or 
-lost as a result. To protect against this the angular seperation between the 
-event \mht and a given jet is used, defined as:
+lost as a result. To protect against this, for a given jet $j$, the angular seperation
+between the event \mht, calculated excluding jet $j$, and the jet itself is used, defined
+as:
 
 \begin{equation}
 \Delta \phi^*_j = \Delta \phi\big(\overrightarrow{\Pt}_j,-\sum_{i\neq j}{\overrightarrow{\Pt}_i}\big)
 \label{eq:biasdphi}
 \end{equation}
 
-A small value of $\Delta \phi^*_j$ indicates that the vector of the $j_{th}$ jet
+A small value of $\Delta \phi^*_j$ indicates that the momentum vector of $j$
 is aligned with the \mht vector, implying the jet is mis-measured. Events are 
-vetoed if a jet with $\Delta \phi^*_j<0.5$ is within $\Delta R < 0.3$ of a known
+vetoed if a jet with $\Delta \phi^*<0.5$ is within $\Delta R < 0.3$ of a known
 `dead' region of the ECAL.
 
 Following this preselection, events are further categorized into the three 
@@ -210,7 +211,7 @@ from 200\gev up to an inclusive bin of $\HT>1075$\gev.
   \caption{(\nj,\nb) event categories and \HT binning scheme.\label{tab:ht-bins}}
   \centering
   % \scriptsize % too big to fit on page
-  \tiny % make it small enough to fit!
+  \tiny
   \begin{tabular}{ lrrrrrrrrrrr }
     \hline
     \hline
@@ -339,7 +340,9 @@ Trigger efficiencies are measured against an unbiased muon reference trigger,
 single muon is selected and then subsequently ignored from the analysis when 
 calculating event level variables such as \HT, \mht and \alphat. Efficiencies 
 are measured for each \HT bin and for each \nj category, as summarised in 
-table~\ref{tab:sig_trigs}. Across the higher \HT 
+table~\ref{tab:sig_trigs}. Example trigger turn on curves are shown for the 3 
+lowest \HT bins in figures~\ref{fig:eff_alphat_le3j} and \ref{fig:eff_alphat_ge4j}.
+Across the higher \HT 
 bins the triggers are fully efficient, with some inefficiencies seen only in the
 lower \HT bins. These innefficiencies are understood as being due to the L1 seed
 trigger used for this region, which had high thresholds in order to maintain 
@@ -380,7 +383,8 @@ requirement of the bin.
       (Left) Differential and (Right) cumulative efficiency turn-on
       curves for the \HT-\alphat cross triggers (as summarised in
       Table~\ref{tab:sig_trigs}) that record events for the
-      three lowest \HT bins  for events satisfying \njlow. REWORD
+      three lowest \HT bins  for events satisfying \njlow. REWORD.
+      Maybe drop the differential turn-ons and just keep the cumu.
     }
 \end{figure}
 
