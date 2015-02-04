@@ -5,7 +5,6 @@
 %%%%%%%%%%%%%%
 General
 %%%%%%%%%%%%%%
-- work out roman numerals for run numbers
 
 %%%%%%%%%%%%%%
 Chapter 1
@@ -51,8 +50,7 @@ normalisation
 - background breakdown in graph form
 - do entire fake MET section - describe the background, it's sources and what we
 do about it, with our various cuts
-- finish trigger section
-- why are trig eff subfigures not side by side?
+- maybe take away the diff turnons and keep the cumu
 - formula method section
 - describe MC generation - can get from AN
 - add QCD MG samples to samples list
