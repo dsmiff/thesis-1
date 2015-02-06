@@ -51,6 +51,7 @@ normalisation
 - do entire fake MET section - describe the background, it's sources and what we
 do about it, with our various cuts
 - maybe take away the diff turnons and keep the cumu
+- fix titles in turn on curve plots - remove? crop each?
 - formula method section
 - describe MC generation - can get from AN
 - add QCD MG samples to samples list
