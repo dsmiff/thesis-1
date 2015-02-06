@@ -28,19 +28,19 @@ therefore we use lognormal.
 
 The lognormal distribution has three variables as input. $Logn(x|\rho, \sigma)$
 
-\begin{itemize}
-\item $\sigma$ parameter - this is similar to the width, if it were a gaussian 
+\begin{description}
+\item[$\sigma$ parameter]\hfill \\ this is similar to the width, if it were a gaussian 
 distribution. It is essentially the derived systematic error as taken from the 
 closure tests (I think...!). The smaller the value, the more the $\rho$ 
 parameters may need to be pulled in order to make the fit.
-\item $\rho$ parameter - the mean of the syst error. this is a parameter
+\item[$\rho$ parameter] \hfill \\ the mean of the syst error. this is a parameter
 (nuisance?) which is allowed to float in the fit. It essentially represents how 
 much you have to pull on your systematics in order for the observations to match
 the background predictions. If it's pulled a lot (many sigma away from 1.) then 
 your observations really don't fit your predictions, or you've really 
 underestimated your systematics! Large deviations from 1 (in terms of the
 $\sigma$ parameter) indicate an unhealthy fit...
-\end{itemize}
+\end{description}
 
 
 
