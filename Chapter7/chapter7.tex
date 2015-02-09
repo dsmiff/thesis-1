@@ -148,6 +148,32 @@ L^k = L^k_{hadronic} \times L^k_{\mu} \times L^k_{\gamma} \times L^k_{\mu\mu}
 \label{eq:total_likelihood}
 \end{equation}
 
+The number of nuisance paramters varies between different analysis categories, 
+dependent on the number of \HT bins and control samples, summarised in
+table~REF.
+
+\begin{table}[ht!]
+  \caption{Summary of nuisance parameters.}
+  \label{tab:nuisance_param_summary}
+  \centering
+  \scriptsize
+  \begin{tabular}{ lll }
+    \hline
+    \hline
+    Description                             & Categories    & Nuisance Parameters \\ [1.0ex]
+    \hline
+    11 \HT bins, ($\mu, \mu\mu, \gamma$)    & \njlow/\njhigh, \nb = 0, 1        &
+    $\{EWK^i, \fzinv\}_{i=0}^{10}, \{ \rhopz \}_{i=3}^{6}, \{ \rhommz, \rhomw \}_{i=0}^{6}$  \\
+    8 \HT bins, ($\mu$)                     & \njlow/\njhigh, \nb = 2, 3, >4    & $\{EWK^i, \fzinv\}_{i=0}^{
+    8}, \{\rhomwz \}_{i=0}^{6}$  \\
+    3 \HT bins, ($\mu$)                     & \njlow/\njhigh, \nb = 2, 3, >4    & $\{EWK^i\}_{i=0}^{3},
+    \{\rhomwz \}_{i=0}$\\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+
 \subsection{Notes on syst modelling}
 lognormal instead of gaussian PDF - these are used for systematics modelling.
 
