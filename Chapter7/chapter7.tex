@@ -130,13 +130,23 @@ L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot {r'}_{\mu}^i \cdot {EWK}^
 
 Terms corresponding to the \mmj and \gj samples are subsequently dropped.
 
-\subsection{Signal Contribution}
+\subsection{Signal Systematic Contribution}
 blah blah
+
+\begin{equation}
+L_{signal} = \text{Logn}(1.0 | \rho_{sig}, \delta)
+\end{equation}
 
 \subsection{Total Likelihood}
 
+For a given analysis category $k$ (\nb, \nj), the total likelihood is 
+constructed as:
 
-
+\begin{equation}
+L^k = L^k_{hadronic} \times L^k_{\mu} \times L^k_{\gamma} \times L^k_{\mu\mu} 
+\times L^k_{\text{EWK syst.}}
+\label{eq:total_likelihood}
+\end{equation}
 
 \subsection{Notes on syst modelling}
 lognormal instead of gaussian PDF - these are used for systematics modelling.
