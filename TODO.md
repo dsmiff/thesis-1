@@ -76,7 +76,7 @@ conservatism
 Chapter 7
 Results
 %%%%%%%%%%%%%%
-
+- change all "ph" subscripts to \gamma's
 
 %%%%%%%%%%%%%%
 Chapter 8
