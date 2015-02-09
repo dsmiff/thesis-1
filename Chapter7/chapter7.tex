@@ -12,9 +12,48 @@
 %********************************** % First Section  *************************************
 \section{Likelihood Model}  %Section - 1.1 
 \label{sec:results_likelihood}
-layout the likelihood model used to perform the simultaneous fit to get the 
-background numbers
 
+For a given category of \nb and \nj, let $n_i$ be the observed number of events 
+following full selection in the $i^{th}$ of $N$ \HT bins. The likelihood is 
+therefore constructed as:
+
+\begin{equation}
+L_{hadronic} = \prod_i \text{Pois}(n^i | b^i + s^i)
+\end{equation}
+
+where $b^i$ and $s^i$ represent the expected number of background events from SM 
+processes and the expected number of signal events in the bin $i$, and Pois is 
+the Poisson distribution:
+
+\begin{equation}
+f(k;\lambda) = \frac{1}{k!}\lambda^k e^{-\lambda}
+\end{equation}
+
+The background is considered to be entirely EWK in origin ($b^i = \text{EWK}^i$), as QCD
+is made negligible, which in turn can be deconstructed using the relative fraction
+of \zinv events, \fzinv as:
+
+\begin{equation}
+\text{Z}_{inv}^i = \fzinv \times \text{EWK}^i
+\end{equation}
+\begin{equation}
+\text{ttW}^i = (1-\fzinv) \times \text{EWK}^i
+\end{equation}
+
+where $\text{EWK}^i$, $\text{Z}_{\text{inv}}^i$ and $\text{ttW}^i$ are the number of 
+expected events in the $i^{th}$ bin from the total electroweak background, \zinv
+and SM W boson production and top quark decays, respectively.
+
+These backgrounds are predicted using sideband control samples and transfer 
+factors (chapter~\ref{ch:6}). Let $n_{ph}^i$, $n_{\mu}^i$ and $n_{\mu\mu}^i$ be 
+the observed event counts in the \gj, \mj and \mmj control samples, 
+respectively, which corresponding yields in MC: $MC_{ph}^i$, $MC_{\mu}^i$ and
+$MC_{\mu\mu}^i$. Transfer factors are defined as the inverse as those of the 
+analysis:
+
+\begin{equation}
+r_{ph}^i = \frac{MC_{ph}^i}{MC_{\text{Z}_{\text{inv}}}^i}
+\end{equation}
 
 \subsection{Notes on syst modelling}
 lognormal instead of gaussian PDF - these are used for systematics modelling.
