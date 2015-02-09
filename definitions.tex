@@ -6,6 +6,7 @@
 \newcommand{\htalphat}{\texttt{HT\_AlphaT}\xspace}
 \newcommand{\photon}{\texttt{Photon}\xspace}
 \newcommand{\mt}{\ensuremath{M_{\textrm T}}\xspace}
+\newcommand{\gj}{\ensuremath{\gamma} + jets\xspace}
 \newcommand{\mj}{\ensuremath{\mu} + jets\xspace}
 \newcommand{\mmj}{\ensuremath{\mu\mu} + jets\xspace}
 \newcommand{\npre}{\ensuremath{N_{\textrm{pred}}}\xspace}
@@ -18,6 +19,7 @@
 \newcommand{\qcd}{\ensuremath{\mathrm{QCD}}\xspace}
 \newcommand{\zInv}[1]{\ensuremath{Z_{\rm inv}^{#1}}\xspace}
 \newcommand{\zinv}{\ensuremath{Z \to \nu\bar{\nu}}\xspace}
+\newcommand{\ttw}{\ensuremath{\text{ttW}}\xspace} % do i even need math environment here?!
 \newcommand{\Pt}{\ensuremath{{p_{\text T}}}\xspace}
 \newcommand{\Ptvect}{\ensuremath{{\overrightarrow{p_{\text T}}}}\xspace}
 \newcommand{\dphi}{\ensuremath{\Delta \phi}}
@@ -41,7 +43,6 @@
 \newcommand{\wj}{\ensuremath{\rm W + jets}\xspace}
 \newcommand{\zj}{\ensuremath{\rm Z(\nu\nu) + jets}\xspace}
 \newcommand{\dyj}{\ensuremath{\rm DY + jets}\xspace}
-\newcommand{\gj}{\ensuremath{\gamma} + jets\xspace}
 
 % MC sample yields
 \newcommand{\numw}{\ensuremath{N_{\text{W}}}\xspace}
@@ -57,14 +58,17 @@
 \newcommand{\PYTHIA}{\ensuremath{\mathrm{PYTHIA}}\xspace}
 \newcommand{\runone}{Run I}
 
-% % these might not work...!
-% \def\eslash{{\hbox{$E$\kern-0.6em\lower-.05ex\hbox{/}\kern0.10em}}}
-% \def\vecmet{\mbox{$\vec{\eslash}_T$}} %missing ET vector
-% \def\vecet{\mbox{$\vec{E}_\text{T}$}} % ET vector
-% \def\MET{\mbox{$\eslash_\text{T}$}\xspace}
-% \def\met{\mbox{$\eslash_\text{T}$}\xspace}
-% \def\Hslash{{\hbox{$H$\kern-0.8em\lower-.05ex\hbox{/}\kern0.10em}}}
-% \def\MHT{\mbox{$\Hslash_\text{T}$}\xspace}
-% \def\mht{\mbox{$\Hslash_\text{T}$}\xspace}
-% \def\mhtmet{\mbox{$\mht/\met $}\xspace}
-% \def\bdphi{\mbox{$\Delta\phi^{*}$}\xspace}
+% likelihood terms
+\newcommand{\fzinv}{\ensuremath{f_{\text{Zinv}}}\xspace}
+\newcommand{\mczinv}{\ensuremath{MC_{\text{Z}_{\text{inv}}}}\xspace}
+\newcommand{\mcttw}{\ensuremath{MC_{\ttbar+\text{W}}}\xspace}
+\newcommand{\mcm}{\ensuremath{MC_{\mu}^i}\xspace}
+\newcommand{\mcmm}{\ensuremath{MC_{\mu\mu}^i}\xspace}
+\newcommand{\mcp}{\ensuremath{MC_{\gamma}^i}\xspace}
+\newcommand{\rhopz}{\ensuremath{\rho^j_{phZ}}\xspace}
+\newcommand{\rhommz}{\ensuremath{\rho^j_{\mu\mu Z}}\xspace}
+\newcommand{\rhomw}{\ensuremath{\rho^j_{\mu W}}\xspace}
+\newcommand{\sigmapz}{\ensuremath{\sigma^j_{phZ}}\xspace}
+\newcommand{\sigmammz}{\ensuremath{\sigma^j_{\mu\mu Z}}\xspace}
+\newcommand{\sigmamw}{\ensuremath{\sigma^j_{\mu W}}\xspace}
+
