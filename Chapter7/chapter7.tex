@@ -12,13 +12,17 @@
 %********************************** % First Section  *************************************
 \section{Likelihood Model}  %Section - 1.1 
 \label{sec:results_likelihood}
+The likelihood model is defined for each analysis category of \nb and \nj as 
+follows.
 
-For a given category of \nb and \nj, let $n_i$ be the observed number of events 
-following full selection in the $i^{th}$ of $N$ \HT bins. The likelihood is 
+\subsection{Hadronic Signal Region}
+
+Let $n^i$ be the observed number of events 
+following full selection in the $i^{th}$ of $N$ bin of \HT. The likelihood is 
 therefore constructed as:
 
 \begin{equation}
-L_{hadronic} = \prod_i \text{Pois}(n^i | b^i + s^i)
+L_{hadronic} = \prod_i \text{Pois}(n^i | b^i + s^i),
 \end{equation}
 
 where $b^i$ and $s^i$ represent the expected number of background events from SM 
@@ -26,34 +30,113 @@ processes and the expected number of signal events in the bin $i$, and Pois is
 the Poisson distribution:
 
 \begin{equation}
-f(k;\lambda) = \frac{1}{k!}\lambda^k e^{-\lambda}
+f(k;\lambda) = \frac{1}{k!}\lambda^k e^{-\lambda}.
 \end{equation}
 
+
+\subsection{Electroweak Background Contribution}
 The background is considered to be entirely EWK in origin ($b^i = \text{EWK}^i$), as QCD
 is made negligible, which in turn can be deconstructed using the relative fraction
 of \zinv events, \fzinv as:
 
 \begin{equation}
-\text{Z}_{inv}^i = \fzinv \times \text{EWK}^i
+\text{Z}_{inv}^i = \fzinv \times \text{EWK}^i,
+\label{eq:ewk_frac_z}
 \end{equation}
 \begin{equation}
-\text{ttW}^i = (1-\fzinv) \times \text{EWK}^i
+\text{ttW}^i = (1-\fzinv) \times \text{EWK}^i,
+\label{eq:ewk_frac_ttw}
 \end{equation}
 
 where $\text{EWK}^i$, $\text{Z}_{\text{inv}}^i$ and $\text{ttW}^i$ are the number of 
 expected events in the $i^{th}$ bin from the total electroweak background, \zinv
-and SM W boson production and top quark decays, respectively.
+and SM W boson production and top quark decays, respectively. The variable 
+\fzinv is allowed to float between 0 and 1.
 
-These backgrounds are predicted using sideband control samples and transfer 
+EWK backgrounds are predicted using sideband control samples and transfer 
 factors (chapter~\ref{ch:6}). Let $n_{ph}^i$, $n_{\mu}^i$ and $n_{\mu\mu}^i$ be 
 the observed event counts in the \gj, \mj and \mmj control samples, 
-respectively, which corresponding yields in MC: $MC_{ph}^i$, $MC_{\mu}^i$ and
-$MC_{\mu\mu}^i$. Transfer factors are defined as the inverse as those of the 
-analysis:
+respectively, with corresponding yields in MC: \mcp, \mcm, \mcmm. These can be
+further seperated into \zinv MC counts,
+\mczinv, and \text{ttW} counts, \mcttw. Transfer
+factors are defined as the inverse as those of the analysis:
 
 \begin{equation}
-r_{ph}^i = \frac{MC_{ph}^i}{MC_{\text{Z}_{\text{inv}}}^i}
+r_{ph}^i = \frac{\mcp}{\mczinv};
+r_{\mu\mu}^i = \frac{\mcmm}{\mczinv};
+r_{\mu}^i = \frac{\mcm}{\mcttw},
 \end{equation}
+
+and so likelihoods are written as:
+
+\begin{equation}
+L_{ph} = \prod_i \text{Pois}(n_{ph}^i | \rhopz \cdot r^i_{ph} \cdot Z^i_{\text{inv}}),
+\label{eq:lterm_pho}
+\end{equation}
+\begin{equation}
+L_{\mu\mu} = \prod_i \text{Pois}(n_{\mu\mu}^i | \rhommz \cdot r^i_{\mu\mu} \cdot Z^i_{\text{inv}}),
+\label{eq:lterm_mumu}
+\end{equation}
+\begin{equation}
+L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot r^i_{\mu} \cdot ttW^i + s_{\mu}^i).
+\label{eq:lterm_mu}
+\end{equation}
+
+Equations~\ref{eq:lterm_pho} and \ref{eq:lterm_mumu} are used to estimate the 
+maximum likelihood value for $Z^i_{\text{inv}}$, alongside equation~\ref{eq:lterm_mu} 
+for $ttW^i$, all considered simulataneously through the relationships defined in
+equations~\ref{eq:ewk_frac_z} and \ref{eq:ewk_frac_ttw}.
+
+The terms \rhopz, \rhommz and \rhomw are correction factors which accomodate the
+systematic uncertainties associated with the control sample based background 
+predictions. The relative uncertainties are derived in section [CLOSURE TEST REF]
+(chapter) and represented by the terms \sigmapz, \sigmammz and \sigmamw, their 
+values summarised in table REF. Systematics enter the total likelihood as:
+
+TABLE OF SYST VALUES HERE
+
+\begin{equation}
+L_{ph\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhopz, \sigmapz),
+\end{equation}
+\begin{equation}
+L_{\mu\mu\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhommz, \sigmammz),
+\end{equation}
+\begin{equation}
+L_{\mu\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhomw, \sigmamw),
+\end{equation}
+
+where Logn is the log-normal distribution (as recommended by that Gary dude):
+
+\begin{equation}
+\text{Logn}(x|\mu, \sigma) = \frac{1}{x\sqrt{2\pi}\text{ln}k} exp \Bigg(-\frac{\text{ln}^2 \big(\frac{x}{\mu}\big)}{2\text{ln}^2k}\Bigg); k = 1+\sigma
+\end{equation}
+
+These terms are combined as:
+
+\begin{equation}
+L_{EWK\text{ syst.}} = L_{ph\text{ syst.}} \times L_{\mu\mu\text{ syst.}} \times L_{\mu\text{ syst.}}.
+\end{equation}
+
+For $\nb \geq 2$ categories, the \mj control sample is used to predict \zinv and
+\ttw combined, giving:
+
+\begin{equation}
+{r'}^i_{\mu} = \frac{\mcm}{MC^i_{\ttbar + W + Z_{\text{inv}}}};
+\end{equation}
+
+\begin{equation}
+L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot {r'}_{\mu}^i \cdot {EWK}^i + s_{\mu}^i).
+\end{equation}
+
+Terms corresponding to the \mmj and \gj samples are subsequently dropped.
+
+\subsection{Signal Contribution}
+blah blah
+
+\subsection{Total Likelihood}
+
+
+
 
 \subsection{Notes on syst modelling}
 lognormal instead of gaussian PDF - these are used for systematics modelling.
