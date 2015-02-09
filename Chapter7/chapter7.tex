@@ -54,7 +54,7 @@ and SM W boson production and top quark decays, respectively. The variable
 \fzinv is allowed to float between 0 and 1.
 
 EWK backgrounds are predicted using sideband control samples and transfer 
-factors (chapter~\ref{ch:6}). Let $n_{ph}^i$, $n_{\mu}^i$ and $n_{\mu\mu}^i$ be 
+factors (chapter~\ref{ch:6}). Let $n_{\gamma}^i$, $n_{\mu}^i$ and $n_{\mu\mu}^i$ be 
 the observed event counts in the \gj, \mj and \mmj control samples, 
 respectively, with corresponding yields in MC: \mcp, \mcm, \mcmm. These can be
 further seperated into \zinv MC counts,
@@ -62,15 +62,15 @@ further seperated into \zinv MC counts,
 factors are defined as the inverse as those of the analysis:
 
 \begin{equation}
-r_{ph}^i = \frac{\mcp}{\mczinv};
-r_{\mu\mu}^i = \frac{\mcmm}{\mczinv};
+r_{\gamma}^i = \frac{\mcp}{\mczinv};\;\;\;
+r_{\mu\mu}^i = \frac{\mcmm}{\mczinv};\;\;\;
 r_{\mu}^i = \frac{\mcm}{\mcttw},
 \end{equation}
 
 and so likelihoods are written as:
 
 \begin{equation}
-L_{ph} = \prod_i \text{Pois}(n_{ph}^i | \rhopz \cdot r^i_{ph} \cdot Z^i_{\text{inv}}),
+L_{\gamma} = \prod_i \text{Pois}(n_{\gamma}^i | \rhopz \cdot r^i_{\gamma} \cdot Z^i_{\text{inv}}),
 \label{eq:lterm_pho}
 \end{equation}
 \begin{equation}
@@ -96,7 +96,7 @@ values summarised in table REF. Systematics enter the total likelihood as:
 TABLE OF SYST VALUES HERE
 
 \begin{equation}
-L_{ph\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhopz, \sigmapz),
+L_{\gamma\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhopz, \sigmapz),
 \end{equation}
 \begin{equation}
 L_{\mu\mu\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhommz, \sigmammz),
@@ -114,7 +114,7 @@ where Logn is the log-normal distribution (as recommended by that Gary dude):
 These terms are combined as:
 
 \begin{equation}
-L_{EWK\text{ syst.}} = L_{ph\text{ syst.}} \times L_{\mu\mu\text{ syst.}} \times L_{\mu\text{ syst.}}.
+L_{EWK\text{ syst.}} = L_{\gamma\text{ syst.}} \times L_{\mu\mu\text{ syst.}} \times L_{\mu\text{ syst.}}.
 \end{equation}
 
 For $\nb \geq 2$ categories, the \mj control sample is used to predict \zinv and
@@ -173,6 +173,13 @@ table~\ref{tab:nuisance_param_summary}.
   \end{tabular}
 \end{table}
 
+When signal is also considered an additional term is introduced:
+
+\begin{equation}
+L = L_{signal} \times \prod_k L^k_{hadronic} \times L^k_{\mu} \times L^k_{\gamma} \times L^k_{\mu\mu} 
+\times L^k_{\text{EWK syst.}}.
+\label{eq:total_likelihood_wsignal}
+\end{equation}
 
 \subsection{Notes on syst modelling}
 lognormal instead of gaussian PDF - these are used for systematics modelling.
