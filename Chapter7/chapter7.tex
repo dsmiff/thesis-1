@@ -12,21 +12,20 @@
 %********************************** % First Section  *************************************
 \section{Likelihood Model}  %Section - 1.1 
 \label{sec:results_likelihood}
-The likelihood model is defined for each analysis category of \nb and \nj as 
-follows.
+The likelihood model is defined for each analysis category of \nb and \nj.
 
 \subsection{Hadronic Signal Region}
 
 Let $n^i$ be the observed number of events 
-following full selection in the $i^{th}$ of $N$ bin of \HT. The likelihood is 
-therefore constructed as:
+following full selection in the $i^{th}$ of $N$ bins of \HT. The likelihood is 
+constructed as:
 
 \begin{equation}
 L_{hadronic} = \prod_i \text{Pois}(n^i | b^i + s^i),
 \end{equation}
 
 where $b^i$ and $s^i$ represent the expected number of background events from SM 
-processes and the expected number of signal events in the bin $i$, and Pois is 
+processes and the expected number of signal events in the bin $i$. Pois is 
 the Poisson distribution:
 
 \begin{equation}
@@ -36,7 +35,7 @@ f(k;\lambda) = \frac{1}{k!}\lambda^k e^{-\lambda}.
 
 \subsection{Electroweak Background Contribution}
 The background is considered to be entirely EWK in origin ($b^i = \text{EWK}^i$), as QCD
-is made negligible, which in turn can be deconstructed using the relative fraction
+is made negligible, so can be deconstructed using the relative fraction
 of \zinv events, \fzinv as:
 
 \begin{equation}
@@ -48,17 +47,18 @@ of \zinv events, \fzinv as:
 \label{eq:ewk_frac_ttw}
 \end{equation}
 
-where $\text{EWK}^i$, $\text{Z}_{\text{inv}}^i$ and $\text{ttW}^i$ are the number of 
-expected events in the $i^{th}$ bin from the total electroweak background, \zinv
-and SM W boson production and top quark decays, respectively. The variable 
+where $\text{EWK}^i$ is number of expected events from the total EWK background,
+$\text{Z}_{\text{inv}}^i$ is the number of expected events from the \zinv 
+contribution and $\text{ttW}^i$ is the number of expect events from the W boson 
+production and top quark decay contribution, all in the $i^{th}$ bin. The variable 
 \fzinv is allowed to float between 0 and 1.
 
 EWK backgrounds are predicted using sideband control samples and transfer 
 factors (chapter~\ref{ch:6}). Let $n_{\gamma}^i$, $n_{\mu}^i$ and $n_{\mu\mu}^i$ be 
 the observed event counts in the \gj, \mj and \mmj control samples, 
-respectively, with corresponding yields in MC: \mcp, \mcm, \mcmm. These can be
-further seperated into \zinv MC counts,
-\mczinv, and \text{ttW} counts, \mcttw. Transfer
+respectively, with corresponding yields in MC: \mcp, \mcm, \mcmm. These are
+further seperated into seperate contributions from \zinv,
+\mczinv, and \text{ttW}, \mcttw. Transfer
 factors are defined as the inverse as those of the analysis:
 
 \begin{equation}
@@ -82,12 +82,12 @@ L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot r^i_{\mu} \cdot ttW^i + s
 \label{eq:lterm_mu}
 \end{equation}
 
-Equations~\ref{eq:lterm_pho} and \ref{eq:lterm_mumu} are used to estimate the 
+Both equations~\ref{eq:lterm_pho} and \ref{eq:lterm_mumu} are used to estimate the 
 maximum likelihood value for $Z^i_{\text{inv}}$, alongside equation~\ref{eq:lterm_mu} 
 for $ttW^i$, all considered simulataneously through the relationships defined in
 equations~\ref{eq:ewk_frac_z} and \ref{eq:ewk_frac_ttw}.
 
-The terms \rhopz, \rhommz and \rhomw are correction factors which accomodate the
+The terms \rhopz, \rhommz and \rhomw are correction factors accomodating the
 systematic uncertainties associated with the control sample based background 
 predictions. The relative uncertainties are derived in section [CLOSURE TEST REF]
 (chapter) and represented by the terms \sigmapz, \sigmammz and \sigmamw, their 
@@ -131,7 +131,8 @@ L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot {r'}_{\mu}^i \cdot {EWK}^
 Terms corresponding to the \mmj and \gj samples are subsequently dropped.
 
 \subsection{Signal Systematic Contribution}
-blah blah
+
+
 
 \begin{equation}
 L_{signal} = \text{Logn}(1.0 | \rho_{sig}, \delta)
@@ -143,7 +144,7 @@ For a given analysis category $k$ (\nb, \nj), the total likelihood is
 constructed as:
 
 \begin{equation}
-L^k = L^k_{hadronic} \times L^k_{\mu} \times L^k_{\gamma} \times L^k_{\mu\mu} 
+L^k_{total} = L^k_{hadronic} \times L^k_{\mu} \times L^k_{\gamma} \times L^k_{\mu\mu} 
 \times L^k_{\text{EWK syst.}}
 \label{eq:total_likelihood}
 \end{equation}
@@ -156,14 +157,15 @@ table~\ref{tab:nuisance_param_summary}.
   \caption{Summary of nuisance parameters.}
   \label{tab:nuisance_param_summary}
   \centering
-  \scriptsize
+  \footnotesize
   \begin{tabular}{ lll }
     \hline
     \hline
     Description                             & Categories    & Nuisance Parameters \\ [1.0ex]
     \hline
-    11 \HT bins, ($\mu, \mu\mu, \gamma$)    & \njlow/\njhigh, \nb = 0, 1        &
-    $\{EWK^i, \fzinv\}_{i=0}^{10}, \{ \rhopz \}_{i=3}^{6}, \{ \rhommz, \rhomw \}_{i=0}^{6}$  \\
+    \multirow{2}{*}{11 \HT bins, ($\mu, \mu\mu, \gamma$)}    & \multirow{2}{*}{\njlow/\njhigh, \nb = 0, 1}&
+    $\{EWK^i, \fzinv\}_{i=0}^{10}, \{ \rhopz \}_{i=3}^{6},$\\
+    && $\{ \rhommz, \rhomw \}_{i=0}^{6}$  \\
     8 \HT bins, ($\mu$)                     & \njlow/\njhigh, \nb = 2, 3, >4    & $\{EWK^i, \fzinv\}_{i=0}^{
     8}, \{\rhomwz \}_{i=0}^{6}$  \\
     3 \HT bins, ($\mu$)                     & \njlow/\njhigh, \nb = 2, 3, >4    & $\{EWK^i\}_{i=0}^{3},
@@ -173,11 +175,10 @@ table~\ref{tab:nuisance_param_summary}.
   \end{tabular}
 \end{table}
 
-When signal is also considered an additional term is introduced:
+When considering signal an additional term is introduced:
 
 \begin{equation}
-L = L_{signal} \times \prod_k L^k_{hadronic} \times L^k_{\mu} \times L^k_{\gamma} \times L^k_{\mu\mu} 
-\times L^k_{\text{EWK syst.}}.
+L = L_{signal} \times \prod_k L^k_{total}
 \label{eq:total_likelihood_wsignal}
 \end{equation}
 
