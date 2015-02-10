@@ -130,9 +130,28 @@ L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot {r'}_{\mu}^i \cdot {EWK}^
 
 Terms corresponding to the \mmj and \gj samples are subsequently dropped.
 
-\subsection{Signal Systematic Contribution}
+\subsection{Signal Contribution}
 
+Let $x$ be the cross section of the signal model under test, which can be varied
+according to a multiplicative factor $f$ (a.k.a. the ``mu-factor''), and $l$ be 
+the luminosity of the relevant collected data sample. $\epsilon^i_{had}$ and
+$\epsilon^i_{\mu}$ are the signal acceptances of the hadronic and muon 
+selections, respectively, for the given signal model. Finally, let $\delta$ be 
+the relative systematic uncertainty on that signal acceptance, and $\rho_{sig}$ 
+be the corrective factor to the signal yield floated to accomodate this uncertainty. 
+Therefore the yield of signal events for the hadronic sample, $s^i$, and the 
+yield of signal in the muon sample (i.e. ``signal contamination''), $s^i_{\mu}$,
+can be written as:
 
+\begin{equation}
+s^i = f\rho_{sig}xl\epsilon_{had}
+\end{equation}
+\begin{equation}
+s^i_{\mu} = f\rho_{sig}xl\epsilon_{\mu}
+\end{equation}
+
+Furthermore, the signal systematic contribution to the likelihood is included as
+the term:
 
 \begin{equation}
 L_{signal} = \text{Logn}(1.0 | \rho_{sig}, \delta)
