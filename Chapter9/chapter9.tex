@@ -50,6 +50,12 @@ acceptance.
 \emph{somewhere describe the significance plots, leading to the choice of these 
 particularly categories.}
 
+Signal contamination in the \mj selection is shown to be negligible, given the 
+lack of leptonic activity in the final state.
+
+\emph{what about stop mass?}
+
+% should be v25!
 \begin{figure}[ht!]
   \centering
   \begin{subfigure}[b]{0.47\textwidth}
@@ -112,6 +118,112 @@ particularly categories.}
 %   \end{subfigure}
 %   \caption{balls}
 %   \label{fig:}
+% \end{figure}
+
+\subsection{T2\_4body}
+
+The \Ttwodegen model signal efficiency times acceptance distributions are shown 
+in figure~\ref{fig:t2_4body_eff} in the four most sensitive analysis categories,
+with an inclusive \HT selection, both for the hadronic and \mj selections. There
+are strong similarities with those shown earlier for the \texttt{T2cc} model, 
+both in magnitude and distribution about the plane. At small values of \deltam, 
+given that the entire susy decay system becomes invisible due to a lack of 
+kinematic phase space, both models show very similar efficiencies, where 
+acceptance is almost entirely due to hard ISR jets within acceptance. There is a
+significant difference however, when a b-tagged jet is required, for example in 
+the \njlow, \nb=1 category, where the presence of a jet originating from a real 
+b quark improves acceptance, particularly away from the diagonal where this jet 
+would be more likely to pass analysis thresholds. Less significant are the 
+efficiencies seen in the \njhigh categories, given the larger number of final 
+state object, each requiring a share of the energy originating from the mass 
+splitting of the mother and daughter sparticles.
+
+Also of note is the increase in signal contamination observed in the \mj 
+selection, due to the presence of $f\bar{f}$ in the decay chain, potentially 
+giving leptons in the final state.
+
+% should be v16!!
+\begin{figure}[ht!]
+  \centering
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2degen/v5/T2_4body_v5_had_eff_maps_eq0b_le3j_SITV.pdf}
+    \caption{Signal region, (2--3,0)}
+    \label{fig:t2_4body_sig_eff_le3j_0b}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2degen/v5/T2_4body_v5_muon_eff_maps_eq0b_le3j_SITV.pdf}
+    \caption{\mj region, (2--3,0)}
+    \label{fig:t2_4body_mu_eff_le3j_0b}
+  \end{subfigure} \\
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2degen/v5/T2_4body_v5_had_eff_maps_eq1b_le3j_SITV.pdf}
+    \caption{Signal region, (2--3,1)}
+    \label{fig:t2_4body_sig_eff_le3j_1b}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2degen/v5/T2_4body_v5_muon_eff_maps_eq1b_le3j_SITV.pdf}
+    \caption{\mj region, (2--3,1)}
+    \label{fig:t2_4body_mu_eff_le3j_1b}
+  \end{subfigure} \\
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2degen/v5/T2_4body_v5_had_eff_maps_eq0b_ge4j_SITV.pdf}
+    \caption{Signal region, ($\geq 4$,0)}
+    \label{fig:t2_4body_sig_eff_ge4j_0b}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2degen/v5/T2_4body_v5_muon_eff_maps_eq0b_ge4j_SITV.pdf}
+    \caption{\mj region, ($\geq 4$,0)}
+    \label{fig:t2_4body_mu_eff_ge4j_0b}
+  \end{subfigure} \\
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2degen/v5/T2_4body_v5_had_eff_maps_eq1b_ge4j_SITV.pdf}
+    \caption{Signal region, ($\geq 4$,1)}
+    \label{fig:t2_4body_sig_eff_ge4j_1b}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2degen/v5/T2_4body_v5_muon_eff_maps_eq1b_ge4j_SITV.pdf}
+    \caption{\mj region, ($\geq 4$,1)}
+    \label{fig:t2_4body_mu_eff_ge4j_1b}
+  \end{subfigure} \\
+  \caption{Signal efficiency times acceptance for the \Ttwodegen simplified, for 
+  the hadronic selection (left) and the \mj selection (right), shown for the 
+  four most sensitive analysis categories with an inclusive selection on \HT.}
+  \label{fig:t2_4body_eff}
+\end{figure}
+
+
+% \begin{figure}[!h]
+%  \begin{center}
+%    \subfigure[Signal region, (2--3,0)]{
+%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_had_eff_maps_eq0b_le3j_SITV}
+%    } 
+%    \subfigure[\mj sample, (2--3,0)]{
+%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_muon_eff_maps_eq0b_le3j_SITV}
+%    } \\
+%    \subfigure[Signal region, (2--3,1)]{
+%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_had_eff_maps_eq1b_le3j_SITV}
+%    } 
+%    \subfigure[\mj sample, (2--3,1)]{
+%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_muon_eff_maps_eq1b_le3j_SITV}
+%    } \\
+%    \subfigure[Signal region, ($\geq 4$,0)]{
+%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_had_eff_maps_eq0b_ge4j_SITV}
+%    } 
+%    \subfigure[\mj sample, ($\geq 4$,0)]{
+%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_muon_eff_maps_eq0b_ge4j_SITV}
+%    } \\
+%    \subfigure[Signal region, ($\geq 4$,1)]{
+%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_had_eff_maps_eq1b_ge4j_SITV}
+%    } 
+%    \subfigure[\mj sample, ($\geq 4$,1)]{
+%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_muon_eff_maps_eq1b_ge4j_SITV}
+%    } \\
+%    \caption{Signal efficiency times acceptance for the \texttt{T2\_4body}
+%      in (left) the signal region and (right) the \mj control sample
+%      (\ie, signal contamination) for the relevant event categories
+%      defined by \njet and \nb. Note the different z-axis scales.}
+%    \label{fig:sms-eff-t2_4body}
+%  \end{center}
 % \end{figure}
 
 %********************************** % Second Section  *************************************
