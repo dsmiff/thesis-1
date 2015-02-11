@@ -88,7 +88,7 @@ Crosschecks
 Chapter 9
 Interpretation
 %%%%%%%%%%%%%%
-
+- crop signal eff plots
 
 %%%%%%%%%%%%%%
 Chapter 10
