@@ -11,8 +11,83 @@
 %********************************** % First Section  *************************************
 \section{Signal Acceptance}  %Section - 1.1 
 \label{sec:interpretation_acceptance}
-Show acceptance for each model
-Briefly explain any features in each, particularly for mass-degenerate models
+
+Model acceptance is determined as a function of analysis category (\nb, \nj) and
+\HT bin. This calculation is performed individually for each mass point in the
+scan plane for both the hadronic selection and muon selection (to determine 
+signal contamination in the control region). Interpretations are made using a
+selected subset of the analysis 
+categories, but an inclusive \HT selection. The analysis categories used are 
+selected after an inspection of each for their significance given signal 
+injection from specific mass points (REF).
+
+\subsection{T2cc}
+Signal efficiency times acceptance for the \texttt{T2cc} model is shown in 
+figure~\ref{fig:sms-t2cc-sig}.
+
+\begin{figure}[ht!]
+  \centering
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v24/T2cc_v24_had_eff_maps_eq0b_le3j_SITV.pdf}
+    \caption{Signal region, (2--3,0)}
+    \label{fig:t2cc_sig_eff_le3j_0b}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v24/T2cc_v24_muon_eff_maps_eq0b_le3j_SITV.pdf}
+    \caption{\mj region, (2--3,0)}
+    \label{fig:t2cc_mu_eff_le3j_0b}
+  \end{subfigure} \\
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v24/T2cc_v24_had_eff_maps_eq1b_le3j_SITV.pdf}
+    \caption{Signal region, (2--3,1)}
+    \label{fig:t2cc_sig_eff_le3j_1b}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v24/T2cc_v24_muon_eff_maps_eq1b_le3j_SITV.pdf}
+    \caption{\mj region, (2--3,1)}
+    \label{fig:t2cc_mu_eff_le3j_1b}
+  \end{subfigure} \\
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v24/T2cc_v24_had_eff_maps_eq0b_ge4j_SITV.pdf}
+    \caption{Signal region, ($\geq 4$,0)}
+    \label{fig:t2cc_sig_eff_ge4j_0b}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v24/T2cc_v24_muon_eff_maps_eq0b_ge4j_SITV.pdf}
+    \caption{\mj region, ($\geq 4$,0)}
+    \label{fig:t2cc_mu_eff_ge4j_0b}
+  \end{subfigure} \\
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v24/T2cc_v24_had_eff_maps_eq1b_ge4j_SITV.pdf}
+    \caption{Signal region, ($\geq 4$,1)}
+    \label{fig:t2cc_sig_eff_ge4j_1b}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v24/T2cc_v24_muon_eff_maps_eq1b_ge4j_SITV.pdf}
+    \caption{\mj region, ($\geq 4$,1)}
+    \label{fig:t2cc_mu_eff_ge4j_1b}
+  \end{subfigure} \\
+  \caption{Signal efficiency times acceptance for the \Ttwocc simplified, for 
+  the hadronic selection (left) and the \mj selection (right), shown for the 
+  four most sensitive analysis categories with an inclusive selection on \HT.}
+  \label{fig:t2cc_eff}
+\end{figure}
+
+% \begin{figure}[h!]
+%   \centering
+%   \begin{subfigure}[b]{0.6\textwidth}
+%     \includegraphics[width=\textwidth, trim=0 0 0 30, clip=true]{Figs/sms/t2cc/v24/T2cc_v24_sig_inj_250_170.pdf}
+%     \caption{$m_{\sTop} = 250\gev, m_{\rm LSP} = 170\gev$}
+%     \label{fig:t2cc_sig_inj_dm80}
+%   \end{subfigure}
+%   \begin{subfigure}[b]{0.6\textwidth}
+%     \includegraphics[width=\textwidth, trim=0 0 0 30, clip=true]{Figs/sms/t2cc/v24/T2cc_v24_sig_inj_250_240.pdf}
+%     \caption{$m_{\sTop} = 250\gev, m_{\rm LSP} = 240\gev$}
+%     \label{fig:t2cc_sig_inj_dm10}
+%   \end{subfigure}
+%   \caption{balls}
+%   \label{fig:}
+% \end{figure}
 
 %********************************** % Second Section  *************************************
 \section{Systematic Uncertainties on Signal Acceptance }  %Section - 1.2
