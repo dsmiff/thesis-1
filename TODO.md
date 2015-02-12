@@ -56,6 +56,7 @@ do about it, with our various cuts
 - describe MC generation - can get from AN
 - add QCD MG samples to samples list
 - add section about T2_4body boost corrections
+- add section about ISR reweighting
 
 %%%%%%%%%%%%%%
 Chapter 6
@@ -90,6 +91,7 @@ Interpretation
 %%%%%%%%%%%%%%
 - crop signal eff plots
 - update to latest eff plots
+- latest plots to have no titles
 
 %%%%%%%%%%%%%%
 Chapter 10
