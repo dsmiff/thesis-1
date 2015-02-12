@@ -312,8 +312,8 @@ the JetMET POG.
 \emph{T2degen plots and some observations}
 
 \subsection{Initial State Radiation}
-As described in section~\ref{sec:isr_reweighting}, a set of boost \Pt dependent 
-event weights are prescribed by the data to MC comparison study performed within
+As described in section~\ref{sec:isr_reweighting}, boost \Pt dependent 
+event weights are taken from the data to MC comparison study performed within
 the SUSY PAG. A procedure is also defined to determine related systematics, by
 applying upwards and downwards variations of weights corresponding to the 
 magnitude of the corrections themselves, and studying the effect on signal 
@@ -344,19 +344,52 @@ table~\ref{tab:isr_syst_weights}.
 \emph{T2degen plots and some observations}
 
 \subsection{Btag scale factors}
+Specifically for \FASTSIM signal samples, events are not weighted using the 
+b-tag formula method described in section (REF), but instead using the 
+recommended method for \FULLSIM samples with an additional \FULLSIM to \FASTSIM 
+correction factor applied. The original correction is dependent on the generator
+level content of an event, and is defined as:
 
+\begin{equation}
+w = \frac{SF_b \epsilon \times (1-SF_b \epsilon) \times SF_{c,light} m \times (1
+-SF_{c,light} m)}{\epsilon \times (1-\epsilon) \times m \times (1-m)}
+\label{eq:btag_fullsim_weight}
+\end{equation}
+
+where $\epsilon(\Pt, \eta)$ and $m(\Pt, \eta)$ are the b-tagging efficiency and 
+mis-tagging rate, respectively. These factors are functions of \Pt and $\eta$, and
+are measured in SM MC for both the hadronic and \mj samples, for each \HT bin.
+
+Applying this event weight provides `corrected MC yields', which are then 
+have further \FASTSIM to \FULLSIM correction factors applied, as defined by REF 
+AN-2012-175.
+
+Systematic variations equal to the errors of these corrections are applied as 
+upwards and downwards deviations, and any effects on signal efficiency times 
+acceptance are studied.
 
 \emph{T2cc plots and some observations}
 
 \emph{T2degen plots and some observations}
 
 \subsection{PDF}
+Signal samples are produced using the \textsc{CTEQ6L1} PDF set. The acceptance 
+sensitivity to the used PDF set is investigated by comparing results using three
+other commonly used PDF sets, namely \textsc{CT10}, \textsc{NNPDF2.1} and
+\textsc{MSTW2008}. Following PDF4LHC recommendations [REF], the output is 
+combined to determine an `envelope' value combining the three alternative PDF 
+sets, and a related systematic uncertainty.
 
 \emph{T2cc plots and some observations}
 
 \emph{T2degen plots and some observations}
 
 \subsection{MHT/MET cleaning cut}
+The efficiency of the \mhtmet cleaning cut is compared between data and MC with 
+the aim of revealing any potential issues due to MC mis-modelling of the 
+variable. Efficiencies are compared in the \mj control sample, using \HT bins 
+ranging from $200 < \HT < 375 \gev$, in both \nj categories, with no requirement
+on \nb. Efficiencies are summarised in 
 
 \emph{T2cc plots and some observations}
 
