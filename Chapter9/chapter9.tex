@@ -194,24 +194,29 @@ giving leptons in the final state.
 \subsubsection{Boost corrections to T2\_4body}
 blah
 
+
 \subsection{ISR Corrections to compressed spectra MC signal samples}
+\label{sec:isr_reweighting}
+
 Given the reliance of such compressed spectra models on ISR jets for acceptance,
 a dedicated study was performed within the SUSY PAG into it's accuracy and 
 relevant systematic uncertainties [REF].
 
 A comparison of data to MC was performed for a high-stats, pure selection of Z boson 
 production with associated jets, where the Z decays to an opposite-sign,
-same-flavour (OSSF) lepton pair, $Z\ra \nu\bar{\nu}$. By tagging the leptons in 
+same-flavour (OSSF) lepton pair, $Z\ra l\bar{l}$. By tagging the leptons in 
 the event, any other jets can be considered as an ISR jet based ``recoil system'' 
 against that of the Z boson decay. Comparisons of data to MC for both the 
 vectorial sum of the lepton \Ptvect's and the recoil jet \Ptvect's indicate an
 overprediction in MC as a function of the recoil system's \Pt, of up to 20\% in 
-high \Pt scenarios.
+high \Pt scenarios, shown in figure~\ref{fig:isr_datamc}.
 
 Correction factors, dependent on the \Pt of the jet system, for \MADGRAPH based
 samples can therefore be derived by extracting the ratio of data to MC. These 
-values are summarised in table~\ref{tab:isr_weights}.
-
+values are summarised in table~\ref{tab:isr_weights}. Weights are applied to 
+both \texttt{T2cc} and \texttt{T2degen} samples at the event level, where the 
+event's boost \Pt is determined by calculating the vectorial sum of the 
+two, pair-produced generator level \sTop particles.
 
 \begin{table}[ht!]
   \caption{Correction factors for \MADGRAPH based signal samples to account for 
@@ -221,7 +226,7 @@ values are summarised in table~\ref{tab:isr_weights}.
   \begin{tabular}{ lc }
     \hline
     \hline
-    $\Pt_{jet system} (\gev)$    & Correction Factor \\
+    $\Pt_{boost} (\gev)$    & Correction Factor \\
     \hline
     $0 <\Pt\leq120    $          & 1.00 \\
     $120 <\Pt\leq150  $          & 0.95 \\
@@ -232,6 +237,18 @@ values are summarised in table~\ref{tab:isr_weights}.
   \end{tabular}
 \end{table}
 
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{Figs/isr/isr_zjets_distros.pdf}
+    % \caption{blah}
+    \caption{Data to MC comparisons for an enriched $Z \ra l\bar{l}$ selection, 
+    with the vectorial sum of lepton \Pt's (left) and of the recoil jets (right).
+    REF TO PAPER}
+    \label{fig:isr_datamc}
+  \end{center}
+\end{figure}
+
+\emph{show the effect on signal acceptance for T2cc?}
 
 % \begin{figure}[!h]
 %  \begin{center}
@@ -295,10 +312,32 @@ the JetMET POG.
 \emph{T2degen plots and some observations}
 
 \subsection{Initial State Radiation}
-Given the reliance on ISR jets for acceptance in such compressed spectra models,
-the uncertainty on the modelling of ISR in the signal samples is investigated. 
-Dedicated studies within the SUSY PAG have determined a procedure
+As described in section~\ref{sec:isr_reweighting}, a set of boost \Pt dependent 
+event weights are prescribed by the data to MC comparison study performed within
+the SUSY PAG. A procedure is also defined to determine related systematics, by
+applying upwards and downwards variations of weights corresponding to the 
+magnitude of the corrections themselves, and studying the effect on signal 
+efficiency times acceptance. These weights are summarised in
+table~\ref{tab:isr_syst_weights}.
 
+\begin{table}[ht!]
+  \caption{Systematic factors for \MADGRAPH based signal samples to determine 
+  ISR modelling related systematics.\label{tab:isr_syst_weights}}
+  \centering
+  \small
+  \begin{tabular}{ lc }
+    \hline
+    \hline
+    $\Pt_{boost} (\gev)$         & Systematic Variation \\
+    \hline
+    $0 <\Pt\leq120    $          & $\pm0.0$ \\
+    $120 <\Pt\leq150  $          & $\pm0.05$ \\
+    $150 <\Pt\leq250  $          & $\pm0.10$ \\
+    $250 < \Pt        $          & $\pm0.20$ \\    
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
 \emph{T2cc plots and some observations}
 
