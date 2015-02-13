@@ -13,9 +13,9 @@
 \section{Analysis Overview}  %Section - 1.1 
 \label{sec:selection_analysis_overview}
 
-Events are binned in exclusive categories of \HT, 
+In this analysis events are binned in exclusive categories of \HT, 
 and the multiplicity of jets and b-tagged jets,  
-\nj and \nb. Such binning allows for targetted interpretations across
+\nj and \nb. Such binning allows for targeted interpretations across
 the vast array of
 possible simplified model final states, while reducing background yields to a 
 minimum.
@@ -33,7 +33,7 @@ The main analysis signal region is described in the remainder of this chapter,
 with background prediction techniques detailed later in chapter~\ref{ch:6}.
 
 
-\subsection{The AlphaT kinematic variable}
+\subsection{The \alphat kinematic variable}
 \label{sec:alphat}
 
 QCD multijet (MJ) events dominate the SM background in any search with multiple jets 
@@ -75,10 +75,10 @@ form:
 \label{eq:alphat_njet}
 \end{equation}
 
-A perfectly measured dijet event containing back to back jets in $\phi$ will have an
-\alphat value of 0.5, whereas 
-events with \mht originating from jet mis-measurements will have values of $\alphat<0.5$.
-Events containing sources of genuine \met, whether from SM or BSM sources, have values
+A perfectly measured dijet event containing back to back jets in $\phi$ of equal energy will
+have an \alphat value of 0.5, whereas 
+events with \mht originating from jet energy mismeasurements will have values of $\alphat<0.5$.
+Events containing sources of genuine \met, whether from SM or BSM sources, can have values
 of $\alphat > 0.5$.
 
 \emph{show plots of correlations between \mht and \deltaHT for QCD, 
@@ -99,7 +99,7 @@ simulation samples used.
 SM backgrounds are categorized into sources of genuine and fake 
 missing energy.
 
-\subsubsection{Genuine EWK MET}
+\subsubsection{Genuine EWK \met}
 Events containing leptonic decays of W bosons, \wlnu, originating either
 from direct W prodution, or via the decay of a top quark, are sources of genuine 
 missing energy. The presence of a weakly interacting neutrino which evades
@@ -251,8 +251,8 @@ as shown in Table~\ref{tab:jet_pt_thresholds}.
   \end{tabular}
 \end{table}
 
-Example distributions are shown in figure~\ref{fig:datamc_had_inc}, comparing data 
-against MC.
+Example distributions of \alphat, \HT, \mht and jet \Pt  are shown in
+figure~\ref{fig:datamc_had_inc}, comparing data against MC.
 
 \begin{figure}[!ht]
   \centering
@@ -270,7 +270,7 @@ against MC.
     \end{subfigure}
     \begin{subfigure}[b]{0.48\textwidth}
       \includegraphics[width=\textwidth]{Figs/datamc/had/Stacked_CommonJetPt_all_200_upwards}
-      \caption{Common Jet \Pt}
+      \caption{Jet \Pt}
     \end{subfigure} \\
     \caption{\label{fig:datamc_had_inc}
     Comparison of data with MC for the full hadronic signal selection. Plots 
@@ -432,7 +432,7 @@ this `trick' to reduce errors
 
 
 
-\section{Datasets and MC samples}
+\section{Datasets and MonteCarlo samples}
 
 \subsection{Datasets}
 
@@ -476,9 +476,9 @@ background estimation.
   \end{tabular}
 \end{table}
 
-\subsection{Montecarlo Background and Signal samples}
+\subsection{MonteCarlo Background and Signal samples}
 
-The full list of montecarlo (MC) samples used in this analysis are listed in 
+The full list of MonteCarlo (MC) samples used in this analysis are listed in 
 Table~\ref{tab:mc-sm} along with the number of events, next-to-next-to-leading 
 order (NNLO) cross section and an effective integrated luminosity for each.
 
@@ -538,6 +538,10 @@ such that the sample's PU distribution matches that as measured in data.
         \verb!/QCD_Pt-1000to1400_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1!                    & 1964088  & 0.738   & 0.738   (LO) & 2661.4  \\
         \verb!/QCD_Pt-1400to1800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1!                    & 1988062  & 0.0335  & 0.0335  (LO) & 59345.1 \\
         \verb!/QCD_Pt-1800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1!                          & 977586   & 0.00183 & 0.00183 (LO) & 534200  \\
+        \verb!/QCD_HT-100To250_TuneZ2star_8TeV-madgraph-pythia/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!       & 50081518 & 1.036E7 & 1.036E7 (LO) & 0.005   \\
+        \verb!/QCD_HT-250To500_TuneZ2star_8TeV-madgraph-pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!      & 27062078 & 276000. & 276000. (LO) & 0.1     \\
+        \verb!/QCD_HT-500To1000_TuneZ2star_8TeV-madgraph-pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!     & 27613225 & 8426.   & 8426.   (LO) & 3.3     \\
+        \verb!/QCD_HT-1000ToInf_TuneZ2star_8TeV-madgraph-pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM!     & 12018415 & 204.    & 204.    (LO) & 58.9    \\
         \hline
       \end{tabular}
     \end{table}
@@ -547,13 +551,11 @@ such that the sample's PU distribution matches that as measured in data.
 Interpretations are made using signal MC samples, each representing a scan in 
 the phase space of a specific SMS model. The samples used are listed in
 Table~\ref{tab:mc-signal}. Each sample is generated at the parton level using \MADGRAPH and then
-decayed using \PYTHIA \emph{(too vague?)}. Up to two additional partons are simulated 
+decayed using \PYTHIASIX \emph{(too vague?)}. Up to two additional partons are simulated 
 in the initial generation step to ensure good modelling of initial state 
 radiation (ISR), however supplementary samples were produced with up to three
 additional partons to allow for systematic studies into the effect on the 
 analysis, as detailed in chapter~\ref{ch:9}.
-
-% \subsubsection{ISR reweighting of MC signal samples}
 
 \begin{landscape}
   \begin{center}
@@ -567,11 +569,16 @@ analysis, as detailed in chapter~\ref{ch:9}.
         Model & Sample & Description \\
         \hline
         \hline
-        \verb!T2cc! & \verb!/SMS-MadGraph_2J_T2cc_NoFilter_mStop-100to250_mLSP-20to230_8TeV-Pythia6Zstar/Summer12-START52_V9_FSIM-v1/AODSIM! & Original scan \\
-        \verb!T2cc! & \verb!/SMS-T2cc_NoFilter_mStop-175to250_mLSP-95to240_8TeV-Pythia6Z/Summer12-START52_V9_FSIM-v1/AODSIM! & Original scan \\
-        \verb!T2cc! & \verb!/SMS-T2cc_2J_mStop-250to350_mLSP-195to340_TuneZ2star_8TeV-madgraph-tauola/Summer12-START53_V19_FSIM-v2/AODSIM! & Scan extension \\
-        \verb!T2cc! & \verb!/SMS-8TeV_Pythia6Z_T2cc_3jets_mStop-200_mLSP-120/Summer12-START52_V9_FSIM-v1/AODSIM! & 3-parton sample \\
-        \verb!T2cc! & \verb!/SMS-8TeV_Pythia6Z_T2cc_3jets_mStop-200_mLSP-190/Summer12-START52_V9_FSIM-v1/AODSIM! & 3-parton sample \\
+        \verb!T2cc!     & \verb!/SMS-MadGraph_2J_T2cc_NoFilter_mStop-100to250_mLSP-20to230_8TeV-Pythia6Zstar/Summer12-START52_V9_FSIM-v1/AODSIM! & Original scan \\
+        \verb!T2cc!     & \verb!/SMS-T2cc_NoFilter_mStop-175to250_mLSP-95to240_8TeV-Pythia6Z/Summer12-START52_V9_FSIM-v1/AODSIM! & Original scan \\
+        \verb!T2cc!     & \verb!/SMS-T2cc_2J_mStop-250to350_mLSP-195to340_TuneZ2star_8TeV-madgraph-tauola/Summer12-START53_V19_FSIM-v2/AODSIM! & Scan extension \\
+        \verb!T2cc!     & \verb!/SMS-8TeV_Pythia6Z_T2cc_3jets_mStop-200_mLSP-120/Summer12-START52_V9_FSIM-v1/AODSIM! & 3-parton sample \\
+        \verb!T2cc!     & \verb!/SMS-8TeV_Pythia6Z_T2cc_3jets_mStop-200_mLSP-190/Summer12-START52_V9_FSIM-v1/AODSIM! & 3-parton sample \\
+        \verb!T2degen!  & \verb!/SMS-T2DegenerateStop_2J_mStop-100to150_mLSP-20to140_TuneZ2star_8TeV-madgraph-tauolapp/Summer12-START53_V19_FSIM_PU_S12-v1/AODSIM! & Original scan \\
+        \verb!T2degen!  & \verb!/SMS-T2DegenerateStop_2J_mStop-175to225_mLSP-95to215_TuneZ2star_8TeV-madgraph-tauolapp/Summer12-START53_V19_FSIM_PU_S12-v1/AODSIM! & Original scan \\
+        \verb!T2degen!  & \verb!/SMS-T2DegenerateStop_2J_mStop-250to300_mLSP-170to290_TuneZ2star_8TeV-madgraph-tauolapp/Summer12-START53_V19_FSIM_PU_S12-v1/AODSIM! & Original scan \\
+        \verb!T2degen!  & \verb!/SMS-T2DegenerateStop_2J_mStop-325to375_mLSP-245to365_TuneZ2star_8TeV-madgraph-tauolapp/Summer12-START53_V19_FSIM_PU_S12-v1/AODSIM! & Original scan \\
+        \verb!T2degen!  & \verb!/SMS-T2DegenerateStop_2J_mStop-400_mLSP-320to390_TuneZ2star_8TeV-madgraph-tauolapp/Summer12-START53_V19_FSIM_PU_S12-v1/AODSIM! & Original scan \\
         \hline
         \hline
       \end{tabular}
