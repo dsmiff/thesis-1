@@ -279,7 +279,7 @@ two, pair-produced generator level \sTop particles.
 %    \caption{Signal efficiency times acceptance for the \texttt{T2\_4body}
 %      in (left) the signal region and (right) the \mj control sample
 %      (\ie, signal contamination) for the relevant event categories
-%      defined by \njet and \nb. Note the different z-axis scales.}
+%      defined by \nj and \nb. Note the different z-axis scales.}
 %    \label{fig:sms-eff-t2_4body}
 %  \end{center}
 % \end{figure}
@@ -385,17 +385,97 @@ sets, and a related systematic uncertainty.
 \emph{T2degen plots and some observations}
 
 \subsection{MHT/MET cleaning cut}
+\label{sec:mhtmet_syst}
 The efficiency of the \mhtmet cleaning cut is compared between data and MC with 
-the aim of revealing any potential issues due to MC mis-modelling of the 
+the aim of revealing any potential issues due to MC mismodelling of the 
 variable. Efficiencies are compared in the \mj control sample, using \HT bins 
 ranging from $200 < \HT < 375 \gev$, in both \nj categories, with no requirement
-on \nb. Efficiencies are summarised in 
+on \nb. Efficiencies are summarised in table~\ref{tab:mht-met}, where 
+efficiency comparisons between data and MC statistically agree with unity.
+
+\emph{this covers \FULLSIM and data agreement, but what do we do for \FASTSIM to 
+\FULLSIM agreement?}
+
+\begin{table}[!h]
+  \caption{Efficiencies for the requirement $\mhtmet < 1.25$ obtained
+    from data ($\epsilon_{\text{data}}$) and simulation
+    ($\epsilon_{\text{MC}} $) in the \mj control sample with an
+    inclusive selection on \nb, the requirement $\alphat > 0.55$, for
+    the analysis bins at low \HT, and for the two jet multiplicity
+    bins, \njlow and \njhigh. Also quoted are the ratios of these
+    efficiencies ($\epsilon_{\text{MC}}/\epsilon_{\text{data}}$),
+    which is representative of the simulation performance with respect
+    to the \mht/\met variable. REWORD 
+  }
+  \label{tab:mht-met}
+  \centering
+  \footnotesize
+  \begin{tabular}{ ccccc }
+    \hline
+    \hline
+    \nj    & \HT (GeV) & $\epsilon_{\text{MC}}$ & $\epsilon_{\text{data}}$ & $\epsilon_{\text{MC}}/\epsilon_{\text{data}}$ \\
+    \hline
+    2--3     & 200--275      & $0.95 \pm 0.00$        & $0.95 \pm 0.01$          & $1.00 \pm 0.01$                               \\
+    2--3     & 275--325      & $0.97 \pm 0.01$        & $0.97 \pm 0.02$          & $1.00 \pm 0.02$                               \\
+    2--3     & 325--375      & $0.97 \pm 0.01$        & $0.97 \pm 0.02$          & $1.00 \pm 0.02$                               \\
+    2--3     & 375--475      & $0.98 \pm 0.01$        & $0.98 \pm 0.03$          & $1.00 \pm 0.03$                               \\
+    $\geq 4$ & 200--275      & $0.90 \pm 0.02$        & $0.92 \pm 0.04$          & $0.98 \pm 0.04$                               \\
+    $\geq 4$ & 275--325      & $0.92 \pm 0.01$        & $0.93 \pm 0.02$          & $0.99 \pm 0.02$                               \\
+    $\geq 4$ & 325--375      & $0.92 \pm 0.01$        & $0.93 \pm 0.04$          & $0.99 \pm 0.04$                               \\
+    $\geq 4$ & 375--475      & $0.95 \pm 0.02$        & $0.95 \pm 0.04$          & $1.00 \pm 0.04$                               \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
 \emph{T2cc plots and some observations}
 
 \emph{T2degen plots and some observations}
 
 \subsection{Dead ECAL Filter}
+To assess any potential MC mismodelling issues with the dead ECAL filter, a 
+similar analysis is made as described in section~\ref{sec:mhtmet_syst}. 
+Efficiencies between data and MC are compared for the \mj selection, with an 
+inclusive requirement on both \nb and \HT. As shown in table~\ref{tab:dead-ecal},
+the ratio of efficiencies between data and MC for each \nj category agree within
+statistical errors.
+
+\emph{\FULLSIM to \FASTSIM systs?}
+
+\begin{table}[!h]
+  \caption{
+    Ratios of efficiencies ($\epsilon_{\text{MC}}/\epsilon_{\text{data}}$) for
+    the dead ECAL filter obtained from data and
+    simulation in the \mj control sample with an inclusive selection
+    on \nb and \HT ($>200\gev$), and for the two jet multiplicity
+    bins, \njlow and \njhigh.  
+%    Efficiencies for the dead ECAL filter obtained
+%    from data ($\epsilon_{\text{data}}$) and simulation
+%    ($\epsilon_{\text{MC}}$) in the \mj control sample with an
+%    inclusive selection on \nb and \HT ($>200\gev$), and for the
+%    two jet multiplicity bins, \njlow and \njhigh. Also quoted are
+%    the ratios of these efficiencies ($\epsilon_{\rm
+%      MC}/\epsilon_{\text{data}}$), which is representative of the
+%    simulation performance with respect to the dead ECAL filter.
+  }
+  \label{tab:dead-ecal}
+  \centering
+  \footnotesize
+  %\begin{tabular}{ ccccc }
+  \begin{tabular}{ ccc }
+    \hline
+    \hline
+    %\nj    & \HT (GeV) & $\epsilon_{\text{MC}}$ & $\epsilon_{\text{data}}$ & $\epsilon_{\text{MC}}/\epsilon_{\text{data}}$ \\
+    \nj     & \HT (GeV) & $\epsilon_{\text{MC}}/\epsilon_{\text{data}}$                                                     \\
+    \hline
+    %2--3     & $>200$        & $0.64 \pm 0.01$        & $0.64 \pm 0.01$          & $1.00 \pm 0.01$                               \\
+    %$\geq 4$ & $>200$        & $0.58 \pm 0.01$        & $0.59 \pm 0.01$          & $0.98 \pm 0.01$                               \\
+    2--3      & $>200$        & $1.00 \pm 0.01$                                                                                   \\
+    $\geq 4$  & $>200$        & $0.98 \pm 0.01$                                                                                   \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
 \emph{T2cc plots and some observations}
 
