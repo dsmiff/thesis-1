@@ -469,8 +469,8 @@ statistical errors.
 \emph{T2degen plots and some observations}
 
 \subsection{Generator Level Partons}
-At the matrix element stage of the MC simulation production, a number of 
-additional feynman diagrams can be simulated to account for associated parton 
+At the \MADGRAPH matrix element stage of the MC simulation production, a number
+of additional feynman diagrams are simulated to account for associated parton 
 interactions, such as ISR and FSR. Given the dependence on such processes in the
 compressed spectra regime, an additional sub-sample of the \texttt{T2cc} scan 
 has been produced with up to 3 additional partons, to compare against the 
@@ -511,11 +511,72 @@ as flat contributions across the scan plan for all models.
 Flat corrections across the scan plane are made to account for the uncertainty 
 of the luminosity measurement, as quoted by Lumi POG at 2.3\% [REF].
 
-% \subsection{Shape systematics}
-% \subsection{Integrated Luminosity}
-% \subsection{Number of MC Partons}
-% \subsection{Any others?}
 \subsection{Summary}
+
+For each mass point in the scan plane, the total systematic is the sum in 
+quadrature of all individual contributions. Summaries are shown in
+tables~\ref{tab:sms-syst-t2cc} and \ref{tab:sms-syst-t2_4body}.
+
+\emph{NOTE: these values are all placeholders and need to be scrutinised!}
+
+\begin{table}[h!]
+  \caption{Representative ranges for each contribution to the total
+    systematic uncertainty in the signal efficiency times acceptance
+    for each relevant event category for the \texttt{T2cc}
+    interpretation. See text for further details on other
+    (fixed) contributions to the total systematic uncertainty. REWORD 
+    \label{tab:sms-syst-t2cc}
+  }   
+  \centering
+  \small
+  \begin{tabular}{ lcccccccc }
+    \hline
+    \hline
+    Category   & \multicolumn{2}{c}{(2--3,0)} & \multicolumn{2}{c}{($\geq 4$,0)} & \multicolumn{2}{c}{($\geq 4$,1)} & \multicolumn{2}{c}{($\geq 2$,$\geq 0$)} \\
+    Range      & Min.                         & Max.                             & Min.                             & Max. & Min. & Max. & Min. & Max.        \\
+    \hline
+    PDF        &                              &                                  &                                  &      &      &      & 0.04 & 0.14        \\
+    JES        & 0.00                         & 0.08                             & 0.06                             & 0.22 & 0.01 & 0.30 &      &             \\
+    ISR        & 0.09                         & 0.21                             & 0.16                             & 0.24 & 0.15 & 0.24 &      &             \\
+    b-tag SF   & 0.01                         & 0.02                             & 0.01                             & 0.02 & 0.03 & 0.04 &      &             \\
+    \mhtmet    & 0.02                         & 0.02                             & 0.02                             & 0.02 & 0.02 & 0.02 &      &             \\
+    Dead ECAL  & 0.02                         & 0.02                             & 0.02                             & 0.02 & 0.02 & 0.02 &      &             \\
+    \hline
+    Total syst & 0.12                         & 0.21                             & 0.22                             & 0.32 & 0.23 & 0.39 &      &             \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+  \caption{Representative ranges for each contribution to the total
+    systematic uncertainty in the signal efficiency times acceptance
+    for each relevant event category for the \texttt{T2Degen}
+    interpretation. See text for further details on other
+    (fixed) contributions to the total systematic uncertainty. REWORD
+    \label{tab:sms-syst-t2_4body}
+  }   
+  \centering
+  \small
+  \begin{tabular}{ lcccccccc }
+    \hline
+    \hline
+    Category   & \multicolumn{2}{c}{(2--3,0)} & \multicolumn{2}{c}{($\geq 4$,0)} & \multicolumn{2}{c}{($\geq 4$,1)} & \multicolumn{2}{c}{($\geq 2$,$\geq 0$)} \\
+    Range      & Min.                         & Max.                             & Min.                             & Max. & Min. & Max. & Min. & Max.        \\
+    \hline
+    PDF        &                              &                                  &                                  &      &      &      & 0.04 & 0.14        \\
+    JES        & 0.00                         & 0.08                             & 0.06                             & 0.22 & 0.01 & 0.30 &      &             \\
+    ISR        & 0.09                         & 0.21                             & 0.16                             & 0.24 & 0.15 & 0.24 &      &             \\
+    b-tag SF   & 0.01                         & 0.02                             & 0.01                             & 0.02 & 0.03 & 0.04 &      &             \\
+    \mhtmet    & 0.02                         & 0.02                             & 0.02                             & 0.02 & 0.02 & 0.02 &      &             \\
+    Dead ECAL  & 0.02                         & 0.02                             & 0.02                             & 0.02 & 0.02 & 0.02 &      &             \\
+    \hline
+    Total syst & 0.12                         & 0.21                             & 0.22                             & 0.32 & 0.23 & 0.39 &      &             \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
 
 %********************************** % Third Section  *************************************
 \section{Limits on models of Supersymmetry}  %Section - 1.3
