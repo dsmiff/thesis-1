@@ -1,131 +1,258 @@
 % ******************************* Thesis Appendix A ****************************
-\chapter{How to install \LaTeX} 
+\chapter{Signal Model Systematics}
 
-\section*{Windows OS}
+\section*{T2cc}
 
-\subsection*{TeXLive package - full version}
-\begin{enumerate}
-\item	Download the TeXLive ISO (2.2GB) from\\
-\href{https://www.tug.org/texlive/}{https://www.tug.org/texlive/}
-\item	Download WinCDEmu (if you don't have a virtual drive) from \\
-\href{http://wincdemu.sysprogs.org/download/}
-{http://wincdemu.sysprogs.org/download/}
-\item	To install Windows CD Emulator follow the instructions at\\
-\href{http://wincdemu.sysprogs.org/tutorials/install/}
-{http://wincdemu.sysprogs.org/tutorials/install/}
-\item	Right click the iso and mount it using the WinCDEmu as shown in \\
-\href{http://wincdemu.sysprogs.org/tutorials/mount/}{
-http://wincdemu.sysprogs.org/tutorials/mount/}
-\item	Open your virtual drive and run setup.pl
-\end{enumerate}
+\newpage
+\subsection*{Jet Energy Scale}
 
-or
-
-\subsection*{Basic MikTeX - \TeX~ distribution}
-\begin{enumerate}
-\item	Download Basic-MiK\TeX (32bit or 64bit) from\\
-\href{http://miktex.org/download}{http://miktex.org/download}
-\item	Run the installer 
-\item	To add a new package go to Start >> All Programs >> MikTex >> Maintenance (Admin) and choose Package Manager
-\item	Select or search for packages to install
-\end{enumerate}
-
-\subsection*{TexStudio - \TeX~ editor}
-\begin{enumerate}
-\item	Download TexStudio from\\
-\href{http://texstudio.sourceforge.net/\#downloads}
-{http://texstudio.sourceforge.net/\#downloads} 
-\item	Run the installer
-\end{enumerate}
-
-\section*{Mac OS X}
-\subsection*{MacTeX - \TeX~ distribution}
-\begin{enumerate}
-\item	Download the file from\\
-\href{https://www.tug.org/mactex/}{https://www.tug.org/mactex/}
-\item	Extract and double click to run the installer. It does the entire configuration, sit back and relax.
-\end{enumerate}
-
-\subsection*{TexStudio - \TeX~ editor}
-\begin{enumerate}
-\item	Download TexStudio from\\
-\href{http://texstudio.sourceforge.net/\#downloads}
-{http://texstudio.sourceforge.net/\#downloads} 
-\item	Extract and Start
-\end{enumerate}
-
-
-\section*{Unix/Linux}
-\subsection*{TeXLive - \TeX~ distribution}
-\subsubsection*{Getting the distribution:}
-\begin{enumerate}
-\item	TexLive can be downloaded from\\
-\href{http://www.tug.org/texlive/acquire-netinstall.html}
-{http://www.tug.org/texlive/acquire-netinstall.html}.
-\item	TexLive is provided by most operating system you can use (rpm,apt-get or yum) to get TexLive distributions
-\end{enumerate}
-
-\subsubsection*{Installation}
-\begin{enumerate}
-\item	Mount the ISO file in the mnt directory
-\begin{verbatim}
-mount -t iso9660 -o ro,loop,noauto /your/texlive####.iso /mnt
-\end{verbatim}
-
-\item	Install wget on your OS (use rpm, apt-get or yum install)
-\item	Run the installer script install-tl.
-\begin{verbatim}
-	cd /your/download/directory
-	./install-tl
-\end{verbatim}
-\item	Enter command `i' for installation
-
-\item	Post-Installation configuration:\\
-\href{http://www.tug.org/texlive/doc/texlive-en/texlive-en.html\#x1-320003.4.1}
-{http://www.tug.org/texlive/doc/texlive-en/texlive-en.html\#x1-320003.4.1} 
-\item	Set the path for the directory of TexLive binaries in your .bashrc file
-\end{enumerate}
-
-\subsubsection*{For 32bit OS}
-For Bourne-compatible shells such as bash, and using Intel x86 GNU/Linux and a default directory setup as an example, the file to edit might be \begin{verbatim}
-edit $~/.bashrc file and add following lines
-PATH=/usr/local/texlive/2011/bin/i386-linux:$PATH; 
-export PATH 
-MANPATH=/usr/local/texlive/2011/texmf/doc/man:$MANPATH;
-export MANPATH 
-INFOPATH=/usr/local/texlive/2011/texmf/doc/info:$INFOPATH;
-export INFOPATH
-\end{verbatim}
-\subsubsection*{For 64bit OS}
-\begin{verbatim}
-edit $~/.bashrc file and add following lines
-PATH=/usr/local/texlive/2011/bin/x86_64-linux:$PATH;
-export PATH 
-MANPATH=/usr/local/texlive/2011/texmf/doc/man:$MANPATH;
-export MANPATH 
-INFOPATH=/usr/local/texlive/2011/texmf/doc/info:$INFOPATH;
-export INFOPATH
-
-\end{verbatim}
+\begin{figure}[ht!]
+  \centering
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=4]{Figs/sms/t2cc/v24/JES_T2cc_v24_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=5]{Figs/sms/t2cc/v24/JES_T2cc_v24_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=6]{Figs/sms/t2cc/v24/JES_T2cc_v24_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=4]{Figs/sms/t2cc/v24/JES_T2cc_v24_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=5]{Figs/sms/t2cc/v24/JES_T2cc_v24_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=6]{Figs/sms/t2cc/v24/JES_T2cc_v24_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=4]{Figs/sms/t2cc/v24/JES_T2cc_v24_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=5]{Figs/sms/t2cc/v24/JES_T2cc_v24_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=6]{Figs/sms/t2cc/v24/JES_T2cc_v24_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=4]{Figs/sms/t2cc/v24/JES_T2cc_v24_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=5]{Figs/sms/t2cc/v24/JES_T2cc_v24_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=6]{Figs/sms/t2cc/v24/JES_T2cc_v24_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}\\
+  \caption{JES blah yoyoyo}
+  \label{fig:sms-jes-t2cc}
+\end{figure}
 
 
+\newpage
+\subsection*{PDF}
+\emph{FIND PLOTS}
 
-%\subsection{Installing directly using Linux packages} 
-\subsubsection*{Fedora/RedHat/CentOS:}
-\begin{verbatim} 
-sudo yum install texlive 
-sudo yum install psutils 
-\end{verbatim}
+% \begin{figure}[ht!]
+%   \centering
+%   \begin{subfigure}[b]{0.6\textwidth}
+%     \includegraphics[width=\textwidth]{Figs/sms/t2cc/acc_pSigmaRel_m0_m12}
+%     \caption{$+1\sigma$}
+%     \label{fig:sms-pdf-up-t2cc}
+%   \end{subfigure}
+%   \begin{subfigure}[b]{0.6\textwidth}
+%     \includegraphics[width=\textwidth]{Figs/sms/t2cc/acc_cvRel_m0_m12}
+%     \caption{Nominal}
+%     \label{fig:sms-pdf-nominal-t2cc}
+%   \end{subfigure}
+%   \begin{subfigure}[b]{0.6\textwidth}
+%     \includegraphics[width=\textwidth]{Figs/sms/t2cc/acc_mSigmaRel_m0_m12}
+%     \caption{$-1\sigma$}
+%     \label{fig:sms-pdf-down-t2cc}
+%   \end{subfigure}
+%   \caption{PDF shit yo}
+%   \label{fig:sms-pdf-t2cc}
+% \end{figure}
 
 
-\subsubsection*{SUSE:}
-\begin{verbatim}
-sudo zypper install texlive
-\end{verbatim}
+\newpage
+\subsection*{Initial State Radiation}
+
+\begin{figure}[ht!]
+  \centering
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=4]{Figs/sms/t2cc/v24/ISR_T2cc_v24_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=5]{Figs/sms/t2cc/v24/ISR_T2cc_v24_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=6]{Figs/sms/t2cc/v24/ISR_T2cc_v24_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=4]{Figs/sms/t2cc/v24/ISR_T2cc_v24_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=5]{Figs/sms/t2cc/v24/ISR_T2cc_v24_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=6]{Figs/sms/t2cc/v24/ISR_T2cc_v24_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=4]{Figs/sms/t2cc/v24/ISR_T2cc_v24_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=5]{Figs/sms/t2cc/v24/ISR_T2cc_v24_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=6]{Figs/sms/t2cc/v24/ISR_T2cc_v24_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=4]{Figs/sms/t2cc/v24/ISR_T2cc_v24_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=5]{Figs/sms/t2cc/v24/ISR_T2cc_v24_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=6]{Figs/sms/t2cc/v24/ISR_T2cc_v24_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}\\
+  \caption{ISR blah yoyoyo}
+  \label{fig:sms-isr-t2cc}
+\end{figure}
 
 
-\subsubsection*{Debian/Ubuntu:}
-\begin{verbatim} 
-sudo apt-get install texlive texlive-latex-extra 
-sudo apt-get install psutils
-\end{verbatim}
+\newpage
+\subsection*{B-tag Scale Factor}
+
+\begin{figure}[ht!]
+  \centering
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=4]{Figs/sms/t2cc/v24/bTag_T2cc_v24_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=5]{Figs/sms/t2cc/v24/bTag_T2cc_v24_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=6]{Figs/sms/t2cc/v24/bTag_T2cc_v24_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=4]{Figs/sms/t2cc/v24/bTag_T2cc_v24_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=5]{Figs/sms/t2cc/v24/bTag_T2cc_v24_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=6]{Figs/sms/t2cc/v24/bTag_T2cc_v24_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=4]{Figs/sms/t2cc/v24/bTag_T2cc_v24_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=5]{Figs/sms/t2cc/v24/bTag_T2cc_v24_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=6]{Figs/sms/t2cc/v24/bTag_T2cc_v24_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=4]{Figs/sms/t2cc/v24/bTag_T2cc_v24_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=5]{Figs/sms/t2cc/v24/bTag_T2cc_v24_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth, page=6]{Figs/sms/t2cc/v24/bTag_T2cc_v24_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}\\
+  \caption{bTag blah yoyoyo}
+  \label{fig:sms-btag-t2cc}
+\end{figure}
+
+
+\newpage
+\subsection*{\mhtmet cut}
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth, page=3]{Figs/sms/t2cc/v24/MHT_MET_T2cc_v24_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth, page=3]{Figs/sms/t2cc/v24/MHT_MET_T2cc_v24_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth, page=3]{Figs/sms/t2cc/v24/MHT_MET_T2cc_v24_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth, page=3]{Figs/sms/t2cc/v24/MHT_MET_T2cc_v24_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}\\
+  \caption{\mhtmet cut awesome awesome yeah ye}
+  \label{fig:sms-mhtmet-t2cc}
+\end{figure}
+
+
+\newpage
+\subsection*{Dead ECAL cut}
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth, page=3]{Figs/sms/t2cc/v24/DeadECAL_T2cc_v24_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth, page=3]{Figs/sms/t2cc/v24/DeadECAL_T2cc_v24_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth, page=3]{Figs/sms/t2cc/v24/DeadECAL_T2cc_v24_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth, page=3]{Figs/sms/t2cc/v24/DeadECAL_T2cc_v24_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}\\
+  \caption{Dead ECAL cut awesome awesome yeah ye}
+  \label{fig:sms-deadecal-t2cc}
+\end{figure}
+
+
+
