@@ -54,9 +54,7 @@ do about it, with our various cuts
 - fix titles in turn on curve plots - remove? crop each?
 - formula method section
 - describe MC generation - can get from AN
-- add QCD MG samples to samples list
-- add section about T2_4body boost corrections
-- add section about ISR reweighting
+- get lumis for HT and JetHT samples
 
 %%%%%%%%%%%%%%
 Chapter 6
