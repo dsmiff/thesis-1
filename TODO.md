@@ -100,6 +100,15 @@ Conclusion
 
 
 %%%%%%%%%%%%%%
+Appendix 1
+Signal Syst plots
+%%%%%%%%%%%%%%
+- update T2cc plots to latest
+- update T2degen plots to later
+- fill out all captions
+
+
+%%%%%%%%%%%%%%
 Definitions
 %%%%%%%%%%%%%%
 - Fix the MHT and MET slashes
