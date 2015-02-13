@@ -443,35 +443,22 @@ statistical errors.
 \emph{\FULLSIM to \FASTSIM systs?}
 
 \begin{table}[!h]
-  \caption{
-    Ratios of efficiencies ($\epsilon_{\text{MC}}/\epsilon_{\text{data}}$) for
-    the dead ECAL filter obtained from data and
-    simulation in the \mj control sample with an inclusive selection
-    on \nb and \HT ($>200\gev$), and for the two jet multiplicity
-    bins, \njlow and \njhigh.  
-%    Efficiencies for the dead ECAL filter obtained
-%    from data ($\epsilon_{\text{data}}$) and simulation
-%    ($\epsilon_{\text{MC}}$) in the \mj control sample with an
-%    inclusive selection on \nb and \HT ($>200\gev$), and for the
-%    two jet multiplicity bins, \njlow and \njhigh. Also quoted are
-%    the ratios of these efficiencies ($\epsilon_{\rm
-%      MC}/\epsilon_{\text{data}}$), which is representative of the
-%    simulation performance with respect to the dead ECAL filter.
-  }
+  \caption{Efficiencies of the dead ECAL cut for the \mj selection in data and 
+  MC. Inclusive requirements are made of \nb and \HT.}
   \label{tab:dead-ecal}
   \centering
   \footnotesize
-  %\begin{tabular}{ ccccc }
-  \begin{tabular}{ ccc }
+  \begin{tabular}{ ccccc }
+  % \begin{tabular}{ ccc }
     \hline
     \hline
-    %\nj    & \HT (GeV) & $\epsilon_{\text{MC}}$ & $\epsilon_{\text{data}}$ & $\epsilon_{\text{MC}}/\epsilon_{\text{data}}$ \\
-    \nj     & \HT (GeV) & $\epsilon_{\text{MC}}/\epsilon_{\text{data}}$                                                     \\
+    \nj    & \HT (GeV) & $\epsilon_{\text{MC}}$ & $\epsilon_{\text{data}}$ & $\epsilon_{\text{MC}}/\epsilon_{\text{data}}$ \\
+    % \nj     & \HT (GeV) & $\epsilon_{\text{MC}}/\epsilon_{\text{data}}$                                                     \\
     \hline
-    %2--3     & $>200$        & $0.64 \pm 0.01$        & $0.64 \pm 0.01$          & $1.00 \pm 0.01$                               \\
-    %$\geq 4$ & $>200$        & $0.58 \pm 0.01$        & $0.59 \pm 0.01$          & $0.98 \pm 0.01$                               \\
-    2--3      & $>200$        & $1.00 \pm 0.01$                                                                                   \\
-    $\geq 4$  & $>200$        & $0.98 \pm 0.01$                                                                                   \\
+    2--3     & $>200$        & $0.64 \pm 0.01$        & $0.64 \pm 0.01$          & $1.00 \pm 0.01$                               \\
+    $\geq 4$ & $>200$        & $0.58 \pm 0.01$        & $0.59 \pm 0.01$          & $0.98 \pm 0.01$                               \\
+    % 2--3      & $>200$        & $1.00 \pm 0.01$                                                                                   \\
+    % $\geq 4$  & $>200$        & $0.98 \pm 0.01$                                                                                   \\
     \hline
     \hline
   \end{tabular}
@@ -481,10 +468,53 @@ statistical errors.
 
 \emph{T2degen plots and some observations}
 
-\subsection{Shape systematics}
-\subsection{Integrated Luminosity}
-\subsection{Number of MC Partons}
-\subsection{Any others?}
+\subsection{Generator Level Partons}
+At the matrix element stage of the MC simulation production, a number of 
+additional feynman diagrams can be simulated to account for associated parton 
+interactions, such as ISR and FSR. Given the dependence on such processes in the
+compressed spectra regime, an additional sub-sample of the \texttt{T2cc} scan 
+has been produced with up to 3 additional partons, to compare against the 
+complete scan's up to 2 additional partons. This scan contains two mass points 
+at a stop mass near the region of maximum sensitivity, with mass splittings 
+covering the entire range of the scan. The relative change in efficiency times 
+acceptance between the two scans is shown in table~\ref{tab:sms-t2cc-2v3part}. 
+These values are interpretted as systematic uncertainties on the number of 
+associated partons modelled for such compressed spectra models, and are applied 
+as flat contributions across the scan plan for all models.
+
+\begin{table}[!h]
+  \caption{Relative change in efficiency times acceptance for the
+    2-parton and 3-parton scans in the signal region, with an inclusive 
+    selection on \nb and \HT>200 \gev. The scan points are $m_{\sTop} = 200$ \gev 
+    and $m_{\chiz} = (120, 190)$ \gev.}
+  \label{tab:sms-t2cc-2v3part}
+  \centering
+  \small
+  \begin{tabular}{ lcc }
+    \hline
+    \hline
+    Category     & \multicolumn{2}{c}{$\Delta m$ (GeV)} \\
+    \cline{2-3}
+                 & 10   & 80                            \\
+    \hline
+    (2--3,0)     & 0.00 & 0.04                          \\
+    (2--3,1)     & 0.02 & 0.04                          \\
+    ($\geq 4$,0) & 0.04 & 0.04                          \\
+    ($\geq 4$,1) & 0.00 & 0.00                          \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+
+\subsection{Luminosity Measurement}
+Flat corrections across the scan plane are made to account for the uncertainty 
+of the luminosity measurement, as quoted by Lumi POG at 2.3\% [REF].
+
+% \subsection{Shape systematics}
+% \subsection{Integrated Luminosity}
+% \subsection{Number of MC Partons}
+% \subsection{Any others?}
 \subsection{Summary}
 
 %********************************** % Third Section  *************************************
