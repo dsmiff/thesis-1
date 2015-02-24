@@ -203,14 +203,26 @@ figure~\ref{fig:t2degen_boost_compare}.
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.6\textwidth, page=16]{Figs/sms/t2degen/corrs/output_T2ccVsT2_4body_300_dM10_inc_inc_noCuts.pdf}
+    \includegraphics[width=0.6\textwidth]{Figs/sms/t2degen/corrs/compar_stopGenPtVect_0_inc_inc_T2cc_noCuts_sitv_log.pdf}
   \caption{Comparison of the vectorially summer generator-level \Pt of the
   pair-produced \sTop particles, between the \texttt{T2cc} (red) and
   \texttt{T2Degen} (blue) 
-  samples, for the mass point (300, 290) \gev. No selection cuts are made.}
+  samples, for the mass point (300, 290) \gev. No selection cuts are made and 
+  plots are each normalised to a unit area.}
   \label{fig:t2degen_boost_compare}
 \end{figure}
 
+Corrections are taken as the ratio between \texttt{T2Degen} and \texttt{T2cc}
+as a function of the boost \Pt, for each value of $m_{\sTop}$ in the scan. The 
+values of these corrections are shown in figure~\ref{fig:t2degen_boost_weights}.
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.8\textwidth]{Figs/sms/t2degen/corrs/stop_lut_weights.pdf}
+  \caption{The weights applied to the \texttt{T2degen} sample, shown as a 
+  function of $m_{\sTop}$ and boost \Pt.}
+  \label{fig:t2degen_boost_weights}
+\end{figure}
 
 \subsection{ISR Corrections to compressed spectra MC signal samples}
 \label{sec:isr_reweighting}
