@@ -22,7 +22,7 @@ selected after an inspection of each for their significance given signal
 injection from specific mass points (REF).
 
 \subsection{T2cc}
-Signal efficiency times acceptance for the \texttt{T2cc} model is shown in 
+Signal efficiency times acceptance for the \texttt{T2cc} model, \Ttwocc,  is shown in 
 figure~\ref{fig:sms-t2cc-sig}. The strongest acceptance is seen in the \njlow, 
 \nb=0 analysis category, where efficiencies are around the percent level. At 
 small mass splittings, nearest the kinematically inaccessible diagonal region, 
@@ -122,7 +122,8 @@ lack of leptonic activity in the final state.
 
 \subsection{T2\_4body}
 
-The \Ttwodegen model signal efficiency times acceptance distributions are shown 
+The signal efficiency times acceptance distributions for the \texttt{T2degen} model,
+\Ttwodegen, are shown 
 in figure~\ref{fig:t2_4body_eff} in the four most sensitive analysis categories,
 with an inclusive \HT selection, both for the hadronic and \mj selections. There
 are strong similarities with those shown earlier for the \texttt{T2cc} model, 
@@ -192,7 +193,23 @@ giving leptons in the final state.
 \end{figure}
 
 \subsubsection{Boost corrections to T2\_4body}
-blah
+Following generator level studies of the \texttt{T2degen} sample a discrepancy 
+between the stop system's boot \Pt with respect to the \texttt{T2cc} sample. As 
+the kinematics of the stop system should have no dependence whatsover on the 
+decay channel, any discrepancy must be artifical [BETTER WORD?], and should 
+therefore be corrected. To determine the magnitude of the required corrections, 
+a direct comparison between the two samples was made, as shown in
+figure~\ref{fig:t2degen_boost_compare}.
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.6\textwidth, page=16]{Figs/sms/t2degen/corrs/output_T2ccVsT2_4body_300_dM10_inc_inc_noCuts.pdf}
+  \caption{Comparison of the vectorially summer generator-level \Pt of the
+  pair-produced \sTop particles, between the \texttt{T2cc} (red) and
+  \texttt{T2Degen} (blue) 
+  samples, for the mass point (300, 290) \gev. No selection cuts are made.}
+  \label{fig:t2degen_boost_compare}
+\end{figure}
 
 
 \subsection{ISR Corrections to compressed spectra MC signal samples}
