@@ -23,7 +23,7 @@ injection from specific mass points (REF).
 
 \subsection{T2cc}
 Signal efficiency times acceptance for the \texttt{T2cc} model, \Ttwocc,  is shown in 
-figure~\ref{fig:sms-t2cc-sig}. The strongest acceptance is seen in the \njlow, 
+figure~\ref{fig:t2cc_eff}. The strongest acceptance is seen in the \njlow, 
 \nb=0 analysis category, where efficiencies are around the percent level. At 
 small mass splittings, nearest the kinematically inaccessible diagonal region, 
 acceptance is due to hard initial state radiation (ISR) jets balancing a soft 
@@ -224,6 +224,11 @@ values of these corrections are shown in figure~\ref{fig:t2degen_boost_weights}.
   \label{fig:t2degen_boost_weights}
 \end{figure}
 
+Acceptance on at the smallest mass-splittings should be in agreement between 
+both the \texttt{T2cc} and \texttt{T2Degen} samples following these corrections,
+as sensitivity comes entirely from ISR jets and therefore the boost spectrum of 
+the \sTop particles. As shown in MAKE PLOT SHOWING AGREEMENT
+
 \subsection{ISR Corrections to compressed spectra MC signal samples}
 \label{sec:isr_reweighting}
 
@@ -333,12 +338,27 @@ analysis, all plots shown represent an inclusive selection of \HT>200\gev.
 \subsection{Jet energy scale}
 The acceptance efficiency is tested for sensitivity to jet energies by measuring
 it's change to an upwards and downwards variations of all jet energies by the 
-\Pt and $\eta\text{-dependent}$ jet energy scale uncertainty, as prescribed by 
+\Pt and $\eta\text{-dependent}$ jet energy scale (JES) uncertainty, as prescribed by 
 the JetMET POG.
 
-\emph{T2cc plots and some observations}
+Distributions showing the acceptance changes due to the variations in JES are 
+shown in sections \ref{sec:t2cc_jes_plots} for the \texttt{T2cc} model and
+\ref{sec:t2degen_jes_plots} for the \texttt{T2Degen} model.
 
-\emph{T2degen plots and some observations}
+In both models, the effects of applying 
+JES variations are stronger in the \njhigh category. An increased number of jets
+sharing the small kinematic phase space of the compressed region implies softer jets.
+Therefore applying
+variations on the jet energies is more likely to move jets in and out of 
+acceptance. This effect is also noticeable in the \njlow, 1b category for 
+\texttt{T2cc} (figure~\ref{fig:sms-jes-t2cc-le3j-1b}), where changes in acceptance
+are larger away from the diagonal, 
+where acceptance is dependent on jets originating from the soft SUSY decay.
+
+The \texttt{T2Degen} model decay contains a real b-quark, and consequently JES 
+uncertainties have a dependence on \nb, where higher variations are observed in 
+the \nb=1 category (figure~\ref{fig:sms-jes-tdegen-le3j-1b}).
+
 
 \subsection{Initial State Radiation}
 As described in section~\ref{sec:isr_reweighting}, boost \Pt dependent 
