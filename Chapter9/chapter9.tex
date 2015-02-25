@@ -22,6 +22,7 @@ selected after an inspection of each for their significance given signal
 injection from specific mass points (REF).
 
 \subsection{T2cc}
+\label{sec:t2cc_eff}
 Signal efficiency times acceptance for the \texttt{T2cc} model, \Ttwocc,  is shown in 
 figure~\ref{fig:t2cc_eff}. The strongest acceptance is seen in the \njlow, 
 \nb=0 analysis category, where efficiencies are around the percent level. At 
@@ -121,6 +122,7 @@ lack of leptonic activity in the final state.
 % \end{figure}
 
 \subsection{T2\_4body}
+\label{sec:t2degen_eff}
 
 The signal efficiency times acceptance distributions for the \texttt{T2degen} model,
 \Ttwodegen, are shown 
@@ -128,7 +130,7 @@ in figure~\ref{fig:t2_4body_eff} in the four most sensitive analysis categories,
 with an inclusive \HT selection, both for the hadronic and \mj selections. There
 are strong similarities with those shown earlier for the \texttt{T2cc} model, 
 both in magnitude and distribution about the plane. At small values of \deltam, 
-given that the entire susy decay system becomes invisible due to a lack of 
+given that the entire SUSY decay system becomes invisible due to a lack of 
 kinematic phase space, both models show very similar efficiencies, where 
 acceptance is almost entirely due to hard ISR jets within acceptance. There is a
 significant difference however, when a b-tagged jet is required, for example in 
@@ -195,8 +197,8 @@ giving leptons in the final state.
 \subsubsection{Boost corrections to T2\_4body}
 Following generator level studies of the \texttt{T2degen} sample a discrepancy 
 between the stop system's boot \Pt with respect to the \texttt{T2cc} sample. As 
-the kinematics of the stop system should have no dependence whatsover on the 
-decay channel, any discrepancy must be artifical [BETTER WORD?], and should 
+the kinematics of the stop system should have no dependence whatsoever on the 
+decay channel, any discrepancy must be artificial [BETTER WORD?], and should 
 therefore be corrected. To determine the magnitude of the required corrections, 
 a direct comparison between the two samples was made, as shown in
 figure~\ref{fig:t2degen_boost_compare}.
@@ -204,7 +206,7 @@ figure~\ref{fig:t2degen_boost_compare}.
 \begin{figure}[h!]
   \centering
     \includegraphics[width=0.6\textwidth]{Figs/sms/t2degen/corrs/compar_stopGenPtVect_0_inc_inc_T2cc_noCuts_sitv_log.pdf}
-  \caption{Comparison of the vectorially summer generator-level \Pt of the
+  \caption{Comparison of the vectorial sum generator-level \Pt of the
   pair-produced \sTop particles, between the \texttt{T2cc} (red) and
   \texttt{T2Degen} (blue) 
   samples, for the mass point (300, 290) \gev. No selection cuts are made and 
@@ -236,13 +238,13 @@ Given the reliance of such compressed spectra models on ISR jets for acceptance,
 a dedicated study was performed within the SUSY PAG into it's accuracy and 
 relevant systematic uncertainties [REF].
 
-A comparison of data to MC was performed for a high-stats, pure selection of Z boson 
+A comparison of data to MC was performed for a high-statistics, pure selection of Z boson 
 production with associated jets, where the Z decays to an opposite-sign,
 same-flavour (OSSF) lepton pair, $Z\ra l\bar{l}$. By tagging the leptons in 
 the event, any other jets can be considered as an ISR jet based ``recoil system'' 
 against that of the Z boson decay. Comparisons of data to MC for both the 
 vectorial sum of the lepton \Ptvect's and the recoil jet \Ptvect's indicate an
-overprediction in MC as a function of the recoil system's \Pt, of up to 20\% in 
+over-prediction in MC as a function of the recoil system's \Pt, of up to 20\% in 
 high \Pt scenarios, shown in figure~\ref{fig:isr_datamc}.
 
 Correction factors, dependent on the \Pt of the jet system, for \MADGRAPH based
@@ -254,7 +256,7 @@ two, pair-produced generator level \sTop particles.
 
 \begin{table}[ht!]
   \caption{Correction factors for \MADGRAPH based signal samples to account for 
-  MC overprediction of ISR.\label{tab:isr_weights}}
+  MC over-prediction of ISR.\label{tab:isr_weights}}
   \centering
   \small
   \begin{tabular}{ lc }
@@ -388,9 +390,16 @@ table~\ref{tab:isr_syst_weights}.
   \end{tabular}
 \end{table}
 
-\emph{T2cc plots and some observations}
+As discussed previously in sections~\ref{sec:t2cc_eff} and \ref{sec:t2degen_eff},
+acceptance for compressed spectra models at the smallest \deltam (i.e. nearest 
+the diagonal) is almost entirely due to presence of hard ISR jets. Away from the
+diagonal, ISR jets are still important, however they are relied upon to boost 
+the soft SUSY decay system. Subsequently, systematics due to ISR variations are 
+observed to be largest nearest the diagonal for all categories, as shown in
+figure~\ref{fig:sms-isr-t2cc} and \ref{fig:sms-isr-t2degen} for \texttt{T2cc} 
+and \texttt{T2Degen} respectively. Due to this dependence, systematics related 
+to ISR are the largest contribution.
 
-\emph{T2degen plots and some observations}
 
 \subsection{Btag scale factors}
 Specifically for \FASTSIM signal samples, events are not weighted using the 
@@ -406,7 +415,7 @@ w = \frac{SF_b \epsilon \times (1-SF_b \epsilon) \times SF_{c,light} m \times (1
 \end{equation}
 
 where $\epsilon(\Pt, \eta)$ and $m(\Pt, \eta)$ are the b-tagging efficiency and 
-mis-tagging rate, respectively. These factors are functions of \Pt and $\eta$, and
+mistagging rate, respectively. These factors are functions of \Pt and $\eta$, and
 are measured in SM MC for both the hadronic and \mj samples, for each \HT bin.
 
 Applying this event weight provides `corrected MC yields', which are then 
