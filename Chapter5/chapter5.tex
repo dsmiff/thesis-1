@@ -21,10 +21,11 @@ processes using
 extrapolations into the signal region fromindependent, process-specific control
 samples, as described at length in chapter~\ref{ch:6}.
 Fake \met predominantly is found due to mismeasurements of QCD 
-multijet events, which are the dominant process in the hadronic environment and 
+multijet (MJ) events, which are the dominant process in the hadronic environment and 
 phase space considered in this analysis due to very large cross sections. 
-Small inconsistencies in the handling of such large backgrounds can therefore 
-have significant effects on an analysis. This background is reduced to an 
+Small inconsistencies in the handling of such large backgrounds or rare detector
+effects can therefore 
+have a significant impact on an analysis. This background is reduced to an 
 entirely negligible level using the dimensionless kinematic variable, \alphat
 (later described in section~\ref{sec:alphat}).
 
@@ -77,7 +78,7 @@ The main analysis signal region is described in the remainder of this chapter.
 \label{sec:alphat}
 
 QCD multijet (MJ) events dominate the SM background in any search with multiple jets 
-in the final state. Jet mis-measurements in a 
+in the final state. Jet energy mis-measurements in a 
 purely QCD MJ event can lead to non-negligible amounts of \mht, therefore 
 passing the signal selection. Attempting
 to accurately measure this contribution is
@@ -216,7 +217,8 @@ event is measured as imbalanced and containing \mht. Events such as these are la
 removed with the \alphat requirement, however in addition a requirement is made on the
 ratio \mhtmet.
 
-Finally, it is also possible for instrumentation effects can to lead to jet
+Finally, it is also possible for rare instrumentation effects to lead to jet 
+energy
 mismeasurements. To protect against this, a suite of MET filters are defined by 
 the JetMET POG, and are applied to all selections.
 
@@ -274,8 +276,9 @@ with a 25\gev offset in online and offline \HT, with the exception of the 200
   \end{tabular}
 \end{table}
 
-Trigger efficiencies are measured against an unbiased muon reference trigger,
-\\\verb!HLT_IsoMu24_eta2p1!, using a muon tag and probe method where a
+Trigger efficiencies are measured against an unbiased single muon reference trigger,
+\\\verb!HLT_IsoMu24_eta2p1!, using a muon tag and probe method \emph{Henning: "
+hmmmm"} where a
 single muon is selected and then subsequently ignored from the analysis when 
 calculating event level variables such as \HT, \mht and \alphat. Efficiencies 
 are measured for each \HT bin and for each \nj category, as summarised in 
@@ -397,6 +400,8 @@ as:
 \Delta \phi^*_j = \Delta \phi\big(\overrightarrow{\Pt}_j,-\sum_{i\neq j}{\overrightarrow{\Pt}_i}\big)
 \label{eq:biasdphi}
 \end{equation}
+
+\emph{Why is this better than $\Delta \phi(\met, jet)$?}
 
 A small value of $\Delta \phi^*_j$ indicates that the momentum vector of $j$
 is aligned with the \mht vector, implying the jet is mis-measured. Events are 
