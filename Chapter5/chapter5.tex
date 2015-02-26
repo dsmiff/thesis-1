@@ -13,24 +13,64 @@
 \section{Analysis Overview}  %Section - 1.1 
 \label{sec:selection_analysis_overview}
 
+Analyses searching in the jets and \met final state encounter significant 
+backgrounds from SM sources of both genuine and fake \met. Genuine \met 
+originates from W and Z boson production, decaying with one or more neutrinos in
+the final state. In this analysis backgrounds predictions are made for these
+processes using 
+extrapolations into the signal region fromindependent, process-specific control
+samples, as described at length in chapter~\ref{ch:6}.
+Fake \met predominantly is found due to mismeasurements of QCD 
+multijet events, which are the dominant process in the hadronic environment and 
+phase space considered in this analysis due to very large cross sections. 
+Small inconsistencies in the handling of such large backgrounds can therefore 
+have significant effects on an analysis. This background is reduced to an 
+entirely negligible level using the dimensionless kinematic variable, \alphat
+(later described in section~\ref{sec:alphat}).
+
+% OLD
+% Analyses searching in the jets and \met final state encounter significant 
+% backgrounds from SM sources of both genuine \met, originating from the leptonic 
+% decays of W bosons, 
+% and fake \met, originating from jet mis-measurement. The \alphat 
+% analysis makes predictions for the former using a data-driven transfer factor 
+% technique to extrapolate yields from statistically independent control samples 
+% into the signal region. However the latter, sources of fake \met from QCD multijet events,
+% are reduced to a negligible level using the kinematic 
+% variable \alphat.
+
 In this analysis events are binned in exclusive categories of \HT, 
 and the multiplicity of jets and b-tagged jets,  
-\nj and \nb. Such binning allows for targeted interpretations across
-the vast array of
+\nj and \nb, as summarised in table~\ref{tab:ht-bins}. Such binning allows for
+targeted interpretations across the vast array of
 possible simplified model final states, while reducing background yields to a 
 minimum.
 
-Analyses searching in the jets and \met final state encounter significant 
-backgrounds from SM sources of both genuine \met [with associated jet production] 
-and fake \met, originating from jet mis-measurement. The \alphat 
-analysis makes predictions for the former using a data-driven transfer factor 
-technique to extrapolate yields from statistically independent control samples 
-into the signal region. However the latter, sources of fake \met from QCD multijet events,
-are reduced to a negligible level using the kinematic 
-variable \alphat.
+\begin{table}[ht!]
+  \caption{\HT binning used for each \nj and \nb category.\label{tab:ht-bins}}
+  \centering
+  % \scriptsize % too big to fit on page
+  \tiny
+  \begin{tabular}{ lrrrrrrrrrrr }
+    \hline
+    \hline
+    (\nj,\nb)       & \multicolumn{11}{c}{\HT bins (\gev)}                                                                                \\
+    \hline
+    (2-3,0)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
+    (2-3,1)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
+    (2-3,2)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
+%    (2-3,3)          & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
+    ($\geq$4,0)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
+    ($\geq$4,1)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
+    ($\geq$4,2)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
+    ($\geq$4,3)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
+    ($\geq$4,$\geq$4) & 200--275 & 275--325 & 325--375 & $>$375   & \multicolumn{7}{c}{}                                                        \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
-The main analysis signal region is described in the remainder of this chapter,
-with background prediction techniques detailed later in chapter~\ref{ch:6}.
+The main analysis signal region is described in the remainder of this chapter.
 
 
 \subsection{The \alphat kinematic variable}
@@ -345,35 +385,11 @@ vetoed if a jet with $\Delta \phi^*<0.5$ is within $\Delta R < 0.3$ of a known
 `dead' region of the ECAL.
 
 Following this preselection, events are further categorized into the three 
-binning dimensions of \HT, \nb and \nj, as shown in table~\ref{tab:ht-bins}. Two 
+binning dimensions of \HT, \nb and \nj, as shown earlier in table~\ref{tab:ht-bins}. Two 
 jet multiplicity categories are defined as 2 or 3 jets, and 4 or more. B-tagged 
 jet multiplicities are exactly 0, 1, 2, 3 or 4 and more. Combinations of these 
 various categories are then further sub-divided into multiple \HT bins ranging 
 from 200\gev up to an inclusive bin of $\HT>1075$\gev.
-
-\begin{table}[ht!]
-  \caption{\HT binning used for each \nj and \nb category.\label{tab:ht-bins}}
-  \centering
-  % \scriptsize % too big to fit on page
-  \tiny
-  \begin{tabular}{ lrrrrrrrrrrr }
-    \hline
-    \hline
-    (\nj,\nb)       & \multicolumn{11}{c}{\HT bins (\gev)}                                                                                \\
-    \hline
-    (2-3,0)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
-    (2-3,1)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
-    (2-3,2)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
-%    (2-3,3)          & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
-    ($\geq$4,0)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
-    ($\geq$4,1)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
-    ($\geq$4,2)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
-    ($\geq$4,3)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
-    ($\geq$4,$\geq$4) & 200--275 & 275--325 & 325--375 & $>$375   & \multicolumn{7}{c}{}                                                        \\
-    \hline
-    \hline
-  \end{tabular}
-\end{table}
 
 For bins of $\HT>375$\gev the leading two jets in the event are required to 
 have $\Pt>100$\gev, with all additional jets having half the requirement of
