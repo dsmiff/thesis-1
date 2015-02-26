@@ -89,20 +89,35 @@ achieved with the dimensionless kinematic variable, \alphat [REF]. This is defin
 for di-jets as:
 
 \begin{equation}
-\alphat = \frac{E_T^{j_2}}{M_T}
+\alphat = \frac{ \sqrt{E_T^{j_2}/E_T^{j_1}} }{ \sqrt{2(1-cos(\Delta \phi))} }
 \label{eq:alphat_di-jet}
 \end{equation}
 
-where $E_T^{j_2}$ is the transverse energy of the less energetic jet and $M_T$ 
-is the transverse mass of the di-jet system, defined as:
+where $E_T^{j_1}$ and $E_T^{j_2}$ are the reconstructed transverse energies of 
+the first and second jets respectively, and $\Delta \phi$ is the seperation 
+between the two jets in the $\phi$ plane.
 
-\begin{equation}
-M_T = \sqrt{\bigg(\sum^2_{i=1}{E_T^{j_i}}\bigg)^2 - \bigg(\sum^2_{i=1}{p_x^{j_i}}\bigg)^2 - \bigg(\sum^2_{i=1}{p_y^{j_i}}\bigg)^2}
-\label{eq:mt}
-\end{equation}
+A perfectly measured di-jet event containing back to back jets in $\phi$ of equal energy will
+have an \alphat value of 0.5, whereas 
+events with \met originating from jet energy mismeasurements will have values of $\alphat<0.5$.
+Events containing sources of genuine \met, whether from SM or BSM sources, can have values
+of $\alphat > 0.5$. REWORD?
 
-where $E_T^{j_i}$, $p_x^{j_i}$ and $p_y^{j_i}$ are the transverse energy and 
-transverse momentum in the $x$ and $y$ planes, for the jet $j_i$.
+% \begin{equation}
+% \alphat = \frac{E_T^{j_2}}{M_T} = \frac{\sqrt{}}
+% \label{eq:alphat_di-jet}
+% \end{equation}
+
+% where $E_T^{j_2}$ is the transverse energy of the less energetic jet and $M_T$ 
+% is the transverse mass of the di-jet system, defined as:
+
+% \begin{equation}
+% M_T = \sqrt{\bigg(\sum^2_{i=1}{E_T^{j_i}}\bigg)^2 - \bigg(\sum^2_{i=1}{p_x^{j_i}}\bigg)^2 - \bigg(\sum^2_{i=1}{p_y^{j_i}}\bigg)^2}
+% \label{eq:mt}
+% \end{equation}
+
+% where $E_T^{j_i}$, $p_x^{j_i}$ and $p_y^{j_i}$ are the transverse energy and 
+% transverse momentum in the $x$ and $y$ planes, for the jet $j_i$.
 
 The \alphat variable can be generalised to an n-jet case by considering the event as a 
 pseudo-di-jet system, constructing each pseudo-jet such that the difference in \HT
@@ -114,12 +129,6 @@ form:
 \frac{1}{2} \times \frac{1-\frac{\deltaHT}{\HT}}{\sqrt{1 - \frac{\mht}{\HT}^2}}
 \label{eq:alphat_njet}
 \end{equation}
-
-A perfectly measured di-jet event containing back to back jets in $\phi$ of equal energy will
-have an \alphat value of 0.5, whereas 
-events with \mht originating from jet energy mismeasurements will have values of $\alphat<0.5$.
-Events containing sources of genuine \met, whether from SM or BSM sources, can have values
-of $\alphat > 0.5$.
 
 \emph{show plots of correlations between \mht and \deltaHT for QCD, 
 signal, SM real MET etc.}
@@ -136,8 +145,6 @@ region, as well as the relevant trigger requirements and data and
 simulation samples used.
 
 \subsection{Standard Model Backgrounds}
-SM backgrounds are categorized into sources of genuine and fake 
-missing energy.
 
 \subsubsection{Genuine \met}
 Events containing leptonic decays of W bosons, \wlnu, originating either
