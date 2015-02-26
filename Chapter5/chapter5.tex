@@ -147,8 +147,14 @@ simulation samples used.
 \subsection{Standard Model Backgrounds}
 
 \subsubsection{Genuine \met}
+The dominant EWK source of genuine missing energy comes from a Z-boson 
+production where the Z decays
+via neutrinos, \zinv, with associated jet production. This source of background
+is considered irreducible.
+
 Events containing leptonic decays of W bosons, \wlnu, originating either
-from direct W production, or via the decay of a top quark, are sources of genuine 
+from direct W production, or via the decay of a top quark from \ttbar 
+production, are sources of genuine 
 missing energy. The presence of a weakly interacting neutrino which evades
 detection leads to an energy imbalance. Such events are vetoed in the signal
 region due to the presence of a 
@@ -169,16 +175,15 @@ the lepton ID criteria. There are numerous potential causes, the
 most prevalent being soft-leptons below ID threshold or non-isolated leptons 
 which pass the ID quality cuts but fail the isolation requirement.
 
-\emph{SHOW TABLE WITH THE BACKGROUND BREAKDOWN - PUT INTO GRAPHICAL FORM?}
-
 Events containing a Single Isolated Track (SIT) are vetoed from the signal 
-region. While originally designed to target hadronically decaying tau leptons, 
-this requirement reduces the remaining lost-lepton backgrounds also.
+region. This tracker based veto is particularly useful for vetoing additional events 
+that contain leptons which have failed our lepton ID requirements entirely, and 
+are therefore not considered by the leptonic vetoes. Additionally, the veto also
+removes background contributions from single-pronged hadronical decays of $\tau$
+leptons.
 
-The dominant EWK source of genuine missing energy comes from a Z-boson 
-production where the Z decays
-via neutrinos, \zinv, with associated jet production. This source of background
-is considered irreducible.
+While originally designed to target hadronically decaying tau leptons, 
+this requirement reduces the remaining lost-lepton backgrounds also.
 
 Following the reduction of such processes using the lepton, photon and SIT vetoes,
 any remaining contributions from SM EWK backgrounds are estimated using a 
@@ -195,12 +200,13 @@ order to enter the signal region, an event must contain missing energy,
 
 The most common way for a balanced multijet (MJ) event to gain \mht is when one 
 or more of the jets are mis-measured, such that their vectorial sum then leads to non-zero
-\mht. This can due to badly calibrated or damaged segments of the calorimeter 
-systems, or due to stochastic fluctuations within the jet-resolution of the 
-detector. The former is protected against using a `dead ECAL filter', where 
+\mht. This can due to detector issues, or due to stochastic fluctuations within
+the inherant jet-resolution of the 
+detector. The former is protected against using a filter to remove events 
+affected by non-functioning or damaged regions of the ECAL system, where 
 events are vetoed if they contain significant energy deposits within a given 
-distance from areas of the calorimeter system known to be either dead or 
-damaged. The latter is dealt with using a cut on the \alphat variable where 
+distance from a known problematic region. The latter is dealt with using a
+cut on the \alphat variable where 
 events with fake missing energy signatures give values $<0.5$.
 
 QCD MJ events can also appear to contain non-zero missing energy 
@@ -209,6 +215,10 @@ one or more jets below the analysis threshold, then the
 event becomes imbalanced and will contain \mht. Events such as these are largely 
 removed with the \alphat requirement, however in addition a requirement is made on the
 ratio \mhtmet.
+
+Finally, it is also possible for instrumentation effects can to lead to jet
+mismeasurements. To protect against this, a suite of MET filters are defined by 
+the JetMET POG, and are applied to all selections.
 
 
 \subsection{Signal Triggers}
@@ -448,6 +458,9 @@ figure~\ref{fig:datamc_had_inc}, comparing data against MC.
     }
 \end{figure}
 
+\emph{Cutflow with event yields after each cut}
+
+\emph{SHOW TABLE WITH THE BACKGROUND BREAKDOWN - PUT INTO GRAPHICAL FORM?}
 
 \subsection{Formula method}
 
