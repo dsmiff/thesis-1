@@ -1,4 +1,4 @@
-\chapter{The AlphaT Analysis}
+\chapter{The \alphat Analysis}
 \label{ch:5}
 
 % **************************** Define Graphics Path **************************
@@ -95,11 +95,11 @@ describes the basic hadronic pre-selection made for the signal
 region, as well as the relevant trigger requirements and data and 
 simulation samples used.
 
-\subsection{SM Backgrounds}
+\subsection{Standard Model Backgrounds}
 SM backgrounds are categorized into sources of genuine and fake 
 missing energy.
 
-\subsubsection{Genuine EWK \met}
+\subsubsection{Genuine \met}
 Events containing leptonic decays of W bosons, \wlnu, originating either
 from direct W production, or via the decay of a top quark, are sources of genuine 
 missing energy. The presence of a weakly interacting neutrino which evades
@@ -163,120 +163,6 @@ event becomes imbalanced and will contain \mht. Events such as these are largely
 removed with the \alphat requirement, however in addition a requirement is made on the
 ratio \mhtmet.
 
-\subsection{Selection Criteria}
-\label{sec:selec_crit}
-The hadronic signal region
-requires at least 2 jets and that the topology has a value of \alphat greater than
-0.55. While no absolute \met requirement is made, the cut on 
-\alphat imposes an implied threshold, which maintains the analysis'
-sensitivity to very low regions of \met. Events are also required to have at least
-$\HT > 200$\gev ensuring the presence of significant hadronic activity.
-
-Any events containing leptons or photons are vetoed to ensure purely hadronic events
-are considered, thereby suppressing events with genuine \met from leptonic decays to
-neutrinos.
-
-It is possible for events to acquire significant amounts of \mht without having any
-real \met present when multiple jets are below the analysis threshold. To protect against 
-this scenario, events are required to have a low ratio of the two variables, specifically
-\mhtmet < 1.25.
-
-Events can also acquire fake \mht if they overlap with areas of the calorimeter 
-system which are damaged or known to be faulty, where jets can be mis-measured or 
-lost as a result. To protect against this, for a given jet $j$, the angular separation
-between the event \mht, calculated excluding jet $j$, and the jet itself is used, defined
-as:
-
-\begin{equation}
-\Delta \phi^*_j = \Delta \phi\big(\overrightarrow{\Pt}_j,-\sum_{i\neq j}{\overrightarrow{\Pt}_i}\big)
-\label{eq:biasdphi}
-\end{equation}
-
-A small value of $\Delta \phi^*_j$ indicates that the momentum vector of $j$
-is aligned with the \mht vector, implying the jet is mis-measured. Events are 
-vetoed if a jet with $\Delta \phi^*<0.5$ is within $\Delta R < 0.3$ of a known
-`dead' region of the ECAL.
-
-Following this preselection, events are further categorized into the three 
-binning dimensions of \HT, \nb and \nj, as shown in table~\ref{tab:ht-bins}. Two 
-jet multiplicity categories are defined as 2 or 3 jets, and 4 or more. B-tagged 
-jet multiplicities are exactly 0, 1, 2, 3 or 4 and more. Combinations of these 
-various categories are then further sub-divided into multiple \HT bins ranging 
-from 200\gev up to an inclusive bin of $\HT>1075$\gev.
-
-\begin{table}[ht!]
-  \caption{\HT binning used for each \nj and \nb category.\label{tab:ht-bins}}
-  \centering
-  % \scriptsize % too big to fit on page
-  \tiny
-  \begin{tabular}{ lrrrrrrrrrrr }
-    \hline
-    \hline
-    (\nj,\nb)       & \multicolumn{11}{c}{\HT bins (\gev)}                                                                                \\
-    \hline
-    (2-3,0)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
-    (2-3,1)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
-    (2-3,2)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
-%    (2-3,3)          & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
-    ($\geq$4,0)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
-    ($\geq$4,1)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
-    ($\geq$4,2)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
-    ($\geq$4,3)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
-    ($\geq$4,$\geq$4) & 200--275 & 275--325 & 325--375 & $>$375   & \multicolumn{7}{c}{}                                                        \\
-    \hline
-    \hline
-  \end{tabular}
-\end{table}
-
-For bins of $\HT>375$\gev the leading two jets in the event are required to 
-have $\Pt>100$\gev, with all additional jets having half the requirement of
-$\Pt>50\gev$. In order to maintain a similar kinematic phase space throughout
-the many \HT bins, these jet \Pt requirements are scaled for the lower \HT bins 
-as shown in Table~\ref{tab:jet_pt_thresholds}.
-
-\begin{table}[ht!]
-  \caption{Jet \Et thresholds per \HT bin.\label{tab:jet_pt_thresholds}}
-  \centering
-  \footnotesize
-  \begin{tabular}{ lcccc }
-    \hline
-    \hline
-    \HT bin    & 200--275 & 275--325 & 325--375 & $>$375 \\
-    \hline
-    Lead jet       & 73.3     & 73.3     & 86.7     & 100.0  \\
-    Second jet     & 73.3     & 73.3     & 86.7     & 100.0  \\
-    All other jets & 36.7     & 36.7     & 43.3     & 50.0   \\
-    \hline
-    \hline
-  \end{tabular}
-\end{table}
-
-Example distributions of \alphat, \HT, \mht and jet \Pt  are shown in
-figure~\ref{fig:datamc_had_inc}, comparing data against MC.
-
-\begin{figure}[!ht]
-  \centering
-    \begin{subfigure}[b]{0.48\textwidth}
-      \includegraphics[width=\textwidth]{Figs/datamc/had/Stacked_AlphaT_all_200_upwards}
-      \caption{\alphat}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.48\textwidth}
-      \includegraphics[width=\textwidth]{Figs/datamc/had/Stacked_HT_all_200_upwards}
-      \caption{\HT}
-    \end{subfigure} \\
-    \begin{subfigure}[b]{0.48\textwidth}
-      \includegraphics[width=\textwidth]{Figs/datamc/had/Stacked_MHT_all_200_upwards}
-      \caption{\mht}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.48\textwidth}
-      \includegraphics[width=\textwidth]{Figs/datamc/had/Stacked_CommonJetPt_all_200_upwards}
-      \caption{Jet \Pt}
-    \end{subfigure} \\
-    \caption{\label{fig:datamc_had_inc}
-    Comparison of data with MC for the full hadronic signal selection. Plots 
-    are for $\HT>200\gev, \nj\geq2, \nb\geq0$.
-    }
-\end{figure}
 
 \subsection{Signal Triggers}
 
@@ -423,6 +309,121 @@ such that only every $n$ triggered events are actually recorded, however all of
 the signal triggers remained unprescaled for the entirety of the 8\tev
 data-taking.
 
+
+\subsection{Selection Criteria}
+\label{sec:selec_crit}
+The hadronic signal region
+requires at least 2 jets and that the topology has a value of \alphat greater than
+0.55. While no absolute \met requirement is made, the cut on 
+\alphat imposes an implied threshold, which maintains the analysis'
+sensitivity to very low regions of \met. Events are also required to have at least
+$\HT > 200$\gev ensuring the presence of significant hadronic activity.
+
+Any events containing leptons or photons are vetoed to ensure purely hadronic events
+are considered, thereby suppressing events with genuine \met from leptonic decays to
+neutrinos.
+
+It is possible for events to acquire significant amounts of \mht without having any
+real \met present when multiple jets are below the analysis threshold. To protect against 
+this scenario, events are required to have a low ratio of the two variables, specifically
+\mhtmet < 1.25.
+
+Events can also acquire fake \mht if they overlap with areas of the calorimeter 
+system which are damaged or known to be faulty, where jets can be mis-measured or 
+lost as a result. To protect against this, for a given jet $j$, the angular separation
+between the event \mht, calculated excluding jet $j$, and the jet itself is used, defined
+as:
+
+\begin{equation}
+\Delta \phi^*_j = \Delta \phi\big(\overrightarrow{\Pt}_j,-\sum_{i\neq j}{\overrightarrow{\Pt}_i}\big)
+\label{eq:biasdphi}
+\end{equation}
+
+A small value of $\Delta \phi^*_j$ indicates that the momentum vector of $j$
+is aligned with the \mht vector, implying the jet is mis-measured. Events are 
+vetoed if a jet with $\Delta \phi^*<0.5$ is within $\Delta R < 0.3$ of a known
+`dead' region of the ECAL.
+
+Following this preselection, events are further categorized into the three 
+binning dimensions of \HT, \nb and \nj, as shown in table~\ref{tab:ht-bins}. Two 
+jet multiplicity categories are defined as 2 or 3 jets, and 4 or more. B-tagged 
+jet multiplicities are exactly 0, 1, 2, 3 or 4 and more. Combinations of these 
+various categories are then further sub-divided into multiple \HT bins ranging 
+from 200\gev up to an inclusive bin of $\HT>1075$\gev.
+
+\begin{table}[ht!]
+  \caption{\HT binning used for each \nj and \nb category.\label{tab:ht-bins}}
+  \centering
+  % \scriptsize % too big to fit on page
+  \tiny
+  \begin{tabular}{ lrrrrrrrrrrr }
+    \hline
+    \hline
+    (\nj,\nb)       & \multicolumn{11}{c}{\HT bins (\gev)}                                                                                \\
+    \hline
+    (2-3,0)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
+    (2-3,1)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
+    (2-3,2)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
+%    (2-3,3)          & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
+    ($\geq$4,0)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
+    ($\geq$4,1)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
+    ($\geq$4,2)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
+    ($\geq$4,3)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
+    ($\geq$4,$\geq$4) & 200--275 & 275--325 & 325--375 & $>$375   & \multicolumn{7}{c}{}                                                        \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+For bins of $\HT>375$\gev the leading two jets in the event are required to 
+have $\Pt>100$\gev, with all additional jets having half the requirement of
+$\Pt>50\gev$. In order to maintain a similar kinematic phase space throughout
+the many \HT bins, these jet \Pt requirements are scaled for the lower \HT bins 
+as shown in Table~\ref{tab:jet_pt_thresholds}.
+
+\begin{table}[ht!]
+  \caption{Jet \Et thresholds per \HT bin.\label{tab:jet_pt_thresholds}}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcccc }
+    \hline
+    \hline
+    \HT bin    & 200--275 & 275--325 & 325--375 & $>$375 \\
+    \hline
+    Lead jet       & 73.3     & 73.3     & 86.7     & 100.0  \\
+    Second jet     & 73.3     & 73.3     & 86.7     & 100.0  \\
+    All other jets & 36.7     & 36.7     & 43.3     & 50.0   \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+Example distributions of \alphat, \HT, \mht and jet \Pt  are shown in
+figure~\ref{fig:datamc_had_inc}, comparing data against MC.
+
+\begin{figure}[!ht]
+  \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Figs/datamc/had/Stacked_AlphaT_all_200_upwards}
+      \caption{\alphat}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Figs/datamc/had/Stacked_HT_all_200_upwards}
+      \caption{\HT}
+    \end{subfigure} \\
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Figs/datamc/had/Stacked_MHT_all_200_upwards}
+      \caption{\mht}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Figs/datamc/had/Stacked_CommonJetPt_all_200_upwards}
+      \caption{Jet \Pt}
+    \end{subfigure} \\
+    \caption{\label{fig:datamc_had_inc}
+    Comparison of data with MC for the full hadronic signal selection. Plots 
+    are for $\HT>200\gev, \nj\geq2, \nb\geq0$.
+    }
+\end{figure}
 
 
 \subsection{Formula method}
