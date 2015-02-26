@@ -3,6 +3,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 General:
+  ☐ 'btag' or 'Btag'?
 
 Chapter 1 - Introduction:
 
@@ -27,6 +28,7 @@ Chapter 5 - Analysis:
   ☐ background breakdown in graph form
   ☐ do entire fake MET section - describe the background, it's sources and what we do about it, with our various cuts
   ☐ fix titles in turn on curve plots - remove? crop each?
+  ☐ describe difference between cumulative and differential turn on curves
   ☐ formula method section
   ☐ describe MC generation - can get from AN
   ☐ get lumis for HT and JetHT samples
