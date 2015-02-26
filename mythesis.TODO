@@ -4,6 +4,9 @@
 
 General:
   ☐ 'btag' or 'Btag'?
+  ☐ 'mistag' or 'mis-tag'?
+  ☐ space after number and before unit?
+  ☐ make sure all 'TeV's are non-italics
 
 Chapter 1 - Introduction:
 
@@ -23,6 +26,16 @@ Chapter 4 - Objects:
   ☐ find SIT ID ref for single lepton susy search
 
 Chapter 5 - Analysis:
+  ☐ Work on introduction - details in h-notes
+  ☐ change alphat definition to cosine version
+    ☐ discuss in terms of dijet system and new equation, how different value arise
+  ☐ check M_T calculation
+  ☐ add a cutflow table with event yields
+  ☐ move analysis binning to the analysis overview section
+  ☐ add MHT/MET distro in full to show how it helps - can do MC only
+  ☐ make selection criteria into an itemised list - jets, leptons, photon, filters etc
+  ☐ work out whether to keep the example distros with their shitty normalisation
+    either hack the normalisation (!!!) or do MC only distros
   ☐ add in some alphaT correlation plots for various background sources/signal etc
   ☐ need to add a little more about had preselection. met filters etc?
   ☐ background breakdown in graph form
@@ -30,6 +43,12 @@ Chapter 5 - Analysis:
   ☐ fix titles in turn on curve plots - remove? crop each?
   ☐ describe difference between cumulative and differential turn on curves
   ☐ formula method section
+
+Chapter 5_2 - Samples:
+  ☐ Start this chapter!
+  ☐ k-factors are derived from "inclusive sample cross-sections" or "inclusive cross-sections" - NOT from "inclusive samples"
+      the samples are generated completely independently from the xs calculations!
+  ☐ move HT sideband normalisation to here
   ☐ describe MC generation - can get from AN
   ☐ get lumis for HT and JetHT samples
 
