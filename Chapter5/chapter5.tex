@@ -46,15 +46,15 @@ precise measurements and calculations of the large multijet cross sections. As a
 alternative approach, the goal of this analysis is to reduce QCD down to an
 entirely negligible level. This is 
 achieved with the dimensionless kinematic variable, \alphat [REF]. This is defined
-for dijets as:
+for di-jets as:
 
 \begin{equation}
 \alphat = \frac{E_T^{j_2}}{M_T}
-\label{eq:alphat_dijet}
+\label{eq:alphat_di-jet}
 \end{equation}
 
 where $E_T^{j_2}$ is the transverse energy of the less energetic jet and $M_T$ 
-is the transverse mass of the dijet system, defined as:
+is the transverse mass of the di-jet system, defined as:
 
 \begin{equation}
 M_T = \sqrt{\bigg(\sum^2_{i=1}{E_T^{j_i}}\bigg)^2 - \bigg(\sum^2_{i=1}{p_x^{j_i}}\bigg)^2 - \bigg(\sum^2_{i=1}{p_y^{j_i}}\bigg)^2}
@@ -65,7 +65,7 @@ where $E_T^{j_i}$, $p_x^{j_i}$ and $p_y^{j_i}$ are the transverse energy and
 transverse momentum in the $x$ and $y$ planes, for the jet $j_i$.
 
 The \alphat variable can be generalised to an n-jet case by considering the event as a 
-pseudo-dijet system, constructing each pseudo-jet such that the difference in \HT
+pseudo-di-jet system, constructing each pseudo-jet such that the difference in \HT
 between each pseudo-jet system, \deltaHT, is minimised. \alphat then takes the 
 form:
 
@@ -75,7 +75,7 @@ form:
 \label{eq:alphat_njet}
 \end{equation}
 
-A perfectly measured dijet event containing back to back jets in $\phi$ of equal energy will
+A perfectly measured di-jet event containing back to back jets in $\phi$ of equal energy will
 have an \alphat value of 0.5, whereas 
 events with \mht originating from jet energy mismeasurements will have values of $\alphat<0.5$.
 Events containing sources of genuine \met, whether from SM or BSM sources, can have values
@@ -101,14 +101,14 @@ missing energy.
 
 \subsubsection{Genuine EWK \met}
 Events containing leptonic decays of W bosons, \wlnu, originating either
-from direct W prodution, or via the decay of a top quark, are sources of genuine 
+from direct W production, or via the decay of a top quark, are sources of genuine 
 missing energy. The presence of a weakly interacting neutrino which evades
 detection leads to an energy imbalance. Such events are vetoed in the signal
 region due to the presence of a 
 lepton, however if the lepton is missed for whatever reason, leptonic W decays 
 can pass the signal selection, forming a significant SM background.
 
-% While lepton and photon vetoes employed in the signal region surpress 
+% While lepton and photon vetoes employed in the signal region suppress 
 % significant amounts of background from events with neutrinos, such events can 
 % still persist if, for example, the lepton is not identified.
 % Such processes are predominantly from \ttbar or W-boson production, where the 
@@ -119,7 +119,7 @@ can pass the signal selection, forming a significant SM background.
 
 Leptons can be `lost' for a variety different reasons, but ultimately for failing
 the lepton ID criteria. There are numerous potential causes, the 
-most prevelant being soft-leptons below ID threshold or non-isolated leptons 
+most prevalent being soft-leptons below ID threshold or non-isolated leptons 
 which pass the ID quality cuts but fail the isolation requirement.
 
 \emph{SHOW TABLE WITH THE BACKGROUND BREAKDOWN - PUT INTO GRAPHICAL FORM?}
@@ -173,7 +173,7 @@ sensitivity to very low regions of \met. Events are also required to have at lea
 $\HT > 200$\gev ensuring the presence of significant hadronic activity.
 
 Any events containing leptons or photons are vetoed to ensure purely hadronic events
-are considered, thereby surpressing events with genuine \met from leptonic decays to
+are considered, thereby suppressing events with genuine \met from leptonic decays to
 neutrinos.
 
 It is possible for events to acquire significant amounts of \mht without having any
@@ -181,9 +181,9 @@ real \met present when multiple jets are below the analysis threshold. To protec
 this scenario, events are required to have a low ratio of the two variables, specifically
 \mhtmet < 1.25.
 
-Events can also acquire fake \mht if they overlap with areas of the calorimater 
+Events can also acquire fake \mht if they overlap with areas of the calorimeter 
 system which are damaged or known to be faulty, where jets can be mis-measured or 
-lost as a result. To protect against this, for a given jet $j$, the angular seperation
+lost as a result. To protect against this, for a given jet $j$, the angular separation
 between the event \mht, calculated excluding jet $j$, and the jet itself is used, defined
 as:
 
@@ -198,7 +198,7 @@ vetoed if a jet with $\Delta \phi^*<0.5$ is within $\Delta R < 0.3$ of a known
 `dead' region of the ECAL.
 
 Following this preselection, events are further categorized into the three 
-binning dimenions of \HT, \nb and \nj, as shown in table~\ref{tab:ht-bins}. Two 
+binning dimensions of \HT, \nb and \nj, as shown in table~\ref{tab:ht-bins}. Two 
 jet multiplicity categories are defined as 2 or 3 jets, and 4 or more. B-tagged 
 jet multiplicities are exactly 0, 1, 2, 3 or 4 and more. Combinations of these 
 various categories are then further sub-divided into multiple \HT bins ranging 
@@ -340,7 +340,7 @@ table~\ref{tab:sig_trigs}. Example trigger turn on curves are shown for the 3
 lowest \HT bins in figures~\ref{fig:eff_alphat_le3j} and \ref{fig:eff_alphat_ge4j}.
 Across the higher \HT 
 bins the triggers are fully efficient, with some inefficiencies seen only in the
-lower \HT bins. These innefficiencies are understood as being due to the L1 seed
+lower \HT bins. These inefficiencies are understood as being due to the L1 seed
 trigger used for this region, which had high thresholds in order to maintain 
 low rates in the high PU environment throughout \runone. Lower 
 efficiencies are also observed in the \njhigh category attributed to the presence of 
@@ -376,7 +376,6 @@ requirement of the bin.
     \end{subfigure} \\
   
     \caption{\label{fig:eff_alphat_le3j}
-      \emph{Maybe drop the differential turn-ons and just keep the cumu.}
       Differential (left) and Cumulative (right) efficiency turn-on curves for 
       the signal triggers, for the three lowest \HT bins and \njlow.}
 \end{figure}
@@ -410,10 +409,11 @@ requirement of the bin.
     \end{subfigure} \\
   
     \caption{\label{fig:eff_alphat_ge4j}
-      \emph{Maybe drop the differential turn-ons and just keep the cumu.}
       Differential (left) and Cumulative (right) efficiency turn-on curves for 
       the signal triggers, for the three lowest \HT bins and \njhigh.}
 \end{figure}
+
+\emph{explain the difference between the cumu and diff turn on curves}
 
 All triggers were present throughout \runone, however the 
 \\\verb!HLT_HT200_AlphaT0p57! trigger was used as part of the `Parked' stream of 
