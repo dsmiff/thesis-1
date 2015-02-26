@@ -26,35 +26,32 @@ Chapter 4 - Objects:
   ☐ find SIT ID ref for single lepton susy search
 
 Chapter 5 - Analysis:
-  ✔ Work on introduction - details in h-notes @done (15-02-26 19:44)
-  ✔ change alphat definition to cosine version @done (15-02-26 19:44)
-    ✔ discuss in terms of dijet system and new equation, how different value arise @done (15-02-26 19:44)
-  ✘ check M_T calculation @cancelled (15-02-26 19:44)
   ☐ add a cutflow table with event yields
-  ✔ move analysis binning to the analysis overview section @done (15-02-26 19:44)
   ☐ add MHT/MET distro in full to show how it helps - can do MC only
   ☐ make selection criteria into an itemised list - jets, leptons, photon, filters etc @critical @due(15-02-27 19:46)
+
   ☐ work out whether to keep the example distros with their shitty normalisation
     either hack the normalisation (!!!) or do MC only distros
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
   ☐ why is dphistar better than dphi(MET, jet)? @critical
-  ✔ need to add a little more about had preselection. met filters etc? @done (15-02-26 19:44)
   ☐ background breakdown in graph form
-  ✔ do entire fake MET section - describe the background, it's sources and what we do about it, with our various cuts @done (15-02-26 19:44)
   ☐ fix titles in turn on curve plots - remove? crop each?
   ☐ describe difference between cumulative and differential turn on curves @due(15-02-27 19:47)
   ☐ formula method section @high
 
 Chapter 5_2 - Samples:
-  ✔ Start this chapter! @done (15-02-26 19:45)
-  ☐ k-factors are derived from "inclusive sample cross-sections" or "inclusive cross-sections" - NOT from "inclusive samples" @critical
+  ✔ k-factors are derived from "inclusive sample cross-sections" or "inclusive cross-sections" - NOT from "inclusive samples" @critical @done (15-02-26 19:57)
       the samples are generated completely independently from the xs calculations!
-  ✔ move HT sideband normalisation to here @done (15-02-26 19:47)
   ☐ describe MC generation - can get from AN
   ☐ get lumis for HT and JetHT samples
+  ☐ define what PU actually is
+  ☐ work out what process Zinv is compared to with photons. gamma to what??
+    ☐ get the corresponding value of the normalisation!
 
 Chapter 6 - Background Estimation:
   ☐ introduction paragraph
+  ☐ why did you leave out the single mu 1b -> 2b closure test?
+    _it's in the plots..._
   ☐ MJ background estimation systematics???
   ☐ final column in prescaled trig eff table???
   ☐ check what susy phase space screws MC normalisation
@@ -85,8 +82,18 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
- ✔ put in a section showing some example data/MC distros. need to explain shit normalisation @done (15-02-25 13:42) @project(Chapter 5 - Analysis)
- ✘ maybe take away the diff turnons and keep the cumu @cancelled (15-02-25 13:42) @project(Chapter 5 - Analysis)
+ ✔ tell jeson about this awesome list stuff @critical @due(15-02-27 19:50) @done (15-02-26 19:50) @project(Chapter 4 - Objects)
+ ✔ move HT sideband normalisation to here @done (15-02-26 19:47) @project(Chapter 5_2 - Samples)
+ ✔ Start this chapter! @done (15-02-26 19:45) @project(Chapter 5_2 - Samples)
+ ✘ check M_T calculation @cancelled (15-02-26 19:44) @project(Chapter 5 - Analysis)
+ ✔ need to add a little more about had preselection. met filters etc? @done (15-02-26 19:44) @project(Chapter 5 - Analysis)
+ ✔ move analysis binning to the analysis overview section @done (15-02-26 19:44) @project(Chapter 5 - Analysis)
+ ✔ do entire fake MET section - describe the background, it's sources and what we do about it, with our various cuts @done (15-02-26 19:44) @project(Chapter 5 - Analysis)
+ ✔ discuss in terms of dijet system and new equation, how different value arise @done (15-02-26 19:44) @project(Chapter 5 - Analysis)
+ ✔ change alphat definition to cosine version @done (15-02-26 19:44) @project(Chapter 5 - Analysis)
+ ✔ Work on introduction - details in h-notes @done (15-02-26 19:44) @project(Chapter 5 - Analysis)
  ✔ read through and maybe summarise the extra section in AN about BG systs conservatism @done (15-02-25 13:43) @project(Chapter 6 - Background Estimation)
  ✔ crop signal eff plots @done (15-02-25 13:43) @project(Chapter 9 - Interpretation)
+ ✘ maybe take away the diff turnons and keep the cumu @cancelled (15-02-25 13:42) @project(Chapter 5 - Analysis)
+ ✔ put in a section showing some example data/MC distros. need to explain shit normalisation @done (15-02-25 13:42) @project(Chapter 5 - Analysis)
  ✔ fix the MHT and MET slashes @done (15-02-25 13:37) @project(Defintions)
