@@ -8,8 +8,14 @@
     \graphicspath{{Chapter6/Figs/Vector/}{Chapter6/Figs/}}
 \fi
 
-For EWK backgrounds (genuine MET) we use control samples - what are they? - how 
-do we use them?
+Predictions of EWK SM backgrounds are made using independent, process-specific 
+control regions. These regions are orthogonal to the signal region due to the 
+selection of leptons or photons - particles which are subsequently ignored such 
+that the selection kinematics of each event is kept similar to the same process 
+observed in the signal region. For each sample, Transfer Factors (TF) are 
+constructed from yields in MC and data, to extract a prediction in the signal 
+region for a given process. This process is described at length in
+section~\ref{sec:background_overview}.
 
 Predictions made using this technique alone are considered as ``na\"{i}ve'' 
 predictions and are used only in analysis development and the derivation of 
@@ -18,14 +24,21 @@ limit-setting, a fit is made across all signal and control regions, using the
 full likelihood model, described later in chapter~\ref{ch:7}. The derived 
 transfer factors and individual yields enter as terms in the likelihood, where 
 all related systematics, potential correlations and signal contamination are
-accounted for in the fit. 
+accounted for in the fit.
+
+Thresholds of the \alphat variable are determined such that the QCD MJ 
+contribution to the SM background is negligible. These are found using a data-
+driven method, employing sidebands in both the \mhtmet and \alphat variables, 
+described in detail in section~\ref{sec:background_qcd}. Following the 
+application of these thresholds, any QCD contributions are considered negligible
+and are subsequently dropped entirely from the likelihood model.
 
 %********************************** % First Section  *************************************
 \section{Overview of Electroweak background prediction method}  %Section - 1.1 
 \label{sec:background_overview}
 
 Contributions from Standard Model background processes are estimated using a data-driven 
-prediction technique, employing dedicated control samples. A transfer factor (TF) 
+prediction technique, employing dedicated control samples. A transfer factor 
 is constructed from MC samples as the ratio 
 of the MC yield in the signal region, \\$N_{MC}^{signal}\big(\HT, \nj, \nb\big)$,
 and the MC yield of a given control region, \\$N_{Data}^{control}\big(\HT, \nj, \nb\big)$,
@@ -375,7 +388,7 @@ as shown by the turn on curves in figure~\ref{fig:photon_control_trigeff}.
 \end{figure}
 
 \subsubsection{Selection Criteria}
-Exactly one photon satisying tight isolation criteria is required, with 
+Exactly one photon satisfying tight isolation criteria is required, with 
 $\Pt > 165\gev$ and $|\eta|<1.45$. In addition, events are vetoed if
 $\Delta R(\gamma, jet_i)<1.0$ is satisfied, for all of the events $i$ jets.
 
