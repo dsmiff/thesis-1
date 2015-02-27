@@ -38,7 +38,7 @@ Chapter 5 - Analysis:
   ☐ work out whether to keep the example distros with their shitty normalisation
     either hack the normalisation (!!!) or do MC only distros
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
-  ☐ why is dphistar better than dphi(MET, jet)? @critical
+  ✘ why is dphistar better than dphi(MET, jet)? @critical @cancelled (15-02-27 16:46)
   ☐ background breakdown in graph form
   ☐ fix titles in turn on curve plots - remove? crop each?
   ☐ describe difference between cumulative and differential turn on curves @due(15-02-27 19:47)
@@ -54,7 +54,7 @@ Chapter 5_2 - Samples:
     ☐ get the corresponding value of the normalisation!
 
 Chapter 6 - Background Estimation:
-  ☐ introduction paragraph
+  ✔ introduction paragraph @done (15-02-27 16:56)
     - what are the control samples?
       - kinematically similar to signal region
     - how are they used?
@@ -65,7 +65,7 @@ Chapter 6 - Background Estimation:
   ☐ why did you leave out the single mu 1b -> 2b closure test?
     _it's in the plots, so why didn't I describe it..?_
   ☐ MJ background estimation systematics???
-  ☐ final column in prescaled trig eff table???
+  ✘ final column in prescaled trig eff table??? @cancelled (15-02-27 16:58)
   ☐ check what susy phase space screws MC normalisation
   ☐ reword table and figure titles
   ☐ add some more detail on level of closure from const and linear fit results
