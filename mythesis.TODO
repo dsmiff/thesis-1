@@ -29,7 +29,6 @@ Chapter 5 - Analysis:
   ☐ add a cutflow table with event yields
   ☐ add MHT/MET distro in full to show how it helps - can do MC only
   ☐ make selection criteria into an itemised list - jets, leptons, photon, filters etc @critical @due(15-02-27 19:46)
-
   ☐ work out whether to keep the example distros with their shitty normalisation
     either hack the normalisation (!!!) or do MC only distros
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
@@ -50,8 +49,13 @@ Chapter 5_2 - Samples:
 
 Chapter 6 - Background Estimation:
   ☐ introduction paragraph
+    - what are the control samples?
+      - kinematically similar to signal region
+    - how are they used?
+      - use a tagged lepton or photon, which is subsequently ignored
+      - use yields in MC and data to extrapolate into signal region
   ☐ why did you leave out the single mu 1b -> 2b closure test?
-    _it's in the plots..._
+    _it's in the plots, so why didn't I describe it..?_
   ☐ MJ background estimation systematics???
   ☐ final column in prescaled trig eff table???
   ☐ check what susy phase space screws MC normalisation
