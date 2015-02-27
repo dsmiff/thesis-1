@@ -8,10 +8,20 @@
     \graphicspath{{Chapter6/Figs/Vector/}{Chapter6/Figs/}}
 \fi
 
-Maybe some stuff here introducing the chapter...
+For EWK backgrounds (genuine MET) we use control samples - what are they? - how 
+do we use them?
+
+Predictions made using this technique alone are considered as ``na\"{i}ve'' 
+predictions and are used only in analysis development and the derivation of 
+background systematics. In order to determine final yields for interpretation and 
+limit-setting, a fit is made across all signal and control regions, using the 
+full likelihood model, described later in chapter~\ref{ch:7}. The derived 
+transfer factors and individual yields enter as terms in the likelihood, where 
+all related systematics, potential correlations and signal contamination are
+accounted for in the fit. 
 
 %********************************** % First Section  *************************************
-\section{Overview of TF method}  %Section - 1.1 
+\section{Overview of Electroweak background prediction method}  %Section - 1.1 
 \label{sec:background_overview}
 
 Contributions from Standard Model background processes are estimated using a data-driven 
@@ -29,11 +39,11 @@ TF = \frac{N_{MC}^{signal}\big(\HT, \nj, \nb\big)}{N_{MC}^{control}\big(\HT, \nj
 
 For a given \HT, \nj and \nb bin, the TF is used to extrapolate a yield in data from
 the control region, $N_{Data}^{control}\big(\HT, \nj, \nb\big)$
-to the signal region $N_{Data}^{signal}\big(\HT, \nj, \nb\big)$, as shown in
+to the signal region $N_{pred}^{signal}\big(\HT, \nj, \nb\big)$, as shown in
 equation~\ref{eq:transfer_equation}.
 
 \begin{equation}
-N_{Data}^{signal}\big(\HT, \nj, \nb\big) = N_{Data}^{control}\big(\HT, \nj, \nb\big)
+N_{pred}^{signal}\big(\HT, \nj, \nb\big) = N_{Data}^{control}\big(\HT, \nj, \nb\big)
 \times TF
 \label{eq:transfer_equation}
 \end{equation}
@@ -48,14 +58,14 @@ W + jets (\numw),
 single top + jets (\numtop), WW + jets, WZ + jets and ZZ + jets (\numdibo), and
 \zinv + jets (\numzinv).
 
-Predictions made using this technique alone are considered as ``na\"{i}ve'' 
-predictions and are used only in analysis development and the derivation of 
-background systematics. In order to determine final yields for interpretation and 
-limit-setting, a fit is made across all signal and control regions, using the 
-full likelihood model, described later in chapter~\ref{ch:7}. The derived 
-transfer factors and individual yields enter as terms in the likelihood, where 
-all related systematics, potential correlations and signal contamination are
-accounted for in the fit. 
+% Predictions made using this technique alone are considered as ``na\"{i}ve'' 
+% predictions and are used only in analysis development and the derivation of 
+% background systematics. In order to determine final yields for interpretation and 
+% limit-setting, a fit is made across all signal and control regions, using the 
+% full likelihood model, described later in chapter~\ref{ch:7}. The derived 
+% transfer factors and individual yields enter as terms in the likelihood, where 
+% all related systematics, potential correlations and signal contamination are
+% accounted for in the fit. 
 
 The denominator of each transfer factor is constructed using the sum of
 \textit{all} MC sample yields, for a given control region selection and
@@ -143,11 +153,14 @@ in section~\ref{sec:closure_tests}.
 \section{Control samples}  %Section - 1.2
 \label{sec:background_control}
 
-Control sample definitions are designed such that they are as close as possible 
-to that of the signal region, with the exception of a selected `tag' muon or 
+Control sample definitions are designed such that they are kinematically similar
+to the signal region, with the exception of a selected `tag' muon or 
 photon, which is subsequently ignored for the calculation of all analysis 
-variables, such as \HT, \met, \alphat etc. Other differences include mass-window
+variables, such as \HT, \met, \alphat etc.
+Other differences include mass-window
 and minor kinematic cuts, aimed at enriching the control samples in certain processes. 
+In order to increase statistics in the \mj and \mmj samples, the \alphat 
+requirement is removed.
 The samples themselves are statistically independent, and orthogonal to the 
 signal region due to the selection of the tagged lepton or photon minimising any 
 possible signal contamination. However, a full treatment of the
@@ -155,10 +168,10 @@ signal-contamination and sample cross-correlation is taken into account in the
 background fit and final limit-setting. 
 
 % This section will describe the main control regions in more detail, including 
-% their targetted background estimations, selection cuts specific to each and their
+% their targeted background estimations, selection cuts specific to each and their
 % trigger requirements.
 
-\subsection{mu + jets}
+\subsection{\mj}
 
 The \mj control sample is constructed by selecting a single muon with associated 
 jets. This region is used to predict backgrounds from processes such as \wj and
@@ -171,7 +184,7 @@ signal.
 \subsubsection{Triggers}
 \label{sec:mujets_control_trigger}
 Events are collected using the loosely-isolated, $\eta$-restricted
-\verb!HLT_IsoMu24_eta2p1! trigger, which was in place throughout the 8\tev
+\verb!HLT_IsoMu24_eta2p1! trigger, which was in place throughout the 8 \tev
 data-taking period. The efficiency of this trigger was measured by the muon POG 
 using a tag-and-probe method [REF], in bins of the muon \Pt and $\eta$, as summarised 
 in table~\ref{tab:muon-trig-effs}. Statistical uncertainties are at the per-
@@ -255,7 +268,7 @@ are shown in figure~\ref{fig:datamc_mu_inc}.
 \end{figure}
 
 
-\subsection{mumu + jets}
+\subsection{\mmj}
 The \mmj sample is constructed to predict background contributions from \zinv 
 decays, mimicking this decay via the kinematically similar $Z\to\mu\mu + jets$
 process where both muons are subsequently ignored.
@@ -329,7 +342,7 @@ shown in figure~\ref{fig:datamc_mumu_inc}.
     }
 \end{figure}
 
-\subsection{photon + jets}
+\subsection{\gj}
 The \gj sample is used to predict the \zinv background contribution, given it's 
 similar kinematics when the $\gamma$ is ignored from the event, and larger 
 production cross section relative to \mmj. Due to trigger thresholds, the \gj
@@ -381,7 +394,16 @@ in figure~\ref{fig:datamc_pho_inc}.
     }
 \end{figure}
 
-\subsection{Multijet}
+%********************************** % Third Section  *************************************
+\section{Estimating multijet backgrounds}  %Section - 1.3
+\label{sec:background_qcd}
+
+A data-driven technique has been 
+developed to determine the necessary \alphat requirement, per \HT bin, 
+such that QCD is at the sub-percent level with respect to the total EWK 
+background.
+
+\subsection{Multijet control sample}
 In order to predict the contamination of QCD MJ events in the signal region a 
 control region of hadronic events is constructed.
 
@@ -431,14 +453,7 @@ selection ensures a very high number of QCD events with respect to the signal
 region.
 
 
-%********************************** % Third Section  *************************************
-\section{Estimating multijet backgrounds}  %Section - 1.3
-\label{sec:background_qcd}
-
-A data-driven technique has been 
-developed to determine the necessary \alphat requirement, per \HT bin, 
-such that QCD is at the sub-percent level with respect to the total EWK 
-background.
+\subsection{Prediction Technique}
 
 Events from the hadronic control sample are used to populate a plane of \mhtmet 
 and \alphat. A prediction of the EWK contribution to this sample is determined 
@@ -538,17 +553,9 @@ RELATED SYSTEMATICS???
   \end{tabular}
 \end{table}
 
-%********************************** % Fourth Section  *************************************
-\section{Naive predictions from Transfer Factors}  %Section - 1.4
-\label{sec:background_predictions}
-Naive predictions only purely from transfer factors and yields.
-
-SECTION STILL NEEDED?
-
-Maybe just do basic results after all corrections applied, as described above.
 
 %********************************** % Fifth Section  *************************************
-\section{Systematic uncertainties on SM background predictions}  %Section - 1.5
+\section{Background control and systematic uncertainties on SM background predictions}  %Section - 1.5
 \label{sec:background_systematics}
 
 In order to probe the levels at which the transfer factors are sensitive to 
@@ -660,22 +667,22 @@ statistical fluctuation as opposed to a systematic bias.
   \centering
   \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]{figures/syst/v0/le3j/summary_plot_pol0}
-    \caption{$2 \leq \nj \leq 3$ (zeroeth order polynomial fits)}
+    \caption{$2 \leq \nj \leq 3$ (constant function fits)}
     \label{fig:closure_fit_le3j_pol0}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]{figures/syst/v0/le3j/summary_plot_pol1}
-    \caption{$2 \leq \nj \leq 3$ (first order polynomial fits)}
+    \caption{$2 \leq \nj \leq 3$ (linear function fits)}
     \label{fig:closure_fit_le3j_pol1}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]{figures/syst/v0/ge4j/summary_plot_pol0}
-    \caption{$\nj \geq 4$ (zeroeth order polynomial fits)}
+    \caption{$\nj \geq 4$ (constant function fits)}
     \label{fig:closure_fit_ge4j_pol0}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]{figures/syst/v0/ge4j/summary_plot_pol1}
-    \caption{$\nj \geq 4$ (first order polynomial fits)}
+    \caption{$\nj \geq 4$ (linear function fits)}
     \label{fig:closure_fit_ge4j_pol1}
   \end{subfigure}
   \caption{Sets of closure tests (open symbols) overlaid on top of
@@ -770,7 +777,7 @@ statistical fluctuation as opposed to a systematic bias.
 \emph{may also include SITV closure tests}
 
 
-\subsection{Background uncertainty summary}
+\subsection{Background systematic uncertainty summary}
 Under the assumption of closure for the eight core tests,
 systematic errors are derived for each \nj category in seven regions of \HT.
 
@@ -804,6 +811,16 @@ Systematic values are here considered as fully uncorrelated between the
 different analysis categories and the \HT regions defined here, which is again 
 considered as a conservative approach given that some correlation is to be 
 expected, for example between adjacent \HT bins.
+
+
+%********************************** % blah Section  *************************************
+\section{Naive predictions from Transfer Factors}
+\label{sec:background_predictions}
+Naive predictions only purely from transfer factors and yields.
+
+\emph{need a better word than `naive'!}
+
+
 
 \clearpage
 NOTE - All plots currently from:
