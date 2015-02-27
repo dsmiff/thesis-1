@@ -5,8 +5,12 @@
 General:
   ☐ 'btag' or 'Btag'?
   ☐ 'mistag' or 'mis-tag'?
-  ☐ space after number and before unit?
+  ✔ space after number and before unit? @done (15-02-27 10:47)
+      yes!
+  ☐ add space before all units!
   ☐ make sure all 'TeV's are non-italics
+  ☐ change POG and PAG's
+    e.g. 'POG' to _'POG'_
 
 Chapter 1 - Introduction:
 
@@ -54,6 +58,8 @@ Chapter 6 - Background Estimation:
     - how are they used?
       - use a tagged lepton or photon, which is subsequently ignored
       - use yields in MC and data to extrapolate into signal region
+    - mention that the methods give us 'proxies' for the predictions, but 
+      eventually everything goes into the likelihood fit
   ☐ why did you leave out the single mu 1b -> 2b closure test?
     _it's in the plots, so why didn't I describe it..?_
   ☐ MJ background estimation systematics???
@@ -62,6 +68,7 @@ Chapter 6 - Background Estimation:
   ☐ reword table and figure titles
   ☐ add some more detail on level of closure from const and linear fit results
   ☐ remove paragraph indentations for text after equations
+  ☐ different word for "naive predictions"
 
 Chapter 7 - Results:
   ☐ change all "ph" subscripts to \gamma's
