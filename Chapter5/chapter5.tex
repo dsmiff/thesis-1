@@ -373,30 +373,63 @@ data-taking.
 \subsection{Selection Criteria}
 \label{sec:selec_crit}
 
-Hadronic intro blah blah
+Event selection for the hadronic signal region are chosen with an aim to 
+maintain sensitivity to hadronically decaying sparticle production, while 
+rejecting as many QCD-type processes as possible. To do so, requirements are 
+made on:
 
 \begin{description}
-\item[Jet]blah blah
-jbkasdlkn
+\item[Jets]
+Events are required to contain at least two jets are required and have at least
+$\HT > 200$\gev, to ensure the presence of significant hadronic activity. As 
+mentioned previously, events are categorised by \HT, with jet \Pt
+requirements on the two leading and the remaining additional jets seperately.
+The jet \Pt thresholds vary as a function of the \HT bin of the event, as shown in
+Table~\ref{tab:jet_pt_thresholds}.
 
-kajbsdkjbasd
+\begin{table}[ht!]
+  \caption{Jet \Et thresholds per \HT bin.\label{tab:jet_pt_thresholds}}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcccc }
+    \hline
+    \hline
+    \HT bin    & 200--275 & 275--325 & 325--375 & $>$375 \\
+    \hline
+    Lead jet       & 73.3     & 73.3     & 86.7     & 100.0  \\
+    Second jet     & 73.3     & 73.3     & 86.7     & 100.0  \\
+    All other jets & 36.7     & 36.7     & 43.3     & 50.0   \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
-\item[Event]kjabsdabs;d
+\item[Leptons]
+Any events containing leptons are vetoed to ensure purely hadronic events
+are considered, thereby suppressing events with genuine \met from leptonic decays to
+neutrinos such as \wlnu.
+
+\item[Photons]
+Events containing photons are vetoed, for similar reasons as the leptonic 
+vetoes, in order to maintain a purely hadronic environment.
+
+\item[Event]
+The topology of the event is required to pass a threshold of $\alphat > 0.55$, 
+which itself varies as a function of the \HT category being considered, always 
+chosen such that QCD MJ events contribute a negligible amount to the overall 
+background. While no absolute \met requirement is made, the cut on 
+\alphat imposes an implied threshold, which maintains the analysis'
+sensitivity to very low regions of \met. \emph{give an example of the actual met
+threshold for a given HT bin.}
 
 \end{description}
 
-The hadronic signal region
-requires at least 2 jets and that the topology has a value of \alphat greater than
-0.55. While no absolute \met requirement is made, the cut on 
-\alphat imposes an implied threshold, which maintains the analysis'
-sensitivity to very low regions of \met. \emph{give an example of the actual met
-threshold for a given HT bin. How does this compare to other anlayses? RA2 are 
-higher. MT2 go lower, but only at much higher HT. So we win. Hooray.} Events are also required to have at least
-$\HT > 200$\gev ensuring the presence of significant hadronic activity.
 
-Any events containing leptons or photons are vetoed to ensure purely hadronic events
-are considered, thereby suppressing events with genuine \met from leptonic decays to
-neutrinos.
+
+It is possible for events to acquire significant amounts of \mht without having any
+real \met present when multiple jets are below the analysis threshold. To protect against 
+this scenario, events are required to have a low ratio of the two variables, specifically
+\mhtmet < 1.25.
 
 It is possible for events to acquire significant amounts of \mht without having any
 real \met present when multiple jets are below the analysis threshold. To protect against 
@@ -421,35 +454,12 @@ is aligned with the \mht vector, implying the jet is mis-measured. Events are
 vetoed if a jet with $\Delta \phi^*<0.5$ is within $\Delta R < 0.3$ of a known
 `dead' region of the ECAL.
 
-Following this preselection, events are further categorized into the three 
-binning dimensions of \HT, \nb and \nj, as shown earlier in table~\ref{tab:ht-bins}. Two 
-jet multiplicity categories are defined as 2 or 3 jets, and 4 or more. B-tagged 
-jet multiplicities are exactly 0, 1, 2, 3 or 4 and more. Combinations of these 
-various categories are then further sub-divided into multiple \HT bins ranging 
-from 200\gev up to an inclusive bin of $\HT>1075$\gev.
-
 For bins of $\HT>375$\gev the leading two jets in the event are required to 
 have $\Pt>100$\gev, with all additional jets having half the requirement of
 $\Pt>50\gev$. In order to maintain a similar kinematic phase space throughout
 the many \HT bins, these jet \Pt requirements are scaled for the lower \HT bins 
 as shown in Table~\ref{tab:jet_pt_thresholds}.
 
-\begin{table}[ht!]
-  \caption{Jet \Et thresholds per \HT bin.\label{tab:jet_pt_thresholds}}
-  \centering
-  \footnotesize
-  \begin{tabular}{ lcccc }
-    \hline
-    \hline
-    \HT bin    & 200--275 & 275--325 & 325--375 & $>$375 \\
-    \hline
-    Lead jet       & 73.3     & 73.3     & 86.7     & 100.0  \\
-    Second jet     & 73.3     & 73.3     & 86.7     & 100.0  \\
-    All other jets & 36.7     & 36.7     & 43.3     & 50.0   \\
-    \hline
-    \hline
-  \end{tabular}
-\end{table}
 
 Example distributions of \alphat, \HT, \mht and jet \Pt  are shown in
 figure~\ref{fig:datamc_had_inc}, comparing data against MC.
