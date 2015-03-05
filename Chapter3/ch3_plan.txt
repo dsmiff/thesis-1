@@ -1,0 +1,18 @@
+LHC
+    - centre of mass energy
+    - part of the accelerator complex
+    - how does it accelerate protons?
+        - RF cavities - what freq?
+        - dipole magnets to bend them
+            - what material?
+            - what strength?
+            - cooled to what temperature with what current?
+    - Run I conditions - what bunch spacing?
+    - Collisions delivered in 4 points around the accelerator ring
+        - ALICE, ATLAS, CMS and LHCb
+        - What PU did ATLAS and CMS have in Run I?
+    - "successful running"
+
+CMS
+    - Hermetic calorimeter system
+    - Consists of multiple detector subsystems
