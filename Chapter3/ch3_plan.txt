@@ -15,4 +15,20 @@ LHC
 
 CMS
     - Hermetic calorimeter system
+        - emphasise it's coverage
+        - dimensions, mass
+        - active dimensions of the system (where's the)
+    - general goals of such a detector
+        - generic searches for new physics - focus on high pT objects
+        - provide accurate measurements of physics objects, such as...
+        - can also investigate some mixing and lead-lead, p-lead phenomena
+
     - Consists of multiple detector subsystems
+        - Solenoid Magnet
+            - 
+        - Pixels and tracker
+            - 
+        - ECAL
+        - HCAL
+        - Muon chambers
+        
