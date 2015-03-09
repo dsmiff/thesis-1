@@ -152,15 +152,45 @@ shifting fibres to a hybrid photo-diode for detection
 
 \subsection{Muon Systems}
 
+- drift tubes (DT)
+- cathode strip chambers (CSC)
+- resistive plate chambers (RPC)
+- detection of muons for eta < |2.4|
+
 %********************************** % Fourth Section  *************************************
 \section{Trigger and Data Acquisition}  %Section - 1.4
 \label{sec:detector_daq}
 
 \subsection{Trigger system}
+Events of interest are selected using a dedicated trigger system, to chuck out 
+all the boring shit.
+
+Split into two parts - L1 (hardware) and HLT (software).
 
 \subsubsection{Level-1 Hardware Trigger}
+- L1 system is hardware based running at a rate of 40 MHz
+- runs on coarse trigger primitive objects, constructed from raw energy deposits
+in the calorimeter and muon systems independently
+    - takes regional information from both the calorimeter and muon systems 
+    independently.
+    - combines regional data in the GCT/GMT
+    - feeds combined objects (from across entire detector) into the GT, where a 
+    L1 accept is made or not.
+- has approximately 3microsecs per events
+- objects considered at L1 are electrons, muons, jets (central and forward) and 
+energy sums (ETT, MET, HTT, MHT)
+- L1Accept is made dependent on the objects within an event meeting 1 of 127 (
+check!) simple threshold and multiplicity based requirements.
+- maximum available output bandwidth of the L1 system is 100 kHz, although the 
+output rate is kept lower than this to allow for stochastic fluctuations
 
 \subsubsection{High-level Trigger}
-
-\subsection{DAQ system}
+- Following a L1A signal, candidate events are optically transmitted to the high
+level trigger, consisting of a large computer farm of the off the shelf server 
+PCs
+- events are reconstructed/built in more detail
+- passed on to a suite of analyst-designed software triggers which can 
+reconstruct more advanced objects and event variables, such as alphaT (as 
+described later in chapter BLAH) - has approximately 50ms per event
+- HLT reduces rate to around 300 events per second
 
