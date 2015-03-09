@@ -105,13 +105,52 @@ Detector subsystems within CMS follow a layered structure in both the barrel and
 endcap regions. The following describe each of the subsystems in more detail.
 
 \subsection{Pixels and tracker}
+- inner three layers of pixel detectors
+    - also have endcaps of pixel detectors
+- what type of pixels? what pitch? technology?
+- provide 2d information of hit positions
+
+- further 10 layers of silicon strip detectors
+    - n-in-p?
+    - and endcaps
+
+- this detector system provides information of not only the vertex location and 
+tracking of charged particles, but also given the massive magnet, a 
+determination of both their charge and momenta.
 
 \subsection{Electromagenetic Calorimeter}
 
+- ecal made of scintillating lead tungstate (PbWO4) crystals
+    - each crystal is 0.017 x 0.017 (in deltaEta x deltaPhi dimensions), and 23 
+    cm in length
+        -   corresponds to about 25 radition lengths
+        - moliere radius?
+    - super-crystal arrangement?
+- each crystal has a photodetector to determine the level of scintillation light
+produced
+    - avalanche photo-diodes in the barrel, and vacuum photo-triodes in the 
+    endcap region
+    - radiation hardness?
+    - what material?
+
+- this detector system provides energy and spatial information of
+electromagnetically showering particles.
+
+\emph{can i ignore the pre-shower rubbish, as we don't consider endcap objects? 
+- or do we for electromagnetic particles?!}
+
 \subsection{Hadronic Calorimeter}
 
-\subsection{Muon Systems}
+- alternating layers of brass absorber and plastic scintillator
+- scintillators are sectioned into towers, 0.087x0.087 in barrel and 0.17x0.17 
+in the endcaps (double check this isn't just my interpretation of ted's eta 
+numbers)
+- light produced in the scintillator layers is transmitted via wavelength 
+shifting fibres to a hybrid photo-diode for detection
 
+\emph{can i ignore the HF region, as we ignore forward jets?}
+
+\subsection{Muon Systems}
 
 %********************************** % Fourth Section  *************************************
 \section{Trigger and Data Acquisition}  %Section - 1.4
