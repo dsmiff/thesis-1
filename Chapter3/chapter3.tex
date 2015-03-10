@@ -17,16 +17,16 @@ synchrotron accelerator with a maximum design centre of mass energy,
 $\sqrt{s} = 14$ \tev. It is the highest energy component of the CERN accelerator
 complex (figure~REF). The LHC accelerates counter-rotating beams of protons 
 using 400 MHz radio frequency
-(RF) cavities, focusses the beam using multiple quadrapole and higher order magnets,
+(RF) cavities, focusses the beam using multiple quadrupole and higher order magnets,
 and maintains the beams trajectory using super-conducting, niobium-titanium 
 dipole magnets, capable of producing an 8.4 Tesla magnetic field. This high 
-magnetic field is achieved by cooling the magnets to 1.9 K using superfluid 
+magnetic field is achieved by cooling the magnets to 1.9 K using super-fluid 
 helium, and applying a 11.85 kA electric current.
 
 The beams, consisting of approximately 1400 bunches of $~1.1x10^{11}$ protons,
 are brought into collision
 at four points around the LHC ring within specialised detector systems. During the
-first run of the LHC, `Run I', bunches were spaced in 50ns intervals, leading to
+first run of the LHC, `Run I', bunches were spaced in 50 ns intervals, leading to
 a bunch crossing rate of 20 MHz. Collisions continue for a number of hours, 
 while collision rates are maintained by scanning the transverse beam positions, 
 until such a time when proton numbers are depleted, the beam is dumped and the 
@@ -86,14 +86,14 @@ defined as:
 
 where blah blah. Differences in these two variables, $\Delta \phi$ and $\Delta 
 \eta$, are invariant under Lorentz boosts, and so can be used to construct a 
-furthermore Lorentz-invariant angular seperation between particles:
+furthermore Lorentz-invariant angular separation between particles:
 
 \begin{equation}
 \Delta R = \sqrt{ (\Delta \eta)^2 + (\Delta \phi)^2}
 \end{equation}
 
 CMS is arranged in a layered configuration of sub-detectors, structured as a 
-cylindical barrel, `closed' by two endcaps. The barrel contains a
+cylindrical barrel, `closed' by two end-caps. The barrel contains a
 super-conducting solenoid magnet capable of producing a 3.8 T magnetic field. 
 Operated at 4.5 K, with a 18.5 kA current, the longitudinal field produced bends
 the trajectories of charged particles allowing for precise charge and momenta 
@@ -104,21 +104,43 @@ measurements.
 \label{sec:detector_subsystems}
 
 Detector subsystems within CMS follow a layered structure in both the barrel and
-endcap regions. The following describe each of the subsystems in more detail.
+end-cap regions. The following describe each of the subsystems in more detail.
 
-\subsection{Pixels and tracker}
+\subsection{Tracker}
 - inner three layers of pixel detectors
-    - also have endcaps of pixel detectors
+    - also have end-caps of pixel detectors
 - what type of pixels? what pitch? technology?
 - provide 2d information of hit positions
 
 - further 10 layers of silicon strip detectors
     - n-in-p?
-    - and endcaps
+    - and end-caps
 
 - this detector system provides information of not only the vertex location and 
 tracking of charged particles, but also given the massive magnet, a 
 determination of both their charge and momenta.
+
+The silicon tracker system consists of an inner pixel-based and outer strip-
+based detectors.
+
+The pixel detector consists of three layers of silicon pixel sensors situated 
+as close as 4 cm from the beamline, capable 
+of producing 2D hit information of charged particles for use in vertex 
+finding. The barrel section is also accompanied by two end-cap pixel detector 
+disks. Each sensor contains a 52 x 80 grid of 100 \microm x 150 \microm pixels, 
+and are mounted on a lightweight mechanical substrate along with front-end readout 
+electronics.
+
+A further 10 layers of silicon strip detectors are used to accurately 
+reconstruct the track path of charged particles. The sensors collectively cover 
+an area of over 200 $\text{m}^2$, are of p-in-n type, and range from 320 \microm
+to 500 \microm in thickness and pixel pitch ranging between 80 \microm and 
+205 \microm, depending on distance from the beamline.
+
+All silicon detectors situated so close to the interaction point receive high-
+doses of radiation, eventually ageing due to the damage inflicted. Subsequently, 
+radiation hard sensor and front-end electronics designs have been carefully 
+selected to mitigate the effects of ageing due to radiation damage.
 
 \subsection{Electromagenetic Calorimeter}
 
@@ -191,7 +213,7 @@ The L1 system consists of a staged, modular design of custom built hardware
 electronics systems, shown in figure~\ref{fig:l1_diagram}. 
 The L1 trigger reconstructs energy deposits in the calorimeters and muon systems
 into coarse `trigger-primitive' physics objects, in the calorimeter and the muon 
-trigger respectively. Regional information is gathered by seperate modules 
+trigger respectively. Regional information is gathered by separate modules 
 before being combined in the Global Calorimeter Trigger (GCT) and Global Muon 
 Trigger (GMT) systems, where physics objects are sorted according to energy. 
 Finally, an event's objects are passed on to the Global Trigger (GT) where a 
