@@ -162,37 +162,70 @@ shifting fibres to a hybrid photo-diode for detection
 \label{sec:detector_daq}
 
 \subsection{Trigger system}
-Events of interest are selected using a dedicated trigger system, to chuck out 
-all the boring shit.
-
-Split into two parts - L1 (hardware) and HLT (software).
+Events of interest are selected using a dedicated triggering system. It is 
+split into two distinct stages: the hardware-based Level 1 (L1) and
+the software-based High-Level Trigger (HLT) systems.
 
 \subsubsection{Level-1 Hardware Trigger}
-- L1 system is hardware based running at a rate of 40 MHz
-- runs on coarse trigger primitive objects, constructed from raw energy deposits
-in the calorimeter and muon systems independently
-    - takes regional information from both the calorimeter and muon systems 
-    independently.
-    - combines regional data in the GCT/GMT
-    - feeds combined objects (from across entire detector) into the GT, where a 
-    L1 accept is made or not.
-\emph{can talk in more detail here about the calorimeter trigger path and the 
-GCT's job}
-- has approximately 3microsecs per events
-- objects considered at L1 are electrons, muons, jets (central and forward) and 
-energy sums (ETT, MET, HTT, MHT)
-- L1Accept is made dependent on the objects within an event meeting 1 of 127 (
-check!) simple threshold and multiplicity based requirements.
-- maximum available output bandwidth of the L1 system is 100 kHz, although the 
-output rate is kept lower than this to allow for stochastic fluctuations
+% - L1 system is hardware based running at a rate of 40 MHz
+% - runs on coarse trigger primitive objects, constructed from raw energy deposits
+% in the calorimeter and muon systems independently
+%     - takes regional information from both the calorimeter and muon systems 
+%     independently.
+%     - combines regional data in the GCT/GMT
+%     - feeds combined objects (from across entire detector) into the GT, where a 
+%     L1 accept is made or not.
+% \emph{can talk in more detail here about the calorimeter trigger path and the 
+% GCT's job}
+% - has approximately 3microsecs per events
+% - objects considered at L1 are electrons, muons, jets (central and forward) and 
+% energy sums (ETT, MET, HTT, MHT)
+% - L1Accept is made dependent on the objects within an event meeting 1 of 127 (
+% check!) simple threshold and multiplicity based requirements.
+% - maximum available output bandwidth of the L1 system is 100 kHz, although the 
+% output rate is kept lower than this to allow for stochastic fluctuations
+
+The L1 system consists of a staged, modular design of custom built hardware 
+electronics systems, shown in figure~\ref{fig:l1_diagram}. 
+The L1 trigger reconstructs energy deposits in the calorimeters and muon systems
+into coarse `trigger-primitive' physics objects, in the calorimeter and the muon 
+trigger respectively. Regional information is gathered by seperate modules 
+before being combined in the Global Calorimeter Trigger (GCT) and Global Muon 
+Trigger (GMT) systems, where physics objects are sorted according to energy. 
+Finally, an event's objects are passed on to the Global Trigger (GT) where a 
+`Level-1 Accept' (L1A) signal is issued or not, dependent on the event meeting 
+one of 127 (CHECK) simple object threshold and multiplicity based requirements.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width = 0.7\textwidth]{Figs/trigger/L1_diagram.pdf}
+  \label{fig:l1_diagram}
+  \caption{Schematic overview of the Level-1 hardware trigger system of CMS.}
+\end{figure}
+
+The L1 system is required to run at 40 MHz, equal to the maximal bunch-crossing
+rate within CMS, with a L1A decision required within a latency of 3 $\mu s$. The
+maximum available output bandwidth is 100 kHz, but is typically maintained at a 
+lower value to allow for stochastic fluctuations in rate.
 
 \subsubsection{High-level Trigger}
-- Following a L1A signal, candidate events are optically transmitted to the high
-level trigger, consisting of a large computer farm of the off the shelf server 
-PCs
-- events are reconstructed/built in more detail
-- passed on to a suite of analyst-designed software triggers which can 
-reconstruct more advanced objects and event variables, such as alphaT (as 
-described later in chapter BLAH) - has approximately 50ms per event
-- HLT reduces rate to around 300 events per second
+% - Following a L1A signal, candidate events are optically transmitted to the high
+% level trigger, consisting of a large computer farm of the off the shelf server 
+% PCs
+% - events are reconstructed/built in more detail
+% - passed on to a suite of analyst-designed software triggers which can 
+% reconstruct more advanced objects and event variables, such as alphaT (as 
+% described later in chapter BLAH) - has approximately 50ms per event
+% - HLT reduces rate to around 300 events per second
 
+Following a L1A signal, candidate events are optically transmitted to the HLT 
+system, consisting of a large computer farm of the off the shelf server 
+PCs. Events are reconstructed in greater detail, due to the increase in 
+processing time of up to 50 ms, allowing for a closer emulation of offline 
+reconstruction techniques. Complex analyst-designed trigger rules are used, 
+which can employ more sophisticated event-level variables such as \alphat
+(described in detail later in chapter~\ref{ch:5}).
+
+The HLT reduces event rates further by around two orders of magnitude, typically
+outputting hundreds of events per second. Events passing the HLT are transmitted
+on for full offline reconstruction.
