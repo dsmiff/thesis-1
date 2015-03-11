@@ -185,12 +185,12 @@ with data from the tracker system.
 
 \subsection{Hadronic Calorimeter}
 
-- alternating layers of brass absorber and plastic scintillator
-- scintillators are sectioned into towers, 0.087x0.087 in barrel and 0.17x0.17 
-in the endcaps (double check this isn't just my interpretation of ted's eta 
-numbers)
-- light produced in the scintillator layers is transmitted via wavelength 
-shifting fibres to a hybrid photo-diode for detection
+% - alternating layers of brass absorber and plastic scintillator
+% - scintillators are sectioned into towers, 0.087x0.087 in barrel and 0.17x0.17 
+% in the endcaps (double check this isn't just my interpretation of ted's eta 
+% numbers)
+% - light produced in the scintillator layers is transmitted via wavelength 
+% shifting fibres to a hybrid photo-diode for detection
 
 The Hadronic Calorimeter (HCAL) system measures the energy of hadronic showers 
 originating from single-quarks and gluons (i.e. jets). It is constructed from
@@ -204,10 +204,30 @@ wavelength shifting fibres to be measured in hybrid photo-diodes.
 
 \subsection{Muon Systems}
 
-- drift tubes (DT)
-- cathode strip chambers (CSC)
-- resistive plate chambers (RPC)
-- detection of muons for eta < |2.4|
+% - comprised of three different gaseous detector technologies, each with 
+% different coverages in eta
+% - drift tubes (DT)
+%   - traditional technology, optimised for low occupancy
+%   - central: eta < 1.2
+% - cathode strip chambers (CSC)
+%   - designed for high magnetic field and neutron backgrounds
+%   - forward: 0.9 < eta < 2.4
+% - resistive plate chambers (RPC)
+%   - designed for high magnetic field and neutron backgrounds
+%   - forward and central eta < 2.1
+
+Muons are detector in the outer layers of the detector, with the muon system 
+comprised of three different gaseous detector technologies each with different 
+pseudo-rapidity coverages. The central region, $|\eta|<1.2$ is equipped with 
+Drift Tube (DT) detectors - a traditional detector technology, optimised for low
+-occupancy measurements. Cathode Strip Chambers (CSC) cover the forward region,
+$0.9 < |\eta| < 2.4$, and dual-layered Resistive Plate Chambers (RPC) cover
+$|\eta| < 2.1$ - both CSC and RPC detectors being optimised for operation in 
+both high magnetic field and neutron background environments.
+
+The muon system aims to provide identification and precision measurements of
+muon momenta. Energy deposits in the muon systems can be combined with 
+information from the tracker to improve momentum resolution significantly.
 
 %********************************** % Fourth Section  *************************************
 \section{Trigger and Data Acquisition}  %Section - 1.4
