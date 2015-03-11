@@ -40,7 +40,7 @@ Chapter 4 - Objects:
 Chapter 5 - Analysis:
   ☐ add a cutflow table with event yields
   ☐ add MHT/MET distro in full to show how it helps - can do MC only
-  ☐ make selection criteria into an itemised list - jets, leptons, photon, filters etc @critical @due(15-02-27 19:46)
+  ✔ make selection criteria into an itemised list - jets, leptons, photon, filters etc @critical @due(15-02-27 19:46) @done (15-03-11 11:36)
   ☐ work out whether to keep the example distros with their shitty normalisation
     either hack the normalisation (!!!) or do MC only distros
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
@@ -55,7 +55,8 @@ Chapter 5_2 - Samples:
       the samples are generated completely independently from the xs calculations!
   ☐ describe MC generation - can get from AN
   ☐ get lumis for HT and JetHT samples
-  ☐ define what PU actually is
+  ✘ define what PU actually is @cancelled (15-03-11 11:37) - will do in detector
+  section
   ☐ work out what process Zinv is compared to with photons. gamma to what??
     ☐ get the corresponding value of the normalisation!
 
