@@ -5,8 +5,6 @@
 General:
   ☐ 'btag' or 'Btag'?
   ☐ 'mistag' or 'mis-tag'?
-  ✔ space after number and before unit? @done (15-02-27 10:47)
-      yes!
   ☐ add space before all units!
   ☐ make sure all 'TeV's are non-italics
   ☐ change POG and PAG's
@@ -15,18 +13,12 @@ General:
 Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
- ✔ actually write something @done (15-02-27 16:44)
  ☐ some details of example precision electroweak measurements
 
 Chapter 3 - Detector:
  ☐ add details of instantaneous and integrated luminosity
- ✘ relate the above to both in time and out of time pileup @cancelled (15-03-12 18:00)
  ☐ check pseudo-rapidity and phi Lorentz claims...!
      http://www.hep.shef.ac.uk/edaw/PHY206/Site/2012_course_files/phy206rlec7.pdf
- ✔ describe solenoid magnet system as part of the CMS overview section @done (15-03-11 11:36)
- ✔ decide if texttt is needed for detector names @done (15-03-12 18:29)
- ✘ work out standard form code for line 13, first page @cancelled (15-03-12 17:56)
- ✔ order of symbol for line 13, first page (num protons per bunch) @done (15-03-12 19:00)
 
 Chapter 4 - Objects:
   ☐ look up and briefly describe jet corrections
@@ -42,49 +34,44 @@ Chapter 4 - Objects:
 Chapter 5 - Analysis:
   ☐ add a cutflow table with event yields
   ☐ add MHT/MET distro in full to show how it helps - can do MC only
-  ✔ make selection criteria into an itemised list - jets, leptons, photon, filters etc @critical @due(15-02-27 19:46) @done (15-03-11 11:36)
   ☐ work out whether to keep the example distros with their shitty normalisation
     either hack the normalisation (!!!) or do MC only distros
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
-  ✘ why is dphistar better than dphi(MET, jet)? @critical @cancelled (15-02-27 16:46)
-  ☐ background breakdown in graph form
   ☐ fix titles in turn on curve plots - remove? crop each?
   ☐ describe difference between cumulative and differential turn on curves @due(15-02-27 19:47)
   ☐ formula method section @high
+  ☐ add in details of the dPhi*>0.3 requirement @high
 
 Chapter 5_2 - Samples:
-  ✔ k-factors are derived from "inclusive sample cross-sections" or "inclusive cross-sections" - NOT from "inclusive samples" @critical @done (15-02-26 19:57)
-      the samples are generated completely independently from the xs calculations!
   ☐ describe MC generation - can get from AN
   ☐ get lumis for HT and JetHT samples
-  ✘ define what PU actually is @cancelled (15-03-11 11:37) - will do in detector
-  section
   ☐ work out what process Zinv is compared to with photons. gamma to what??
     ☐ get the corresponding value of the normalisation!
 
 Chapter 6 - Background Estimation:
-  ✔ introduction paragraph @done (15-02-27 16:56)
-    - what are the control samples?
-      - kinematically similar to signal region
-    - how are they used?
-      - use a tagged lepton or photon, which is subsequently ignored
-      - use yields in MC and data to extrapolate into signal region
-    - mention that the methods give us 'proxies' for the predictions, but 
+    ✔ what are the control samples? @done (15-03-17 10:13)
+      ✔ kinematically similar to signal region @done (15-03-17 10:13)
+    ✔ how are they used? @done (15-03-17 10:13)
+      ✔ use a tagged lepton or photon, which is subsequently ignored @done (15-03-17 10:13)
+      ✔ use yields in MC and data to extrapolate into signal region @done (15-03-17 10:13)
+    ✔ mention that the methods give us 'proxies' for the predictions, but  @done (15-03-17 10:13)
       eventually everything goes into the likelihood fit
   ☐ why did you leave out the single mu 1b -> 2b closure test?
     _it's in the plots, so why didn't I describe it..?_
   ☐ MJ background estimation systematics???
-  ✘ final column in prescaled trig eff table??? @cancelled (15-02-27 16:58)
   ☐ check what susy phase space screws MC normalisation
   ☐ reword table and figure titles
   ☐ add some more detail on level of closure from const and linear fit results
-  ☐ remove paragraph indentations for text after equations
+  ✘ remove paragraph indentations for text after equations @cancelled (15-03-17 10:14)
   ☐ different word for "naive predictions"
 
 Chapter 7 - Results:
-  ☐ change all "ph" subscripts to \gamma's
+  ✔ change all "ph" subscripts to \gamma's @done (15-03-17 10:15)
 
 Chapter 8 - Crosschecks:
+ ☐ decide if we drop this chapter
+   - thesis doesn't have to be in a chronological order
+   - can do an appendix with details of dPhi*>0.3 requirement
 
 Chapter 9 - Interpretation:
   ☐ update to latest eff plots
@@ -104,6 +91,24 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ check hcal tower dimensions @done (15-03-17 10:12) @project(Chapter 3 - Detector)
+ ✔ background breakdown in graph form @done (15-03-17 10:12) @project(Chapter 5 - Analysis)
+ ✔ order of symbol for line 13, first page (num protons per bunch) @done (15-03-12 19:00) @project(Chapter 3 - Detector)
+ ✔ decide if texttt is needed for detector names @done (15-03-12 18:29) @project(Chapter 3 - Detector)
+ ✘ relate the above to both in time and out of time pileup @cancelled (15-03-12 18:00) @project(Chapter 3 - Detector)
+ ✘ work out standard form code for line 13, first page @cancelled (15-03-12 17:56) @project(Chapter 3 - Detector)
+ ✘ define what PU actually is @cancelled (15-03-11 11:37) - will do in detector @project(Chapter 5_2 - Samples)
+  section
+ ✔ make selection criteria into an itemised list - jets, leptons, photon, filters etc @critical @due(15-02-27 19:46) @done (15-03-11 11:36) @project(Chapter 5 - Analysis)
+ ✔ describe solenoid magnet system as part of the CMS overview section @done (15-03-11 11:36) @project(Chapter 3 - Detector)
+ ✘ final column in prescaled trig eff table??? @cancelled (15-02-27 16:58) @project(Chapter 6 - Background Estimation)
+ ✔ introduction paragraph @done (15-02-27 16:56) @project(Chapter 6 - Background Estimation)
+ ✘ why is dphistar better than dphi(MET, jet)? @critical @cancelled (15-02-27 16:46) @project(Chapter 5 - Analysis)
+ ✔ actually write something @done (15-02-27 16:44) @project(Chapter 2 - Theory)
+ ✔ space after number and before unit? @done (15-02-27 10:47) @project(General)
+  yes!
+ ✔ k-factors are derived from "inclusive sample cross-sections" or "inclusive cross-sections" - NOT from "inclusive samples" @critical @done (15-02-26 19:57) @project(Chapter 5_2 - Samples)
+  the samples are generated completely independently from the xs calculations!
  ✔ tell jeson about this awesome list stuff @critical @due(15-02-27 19:50) @done (15-02-26 19:50) @project(Chapter 4 - Objects)
  ✔ move HT sideband normalisation to here @done (15-02-26 19:47) @project(Chapter 5_2 - Samples)
  ✔ Start this chapter! @done (15-02-26 19:45) @project(Chapter 5_2 - Samples)
