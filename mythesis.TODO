@@ -5,10 +5,6 @@
 General:
   ☐ 'btag' or 'Btag'?
   ☐ 'mistag' or 'mis-tag'?
-  ✔ add space before all units! @done (15-03-17 17:13)
-  ✔ make sure all 'TeV's are non-italics @done (15-03-17 10:32)
-  ✔ change POG and PAG's @done (15-03-17 17:12)
-    e.g. 'POG' to _'POG'_
 
 Chapter 1 - Introduction:
 
@@ -42,9 +38,9 @@ Chapter 5 - Analysis:
   ☐ fix titles in turn on curve plots - remove? crop each?
   ☐ describe difference between cumulative and differential turn on curves @due(15-02-27 19:47)
   ☐ formula method section @high
-  ☐ add in details of the dPhi*>0.3 requirement @high
+  ✔ add in details of the dPhi*>0.3 requirement @high @done (15-03-17 17:58)
     ☐ what do we say it's for? genuine MET sources?
-  ☐ reference original alpha paper from randall
+  ✔ reference original alpha paper from randall @done (15-03-17 17:58)
 
 Chapter 5_2 - Samples:
   ☐ describe MC generation - can get from AN
@@ -53,24 +49,15 @@ Chapter 5_2 - Samples:
     ☐ get the corresponding value of the normalisation!
 
 Chapter 6 - Background Estimation:
-    ✔ what are the control samples? @done (15-03-17 10:13)
-      ✔ kinematically similar to signal region @done (15-03-17 10:13)
-    ✔ how are they used? @done (15-03-17 10:13)
-      ✔ use a tagged lepton or photon, which is subsequently ignored @done (15-03-17 10:13)
-      ✔ use yields in MC and data to extrapolate into signal region @done (15-03-17 10:13)
-    ✔ mention that the methods give us 'proxies' for the predictions, but  @done (15-03-17 10:13)
-      eventually everything goes into the likelihood fit
   ☐ why did you leave out the single mu 1b -> 2b closure test?
     _it's in the plots, so why didn't I describe it..?_
   ☐ MJ background estimation systematics???
   ☐ check what susy phase space screws MC normalisation
   ☐ reword table and figure titles
   ☐ add some more detail on level of closure from const and linear fit results
-  ✘ remove paragraph indentations for text after equations @cancelled (15-03-17 10:14)
   ☐ different word for "naive predictions"
 
 Chapter 7 - Results:
-  ✔ change all "ph" subscripts to \gamma's @done (15-03-17 10:15)
 
 Chapter 8 - Crosschecks:
  ☐ decide if we drop this chapter
@@ -105,6 +92,19 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ add space before all units! @done (15-03-17 17:13) @project(General)
+ ✔ make sure all 'TeV's are non-italics @done (15-03-17 10:32) @project(General)
+ ✔ change POG and PAG's @done (15-03-17 17:12) @project(General)
+  e.g. 'POG' to _'POG'_
+ ✔ what are the control samples? @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
+ ✔ kinematically similar to signal region @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
+ ✔ how are they used? @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
+ ✔ use a tagged lepton or photon, which is subsequently ignored @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
+ ✔ use yields in MC and data to extrapolate into signal region @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
+ ✔ mention that the methods give us 'proxies' for the predictions, but  @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
+  eventually everything goes into the likelihood fit
+ ✘ remove paragraph indentations for text after equations @cancelled (15-03-17 10:14) @project(Chapter 6 - Background Estimation)
+ ✔ change all "ph" subscripts to \gamma's @done (15-03-17 10:15) @project(Chapter 7 - Results)
  ✔ check hcal tower dimensions @done (15-03-17 10:12) @project(Chapter 3 - Detector)
  ✔ background breakdown in graph form @done (15-03-17 10:12) @project(Chapter 5 - Analysis)
  ✔ order of symbol for line 13, first page (num protons per bunch) @done (15-03-12 19:00) @project(Chapter 3 - Detector)
