@@ -5,9 +5,9 @@
 General:
   ☐ 'btag' or 'Btag'?
   ☐ 'mistag' or 'mis-tag'?
-  ☐ add space before all units!
-  ☐ make sure all 'TeV's are non-italics
-  ☐ change POG and PAG's
+  ✔ add space before all units! @done (15-03-17 17:13)
+  ✔ make sure all 'TeV's are non-italics @done (15-03-17 10:32)
+  ✔ change POG and PAG's @done (15-03-17 17:12)
     e.g. 'POG' to _'POG'_
 
 Chapter 1 - Introduction:
@@ -19,6 +19,8 @@ Chapter 3 - Detector:
  ☐ add details of instantaneous and integrated luminosity
  ☐ check pseudo-rapidity and phi Lorentz claims...!
      http://www.hep.shef.ac.uk/edaw/PHY206/Site/2012_course_files/phy206rlec7.pdf
+ ☐ reference TDR
+ ☐ reference trigger TDR
 
 Chapter 4 - Objects:
   ☐ look up and briefly describe jet corrections
@@ -41,6 +43,8 @@ Chapter 5 - Analysis:
   ☐ describe difference between cumulative and differential turn on curves @due(15-02-27 19:47)
   ☐ formula method section @high
   ☐ add in details of the dPhi*>0.3 requirement @high
+    ☐ what do we say it's for? genuine MET sources?
+  ☐ reference original alpha paper from randall
 
 Chapter 5_2 - Samples:
   ☐ describe MC generation - can get from AN
@@ -75,7 +79,9 @@ Chapter 8 - Crosschecks:
 
 Chapter 9 - Interpretation:
   ☐ update to latest eff plots
-  ☐ latest plots to have no titles
+    ☐ latest plots to have no titles
+  ☐ PDF4LHC reference
+  ☐ reference for ISR reweighting PAS
 
 Chapter 10 - Conclusion:
 
