@@ -201,31 +201,31 @@ L = L_{signal} \times \prod_k L^k_{total}
 \label{eq:total_likelihood_wsignal}
 \end{equation}
 
-\subsection{Notes on syst modelling}
-lognormal instead of gaussian PDF - these are used for systematics modelling.
+% \subsection{Notes on syst modelling}
+% lognormal instead of gaussian PDF - these are used for systematics modelling.
 
-see:
-\verb!http://www.physics.ucla.edu/~cousins/stats/cousins_lognormal_prior.pdf!
+% see:
+% \verb!http://www.physics.ucla.edu/~cousins/stats/cousins_lognormal_prior.pdf!
 
-if you had a parameter with mean of 0.3 and variance of 0.1, you could have a 
-distro which would give you negative values of your PDF, if you used gaussian. 
-therefore we use lognormal.
+% if you had a parameter with mean of 0.3 and variance of 0.1, you could have a 
+% distro which would give you negative values of your PDF, if you used gaussian. 
+% therefore we use lognormal.
 
-The lognormal distribution has three variables as input. $Logn(x|\rho, \sigma)$
+% The lognormal distribution has three variables as input. $Logn(x|\rho, \sigma)$
 
-\begin{description}
-\item[$\sigma$ parameter]\hfill \\ this is similar to the width, if it were a gaussian 
-distribution. It is essentially the derived systematic error as taken from the 
-closure tests (I think...!). The smaller the value, the more the $\rho$ 
-parameters may need to be pulled in order to make the fit.
-\item[$\rho$ parameter] \hfill \\ the mean of the syst error. this is a parameter
-(nuisance?) which is allowed to float in the fit. It essentially represents how 
-much you have to pull on your systematics in order for the observations to match
-the background predictions. If it's pulled a lot (many sigma away from 1.) then 
-your observations really don't fit your predictions, or you've really 
-underestimated your systematics! Large deviations from 1 (in terms of the
-$\sigma$ parameter) indicate an unhealthy fit...
-\end{description}
+% \begin{description}
+% \item[$\sigma$ parameter]\hfill \\ this is similar to the width, if it were a gaussian 
+% distribution. It is essentially the derived systematic error as taken from the 
+% closure tests (I think...!). The smaller the value, the more the $\rho$ 
+% parameters may need to be pulled in order to make the fit.
+% \item[$\rho$ parameter] \hfill \\ the mean of the syst error. this is a parameter
+% (nuisance?) which is allowed to float in the fit. It essentially represents how 
+% much you have to pull on your systematics in order for the observations to match
+% the background predictions. If it's pulled a lot (many sigma away from 1.) then 
+% your observations really don't fit your predictions, or you've really 
+% underestimated your systematics! Large deviations from 1 (in terms of the
+% $\sigma$ parameter) indicate an unhealthy fit...
+% \end{description}
 
 
 
