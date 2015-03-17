@@ -23,6 +23,15 @@ dipole magnets, capable of producing an 8.4 T magnetic field. Such a high
 magnetic field is achieved by cooling the magnets to 1.9 K using super-fluid 
 helium, and applying a 11.85 kA electric current.
 
+\begin{figure}[hb!]
+\centering
+\includegraphics[width=0.45\textwidth]{Figs/machine/lhc-schematic.jpg}
+\label{fig:lhc_diagram}
+\caption{Schematic diagram of the Large Hadron Collider, indicating the 
+positions of the four collision points and their corresponding detector 
+experiments.}
+\end{figure}
+
 The beams, consisting of approximately 1400 bunches of $\orderof(10^{11})$ protons,
 are brought into collision
 at four points around the LHC ring within specialised detector systems. During the
@@ -40,6 +49,21 @@ experimental challenges for detector readout and event reconstruction.
 
 \emph{instantaneous and integrated luminosity}
 \emph{show plots of the instantaneous lumi and integ lumi throughout run I}
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/machine/int_lumi_per_week_pp_2012.pdf}
+    \label{fig:int_lumi_week}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/machine/int_lumi_per_week_cumulative_pp_2012.pdf}
+    \label{fig:int_lumi_week_cumu}
+  \end{subfigure}
+  \caption{The integrated luminosity delivered to and recorded at the CMS 
+  detector throughout 2012, split by week.}
+  \label{fig:int_lumi_2012}
+\end{figure}
 
 The four detectors of the LHC consist of ALICE, ATLAS, CMS and LHCb Of these,
 both ATLAS and CMS 
@@ -65,7 +89,7 @@ the presence of weakly interacting particles.
 
 \begin{figure}[hb!]
   \centering
-  \includegraphics[width=\textwidth]{Figs/cms_120918_02.png}
+  \includegraphics[width=\textwidth]{Figs/machine/cms_120918_02.png}
   \caption{Diagram of the Compact Muon Solenoid REF.}
   \label{fig:cms_diagram}
 \end{figure}
@@ -197,10 +221,10 @@ operating within the strong magnetic environment of CMS.
 The Hadronic Calorimeter (HCAL) system measures the energy of hadronic showers 
 originating from single-quarks and gluons (i.e. jets). It is constructed from
 alternating  brass absorber and plastic scintillator layers. The latter are spatially 
-divided into towers measuring 0.087 x 0.087 and 0.17 x 0.17 in the barrel and 
-end-caps respectively (CHECK DIMENSIONS). Hadronic showers of particles deposit 
-energy as scintillation light in the plastic layers, which is transmitted via 
-wavelength shifting fibres to be measured in hybrid photo-diodes. 
+divided into towers measuring 0.087 x 0.087 in the barrel and end-caps. Hadronic
+showers of particles deposit energy as scintillation light in the plastic layers,
+which is transmitted via wavelength shifting fibres to be measured in hybrid
+photo-diodes. 
 
 \emph{can i ignore the HF region, as we ignore forward jets?}
 
@@ -225,13 +249,20 @@ significantly.
 
 Muons are detected in the outer layers of the detector, with the muon system 
 comprised of three different gaseous detector technologies each with different 
-pseudo-rapidity coverage. The central region, $|\eta|<1.2$ is equipped with 
+pseudo-rapidity coverage, shown in figure~. The central barrel region, $|\eta|<1.2$ is equipped with 
 Drift Tube (DT) detectors - a traditional detector technology, optimised for low
 -occupancy measurements. Cathode Strip Chambers (CSC) cover the forward region,
 $0.9 < |\eta| < 2.4$, and dual-layered Resistive Plate Chambers (RPC) cover
 $|\eta| < 2.1$ - both CSC and RPC detectors being optimised for operation in 
 both high magnetic field and neutron background environments.
 
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.6\textwidth]{Figs/machine/pictures_MuonSys-mod3.png}
+\label{fig:muon_system_diagram}
+\caption{Cross section of the CMS detector in the y-z plane, showing the three 
+muon systems as well as other interior subdetector systems.}
+\end{figure}
 
 %********************************** % Fourth Section  *************************************
 \section{Trigger and Data Acquisition}  %Section - 1.4
@@ -274,9 +305,11 @@ one of 127 (CHECK) simple object threshold and multiplicity based requirements.
 
 \begin{figure}[ht!]
   \centering
-  \includegraphics[width = 0.7\textwidth]{Figs/trigger/L1_diagram.pdf}
+  \includegraphics[width = 0.55\textwidth]{Figs/machine/L1_diagram.pdf}
   \label{fig:l1_diagram}
-  \caption{Schematic overview of the Level-1 hardware trigger system of CMS.}
+  \caption{Schematic overview of the Level-1 hardware trigger system of CMS. $
+  \eta$ coverage of is shown in red and the data-flow indicated by the arrow 
+  direction.}
 \end{figure}
 
 The L1 system is required to run at 40 MHz, equal to the maximal bunch-crossing
