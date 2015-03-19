@@ -12,11 +12,14 @@ Chapter 2 - Theory:
  ☐ some details of example precision electroweak measurements
 
 Chapter 3 - Detector:
- ☐ add details of instantaneous and integrated luminosity
- ☐ check pseudo-rapidity and phi Lorentz claims...!
+ ✔ add details of instantaneous and integrated luminosity @done (15-03-19 16:09)
+ ✔ check pseudo-rapidity and phi Lorentz claims...! @done (15-03-19 16:09)
      http://www.hep.shef.ac.uk/edaw/PHY206/Site/2012_course_files/phy206rlec7.pdf
- ☐ reference TDR
- ☐ reference trigger TDR
+ ✔ reference TDR @done (15-03-18 16:46)
+ ✔ reference trigger TDR @done (15-03-18 16:46)
+ ✔ reference for luminosity measurement @done (15-03-19 16:09)
+ ☐ decide whether to include ECAL preshower
+ ☐ decide whether to include HF region of HCAL
 
 Chapter 4 - Objects:
   ☐ look up and briefly describe jet corrections
@@ -53,7 +56,7 @@ Chapter 6 - Background Estimation:
     _it's in the plots, so why didn't I describe it..?_
   ☐ MJ background estimation systematics???
   ☐ check what susy phase space screws MC normalisation
-  ☐ reword table and figure titles
+  ✔ reword table and figure titles @done (15-03-18 16:26)
   ☐ add some more detail on level of closure from const and linear fit results
   ☐ different word for "naive predictions"
 
