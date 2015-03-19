@@ -51,29 +51,41 @@ positions of the four collision points and their corresponding detector
 experiments.}
 \end{figure}
 
-Simultaneous interactions happening at the time
-of each bunch crossing are referred to as in-time pile up (PU), as opposed to 
-overlapping particle decays from previous bunch crossings called out-of-time 
-pile up (PU). Both phenomena cause significant 
-experimental challenges for detector readout and event reconstruction.
+The rate of collisions at each interaction point is described by the 
+Instantaneous Luminosity, given by the equation:
 
-\emph{instantaneous and integrated luminosity}
-\emph{show plots of the instantaneous lumi and integ lumi throughout run I}
+\begin{equation}
+L_{inst.} = \frac{f_{orbit}n_{B}N_p^2}{A_{eff}}
+\end{equation}
+
+where $f_{orbit}$ is the orbital frequency of bunches in the LHC, $n_B$ is the 
+number of bunches in the machine, $N_p$ is the number of protons per bunch, and 
+$A_{eff}$ is the effective area overlap between colliding bunches. The peak 
+$L_{inst.}$ per day is shown in figure~\ref{fig:inst_lumi_day} and the integral
+over time is shown in figure~\ref{fig:lumi_2012}, both for the full run period
+throughout 2012.
 
 \begin{figure}[h!]
   \centering
   \begin{subfigure}[b]{0.46\textwidth}
-    \includegraphics[width=\textwidth]{Figs/machine/int_lumi_per_week_pp_2012.pdf}
-    \label{fig:int_lumi_week}
+    \includegraphics[width=\textwidth]{Figs/machine/peak_lumi_per_day_pp_2012.pdf}
+    \label{fig:inst_lumi_day}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/machine/int_lumi_per_week_cumulative_pp_2012.pdf}
     \label{fig:int_lumi_week_cumu}
   \end{subfigure}
-  \caption{The integrated luminosity delivered to and recorded at the CMS 
-  detector throughout 2012, split by week.}
-  \label{fig:int_lumi_2012}
+  \caption{The peak instantaneous luminosity for each day throughout 2012 (left),
+  and the integrated luminosity delivered to and recorded at CMS (right)
+  from \cite{cmslumi}.}
+  \label{fig:lumi_2012}
 \end{figure}
+
+Simultaneous interactions happening at the time
+of each bunch crossing are referred to as in-time pile up (PU), as opposed to 
+overlapping particle decays from previous bunch crossings called out-of-time 
+pile up (PU). Both phenomena cause significant 
+experimental challenges for detector readout and event reconstruction.
 
 The four detectors of the LHC consist of ALICE, ATLAS, CMS and LHCb Of these,
 both ATLAS and CMS 
@@ -115,14 +127,15 @@ axes.
 
 Directions relative to the CMS detector are described with the variables $\phi$,
 the angular direction in the transverse plane with the range $[-\pi, \pi]$, and 
-the pseudo-rapidity, $\eta$, describing the angle with respect to the z-axis,
-defined as:
+the lorentz-invariant quantity `pseudo-rapidity', $\eta$, describing an angle
+with respect to the z-axis, defined as:
 
 \begin{equation}
-\eta = - ln tan \Bigg( \frac{\theta}{2} \Bigg)
+\eta = - ln \ tan \Bigg( \frac{\theta}{2} \Bigg)
 \end{equation}
 
-where blah blah. Differences in these two variables, namely $\Delta \phi$ and $\Delta 
+where $\theta$ is the angle between the particle trajectory and the beam pipe.
+Differences in these two variables, namely $\Delta \phi$ and $\Delta 
 \eta$, are invariant under Lorentz boosts, and so can be used to construct a 
 furthermore Lorentz-invariant angular separation between particles:
 
