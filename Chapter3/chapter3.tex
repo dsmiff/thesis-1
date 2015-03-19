@@ -14,14 +14,33 @@
 
 The Large Hadron Collider (LHC) is a 27 km circumference proton-proton 
 synchrotron with maximum design centre of mass energy
-$\sqrt{s} = 14$ \tev. It is the highest energy component of the CERN accelerator
-complex (figure~REF). The LHC accelerates counter-rotating beams of protons 
-using 400 MHz radio frequency
+$\sqrt{s} = 14$ \tev, described in detail elsewhere \cite{Evans:2008zzb}. It
+is the highest energy component of the CERN accelerator
+complex, which is shown in figure~\ref{fig:cern_acc_complex}. The LHC
+accelerates counter-rotating beams of protons using 400 MHz radio frequency
 (RF) cavities, focusses the beam using multiple quadrupole and higher order magnets,
 and maintains the beam trajectory using super-conducting, niobium-titanium 
 dipole magnets, capable of producing an 8.4 T magnetic field. Such a high 
 magnetic field is achieved by cooling the magnets to 1.9 K using super-fluid 
 helium, and applying a 11.85 kA electric current.
+
+\begin{figure}[hb!]
+\centering
+\includegraphics[width=0.7\textwidth]{Figs/machine/Cern-Accelerator-Complex.jpg}
+\label{fig:cern_acc_complex}
+\caption{Schematic diagram of the CERN accelerator complex, showing the various 
+accelerators and storage rings, ultimately feeding the Large Hadron Collider.}
+\end{figure}
+
+The beams, consisting of approximately 1400 bunches of $\orderof(10^{11})$ protons,
+are brought into collision
+at four points around the LHC ring within specialised detector systems, as shown
+in figure~\ref{fig:lhc_diagram}. During the
+first run of the LHC, `Run I', bunches were spaced in 50 ns intervals, leading to
+a bunch crossing rate of 20 MHz. Collisions proceed for a number of hours, 
+while collision rates are maintained by scanning the transverse beam positions, 
+until such a time when proton numbers are depleted and beam is recycled so that 
+the fill process can be repeated.
 
 \begin{figure}[hb!]
 \centering
@@ -31,15 +50,6 @@ helium, and applying a 11.85 kA electric current.
 positions of the four collision points and their corresponding detector 
 experiments.}
 \end{figure}
-
-The beams, consisting of approximately 1400 bunches of $\orderof(10^{11})$ protons,
-are brought into collision
-at four points around the LHC ring within specialised detector systems. During the
-first run of the LHC, `Run I', bunches were spaced in 50 ns intervals, leading to
-a bunch crossing rate of 20 MHz. Collisions proceed for a number of hours, 
-while collision rates are maintained by scanning the transverse beam positions, 
-until such a time when proton numbers are depleted and beam is recycled so that 
-the fill process can be repeated.
 
 Simultaneous interactions happening at the time
 of each bunch crossing are referred to as in-time pile up (PU), as opposed to 
@@ -80,7 +90,8 @@ the following section.
 
 The Compact Muon Solenoid (CMS), is a
 hermetic detector system (figure~\ref{fig:cms_diagram})
-optimised for the study on high-\Pt objects and their decays, produced in the 
+optimised for the study on high-\Pt objects and their decays \cite{CMSexperiment},
+produced in the 
 proton collisions at the LHC. It is designed to make accurate measurements of 
 the positions and momenta of physics objects such as electrons, muons, taus, 
 photons and jets. Owing to an almost complete 4$\pi$ solid angle coverage, CMS is 
@@ -108,7 +119,7 @@ the pseudo-rapidity, $\eta$, describing the angle with respect to the z-axis,
 defined as:
 
 \begin{equation}
-\eta = - ln \Bigg[ tan \Bigg( \frac{\theta}{2} \Bigg) \Bigg]
+\eta = - ln tan \Bigg( \frac{\theta}{2} \Bigg)
 \end{equation}
 
 where blah blah. Differences in these two variables, namely $\Delta \phi$ and $\Delta 
@@ -269,7 +280,7 @@ muon systems as well as other interior subdetector systems.}
 \label{sec:detector_trigger}
 
 \subsection{Trigger system}
-Events of interest are selected using a dedicated triggering system,
+Events of interest are selected using a dedicated triggering system \cite{tridasTDR},
 split into two distinct stages: the hardware-based Level-1 Trigger (L1) and
 the software-based High-Level Trigger (HLT) systems.
 
