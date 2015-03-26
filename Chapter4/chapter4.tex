@@ -24,17 +24,18 @@ analysis. The following sections describe the objects used.
 
 Jets are produced when a single quark or gluon is produced, subsequently 
 hadronizing and showering throughout the calorimeter systems. Energy deposits in
-the hadronic calorimeter are clustered using the anti$-k_T$ algorithm [ref] with
+the hadronic calorimeter are clustered using the anti$-k_T$ algorithm \cite{antikt} with
 a 0.5 cone size parameter. The raw energy measurements can be affected by 
-effects from overlapping pp collisions, known as pileup (PU) [first place 
-mentioned?], therefore corrections are made to account for this. Clustered jets 
-are also corrected to establish a uniform response in $\eta$ and \Pt.
+effects from overlapping pp collisions (PU), therefore corrections are made to account for this \cite{Cacciari2008119, 1126-6708-2008-04-005}. Clustered jets 
+are also corrected to establish a uniform response in $\eta$ and \Pt
+\cite{Chatrchyan:2011ds}.
 Table~\ref{tab:jet_id_loose} summarises the ID requirements used in this 
-analysis, which correspond to the ``Loose'' working point [ref]. Jets are also 
-corrected according to the L1FastJet, L2, L3, and L2L3Residual corrections [ref].
+analysis, which correspond to the ``Loose'' working point \cite{ref:jet-id} (private!). Jets are also 
+corrected according to the L1FastJet, L2, L3, and L2L3Residual corrections
+\cite{ref:jet-jes} (private!).
 
 \begin{table}[!ht]
-  \caption{Criteria for the ``loose'' jet ID working point.\label{tab:jet_id_loose}REWORD}
+  \caption{Criteria for the ``loose'' jet ID working point.\label{tab:jet_id_loose}}
   \footnotesize
   \begin{center}
     \begin{tabular}{ll}
@@ -64,7 +65,7 @@ vertex (PV). Each algorithm
 calculates a value used to discriminate between a jet from a b-quark and a
 light-quark.
 
-The Combined Secondary Vertex (CSV) algorithm is used in this analysis,
+The Combined Secondary Vertex (CSV) algorithm \cite{CMS-PAS-BTV-12-001} is used in this analysis,
 using the ``Medium'' working point, or a discriminate threshold of $>0.679$. This 
 working point corresponds to a mistag rate for gluons/light-quarks of 1\%, and a
 pT dependent efficiency in the range of 60-70\% (plot?) [refs].
@@ -118,7 +119,7 @@ signal region.
   \end{tabular}
 \end{table}
 
-LOOKUP: ``muons from decays in flight''
+% \emph{LOOKUP: ``muons from decays in flight''}
 
 %********************************** % Fifth Section  *************************************
 \section{Photons}  %Section - 1.5
@@ -128,7 +129,7 @@ Photons defintions are made relative to their position in the detector, either
 in the barrel or the endcap, summarised in table~\ref{tab:photon-id-egamma}. 
 This Tight working point ID is defined by the \emph{POG} group and used for both photon
 selection in the \gj control sample and as a veto in the hadronic signal region.
-BRIEFLY MENTION THE PF-BASED RHO PU CORRECTIONS
+\emph{mention the pf-based rho pu corrs}
 
 \begin{table}[ht!]
   \caption{Photon identification (Tight working point).\label{tab:photon-id-egamma}}
@@ -226,7 +227,26 @@ The definitions of the energy sum variables are:
 
 A full set of \met filters are defined by the MET \emph{POG} which account for various 
 physics and detector effects which can give un-physical or spurious \met 
-signals. EXPLICITLY LIST?
+signals. These are summarised in table~\ref{tab:met_filters}.
+
+\begin{table}[ht!]
+  \caption{\met filters employed in the analysis, as recommended by the MET \emph{POG}.}
+  \label{tab:met_filters}
+  \centering
+  \scriptsize
+  \begin{tabular}{ cl }
+    \hline
+    \hline
+    Filter Name & Description \\
+    \hline
+    One       & Descrip \\
+    Two       & Descrip \\
+    Three       & Descrip \\
+    Four       & Descrip \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
 %********************************** % Seventh Section  *************************************
 \section{Single Isolated Tracks}  %Section - 1.7
@@ -237,7 +257,7 @@ unidentified for whatever reason.
 The selection is based on particle flow candidates and is summarised in
 table~\ref{tab:sit-id}. The ID is used as a veto in all selections, with the 
 selected `tag' lepton ignored in the \mj and \mmj control selections. The ID 
-criteria are taken from SINGLE LEPTON SUSY ANALYSIS REFERENCE.
+defintion is taken from \cite{singleleptonstop}.
 
 \begin{table}[ht!]
   \caption{Single Isolated Track identification.\label{tab:sit-id}}
