@@ -68,13 +68,14 @@ light-quark.
 The Combined Secondary Vertex (CSV) algorithm \cite{CMS-PAS-BTV-12-001} is used in this analysis,
 using the ``Medium'' working point, or a discriminate threshold of $>0.679$. This 
 working point corresponds to a mistag rate for gluons/light-quarks of 1\%, and a
-pT dependent efficiency in the range of 60-70\% (plot?) [refs].
+pT dependent efficiency in the range of 60-70\% (plot?) \cite{CMS-PAS-BTV-12-001}.
 
 
 %********************************** % Fourth Section  *************************************
 \section{Muons}  %Section - 1.4
 \label{sec:objects_muons}
-Muons are identified using the muon \emph{POG's} Tight working point definition, as 
+Muons are identified using the muon \emph{POG's} Tight working point definition
+\cite{ref:muon-id}, as 
 summarised in table~\ref{tab:muon-id}. This definition is used for both muon 
 selection in the \mj and \mmj control regions, and the muon veto in the hadronic
 signal region.
@@ -234,15 +235,28 @@ signals. These are summarised in table~\ref{tab:met_filters}.
   \label{tab:met_filters}
   \centering
   \scriptsize
-  \begin{tabular}{ cl }
+  \begin{tabular}{ lp{10cm} }
     \hline
     \hline
     Filter Name & Description \\
     \hline
-    One       & Descrip \\
-    Two       & Descrip \\
-    Three       & Descrip \\
-    Four       & Descrip \\
+    Beam Halo CSC ID        & Beam interactions with residual gases in the beam pipe
+    or with mechanical appertures, causing secondary particle production. Events 
+    are vetoed if an event contains a positive beam halo ID from the CSC detectors. \\
+    HBHE Noise              & Noise originating from instrumentation issues with
+    the HCAL's Hybrid Photo Diodes (HPDs) or the Readout Boxes (RBXs). Events are
+    vetoed if they contain isolated cluster of noisy cells in either the barrel 
+    or endcap.\\
+    Tracking Failure        & Significant energy deposits in the calorimeter 
+    systems with no corresponding tracks due to tracker algorithm failure. 
+    Events are vetoed if the summed \Pt of all tracks in the event is  equal to less than 
+    10\% of the \HT.\\
+    HCAL Laser Misfire      & Calibration lasers being accidentally fired 
+    through the HCAL during bunch crossings (as opposed to abort gaps). Events 
+    are removed that contain such accidentally laser firings. \\
+    DeadECAL Cell TP        & Dead or damaged ECAL crystals which cannot read 
+    out energy deposits correctly. Trigger primitives are checked to determine 
+    how much energy was lost, and events are appropriately masked. \\
     \hline
     \hline
   \end{tabular}
