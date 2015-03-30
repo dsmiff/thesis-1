@@ -41,8 +41,8 @@ Chapter 5 - Analysis:
   ☐ fix titles in turn on curve plots - remove? crop each?
   ☐ describe difference between cumulative and differential turn on curves @due(15-02-27 19:47)
   ☐ formula method section @high
-    ☐ what do we say it's for? genuine MET sources?
-  ☐ make percentage values bigger font in background breakdown plot
+  ☐ higher res screenshot of pie charts
+  ☐ use ff chartwell for pie charts?
 
 Chapter 5_2 - Samples:
   ☐ describe MC generation - can get from AN
@@ -60,11 +60,8 @@ Chapter 6 - Background Estimation:
 
 Chapter 7 - Results:
  ☐ do this entire chapter!
-   
+
 Chapter 8 - Crosschecks:
- ✔ decide if we drop this chapter @done (15-03-30 22:39)
-   ✔ thesis doesn't have to be in a chronological order @done (15-03-30 22:39)
-   ✔ can do an appendix with details of dPhi*>0.3 requirement @done (15-03-30 22:39)
 
 Chapter 9 - Interpretation:
   ☐ update to latest eff plots
@@ -103,6 +100,11 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ what do we say it's for? genuine MET sources? @done (15-03-30 23:02) @project(Chapter 5 - Analysis)
+ ✔ make percentage values bigger font in background breakdown plot @done (15-03-30 23:01) @project(Chapter 5 - Analysis)
+ ✔ thesis doesn't have to be in a chronological order @done (15-03-30 22:39) @project(Chapter 8 - Crosschecks)
+ ✔ decide if we drop this chapter @done (15-03-30 22:39) @project(Chapter 8 - Crosschecks)
+ ✔ can do an appendix with details of dPhi*>0.3 requirement @done (15-03-30 22:39) @project(Chapter 8 - Crosschecks)
  ✔ reference for ISR reweighting PAS @done (15-03-30 22:23) @project(Chapter 9 - Interpretation)
  ✔ PDF4LHC reference @done (15-03-30 22:23) @project(Chapter 9 - Interpretation)
  ✔ table of METFilters and descriptions @done (15-03-26 16:08) @project(Chapter 4 - Objects)
