@@ -12,12 +12,6 @@ Chapter 2 - Theory:
  ☐ some details of example precision electroweak measurements
 
 Chapter 3 - Detector:
- ✔ add details of instantaneous and integrated luminosity @done (15-03-19 16:09)
- ✔ check pseudo-rapidity and phi Lorentz claims...! @done (15-03-19 16:09)
-     http://www.hep.shef.ac.uk/edaw/PHY206/Site/2012_course_files/phy206rlec7.pdf
- ✔ reference TDR @done (15-03-18 16:46)
- ✔ reference trigger TDR @done (15-03-18 16:46)
- ✔ reference for luminosity measurement @done (15-03-19 16:09)
  ☐ decide whether to include ECAL preshower
  ☐ decide whether to include HF region of HCAL
 
@@ -31,9 +25,6 @@ Chapter 4 - Objects:
   ☐ add ID effs? probably should...
   ☐ do rest of descriptions in the electron ID table
   ☐ define type-I corrections for PFMet
-  ✔ find SIT ID ref for single lepton susy search @done (15-03-26 15:06)
-  ✔ table of METFilters and descriptions @done (15-03-26 16:08)
-  ✔ check if references (like jet refs) are internal or not! @done (15-03-26 16:08)
   ☐ find public reference for photon id
   ☐ find public reference for electron id
   ☐ find public reference for pf based egamma isolation
@@ -50,9 +41,8 @@ Chapter 5 - Analysis:
   ☐ fix titles in turn on curve plots - remove? crop each?
   ☐ describe difference between cumulative and differential turn on curves @due(15-02-27 19:47)
   ☐ formula method section @high
-  ✔ add in details of the dPhi*>0.3 requirement @high @done (15-03-17 17:58)
     ☐ what do we say it's for? genuine MET sources?
-  ✔ reference original alpha paper from randall @done (15-03-17 17:58)
+  ☐ make percentage values bigger font in background breakdown plot
 
 Chapter 5_2 - Samples:
   ☐ describe MC generation - can get from AN
@@ -65,22 +55,20 @@ Chapter 6 - Background Estimation:
     _it's in the plots, so why didn't I describe it..?_
   ☐ MJ background estimation systematics???
   ☐ check what susy phase space screws MC normalisation
-  ✔ reword table and figure titles @done (15-03-18 16:26)
   ☐ add some more detail on level of closure from const and linear fit results
   ☐ different word for "naive predictions"
 
 Chapter 7 - Results:
-
+ ☐ do this entire chapter!
+   
 Chapter 8 - Crosschecks:
- ☐ decide if we drop this chapter
-   - thesis doesn't have to be in a chronological order
-   - can do an appendix with details of dPhi*>0.3 requirement
+ ✔ decide if we drop this chapter @done (15-03-30 22:39)
+   ✔ thesis doesn't have to be in a chronological order @done (15-03-30 22:39)
+   ✔ can do an appendix with details of dPhi*>0.3 requirement @done (15-03-30 22:39)
 
 Chapter 9 - Interpretation:
   ☐ update to latest eff plots
     - latest plots to have no titles
-  ✔ PDF4LHC reference @done (15-03-30 22:23)
-  ✔ reference for ISR reweighting PAS @done (15-03-30 22:23)
   ☐ maybe move all description of why we have acceptance to the theory chapter?
   ☐ how do you make the signal injection test plots? need to remake!
   ☐ make plot showing agreement between t2cc and t24body_boost along dm=10
@@ -115,19 +103,33 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ reference for ISR reweighting PAS @done (15-03-30 22:23) @project(Chapter 9 - Interpretation)
+ ✔ PDF4LHC reference @done (15-03-30 22:23) @project(Chapter 9 - Interpretation)
+ ✔ table of METFilters and descriptions @done (15-03-26 16:08) @project(Chapter 4 - Objects)
+ ✔ check if references (like jet refs) are internal or not! @done (15-03-26 16:08) @project(Chapter 4 - Objects)
+ ✔ find SIT ID ref for single lepton susy search @done (15-03-26 15:06) @project(Chapter 4 - Objects)
+ ✔ reference for luminosity measurement @done (15-03-19 16:09) @project(Chapter 3 - Detector)
+ ✔ check pseudo-rapidity and phi Lorentz claims...! @done (15-03-19 16:09) @project(Chapter 3 - Detector)
+  http://www.hep.shef.ac.uk/edaw/PHY206/Site/2012_course_files/phy206rlec7.pdf
+ ✔ add details of instantaneous and integrated luminosity @done (15-03-19 16:09) @project(Chapter 3 - Detector)
+ ✔ reference trigger TDR @done (15-03-18 16:46) @project(Chapter 3 - Detector)
+ ✔ reference TDR @done (15-03-18 16:46) @project(Chapter 3 - Detector)
+ ✔ reword table and figure titles @done (15-03-18 16:26) @project(Chapter 6 - Background Estimation)
+ ✔ reference original alpha paper from randall @done (15-03-17 17:58) @project(Chapter 5 - Analysis)
+ ✔ add in details of the dPhi*>0.3 requirement @high @done (15-03-17 17:58) @project(Chapter 5 - Analysis)
  ✔ add space before all units! @done (15-03-17 17:13) @project(General)
- ✔ make sure all 'TeV's are non-italics @done (15-03-17 10:32) @project(General)
  ✔ change POG and PAG's @done (15-03-17 17:12) @project(General)
   e.g. 'POG' to _'POG'_
+ ✔ make sure all 'TeV's are non-italics @done (15-03-17 10:32) @project(General)
+ ✔ change all "ph" subscripts to \gamma's @done (15-03-17 10:15) @project(Chapter 7 - Results)
+ ✘ remove paragraph indentations for text after equations @cancelled (15-03-17 10:14) @project(Chapter 6 - Background Estimation)
  ✔ what are the control samples? @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
- ✔ kinematically similar to signal region @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
- ✔ how are they used? @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
- ✔ use a tagged lepton or photon, which is subsequently ignored @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
  ✔ use yields in MC and data to extrapolate into signal region @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
+ ✔ use a tagged lepton or photon, which is subsequently ignored @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
  ✔ mention that the methods give us 'proxies' for the predictions, but  @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
   eventually everything goes into the likelihood fit
- ✘ remove paragraph indentations for text after equations @cancelled (15-03-17 10:14) @project(Chapter 6 - Background Estimation)
- ✔ change all "ph" subscripts to \gamma's @done (15-03-17 10:15) @project(Chapter 7 - Results)
+ ✔ kinematically similar to signal region @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
+ ✔ how are they used? @done (15-03-17 10:13) @project(Chapter 6 - Background Estimation)
  ✔ check hcal tower dimensions @done (15-03-17 10:12) @project(Chapter 3 - Detector)
  ✔ background breakdown in graph form @done (15-03-17 10:12) @project(Chapter 5 - Analysis)
  ✔ order of symbol for line 13, first page (num protons per bunch) @done (15-03-12 19:00) @project(Chapter 3 - Detector)
