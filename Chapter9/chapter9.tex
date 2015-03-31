@@ -439,7 +439,7 @@ noting that systematics are slightly larger for the \nb= 1 category
 respect to other systematic sources.
 
 The \texttt{T2Degen} model, containing a real b-quark, has WHAT?
-WHY IS T2DEGEN AT THE SAME LEVEL AS T2CC?! IS THAT CORRECT?
+\emph{Why is T2degen at the same level as T2cc? Is that correct??}
 
 
 \subsection{PDF}
@@ -658,6 +658,39 @@ tables~\ref{tab:sms-syst-t2cc} and \ref{tab:sms-syst-t2_4body}.
 \label{sec:interpretation_limits}
 
 \subsection{Overview of limit setting procedure}
+Signal models are tested for compatibility with observations using
+a modified frequentist method, namely `CLs'. A test statistic, used to rank
+experiments from least to most signal-like, is defined as:
+
+\begin{equation}
+q_{\mu} = \begin{cases} -2log\lambda(\mu), & \mbox{if } \mu \geq \hat{\mu} \\
+0., & \mbox{otherwise} \end{cases}
+\end{equation},
+
+where:
+
+\begin{equation}
+\lambda(\mu) = \frac{L(\mu, \theta_{\mu})}{L(\hat{\mu}, \hat{\theta_{\mu}})}
+\end{equation}.
+
+$\mu$ is the signal strength parameter (equivalent to the variable $f$ defined
+in section~\ref{sec:results_likelihood}, where $\mu=1$ represents a given
+signal at it's nominal cross-section), $\theta_{\mu}$ is a set of nuisance 
+parameters for a given $\mu$, $\hat {\mu}$ is the Maximum Likelihood
+(ML) value of $\mu$, and $\hat{\theta}$ is the ML set of nuisance parameters.
+
+Distributions of $q_{\mu}$ are populated from pseudo-experiments under
+signal+background and background only hypotheses. For a given observation, 1
+minus the quantiles of each distribution are used to determine $CL_{s+b}$ and
+$CL_b$, which are used to define:
+
+\begin{equation}
+CL_s = \frac{CL_{s+b}}{CL_b}
+\end{equation}.
+
+A model is considered to be excluded at 95\% confidence level if
+$CL_s \leq 0.05$.
+
 Using green and blue band fits for expected and observed
 considering MC stats of signal MC samples
 point-by-point systematics
