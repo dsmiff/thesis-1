@@ -89,11 +89,11 @@ equations~\ref{eq:ewk_frac_z} and \ref{eq:ewk_frac_ttw}.
 
 The terms \rhopz, \rhommz and \rhomw are correction factors accomodating the
 systematic uncertainties associated with the control sample based background 
-predictions. The relative uncertainties are derived in section [CLOSURE TEST REF]
-(chapter) and represented by the terms \sigmapz, \sigmammz and \sigmamw, their 
-values summarised in table REF. Systematics enter the total likelihood as:
-
-TABLE OF SYST VALUES HERE
+predictions. The relative uncertainties are derived in
+section~\ref{sec:closure_tests} and represented by the terms \sigmapz, \sigmammz
+and \sigmamw, their 
+values summarised in table~\ref{tab:syst_values}. Systematics enter the total
+likelihood as:
 
 \begin{equation}
 L_{\gamma\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhopz, \sigmapz),
@@ -105,7 +105,7 @@ L_{\mu\mu\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhommz, \sigmammz),
 L_{\mu\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhomw, \sigmamw),
 \end{equation}
 
-where Logn is the log-normal distribution (as recommended by that Gary dude):
+where Logn is the log-normal distribution (as recommended by \cite{cousins-log-normal}):
 
 \begin{equation}
 \text{Logn}(x|\mu, \sigma) = \frac{1}{x\sqrt{2\pi}\text{ln}k} exp \Bigg(-\frac{\text{ln}^2 \big(\frac{x}{\mu}\big)}{2\text{ln}^2k}\Bigg); k = 1+\sigma
