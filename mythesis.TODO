@@ -34,7 +34,7 @@ Chapter 4 - Objects:
 
 Chapter 5 - Analysis:
   ☐ add a cutflow table with event yields
-  ☐ add MHT/MET distro in full to show how it helps - can do MC only
+  ✔ add MHT/MET distro in full to show how it helps - can do MC only @done (15-04-05 20:34)
   ☐ work out whether to keep the example distros with their shitty normalisation
     either hack the normalisation (!!!) or do MC only distros
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
@@ -60,9 +60,11 @@ Chapter 6 - Background Estimation:
   ☐ different word for "naive predictions"
 
 Chapter 7 - Results:
- ☐ do this entire chapter!
-
-Chapter 8 - Crosschecks:
+ ✔ do this entire chapter! @done (15-04-05 20:47)
+ ☐ write section for greenband plots
+ ☐ add in green plots
+ ☐ write section for blueband plots
+ ☐ add in blue plots
 
 Chapter 9 - Interpretation:
   ✔ update to latest eff plots @done (15-04-05 16:41)
