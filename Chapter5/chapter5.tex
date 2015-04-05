@@ -437,17 +437,23 @@ threshold for a given HT bin.}
 
 \end{description}
 
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.6\textwidth]{Figs/datamc/had/Stacked_MHTovMET_all_200_upwards.png}
+\caption{The \mhtmet distribution of MC events following the hadronic selection
+criteria, minus the \mhtmet requirement.The MC yields are stacked,
+with the QCD contribution shown in orange. The plot is for a fully inclusive
+selection of $\nb \geq 0$, $\nj \geq 2$ and \HT > 200 \gev.}
+\label{fig:full_mhtmet_distro}
+\end{figure}
 
 
 It is possible for events to acquire significant amounts of \mht without having any
-real \met present when multiple jets are below the analysis threshold. To protect against 
-this scenario, events are required to have a low ratio of the two variables, specifically
-\mhtmet < 1.25.
-
-It is possible for events to acquire significant amounts of \mht without having any
-real \met present when multiple jets are below the analysis threshold. To protect against 
-this scenario, events are required to have a low ratio of the two variables, specifically
-\mhtmet < 1.25.
+real \met present when multiple jets are below the analysis threshold. Figure
+~\ref{fig:full_mhtmet_distro} shows the presence of significant QCD contamination
+at high values of \mhtmet, even after an \alphat requirement. To protect against
+this scenario, events are required to have a low ratio of the two variables,
+specifically \mhtmet < 1.25.
 
 Events can also acquire fake \mht if they overlap with areas of the calorimeter 
 system which are damaged or known to be faulty, where jets can be mis-measured or 
@@ -466,7 +472,8 @@ vetoed if a jet with \dphistar<0.5 is within $\Delta R < 0.3$ of a known
 `dead' region of the ECAL.
 
 Events are required to have \dphistar > 0.3, in order to clean any remaining 
-events containing sources of genuine \met overlapping with a jet.
+events containing sources of genuine \met overlapping with a jet (see
+appendix~\ref{ch:app_dphistar}).
 \emph{is it right to explain this is for genuine met sources as well??}
 
 For bins of $\HT>375$ \gev the leading two jets in the event are required to 
