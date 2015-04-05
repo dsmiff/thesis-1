@@ -12,15 +12,15 @@ Chapter 2 - Theory:
  ☐ some details of example precision electroweak measurements
 
 Chapter 3 - Detector:
- ☐ decide whether to include ECAL preshower
- ☐ decide whether to include HF region of HCAL
+ ✔ decide whether to include ECAL preshower @done (15-04-05 17:18)
+ ✔ decide whether to include HF region of HCAL @done (15-04-05 17:18)
 
 Chapter 4 - Objects:
   ☐ look up and briefly describe jet corrections
   ☐ look up delatBeta corrections
   ☐ look up and describe rho PU correction
   ☐ look up muons from decays in flight
-  ☐ placeholders and entries for reference
+  ✔ placeholders and entries for reference @done (15-04-05 17:18)
   ☐ what is sigma_ietaieta
   ☐ add ID effs? probably should...
   ☐ do rest of descriptions in the electron ID table
@@ -43,6 +43,7 @@ Chapter 5 - Analysis:
   ☐ formula method section @high
   ☐ higher res screenshot of pie charts
   ☐ use ff chartwell for pie charts?
+  ☐ donut charts look cooler...
 
 Chapter 5_2 - Samples:
   ☐ describe MC generation - can get from AN
@@ -64,8 +65,8 @@ Chapter 7 - Results:
 Chapter 8 - Crosschecks:
 
 Chapter 9 - Interpretation:
-  ☐ update to latest eff plots
-    - latest plots to have no titles
+  ✔ update to latest eff plots @done (15-04-05 16:41)
+    ✔ latest plots to have no titles @done (15-04-05 16:41)
   ☐ maybe move all description of why we have acceptance to the theory chapter?
   ☐ how do you make the signal injection test plots? need to remake!
   ☐ make plot showing agreement between t2cc and t24body_boost along dm=10
@@ -75,15 +76,18 @@ Chapter 9 - Interpretation:
     ☐ fastsim/fullsim syst
     ☐ observations from two signal models
   ☐ update systematic values for both signal models 
-  ☐ write CLs limit setting procedure description
+  ✔ write CLs limit setting procedure description @done (15-04-05 16:06)
   ☐ place holder limits (from AN)
+  ☐ should mention somewhere the smoothing procedure
 
 Chapter 10 - Conclusion:
 
 Appendix 1 - Signal systematic plots:
-  ☐ update T2cc plots to latest
-  ☐ update T2degen plots to later
+  ✔ update T2cc plots to latest @done (15-04-05 17:14)
+  ✔ update T2degen plots to later @done (15-04-05 17:14)
   ☐ fill out all captions
+  ☐ mht/met for T2_4body now appears how - because of the HCAL towers?!
+  ☐ fix values in MHT/MET and DeadECAL plots - the avg/min/max/rms
 
 Appendix 2 - DPhiStar in signal region:
   ☐ Make signal eff comparison plots - how much do we lose?
