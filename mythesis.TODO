@@ -12,15 +12,12 @@ Chapter 2 - Theory:
  ☐ some details of example precision electroweak measurements
 
 Chapter 3 - Detector:
- ✔ decide whether to include ECAL preshower @done (15-04-05 17:18)
- ✔ decide whether to include HF region of HCAL @done (15-04-05 17:18)
 
 Chapter 4 - Objects:
   ☐ look up and briefly describe jet corrections
   ☐ look up delatBeta corrections
   ☐ look up and describe rho PU correction
   ☐ look up muons from decays in flight
-  ✔ placeholders and entries for reference @done (15-04-05 17:18)
   ☐ what is sigma_ietaieta
   ☐ add ID effs? probably should...
   ☐ do rest of descriptions in the electron ID table
@@ -34,15 +31,11 @@ Chapter 4 - Objects:
 
 Chapter 5 - Analysis:
   ☐ add a cutflow table with event yields
-  ✔ add MHT/MET distro in full to show how it helps - can do MC only @done (15-04-05 20:34)
-  ☐ work out whether to keep the example distros with their shitty normalisation
-    either hack the normalisation (!!!) or do MC only distros
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
   ☐ fix titles in turn on curve plots - remove? crop each?
-  ☐ describe difference between cumulative and differential turn on curves @due(15-02-27 19:47)
+  ☐ elaborate/describe differently the muon tag and probe method for trigger
   ☐ formula method section @high
   ☐ higher res screenshot of pie charts
-  ☐ use ff chartwell for pie charts?
   ☐ donut charts look cooler...
 
 Chapter 5_2 - Samples:
@@ -52,23 +45,13 @@ Chapter 5_2 - Samples:
     ☐ get the corresponding value of the normalisation!
 
 Chapter 6 - Background Estimation:
-  ☐ why did you leave out the single mu 1b -> 2b closure test?
-    _it's in the plots, so why didn't I describe it..?_
   ☐ MJ background estimation systematics???
-  ☐ check what susy phase space screws MC normalisation
-  ☐ add some more detail on level of closure from const and linear fit results
-  ☐ different word for "naive predictions"
 
 Chapter 7 - Results:
- ✔ do this entire chapter! @done (15-04-05 20:47)
- ☐ write section for greenband plots
- ☐ add in green plots
- ☐ write section for blueband plots
- ☐ add in blue plots
+ ☐ add pull and p-value distributions
+ ☐ write section for p-values and pulls
 
 Chapter 9 - Interpretation:
-  ✔ update to latest eff plots @done (15-04-05 16:41)
-    ✔ latest plots to have no titles @done (15-04-05 16:41)
   ☐ maybe move all description of why we have acceptance to the theory chapter?
   ☐ how do you make the signal injection test plots? need to remake!
   ☐ make plot showing agreement between t2cc and t24body_boost along dm=10
@@ -78,17 +61,14 @@ Chapter 9 - Interpretation:
     ☐ fastsim/fullsim syst
     ☐ observations from two signal models
   ☐ update systematic values for both signal models 
-  ✔ write CLs limit setting procedure description @done (15-04-05 16:06)
   ☐ place holder limits (from AN)
   ☐ should mention somewhere the smoothing procedure
 
 Chapter 10 - Conclusion:
 
 Appendix 1 - Signal systematic plots:
-  ✔ update T2cc plots to latest @done (15-04-05 17:14)
-  ✔ update T2degen plots to later @done (15-04-05 17:14)
   ☐ fill out all captions
-  ☐ mht/met for T2_4body now appears how - because of the HCAL towers?!
+  ☐ mht/met for T2_4body now appears higher - don't under shy
   ☐ fix values in MHT/MET and DeadECAL plots - the avg/min/max/rms
 
 Appendix 2 - DPhiStar in signal region:
@@ -106,6 +86,28 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ work out whether to keep the example distros with their shitty normalisation @done (15-04-06 15:59) @project(Chapter 5 - Analysis)
+ ✔ describe difference between cumulative and differential turn on curves @due(15-02-27 19:47) @done (15-04-06 15:59) @project(Chapter 5 - Analysis)
+ ✘ use ff chartwell for pie charts? @cancelled (15-04-06 15:50) @project(Chapter 5 - Analysis)
+ ✔ different word for "naive predictions" @done (15-04-06 15:50) @project(Chapter 6 - Background Estimation)
+ ✔ why did you leave out the single mu 1b -> 2b closure test? @done (15-04-06 15:32) @project(Chapter 6 - Background Estimation)
+  _it's in the plots, so why didn't I describe it..?_
+ ✔ add some more detail on level of closure from const and linear fit results @done (15-04-06 15:30) @project(Chapter 6 - Background Estimation)
+ ✔ check what susy phase space screws MC normalisation @done (15-04-06 15:28) @project(Chapter 6 - Background Estimation)
+ ✔ write section for greenband plots @done (15-04-06 15:19) @project(Chapter 7 - Results)
+ ✔ write section for blueband plots @done (15-04-06 15:19) @project(Chapter 7 - Results)
+ ✔ add in green plots @done (15-04-06 15:19) @project(Chapter 7 - Results)
+ ✔ add in blue plots @done (15-04-06 15:19) @project(Chapter 7 - Results)
+ ✔ do this entire chapter! @done (15-04-05 20:47) @project(Chapter 7 - Results)
+ ✔ add MHT/MET distro in full to show how it helps - can do MC only @done (15-04-05 20:34) @project(Chapter 5 - Analysis)
+ ✔ placeholders and entries for reference @done (15-04-05 17:18) @project(Chapter 4 - Objects)
+ ✔ decide whether to include HF region of HCAL @done (15-04-05 17:18) @project(Chapter 3 - Detector)
+ ✔ decide whether to include ECAL preshower @done (15-04-05 17:18) @project(Chapter 3 - Detector)
+ ✔ update T2degen plots to later @done (15-04-05 17:14) @project(Appendix 1 - Signal systematic plots)
+ ✔ update T2cc plots to latest @done (15-04-05 17:14) @project(Appendix 1 - Signal systematic plots)
+ ✔ update to latest eff plots @done (15-04-05 16:41) @project(Chapter 9 - Interpretation)
+ ✔ latest plots to have no titles @done (15-04-05 16:41) @project(Chapter 9 - Interpretation)
+ ✔ write CLs limit setting procedure description @done (15-04-05 16:06) @project(Chapter 9 - Interpretation)
  ✔ what do we say it's for? genuine MET sources? @done (15-03-30 23:02) @project(Chapter 5 - Analysis)
  ✔ make percentage values bigger font in background breakdown plot @done (15-03-30 23:01) @project(Chapter 5 - Analysis)
  ✔ thesis doesn't have to be in a chronological order @done (15-03-30 22:39) @project(Chapter 8 - Crosschecks)
