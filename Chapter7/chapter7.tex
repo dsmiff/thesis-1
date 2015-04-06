@@ -240,17 +240,23 @@ Model only hypotheis, signal contribution is set to zero and the likilhood is
 maximized over all parameter using RooFit \cite{roofit} and \MINUIT
 \cite{James:1975dr}, for each analysis category of \nb and \nj.
 
-\emph{explain how uncertainty bands are derived}
+Uncertainties are determined by performing a number of pseudo-experiments for
+each (\nb, \nj) category and \HT bin, with the fit yields being put into a
+histogram, appropriate quantiles taken, using their difference from the maximum 
+likelihood (ML) value taken as the uncertainty value.
 
 Two different procedures are used to determine fits to observations, as described
 in the following sections.
 
 \subsection{Fit without Signal region}
-\emph{ GREEN BAND PLOTS }
-
+An ``a priori'' fit is made by considering only yields from the control samples,
+and not data observations in the hadronic signal region. The results of this fit
+are shown in figures~REF and summarised in tabular form in tables~REF.
 
 \subsection{Fit with Signal region}
-\emph{ BLUE BAND PLOTS }
+An ``a posteriori'' fit is made by considering every region, including the
+hadronic signal region's observation in data, and is shown in figures~REF and
+summarised in tables~REF.
 
 \subsection{Pulls and p-values}
 no signal! background only
