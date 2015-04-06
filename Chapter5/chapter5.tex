@@ -249,23 +249,10 @@ threshold requirement on each of these independent `legs', as shown in Table~
 with a 25 \gev offset in online and offline \HT, with the exception of the
 200 \gev bin.
 
-% \begin{table}[h]
-% \begin{tabular}{l|l}
-% HT bin (\gev) & HLT Trigger            \\ \hline
-% 200-275       & HLT\_HT200\_AlphaT0p57 \\
-% 275-325       & HLT\_HT200\_AlphaT0p57 \\
-% 325-375       & HLT\_HT300\_AlphaT0p53 \\
-% 375-475       & HLT\_HT350\_AlphaT0p52 \\
-% 475-575       & HLT\_HT400\_AlphaT0p51 \\
-% 575-675       & HLT\_HT400\_AlphaT0p51 \\
-% 675-775       & HLT\_HT400\_AlphaT0p51 \\
-% 775-875       & HLT\_HT400\_AlphaT0p51 \\
-% 875-975       & HLT\_HT400\_AlphaT0p51 \\
-% 975-1075      & HLT\_HT400\_AlphaT0p51 \\
-% 1075-$\inf$   & HLT\_HT400\_AlphaT0p51 \\
-% \end{tabular}
-% \label{tab:sig_trigs}
-% \end{table}
+Exclusively for this analysis, the additional `Parked' trigger with a \HT > 200
+\gev threshold is included, seeding the new \HT> 200 \gev bin. Such a low
+threshold allow sensitivity to be maintained for softer physics signatures, such
+as those expected from compressed spectra SUSY decays.
 
 \begin{table}[!ht]
   \caption{Signal triggers, the L1 seed triggers and their efficiencies measured
@@ -290,17 +277,19 @@ with a 25 \gev offset in online and offline \HT, with the exception of the
 \end{table}
 
 Trigger efficiencies are measured against an unbiased single muon reference trigger,
-\\\verb!HLT_IsoMu24_eta2p1!, using a muon tag and probe method \emph{Henning: "
-hmmmm"} where a
+\\\verb!HLT_IsoMu24_eta2p1!, using a muon tag and probe method where a
 single muon is selected and then subsequently ignored from the analysis when 
 calculating event level variables such as \HT, \mht and \alphat. Efficiencies 
 are measured for each \HT bin and for each \nj category, as summarised in 
-table~\ref{tab:sig_trigs}. Example trigger turn on curves are shown for the 3 
+table~\ref{tab:sig_trigs}. Example trigger `'turn-on' curves are shown for the 3 
 lowest \HT bins in figures~\ref{fig:eff_alphat_le3j} and \ref{fig:eff_alphat_ge4j}.
+The curves are shown both differentially and cumulatively, to show the
+efficiency for events of a given \alphat value and above an \alphat threshold
+respectively.
 Across the higher \HT 
-bins the triggers are fully efficient, with some inefficiencies seen only in the
-lower \HT bins. These inefficiencies are understood as being due to the L1 seed
-trigger used for this region, which had high thresholds in order to maintain 
+bins the triggers are fully efficient. Inefficiencies in the low \HT bins are
+understood as being due to the relatively high threshold L1 seed trigger used
+for this region, in order to maintain
 low rates in the high PU environment throughout \runone. Lower 
 efficiencies are also observed in the \njhigh category attributed to the presence of 
 softer jets, as an increased number of jets must equate to the same total \HT 
@@ -371,8 +360,6 @@ requirement of the bin.
       Differential (left) and Cumulative (right) efficiency turn-on curves for 
       the signal triggers, for the three lowest \HT bins and \njhigh.}
 \end{figure}
-
-\emph{explain the difference between the cumu and diff turn on curves}
 
 All triggers were present throughout \runone, however the 
 \\\verb!HLT_HT200_AlphaT0p57! trigger was used as part of the `Parked' stream of 
