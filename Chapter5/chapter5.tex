@@ -502,3 +502,80 @@ figure~\ref{fig:datamc_had_inc}, comparing data against MC.
 tie in with the split into nb and nj categories - necessary as stats will reduce, so we use
 this `trick' to reduce errors
 
+% \begin{table}[ht!]
+%   \caption{A cutflow table_old.}
+%   \label{tab:a_cutflow_table_old}
+%   \centering
+%   \footnotesize
+%   \begin{tabular}{ lcc }
+%     \hline
+%     \hline
+%     Cut Name    & Eff (\%) & N \\
+%     \hline
+%   Dummy filters & 100.00  & 161866108.00 \\
+%   Good Event JSON Filter  & 94.97  & 153716716.00 \\
+%   Dummy JSON output & 100.00  & 153716716.00 \\
+%   $\nj \geq 2$  & 98.68  & 151689664.00 \\
+%   HBHE Noise Filter & 99.60  & 151081235.00 \\
+%   MET Filters & 99.21  & 149885013.00 \\
+%   Vertex Noise Filter & 99.91  & 149746017.00 \\
+%   $\text{EMF}_{max}$ for all jets > 0.1 & 99.99  & 149738417.00 \\
+%   Leading jet $\eta$ < 2.5  & 96.96  & 145189478.00 \\
+%   Leading jet \Pt > 100 \gev  & 92.99  & 135005283.00 \\
+%   Sub-Leading jet \Pt > 100 \gev  & 52.80  & 71285138.00 \\
+%   $n_{j, fail} = 0$ & 95.81  & 68297058.00 \\
+%   $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 98.88  & 67533409.00 \\
+%   $n_{e, fail} = 0$ & 100.00  & 67533409.00 \\
+%   $n_{\gamma, fail} = 0$  & 100.00  & 67533409.00 \\
+%   $n_{e} = 0$ & 99.84  & 67425458.00 \\
+%   $n_{\gamma} = 0$  & 99.66  & 67195215.00 \\
+%   $n_{\mu} = 0$ & 99.72  & 67006743.00 \\
+%   \mindphistar > 0.3  & 15.45  & 10349490.00 \\
+%   $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 10349485.00 \\
+%   recHitCut & 98.43  & 10187427.00 \\
+%   $n_{SITV} = 0$  & 86.81  & 8843261.00 \\
+%   DeadECAL Filter & 38.23  & 3380519.00 \\
+%   \alphat > 0.55  & 8.64  & 292217.00 \\
+%   \mhtmet < 1.25  & 8.85  & 25862.00 \\
+%     \hline
+%     \hline
+%   \end{tabular}
+% \end{table}
+
+\begin{table}[ht!]
+  \caption{A cutflow table.}
+  \label{tab:a_cutflow_table}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcc }
+    \hline
+    \hline
+    Cut Name    & Eff (\%) & N \\
+    \hline
+  Event Count & 100.00  & 161866108.00 \\
+  Good Event JSON Filter  & 94.97  & 153716716.00 \\
+  $\nj \geq 2$  & 98.68  & 151689664.00 \\
+  MET Filters & 98.81  & 149885013.00 \\
+  Vertex Noise Filter & 99.91  & 149746017.00 \\
+  DeadECAL Filter & 35.44  & 53066597.00 \\
+  Trigger & 3.76  & 1995549.00 \\
+  $n_{e} = 0$ & 98.48  & 1965269.00 \\
+  $n_{\gamma} = 0$  & 97.70  & 1920124.00 \\
+  $n_{\mu} = 0$ & 98.36  & 1888711.00 \\
+  $\text{EMF}_{max}$ for all jets > 0.1 & 99.99  & 1888576.00 \\
+  Leading jet \Pt > 100 \gev  & 97.83  & 1847501.00 \\
+  Leading jet $\eta$ < 2.5  & 97.31  & 1797777.00 \\
+  Sub-Leading jet \Pt > 100 \gev  & 81.75  & 1469654.00 \\
+  $n_{j, fail} = 0$ & 81.73  & 1201096.00 \\
+  $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 98.77  & 1186370.00 \\
+  $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 1186368.00 \\
+  recHitCut & 98.44  & 1167861.00 \\
+  $n_{SIT} = 0$ & 85.77  & 1001646.00 \\
+  \mindphistar > 0.3  & 19.50  & 195361.00 \\
+  \HT > 375 \gev  & 73.33  & 143255.00 \\
+  \mhtmet < 1.25  & 9.26  & 13263.00 \\
+  \alphat > 0.55  & 38.25  & 5073.00 \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
