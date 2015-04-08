@@ -17,7 +17,36 @@ use of variables such as \alphat and \mhtmet contribute significantly to this.
 However, despite these strict requirements a small fraction of QCD MC events are
 observed to still enter into the signal region.
 
-PLOTS OF QCD MC IN SIGNAL REGION
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/datamc/had/qcd/HT_all_200_upwards.png}
+    \caption{\HT}
+    \label{fig:had_qcd_mc_HT}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]
+    {Figs/datamc/had/qcd/JetMultiplicity_all_200_upwards.png}
+    \caption{\nj}
+    \label{fig:had_qcd_mc_njet}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]
+    {Figs/datamc/had/qcd/MET_all_200_upwards.png}
+    \caption{\met}
+    \label{fig:had_qcd_mc_met}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]
+    {Figs/datamc/had/qcd/MHTovMET_all_200_upwards.png}
+    \caption{\mhtmet}
+    \label{fig:had_qcd_mc_MHTMET}
+  \end{subfigure}
+  \caption{Distributions of various event level quantities for simulated MC
+  events split by physics process, with QCD shown in cyan. Plots shown are for
+  a fully inclusive selection of $\nj\geq2$, $\nb=0$ and $\HT>200\gev$.}
+  \label{fig:had_qcd_mc_distros}
+\end{figure}
 
 The remaining QCD events are from genuine physics processes, when a jet overlaps
 with genuine \met. This missing energy occurs due to heavy flavour mesons in
