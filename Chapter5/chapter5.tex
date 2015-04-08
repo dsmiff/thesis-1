@@ -247,8 +247,9 @@ threshold requirement on each of these independent `legs', as shown in Table~
 with a 25 \gev offset in online and offline \HT, with the exception of the
 200 \gev bin.
 
-Exclusively for this analysis, the additional `Parked' trigger with a \HT > 200
-\gev threshold is included, seeding the new \HT> 200 \gev bin. Such a low
+Exclusively for this analysis, the additional `Parked' trigger with \HT > 200
+\gev and \alphat > 0.57 thresholds is included, seeding the new \HT> 200 \gev
+bin. Such a low
 threshold allow sensitivity to be maintained for softer physics signatures, such
 as those expected from compressed spectra SUSY decays.
 
@@ -494,8 +495,50 @@ figure~\ref{fig:datamc_had_inc}, comparing data against MC.
     are for $\HT>200$ \gev, $\nj\geq2, \nb\geq0$.
     }
 \end{figure}
+  
+The cutflow yields are shown in table~\ref{tab:had_data_cutflow} for data in the
+\HT > 375 \gev region, with an inclusive selection on \nj and \nb.
 
-\emph{Cutflow with event yields after each cut}
+\begin{table}[ht!]
+  \caption{The cutflow of the hadronic selection in data. The subscript `fail'
+  indicates an object which did not meet all ID requirements, and so is not
+  considered as a `common object'. The event selection follows an inclusive
+  selection in data of $\HT > 375 \gev$, $\nj \geq 2$ and $\nb \geq 0$. }
+  \label{tab:had_data_cutflow}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcc }
+    \hline
+    \hline
+    Cut Name    & Eff (\%) & N \\
+    \hline
+  Event Count  & 100.00  & 161866108.00 \\
+  Good Event JSON Filter  & 94.97  & 153716716.00 \\
+  $\nj \geq 2$  & 98.68  & 151689664.00 \\
+  MET Filters & 98.81  & 149885013.00 \\
+  Vertex Noise Filter & 99.91  & 149746017.00 \\
+  DeadECAL Filter & 35.44  & 53066597.00 \\
+  Select seed Trigger & 3.76  & 1995549.00 \\
+  $n_{e} = 0$ & 98.48  & 1965269.00 \\
+  $n_{\gamma} = 0$  & 97.70  & 1920124.00 \\
+  $n_{\mu} = 0$ & 98.36  & 1888711.00 \\
+  $\text{EMF}_{max}$ for all jets > 0.1 & 99.99  & 1888576.00 \\
+  Leading jet \Pt > 100 \gev  & 97.83  & 1847501.00 \\
+  Leading jet $\eta$ < 2.5  & 97.31  & 1797777.00 \\
+  Sub-Leading jet \Pt > 100 \gev  & 81.75  & 1469654.00 \\
+  $n_{jet, fail} = 0$ & 81.73  & 1201096.00 \\
+  $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 98.77  & 1186370.00 \\
+  $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 1186368.00 \\
+  recHitCut & 98.44  & 1167861.00 \\
+  $n_{SIT} = 0$ & 85.77  & 1001646.00 \\
+  \mindphistar > 0.3  & 19.50  & 195361.00 \\
+  \HT > 375 \gev  & 73.33  & 143255.00 \\
+  \mhtmet < 1.25  & 9.26  & 13263.00 \\
+  \alphat > 0.55  & 38.25  & 5073.00 \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
 \subsection{Formula method}
 
@@ -503,7 +546,7 @@ tie in with the split into nb and nj categories - necessary as stats will reduce
 this `trick' to reduce errors
 
 % \begin{table}[ht!]
-%   \caption{A cutflow table_old.}
+%   \caption{A cutflow table old.}
 %   \label{tab:a_cutflow_table_old}
 %   \centering
 %   \footnotesize
@@ -542,40 +585,3 @@ this `trick' to reduce errors
 %   \end{tabular}
 % \end{table}
 
-\begin{table}[ht!]
-  \caption{A cutflow table.}
-  \label{tab:a_cutflow_table}
-  \centering
-  \footnotesize
-  \begin{tabular}{ lcc }
-    \hline
-    \hline
-    Cut Name    & Eff (\%) & N \\
-    \hline
-  Event Count & 100.00  & 161866108.00 \\
-  Good Event JSON Filter  & 94.97  & 153716716.00 \\
-  $\nj \geq 2$  & 98.68  & 151689664.00 \\
-  MET Filters & 98.81  & 149885013.00 \\
-  Vertex Noise Filter & 99.91  & 149746017.00 \\
-  DeadECAL Filter & 35.44  & 53066597.00 \\
-  Trigger & 3.76  & 1995549.00 \\
-  $n_{e} = 0$ & 98.48  & 1965269.00 \\
-  $n_{\gamma} = 0$  & 97.70  & 1920124.00 \\
-  $n_{\mu} = 0$ & 98.36  & 1888711.00 \\
-  $\text{EMF}_{max}$ for all jets > 0.1 & 99.99  & 1888576.00 \\
-  Leading jet \Pt > 100 \gev  & 97.83  & 1847501.00 \\
-  Leading jet $\eta$ < 2.5  & 97.31  & 1797777.00 \\
-  Sub-Leading jet \Pt > 100 \gev  & 81.75  & 1469654.00 \\
-  $n_{j, fail} = 0$ & 81.73  & 1201096.00 \\
-  $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 98.77  & 1186370.00 \\
-  $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 1186368.00 \\
-  recHitCut & 98.44  & 1167861.00 \\
-  $n_{SIT} = 0$ & 85.77  & 1001646.00 \\
-  \mindphistar > 0.3  & 19.50  & 195361.00 \\
-  \HT > 375 \gev  & 73.33  & 143255.00 \\
-  \mhtmet < 1.25  & 9.26  & 13263.00 \\
-  \alphat > 0.55  & 38.25  & 5073.00 \\
-    \hline
-    \hline
-  \end{tabular}
-\end{table}
