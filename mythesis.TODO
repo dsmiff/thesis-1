@@ -5,6 +5,7 @@
 General:
   ☐ 'btag' or 'Btag'?
   ☐ 'mistag' or 'mis-tag'?
+  ☐ quote page
 
 Chapter 1 - Introduction:
 
@@ -30,13 +31,12 @@ Chapter 4 - Objects:
       - based on trigger primitives - how do these get it right?
 
 Chapter 5 - Analysis:
-  ☐ add a cutflow table with event yields
+  ☐ give an example of the MET threshold for a corresponding alphaT cut
+  ☐ what about jet eta cuts? only lead jet?!
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
-  ☐ fix titles in turn on curve plots - remove? crop each?
   ☐ elaborate/describe differently the muon tag and probe method for trigger
   ☐ formula method section @high
   ☐ higher res screenshot of pie charts
-  ☐ donut charts look cooler...
 
 Chapter 5_2 - Samples:
   ☐ describe MC generation - can get from AN
@@ -75,9 +75,9 @@ Appendix 2 - DPhiStar in signal region:
   ☐ Make signal eff comparison plots - how much do we lose?
   ☐ describe the different definitions of the variable
   ☐ can we get away with only applying in the signal region?
-  ☐ what kind of events are we getting rid of?
   ☐ show QCD MG MC plots for full dphistar distro
     ☐ make efficiencies for above and below the cut
+  ☐ need a different event display with an alphaT threshold > 0.55!
 
 Defintions:
 
@@ -86,6 +86,11 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ add a cutflow table with event yields @done (15-04-08 10:34) @project(Chapter 5 - Analysis)
+ ✔ mention cutflow table in text @done (15-04-08 15:07) @project(Chapter 5 - Analysis)
+ ✔ fix titles in turn on curve plots - remove? crop each? @done (15-04-07 15:51) @project(Chapter 5 - Analysis)
+ ✘ donut charts look cooler... @cancelled (15-04-07 15:51) @project(Chapter 5 - Analysis)
+ ✔ what kind of events are we getting rid of? @done (15-04-07 11:42) @project(Appendix 2 - DPhiStar in signal region)
  ✔ work out whether to keep the example distros with their shitty normalisation @done (15-04-06 15:59) @project(Chapter 5 - Analysis)
  ✔ describe difference between cumulative and differential turn on curves @due(15-02-27 19:47) @done (15-04-06 15:59) @project(Chapter 5 - Analysis)
  ✘ use ff chartwell for pie charts? @cancelled (15-04-06 15:50) @project(Chapter 5 - Analysis)
