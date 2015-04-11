@@ -93,8 +93,9 @@ signal region.
     Global Muon                            & True      & Muon object 
     is reconstructed from both hits in the muon systems and matched hits in the 
     silicon tracker \\
-    PFMuon                                 & True      & FIXME \\
-    $\chi^{2} /ndof$ of fit                & $<10$     & Goodness of fit 
+    PFMuon                                 & True      & Muon object reconstruct
+    ed with multiple subsystems using Particle Flow techniques\\ $\chi^{2}
+    /ndof$ of fit & $<10$ & Goodness of fit
     of the global muon track fit. Suppresses hadronic punch-through and muons 
     decaying in flight.\\
     Muon chamber hits                      & $>0$      & At least 1 hit in a 
@@ -149,7 +150,8 @@ selection in the \gj control sample and as a veto in the hadronic signal region.
     & Ratio of energy deposited in the HCAL towers within $\Delta R<0.15$ of the ECAL 
     supercluster, and the ECAL supercluster itself. \\
     $\sigma_{i\eta i\eta}$        & 0.11                               & 0.31 & 
-    FIXME \\
+    The cluster shape covariance of the ECAL supercluster in the $\eta$
+    dimension. \\
     &&&\multirow{5}{4cm}{PF-based isolation requirements to ensure no hadronic or electromagnetic 
     activity with a cone defined by $\Delta R < 0.3$. RHO CORRECTION}\\
     PF charged hadron isolation   & 0.70                               & 0.50                               & \\
@@ -197,11 +199,12 @@ summarised in table~\ref{tab:ele-id}.
     Comparison of the ECAL supercluster energy and the track \Pt. Suppresses low 
     \Pt fakes. \\
     PF relative isolation                                    & 0.15      & 0.15      &
-    FIXME \\
+    PF based isolation calculated from particle activity within a cone of
+    $\Delta R < 0.3$. \\
     Vertex fit probability                                   & 10$^{-6}$ & 10$^{-6}$ &
-    FIXME \\
+    Probability of fit to potential conversion tracks. \\
     Missing hits                                             & 1         & 1         &
-    FIXME \\
+    Number of missing tracker hits due to possible conversion. \\
     \hline
     \hline
   \end{tabular}
@@ -213,7 +216,8 @@ summarised in table~\ref{tab:ele-id}.
 Physics objects are combined in the form of kinematic variables known as energy 
 sums. These are done on the fly in the analysis using identified objects, with
 the exception of \met which is constructed from PF objects and subject to type-I
-corrections (DEFINE).
+corrections (jets used for \met calculation are subject to Jet Energy
+Corrections themselves).
 
 The definitions of the energy sum variables are:
 
@@ -243,18 +247,19 @@ signals. These are summarised in table~\ref{tab:met_filters}.
     \hline
     Beam Halo CSC ID        & Beam interactions with residual gases in the beam pipe
     or with mechanical appertures, causing secondary particle production. Events 
-    are vetoed if an event contains a positive beam halo ID from the CSC detectors. \\
+    are vetoed if an event contains a positive beam halo ID from the CSC
+    detectors. \\ \\
     HBHE Noise              & Noise originating from instrumentation issues with
     the HCAL's Hybrid Photo Diodes (HPDs) or the Readout Boxes (RBXs). Events are
     vetoed if they contain isolated cluster of noisy cells in either the barrel 
-    or endcap.\\
+    or endcap.\\ \\
     Tracking Failure        & Significant energy deposits in the calorimeter 
     systems with no corresponding tracks due to tracker algorithm failure. 
     Events are vetoed if the summed \Pt of all tracks in the event is  equal to less than 
-    10\% of the \HT.\\
+    10\% of the \HT.\\ \\
     HCAL Laser Misfire      & Calibration lasers being accidentally fired 
     through the HCAL during bunch crossings (as opposed to abort gaps). Events 
-    are removed that contain such accidentally laser firings. \\
+    are removed that contain such accidentally laser firings. \\ \\
     DeadECAL Cell TP        & Dead or damaged ECAL crystals which cannot read 
     out energy deposits correctly. Trigger primitives are checked to determine 
     how much energy was lost, and events are appropriately masked. \\
