@@ -105,10 +105,10 @@ signal region.
     muon stations. Suppresses punch-through and accidental track-to-segment matches.
     (Also makes consistent with trigger muon requirements.) \\
     Transverse impact $d_{xy}$             & $<0.2mm$ & Tracker track is close 
-    to PV (define?) in the x-y plane. Helps suppress cosmic ray muons and muons 
+    to Primary Vertex in the x-y plane. Helps suppress cosmic ray muons and muons 
     from decays in flight. \\
     Longitudinal dist $d_{z}$              & $<0.5mm$ & Tracker track is close 
-    to PV in z-direction. Suppresses muons from cosmic rays, decays in flight 
+    to Primary Vertex in z-direction. Suppresses muons from cosmic rays, decays in flight 
     and PU. \\
     Pixel hits                             & $>0$      & At least 1 pixel hit. 
     Suppresses muons from decays in flight. \\
@@ -216,7 +216,7 @@ summarised in table~\ref{tab:ele-id}.
 Physics objects are combined in the form of kinematic variables known as energy 
 sums. These are done on the fly in the analysis using identified objects, with
 the exception of \met which is constructed from PF objects and subject to type-I
-corrections (jets used for \met calculation are subject to Jet Energy
+corrections (jets used for \met calculation are subject to prescribed Jet Energy
 Corrections themselves).
 
 The definitions of the energy sum variables are:
