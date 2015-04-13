@@ -5,7 +5,8 @@
 As described in chapter~\ref{ch:5}, an event level requirement is made in the
 signal region such that all events have \mindphistar > 0.3, in order to remove
 any remaining QCD MJ contamination. This appendix outlines some of
-the studies to motivate and characterise this requirement.
+the studies used to motivate this requirement and characterises it's effect on
+the analysis.
 
 \section{Motivation}
 
@@ -13,7 +14,7 @@ The hadronic signal region selection criteria are specifically
 designed to remove many orders of magnitude of QCD MJ events, in particular
 through the use of variables such as \alphat and \mhtmet.
 However, despite these strict requirements a small fraction of QCD MC events are
-observed to still enter into the pass the selection criteria.
+observed to still pass the selection criteria.
 
 \begin{figure}[h!]
   \centering
@@ -46,43 +47,64 @@ observed to still enter into the pass the selection criteria.
   \label{fig:had_qcd_mc_distros}
 \end{figure}
 
-The remaining QCD events contain genuine physics processes, when a jet overlaps
-with genuine \met. This missing energy occurs due to heavy flavour mesons in
-jets decaying leptonically. Of the lepton and neutrino pair, the neutrino
+These remaining QCD events appear to originate from genuine physics processes,
+when a jet overlaps with genuine \met. This missing energy occurs due to heavy
+flavour mesons decaying leptonically. Of the lepton and neutrino pair produced,
+the neutrino
 carries the bulk share of the pair's momentum, leading to soft leptons which
-can evade leptonic vetoes and non-negligible amounts of invisible energy. An
-event display of a typical event is shown in figure~\ref{fig:event_display_QCD}.
-It is important to note the significant amount, 311 \gev, of generator level
-\met (`genmetP4True', thin pink arrow) pointing along the axis of a 137
-\gev \Pt reconstructed jet (bold blue arrow), a configuration which,
-couple with multiple additional jets, can conspire to give
-large values of \alphat. The sum of the generator level \met \Pt and
-the jet's \Pt sum to the generator level jet's \Pt (bold black arrow),
+can evade leptonic vetoes and significant amounts of invisible energy. Similarly,
+as these leptons will be along the jet axis and in high-multiplicity events,
+it becomes increasingly likely for them to fail isolation requirements, and
+therefore not be considered by the leptonic vetoes.
+
+An event display of a typical event is shown in figure~\ref{fig:event_display_QCD}.
+It is important to note the high amount, 185 \gev, of generator level
+\met (`genmetP4True', thin pink arrow) pointing along the axis of a reconstructed
+jet with $\Pt = 119 \gev$ (bold blue arrow) - a configuration which,
+coupled with multiple additional jets, can conspire to give
+large values of \alphat. The sum of the generator level \met and
+the \Pt of the jet sum to the \Pt of the generator level jet (bold black arrow),
 indicating that the missing energy of the event comes almost entirely from the
-neutrinos originating from the jet's decay. Furthermore, this implies the ratio
+neutrinos from the decay of the jet. Furthermore, this implies the ratio
 \mhtmet to be near unity, therefore allowing events to also evade the \mhtmet <
 1.25 requirement of the signal region.
 
 \section{Isolating these events}
 
-The variable \mindphistar can be used to isolate these events.
+It is possible to isolate these events used the \mindphistar variable described
+in section~\ref{sec:selec_crit}.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.5\textwidth]{Figs/datapred/Prediction_ComMinBiasDPhi_acceptedJets_all_375_upwards_QCD.pdf}
+\includegraphics[width=0.7\textwidth]
+{Figs/datapred/Prediction_ComMinBiasDPhi_acceptedJets_all_375_upwards_QCD.pdf}
 \label{fig:data_pred_dphistar_qcd}
-\caption{Data}
+\caption{Data (black points) against the EWK background prediction 
+(stacked, yellow and purple) as a function of \mindphistar. The expected yield
+from QCD MC (cyan) is stacked on top of the EWK prediction. The plot represents
+the hadronic signal selection with a fully inclusive selection, $\nb \geq 0$,
+$\nj \geq 2$ and $\HT > 200 \gev$.}
 \end{figure}
 
-It is possible to isolate these events used the \mindphistar variable described
-in chapter~\ref{ch:5}. 
+Figure~\ref{fig:data_pred_dphistar_qcd} shows the data observation in the
+hadronic region and the EWK background prediction prediction from the \mj and 
+\mmj control samples only, made using the transfer factor technique as a
+function of the \mindphistar variable. Furthermore, the observed yield from QCD
+MC is shown in cyan, stacked on top of the EWK prediction. The excess of events
+observed at low \mindphistar in data over the EWK prediction is accounted for by
+the QCD MC yields.
 
-can show the QCD MG MC plots of \dphistar - see peak around zero for QCD, even
-after full selection and alphaT cuts. Can show without data...! Still though,
-what about the handful of events at higher dphistar?
+An additional requirement of \mindphistar > 0.3 in the signal
+region removes this additional background source, such that any remaining
+contamination is considered entirely negligible with respect to the EWK
+background prediction.
 
-excess vs QCD alphaT evolution plots - observed excess appears to be QCD-like.
-\emph{THIS IS ACKNOWLEDGING AN EXCESS!}
+% can show the QCD MG MC plots of \dphistar - see peak around zero for QCD, even
+% after full selection and alphaT cuts. Can show without data...! Still though,
+% what about the handful of events at higher dphistar?
+
+% excess vs QCD alphaT evolution plots - observed excess appears to be QCD-like.
+% \emph{THIS IS ACKNOWLEDGING AN EXCESS!}
 
 \section{Effect of hadronic region}
 
@@ -91,22 +113,98 @@ contain missing energy. \emph{What about the remaining few QCD MG events at high
 dPhiStar?} can show rob's plots of the dphiStar above/below
 
 \section{Effect on signal models}
-we do take a hit, but hopefully equivalent of more so in BG pred, so S/B is
-preserved. either way, we have to make the cut, so we deal with the consequence
-in terms of signal efficiency.
+The effect of the \mindphistar > 0.3 requirement on the \texttt{T2cc} and
+\texttt{T2degen} signal models is shown in figures~\ref{fig:t2cc_dphistar_effchange}
+and \ref{fig:t2degen_dphistar_effchange} respectively.
 
-this cut can be particularly damaging to compressed spectra models where a
-soft susy decay is balanced by hard ISR, creating co-linear decay products and
-neutralino's. ho-hum.
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]
+    {Figs/sms/t2cc/v37/eff_changes/eff_compare_2d_T2cc_v37_vs_T2cc_v38_eq0b_le3j}
+    \caption{\njlow, $\nb = 0$}
+    \label{fig:t2cc_dphistar_eq0b_le3j}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]
+    {Figs/sms/t2cc/v37/eff_changes/eff_compare_2d_T2cc_v37_vs_T2cc_v38_eq1b_le3j}
+    \caption{\njlow, $\nb = 1$}
+    \label{fig:t2cc_dphistar_eq1b_le3j}
+  \end{subfigure}\\
+  \vspace{0.2cm}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]
+    {Figs/sms/t2cc/v37/eff_changes/eff_compare_2d_T2cc_v37_vs_T2cc_v38_eq0b_ge4j}
+    \caption{\njhigh, $\nb = 0$}
+    \label{fig:t2cc_dphistar_eq0b_ge4j}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]
+    {Figs/sms/t2cc/v37/eff_changes/eff_compare_2d_T2cc_v37_vs_T2cc_v38_eq1b_ge4j}
+    \caption{\njhigh, $\nb = 1$}
+    \label{fig:t2cc_dphistar_eq1b_ge4j}
+  \end{subfigure}
+  \caption{The change in acceptance of the \texttt{T2cc} model when applying
+  the \mindphistar > 0.3 requirement. Plots are shown for the four relevant
+  categories used for interpretation, with an inclusive selection of \HT > 200
+  \gev}
+  \label{fig:t2cc_dphistar_effchange}
+\end{figure}
 
-\emph{How much do we `lose' in signal efficiency?} Show signal efficiency
-difference plots, with vs without.
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]
+    {Figs/sms/t2degen/v19/eff_changes/eff_compare_2d_T2_4body_v19_vs_T2_4body_v20_eq0b_le3j}
+    \caption{\njlow, $\nb = 0$}
+    \label{fig:t2degen_dphistar_eq0b_le3j}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]
+    {Figs/sms/t2degen/v19/eff_changes/eff_compare_2d_T2_4body_v19_vs_T2_4body_v20_eq1b_le3j}
+    \caption{\njlow, $\nb = 1$}
+    \label{fig:t2degen_dphistar_eq1b_le3j}
+  \end{subfigure}\\
+  \vspace{0.2cm}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]
+    {Figs/sms/t2degen/v19/eff_changes/eff_compare_2d_T2_4body_v19_vs_T2_4body_v20_eq0b_ge4j}
+    \caption{\njhigh, $\nb = 0$}
+    \label{fig:t2degen_dphistar_eq0b_ge4j}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]
+    {Figs/sms/t2degen/v19/eff_changes/eff_compare_2d_T2_4body_v19_vs_T2_4body_v20_eq1b_ge4j}
+    \caption{\njhigh, $\nb = 1$}
+    \label{fig:t2degen_dphistar_eq1b_ge4j}
+  \end{subfigure}
+  \caption{The change in acceptance of the \texttt{T2degen} model when applying
+  the \mindphistar > 0.3 requirement. Plots are shown for the four relevant
+  categories used for interpretation, with an inclusive selection of \HT > 200
+  \gev}
+  \label{fig:t2degen_dphistar_effchange}
+\end{figure}
+
+Model acceptance change due to the requirement appears to be intrinsically
+linked to the mutliplicity of objects, in this case jets, in the event. The
+\njhigh categories appear to reduce acceptance the most. A similar trend is
+seen when going from \nb = 0 to \nb = 1, most noticably in \texttt{T2degen},
+where the b-tagged jet will predominantly come from the real b-quark in the
+decay. The configuration of a boosted SUSY decay system containing both jets and
+invisible \chiz particles could have appear like the heavy flavour QCD events
+this cut is targetted at removing. 
+
+Additionally an increased number of jets in the event, as seen in the higher \nj
+category, increases the probability of a jet mis-measurement which could lead to
+low values of \mindphistar, thus causing an event to be removed.
 
 \clearpage
 \begin{sidewaysfigure}
     \centering
     \includegraphics[width=0.95\textwidth]
-    {Figs/eventDisplays/Had_QCD_MG_MC_HT375_skim_displays_singleEvent.pdf}
-    \caption{Event display blah}
+    {Figs/eventDisplays/Had_QCD_MG_MC_HT375_skim_displays_singleEvent_2.pdf}
+    \caption{An event display of a typical heavy flavour QCD event, with a jet
+    decaying leptonically with high-\Pt neutrinos and therefore considerable
+    generator-level \met.}
     \label{fig:event_display_QCD}
 \end{sidewaysfigure}
