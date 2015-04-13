@@ -11,6 +11,11 @@ Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
  ☐ some details of example precision electroweak measurements
+ ✔ format the SM notes @done (15-04-09 15:52)
+ ☐ details of problems with SM
+    ☐ dark matter
+    ☐ heirarchy problem
+    ☐ unification of the gauge couplings
 
 Chapter 3 - Detector:
 
@@ -22,10 +27,10 @@ Chapter 4 - Objects:
   ☐ what is sigma_ietaieta
   ☐ add ID effs? probably should...
   ☐ do rest of descriptions in the electron ID table
-  ☐ define type-I corrections for PFMet
-  ☐ find public reference for photon id
-  ☐ find public reference for electron id
-  ☐ find public reference for pf based egamma isolation
+  ✔ define type-I corrections for PFMet @done (15-04-09 16:06)
+  ✘ find public reference for photon id @cancelled (15-04-09 16:00)
+  ✘ find public reference for electron id @cancelled (15-04-09 16:00)
+  ✘ find public reference for pf based egamma isolation @cancelled (15-04-09 16:00)
   ☐ how does deadECAL METfilter vary from ours?
       - no dPhiStar requirement
       - based on trigger primitives - how do these get it right?
@@ -70,6 +75,7 @@ Appendix 1 - Signal systematic plots:
   ☐ fill out all captions
   ☐ mht/met for T2_4body now appears higher - don't under shy
   ☐ fix values in MHT/MET and DeadECAL plots - the avg/min/max/rms
+  ☐ update total systematics plots to safe smoothed (no nan)
 
 Appendix 2 - DPhiStar in signal region:
   ☐ Make signal eff comparison plots - how much do we lose?
