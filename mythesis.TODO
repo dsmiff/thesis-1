@@ -78,12 +78,14 @@ Appendix 1 - Signal systematic plots:
   ☐ update total systematics plots to safe smoothed (no nan)
 
 Appendix 2 - DPhiStar in signal region:
-  ☐ Make signal eff comparison plots - how much do we lose?
-  ☐ describe the different definitions of the variable
-  ☐ can we get away with only applying in the signal region?
-  ☐ show QCD MG MC plots for full dphistar distro
-    ☐ make efficiencies for above and below the cut
-  ☐ need a different event display with an alphaT threshold > 0.55!
+  ✔ Make signal eff comparison plots - how much do we lose? @done (15-04-13 14:47)
+  ✘ describe the different definitions of the variable @cancelled (15-04-13 14:47)
+  ✔ can we get away with only applying in the signal region? @done (15-04-13 14:47)
+  ✔ show QCD MG MC plots for full dphistar distro @done (15-04-13 14:47)
+  ☐ get dphi cut eff plots from rob
+  ✔ need a different event display with an alphaT threshold > 0.55! @done (15-04-13 15:07)
+  ☐ update event display caption
+  ☐ update pred plot caption
 
 Defintions:
 
