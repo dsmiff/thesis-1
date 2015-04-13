@@ -1,21 +1,19 @@
 % ******************************* Thesis Appendix B ********************************
+\chapter{\mindphistar requirement in the signal region}
 \label{ch:app_dphistar}
 
-
-\chapter{\mindphistar requirement in the signal region}
-
 As described in chapter~\ref{ch:5}, an event level requirement is made in the
-signal region such that all events have \mindphistar > 0.3, such that any
-remaining QCD MJ contaminated events are removed. This appendix outlines some of
+signal region such that all events have \mindphistar > 0.3, in order to remove
+any remaining QCD MJ contamination. This appendix outlines some of
 the studies to motivate and characterise this requirement.
 
 \section{Motivation}
 
 The hadronic signal region selection criteria are specifically
-designed to remove many orders of magnitude of QCD MJ events, in particular the
-use of variables such as \alphat and \mhtmet contribute significantly to this.
+designed to remove many orders of magnitude of QCD MJ events, in particular
+through the use of variables such as \alphat and \mhtmet.
 However, despite these strict requirements a small fraction of QCD MC events are
-observed to still enter into the signal region.
+observed to still enter into the pass the selection criteria.
 
 \begin{figure}[h!]
   \centering
@@ -48,7 +46,7 @@ observed to still enter into the signal region.
   \label{fig:had_qcd_mc_distros}
 \end{figure}
 
-The remaining QCD events are from genuine physics processes, when a jet overlaps
+The remaining QCD events contain genuine physics processes, when a jet overlaps
 with genuine \met. This missing energy occurs due to heavy flavour mesons in
 jets decaying leptonically. Of the lepton and neutrino pair, the neutrino
 carries the bulk share of the pair's momentum, leading to soft leptons which
@@ -56,33 +54,28 @@ can evade leptonic vetoes and non-negligible amounts of invisible energy. An
 event display of a typical event is shown in figure~\ref{fig:event_display_QCD}.
 It is important to note the significant amount, 311 \gev, of generator level
 \met (`genmetP4True', thin pink arrow) pointing along the axis of a 137
-\gev \Pt reconstructed jet (bold blue arrow), a configuration which ultimately
-leads to a large value of \alphat. The sum of the generator level \met \Pt and
+\gev \Pt reconstructed jet (bold blue arrow), a configuration which,
+couple with multiple additional jets, can conspire to give
+large values of \alphat. The sum of the generator level \met \Pt and
 the jet's \Pt sum to the generator level jet's \Pt (bold black arrow),
 indicating that the missing energy of the event comes almost entirely from the
 neutrinos originating from the jet's decay. Furthermore, this implies the ratio
 \mhtmet to be near unity, therefore allowing events to also evade the \mhtmet <
 1.25 requirement of the signal region.
 
-
-show how there is still QCD MC surviving the hadronic selection. can show as a
-function of HT or MHT or alphaT or something. MC only!!
-
-how do these events pass alphat and MHTovMET?
-
-what are these events? what do they look like? real physics processes - jets
-decaying via neutrinos to give soft leptons and neutrinos carrying significant
-amounts of missing energy. this gives a severely mis-measured jet, as a
-large fraction of the jet's energy is invisible - met aligned with jet axis.
-
-ultimately used to reject events with genuine missing energy coming from a jet.
-heavy flavour mesons decaying leptonically, producing neutrinos. Could even show
-an event display and/or event chain.
-
 \section{Isolating these events}
 
-Can isolate these events using a variable defined to look for `mis-measured'
-jets that align with met or mht - \mindphistar.
+The variable \mindphistar can be used to isolate these events.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{Figs/datapred/Prediction_ComMinBiasDPhi_acceptedJets_all_375_upwards_QCD.pdf}
+\label{fig:data_pred_dphistar_qcd}
+\caption{Data}
+\end{figure}
+
+It is possible to isolate these events used the \mindphistar variable described
+in chapter~\ref{ch:5}. 
 
 can show the QCD MG MC plots of \dphistar - see peak around zero for QCD, even
 after full selection and alphaT cuts. Can show without data...! Still though,
@@ -110,14 +103,6 @@ neutralino's. ho-hum.
 difference plots, with vs without.
 
 \clearpage
-% \begin{figure}
-%     \centering
-%     \includegraphics[angle=90, width=\textwidth]
-%     {Figs/eventDisplays/Had_QCD_MG_MC_HT375_skim_displays_singleEvent.pdf}
-%     \caption{Event display blah}
-%     \label{fig:event_display_QCD}
-% \end{figure}
-
 \begin{sidewaysfigure}
     \centering
     \includegraphics[width=0.95\textwidth]
