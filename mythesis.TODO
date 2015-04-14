@@ -11,26 +11,21 @@ Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
  ☐ some details of example precision electroweak measurements
- ✔ format the SM notes @done (15-04-09 15:52)
  ☐ details of problems with SM
     ☐ dark matter
     ☐ heirarchy problem
     ☐ unification of the gauge couplings
+ ☐ finish hierarchy problem section
+ ☐ write SUSY hierarchy
+ ☐ stop decay section
 
 Chapter 3 - Detector:
 
 Chapter 4 - Objects:
   ☐ look up and briefly describe jet corrections
   ☐ look up delatBeta corrections
-  ☐ look up and describe rho PU correction
   ☐ look up muons from decays in flight
-  ☐ what is sigma_ietaieta
   ☐ add ID effs? probably should...
-  ☐ do rest of descriptions in the electron ID table
-  ✔ define type-I corrections for PFMet @done (15-04-09 16:06)
-  ✘ find public reference for photon id @cancelled (15-04-09 16:00)
-  ✘ find public reference for electron id @cancelled (15-04-09 16:00)
-  ✘ find public reference for pf based egamma isolation @cancelled (15-04-09 16:00)
   ☐ how does deadECAL METfilter vary from ours?
       - no dPhiStar requirement
       - based on trigger primitives - how do these get it right?
@@ -41,7 +36,6 @@ Chapter 5 - Analysis:
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
   ☐ elaborate/describe differently the muon tag and probe method for trigger
   ☐ formula method section @high
-  ☐ higher res screenshot of pie charts
 
 Chapter 5_2 - Samples:
   ☐ describe MC generation - can get from AN
@@ -78,14 +72,8 @@ Appendix 1 - Signal systematic plots:
   ☐ update total systematics plots to safe smoothed (no nan)
 
 Appendix 2 - DPhiStar in signal region:
-  ✔ Make signal eff comparison plots - how much do we lose? @done (15-04-13 14:47)
-  ✘ describe the different definitions of the variable @cancelled (15-04-13 14:47)
-  ✔ can we get away with only applying in the signal region? @done (15-04-13 14:47)
-  ✔ show QCD MG MC plots for full dphistar distro @done (15-04-13 14:47)
   ☐ get dphi cut eff plots from rob
-  ✔ need a different event display with an alphaT threshold > 0.55! @done (15-04-13 15:07)
-  ☐ update event display caption
-  ☐ update pred plot caption
+  ☐ remake event display without pfjets stuff
 
 Defintions:
 
@@ -94,10 +82,27 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
- ✔ add a cutflow table with event yields @done (15-04-08 10:34) @project(Chapter 5 - Analysis)
+ ✔ look up and describe rho PU correction @done (15-04-14 15:31) @project(Chapter 4 - Objects)
+ ✔ do rest of descriptions in the electron ID table @done (15-04-14 15:31) @project(Chapter 4 - Objects)
+ ✔ what is sigma_ietaieta @done (15-04-14 15:30) @project(Chapter 4 - Objects)
+ ✔ higher res screenshot of pie charts @done (15-04-14 15:30) @project(Chapter 5 - Analysis)
+ ✔ write SUSY r-parity @done (15-04-14 14:28) @project(Chapter 2 - Theory)
+ ✔ update pred plot caption @done (15-04-14 11:02) @project(Appendix 2 - DPhiStar in signal region)
+ ✔ update event display caption @done (15-04-14 11:02) @project(Appendix 2 - DPhiStar in signal region)
+ ✔ need a different event display with an alphaT threshold > 0.55! @done (15-04-13 15:07) @project(Appendix 2 - DPhiStar in signal region)
+ ✘ describe the different definitions of the variable @cancelled (15-04-13 14:47) @project(Appendix 2 - DPhiStar in signal region)
+ ✔ show QCD MG MC plots for full dphistar distro @done (15-04-13 14:47) @project(Appendix 2 - DPhiStar in signal region)
+ ✔ can we get away with only applying in the signal region? @done (15-04-13 14:47) @project(Appendix 2 - DPhiStar in signal region)
+ ✔ Make signal eff comparison plots - how much do we lose? @done (15-04-13 14:47) @project(Appendix 2 - DPhiStar in signal region)
+ ✔ define type-I corrections for PFMet @done (15-04-09 16:06) @project(Chapter 4 - Objects)
+ ✘ find public reference for photon id @cancelled (15-04-09 16:00) @project(Chapter 4 - Objects)
+ ✘ find public reference for pf based egamma isolation @cancelled (15-04-09 16:00) @project(Chapter 4 - Objects)
+ ✘ find public reference for electron id @cancelled (15-04-09 16:00) @project(Chapter 4 - Objects)
+ ✔ format the SM notes @done (15-04-09 15:52) @project(Chapter 2 - Theory)
  ✔ mention cutflow table in text @done (15-04-08 15:07) @project(Chapter 5 - Analysis)
- ✔ fix titles in turn on curve plots - remove? crop each? @done (15-04-07 15:51) @project(Chapter 5 - Analysis)
+ ✔ add a cutflow table with event yields @done (15-04-08 10:34) @project(Chapter 5 - Analysis)
  ✘ donut charts look cooler... @cancelled (15-04-07 15:51) @project(Chapter 5 - Analysis)
+ ✔ fix titles in turn on curve plots - remove? crop each? @done (15-04-07 15:51) @project(Chapter 5 - Analysis)
  ✔ what kind of events are we getting rid of? @done (15-04-07 11:42) @project(Appendix 2 - DPhiStar in signal region)
  ✔ work out whether to keep the example distros with their shitty normalisation @done (15-04-06 15:59) @project(Chapter 5 - Analysis)
  ✔ describe difference between cumulative and differential turn on curves @due(15-02-27 19:47) @done (15-04-06 15:59) @project(Chapter 5 - Analysis)
