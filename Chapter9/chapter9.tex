@@ -694,13 +694,14 @@ $CL_s \leq 0.05$.
 
 \emph{maybe include razor example distribution from SUS12005}
 
-Expected limits are determined by considering a scenario where data observations
-are assumed to be equal to the ``naive'' background estimation (green band
-plots) \emph{improve wording}, and observed limits by considering that actual
-data observations.
-
 \subsection{Limits}
-\subsubsection{\texttt{T2cc}}
+Limits are calculated using 1000 pseudo-experiments per model mass point.
+Expected limits are determined by considering a scenario where data observations
+are assumed to be equal to the result of the green-band fits
+(section~\ref{sec:results_fit_green}), and observed
+limits by considering that actual data observations.
+A point is considered excluded if the calculated upper limit cross section is
+less than the nominal cross-section (NLO+NLL).
 
 \begin{figure}[h!]
 \centering
@@ -713,8 +714,6 @@ calculated with an include \HT>200 \gev selection, and the analysis categories
 \njhigh$)}
 \label {fig:t2cc_limit}
 \end{figure}
-
-\subsubsection{\texttt{T2degen}}
 
 \begin{figure}[h!]
 \centering
