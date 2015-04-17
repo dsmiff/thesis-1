@@ -57,10 +57,17 @@ Table~\ref{tab:mc-sm} along with the number of events, next-to-next-to-leading
 order (NNLO) cross section and an effective integrated luminosity for each.
 
 \emph{can describe the different methods of MC generation}
-
-Each sample is weighted such that it's effective integrated luminosity is 
-made equivalent to the relevant dataset luminosity. Event-by-event weights are applied 
-such that the sample's pileup (PU) distribution matches that as measured in data.
+The Parton Density Functions (PDF) of colliding protons are modelled according
+to the
+CTEQ6L1 distribution, the matrix-element level hard-scatter performed by
+\MADGRAPH or \PYTHIA, with any outgoing partons showered in \PYTHIA. The
+produced generator level particles are then put through a full detector
+simulation in \GEANT, and detector hits `digitized' in order to simulate the
+response of detector electronics. Prior to digitization, a number of
+`MinimumBias' events are
+over-layed in order to reproduce LHC run conditions. Event-level weights
+are applied to each simulated sample such that both the PU and equivalent
+integrated luminosity are matched to a given data sample.
 
 \begin{landscape}
   \begin{center}
