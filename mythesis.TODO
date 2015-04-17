@@ -3,23 +3,25 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 General:
-  ☐ 'btag' or 'Btag'?
+  ✔ 'btag' or 'Btag'? @done (15-04-17 14:27)
+  ☐ change all 'btag' to 'b-tag'
   ☐ 'mistag' or 'mis-tag'?
-  ☐ quote page
+  ✔ quote page @done (15-04-17 14:27)
 
 Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
- ☐ some details of example precision electroweak measurements
- ☐ details of problems with SM
-    ☐ dark matter
+ ✔ some details of example precision electroweak measurements @done (15-04-17 14:27)
+ ✔ details of problems with SM @done (15-04-17 14:27)
+    ✔ dark matter @done (15-04-17 14:27)
     ☐ heirarchy problem
-    ☐ unification of the gauge couplings
+    ✔ unification of the gauge couplings @done (15-04-17 14:27)
  ☐ finish hierarchy problem section
  ☐ write SUSY hierarchy
  ☐ stop decay section
  ✔ check R_P equation! @done (15-04-15 14:53)
  ☐ get better T2cc feynman diagram
+ ☐ introduce deltaM and define  
 
 Chapter 3 - Detector:
 
@@ -28,9 +30,9 @@ Chapter 4 - Objects:
   ☐ look up delatBeta corrections
   ☐ look up muons from decays in flight
   ☐ add ID effs? probably should...
-  ☐ how does deadECAL METfilter vary from ours?
-      - no dPhiStar requirement
-      - based on trigger primitives - how do these get it right?
+  ✔ how does deadECAL METfilter vary from ours? @done (15-04-17 14:27)
+      ✔ no dPhiStar requirement @done (15-04-17 14:27)
+      ✔ based on trigger primitives - how do these get it right? @done (15-04-17 14:27)
 
 Chapter 5 - Analysis:
   ☐ give an example of the MET threshold for a corresponding alphaT cut
@@ -53,8 +55,10 @@ Chapter 7 - Results:
  ☐ write section for p-values and pulls
 
 Chapter 9 - Interpretation:
-  ☐ maybe move all description of why we have acceptance to the theory chapter?
-  ☐ how do you make the signal injection test plots? need to remake!
+  ✘ maybe move all description of why we have acceptance to the theory chapter? @cancelled (15-04-17 14:22)
+  ✘ how do you make the signal injection test plots? need to remake! @cancelled (15-04-17 14:22)
+  ☐ work out how to motivate the choices of categories
+      - maybe just individual limits for each?
   ☐ make plot showing agreement between t2cc and t24body_boost along dm=10
   ☐ split the appendix into T2cc and T24body seperately
   ☐ PDF observations of the two signal models
