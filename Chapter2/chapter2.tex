@@ -141,10 +141,33 @@ described in further detail in the following sections.
 
 \subsubsection{The Hierarchy Problem}
 
-When calculating higher than tree-level diagram contributions to the Higgs mass,
-$m_h$, divergent terms arise which make the mass increase up the the Planck
-mass, $M_{Planck}$ - clearly in disagreement with the experimentally observed
-$m_h \approx 125 \gev$ REF.
+% When calculating beyond tree-level diagram contributions to the Higgs mass,
+% $m_h$, divergent terms arise which make the mass increase up to values in
+% strong disagreement with the experimentally observed $m_h \approx 125 \gev$ REF.
+
+Particles couple to the Higgs field according to Yukawa couplings, $\lambda_f$,
+proportionally to the mass of a the particle. For fermions, the Lagrangian
+interaction term is
+
+\begin{equation}
+\mathcal{L}_\text{Yukawa} = - \lambda_f \bar{\Psi}H\Psi
+\end{equation},
+
+where $\Psi$ is a spin-1/2 Dirac field, and $H$ the Higgs field. It can be shown
+that Higgs mass corrections due to beyond tree-level interactions with fermion
+fields (shown in figure~\ref{quantum_higgs_fermion_loop}) can be written as
+
+\begin{equation}
+\Delta m_H^2 = -\frac{|\lambda_f|^2}{8\pi^2}[\Lambda_{\text{cut}}^2]
+\end{equation},
+
+where $\Lambda_{\text{cut}}$ is the cut-off energy scale, up to which the SM is
+valid, typically taken to be the Planck scale, leading to a quadratically
+divergent correction to $m_H$. Such corrections cause significant tension
+between the theoretically calculated value of $m_H$ and the experimentally
+measured value, $m_H = 125 \gev$ (CHECK!) REF, requiring significant
+`fine-tuning' to bring in agreement. This disagreement is known as the Hierarchy
+Problem.
 
 \begin{figure}[ht!]
 \centering
