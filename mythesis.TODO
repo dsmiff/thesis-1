@@ -3,23 +3,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 General:
-  ✔ 'btag' or 'Btag'? @done (15-04-17 14:27)
   ☐ change all 'btag' to 'b-tag'
   ☐ 'mistag' or 'mis-tag'?
-  ✔ quote page @done (15-04-17 14:27)
 
 Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
- ✔ some details of example precision electroweak measurements @done (15-04-17 14:27)
- ✔ details of problems with SM @done (15-04-17 14:27)
-    ✔ dark matter @done (15-04-17 14:27)
-    ☐ heirarchy problem
-    ✔ unification of the gauge couplings @done (15-04-17 14:27)
- ☐ finish hierarchy problem section
+
+ ☐ add labels to jaxo diagram
  ☐ write SUSY hierarchy
- ☐ stop decay section
- ✔ check R_P equation! @done (15-04-15 14:53)
  ☐ get better T2cc feynman diagram
  ☐ introduce deltaM and define  
 
@@ -30,9 +22,6 @@ Chapter 4 - Objects:
   ☐ look up delatBeta corrections
   ☐ look up muons from decays in flight
   ☐ add ID effs? probably should...
-  ✔ how does deadECAL METfilter vary from ours? @done (15-04-17 14:27)
-      ✔ no dPhiStar requirement @done (15-04-17 14:27)
-      ✔ based on trigger primitives - how do these get it right? @done (15-04-17 14:27)
 
 Chapter 5 - Analysis:
   ☐ give an example of the MET threshold for a corresponding alphaT cut
@@ -42,10 +31,9 @@ Chapter 5 - Analysis:
   ☐ formula method section @high
 
 Chapter 5_2 - Samples:
-  ☐ describe MC generation - can get from AN
-  ☐ get lumis for HT and JetHT samples
   ☐ work out what process Zinv is compared to with photons. gamma to what??
     ☐ get the corresponding value of the normalisation!
+  ☐ madgraph and pythia versions
 
 Chapter 6 - Background Estimation:
   ☐ MJ background estimation systematics???
@@ -55,12 +43,9 @@ Chapter 7 - Results:
  ☐ write section for p-values and pulls
 
 Chapter 9 - Interpretation:
-  ✘ maybe move all description of why we have acceptance to the theory chapter? @cancelled (15-04-17 14:22)
-  ✘ how do you make the signal injection test plots? need to remake! @cancelled (15-04-17 14:22)
   ☐ work out how to motivate the choices of categories
       - maybe just individual limits for each?
   ☐ make plot showing agreement between t2cc and t24body_boost along dm=10
-  ☐ split the appendix into T2cc and T24body seperately
   ☐ PDF observations of the two signal models
   ☐ mhtmet cut syst
     ☐ fastsim/fullsim syst
@@ -79,7 +64,6 @@ Appendix 1 - Signal systematic plots:
 
 Appendix 2 - DPhiStar in signal region:
   ☐ get dphi cut eff plots from rob
-  ☐ remake event display without pfjets stuff
 
 Defintions:
 
@@ -88,6 +72,25 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ stop decay section @done (15-04-18 09:52) @project(Chapter 2 - Theory)
+ ✔ get lumis for HT and JetHT samples @done (15-04-18 09:52) @project(Chapter 5_2 - Samples)
+ ✔ finish hierarchy problem section @done (15-04-17 18:40) @project(Chapter 2 - Theory)
+ ✔ heirarchy problem @done (15-04-17 18:39) @project(Chapter 2 - Theory)
+ ✘ split the appendix into T2cc and T24body seperately @cancelled (15-04-17 17:37) @project(Chapter 9 - Interpretation)
+ ✔ remake event display without pfjets stuff @done (15-04-17 17:27) @project(Appendix 2 - DPhiStar in signal region)
+ ✔ describe MC generation - can get from AN @done (15-04-17 17:25) @project(Chapter 5_2 - Samples)
+ ✔ unification of the gauge couplings @done (15-04-17 14:27) @project(Chapter 2 - Theory)
+ ✔ some details of example precision electroweak measurements @done (15-04-17 14:27) @project(Chapter 2 - Theory)
+ ✔ quote page @done (15-04-17 14:27) @project(General)
+ ✔ no dPhiStar requirement @done (15-04-17 14:27) @project(Chapter 4 - Objects)
+ ✔ how does deadECAL METfilter vary from ours? @done (15-04-17 14:27) @project(Chapter 4 - Objects)
+ ✔ details of problems with SM @done (15-04-17 14:27) @project(Chapter 2 - Theory)
+ ✔ dark matter @done (15-04-17 14:27) @project(Chapter 2 - Theory)
+ ✔ based on trigger primitives - how do these get it right? @done (15-04-17 14:27) @project(Chapter 4 - Objects)
+ ✔ 'btag' or 'Btag'? @done (15-04-17 14:27) @project(General)
+ ✘ maybe move all description of why we have acceptance to the theory chapter? @cancelled (15-04-17 14:22) @project(Chapter 9 - Interpretation)
+ ✘ how do you make the signal injection test plots? need to remake! @cancelled (15-04-17 14:22) @project(Chapter 9 - Interpretation)
+ ✔ check R_P equation! @done (15-04-15 14:53) @project(Chapter 2 - Theory)
  ✔ look up and describe rho PU correction @done (15-04-14 15:31) @project(Chapter 4 - Objects)
  ✔ do rest of descriptions in the electron ID table @done (15-04-14 15:31) @project(Chapter 4 - Objects)
  ✔ what is sigma_ietaieta @done (15-04-14 15:30) @project(Chapter 4 - Objects)
