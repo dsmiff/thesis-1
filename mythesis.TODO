@@ -5,12 +5,27 @@
 General:
   ☐ change all 'btag' to 'b-tag'
   ☐ 'mistag' or 'mis-tag'?
+  ☐ sort out order of references - particular in theory chapter
+  ☐ remove paragraph indentation after equations
 
 Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
 
  ☐ add labels to jaxo diagram
+ ☐ add quarks to 2.2 SU(3) section
+ ☐ book ref for SM
+ ☐ ref for higgs mechanism
+ ☐ not enough CP violation reference
+ ☐ read through SM hierarchy prob section
+ ☐ read through SUSY hierarchy prob section
+ ☐ ref for 1TeV SUSY particles for reasonable solution to hierarchy prob
+ ☐ SMS model ref
+ ☐ WMAP ref
+ ☐ annihilation cross-sections of what???
+ ☐ gravitational lensing and rotational curves refs
+ ☐ MSSM 100 free params ref
+ ☐ MSSM breaking refs
  ☐ write SUSY hierarchy
  ☐ get better T2cc feynman diagram
  ☐ introduce deltaM and define  
@@ -22,6 +37,10 @@ Chapter 4 - Objects:
   ☐ look up delatBeta corrections
   ☐ look up muons from decays in flight
   ☐ add ID effs? probably should...
+  ☐ mention photon->ee conversions - need to protect against
+  ☐ add subsystem mentions for each object
+  ☐ reference TAI!!!
+  ☐ GRID reference
 
 Chapter 5 - Analysis:
   ☐ give an example of the MET threshold for a corresponding alphaT cut
@@ -29,11 +48,14 @@ Chapter 5 - Analysis:
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
   ☐ elaborate/describe differently the muon tag and probe method for trigger
   ☐ formula method section @high
+  ☐ reference full MHTMET plot in text
+  ☐ change example distributions to be MC only
 
 Chapter 5_2 - Samples:
   ☐ work out what process Zinv is compared to with photons. gamma to what??
     ☐ get the corresponding value of the normalisation!
   ☐ madgraph and pythia versions
+  ☐ btag scale factors
 
 Chapter 6 - Background Estimation:
   ☐ MJ background estimation systematics???
