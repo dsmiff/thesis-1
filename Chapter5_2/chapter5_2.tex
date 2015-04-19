@@ -69,6 +69,18 @@ over-layed in order to reproduce LHC run conditions. Event-level weights
 are applied to each simulated sample such that both the PU and equivalent
 integrated luminosity are matched to a given data sample.
 
+Additional corrections are made to simulated event samples in order to correct
+the efficiency of b-tagging algorithms to match that seen in data. Corrections
+are determined as a function of jet-flavour (light/c/b), defined as:
+
+\begin{equation}
+SF_{light,c,b} = \frac{\epsilon^{data}_{light,c,b}(\Pt, \eta)}{\epsilon^
+{MC}_ {light,c,b}(\Pt, \eta)}
+\end{equation}
+
+where $\epsilon^{X}_{light, c, b}$ represents \Pt and $\eta$ dependent
+b-tagging efficiencies measured in data and MC.
+
 \begin{landscape}
   \begin{center}
     \begin{table}[ht]
