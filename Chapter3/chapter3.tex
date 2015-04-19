@@ -36,7 +36,7 @@ The beams, consisting of approximately 1400 bunches of $\orderof(10^{11})$ proto
 are brought into collision
 at four points around the LHC ring within specialised detector systems, as shown
 in figure~\ref{fig:lhc_diagram}. During the
-first run of the LHC, `Run I', bunches were spaced in 50 ns intervals, leading to
+first run of the LHC, `Run I', bunches were spaced in 50 ns intervals, giving
 a bunch crossing rate of 20 MHz. Collisions proceed for a number of hours, 
 while collision rates are maintained by scanning the transverse beam positions, 
 until such a time when proton numbers are depleted and beam is recycled so that 
@@ -70,13 +70,16 @@ throughout 2012.
   \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/machine/peak_lumi_per_day_pp_2012.pdf}
     \label{fig:inst_lumi_day}
+    \caption{}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/machine/int_lumi_per_week_cumulative_pp_2012.pdf}
     \label{fig:int_lumi_week_cumu}
+  \caption{}
   \end{subfigure}
-  \caption{The peak instantaneous luminosity for each day throughout 2012 (left),
-  and the integrated luminosity delivered to and recorded at CMS (right)
+  \caption{The peak instantaneous luminosity for each day throughout 2012 
+  (a),
+  and the integrated luminosity delivered to and recorded at CMS (b)
   from \cite{cmslumi}.}
   \label{fig:lumi_2012}
 \end{figure}
@@ -87,7 +90,7 @@ overlapping particle decays from previous bunch crossings called out-of-time
 pile up (PU). Both phenomena cause significant 
 experimental challenges for detector readout and event reconstruction.
 
-The four detectors of the LHC consist of ALICE, ATLAS, CMS and LHCb Of these,
+The four detectors of the LHC are ALICE, ATLAS, CMS and LHCb. Of these,
 both ATLAS and CMS 
 are considered as general purpose detectors, optimised for the investigation of
 high-\Pt phenomena.
@@ -102,10 +105,10 @@ the following section.
 
 The Compact Muon Solenoid (CMS), is a
 hermetic detector system (figure~\ref{fig:cms_diagram})
-optimised for the study on high-\Pt objects and their decays \cite{CMSexperiment},
-produced in the 
-proton collisions at the LHC. It is designed to make accurate measurements of 
-the positions and momenta of physics objects such as electrons, muons, taus, 
+optimised for the study on high-\Pt objects and their decays \cite
+{CMSexperiment}.
+It is designed to make accurate measurements of the positions and momenta of
+physics objects such as electrons, muons, taus,
 photons and jets. Owing to an almost complete 4$\pi$ solid angle coverage, CMS is 
 capable of also making accurate measurements of global energy imbalances due to 
 the presence of weakly interacting particles.
@@ -134,7 +137,8 @@ with respect to the z-axis, defined as:
 \eta = - ln \ tan \Bigg( \frac{\theta}{2} \Bigg)
 \end{equation}
 
-where $\theta$ is the angle between the particle trajectory and the beam pipe.
+where $\theta$ is the angle between the particle trajectory and the beam pipe
+in the y-z plane.
 Differences in these two variables, namely $\Delta \phi$ and $\Delta 
 \eta$, are invariant under Lorentz boosts, and so can be used to construct a 
 furthermore Lorentz-invariant angular separation between particles:
@@ -144,7 +148,7 @@ furthermore Lorentz-invariant angular separation between particles:
 \end{equation}
 
 CMS is arranged in a layered configuration of sub-detectors, structured as a 
-cylindrical barrel, `closed' by two end-caps. The barrel contains a
+cylindrical barrel, completed by two end-caps. The barrel contains a
 super-conducting solenoid magnet capable of producing a 3.8 T magnetic field. 
 Operated at 4.5 K, with a 18.5 kA current, the longitudinal field produced bends
 the trajectories of charged particles allowing for precise charge and momenta 
@@ -154,7 +158,7 @@ measurements.
 \section{Detector Subsystems}  %Section - 1.3
 \label{sec:detector_subsystems}
 
-Detector subsystems within CMS follow a layered structure in both the barrel and
+The layered structure of the CMS subsystems exists in both the barrel and
 end-cap regions. The following describe each of the subsystems in more detail.
 
 \subsection{Tracker}
@@ -184,12 +188,12 @@ electronics.
 
 A further 10 layers of silicon microstrip detectors are used to accurately 
 reconstruct the track path of charged particles. The sensors collectively cover 
-an area of over 200 $\text{m}^2$, are of p-in-n type, range from 320 \microm
+an area of over 200 $\text{m}^2$, are of p-in-n type, and range from 320 \microm
 to 500 \microm in thickness and pixel pitch ranging between 80 \microm and 
 205 \microm, depending on distance from the beamline.
 
-All silicon detectors situated so close to the interaction point receive high-
-doses of radiation, eventually ageing due to the damage inflicted. Subsequently, 
+All silicon detectors situated so close to the interaction point receive
+high-doses of radiation, eventually ageing due to the damage inflicted. Subsequently, 
 radiation hard sensor and front-end electronics materials and designs have been
 selected to mitigate the effects of ageing due to radiation damage.
 
@@ -264,20 +268,10 @@ photo-diodes.
 %   - designed for high magnetic field and neutron backgrounds
 %   - forward and central eta < 2.1
 
-The muon system aims to provide identification and precision measurements of
+The muon system provides identification and precision measurements of
 muon momenta. Energy deposits in the muon systems can be combined with 
 corresponding information from the tracker to improve momentum resolution
 significantly.
-
-Muons are detected in the outer layers of the detector, with the muon system 
-comprised of three different gaseous detector technologies each with different 
-pseudo-rapidity coverage, shown in figure~\ref{fig:muon_system_diagram}. The
-central barrel region, $|\eta|<1.2$ is equipped with 
-Drift Tube (DT) detectors - a traditional detector technology, optimised for low
--occupancy measurements. Cathode Strip Chambers (CSC) cover the forward region,
-$0.9 < |\eta| < 2.4$, and dual-layered Resistive Plate Chambers (RPC) cover
-$|\eta| < 2.1$ - both CSC and RPC detectors being optimised for operation in 
-both high magnetic field and neutron background environments.
 
 \begin{figure}[ht!]
 \centering
@@ -287,6 +281,16 @@ both high magnetic field and neutron background environments.
 muon systems as well as other interior sub-detector systems.}
 \end{figure}
 
+Muons are detected in the outer layers of the detector, with the muon system 
+comprised of three different gaseous detector technologies each with different 
+pseudo-rapidity coverage, shown in figure~\ref{fig:muon_system_diagram}. The
+central barrel region, $|\eta|<1.2$ is equipped with 
+Drift Tube (DT) detectors - a traditional detector technology, optimised for low
+-occupancy measurements. Cathode Strip Chambers (CSC) cover the forward region,
+$0.9 < |\eta| < 2.4$, and dual-layered Resistive Plate Chambers (RPC) cover
+$|\eta| < 2.1$ - both CSC and RPC detectors being optimised for operation in 
+the presence of both high magnetic field and neutron background environments.
+
 %********************************** % Fourth Section  *************************************
 \section{Trigger and Data Acquisition}  %Section - 1.4
 \label{sec:detector_trigger}
@@ -294,7 +298,7 @@ muon systems as well as other interior sub-detector systems.}
 \subsection{Trigger system}
 Events of interest are selected using a dedicated triggering system \cite{tridasTDR},
 split into two distinct stages: the hardware-based Level-1 Trigger (L1) and
-the software-based High-Level Trigger (HLT) systems.
+the software-based High-Level Trigger (HLT).
 
 \subsubsection{Level-1 Hardware Trigger}
 % - L1 system is hardware based running at a rate of 40 MHz
@@ -316,13 +320,13 @@ the software-based High-Level Trigger (HLT) systems.
 % output rate is kept lower than this to allow for stochastic fluctuations
 
 The L1 system consists of a staged, modular design of custom built hardware 
-electronics subsystems, shown in figure~\ref{fig:l1_diagram}. 
+electronics subsystems, as shown in figure~\ref{fig:l1_diagram}. 
 The L1 trigger reconstructs energy deposits in the calorimeter and muon systems
-into coarse `trigger-primitive' physics objects, in the calorimeter and the muon 
-trigger systems respectively. Regional information is gathered by separate modules 
+into coarse `trigger-primitive' physics objects.
+Regional information is gathered by separate modules 
 before being combined in the Global Calorimeter Trigger (GCT) and Global Muon 
 Trigger (GMT) systems, where physics objects are sorted according to energy. 
-Finally, an event's objects are passed on to the Global Trigger (GT) where a 
+Finally, event objects are passed on to the Global Trigger (GT) where a 
 `Level-1 Accept' (L1A) signal is issued or not, dependent on the event meeting 
 one of 127 (CHECK) simple object threshold and multiplicity based requirements.
 
@@ -331,7 +335,7 @@ one of 127 (CHECK) simple object threshold and multiplicity based requirements.
   \includegraphics[width = 0.55\textwidth]{Figs/machine/L1_diagram.pdf}
   \label{fig:l1_diagram}
   \caption{Schematic overview of the Level-1 hardware trigger system of CMS. $
-  \eta$ coverage of is shown in red and the data-flow indicated by the arrow 
+  \eta$ coverage is shown in red and the data-flow indicated by arrow 
   direction.}
 \end{figure}
 
@@ -352,14 +356,15 @@ maintained at a lower value to allow for stochastic rate fluctuations.
 
 Following a L1A signal, candidate events are optically transmitted to the HLT 
 system, consisting of a large computer farm of server 
-PCs. Due to the increase in processing time of up to 50 ms, events can be
-reconstructed in greater detail allowing for a closer emulation of offline 
+PCs. Due to the increase in available processing time of up to 50 ms, events can
+be reconstructed in greater detail allowing for a closer emulation of offline 
 reconstruction techniques. Complex analyst-designed trigger rules are used, 
 which can employ more sophisticated event-level variables such as \alphat
 (described in detail later in chapter~\ref{ch:5}).
 
-The HLT reduces event rates further by around two orders of magnitude, typically
+The HLT reduces the event rate further by around two orders of magnitude,
+typically
 outputting hundreds of events per second. Events passing the HLT are transmitted
-on for full offline reconstruction.
+to Grid system REF for full offline reconstruction.
 
 \emph{Do I need a seperate section loosely describing event reconstruction?}
