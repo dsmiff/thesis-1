@@ -158,14 +158,16 @@ that Higgs mass corrections due to beyond tree-level interactions with fermion
 fields (shown in figure~\ref{quantum_higgs_fermion_loop}) can be written as
 
 \begin{equation}
-\Delta m_H^2 = -\frac{|\lambda_f|^2}{8\pi^2}[\Lambda_{\text{cut}}^2]
+% \Delta m_H^2 = -\frac{|\lambda_f|^2}{8\pi^2} [\Lambda_{\text{cut}}^2 + \ldots]
+\Delta m_H^2 \propto -|\lambda_f|^2 \Lambda_{\text{cut}}^2
+\label{eq:higgs_corr_hierarchy}
 \end{equation},
 
 where $\Lambda_{\text{cut}}$ is the cut-off energy scale, up to which the SM is
 valid, typically taken to be the Planck scale, leading to a quadratically
 divergent correction to $m_H$. Such corrections cause significant tension
 between the theoretically calculated value of $m_H$ and the experimentally
-measured value, $m_H = 125 \gev$ (CHECK!) REF, requiring significant
+measured value, $m_H = 125$ \gev (CHECK!) REF, requiring significant
 `fine-tuning' to bring in agreement. This disagreement is known as the Hierarchy
 Problem.
 
@@ -223,9 +225,20 @@ gauge couplings at higher energy scales. Arguably two of the most important
 described in the following two sections.
 
 \subsubsection{Hierarchy Problem}
-Where previously 
+While in the SM the Higgs gains corrections to its mass from fermion-loop
+induced self-interactions, the presence of bosonic super-partners to these
+fermions provide additional diagrams (figure~REF), leading to oppositely signed
+corrective terms,
 
-solution to the hierarchy problem - loop corrections etc
+\begin{equation}
+% \Delta m_H^2 = 2 \times \frac{\lambda_S}{16\pi^2}[\Lambda_{\text{cut}}^2 +\ldots]
+\Delta m_H^2 \propto + \lambda_S \Lambda_{\text{cut}}^2
+\end{equation}
+
+where $\lamdba_S$ is bosonic super-partner's Yukawa coupling. The introduction
+of these super-partners, and therefore their additional corrective terms,
+provides an elegant solution to the hierarchy problem, where quadratic
+divergences to $m_H$ are effectively cancelled.
 
 \subsubsection{Dark Matter}
 In most supersymmetric theories, a new conserved quantum number $R_P$
