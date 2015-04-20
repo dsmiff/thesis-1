@@ -12,7 +12,7 @@
 %********************************** % First Section  *************************************
 \section{Likelihood Model}  %Section - 1.1 
 \label{sec:results_likelihood}
-The likelihood model is defined for each analysis category of \nb and \nj.
+The likelihood is defined for each analysis category of \nb and \nj as follows.
 
 \subsection{Hadronic Signal Region}
 
@@ -108,7 +108,7 @@ L_{\mu\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhomw, \sigmamw),
 where Logn is the log-normal distribution (as recommended by \cite{cousins-log-normal}):
 % 
 \begin{equation}
-\text{Logn}(x|\mu, \sigma) = \frac{1}{x\sqrt{2\pi}\text{ln}k} exp \Bigg(-\frac{\text{ln}^2 \big(\frac{x}{\mu}\big)}{2\text{ln}^2k}\Bigg); k = 1+\sigma
+\text{Logn}(x|\mu, \sigma) = \frac{1}{x\sqrt{2\pi}\text{ln}k} exp \Bigg(-\frac{\text{ln}^2 \big(\frac{x}{\mu}\big)}{2\text{ln}^2k}\Bigg); \xspace k = 1+\sigma
 \end{equation}
 % 
 These terms are combined as:
@@ -237,13 +237,13 @@ to relate the observations in the signal and control samples, accomodate the
 calculated background systematic uncertainties, and allow for the presence of
 any potential signal. In order to test the compatibility with a Standard
 Model only hypotheis, signal contribution is set to zero and the likilhood is
-maximized over all parameter using RooFit \cite{roofit} and \MINUIT
+maximized over all parameters using \ROOFIT \cite{roofit} and \MINUIT
 \cite{James:1975dr}, for each analysis category of \nb and \nj.
 
 Uncertainties are determined by performing a number of pseudo-experiments for
 each (\nb, \nj) category and \HT bin, with the fit yields being put into a
 histogram, appropriate quantiles taken, using their difference from the maximum 
-likelihood (ML) value taken as the uncertainty value.
+likelihood (ML) value taken as the fit uncertainty value.
 
 Two different procedures are used to determine fits to observations, as described
 in the following sections.
@@ -294,7 +294,7 @@ table~\ref{tab:ensemble-summary-priori}.
 
 \subsection{Fit with Signal region}
 An ``a posteriori'' fit is made by considering every region, including the
-hadronic signal region's observation in data, and is shown in
+hadronic signal region observation in data, and is shown in
 \cref{fig:green_fits_0b_ge4j,fig:green_fits_1b_ge4j,fig:green_fits_2b_ge4j,fig:green_fits_3b_ge4j,fig:green_fits_ge4b_ge4j,fig:green_fits_0b_le3j,fig:green_fits_1b_le3j,fig:green_fits_1b_le3j}
 and summarised in table~\ref{tab:ensemble-summary-posteriori}.
 
@@ -371,7 +371,10 @@ no signal! background only
     {Figs/results/v0/greenBand/bestFit_2012dev_RQcdZero_fZinvAll_0b_le3j-12p_smOnly}
     \caption{\gj sample}
   \end{subfigure}
-  \caption{\njlow, $\nb = 0$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit, when the hadronic data observations are not considered. The
+  plots are for the \njlow, $\nb = 0$ analysis category.}
   \label{fig:green_fits_0b_le3j}
 \end{figure}
 
@@ -403,7 +406,10 @@ no signal! background only
     {Figs/results/v0/greenBand/bestFit_2012dev_RQcdZero_fZinvAll_1b_le3j-12p_smOnly}
     \caption{\gj sample}
   \end{subfigure}
-  \caption{\njlow, $\nb = 1$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit, when the hadronic data observations are not considered. The
+  plots are for the \njlow, $\nb = 1$ analysis category.}
   \label{fig:green_fits_1b_le3j}
 \end{figure}
 
@@ -425,7 +431,10 @@ no signal! background only
     {Figs/results/v0/greenBand/bestFit_2012dev_RQcdZero_fZinvAll_2b_le3j-1_smOnly}
     \caption{\mj sample}
   \end{subfigure}
-  \caption{\njlow, $\nb = 2$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit, when the hadronic data observations are not considered. The
+  plots are for the \njlow, $\nb = 2$ analysis category.}
   \label{fig:green_fits_2b_le3j}
 \end{figure}
 
@@ -457,7 +466,10 @@ no signal! background only
     {Figs/results/v0/greenBand/bestFit_2012dev_RQcdZero_fZinvAll_0b_ge4j-12p_smOnly}
     \caption{\gj sample}
   \end{subfigure}
-  \caption{\njhigh, $\nb = 0$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit, when the hadronic data observations are not considered. The
+  plots are for the \njhigh, $\nb = 0$ analysis category.}
   \label{fig:green_fits_0b_ge4j}
 \end{figure}
 
@@ -489,7 +501,10 @@ no signal! background only
     {Figs/results/v0/greenBand/bestFit_2012dev_RQcdZero_fZinvAll_1b_ge4j-12p_smOnly}
     \caption{\gj sample}
   \end{subfigure}
-  \caption{\njhigh, $\nb = 1$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit, when the hadronic data observations are not considered. The
+  plots are for the \njhigh, $\nb = 1$ analysis category.}
   \label{fig:green_fits_1b_ge4j}
 \end{figure}
 
@@ -511,7 +526,10 @@ no signal! background only
     {Figs/results/v0/greenBand/bestFit_2012dev_RQcdZero_fZinvAll_2b_ge4j-1_smOnly}
     \caption{\mj sample}
   \end{subfigure}
-  \caption{\njhigh, $\nb = 2$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit, when the hadronic data observations are not considered. The
+  plots are for the \njhigh, $\nb = 2$ analysis category.}
   \label{fig:green_fits_2b_ge4j}
 \end{figure}
 
@@ -534,7 +552,10 @@ no signal! background only
     {Figs/results/v0/greenBand/bestFit_2012dev_RQcdZero_fZinvAll_3b_ge4j-1_smOnly}
     \caption{\mj sample}
   \end{subfigure}
-  \caption{\njhigh, $\nb = 3$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit, when the hadronic data observations are not considered. The
+  plots are for the \njhigh, $\nb = 3$ analysis category.}
   \label{fig:green_fits_3b_ge4j}
 \end{figure}
 
@@ -556,7 +577,10 @@ no signal! background only
     {Figs/results/v0/greenBand/bestFit_2012dev_RQcdZero_fZinvAll_ge4b_ge4j-1_smOnly}
     \caption{\mj sample}
   \end{subfigure}
-  \caption{\njhigh, $\nb \geq 4$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit, when the hadronic data observations are not considered. The
+  plots are for the \njhigh, $\nb \geq 4$ analysis category.}
   \label{fig:green_fits_ge4b_ge4j}
 \end{figure}
 
@@ -592,7 +616,9 @@ no signal! background only
     {Figs/results/v0/blueBand/bestFit_2012dev_RQcdZero_fZinvAll_0b_le3j-12hp_smOnly}
     \caption{\gj sample}
   \end{subfigure}
-  \caption{\njlow, $\nb = 0$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit. The plots are for the \njlow, $\nb = 0$ analysis category.}
   \label{fig:blue_fits_0b_le3j}
 \end{figure}
 
@@ -624,7 +650,9 @@ no signal! background only
     {Figs/results/v0/blueBand/bestFit_2012dev_RQcdZero_fZinvAll_1b_le3j-12hp_smOnly}
     \caption{\gj sample}
   \end{subfigure}
-  \caption{\njlow, $\nb = 1$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit. The plots are for the \njlow, $\nb = 1$ analysis category.}
   \label{fig:blue_fits_1b_le3j}
 \end{figure}
 
@@ -646,7 +674,9 @@ no signal! background only
     {Figs/results/v0/blueBand/bestFit_2012dev_RQcdZero_fZinvAll_2b_le3j-1h_smOnly}
     \caption{\mj sample}
   \end{subfigure}
-  \caption{\njlow, $\nb = 2$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit. The plots are for the \njlow, $\nb = 2$ analysis category.}
   \label{fig:blue_fits_2b_le3j}
 \end{figure}
 
@@ -678,7 +708,9 @@ no signal! background only
     {Figs/results/v0/blueBand/bestFit_2012dev_RQcdZero_fZinvAll_0b_ge4j-12hp_smOnly}
     \caption{\gj sample}
   \end{subfigure}
-  \caption{\njhigh, $\nb = 0$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit. The plots are for the \njhigh, $\nb = 0$ analysis category.}
   \label{fig:blue_fits_0b_ge4j}
 \end{figure}
 
@@ -710,7 +742,9 @@ no signal! background only
     {Figs/results/v0/blueBand/bestFit_2012dev_RQcdZero_fZinvAll_1b_ge4j-12hp_smOnly}
     \caption{\gj sample}
   \end{subfigure}
-  \caption{\njhigh, $\nb = 1$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit. The plots are for the \njhigh, $\nb = 1$ analysis category.}
   \label{fig:blue_fits_1b_ge4j}
 \end{figure}
 
@@ -732,7 +766,9 @@ no signal! background only
     {Figs/results/v0/blueBand/bestFit_2012dev_RQcdZero_fZinvAll_2b_ge4j-1h_smOnly}
     \caption{\mj sample}
   \end{subfigure}
-  \caption{\njhigh, $\nb = 2$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit. The plots are for the \njhigh, $\nb = 2$ analysis category.}
   \label{fig:blue_fits_2b_ge4j}
 \end{figure}
 
@@ -755,7 +791,9 @@ no signal! background only
     {Figs/results/v0/blueBand/bestFit_2012dev_RQcdZero_fZinvAll_3b_ge4j-1h_smOnly}
     \caption{\mj sample}
   \end{subfigure}
-  \caption{\njhigh, $\nb = 3$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit. The plots are for the \njhigh, $\nb = 3$ analysis category.}
   \label{fig:blue_fits_3b_ge4j}
 \end{figure}
 
@@ -777,6 +815,8 @@ no signal! background only
     {Figs/results/v0/blueBand/bestFit_2012dev_RQcdZero_fZinvAll_ge4b_ge4j-1h_smOnly}
     \caption{\mj sample}
   \end{subfigure}
-  \caption{\njhigh, $\nb \geq 4$}
+  \caption{Observations in data for the various signal and control
+  regions in the analysis, compared to the result of the full likelihood model
+  simultaneous fit. The plots are for the \njhigh, $\nb \geq 4$ analysis category.}
   \label{fig:blue_fits_ge4b_ge4j}
 \end{figure}
