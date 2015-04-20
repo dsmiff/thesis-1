@@ -11,10 +11,8 @@
 \section{Datasets}
 
 The datasets used in this analysis are listed in Table~\ref{tab:datasets}. These
-include the primary signal sample datasets, named `HTMHTParked', for which only
-Run2012A is absent as the parked trigger was present only during the 
-run period's B, C and D. All other datasets contain events from triggers used for 
-background estimation.
+include the primary signal sample datasets, named `HTMHTParked', and other
+datasets containing events from triggers used for background estimation.
 
 \begin{table}[ht]
   \caption{8 \tev Datasets.}
@@ -56,11 +54,10 @@ The full list of MonteCarlo (MC) samples used in this analysis are listed in
 Table~\ref{tab:mc-sm} along with the number of events, next-to-next-to-leading 
 order (NNLO) cross section and an effective integrated luminosity for each.
 
-\emph{can describe the different methods of MC generation}
 The Parton Density Functions (PDF) of colliding protons are modelled according
 to the
 CTEQ6L1 distribution, the matrix-element level hard-scatter performed by
-\MADGRAPHFIVE or \PYTHIASIX, with any outgoing partons showered in \PYTHIASIX. The
+\MADGRAPHFIVE or \PYTHIASIX, with outgoing partons showered in \PYTHIASIX. The
 produced generator level particles are then put through a full detector
 simulation in \GEANT, and detector hits `digitized' in order to simulate the
 response of detector electronics. Prior to digitization, a number of
@@ -144,7 +141,8 @@ b-tagging efficiencies measured in data and MC.
 Interpretations are made using signal MC samples, each representing a scan in 
 the phase space of a specific SMS model. The samples used are listed in
 Table~\ref{tab:mc-signal}. Each sample is generated at the parton level using \MADGRAPHFIVE and then
-decayed using \PYTHIASIX \emph{(too vague?)}. Up to two additional partons are simulated 
+decayed using \PYTHIASIX \emph{(too vague?)}. Diagrams for up to two additional
+partons are simulated
 in the initial generation step to ensure good modelling of initial state 
 radiation (ISR), however supplementary samples were produced with up to three
 additional partons to allow for systematic studies into the effect on the 
@@ -215,7 +213,7 @@ Two of the binned samples have corresponding inclusive samples to allow for
 this comparison to be made, namely \wj and \dyj. For these two cases, the 
 derivation of corrections for each \HTpart binned sample is simple. However, for 
 \zj and \gj, no such inclusive samples exist. These binned samples are 
-compared against the inclusive \dyj sample, where the overall normalisation is 
+compared with the inclusive \dyj sample, where the overall normalisation is 
 set according to the relative branching fraction of \zinv and GAMMA to
 $Z \to \ell\ell$, set as 0.505 and VALUE, respectively. An example ratio plot is
 shown in figure~\ref{fig:xsec_study_after}, where a constant ratio between the 
@@ -226,13 +224,14 @@ samples is found.
 As mentioned previously in section~\ref{sec:mc_xsec_corrs}, absolute MC 
 normalisation is not well modelled in the high-\met region of 
 phase-space in which many SUSY analyses search. As such, data and MC appear to
-disagree using `out-of-the-box' MC samples and cross-sections. While data and MC
+disagree using standard MC samples and cross-sections. While data and MC
 comparisons are not explicitly used in this analysis, ratios of MC yields are, 
 and so cross-section correction factors for the main 
 MC processes are determined. These are measured as the data to MC ratio in the
 $150 \leq \HT < 200$ \gev side-band region, in a given control sample with a 
-given selection, designed to produce a pure sample of a background process. A
-summary of the selections and their relevant purities are given in table~\ref{tab:ht_sideband}.
+targetted selection, designed to yield a pure sample of a background process.
+A summary of the selections and their relevant purities are given in
+table~\ref{tab:ht_sideband}.
 
 \begin{table}[!ht]
   \caption{Correction factors determined from a data side-band for the different
@@ -241,7 +240,7 @@ summary of the selections and their relevant purities are given in table~\ref{ta
     jets and Z + jets processes, which are in agreement, are also
     applied to the \zinv + jets and \gj samples. ``Corrected yield''
     reflects the observed data yield minus the contamination as given
-    by MC. RE}
+    by MC. REWORD}
   \label{tab:ht_sideband}
   \centering
   \small

@@ -11,27 +11,27 @@
 Predictions of EWK SM backgrounds are made using independent, process-specific 
 control regions. These regions are orthogonal to the signal region due to the 
 selection of leptons or photons - particles which are subsequently ignored such 
-that the selection kinematics of each event is kept similar to the same process 
+that the selection kinematics of each event is kept similar to the corresponding process 
 observed in the signal region. For each sample, Transfer Factors (TF) are 
-constructed from yields in MC and data, to extract a prediction in the signal 
+constructed from yields in MC, to extract a prediction in the signal 
 region for a given process. This process is described at length in
 section~\ref{sec:background_overview}.
 
-Predictions made using this technique alone are considered as ``na\"{i}ve'' 
+Predictions made using this technique alone are considered as ``primitive'' 
 predictions and are used only in analysis development and the derivation of 
 background systematics. In order to determine final yields for interpretation and 
 limit-setting, a fit is made across all signal and control regions, using the 
-full likelihood model, described later in chapter~\ref{ch:7}. The derived 
+likelihood model, described later in chapter~\ref{ch:7}. The derived 
 transfer factors and individual yields enter as terms in the likelihood, where 
 all related systematics, potential correlations and signal contamination are
-accounted for in the fit.
+accounted for.
 
 Thresholds of the \alphat variable are determined such that the QCD MJ 
-contribution to the SM background is negligible. These are found using a data-
-driven method, employing sidebands in both the \mhtmet and \alphat variables, 
-described in detail in section~\ref{sec:background_qcd}. Following the 
+contribution to the SM background is negligible. These are found using a
+data-driven method, employing sidebands in both the \mhtmet and \alphat variables, 
+described in section~\ref{sec:background_qcd}. Following the 
 application of these thresholds, any QCD contributions are considered negligible
-and are subsequently dropped entirely from the likelihood model.
+and are therfore not considered in the likelihood model.
 
 %********************************** % First Section  *************************************
 \section{Overview of Electroweak background prediction method}  %Section - 1.1 
@@ -42,8 +42,7 @@ prediction technique, employing dedicated control samples. A transfer factor
 is constructed from MC samples as the ratio 
 of the MC yield in the signal region, \\$N_{MC}^{signal}\big(\HT, \nj, \nb\big)$,
 and the MC yield of a given control region, \\$N_{data}^{control}\big(\HT, \nj, \nb\big)$,
-as a function of the analysis binning, \HT, \nj and \nb, shown in
-equation~\ref{eq:transfer_factor}.
+as a function of the analysis binning, \HT, \nj and \nb, defined as:
 % 
 \begin{equation}
 TF = \frac{N_{MC}^{signal}\big(\HT, \nj, \nb\big)}{N_{MC}^{control}\big(\HT, \nj, \nb\big)}
@@ -52,8 +51,7 @@ TF = \frac{N_{MC}^{signal}\big(\HT, \nj, \nb\big)}{N_{MC}^{control}\big(\HT, \nj
 % 
 For a given \HT, \nj and \nb bin, the TF is used to extrapolate a yield in data from
 the control region, $N_{data}^{control}\big(\HT, \nj, \nb\big)$
-to the signal region $N_{pred}^{signal}\big(\HT, \nj, \nb\big)$, as shown in
-equation~\ref{eq:transfer_equation}.
+to the signal region $N_{pred}^{signal}\big(\HT, \nj, \nb\big)$, using:
 % 
 \begin{equation}
 N_{pred}^{signal}\big(\HT, \nj, \nb\big) = N_{data}^{control}\big(\HT, \nj, \nb\big)
@@ -65,7 +63,7 @@ The control samples are statistically independent and each used for predicting
 specific background processes, the details of which are described in
 section~\ref{sec:background_control}.
 
-MC yields are construct from the following process-specific samples:
+MC yields are defined by process from the following samples:
 W + jets (\numw),
 \ttbar + jets (\numtt), DY + jets (\numdy), $\gamma$ + jets(\numgam),
 single top + jets (\numtop), WW + jets, WZ + jets and ZZ + jets (\numdibo), and
@@ -93,7 +91,7 @@ N_{MC}^{control}\big(\HT, \nj, \nb\big) = \numw + \numtt + \numdy + \numgam +
 The numerator is constructed according to the b-tag multiplicity being 
 considered. For $\nb \leq 1$, the \mj control region is used to predict 
 lost-lepton background, e.g. \ttbar + jets and W + jets. All MC samples
-are used with the exception of \zinv:
+are therefore used with the exception of \zinv:
 % 
 \begin{equation}
 N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1\big) = \numw + \numtt + \numdy + \numgam + 
@@ -108,11 +106,7 @@ and \gj control samples, using only the \zinv MC yields:
 N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1 \big) = \numzinv
 \label{eq:trans_fact_num_le1b_z}
 \end{equation}
-% 
-Again, it should be noted here that although two separate control samples are 
-used to estimate the \zinv background contribution, the result of each is
-considered by the global fit to produce the final background prediction.
-
+%
 For $\nb \geq 2$, the \mj sample is used to produce a prediction for all 
 SM processes, including \zinv, and therefore the numerator of the TF is defined as:
 % 
@@ -122,10 +116,20 @@ N_{MC}^{signal}\big(\HT, \nj, \nb \geq 2 \big) = \numw + \numtt + \numdy + \numg
 \label{eq:trans_fact_num_geq2b}
 \end{equation}
 % 
+or equivalently:
+% 
+\begin{equation}
+N_{MC}^{signal}\big(\HT, \nj, \nb \geq 2 \big) = N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1\big) + \numzinv
+\end{equation}
+
 The \mmj and \gj control samples are not used beyond the $\nb \leq 1$ categories
 due to the statistical limitations of such samples at high b-tag multiplicities.
 A full summary of the control regions used for predictions per analysis category
 is shown in table~\ref{tab:control_prediction_summary}.
+
+Again, it should be noted here that although two separate control samples are 
+used to estimate the \zinv background contribution, the result of each is
+considered by the global fit to produce the final background prediction.
 
 \begin{table}[ht!]
   \caption{The control samples used to produce SM background predictions for each 
@@ -153,10 +157,10 @@ is shown in table~\ref{tab:control_prediction_summary}.
 
 By employing a technique that uses a ratio of MC yields, direct dependence on
 MC modelling is 
-greatly reduced. Errors inherent to MC samples, such as mismodelling effects, 
+greatly reduced. Sources of error inherent to MC samples, such as mismodelling effects, 
 will cancel in the ratio. These errors can potentially include kinematic
 mismodelling, which would affect analysis acceptance, and mismodelling of 
-instrumental effects, which could have an affect on object 
+instrumental effects, which could affect object 
 reconstruction efficiencies. However, any remaining systematics such as these
 and others are probed using dedicated Closure Tests (CT), described in detail
 in section~\ref{sec:closure_tests}.
@@ -168,7 +172,7 @@ in section~\ref{sec:closure_tests}.
 
 Control sample definitions are designed such that they are kinematically similar
 to the signal region, with the exception of a selected `tag' muon or 
-photon, which is subsequently ignored for the calculation of all analysis 
+photon. The `tagged' particle is then subsequently ignored for the calculation of all analysis 
 variables, such as \HT, \met, \alphat etc.
 Other differences include mass-window
 and minor kinematic cuts, aimed at enriching the control samples in certain processes. 
@@ -189,7 +193,7 @@ background fit and final limit-setting.
 The \mj control sample is constructed by selecting a single muon with associated 
 jets. This region is used to predict backgrounds from processes such as \wj and
 \ttj. This covers not only the leptonic decays of such productions, where the 
-lepton is unidentified for whatever reason, but also the hadronic decays of tau 
+lepton is not identified for whatever reason, but also the hadronic decays of tau 
 leptons [from high-\Pt W bosons]. The event selection therefore is optimised to 
 select W bosons decaying to a muon and a neutrino in the phase-space of the 
 signal.
@@ -201,8 +205,8 @@ Events are collected using the loosely-isolated, $\eta$-restricted
 data taking period. The efficiency of this trigger was measured by the muon
 \emph{POG} 
 using a tag-and-probe method [REF], in bins of the muon \Pt and $\eta$, as summarised 
-in table~\ref{tab:muon-trig-effs}. Statistical uncertainties are at the per-
-mille level, and systematics are assumed to be 1\%.
+in table~\ref{tab:muon-trig-effs}. Statistical uncertainties are at the
+per-mille level, and systematics are assumed to be 1\%.
 
 \begin{table}[!ht]
   \caption{Muon trigger efficiencies (\%) for the \mj selection listed by \HT bin and
@@ -269,14 +273,14 @@ are shown in figure~\ref{fig:datamc_mu_inc}.
   \centering
     \begin{subfigure}[b]{0.48\textwidth}
       \includegraphics[width=\textwidth]{Figs/datamc/mu/Stacked_MuPt_all_OneMuon_200_upwards}
-      \caption{$\mu$\Pt}
+      \caption{$\mu$ \Pt}
     \end{subfigure}
     \begin{subfigure}[b]{0.48\textwidth}
       \includegraphics[width=\textwidth]{Figs/datamc/mu/Stacked_MET_Corrected_all_OneMuon_200_upwards}
       \caption{\met (corrected for $\mu$)}
     \end{subfigure} \\
     \caption{\label{fig:datamc_mu_inc}
-    Comparison of data with MC for the muon control selection. Plots 
+    Comparison of data with MC for the \mj control selection. Plots 
     are for $\HT>200$ \gev, $\nj\geq2, \nb\geq0$.
     }
 \end{figure}
@@ -287,14 +291,14 @@ The \mmj sample is constructed to predict background contributions from \zinv
 decays, mimicking this decay via the kinematically similar $Z\to\mu\mu + jets$
 process where both muons are subsequently ignored.
 The sample is used to provide low \HT coverage for the \zinv background 
-prediction, where the \gj sample is unable to do so.
+prediction, where the \gj sample (section~\ref{sec:gjets_control_sample})
+is unable to do so.
 
 \subsubsection{Triggers}
 The trigger used is the same as for the \mj sample, as described in
-section~\ref{sec:mujets_control_trigger}. Trigger efficiencies are slightly
+section~\ref{sec:mujets_control_trigger}. Trigger efficiencies are significantly
 improved for the dimuon selection given that either of the muons 
-can cause a positive trigger decision. The trigger efficiencies
-for the \mmj selection are summarised in table~\ref{tab:dimuon-trig-effs}. 
+can cause a positive trigger decision, as shown in table~\ref{tab:dimuon-trig-effs}. 
 Relative errors are considered the same as for the \mj trigger efficiencies.
 
 \begin{table}[!ht]
@@ -337,7 +341,7 @@ veto is made on events satisfying $\Delta R(\mu_i, jet_j) < 0.5$, for every muon
 $i$ and every jet $j$. Similarly as in the \mj sample selection, no \alphat
 requirement is made.
 
-Example distributions of $M(\mu\mu)$ and $\mu_2$ \Pt for this selection are
+Example distributions of $M_T(\mu\mu)$ and $\mu_2$ \Pt for this selection are
 shown in figure~\ref{fig:datamc_mumu_inc}.
 
 \begin{figure}[!ht]
@@ -351,11 +355,12 @@ shown in figure~\ref{fig:datamc_mumu_inc}.
       \caption{Second $\mu$ \Pt}
     \end{subfigure} \\
     \caption{\label{fig:datamc_mumu_inc}
-    Comparison of data with MC for the dimuon control selection. Plots 
+    Comparison of data with MC for the \mmj control selection. Plots 
     are for $\HT>200$ \gev, $\nj\geq2, \nb\geq0$.}
 \end{figure}
 
 \subsection{\gj}
+\label{sec:gjets_control_sample}
 The \gj sample is used to predict the \zinv background contribution, given it's 
 similar kinematics when the $\gamma$ is ignored from the event, and larger 
 production cross section relative to \mmj. Due to trigger thresholds, the \gj
@@ -400,7 +405,7 @@ in figure~\ref{fig:datamc_pho_inc}.
       \caption{$\gamma$ $\Pt$}
     \end{subfigure}
     \caption{\label{fig:datamc_pho_inc}
-    Comparison of data with MC for the photon control selection. Plot 
+    Comparison of data with MC for the \gj control selection. Plot 
     is for $\HT>200$ \gev, $\nj\geq2, \nb\geq0$.}
 \end{figure}
 
@@ -408,10 +413,10 @@ in figure~\ref{fig:datamc_pho_inc}.
 \section{Estimating multijet backgrounds}  %Section - 1.3
 \label{sec:background_qcd}
 
-A data-driven technique has been 
-developed to determine the necessary \alphat requirement, per \HT bin, 
-such that QCD is at the sub-percent level with respect to the total EWK 
-background.
+A data-driven technique has been developed to measure any remaining QCD events
+in the signal region. This is used to determine a \HT dependent \alphat
+requirement such that QCD is at the sub-percent level with respect to the total
+EWK background.
 
 \subsection{Multijet control sample}
 In order to predict the contamination of QCD MJ events in the signal region a 
@@ -419,7 +424,9 @@ control region of hadronic events is constructed.
 
 \subsubsection{Triggers}
 Events are collected using a suite of triggers requiring various thresholds of 
-\HT. The high rates expected through these triggers were maintained throughout 
+\HT. By using single-object \HT triggers it is possible to study events
+across a spectrum of \alphat values. The high rates expected through these
+triggers were maintained throughout
 the 2012 run with a variety of prescales. Each trigger seeds a single \HT bin in
 the analysis, with a 25 \gev offset between the online trigger requirement and 
 the offline threshold. Efficiencies are measured with the same technique as the
@@ -458,9 +465,8 @@ The efficiencies of these triggers are summarised in table~\ref{tab:ht-triggers}
 
 \subsubsection{Selection Criteria}
 The selection of this sample matches that of the hadronic signal region, with 
-the exception that both the \alphat and \mhtmet requirements are removed. This 
-selection ensures a very high number of QCD events with respect to the signal 
-region.
+the exception that both the \alphat and \mhtmet requirements are removed 
+ensuring a very high yield of QCD MJ events.
 
 
 \subsection{Prediction Technique}
@@ -468,9 +474,10 @@ region.
 Events from the hadronic control sample are used to populate a plane of \mhtmet 
 and \alphat. A prediction of the EWK contribution to this sample is determined 
 from the \mj control sample with the \mhtmet requirement removed, using the TF 
-factor method described in section~\ref{sec:background_overview}. This is 
-subtracted from the hadronic control sample yields as a function of \mhtmet and
-\alphat, subsequently leaving a pure sample of QCD MJ events (SHOW PLOTS?).
+factor method described in section~\ref{sec:background_overview}. The prediction
+is subtracted from the hadronic control sample yields as a function of \mhtmet
+and \alphat, leaving a pure sample of QCD MJ events (SHOW PLOTS?).
+
 By considering events both above and below the nominal \mhtmet threshold of
 1.25, the ratio \rmhtmet is constructed, defined as:
 % 
@@ -478,7 +485,7 @@ By considering events both above and below the nominal \mhtmet threshold of
 \label{eq:rmhtmet}
 \rmhtmet = \frac{N(\mhtmet<1.25)}{N(\mhtmet>1.25)}
 \end{equation}
-% 
+
 A fit is made to this variable as a function of \alphat, using an exponential 
 functional form:
 % 
@@ -491,7 +498,7 @@ both for $n=0$ and also when $n$ is allowed to float as a free
 parameter within the range $0-2$ in order to span the scenarios from flat to a
 Gaussian form. Example distributions and fits are shown in FIGURE.
 
-Predictions are made and compared with the relevant EWK background 
+QCD yield predictions are made and compared with the relevant EWK background 
 contributions in table~\ref{tab:qcd-pred-data}. \alphat thresholds are chosen 
 for each \HT bin such that the ratio of QCD to EWK is at the sub-percent level. 
 The chosen \alphat threshold values are summarised in
@@ -500,13 +507,6 @@ table~\ref{tab:alphat_thresholds_qcd}.
 \begin{table}[h!]
 \centering
 \scriptsize
-% \caption{Summary of the predicted QCD multijet background contribution
-%   and, for comparison, the expected non-multijet (EWK) background
-%   contribution and the ratio (QCD/EWK) as determined in data for
-%   events satisfying the various \nj, \nb, \HT, and \alphat
-%   threshold requirements. For each QCD prediction, the value quoted
-%   is (expected $\pm$ stat. $\pm$ syst.) while for the EWK prediction,
-%   the uncertainty comprises both stat. and syst. components. RE}
   \caption{QCD multijet background contribution prediction summarised for the 
   main analysis categories of \nb, \nj and \HT as a function of \alphat. The 
   predicted EWK background contribution is included for comparison, and a 
@@ -582,7 +582,7 @@ probe any potential sources of bias in the transfer factors.
 \subsection{Closure tests}
 \label{sec:closure_tests}
 
-The closure tests are performed as a function of \HT, in the two \nj categories,
+Closure tests are performed as a function of \HT, in the two \nj categories,
 \njlow and \njhigh. The level of closure represents the statistical 
 consistency between predicted and observed yields for each test, in the absence 
 of any assumed systematic uncertainty. The test statistic is defined as $(N_{obs}
@@ -623,16 +623,16 @@ deemed most important to the background prediction uncertainty.
 The first test, represented by open circles, tests the modelling of the \alphat 
 variable in the \mj control sample. In the analysis a prediction is made 
 between the \mj sample, which has no \alphat requirement, and the 
-signal region, which has a tight \alphat requirement. This particular test 
-probes
-the validity of predicting between the `bulk' distribution of the control sample
-and the `tail' distribution in the signal region. Not shown here is a similar test
-for the \mmj control sample.
+signal region, with it's tight \alphat requirement. This particular test probes
+the validity of predicting between the `bulk' of the \alphat distribution in the
+control sample
+and the `tail' of the distribution in the signal region. A similar test, not
+shown here, is performed for the \mmj control sample.
 
-The next two tests, represented by crosses and open squares, test between 
-different b-tag multiplicities in the \mj control sample. The different b-tag 
-requirements greatly change the relative admixture of, for example, \wj (0b)
-and \ttj (1b) events.
+The next two tests, represented by crosses and open squares, probe the
+different b-tag multiplicities in the \mj control sample. The b-tag 
+requirements greatly change the relative admixture of, for example, \wj (\nb=0)
+and \ttj (\nb=1) events.
 It is important to note that this test is 
 considered conservative, given that the admixture of \wj to \ttj events 
 varies minimally between control and signal regions, where this extrapolation is 
@@ -644,7 +644,7 @@ predicting between the \mj and \mmj control regions, represented by open
 triangles. Again, this test is considered 
 conservative, but also probes the muon reconstruction and trigger efficiencies 
 between the different muon multiplicities. These are however already well 
-studied with data-driven techniques by the muon \emph{POG}.
+studied by the muon \emph{POG} using data-driven techniques.
 
 As described in section~\ref{sec:background_overview}, the \zinv prediction 
 is made from both the \gj and \mmj samples, and so a test is constructed to 
@@ -658,13 +658,15 @@ testing jet reconstruction and modelling. This test is also considered very
 conservative as the analysis only predicts between identical \nj categories in 
 the control and signal regions.
 
-The summary plots of these eight tests shown in figure~\ref{fig:closure_summary} 
-indicate that there is no statistically significant biases or \HT dependencies. 
-Figures~\ref{fig:closure_fit_le3j_pol0} and \ref{fig:closure_fit_ge4j_pol0} show
+Summary plots of these eight tests are shown in
+figure~\ref{fig:closure_summary}, indicating that there are no statistically
+significant biases
+or \HT dependencies. Figures~\ref{fig:closure_fit_le3j_pol0} and \ref{fig:closure_fit_ge4j_pol0} show
 zeroeth order polynomial fits (blue lines) made to each individual test to assess the 
 level of any potential bias present. In addition, first order polynomial fits 
 (red lines) are
-also made to assess any potential \HT dependence present in the tests.
+also made to assess any potential \HT dependence present in the tests, as shown
+in figures~\ref{fig:closure_fit_le3j_pol1} and \ref{fig:closure_fit_ge4j_pol1}.
 The best-fit values, $\chi^2$ and $p$-values 
 obtained from both fits are summarised for each \nj category in
 tables~\ref{tab:syst-fits-le3j}, \ref{tab:syst-fits-ge4j} and
@@ -673,12 +675,12 @@ tables~\ref{tab:syst-fits-le3j}, \ref{tab:syst-fits-ge4j} and
 As expected, the fits show no significant biases or trends, and therefore 
 indicate good closure. The only exception is the 0 b-jets \ra 1 b-jet (\mj) test
 for the \njhigh category
-which indicates a sub-optimal goodness of fit value. This is 
+which has a sub-optimal goodness of fit value. This is 
 attributed to upwards and downwards fluctuations in the 475-575 \gev and 575-675
-\gev bins respectively. Also shown in table~\ref{tab:syst-fits-ge4j} is the 
-same fit made when summing these two bins - a fit which returns significantly 
-improved fit values. This leads to the conclusion that these two bins contain a 
-statistical fluctuation as opposed to a systematic bias.
+\gev bins respectively. Also shown in table~\ref{tab:syst-fits-ge4j}, when the 
+same fit is made after summing these two bins significantly improved fit
+parameters are observed. This leads to the conclusion that these two
+bins contain a statistical fluctuation as opposed to a systematic bias.
 
 \begin{figure}[ht!]
   \centering
@@ -782,7 +784,6 @@ statistical fluctuation as opposed to a systematic bias.
 \subsection{Background systematic uncertainty summary}
 Under the assumption of closure for the eight core tests,
 systematic errors are derived for each \nj category in seven regions of \HT.
-
 Values are calculated by summing in quadrature the weighted mean and sample 
 variance for all eight tests in a given \HT region. These values are summarised 
 in table~\ref{tab:syst_values} and also in the summary plots of figure~\ref{fig:closure_summary},
@@ -808,14 +809,14 @@ shown as grey bands.
   \end{tabular}
 \end{table}
 
-Systematic values are here considered as fully uncorrelated between the 
-different analysis categories and the \HT regions defined here, which is again 
+Systematic values are considered as fully uncorrelated between the 
+different analysis categories and the \HT regions, which is again 
 considered as a conservative approach given that some correlation is to be 
 expected, for example between adjacent \HT bins.
 
 
 %********************************** % blah Section  *************************************
-\emph{NOTE: have removed the `naive' predictions section}
+% \emph{NOTE: have removed the `naive' predictions section}
 
 % \section{Primitive predictions from Transfer Factors}
 % \label{sec:background_predictions}

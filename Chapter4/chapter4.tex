@@ -25,13 +25,14 @@ analysis. The following sections describe the objects used.
 Jets are produced when a single quark or gluon is produced, subsequently 
 hadronizing and showering throughout the calorimeter systems. Energy deposits in
 the hadronic calorimeter are clustered using the anti-$k_T$ algorithm \cite{antikt} with
-a 0.5 cone size parameter. The raw energy measurements can be affected by 
+a $R=0.5$ cone size parameter. The raw energy measurements are subject to 
 effects from overlapping pp collisions (PU), therefore corrections are made to
 account for this \cite{Cacciari2008119, 1126-6708-2008-04-005}. Clustered jets 
 are also corrected to establish a uniform response in $\eta$ and \Pt
 \cite{Chatrchyan:2011ds}.
 Table~\ref{tab:jet_id_loose} summarises the ID requirements used in this 
-analysis, which correspond to the ``Loose'' working point \cite{ref:jet-id} (private!). Jets are also 
+analysis, which correspond to the ``Loose'' working point \cite{ref:jet-id} 
+(private!). Jets are further 
 corrected according to the L1FastJet, L2, L3, and L2L3Residual corrections
 \cite{ref:jet-jes} (private!).
 
@@ -46,7 +47,8 @@ corrected according to the L1FastJet, L2, L3, and L2L3Residual corrections
       \hline
       f$_{HPD} < 0.98$           & Fractional contribution from the ``hottest'' Hybrid Photo Diode. \\
       f$_{EM} > 0.01$            & Minimum electromagnetic fractional component.                    \\
-      N$^{90}_{\rm hits} \geq$ 2 & Number of channels containing at least 90\% of total energy      \\
+      N$^{90}_{\rm hits} \geq$ 2 & Number of HCAL channels containing at least
+      90\% of total energy      \\
       \hline
       \hline
     \end{tabular}
@@ -57,30 +59,28 @@ corrected according to the L1FastJet, L2, L3, and L2L3Residual corrections
 \subsection{Tagging jets from b-quarks}
 
 Jets originating from b-quarks can be identified using information from the 
-vertex detector due to their increased lifetime with respect to light-quarks (u,
-d, s, c). 
+vertex detector due to their increased lifetime with respect to light
+flavour quarks (u, d, s) and charm quarks. 
 B-tagging algorithms are designed to determine the probability that a jet 
-originates from a b-quark, given, amongst other properties, the jet's tracks
-displacement from the primary 
-vertex (PV). Each algorithm
-calculates a value used to discriminate between a jet from a b-quark and a
-light-quark.
+originates from a b-quark, given, amongst other properties, track
+displacement from the primary vertex (PV). Each algorithm
+calculates a value used to discriminate between a jet originating from a
+b-quark and a light or c-quark.
 
-The Combined Secondary Vertex (CSV) algorithm \cite{CMS-PAS-BTV-12-001} is used in this analysis,
-using the ``Medium'' working point, or a discriminate threshold of $>0.679$. This 
-working point corresponds to a mistag rate for gluons/light-quarks of 1\%, and a
-pT dependent efficiency in the range of 60-70\% (plot?) \cite{CMS-PAS-BTV-12-001}.
+The Combined Secondary Vertex (CSV) algorithm \cite{CMS-PAS-BTV-12-001} is used
+in this analysis, using the ``Medium'' working point, or a discriminate
+threshold of $>0.679$. This working point corresponds to a mistag rate for gluons/light-quarks of 1\%, and a pT dependent efficiency in the range of 60-70\% (plot?)
+\cite{CMS-PAS-BTV-12-001}.
 
 
 %********************************** % Fourth Section  *************************************
 \section{Muons}  %Section - 1.4
 \label{sec:objects_muons}
-Muons are identified using the muon \emph{POG's} Tight working point definition
-\cite{ref:muon-id}, as 
-summarised in table~\ref{tab:muon-id}. This definition is used for both muon 
-selection in the \mj and \mmj control regions, and the muon veto in the hadronic
-signal region.
-
+Muons are identified from energy deposits predominantly in the muon systems and
+the tracker using the muon \emph {POG's} Tight working point definition
+\cite{ref:muon-id}, as summarised in table~\ref{tab:muon-id}. This definition is
+used in both muon selection in the \mj and \mmj control regions, and the muon
+veto in the hadronic signal region.
 \begin{table}[ht!]
   \caption{Muon identification (Tight working point).\label{tab:muon-id}}
   \centering
@@ -103,11 +103,11 @@ signal region.
     decaying in flight.\\
     Muon station hits                      & $>1$      & Muon hits in at least 2
     muon stations. Suppresses punch-through and accidental track-to-segment matches.
-    (Also makes consistent with trigger muon requirements.) \\
-    Transverse impact $d_{xy}$             & $<0.2mm$ & Tracker track is close 
+    Also makes consistent with trigger muon requirements. \\
+    Transverse impact $d_{xy}$             & $<0.2$ mm & Tracker track is close 
     to Primary Vertex in the x-y plane. Helps suppress cosmic ray muons and muons 
     from decays in flight. \\
-    Longitudinal dist $d_{z}$              & $<0.5mm$ & Tracker track is close 
+    Longitudinal dist $d_{z}$              & $<0.5$ mm & Tracker track is close 
     to Primary Vertex in z-direction. Suppresses muons from cosmic rays, decays in flight 
     and PU. \\
     Pixel hits                             & $>0$      & At least 1 pixel hit. 
@@ -129,7 +129,7 @@ signal region.
 \label{sec:objects_photons}
 
 Photons defintions are made relative to their position in the detector, either 
-in the barrel or the endcap, summarised in table~\ref{tab:photon-id-egamma}. 
+in the barrel or the endcap, as summarised in table~\ref{tab:photon-id-egamma}. 
 This Tight working point ID is defined by the \emph{POG} group and used for both photon
 selection in the \gj control sample and as a veto in the hadronic signal region.
 \emph{mention the pf-based rho pu corrs}
@@ -192,9 +192,9 @@ summarised in table~\ref{tab:ele-id}.
     Ratio of energy deposited in the HCAL towers within $\Delta R<0.15$ of the ECAL 
     supercluster, and the ECAL supercluster itself. \\
     d0 (vtx)                                                 & 0.02      & 0.02      &
-    The [transverse] distance of the track from the PV. \\
+    The transverse distance of the track from the PV. \\
     dZ (vtx)                                                 & 0.2       & 0.20      &
-    The distance of the track from the PV in the $z$ dimension. \\
+    The longitudinal distance of the track from the PV. \\
     $\lvert(1/E_{\textrm{ECAL}} - 1/p_{\textrm{trk}})\rvert$ & 0.05      & 0.05      &
     Comparison of the ECAL supercluster energy and the track \Pt. Suppresses low 
     \Pt fakes. \\
@@ -214,7 +214,8 @@ summarised in table~\ref{tab:ele-id}.
 \section{Energy Sums}  %Section - 1.6
 \label{sec:objects_energy_sums}
 Physics objects are combined in the form of kinematic variables known as energy 
-sums. These are done on the fly in the analysis using identified objects, with
+sums. These are calculated on the fly in the analysis using identified objects,
+with
 the exception of \met which is constructed from PF objects and subject to type-I
 corrections (jets used for \met calculation are subject to prescribed Jet Energy
 Corrections themselves).
@@ -223,17 +224,18 @@ The definitions of the energy sum variables are:
 % 
 \begin{equation}
     \begin{split}
-    \Et = \sum_{i}^{\textrm{all objects}} |\Ptvect_i|\\
-    \met = -\big|\sum_{i}^{\textrm{all objects}} \Ptvect_i\big|\\
+    \Et = \sum_{i}^{} |\Ptvect_i|\\
+    \met = -\big|\sum_{i}^{} \Ptvect_i\big|\\
     \HT = \sum_{i}^{\textrm{jets}} |\Ptvect_i|\\
     \mht = -\big|\sum_{i}^{\textrm{jets}} \Ptvect_i\big|\\
     \end{split}
 \label{eq:energy_sums}
 \end{equation}
 % 
-A full set of \met filters are defined by the MET \emph{POG} which account for various 
+A full set of \met filters are defined by the MET \emph{POG} as summarised
+in table~\ref{tab:met_filters}. The filters account for various
 physics and detector effects which can give un-physical or spurious \met 
-signals. These are summarised in table~\ref{tab:met_filters}.
+signals.
 
 \begin{table}[ht!]
   \caption{\met filters employed in the analysis, as recommended by the MET \emph{POG}.}
@@ -259,7 +261,7 @@ signals. These are summarised in table~\ref{tab:met_filters}.
     10\% of the \HT.\\ \\
     HCAL Laser Misfire      & Calibration lasers being accidentally fired 
     through the HCAL during bunch crossings (as opposed to abort gaps). Events 
-    are removed that contain such accidentally laser firings. \\ \\
+    are removed that contain such accidental laser firings. \\ \\
     DeadECAL Cell TP        & Dead or damaged ECAL crystals which cannot read 
     out energy deposits correctly. Trigger primitives are checked to determine 
     how much energy was lost, and events are appropriately masked. \\
@@ -275,7 +277,7 @@ Single Isolated Tracks are used to identify hadronically decaying $\tau$ leptons
 and leptonically decaying W bosons where the corresonding lepton has been
 unidentified for whatever reason. 
 The selection is based on particle flow candidates and is summarised in
-table~\ref{tab:sit-id}. The ID is used as a veto in all selections, with the 
+table~\ref{tab:sit-id}. This ID is used as a veto in all selections, with the 
 selected `tag' lepton ignored in the \mj and \mmj control selections. The ID 
 defintion is taken from \cite{singleleptonstop}.
 
@@ -289,8 +291,10 @@ defintion is taken from \cite{singleleptonstop}.
     Varible & Requirment & Description \\
     \hline
     Charge                      & $\neq 0$      & Candidate is charged. \\
-    Track \Pt                   & $> 10$ \gev   & Track transverse momentum. \\
-    $\Delta z(track, PV)$       & $<0.05cm$     & Longitudinal distance of track 
+    Track \Pt                   & $> 10$ \gev   & Track transverse momentum
+    requirement. \\
+    $\Delta z(track, PV)$       & $<0.05$ cm     & Longitudinal distance of
+    track
     from primary vertex. \\
     Relative Track Isolation    & $<0.1$        & Isolation relative to other PF 
     candidate tracks in cone of $\Delta R <0.3$ \\

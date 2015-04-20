@@ -13,7 +13,7 @@
 \label{sec:detector_lhc}
 
 The Large Hadron Collider (LHC) is a 27 km circumference proton-proton 
-synchrotron with maximum design centre of mass energy
+synchrotron with maximum design centre of mass energy of
 $\sqrt{s} = 14$ \tev, described in detail elsewhere \cite{Evans:2008zzb}. It
 is the highest energy component of the CERN accelerator
 complex, which is shown in figure~\ref{fig:cern_acc_complex}. The LHC
@@ -32,14 +32,14 @@ helium, and applying a 11.85 kA electric current.
 accelerators and storage rings, ultimately feeding the Large Hadron Collider.}
 \end{figure}
 
-The beams, consisting of approximately 1400 bunches of $\orderof(10^{11})$ protons,
-are brought into collision
+The beams, consisting of approximately up to 1380 bunches of $\orderof(10^{11})$
+protons, are brought into collision
 at four points around the LHC ring within specialised detector systems, as shown
 in figure~\ref{fig:lhc_diagram}. During the
 first run of the LHC, `Run I', bunches were spaced in 50 ns intervals, giving
 a bunch crossing rate of 20 MHz. Collisions proceed for a number of hours, 
 while collision rates are maintained by scanning the transverse beam positions, 
-until such a time when proton numbers are depleted and beam is recycled so that 
+until such a time when proton numbers are depleted and the beam recycled so that
 the fill process can be repeated.
 
 \begin{figure}[hb!]
@@ -52,7 +52,7 @@ experiments.}
 \end{figure}
 
 The rate of collisions at each interaction point is described by the 
-Instantaneous Luminosity, given by the equation:
+instantaneous Luminosity, given by the equation:
 % 
 \begin{equation}
 L_{inst.} = \frac{f_{orbit}n_{B}N_p^2}{A_{eff}}
@@ -61,9 +61,9 @@ L_{inst.} = \frac{f_{orbit}n_{B}N_p^2}{A_{eff}}
 where $f_{orbit}$ is the orbital frequency of bunches in the LHC, $n_B$ is the 
 number of bunches in the machine, $N_p$ is the number of protons per bunch, and 
 $A_{eff}$ is the effective area overlap between colliding bunches. The peak 
-$L_{inst.}$ per day is shown in figure~\ref{fig:inst_lumi_day} and the integral
-over time is shown in figure~\ref{fig:lumi_2012}, both for the full run period
-throughout 2012.
+$L_{inst.}$ per day for CMS is shown in figure~\ref{fig:inst_lumi_day} and the
+integral over time is shown in figure~\ref{fig:lumi_2012}, both for the full run
+period throughout 2012.
 
 \begin{figure}[h!]
   \centering
@@ -84,19 +84,29 @@ throughout 2012.
   \label{fig:lumi_2012}
 \end{figure}
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{Figs/machine/pileup_pp_2012.pdf}
+  \label{fig:pileup_runone}
+  \caption{The average Pileup distribution as seen by the CMS detector
+  throughout \runone, taken from \cite{cmslumi}.}
+\end{figure}
+
 Simultaneous interactions happening at the time
 of each bunch crossing are referred to as in-time pile up (PU), as opposed to 
 overlapping particle decays from previous bunch crossings called out-of-time 
-pile up (PU). Both phenomena cause significant 
+pile up (PU). Both phenomena cause significant
 experimental challenges for detector readout and event reconstruction.
+The average Pileup distribution for \runone is shown in
+figure~\ref{fig:pileup_runone}
 
-The four detectors of the LHC are ALICE, ATLAS, CMS and LHCb. Of these,
-both ATLAS and CMS 
-are considered as general purpose detectors, optimised for the investigation of
-high-\Pt phenomena.
+% The four detectors of the LHC are ALICE, ATLAS, CMS and LHCb. Of these,
+% both ATLAS and CMS 
+% are considered as general purpose detectors, optimised for the investigation of
+% high-\Pt phenomena.
 
-The work in this thesis uses the CMS detector, which is discussed in 
-the following section.
+% The work in this thesis uses the CMS detector, which is discussed in 
+% the following section.
 
 
 %********************************** % Second Section  *************************************
@@ -110,15 +120,16 @@ optimised for the study on high-\Pt objects and their decays \cite
 It is designed to make accurate measurements of the positions and momenta of
 physics objects such as electrons, muons, taus,
 photons and jets. Owing to an almost complete 4$\pi$ solid angle coverage, CMS is 
-capable of also making accurate measurements of global energy imbalances due to 
-the presence of weakly interacting particles.
+capable of also making accurate measurements of global momentum imbalances due
+to the presence of weakly interacting particles.
 
-\begin{figure}[hb!]
+\begin{sidewaysfigure}
   \centering
   \includegraphics[width=\textwidth]{Figs/machine/cms_120918_02.png}
-  \caption{Diagram of the Compact Muon Solenoid REF.}
+  \caption{Diagram of the Compact Muon Solenoid taken from
+  \cite{Sakuma:2013jqa}.}
   \label{fig:cms_diagram}
-\end{figure}
+\end{sidewaysfigure}
 
 The cylindrical detector is 28 m in length, 15 m in diameter and has a mass of 
 around 14,000 tonnes. 
@@ -137,8 +148,8 @@ with respect to the z-axis, defined as:
 \eta = - ln \ tan \Bigg( \frac{\theta}{2} \Bigg)
 \end{equation}
 % 
-where $\theta$ is the angle between the particle trajectory and the beam pipe
-in the y-z plane.
+where $\theta$ is the polar angle between the particle trajectory and the beam
+pipe in the y-z plane.
 Differences in these two variables, namely $\Delta \phi$ and $\Delta 
 \eta$, are invariant under Lorentz boosts, and so can be used to construct a 
 furthermore Lorentz-invariant angular separation between particles:
@@ -246,7 +257,8 @@ operating within the strong magnetic environment of CMS.
 
 The Hadronic Calorimeter (HCAL) system measures the energy of hadronic showers 
 originating from single-quarks and gluons (i.e. jets). It is constructed from
-alternating  brass absorber and plastic scintillator layers. The latter are spatially 
+layers of alternating brass absorber and plastic scintillator, of which there
+are 17 in the barrel and 19 in the endcaps. The latter are spatially
 divided into towers measuring 0.087 x 0.087 in the barrel and end-caps. Hadronic
 showers of particles deposit energy as scintillation light in the plastic layers,
 which is transmitted via wavelength shifting fibres to be measured in hybrid
@@ -363,8 +375,5 @@ which can employ more sophisticated event-level variables such as \alphat
 (described in detail later in chapter~\ref{ch:5}).
 
 The HLT reduces the event rate further by around two orders of magnitude,
-typically
-outputting hundreds of events per second. Events passing the HLT are transmitted
-to Grid system REF for full offline reconstruction.
-
-\emph{Do I need a seperate section loosely describing event reconstruction?}
+producing an output event rate of up to 1 kHz. Events passing the HLT are
+transmitted to Grid system \cite{Eck:840543} for full offline reconstruction.
