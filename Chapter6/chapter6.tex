@@ -41,7 +41,7 @@ Contributions from Standard Model background processes are estimated using a dat
 prediction technique, employing dedicated control samples. A transfer factor 
 is constructed from MC samples as the ratio 
 of the MC yield in the signal region, \\$N_{MC}^{signal}\big(\HT, \nj, \nb\big)$,
-and the MC yield of a given control region, \\$N_{Data}^{control}\big(\HT, \nj, \nb\big)$,
+and the MC yield of a given control region, \\$N_{data}^{control}\big(\HT, \nj, \nb\big)$,
 as a function of the analysis binning, \HT, \nj and \nb, shown in
 equation~\ref{eq:transfer_factor}.
 
@@ -51,12 +51,12 @@ TF = \frac{N_{MC}^{signal}\big(\HT, \nj, \nb\big)}{N_{MC}^{control}\big(\HT, \nj
 \end{equation}
 
 For a given \HT, \nj and \nb bin, the TF is used to extrapolate a yield in data from
-the control region, $N_{Data}^{control}\big(\HT, \nj, \nb\big)$
+the control region, $N_{data}^{control}\big(\HT, \nj, \nb\big)$
 to the signal region $N_{pred}^{signal}\big(\HT, \nj, \nb\big)$, as shown in
 equation~\ref{eq:transfer_equation}.
 
 \begin{equation}
-N_{pred}^{signal}\big(\HT, \nj, \nb\big) = N_{Data}^{control}\big(\HT, \nj, \nb\big)
+N_{pred}^{signal}\big(\HT, \nj, \nb\big) = N_{data}^{control}\big(\HT, \nj, \nb\big)
 \times TF
 \label{eq:transfer_equation}
 \end{equation}
