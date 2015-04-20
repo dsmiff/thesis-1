@@ -44,23 +44,23 @@ of the MC yield in the signal region, \\$N_{MC}^{signal}\big(\HT, \nj, \nb\big)$
 and the MC yield of a given control region, \\$N_{data}^{control}\big(\HT, \nj, \nb\big)$,
 as a function of the analysis binning, \HT, \nj and \nb, shown in
 equation~\ref{eq:transfer_factor}.
-
+% 
 \begin{equation}
 TF = \frac{N_{MC}^{signal}\big(\HT, \nj, \nb\big)}{N_{MC}^{control}\big(\HT, \nj, \nb\big)}
 \label{eq:transfer_factor}
 \end{equation}
-
+% 
 For a given \HT, \nj and \nb bin, the TF is used to extrapolate a yield in data from
 the control region, $N_{data}^{control}\big(\HT, \nj, \nb\big)$
 to the signal region $N_{pred}^{signal}\big(\HT, \nj, \nb\big)$, as shown in
 equation~\ref{eq:transfer_equation}.
-
+% 
 \begin{equation}
 N_{pred}^{signal}\big(\HT, \nj, \nb\big) = N_{data}^{control}\big(\HT, \nj, \nb\big)
 \times TF
 \label{eq:transfer_equation}
 \end{equation}
-
+% 
 The control samples are statistically independent and each used for predicting 
 specific background processes, the details of which are described in
 section~\ref{sec:background_control}.
@@ -83,45 +83,45 @@ single top + jets (\numtop), WW + jets, WZ + jets and ZZ + jets (\numdibo), and
 The denominator of each transfer factor is constructed using the sum of
 \textit{all} MC sample yields, for a given control region selection and
 analysis category:
-
+% 
 \begin{equation}
 N_{MC}^{control}\big(\HT, \nj, \nb\big) = \numw + \numtt + \numdy + \numgam + 
 \numtop + \numdibo + \numzinv
 \label{eq:trans_fact_denom}
 \end{equation}
-
+% 
 The numerator is constructed according to the b-tag multiplicity being 
 considered. For $\nb \leq 1$, the \mj control region is used to predict 
 lost-lepton background, e.g. \ttbar + jets and W + jets. All MC samples
 are used with the exception of \zinv:
-
+% 
 \begin{equation}
 N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1\big) = \numw + \numtt + \numdy + \numgam + 
 \numtop + \numdibo
 \label{eq:trans_fact_num_le1b_noz}
 \end{equation}
-
+% 
 The \zinv + jets component of the background is predicted using the \mmj
 and \gj control samples, using only the \zinv MC yields:
-
+% 
 \begin{equation}
 N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1 \big) = \numzinv
 \label{eq:trans_fact_num_le1b_z}
 \end{equation}
-
+% 
 Again, it should be noted here that although two separate control samples are 
 used to estimate the \zinv background contribution, the result of each is
 considered by the global fit to produce the final background prediction.
 
 For $\nb \geq 2$, the \mj sample is used to produce a prediction for all 
 SM processes, including \zinv, and therefore the numerator of the TF is defined as:
-
+% 
 \begin{equation}
 N_{MC}^{signal}\big(\HT, \nj, \nb \geq 2 \big) = \numw + \numtt + \numdy + \numgam + 
 \numtop + \numdibo + \numzinv
 \label{eq:trans_fact_num_geq2b}
 \end{equation}
-
+% 
 The \mmj and \gj control samples are not used beyond the $\nb \leq 1$ categories
 due to the statistical limitations of such samples at high b-tag multiplicities.
 A full summary of the control regions used for predictions per analysis category
@@ -198,7 +198,8 @@ signal.
 \label{sec:mujets_control_trigger}
 Events are collected using the loosely-isolated, $\eta$-restricted
 \verb!HLT_IsoMu24_eta2p1! trigger, which was in place throughout the 8 \tev
-data-taking period. The efficiency of this trigger was measured by the muon \emph{POG} 
+data taking period. The efficiency of this trigger was measured by the muon
+\emph{POG} 
 using a tag-and-probe method [REF], in bins of the muon \Pt and $\eta$, as summarised 
 in table~\ref{tab:muon-trig-effs}. Statistical uncertainties are at the per-
 mille level, and systematics are assumed to be 1\%.
@@ -472,20 +473,20 @@ subtracted from the hadronic control sample yields as a function of \mhtmet and
 \alphat, subsequently leaving a pure sample of QCD MJ events (SHOW PLOTS?).
 By considering events both above and below the nominal \mhtmet threshold of
 1.25, the ratio \rmhtmet is constructed, defined as:
-
+% 
 \begin{equation}
 \label{eq:rmhtmet}
 \rmhtmet = \frac{N(\mhtmet<1.25)}{N(\mhtmet>1.25)}
 \end{equation}
-
+% 
 A fit is made to this variable as a function of \alphat, using an exponential 
 functional form:
-
+% 
 \begin{equation}
 \label{eq:fit_exp}
 \rmhtmet(\alphat) = e^{{-(a+b.\alphat)}^n}
 \end{equation}
-
+% 
 both for $n=0$ and also when $n$ is allowed to float as a free 
 parameter within the range $0-2$ in order to span the scenarios from flat to a
 Gaussian form. Example distributions and fits are shown in FIGURE.

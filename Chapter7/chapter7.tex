@@ -19,11 +19,11 @@ The likelihood model is defined for each analysis category of \nb and \nj.
 Let $n^i$ be the observed number of events 
 following full selection in the $i^{th}$ of $N$ bins of \HT. The likelihood is 
 constructed as:
-
+% 
 \begin{equation}
 L_{hadronic} = \prod_i \text{Pois}(n^i | b^i + s^i),
 \end{equation}
-
+% 
 where $b^i$ and $s^i$ represent the expected number of background events from SM 
 processes and the expected number of signal events in the bin $i$. Pois is 
 the Poisson distribution:
@@ -37,7 +37,7 @@ f(k;\lambda) = \frac{1}{k!}\lambda^k e^{-\lambda}.
 The background is considered to be entirely EWK in origin ($b^i = \text{EWK}^i$), as QCD
 is made negligible, so can be deconstructed using the relative fraction
 of \zinv events, \fzinv as:
-
+% 
 \begin{equation}
 \text{Z}_{inv}^i = \fzinv \times \text{EWK}^i,
 \label{eq:ewk_frac_z}
@@ -46,7 +46,7 @@ of \zinv events, \fzinv as:
 \text{ttW}^i = (1-\fzinv) \times \text{EWK}^i,
 \label{eq:ewk_frac_ttw}
 \end{equation}
-
+% 
 where $\text{EWK}^i$ is number of expected events from the total EWK background,
 $\text{Z}_{\text{inv}}^i$ is the number of expected events from the \zinv 
 contribution and $\text{ttW}^i$ is the number of expect events from the W boson 
@@ -60,15 +60,15 @@ respectively, with corresponding yields in MC: \mcp, \mcm, \mcmm. These are
 further seperated into seperate contributions from \zinv,
 \mczinv, and \text{ttW}, \mcttw. Transfer
 factors are defined as the inverse as those of the analysis:
-
+% 
 \begin{equation}
 r_{\gamma}^i = \frac{\mcp}{\mczinv};\;\;\;
 r_{\mu\mu}^i = \frac{\mcmm}{\mczinv};\;\;\;
 r_{\mu}^i = \frac{\mcm}{\mcttw},
 \end{equation}
-
+% 
 and so likelihoods are written as:
-
+% 
 \begin{equation}
 L_{\gamma} = \prod_i \text{Pois}(n_{\gamma}^i | \rhopz \cdot r^i_{\gamma} \cdot Z^i_{\text{inv}}),
 \label{eq:lterm_pho}
@@ -81,7 +81,7 @@ L_{\mu\mu} = \prod_i \text{Pois}(n_{\mu\mu}^i | \rhommz \cdot r^i_{\mu\mu} \cdot
 L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot r^i_{\mu} \cdot ttW^i + s_{\mu}^i).
 \label{eq:lterm_mu}
 \end{equation}
-
+% 
 Both equations~\ref{eq:lterm_pho} and \ref{eq:lterm_mumu} are used to estimate the 
 maximum likelihood value for $Z^i_{\text{inv}}$, alongside equation~\ref{eq:lterm_mu} 
 for $ttW^i$, all considered simulataneously through the relationships defined in
@@ -94,7 +94,7 @@ section~\ref{sec:closure_tests} and represented by the terms \sigmapz, \sigmammz
 and \sigmamw, their 
 values summarised in table~\ref{tab:syst_values}. Systematics enter the total
 likelihood as:
-
+% 
 \begin{equation}
 L_{\gamma\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhopz, \sigmapz),
 \end{equation}
@@ -104,30 +104,30 @@ L_{\mu\mu\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhommz, \sigmammz),
 \begin{equation}
 L_{\mu\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhomw, \sigmamw),
 \end{equation}
-
+% 
 where Logn is the log-normal distribution (as recommended by \cite{cousins-log-normal}):
-
+% 
 \begin{equation}
 \text{Logn}(x|\mu, \sigma) = \frac{1}{x\sqrt{2\pi}\text{ln}k} exp \Bigg(-\frac{\text{ln}^2 \big(\frac{x}{\mu}\big)}{2\text{ln}^2k}\Bigg); k = 1+\sigma
 \end{equation}
-
+% 
 These terms are combined as:
-
+% 
 \begin{equation}
 L_{EWK\text{ syst.}} = L_{\gamma\text{ syst.}} \times L_{\mu\mu\text{ syst.}} \times L_{\mu\text{ syst.}}.
 \end{equation}
-
+% 
 For $\nb \geq 2$ categories, the \mj control sample is used to predict \zinv and
 \ttw combined, giving:
-
+% 
 \begin{equation}
 {r'}^i_{\mu} = \frac{\mcm}{MC^i_{\ttbar + W + Z_{\text{inv}}}};
 \end{equation}
-
+% 
 \begin{equation}
 L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot {r'}_{\mu}^i \cdot {EWK}^i + s_{\mu}^i).
 \end{equation}
-
+% 
 Terms corresponding to the \mmj and \gj samples are subsequently dropped.
 
 \subsection{Signal Contribution}
@@ -142,32 +142,32 @@ be the corrective factor to the signal yield floated to accomodate this uncertai
 Therefore the yield of signal events for the hadronic sample, $s^i$, and the 
 yield of signal in the muon sample (i.e. ``signal contamination''), $s^i_{\mu}$,
 can be written as:
-
+% 
 \begin{equation}
 s^i = f\rho_{sig}xl\epsilon_{had}
 \end{equation}
 \begin{equation}
 s^i_{\mu} = f\rho_{sig}xl\epsilon_{\mu}
 \end{equation}
-
+% 
 Furthermore, the signal systematic contribution to the likelihood is included as
 the term:
-
+% 
 \begin{equation}
 L_{signal} = \text{Logn}(1.0 | \rho_{sig}, \delta)
 \end{equation}
-
+% 
 \subsection{Total Likelihood}
 
 For a given analysis category $k$ (\nb, \nj), the total likelihood is 
 constructed as:
-
+% 
 \begin{equation}
 L^k_{total} = L^k_{hadronic} \times L^k_{\mu} \times L^k_{\gamma} \times L^k_{\mu\mu} 
 \times L^k_{\text{EWK syst.}}
 \label{eq:total_likelihood}
 \end{equation}
-
+% 
 The number of nuisance paramters varies between different analysis categories, 
 dependent on the number of \HT bins and control samples, summarised in
 table~\ref{tab:nuisance_param_summary}.
@@ -195,12 +195,12 @@ table~\ref{tab:nuisance_param_summary}.
 \end{table}
 
 When considering signal an additional term is introduced:
-
+% 
 \begin{equation}
 L = L_{signal} \times \prod_k L^k_{total}
 \label{eq:total_likelihood_wsignal}
 \end{equation}
-
+% 
 % \subsection{Notes on syst modelling}
 % lognormal instead of gaussian PDF - these are used for systematics modelling.
 

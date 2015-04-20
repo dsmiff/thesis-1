@@ -412,13 +412,13 @@ b-tag formula method described in section (REF), but instead using the
 recommended method for \FULLSIM samples with an additional \FULLSIM to \FASTSIM 
 correction factor applied. The original correction is dependent on the generator
 level content of an event, and is defined as:
-
+% 
 \begin{equation}
 w = \frac{SF_b \epsilon \times (1-SF_b \epsilon) \times SF_{c,light} m \times (1
 -SF_{c,light} m)}{\epsilon \times (1-\epsilon) \times m \times (1-m)}
 \label{eq:btag_fullsim_weight}
 \end{equation}
-
+% 
 where $\epsilon(\Pt, \eta)$ and $m(\Pt, \eta)$ are the b-tagging efficiency and 
 mistagging rate, respectively. These factors are functions of \Pt and $\eta$, and
 are measured in SM MC for both the hadronic and \mj samples, in each \HT bin.
@@ -662,18 +662,18 @@ Signal models are tested for compatibility with observations using
 a modified frequentist method, namely `CLs' \cite{alread-cls}. A test statistic,
 used to rank
 experiments from least to most signal-like, is defined as:
-
+% 
 \begin{equation}
 q_{\mu} = \begin{cases} -2log\lambda(\mu), & \mbox{if } \mu \geq \hat{\mu} \\
 0., & \mbox{otherwise} \end{cases}
 \end{equation},
-
+% 
 where:
-
+% 
 \begin{equation}
 \lambda(\mu) = \frac{L(\mu, \theta_{\mu})}{L(\hat{\mu}, \hat{\theta_{\mu}})}
 \end{equation}.
-
+% 
 $\mu$ is the signal strength parameter (equivalent to the variable $f$ defined
 in section~\ref{sec:results_likelihood}, where $\mu=1$ represents a given
 signal at it's nominal cross-section), $\theta_{\mu}$ is a set of nuisance 
@@ -684,11 +684,11 @@ Distributions of $q_{\mu}$ are populated from pseudo-experiments under
 signal+background and background only hypotheses. For a given observation, 1
 minus the quantiles of each distribution are used to determine $CL_{s+b}$ and
 $CL_b$, which are used to define:
-
+% 
 \begin{equation}
 CL_s = \frac{CL_{s+b}}{CL_b}
 \end{equation}.
-
+% 
 A model is considered to be excluded at 95\% confidence level if
 $CL_s \leq 0.05$.
 

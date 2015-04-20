@@ -91,12 +91,12 @@ $\alpha$ was first proposed by Randall et al. in 2008 \cite{Randall:2008rw},
 and later translated into the transverse plane for use with LHC analyses
 \cite{CMS:2008vya, CMS-PAS-SUS-09-001}.
 \alphat is defined for di-jets as:
-
+% 
 \begin{equation}
 \alphat = \frac{ \sqrt{E_T^{j_2}/E_T^{j_1}} }{ \sqrt{2(1-cos(\Delta \phi))} }
 \label{eq:alphat_di-jet}
 \end{equation}
-
+% 
 where $E_T^{j_1}$ and $E_T^{j_2}$ are the reconstructed transverse energies of 
 the first and second jets respectively, and $\Delta \phi$ is the seperation 
 between the two jets in the $\phi$ plane.
@@ -106,20 +106,20 @@ have an \alphat value of 0.5, whereas
 events with \met originating from jet energy mismeasurements will have values of $\alphat<0.5$.
 Events containing sources of genuine \met, whether from SM or BSM sources, can have values
 of $\alphat > 0.5$. REWORD?
-
+% 
 % \begin{equation}
 % \alphat = \frac{E_T^{j_2}}{M_T} = \frac{\sqrt{}}
 % \label{eq:alphat_di-jet}
 % \end{equation}
-
+% 
 % where $E_T^{j_2}$ is the transverse energy of the less energetic jet and $M_T$ 
 % is the transverse mass of the di-jet system, defined as:
-
+% 
 % \begin{equation}
 % M_T = \sqrt{\bigg(\sum^2_{i=1}{E_T^{j_i}}\bigg)^2 - \bigg(\sum^2_{i=1}{p_x^{j_i}}\bigg)^2 - \bigg(\sum^2_{i=1}{p_y^{j_i}}\bigg)^2}
 % \label{eq:mt}
 % \end{equation}
-
+% 
 % where $E_T^{j_i}$, $p_x^{j_i}$ and $p_y^{j_i}$ are the transverse energy and 
 % transverse momentum in the $x$ and $y$ planes, for the jet $j_i$.
 
@@ -127,13 +127,13 @@ The \alphat variable can be generalised to an n-jet case by considering the even
 pseudo-di-jet system, constructing each pseudo-jet such that the difference in \HT
 between each pseudo-jet system, \deltaHT, is minimised. \alphat then takes the 
 form:
-
+% 
 \begin{equation}
 \alphat = \frac{1}{2} \times \frac{\HT-\deltaHT}{\sqrt{\HT^2 - \mht^2}} = 
 \frac{1}{2} \times \frac{1-\frac{\deltaHT}{\HT}}{\sqrt{1 - \big(\frac{\mht}{\HT}\big)^2}}
 \label{eq:alphat_njet}
 \end{equation}
-
+% 
 \emph{show plots of correlations between \mht and \deltaHT for QCD, 
 signal, SM real MET etc.}
 
@@ -362,11 +362,11 @@ requirement of the bin.
 
 All triggers were present throughout \runone, however the 
 \\\verb!HLT_HT200_AlphaT0p57! trigger was used as part of the `Parked' stream of 
-data which was reconstructed at a later date, following the active data-taking 
+data which was reconstructed at a later date, following the active data taking 
 period. During data taking triggers may have `prescale' factors applied to them 
 such that only every $n$ triggered events are actually recorded, however all of
 the signal triggers remained unprescaled for the entirety of the 8 \tev
-data-taking.
+data taking.
 
 
 \subsection{Selection Criteria}
@@ -446,12 +446,12 @@ system which are damaged or known to be faulty, where jets can be mis-measured o
 lost as a result. To protect against this, for a given jet $j$, the angular separation
 between the event \mht, calculated excluding jet $j$, and the jet itself is used, defined
 as:
-
+% 
 \begin{equation}
 \dphistar_j = \Delta \phi\big(\overrightarrow{\Pt}_j,-\sum_{i\neq j}{\overrightarrow{\Pt}_i}\big)
 \label{eq:biasdphi}
 \end{equation}
-
+% 
 The advantage of this variable with respect to the widely used
 $\Delta R(jet, MHT)$ is it's detection of missing energy vectors caused by both
 under-measurements and over-measurements of a jet's transverse momentum.
@@ -551,47 +551,3 @@ inherently reliant on not only MC modelling, but also on the physics
 distribution of jet-flavours. For EWK samples, given the underlying abundance of
 low b jet multiplicity events, high \nb categories become dominated by
 mis-tagging of light-flavour jets, leading to large statistical uncertainties.
-
-% tie in with the split into nb and nj categories - necessary as stats will reduce, so we use
-% this `trick' to reduce errors
-
-% \begin{table}[ht!]
-%   \caption{A cutflow table old.}
-%   \label{tab:a_cutflow_table_old}
-%   \centering
-%   \footnotesize
-%   \begin{tabular}{ lcc }
-%     \hline
-%     \hline
-%     Cut Name    & Eff (\%) & N \\
-%     \hline
-%   Dummy filters & 100.00  & 161866108.00 \\
-%   Good Event JSON Filter  & 94.97  & 153716716.00 \\
-%   Dummy JSON output & 100.00  & 153716716.00 \\
-%   $\nj \geq 2$  & 98.68  & 151689664.00 \\
-%   HBHE Noise Filter & 99.60  & 151081235.00 \\
-%   MET Filters & 99.21  & 149885013.00 \\
-%   Vertex Noise Filter & 99.91  & 149746017.00 \\
-%   $\text{EMF}_{max}$ for all jets > 0.1 & 99.99  & 149738417.00 \\
-%   Leading jet $\eta$ < 2.5  & 96.96  & 145189478.00 \\
-%   Leading jet \Pt > 100 \gev  & 92.99  & 135005283.00 \\
-%   Sub-Leading jet \Pt > 100 \gev  & 52.80  & 71285138.00 \\
-%   $n_{j, fail} = 0$ & 95.81  & 68297058.00 \\
-%   $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 98.88  & 67533409.00 \\
-%   $n_{e, fail} = 0$ & 100.00  & 67533409.00 \\
-%   $n_{\gamma, fail} = 0$  & 100.00  & 67533409.00 \\
-%   $n_{e} = 0$ & 99.84  & 67425458.00 \\
-%   $n_{\gamma} = 0$  & 99.66  & 67195215.00 \\
-%   $n_{\mu} = 0$ & 99.72  & 67006743.00 \\
-%   \mindphistar > 0.3  & 15.45  & 10349490.00 \\
-%   $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 10349485.00 \\
-%   recHitCut & 98.43  & 10187427.00 \\
-%   $n_{SITV} = 0$  & 86.81  & 8843261.00 \\
-%   DeadECAL Filter & 38.23  & 3380519.00 \\
-%   \alphat > 0.55  & 8.64  & 292217.00 \\
-%   \mhtmet < 1.25  & 8.85  & 25862.00 \\
-%     \hline
-%     \hline
-%   \end{tabular}
-% \end{table}
-

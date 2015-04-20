@@ -7,7 +7,7 @@ General:
   ☐ 'mistag' or 'mis-tag'?
   ☐ sort out order of references - particular in theory chapter
   ☐ remove paragraph indentation after equations
-  ☐ data-taking to data taking
+  ✔ data-taking to data taking @done (15-04-20 11:59)
 Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
@@ -26,9 +26,9 @@ Chapter 2 - Theory:
  ☐ gravitational lensing and rotational curves refs
  ☐ MSSM 100 free params ref
  ☐ MSSM breaking refs
- ☐ write SUSY hierarchy
+ ✔ write SUSY hierarchy @done (15-04-20 11:58)
  ☐ get better T2cc feynman diagram
- ☐ introduce deltaM and define  
+ ✔ introduce deltaM and define   @done (15-04-20 11:58)
 
 Chapter 3 - Detector:
 
@@ -46,15 +46,16 @@ Chapter 5 - Analysis:
   ☐ give an example of the MET threshold for a corresponding alphaT cut
   ☐ what about jet eta cuts? only lead jet?!
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
-  ☐ elaborate/describe differently the muon tag and probe method for trigger
-  ☐ formula method section @high
+  ✘ elaborate/describe differently the muon tag and probe method for trigger @cancelled (15-04-20 11:57)
+  ✔ formula method section @high @done (15-04-20 11:57)
   ☐ reference full MHTMET plot in text
   ☐ change example distributions to be MC only
+  ☐ finish formula method section!
 
 Chapter 5_2 - Samples:
   ☐ work out what process Zinv is compared to with photons. gamma to what??
     ☐ get the corresponding value of the normalisation!
-  ☐ madgraph and pythia versions
+  ✔ madgraph and pythia versions @done (15-04-20 11:57)
   ✔ btag scale factors @done (15-04-19 18:41)
   ☐ ref for recent CMS studies - likely not public
   ☐ reword corr factors table caption
