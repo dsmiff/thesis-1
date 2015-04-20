@@ -16,13 +16,14 @@
 Analyses searching in the jets and \met final state encounter significant 
 backgrounds from SM sources of both genuine and fake \met. Genuine \met 
 originates from W and Z boson production, decaying with one or more neutrinos in
-the final state. In this analysis backgrounds predictions are made for these
+the final state. In this analysis background predictions are made for these
 processes using 
-extrapolations into the signal region fromindependent, process-specific control
-samples, as described at length in chapter~\ref{ch:6}.
+extrapolations into the signal region from independent, process-specific control
+samples, as described in chapter~\ref{ch:6}.
 Fake \met predominantly is found due to mismeasurements of QCD 
-multijet (MJ) events, which are the dominant process in the hadronic environment and 
-phase space considered in this analysis due to very large cross sections. 
+multijet (MJ) events, which is the dominant process in the hadronic environment
+and 
+phase space considered in this analysis due to it's very large cross section. 
 Small inconsistencies in the handling of such large backgrounds or rare detector
 effects can therefore 
 have a significant impact on an analysis. This background is reduced to an 
@@ -48,24 +49,25 @@ possible simplified model final states, while reducing background yields to a
 minimum.
 
 \begin{table}[ht!]
-  \caption{\HT binning used for each \nj and \nb category.\label{tab:ht-bins}}
+  \caption{\HT bin lower bounds used for each \nj and \nb category.\label
+  {tab:ht-bins}}
   \centering
   % \scriptsize % too big to fit on page
-  \tiny
+  \small
   \begin{tabular}{ lrrrrrrrrrrr }
     \hline
     \hline
     (\nj,\nb)       & \multicolumn{11}{c}{\HT bins (\gev)}                                                                                \\
     \hline
-    (2-3,0)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
-    (2-3,1)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
-    (2-3,2)           & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
-%    (2-3,3)          & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
-    ($\geq$4,0)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
-    ($\geq$4,1)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & 875--975 & 975--1075 & $>$1075  \\
-    ($\geq$4,2)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
-    ($\geq$4,3)       & 200--275 & 275--325 & 325--375 & 375--475 & 475--575 & 575--675 & 675--775 & 775--875 & $>$875   & \multicolumn{2}{c}{} \\
-    ($\geq$4,$\geq$4) & 200--275 & 275--325 & 325--375 & $>$375   & \multicolumn{7}{c}{}                                                        \\
+    (2-3,0)           & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & 875 & 975 & $>$1075  \\
+    (2-3,1)           & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & 875 & 975 & $>$1075  \\
+    (2-3,2)           & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & $>$875   & \multicolumn{2}{c}{} \\
+%    (2-3,3)          & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & $>$875   & \multicolumn{2}{c}{} \\
+    ($\geq$4,0)       & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & 875 & 975 & $>$1075  \\
+    ($\geq$4,1)       & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & 875 & 975 & $>$1075  \\
+    ($\geq$4,2)       & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & $>$875   & \multicolumn{2}{c}{} \\
+    ($\geq$4,3)       & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & $>$875   & \multicolumn{2}{c}{} \\
+    ($\geq$4,$\geq$4) & 200 & 275 & 325 & $>$375   & \multicolumn{7}{c}{}                                                        \\
     \hline
     \hline
   \end{tabular}
@@ -77,16 +79,16 @@ The main analysis signal region is described in the remainder of this chapter.
 \subsection{The \alphat kinematic variable}
 \label{sec:alphat}
 
-QCD multijet (MJ) events dominate the SM background in any search with multiple jets 
-in the final state. Jet energy mis-measurements in a 
-purely QCD MJ event can lead to non-negligible amounts of \mht, therefore 
-passing the signal selection. Attempting
-to accurately measure this contribution is
+% QCD multijet (MJ) events dominate the SM background in any search with multiple jets 
+% in the final state. Jet energy mis-measurements in a 
+% purely QCD MJ event can lead to non-negligible amounts of \mht, therefore 
+% passing the signal selection.
+Attempting to accurately measure the QCD contribution to the total background is
 made very difficult given the hadronic environment of the LHC, and the lack of 
 precise measurements and calculations of the large multijet cross sections. As an 
 alternative approach, the goal of this analysis is to reduce QCD down to an
-entirely negligible level. This is 
-achieved with the dimensionless kinematic variable, \alphat. The di-jet variable
+entirely negligible level through the use of the dimensionless kinematic
+variable, \alphat. The di-jet variable
 $\alpha$ was first proposed by Randall et al. in 2008 \cite{Randall:2008rw},
 and later translated into the transverse plane for use with LHC analyses
 \cite{CMS:2008vya, CMS-PAS-SUS-09-001}.
@@ -104,8 +106,8 @@ between the two jets in the $\phi$ plane.
 A perfectly measured di-jet event containing back to back jets in $\phi$ of equal energy will
 have an \alphat value of 0.5, whereas 
 events with \met originating from jet energy mismeasurements will have values of $\alphat<0.5$.
-Events containing sources of genuine \met, whether from SM or BSM sources, can have values
-of $\alphat > 0.5$. REWORD?
+Only events containing sources of genuine \met, whether from SM or BSM sources,
+can have values of $\alphat > 0.5$.
 % 
 % \begin{equation}
 % \alphat = \frac{E_T^{j_2}}{M_T} = \frac{\sqrt{}}
@@ -145,22 +147,21 @@ signal, SM real MET etc.}
 
 This section outlines the relevant background sources of this analysis, and
 describes the basic hadronic pre-selection made for the signal 
-region, as well as the relevant trigger requirements and data and 
-simulation samples used.
+region, as well as the relevant trigger requirements.
+
 
 \subsection{Standard Model Backgrounds}
-
 \subsubsection{Genuine \met}
-The dominant EWK source of genuine missing energy comes from a Z-boson 
+The dominant EWK source of genuine missing energy comes from Z-boson 
 production where the Z decays
-via neutrinos, \zinv, with associated jet production. This source of background
+to neutrinos, \zinv, with associated jet production. This source of background
 is considered irreducible.
 
 Events containing leptonic decays of W bosons, \wlnu, originating either
 from direct W production, or via the decay of a top quark from \ttbar 
 production, are sources of genuine 
-missing energy. The presence of a weakly interacting neutrino which evades
-detection leads to an energy imbalance. Such events are vetoed in the signal
+missing energy, due to the presence of a weakly interacting neutrino which
+evades detection. Such events are vetoed in the signal
 region due to the presence of a 
 lepton, however if the lepton is missed for whatever reason, leptonic W decays 
 can pass the signal selection, forming a significant SM background.
@@ -179,6 +180,8 @@ the lepton ID criteria. There are numerous potential causes, the
 most prevalent being soft-leptons below ID threshold or non-isolated leptons 
 which pass the ID quality cuts but fail the isolation requirement.
 
+
+\emph{move to selection section}
 Events containing a Single Isolated Track (SIT) are vetoed from the signal 
 region. This tracker based veto is particularly useful for vetoing additional events 
 that contain leptons which have failed our lepton ID requirements entirely, and 
@@ -189,16 +192,18 @@ leptons.
 While originally designed to target hadronically decaying tau leptons, 
 this requirement reduces the remaining lost-lepton backgrounds also.
 
-Following the reduction of such processes using the lepton, photon and SIT vetoes,
+Following the hadronic selection requirements,
 any remaining contributions from SM EWK backgrounds are estimated using a 
 fully data-driven transfer factor technique, described in detail in
 Section~\ref{sec:background_overview}. A breakdown of the EWK background 
 composition is shown in Figure~\ref{fig:background_decomp}, split into the main 
-categories of \zinv, \wj, \ttbar and other residual backgrounds.
+categories of \zinv, \wj, \ttbar and remaining residual backgrounds, such as
+single top quark, diboson and Drell-Yann processes.
 
 \begin{figure}[hb!]
 \centering
-\hspace{1.8cm}\includegraphics[width=0.7\textwidth]{Figs/ra1_had_bg_comp_v2.pdf}
+\hspace{1.8cm}\includegraphics[width=0.7\textwidth, trim=0 30 0 30, clip=true]
+{Figs/ra1_had_bg_comp_v2.pdf}
 \label{fig:background_decomp}
 \caption{Charts showing a breakdown of the full electroweak background as a 
 function of \nj and \nb, for \HT>200 \gev.}
@@ -214,9 +219,11 @@ order to enter the signal region, an event must contain missing energy,
 
 The most common way for a balanced multijet (MJ) event to gain \mht is when one 
 or more of the jets are mis-measured, such that their vectorial sum then leads to non-zero
-\mht. This can due to detector issues, or due to stochastic fluctuations within
+\mht. This can occur due to detector issues, or due to stochastic fluctuations
+within
 the inherant jet-resolution of the 
-detector. The former is protected against using a filter to remove events 
+detector. The former is protected against by the \met filters summarised in 
+table~\ref{tab:met_filters} and using a filter to remove events
 affected by non-functioning or damaged regions of the ECAL system, where 
 events are vetoed if they contain significant energy deposits within a given 
 distance from a known problematic region. The latter is dealt with using a
@@ -230,10 +237,10 @@ event is measured as imbalanced and containing \mht. Events such as these are la
 removed with the \alphat requirement, however in addition a requirement is made on the
 ratio \mhtmet.
 
-Finally, it is also possible for rare instrumentation effects to lead to jet 
-energy
-mismeasurements. To protect against this, a suite of MET filters are defined by 
-the JetMET \emph{POG}, and are applied to all selections.
+% Finally, it is also possible for rare instrumentation effects to lead to jet 
+% energy
+% mismeasurements. To protect against this, a suite of MET filters are defined by 
+% the JetMET \emph{POG}, and are applied to all selections.
 
 
 \subsection{Signal Triggers}
@@ -242,14 +249,14 @@ Events are collected at the HLT using a dedicated suite of
 signal triggers. For an event to pass the trigger
 requirements, it must exceed both a \HT and an \alphat threshold. Trigger rate 
 can be maintained by varying the
-threshold requirement on each of these independent `legs', as shown in Table~
-\ref{tab:sig_trigs}. Each \HT bin in the analysis is seeded by a single trigger,
-with a 25 \gev offset in online and offline \HT, with the exception of the
-200 \gev bin.
+threshold requirement on each of these independent requirements, as shown in
+Table~\ref{tab:sig_trigs}. Each \HT bin in the analysis is seeded by a
+particular signal
+trigger, with a 25 \gev offset in online and offline \HT, with the exception of
+the 200 \gev bin.
 
-Exclusively for this analysis, the additional `Parked' trigger with \HT > 200
-\gev and \alphat > 0.57 thresholds is included, seeding the new \HT> 200 \gev
-bin. Such a low
+Exclusively for this analysis, the additional `Parked' trigger 
+\\\verb!HT200_AlphaT0p57! is included, seeding the new \HT> 200 \gev bin. Such a low
 threshold allow sensitivity to be maintained for softer physics signatures, such
 as those expected from compressed spectra SUSY decays.
 
@@ -275,12 +282,13 @@ as those expected from compressed spectra SUSY decays.
   \end{tabular}
 \end{table}
 
-Trigger efficiencies are measured against an unbiased single muon reference trigger,
+Trigger efficiencies are measured using an unbiased single muon reference
+trigger,
 \\\verb!HLT_IsoMu24_eta2p1!, using a muon tag and probe method where a
 single muon is selected and then subsequently ignored from the analysis when 
 calculating event level variables such as \HT, \mht and \alphat. Efficiencies 
 are measured for each \HT bin and for each \nj category, as summarised in 
-table~\ref{tab:sig_trigs}. Example trigger `'turn-on' curves are shown for the 3 
+table~\ref{tab:sig_trigs}. Example trigger `turn-on' curves are shown for the 3 
 lowest \HT bins in figures~\ref{fig:eff_alphat_le3j} and \ref{fig:eff_alphat_ge4j}.
 The curves are shown both differentially and cumulatively, to show the
 efficiency for events of a given \alphat value and above an \alphat threshold
@@ -289,14 +297,13 @@ Across the higher \HT
 bins the triggers are fully efficient. Inefficiencies in the low \HT bins are
 understood as being due to the relatively high threshold L1 seed trigger used
 for this region, in order to maintain
-low rates in the high PU environment throughout \runone. Lower 
+low rates in the high PU environment encountered throughout \runone. Lower 
 efficiencies are also observed in the \njhigh category attributed to the presence of 
 softer jets, as an increased number of jets must equate to the same total \HT 
 requirement of the bin.
 
 \begin{figure}[!ht]
   \centering
-    
     \begin{subfigure}[b]{0.48\textwidth}
       \includegraphics[width=\textwidth,page=11, trim=0 0 0 20, clip=true]{figures/trigger/HT200_275_73_73_36_AlphaT_le3j_RunAtFNAL}
       \caption{Differential, $200 < \HT < 275 $ \gev}
@@ -372,19 +379,21 @@ data taking.
 \subsection{Selection Criteria}
 \label{sec:selec_crit}
 
-Event selection for the hadronic signal region are chosen with an aim to 
+Event selection requirements for the hadronic signal region are chosen with an
+aim to
 maintain sensitivity to hadronically decaying sparticle production, while 
 rejecting as many QCD-type processes as possible. To do so, requirements are 
 made on:
 
 \begin{description}
 \item[Jets]
-Events are required to contain at least two jets are required and have at least
+Events are required to contain at least two jets with at least
 $\HT > 200$ \gev, to ensure the presence of significant hadronic activity. As 
 mentioned previously, events are categorised by \HT, with jet \Pt
 requirements on the two leading and the remaining additional jets seperately.
 The jet \Pt thresholds vary as a function of the \HT bin of the event, as shown in
-Table~\ref{tab:jet_pt_thresholds}.
+Table~\ref{tab:jet_pt_thresholds}, in order to maintain a similar kinematic
+phase space throughout the \HT range.
 
 \begin{table}[ht!]
   \caption{Jet \Et thresholds per \HT bin.\label{tab:jet_pt_thresholds}}
@@ -393,7 +402,7 @@ Table~\ref{tab:jet_pt_thresholds}.
   \begin{tabular}{ lcccc }
     \hline
     \hline
-    \HT bin    & 200--275 & 275--325 & 325--375 & $>$375 \\
+    \HT bin        & 200--275 & 275--325 & 325--375 & $>$375 \\
     \hline
     Lead jet       & 73.3     & 73.3     & 86.7     & 100.0  \\
     Second jet     & 73.3     & 73.3     & 86.7     & 100.0  \\
@@ -404,7 +413,7 @@ Table~\ref{tab:jet_pt_thresholds}.
 \end{table}
 
 \item[Leptons]
-Any events containing leptons are vetoed to ensure purely hadronic events
+Any events containing leptons are vetoed to ensure hadronic events
 are considered, thereby suppressing events with genuine \met from leptonic decays to
 neutrinos such as \wlnu.
 
@@ -414,7 +423,8 @@ vetoes, in order to maintain a purely hadronic environment.
 
 \item[Event]
 The topology of the event is required to pass a threshold of $\alphat > 0.55$, 
-which itself varies as a function of the \HT category being considered, always 
+a requirement which itself varies as a function of the \HT category being
+considered, always
 chosen such that QCD MJ events contribute a negligible amount to the overall 
 background. While no absolute \met requirement is made, the cut on 
 \alphat imposes an implied threshold, which maintains the analysis'
@@ -452,29 +462,26 @@ as:
 \label{eq:biasdphi}
 \end{equation}
 % 
-The advantage of this variable with respect to the widely used
-$\Delta R(jet, MHT)$ is it's detection of missing energy vectors caused by both
-under-measurements and over-measurements of a jet's transverse momentum.
-
+The advantage of this variable with respect to the often used
+$\Delta R(jet, MHT)$ is it's detection of spurious missing energy vectors caused
+by both under-measurements and over-measurements of a jet's transverse momentum.
 A small value of $\dphistar_j$ indicates that the momentum vector of $j$
 is aligned with the \mht vector, implying the jet is mis-measured. Events are 
-vetoed if a jet with \dphistar<0.5 is within $\Delta R < 0.3$ of a known
+vetoed if a jet with \dphistar< 0.5 is within $\Delta R < 0.3$ of a known
 `dead' region of the ECAL.
 
 Events are required to have \dphistar > 0.3, in order to clean any remaining 
-events containing sources of genuine \met overlapping with a jet (see
+events with jets containing sources of genuine \met jet (see
 appendix~\ref{ch:app_dphistar}).
-\emph{is it right to explain this is for genuine met sources as well??}
 
-For bins of $\HT>375$ \gev the leading two jets in the event are required to 
-have $\Pt>100$ \gev, with all additional jets having half the requirement of
-$\Pt>50$ \gev. In order to maintain a similar kinematic phase space throughout
-the many \HT bins, these jet \Pt requirements are scaled for the lower \HT bins 
-as shown in Table~\ref{tab:jet_pt_thresholds}.
-
+% For bins of $\HT>375$ \gev the leading two jets in the event are required to 
+% have $\Pt>100$ \gev, with all additional jets having half the requirement of
+% $\Pt>50$ \gev. In order to maintain a similar kinematic phase space throughout
+% the many \HT bins, these jet \Pt requirements are scaled for the lower \HT bins 
+% as shown in Table~\ref{tab:jet_pt_thresholds}.
 
 Example distributions of \alphat, \HT, \mht and jet \Pt  are shown in
-figure~\ref{fig:datamc_had_inc}, comparing data against MC.
+figure~\ref{fig:datamc_had_inc}, comparing data against MC. CHANGE TO MC ONLY
 
 \begin{figure}[!ht]
   \centering
@@ -551,3 +558,5 @@ inherently reliant on not only MC modelling, but also on the physics
 distribution of jet-flavours. For EWK samples, given the underlying abundance of
 low b jet multiplicity events, high \nb categories become dominated by
 mis-tagging of light-flavour jets, leading to large statistical uncertainties.
+
+\emph{FINISH}
