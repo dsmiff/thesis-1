@@ -6,32 +6,36 @@ General:
   ☐ change all 'btag' to 'b-tag'
   ☐ 'mistag' or 'mis-tag'?
   ☐ sort out order of references - particular in theory chapter
-  ✔ remove paragraph indentation after equations @done (15-04-20 12:10)
-  ✔ data-taking to data taking @done (15-04-20 11:59)
+  ☐ new names for T2cc and T2degen
+
 Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
-
- ☐ add labels to jaxo diagram
  ☐ add quarks to 2.2 SU(3) section
  ☐ book ref for SM
- ✔ ref for higgs mechanism @done (15-04-20 12:36)
  ☐ not enough CP violation reference
  ☐ read through SM hierarchy prob section
  ☐ read through SUSY hierarchy prob section
  ☐ ref for 1TeV SUSY particles for reasonable solution to hierarchy prob
- ✔ SMS model ref @done (15-04-20 12:26)
- ✔ WMAP ref @done (15-04-20 12:20)
  ☐ annihilation cross-sections of what???
  ☐ gravitational lensing and rotational curves refs
- ✔ MSSM 100 free params ref @done (15-04-20 12:18)
  ☐ MSSM breaking refs
- ✔ write SUSY hierarchy @done (15-04-20 11:58)
  ☐ get better T2cc feynman diagram
- ✔ introduce deltaM and define   @done (15-04-20 11:58)
  ☐ image for sparticle hierarchy term
+ ☐ what is electroweak bariogenesis?
+ ☐ include some current limits for mass degenerate susy
+ ☐ charm genPt plots
 
 Chapter 3 - Detector:
+ ☐ PU profile plot
+ ☐ energy and/or position resolutions for
+    ☐ tracker
+    ☐ ecal
+    ☐ hcal
+    ☐ muon systems
+ ☐ how many layers of
+ ✔ reference TAI!!! @done (15-04-20 14:10)
+ ☐ GRID reference
 
 Chapter 4 - Objects:
   ☐ look up and briefly describe jet corrections
@@ -40,38 +44,36 @@ Chapter 4 - Objects:
   ☐ add ID effs? probably should...
   ☐ mention photon->ee conversions - need to protect against
   ☐ add subsystem mentions for each object
-  ☐ reference TAI!!!
-  ☐ GRID reference
+  ✘ remove direct references to the control samples (not yet defined) @cancelled (15-04-20 16:47)
+  ☐ define what PFCandidates even are!
+  ☐ do >< for photon and electron tables
 
 Chapter 5 - Analysis:
   ☐ give an example of the MET threshold for a corresponding alphaT cut
   ☐ what about jet eta cuts? only lead jet?!
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
-  ✘ elaborate/describe differently the muon tag and probe method for trigger @cancelled (15-04-20 11:57)
-  ✔ formula method section @high @done (15-04-20 11:57)
   ☐ reference full MHTMET plot in text
   ☐ change example distributions to be MC only
   ☐ finish formula method section!
+  ☐ move SIT at ll182 to selection section
+  ☐ remove repetition of MHTMET cut explanation
 
 Chapter 5_2 - Samples:
   ☐ work out what process Zinv is compared to with photons. gamma to what??
     ☐ get the corresponding value of the normalisation!
-  ✔ madgraph and pythia versions @done (15-04-20 11:57)
-  ✔ btag scale factors @done (15-04-19 18:41)
   ☐ ref for recent CMS studies - likely not public
   ☐ reword corr factors table caption
 
 Chapter 6 - Background Estimation:
   ☐ MJ background estimation systematics???
+  ☐ MJ distributions
 
 Chapter 7 - Results:
  ☐ add pull and p-value distributions
  ☐ write section for p-values and pulls
- ☐ update all plot captions
+ ✔ update all plot captions @done (15-04-20 18:45)
 
 Chapter 9 - Interpretation:
-  ✔ work out how to motivate the choices of categories @done (15-04-20 11:48)
-      ✔ maybe just individual limits for each? @done (15-04-20 11:48)
   ☐ motivate the choice of bins with individual limits
   ☐ make plot showing agreement between t2cc and t24body_boost along dm=10
   ☐ PDF observations of the two signal models
@@ -97,6 +99,21 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✘ add labels to jaxo diagram @cancelled (15-04-20 12:39) @project(Chapter 2 - Theory)
+ ✔ ref for higgs mechanism @done (15-04-20 12:36) @project(Chapter 2 - Theory)
+ ✔ SMS model ref @done (15-04-20 12:26) @project(Chapter 2 - Theory)
+ ✔ WMAP ref @done (15-04-20 12:20) @project(Chapter 2 - Theory)
+ ✔ MSSM 100 free params ref @done (15-04-20 12:18) @project(Chapter 2 - Theory)
+ ✔ remove paragraph indentation after equations @done (15-04-20 12:10) @project(General)
+ ✔ data-taking to data taking @done (15-04-20 11:59) @project(General)
+ ✔ write SUSY hierarchy @done (15-04-20 11:58) @project(Chapter 2 - Theory)
+ ✔ introduce deltaM and define   @done (15-04-20 11:58) @project(Chapter 2 - Theory)
+ ✘ elaborate/describe differently the muon tag and probe method for trigger @cancelled (15-04-20 11:57) @project(Chapter 5 - Analysis)
+ ✔ madgraph and pythia versions @done (15-04-20 11:57) @project(Chapter 5_2 - Samples)
+ ✔ formula method section @high @done (15-04-20 11:57) @project(Chapter 5 - Analysis)
+ ✔ work out how to motivate the choices of categories @done (15-04-20 11:48) @project(Chapter 9 - Interpretation)
+ ✔ maybe just individual limits for each? @done (15-04-20 11:48) @project(Chapter 9 - Interpretation)
+ ✔ btag scale factors @done (15-04-19 18:41) @project(Chapter 5_2 - Samples)
  ✔ stop decay section @done (15-04-18 09:52) @project(Chapter 2 - Theory)
  ✔ get lumis for HT and JetHT samples @done (15-04-18 09:52) @project(Chapter 5_2 - Samples)
  ✔ finish hierarchy problem section @done (15-04-17 18:40) @project(Chapter 2 - Theory)
