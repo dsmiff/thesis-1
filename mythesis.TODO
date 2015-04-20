@@ -7,7 +7,7 @@ General:
   ☐ 'mistag' or 'mis-tag'?
   ☐ sort out order of references - particular in theory chapter
   ☐ remove paragraph indentation after equations
-
+  ☐ data-taking to data taking
 Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
@@ -55,7 +55,9 @@ Chapter 5_2 - Samples:
   ☐ work out what process Zinv is compared to with photons. gamma to what??
     ☐ get the corresponding value of the normalisation!
   ☐ madgraph and pythia versions
-  ☐ btag scale factors
+  ✔ btag scale factors @done (15-04-19 18:41)
+  ☐ ref for recent CMS studies - likely not public
+  ☐ reword corr factors table caption
 
 Chapter 6 - Background Estimation:
   ☐ MJ background estimation systematics???
@@ -63,10 +65,12 @@ Chapter 6 - Background Estimation:
 Chapter 7 - Results:
  ☐ add pull and p-value distributions
  ☐ write section for p-values and pulls
+ ☐ update all plot captions
 
 Chapter 9 - Interpretation:
-  ☐ work out how to motivate the choices of categories
-      - maybe just individual limits for each?
+  ✔ work out how to motivate the choices of categories @done (15-04-20 11:48)
+      ✔ maybe just individual limits for each? @done (15-04-20 11:48)
+  ☐ motivate the choice of bins with individual limits
   ☐ make plot showing agreement between t2cc and t24body_boost along dm=10
   ☐ PDF observations of the two signal models
   ☐ mhtmet cut syst
