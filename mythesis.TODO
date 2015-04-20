@@ -6,7 +6,7 @@ General:
   ☐ change all 'btag' to 'b-tag'
   ☐ 'mistag' or 'mis-tag'?
   ☐ sort out order of references - particular in theory chapter
-  ☐ remove paragraph indentation after equations
+  ✔ remove paragraph indentation after equations @done (15-04-20 12:10)
   ✔ data-taking to data taking @done (15-04-20 11:59)
 Chapter 1 - Introduction:
 
@@ -15,20 +15,21 @@ Chapter 2 - Theory:
  ☐ add labels to jaxo diagram
  ☐ add quarks to 2.2 SU(3) section
  ☐ book ref for SM
- ☐ ref for higgs mechanism
+ ✔ ref for higgs mechanism @done (15-04-20 12:36)
  ☐ not enough CP violation reference
  ☐ read through SM hierarchy prob section
  ☐ read through SUSY hierarchy prob section
  ☐ ref for 1TeV SUSY particles for reasonable solution to hierarchy prob
- ☐ SMS model ref
- ☐ WMAP ref
+ ✔ SMS model ref @done (15-04-20 12:26)
+ ✔ WMAP ref @done (15-04-20 12:20)
  ☐ annihilation cross-sections of what???
  ☐ gravitational lensing and rotational curves refs
- ☐ MSSM 100 free params ref
+ ✔ MSSM 100 free params ref @done (15-04-20 12:18)
  ☐ MSSM breaking refs
  ✔ write SUSY hierarchy @done (15-04-20 11:58)
  ☐ get better T2cc feynman diagram
  ✔ introduce deltaM and define   @done (15-04-20 11:58)
+ ☐ image for sparticle hierarchy term
 
 Chapter 3 - Detector:
 
@@ -93,9 +94,6 @@ Appendix 2 - DPhiStar in signal region:
   ☐ get dphi cut eff plots from rob
 
 Defintions:
-
-
-
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
