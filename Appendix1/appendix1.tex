@@ -76,28 +76,31 @@
 \newpage
 \subsection*{PDF}
 \label{sec:t2cc_pdf_plots}
-\emph{FIND PLOTS}
 
-% \begin{figure}[ht!]
-%   \centering
-%   \begin{subfigure}[b]{0.6\textwidth}
-%     \includegraphics[width=\textwidth]{Figs/sms/t2cc/acc_pSigmaRel_m0_m12}
-%     \caption{$+1\sigma$}
-%     \label{fig:sms-pdf-up-t2cc}
-%   \end{subfigure}
-%   \begin{subfigure}[b]{0.6\textwidth}
-%     \includegraphics[width=\textwidth]{Figs/sms/t2cc/acc_cvRel_m0_m12}
-%     \caption{Nominal}
-%     \label{fig:sms-pdf-nominal-t2cc}
-%   \end{subfigure}
-%   \begin{subfigure}[b]{0.6\textwidth}
-%     \includegraphics[width=\textwidth]{Figs/sms/t2cc/acc_mSigmaRel_m0_m12}
-%     \caption{$-1\sigma$}
-%     \label{fig:sms-pdf-down-t2cc}
-%   \end{subfigure}
-%   \caption{PDF shit yo}
-%   \label{fig:sms-pdf-t2cc}
-% \end{figure}
+\begin{figure}[ht!]
+  \centering
+  \begin{subfigure}[b]{0.6\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v37/systs/acc_pSigmaRel_m0_m12}
+    \caption{$+1\sigma$}
+    \label{fig:sms-pdf-up-t2cc}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.6\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v37/systs/acc_cvRel_m0_m12}
+    \caption{Nominal}
+    \label{fig:sms-pdf-nominal-t2cc}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.6\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v37/systs/acc_mSigmaRel_m0_m12}
+    \caption{$-1\sigma$}
+    \label{fig:sms-pdf-down-t2cc}
+  \end{subfigure}
+  \caption{PDF uncertainties as a function of the \texttt{T2cc} scan plane,
+  calcualted using a PDF4LHC `envelope' calculation to determine a central band
+  (\ref{fig:sms-pdf-nominal-t2cc}), and $\pm1\sigma$ variations
+  (\ref{fig:sms-pdf-up-t2cc} and \ref{fig:sms-pdf-down-t2cc}). Plots are a for
+  a fully inclusive selection on \HT, \nj and \nb.}
+  \label{fig:sms-pdf-t2cc}
+\end{figure}
 
 
 \newpage
@@ -287,6 +290,30 @@
   \label{fig:sms-deadecal-t2cc}
 \end{figure}
 
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v37/systs/total_T2cc_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v37/systs/total_T2cc_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v37/systs/total_T2cc_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2cc/v37/systs/total_T2cc_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}\\
+  \caption{The total systematic uncertainty as a function of the \texttt{T2cc} scan plane,
+  where all individual systematic contributions are summed in quadrature.
+  Each plot represents one of the four most sensitive 
+  analysis cateogires (\nb, \nj), with the inclusive requirement \HT>200 \gev.}
+  \label{fig:sms-totalsyst-t2cc}
+\end{figure}
 
 \newpage
 \section*{\texttt{T2degen}}
@@ -571,4 +598,29 @@
   mass plane. Each plot represents one of the four most sensitive 
   analysis cateogires (\nb, \nj), with the inclusive requirement \HT>200 \gev.}
   \label{fig:sms-deadecal-t2degen}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2degen/v19/systs/total_T2_4body_eq0b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2degen/v19/systs/total_T2_4body_eq1b_le3j_incl.pdf}
+    \caption{\njlow, $\nb = 1$.}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2degen/v19/systs/total_T2_4body_eq0b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 0$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{Figs/sms/t2degen/v19/systs/total_T2_4body_eq1b_ge4j_incl.pdf}
+    \caption{\njhigh, $\nb = 1$.}
+  \end{subfigure}\\
+  \caption{The total systematic uncertainty as a function of the \texttt{T2Degen} scan plane,
+  where all individual systematic contributions are summed in quadrature.
+  Each plot represents one of the four most sensitive 
+  analysis cateogires (\nb, \nj), with the inclusive requirement \HT>200 \gev.}
+  \label{fig:sms-totalsyst-t2degen}
 \end{figure}
