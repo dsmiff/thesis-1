@@ -450,11 +450,13 @@ sensitivity to the PDF set is investigated by comparing results using three
 other commonly used PDF sets, namely \textsc{CT10}, \textsc{NNPDF2.1} and
 \textsc{MSTW2008}. Following PDF4LHC recommendations, the output is 
 combined to determine an `envelope' value combining the three alternative PDF 
-sets, and a related systematic uncertainty  \cite{pdf4lhc}.
+sets, and a related systematic uncertainty \cite{pdf4lhc}.
 
-\emph{T2cc plots and some observations}
-
-\emph{T2degen plots and some observations}
+The effect on selection efficiency was studied for \texttt{T2cc} with the
+central value and upwards and downwards fluctuation plots summarised in
+figure~\ref{fig:sms-pdf-t2cc}. The largest variations are taken as the
+systematic uncertainty for both the \texttt{T2cc} and \texttt{T2Degen} models,
+given their identical initial states.
 
 \subsection{MHT/MET cleaning cut}
 \label{sec:mhtmet_syst}
@@ -589,35 +591,35 @@ of the luminosity measurement, as quoted by Lumi \emph{POG} at 2.3\% [REF].
 \subsection{Summary}
 
 For each mass point in the scan plane, the total systematic is the sum in 
-quadrature of all individual contributions. Summaries are shown in
-tables~\ref{tab:sms-syst-t2cc} and \ref{tab:sms-syst-t2_4body}.
-
-\emph{NOTE: these values are all placeholders and need to be scrutinised!}
+quadrature of all individual contributions. Representative values are summarised
+in tables~\ref{tab:sms-syst-t2cc} and \ref{tab:sms-syst-t2_4body}, with full
+results shown in figures~\ref{fig:sms-totalsyst-t2cc} and
+\ref{fig:sms-totalsyst-t2degen} in the mass plane of \texttt{T2cc} and
+\texttt{T2Degen} respecitively.
 
 \begin{table}[h!]
   \caption{Representative ranges for each contribution to the total
     systematic uncertainty in the signal efficiency times acceptance
     for each relevant event category for the \texttt{T2cc}
     interpretation. See text for further details on other
-    (fixed) contributions to the total systematic uncertainty. REWORD 
+    (fixed) contributions to the total systematic uncertainty. 
     \label{tab:sms-syst-t2cc}
   }   
   \centering
-  \small
-  \begin{tabular}{ lcccccccc }
+  \begin{tabular}{ lcccccccccc }
     \hline
     \hline
-    Category   & \multicolumn{2}{c}{(2--3,0)} & \multicolumn{2}{c}{($\geq 4$,0)} & \multicolumn{2}{c}{($\geq 4$,1)} & \multicolumn{2}{c}{($\geq 2$,$\geq 0$)} \\
-    Range      & Min.                         & Max.                             & Min.                             & Max. & Min. & Max. & Min. & Max.        \\
+    Category   & \multicolumn{2}{c}{(2--3,0)} & \multicolumn{2}{c}{(2--3,1)}     &\multicolumn{2}{c}{($\geq 4$,0)} & \multicolumn{2}{c}{($\geq 4$,1)} & \multicolumn{2}{c}{($\geq 2$,$\geq 0$)} \\
+    Range      & Min.      & Max.             & Min.     & Max.                  & Min.    & Max.                  & Min.    & Max.        & Min.    & Max.  \\
     \hline
-    PDF        &                              &                                  &                                  &      &      &      & 0.04 & 0.14        \\
-    JES        & 0.00                         & 0.08                             & 0.06                             & 0.22 & 0.01 & 0.30 &      &             \\
-    ISR        & 0.09                         & 0.21                             & 0.16                             & 0.24 & 0.15 & 0.24 &      &             \\
-    b-tag SF   & 0.01                         & 0.02                             & 0.01                             & 0.02 & 0.03 & 0.04 &      &             \\
-    \mhtmet    & 0.02                         & 0.02                             & 0.02                             & 0.02 & 0.02 & 0.02 &      &             \\
-    Dead ECAL  & 0.02                         & 0.02                             & 0.02                             & 0.02 & 0.02 & 0.02 &      &             \\
+    PDF        &           &                  &          &                       &         &                       &         &             & 0.04    & 0.14  \\
+    JES        & 0.01      & 0.26             & 0.00     & 0.23                  & 0.09    & 0.30                  & 0.06    & 0.25        && \\
+    ISR        & 0.17      & 0.25             & 0.16     & 0.25                  & 0.16    & 0.24                  & 0.14    & 0.24        && \\
+    b-tag SF   & 0.01      & 0.02             & 0.02     & 0.08                  & 0.01    & 0.03                  & 0.02    & 0.07        && \\
+    \mht/\met  & 0.02      & 0.02             & 0.02     & 0.02                  & 0.02    & 0.02                  & 0.02    & 0.02        && \\
+    Dead ECAL  & 0.02      & 0.02             & 0.02     & 0.02                  & 0.02    & 0.02                  & 0.02    & 0.02        && \\
     \hline
-    Total syst & 0.12                         & 0.21                             & 0.22                             & 0.32 & 0.23 & 0.39 &      &             \\
+    Total syst & 0.21      & 0.26             & 0.21     & 0.29                  & 0.25    & 0.28                  & 0.25    & 0.31        && \\
     \hline
     \hline
   \end{tabular}
@@ -628,30 +630,28 @@ tables~\ref{tab:sms-syst-t2cc} and \ref{tab:sms-syst-t2_4body}.
     systematic uncertainty in the signal efficiency times acceptance
     for each relevant event category for the \texttt{T2Degen}
     interpretation. See text for further details on other
-    (fixed) contributions to the total systematic uncertainty. REWORD
+    (fixed) contributions to the total systematic uncertainty. 
     \label{tab:sms-syst-t2_4body}
   }   
   \centering
-  \small
-  \begin{tabular}{ lcccccccc }
+  \begin{tabular}{ lcccccccccc }
     \hline
     \hline
-    Category   & \multicolumn{2}{c}{(2--3,0)} & \multicolumn{2}{c}{($\geq 4$,0)} & \multicolumn{2}{c}{($\geq 4$,1)} & \multicolumn{2}{c}{($\geq 2$,$\geq 0$)} \\
-    Range      & Min.                         & Max.                             & Min.                             & Max. & Min. & Max. & Min. & Max.        \\
-    \hline
-    PDF        &                              &                                  &                                  &      &      &      & 0.04 & 0.14        \\
-    JES        & 0.00                         & 0.08                             & 0.06                             & 0.22 & 0.01 & 0.30 &      &             \\
-    ISR        & 0.09                         & 0.21                             & 0.16                             & 0.24 & 0.15 & 0.24 &      &             \\
-    b-tag SF   & 0.01                         & 0.02                             & 0.01                             & 0.02 & 0.03 & 0.04 &      &             \\
-    \mhtmet    & 0.02                         & 0.02                             & 0.02                             & 0.02 & 0.02 & 0.02 &      &             \\
-    Dead ECAL  & 0.02                         & 0.02                             & 0.02                             & 0.02 & 0.02 & 0.02 &      &             \\
-    \hline
-    Total syst & 0.12                         & 0.21                             & 0.22                             & 0.32 & 0.23 & 0.39 &      &             \\
+    Category   & \multicolumn{2}{c}{(2--3,0)} & \multicolumn{2}{c}{(2--3,1)}     &\multicolumn{2}{c}{($\geq 4$,0)} & \multicolumn{2}{c}{($\geq 4$,1)} & \multicolumn{2}{c}{($\geq 2$,$\geq 0$)} \\ 
+    Range      & Min.      & Max.             & Min.     & Max.                  & Min.    & Max.                  & Min.    & Max.                   & Min.      & Max.\\
+    \hline                                                                                                                                              
+    PDF        &           &                  &          &                       &         &                       &         &                        & 0.04      & 0.14\\
+    JES        & 0.01      & 0.20             & 0.01     & 0.28                  & 0.03    & 0.28                  & 0.02    & 0.30                   &           &\\
+    ISR        & 0.10      & 0.25             & 0.11     & 0.25                  & 0.15    & 0.24                  & 0.07    & 0.25                   &           &\\
+    b-tag SF   & 0.01      & 0.03             & 0.01     & 0.08                  & 0.02    & 0.04                  & 0.01    & 0.07                   &           &\\
+    \mht/\met  & 0.02      & 0.02             & 0.02     & 0.02                  & 0.02    & 0.02                  & 0.02    &  0.02                  &           &\\
+    Dead ECAL  & 0.02      & 0.02             & 0.02     & 0.02                  & 0.02    & 0.02                  & 0.02    &  0.02                  &           &\\
+    \hline                                                                                                                                                        
+    Total syst & 0.24      & 0.27             & 0.25     & 0.38                  & 0.24    & 0.34                  & 0.25    & 0.33                   &           &\\
     \hline
     \hline
   \end{tabular}
 \end{table}
-
 
 %********************************** % Third Section  *************************************
 \section{Limits on models of Supersymmetry}  %Section - 1.3
