@@ -146,18 +146,18 @@ selection in the \gj control sample and as a veto in the hadronic signal region.
     \hline
     % Conversion safe electron veto & Yes                                & Yes &
 % https://twiki.cern.ch/twiki/bin/viewauth/CMS/ConversionTools#Conversion_safe_electron_veto_fo  \\
-    Single Tower H/E              & 0.05                               & 0.05                               
+    Single Tower H/E              & < 0.05                               & < 0.05                               
     & Ratio of energy deposited in the HCAL towers within $\Delta R<0.15$ of the ECAL 
     supercluster, and the ECAL supercluster itself. \\
-    $\sigma_{i\eta i\eta}$        & 0.11                               & 0.31 & 
+    $\sigma_{i\eta i\eta}$        & < 0.11                               & < 0.31 & 
     The cluster shape covariance of the ECAL supercluster in the $\eta$
     dimension. \\
     &&&\multirow{5}{4cm}{PF-based isolation requirements to ensure no hadronic or electromagnetic 
     activity with a cone defined by $\Delta R < 0.3$. RHO CORRECTION}\\
-    PF charged hadron isolation   & 0.70                               & 0.50                               & \\
-    PF neutral hadron isolation   & 0.4 + 0.04 $\times$ $\Pt^{\gamma}$  & 1.5 + 0.04 $\times$ $\Pt^{\gamma}$&
+    PF charged hadron isolation   & < 0.70                               & < 0.50                               & \\
+    PF neutral hadron isolation   & < 0.4 + 0.04 $\times$ $\Pt^{\gamma}$  & < 1.5 + 0.04 $\times$ $\Pt^{\gamma}$&
     \\
-    PF photon isolation           & 0.5 + 0.005 $\times$ $\Pt^{\gamma}$ & 1.0 + 0.005 $\times$ $\Pt^{\gamma}$& \\
+    PF photon isolation           & < 0.5 + 0.005 $\times$ $\Pt^{\gamma}$ & < 1.0 + 0.005 $\times$ $\Pt^{\gamma}$& \\
     \\
     \hline
     \hline
@@ -182,28 +182,31 @@ summarised in table~\ref{tab:ele-id}.
     Categories                                               & Barrel    & EndCap    & 
     Description \\
     \hline
-    $\Delta \eta_{In}$                                       & 0.007     & 0.009     & 
+    $\Delta \eta_{In}$                                       & < 0.007     &
+    < 0.009     & 
     The difference between the track and ECAL supercluser in the $\eta$ dimension. \\
-    $\Delta \phi_{In}$                                       & 0.15      & 0.10      &
+    $\Delta \phi_{In}$                                       & < 0.15      &
+    < 0.10      &
     The difference between the track and ECAL supercluser in the $\phi$ dimension. \\
-    $\sigma_{i\eta i\eta}$                                   & 0.01      & 0.03      & 
+    $\sigma_{i\eta i\eta}$                                   & < 0.01      &
+    < 0.03      & 
     The cluster shape covariance of the ECAL supercluster in the $\eta$ dimension. \\
-    H/E                                                      & 0.12      & 0.10      &
+    H/E                                                      & < 0.12      & < 0.10      &
     Ratio of energy deposited in the HCAL towers within $\Delta R<0.15$ of the ECAL 
     supercluster, and the ECAL supercluster itself. \\
-    d0 (vtx)                                                 & 0.02      & 0.02      &
+    d0 (vtx)                                                 & < 0.02      & < 0.02      &
     The transverse distance of the track from the PV. \\
-    dZ (vtx)                                                 & 0.2       & 0.20      &
+    dZ (vtx)                                                 & < 0.2       & < 0.20      &
     The longitudinal distance of the track from the PV. \\
-    $\lvert(1/E_{\textrm{ECAL}} - 1/p_{\textrm{trk}})\rvert$ & 0.05      & 0.05      &
+    $\lvert(1/E_{\textrm{ECAL}} - 1/p_{\textrm{trk}})\rvert$ & < 0.05      & < 0.05      &
     Comparison of the ECAL supercluster energy and the track \Pt. Suppresses low 
     \Pt fakes. \\
-    PF relative isolation                                    & 0.15      & 0.15      &
+    PF relative isolation                                    & < 0.15      & 0< .15      &
     PF based isolation calculated from particle activity within a cone of
     $\Delta R < 0.3$. \\
     Vertex fit probability                                   & 10$^{-6}$ & 10$^{-6}$ &
     Probability of fit to potential conversion tracks. \\
-    Missing hits                                             & 1         & 1         &
+    Missing hits                                             & $\leq1$         & $\leq1$         &
     Number of missing tracker hits due to possible conversion. \\
     \hline
     \hline
