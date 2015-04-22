@@ -21,21 +21,16 @@ Chapter 2 - Theory:
  ☐ gravitational lensing and rotational curves refs
  ☐ MSSM breaking refs
  ☐ get better T2cc feynman diagram
- ☐ image for sparticle hierarchy term
  ☐ what is electroweak bariogenesis?
  ☐ include some current limits for mass degenerate susy
  ☐ charm genPt plots
 
 Chapter 3 - Detector:
- ☐ PU profile plot
  ☐ energy and/or position resolutions for
     ☐ tracker
     ☐ ecal
     ☐ hcal
     ☐ muon systems
- ☐ how many layers of
- ✔ reference TAI!!! @done (15-04-20 14:10)
- ☐ GRID reference
 
 Chapter 4 - Objects:
   ☐ look up and briefly describe jet corrections
@@ -44,25 +39,23 @@ Chapter 4 - Objects:
   ☐ add ID effs? probably should...
   ☐ mention photon->ee conversions - need to protect against
   ☐ add subsystem mentions for each object
-  ✘ remove direct references to the control samples (not yet defined) @cancelled (15-04-20 16:47)
-  ☐ define what PFCandidates even are!
-  ☐ do >< for photon and electron tables
+  ✔ define what PFCandidates even are! @done (15-04-22 11:46)
+  ✔ do >< for photon and electron tables @done (15-04-22 11:44)
 
 Chapter 5 - Analysis:
   ☐ give an example of the MET threshold for a corresponding alphaT cut
   ☐ what about jet eta cuts? only lead jet?!
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
-  ☐ reference full MHTMET plot in text
-  ☐ change example distributions to be MC only
+  ✔ change example distributions to be MC only @done (15-04-22 13:41)
+  ☐ switch axes of background composition charts
   ☐ finish formula method section!
-  ☐ move SIT at ll182 to selection section
-  ☐ remove repetition of MHTMET cut explanation
+  ✔ remove repetition of MHTMET cut explanation @done (15-04-22 13:06)
 
 Chapter 5_2 - Samples:
   ☐ work out what process Zinv is compared to with photons. gamma to what??
     ☐ get the corresponding value of the normalisation!
   ☐ ref for recent CMS studies - likely not public
-  ☐ reword corr factors table caption
+  ✔ reword corr factors table caption @done (15-04-22 11:50)
 
 Chapter 6 - Background Estimation:
   ☐ MJ background estimation systematics???
@@ -71,7 +64,6 @@ Chapter 6 - Background Estimation:
 Chapter 7 - Results:
  ☐ add pull and p-value distributions
  ☐ write section for p-values and pulls
- ✔ update all plot captions @done (15-04-20 18:45)
 
 Chapter 9 - Interpretation:
   ☐ motivate the choice of bins with individual limits
@@ -80,8 +72,7 @@ Chapter 9 - Interpretation:
   ☐ mhtmet cut syst
     ☐ fastsim/fullsim syst
     ☐ observations from two signal models
-  ☐ update systematic values for both signal models 
-  ☐ place holder limits (from AN)
+  ☐ update systematic table values for both signal models 
   ☐ should mention somewhere the smoothing procedure
 
 Chapter 10 - Conclusion:
@@ -99,6 +90,16 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ image for sparticle hierarchy term @done (15-04-21 17:08) @project(Chapter 2 - Theory)
+ ✔ PU profile plot @done (15-04-21 17:07) @project(Chapter 3 - Detector)
+ ✔ how many layers of @done (15-04-21 17:07) @project(Chapter 3 - Detector)
+ ✔ reference TAI!!! @done (15-04-20 14:10) @project(Chapter 3 - Detector)
+ ✔ GRID reference @done (15-04-21 17:08) @project(Chapter 3 - Detector)
+ ✘ remove direct references to the control samples (not yet defined) @cancelled (15-04-20 16:47) @project(Chapter 4 - Objects)
+ ✔ reference full MHTMET plot in text @done (15-04-21 17:09) @project(Chapter 5 - Analysis)
+ ✔ move SIT at ll182 to selection section @done (15-04-21 17:08) @project(Chapter 5 - Analysis)
+ ✔ update all plot captions @done (15-04-20 18:45) @project(Chapter 7 - Results)
+ ✔ place holder limits (from AN) @done (15-04-21 11:33) @project(Chapter 9 - Interpretation)
  ✘ add labels to jaxo diagram @cancelled (15-04-20 12:39) @project(Chapter 2 - Theory)
  ✔ ref for higgs mechanism @done (15-04-20 12:36) @project(Chapter 2 - Theory)
  ✔ SMS model ref @done (15-04-20 12:26) @project(Chapter 2 - Theory)
