@@ -148,37 +148,39 @@ described in further detail in the following sections.
 % $m_h$, divergent terms arise which make the mass increase up to values in
 % strong disagreement with the experimentally observed $m_h \approx 125 \gev$ REF.
 
-Particles couple to the Higgs field according to Yukawa couplings, $\lambda_f$,
+Particles couple to the Higgs field according to the Yukawa couplings,
+$\lambda_f$,
 proportionally to the mass of a the particle. For fermions, the Lagrangian
 interaction term is
 % 
 \begin{equation}
-\mathcal{L}_\text{Yukawa} = - \lambda_f \bar{\Psi}H\Psi
-\end{equation},
+\mathcal{L}_\text{Yukawa} = - \lambda_f \bar{\Psi}H\Psi,
+\end{equation}
 % 
 where $\Psi$ is a spin-1/2 Dirac field, and $H$ the Higgs field. It can be shown
 that Higgs mass corrections due to beyond tree-level interactions with fermion
-fields (shown in figure~\ref{quantum_higgs_fermion_loop}) can be written as
+fields (shown in figure~\ref{fig:quantum_higgs_fermion_loop}) can be shown to be
 % 
 \begin{equation}
 % \Delta m_H^2 = -\frac{|\lambda_f|^2}{8\pi^2} [\Lambda_{\text{cut}}^2 + \ldots]
-\Delta m_H^2 \propto -|\lambda_f|^2 \Lambda_{\text{cut}}^2
+\Delta m_H^2 \propto -|\lambda_f|^2 \Lambda_{\text{cut}}^2,
 \label{eq:higgs_corr_hierarchy}
-\end{equation},
+\end{equation}
 % 
 where $\Lambda_{\text{cut}}$ is the cut-off energy scale, up to which the SM is
-valid, typically taken to be the Planck scale, leading to a quadratically
+valid, typically taken to be the Planck scale. This therefore leads to a
+quadratically
 divergent correction to $m_H$. Such corrections cause significant tension
 between the theoretically calculated value of $m_H$ and the experimentally
 measured value, $m_H \simeq 125$ \gev \cite{Chatrchyan:2012ufa, Aad:2012tfa},
-requiring significant `fine-tuning' to bring in agreement. This disagreement is
-known as the Hierarchy Problem.
+requiring significant `fine-tuning' to bring into agreement. This disagreement
+is known as the Hierarchy Problem.
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.47\textwidth,trim=0 250 0 0, clip=true]
 {Figs/feynman/600px-Hqmc-vector.png}
-\caption{Quantum self-corrections to the Higgs mass from a fermion top quark
+\caption{Quantum self-corrections to the Higgs mass from a fermionic top quark
 loop.}
 \label{fig:quantum_higgs_fermion_loop}
 \end{figure}
@@ -234,8 +236,9 @@ described in the following two sections.
 \subsubsection{Hierarchy Problem}
 While in the SM the Higgs gains corrections to its mass from fermion-loop
 induced self-interactions, the presence of bosonic super-partners to these
-fermions provide additional diagrams (figure~\ref{fig:quantum_higgs_sboson_loop}),
-giving oppositely signed corrective terms,
+fermions in SUSY provides additional diagrams (figure~\ref
+{fig:quantum_higgs_sboson_loop}),
+which contribute oppositely signed corrective terms,
 % 
 \begin{equation}
 % \Delta m_H^2 = 2 \times \frac{\lambda_S}{16\pi^2}[\Lambda_{\text{cut}}^2 +\ldots]
@@ -245,13 +248,13 @@ giving oppositely signed corrective terms,
 where $\lambda_S$ is bosonic super-partner's Yukawa coupling. The introduction
 of these super-partners, and therefore their additional corrective terms,
 provides an elegant solution to the hierarchy problem, where quadratic
-divergences to $m_H$ are effectively cancelled.
+divergences to $m_H$ are effectively cancelled by sparticle loop contributions.
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.47\textwidth,trim=0 0 0 250, clip=true]
 {Figs/feynman/600px-Hqmc-vector.png}
-\caption{Quantum self-corrections to the Higgs mass from a bosonic stop squark
+\caption{Quantum self-corrections to the Higgs mass from a bosonic stop
 loop.}
 \label{fig:quantum_higgs_sboson_loop}
 \end{figure}
