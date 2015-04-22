@@ -19,7 +19,7 @@ signal contamination in the control region). Interpretations are made using a
 selected subset of the most sensitive analysis 
 categories, but an inclusive \HT selection. The analysis categories used are 
 selected after an inspection of each for their significance given signal 
-injection from specific mass points (REF).
+injection from specific mass points.
 
 \subsection{T2cc}
 \label{sec:t2cc_eff}
@@ -52,8 +52,8 @@ predominantly away from the diagonal. Again, given the increased kinematic phase
 space of the larger mass splitting scenarios, more jets can be in 
 acceptance.
 
-\emph{somewhere describe the significance plots, leading to the choice of these 
-particularly categories.}
+% \emph{somewhere describe the significance plots, leading to the choice of these 
+% particularly categories.}
 
 Signal contamination in the \mj selection is shown to be negligible, given the 
 lack of leptons in the final state.
@@ -584,7 +584,6 @@ as flat contributions across the scan plan for all models.
   \end{tabular}
 \end{table}
 
-
 \subsection{Luminosity Measurement}
 Flat corrections across the scan plane are made to account for the uncertainty 
 of the luminosity measurement, as quoted by Lumi \emph{POG} at 2.3\% [REF].
@@ -596,17 +595,22 @@ quadrature of all individual contributions. Representative values are summarised
 in tables~\ref{tab:sms-syst-t2cc} and \ref{tab:sms-syst-t2_4body}, with full
 results shown in figures~\ref{fig:sms-totalsyst-t2cc} and
 \ref{fig:sms-totalsyst-t2degen} in the mass plane of \texttt{T2cc} and
-\texttt{T2Degen} respecitively.
+\texttt{T2Degen} respecitively. The distribution of total systematic values seen
+in these plots has been corrected to account for statistical fluctations through
+the use of an iterative smoothing procedure that considers a weighted average of
+each mass point value of the surrounding points. This procedure is carefully
+checked to ensure no loss of total systematic trends in either $m_{\sTop}$ or
+\deltam.
 
 \begin{table}[h!]
   \caption{Representative ranges for each contribution to the total
-    systematic uncertainty in the signal efficiency times acceptance
+    systematic uncertainty on the signal efficiency times acceptance
     for each relevant event category for the \texttt{T2cc}
-    interpretation. See text for further details on other
-    (fixed) contributions to the total systematic uncertainty. 
+    interpretation. 
     \label{tab:sms-syst-t2cc}
   }   
   \centering
+  \small
   \begin{tabular}{ lcccccccccc }
     \hline
     \hline
@@ -628,13 +632,13 @@ results shown in figures~\ref{fig:sms-totalsyst-t2cc} and
 
 \begin{table}[h!]
   \caption{Representative ranges for each contribution to the total
-    systematic uncertainty in the signal efficiency times acceptance
+    systematic uncertainty on the signal efficiency times acceptance
     for each relevant event category for the \texttt{T2Degen}
-    interpretation. See text for further details on other
-    (fixed) contributions to the total systematic uncertainty. 
+    interpretation.  
     \label{tab:sms-syst-t2_4body}
   }   
   \centering
+  \small
   \begin{tabular}{ lcccccccccc }
     \hline
     \hline
@@ -706,7 +710,7 @@ less than the nominal cross-section (NLO+NLL).
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.6\textwidth]{Figs/sms/t2cc/limit_v0/T2ccXSEC.pdf}
+\includegraphics[width=0.85\textwidth]{Figs/sms/t2cc/limit_v0/T2cc_toys_XSEC.pdf}
 \caption{The expected limit (red dashed line) with central band (thick red)
 and $\pm1\sigma$ and $\pm2\sigma$ uncertainty bands (thin red), and the
 observed limit (thick black) for the \texttt{T2cc} model. The limit is
@@ -718,7 +722,7 @@ calculated with an include \HT>200 \gev selection, and the analysis categories
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.6\textwidth]{Figs/sms/t2degen/limit_v0/T2degenXSEC_boosted.pdf}
+\includegraphics[width=0.85\textwidth]{Figs/sms/t2degen/limit_v0/T2degen_toys_XSEC.pdf}
 \caption{The expected limit (red dashed line) with central band (thick red)
 and $\pm1\sigma$ and $\pm2\sigma$ uncertainty bands (thin red), and the
 observed limit (thick black) for the \texttt{T2degen} model. The limit is
