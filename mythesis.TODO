@@ -9,6 +9,7 @@ General:
   ☐ new names for T2cc and T2degen
 
 Chapter 1 - Introduction:
+ ☐ write it!
 
 Chapter 2 - Theory:
  ☐ add quarks to 2.2 SU(3) section
@@ -20,10 +21,11 @@ Chapter 2 - Theory:
  ☐ annihilation cross-sections of what???
  ☐ gravitational lensing and rotational curves refs
  ☐ MSSM breaking refs
- ☐ get better T2cc feynman diagram
+ ✔ get better T2cc feynman diagram @done (15-04-22 15:42)
  ☐ what is electroweak bariogenesis?
  ☐ include some current limits for mass degenerate susy
  ☐ charm genPt plots
+ ☐ work out how to raise the T2cc diagram
 
 Chapter 3 - Detector:
  ☐ energy and/or position resolutions for
@@ -56,21 +58,23 @@ Chapter 5_2 - Samples:
     ☐ get the corresponding value of the normalisation!
   ☐ ref for recent CMS studies - likely not public
   ✔ reword corr factors table caption @done (15-04-22 11:50)
+  ☐ describe fastsim vs fullsim differences
 
 Chapter 6 - Background Estimation:
   ☐ MJ background estimation systematics???
   ☐ MJ distributions
 
 Chapter 7 - Results:
- ☐ add pull and p-value distributions
+ ✔ add pull and p-value distributions @done (15-04-22 15:49)
  ☐ write section for p-values and pulls
+ ☐ update results tables with correct numbers
 
 Chapter 9 - Interpretation:
   ☐ motivate the choice of bins with individual limits
   ☐ make plot showing agreement between t2cc and t24body_boost along dm=10
   ☐ PDF observations of the two signal models
   ☐ mhtmet cut syst
-    ☐ fastsim/fullsim syst
+    ✘ fastsim/fullsim syst @cancelled (15-04-22 15:49)
     ☐ observations from two signal models
   ☐ update systematic table values for both signal models 
   ☐ should mention somewhere the smoothing procedure
