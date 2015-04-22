@@ -339,30 +339,51 @@ and summarised in table~\ref{tab:ensemble-summary-posteriori}.
 \begin{figure}[h!]
   \centering
   \begin{subfigure}[b]{0.46\textwidth}
-    \includegraphics[width=\textwidth]{Figs/results/v0/pulls/pvalue_vs_cat.pdf}
-    \caption{pvalue vs cat.pdf}
-    \label{fig:pvalue_per_cat}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.46\textwidth}
-    \includegraphics[width=\textwidth]{Figs/results/v0/pulls/chris_latest2.pdf}
-    \caption{chris latest2.pdf}
-    \label{fig:french_flag}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/results/v0/pulls/pull_per_bin.pdf}
-    \caption{pull per bin.pdf}
+    \caption{}
     \label{fig:pull_distro}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/results/v0/pulls/chris_latest2.pdf}
+    \caption{}
+    \label{fig:french_flag}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/results/v0/pulls/pvalue_per_bin.pdf}
-    \caption{pvalue per bin.pdf}
+    \caption{}
     \label{fig:pvalue_distro}
   \end{subfigure}
-  \caption{Pulls and p's}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/results/v0/pulls/pvalue_vs_cat.pdf}
+    \caption{}
+    \label{fig:pvalue_per_cat}
+  \end{subfigure}
+  \caption{Pulls and pvalues}
   \label{fig:pull_analysis}
 \end{figure}
 
-\emph{what does each plot mean?}
+Pulls are defined as BLAH, (wilk's theorem etc.). A p-value is calculated as the
+quantile of the distribution of maximised likelihood values for an ensemble of
+pseudo-experiments. Figure~\ref{fig:pull_analysis} summarises the distributions
+of these two values.
+
+The 1D distribution of the
+pulls is shown in figure~\ref{fig:pull_distro}, with a Gaussian fit (red)
+indicating good Gaussian behaviour, with mean and sigma values statistically
+significant with 0 and 1, respectively. Furthermore, the distribution of th
+esepulls as a function of the \HT bin and
+the analysis category (\nb, \nj) is shown in figure~\ref{fig:french_flag} to be
+randomly distributed, with no apparent pattern to a given region.
+
+The distribution of p-values for every bin of \HT and analysis category can be
+seen in figure~\ref{fig:pvalue_distro} to be uniformly distributed between 0
+and 1. The same information is shown in figure~\ref{fig:pvalue_per_cat} when a
+single p-value is calculated for an entire \HT range, for each analysis
+category, where the lowest value is 0.19.
+
+These tests indicate no significant excesses, and that all observations are
+compatible with statistical fluctuations.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
