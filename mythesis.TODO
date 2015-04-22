@@ -7,6 +7,7 @@ General:
   ☐ 'mistag' or 'mis-tag'?
   ☐ sort out order of references - particular in theory chapter
   ☐ new names for T2cc and T2degen
+  ☐ pick a better style for the bibliography
 
 Chapter 1 - Introduction:
  ☐ write it!
@@ -23,7 +24,8 @@ Chapter 2 - Theory:
  ☐ MSSM breaking refs
  ✔ get better T2cc feynman diagram @done (15-04-22 15:42)
  ☐ what is electroweak bariogenesis?
- ☐ include some current limits for mass degenerate susy
+ ✔ include some current limits for mass degenerate susy @done (15-04-22 16:36)
+ ☐ briefly write about current limits
  ☐ charm genPt plots
  ☐ work out how to raise the T2cc diagram
 
@@ -66,20 +68,22 @@ Chapter 6 - Background Estimation:
 
 Chapter 7 - Results:
  ✔ add pull and p-value distributions @done (15-04-22 15:49)
- ☐ write section for p-values and pulls
+ ✔ write section for p-values and pulls @done (15-04-22 17:55)
  ☐ update results tables with correct numbers
+ ☐ defintion of pulls
 
 Chapter 9 - Interpretation:
-  ☐ motivate the choice of bins with individual limits
+  ✘ motivate the choice of bins with individual limits @cancelled (15-04-22 17:59)
   ☐ make plot showing agreement between t2cc and t24body_boost along dm=10
-  ☐ PDF observations of the two signal models
+  ✔ PDF observations of the two signal models @done (15-04-22 18:03)
   ☐ mhtmet cut syst
     ✘ fastsim/fullsim syst @cancelled (15-04-22 15:49)
     ☐ observations from two signal models
-  ☐ update systematic table values for both signal models 
-  ☐ should mention somewhere the smoothing procedure
+  ✔ update systematic table values for both signal models  @done (15-04-22 17:59)
+  ✔ should mention somewhere the smoothing procedure @done (15-04-22 18:03)
 
 Chapter 10 - Conclusion:
+  ☐ write it!
 
 Appendix 1 - Signal systematic plots:
   ☐ fill out all captions
