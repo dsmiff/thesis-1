@@ -373,26 +373,39 @@ figure~\ref{fig:model_feynman}.
 \end{figure}
 
 \subsubsection{Phenomenology}
-briefly cover this with some poinient plots from early T2cc studies
 
-\begin{itemize}
-\item gen level charm \Pt for multiple mass splittings \texttt{T2cc}
-\item lead jet pT? show's that they're not from charms?
-\item stop vectorial sum pt - lots of boost in events passing selection
-\end{itemize}
-
-\begin{figure}
+\begin{figure}[h!]
   \centering
-  \includegraphics[width=0.6\textwidth]{Figs/genlevel/compar_charmPt_0_0_inc_inc_T2cc_noCuts_sitv_log.pdf}
-  \caption{Genlevel charms n ting}
-  \label{fig:gen_charm_pt}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/genlevel/compar_charmPt_0_0_inc_inc_T2cc_noCuts_sitv_log.pdf}
+    \caption{\texttt{T2cc} - Generator $c$ \Pt}
+    \label{fig:t2cc_gen_charm_pt}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/genlevel/compar_T2_4body_genBPt_0_inc_inc_T2_noCuts_sitv_log.pdf}
+    \caption{\texttt{T2Degen} - Generator $b$ \Pt}
+    \label{fig:t2degen_gen_b_pt}
+  \end{subfigure}
+  \caption{}
+  \label{fig:gen_quark_pt}
 \end{figure}
 
-% show plots indicating how soft gen charms are near the diagonal, so are
-% invisible
+In the compressed region, characterised by small values of \deltam, decay
+products of the \sTop pair have very low momenta given the minimal amounts of
+energy available following the production of the \chiz. For example, 
+figure~\ref{fig:t2cc_gen_charm_pt} shows the transverse momentum of the
+generator level charm quark originating from the decay of the \sTop getting
+smaller
+with decreasing values of \deltam. The same observation is made for the \Pt of
+the b-quark present from the decay of the \sTop in the 4-body decay, as shown in
+figure~\ref{fig:t2degen_gen_b_pt}.
 
-% will talk later in the signal section about how we gain experimental sensitivity
-% to this topology (ISR!)
+The very low event kinematics of the small \deltam region present considerable
+experimental challenges, and as such this region in the past has typically not
+been considered for interpretations. The acceptance of such models in this
+region is heavily reliant on initial state particles radiated from the
+incoming partons, thereby boosting the soft SUSY decay system, as discussed
+later in chapter~\ref{ch:9}.
 
 \subsubsection{Current Experimental Limits}
 
