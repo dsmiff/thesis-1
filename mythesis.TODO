@@ -13,20 +13,16 @@ Chapter 1 - Introduction:
  ☐ write it!
 
 Chapter 2 - Theory:
- ☐ add quarks to 2.2 SU(3) section
- ☐ book ref for SM
  ☐ not enough CP violation reference
- ☐ read through SM hierarchy prob section
- ☐ read through SUSY hierarchy prob section
  ☐ ref for 1TeV SUSY particles for reasonable solution to hierarchy prob
  ☐ annihilation cross-sections of what???
  ☐ gravitational lensing and rotational curves refs
  ☐ MSSM breaking refs
- ✔ get better T2cc feynman diagram @done (15-04-22 15:42)
  ☐ what is electroweak bariogenesis?
- ✔ include some current limits for mass degenerate susy @done (15-04-22 16:36)
- ☐ briefly write about current limits
- ☐ charm genPt plots
+ ✔ briefly write about current limits @done (15-04-22 18:24)
+ ✔ charm genPt plots @done (15-04-23 09:25)
+ ☐ b genPt plot
+ ☐ write about gen plots - softer objects nearer the diagonal
  ☐ work out how to raise the T2cc diagram
 
 Chapter 3 - Detector:
@@ -43,23 +39,18 @@ Chapter 4 - Objects:
   ☐ add ID effs? probably should...
   ☐ mention photon->ee conversions - need to protect against
   ☐ add subsystem mentions for each object
-  ✔ define what PFCandidates even are! @done (15-04-22 11:46)
-  ✔ do >< for photon and electron tables @done (15-04-22 11:44)
 
 Chapter 5 - Analysis:
   ☐ give an example of the MET threshold for a corresponding alphaT cut
-  ☐ what about jet eta cuts? only lead jet?!
+  ✘ what about jet eta cuts? only lead jet?! @cancelled (15-04-23 13:44)
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
-  ✔ change example distributions to be MC only @done (15-04-22 13:41)
-  ☐ switch axes of background composition charts
+  ✔ switch axes of background composition charts @done (15-04-23 14:01)
   ☐ finish formula method section!
-  ✔ remove repetition of MHTMET cut explanation @done (15-04-22 13:06)
 
 Chapter 5_2 - Samples:
   ☐ work out what process Zinv is compared to with photons. gamma to what??
     ☐ get the corresponding value of the normalisation!
   ☐ ref for recent CMS studies - likely not public
-  ✔ reword corr factors table caption @done (15-04-22 11:50)
   ☐ describe fastsim vs fullsim differences
 
 Chapter 6 - Background Estimation:
@@ -67,20 +58,13 @@ Chapter 6 - Background Estimation:
   ☐ MJ distributions
 
 Chapter 7 - Results:
- ✔ add pull and p-value distributions @done (15-04-22 15:49)
- ✔ write section for p-values and pulls @done (15-04-22 17:55)
  ☐ update results tables with correct numbers
  ☐ defintion of pulls
 
 Chapter 9 - Interpretation:
-  ✘ motivate the choice of bins with individual limits @cancelled (15-04-22 17:59)
   ☐ make plot showing agreement between t2cc and t24body_boost along dm=10
-  ✔ PDF observations of the two signal models @done (15-04-22 18:03)
   ☐ mhtmet cut syst
-    ✘ fastsim/fullsim syst @cancelled (15-04-22 15:49)
     ☐ observations from two signal models
-  ✔ update systematic table values for both signal models  @done (15-04-22 17:59)
-  ✔ should mention somewhere the smoothing procedure @done (15-04-22 18:03)
 
 Chapter 10 - Conclusion:
   ☐ write it!
@@ -98,16 +82,34 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
- ✔ image for sparticle hierarchy term @done (15-04-21 17:08) @project(Chapter 2 - Theory)
- ✔ PU profile plot @done (15-04-21 17:07) @project(Chapter 3 - Detector)
- ✔ how many layers of @done (15-04-21 17:07) @project(Chapter 3 - Detector)
- ✔ reference TAI!!! @done (15-04-20 14:10) @project(Chapter 3 - Detector)
- ✔ GRID reference @done (15-04-21 17:08) @project(Chapter 3 - Detector)
- ✘ remove direct references to the control samples (not yet defined) @cancelled (15-04-20 16:47) @project(Chapter 4 - Objects)
+ ✔ book ref for SM @done (15-04-22 18:24) @project(Chapter 2 - Theory)
+ ✔ add quarks to 2.2 SU(3) section @done (15-04-22 18:17) @project(Chapter 2 - Theory)
+ ✔ read through SUSY hierarchy prob section @done (15-04-22 18:13) @project(Chapter 2 - Theory)
+ ✔ read through SM hierarchy prob section @done (15-04-22 18:13) @project(Chapter 2 - Theory)
+ ✔ should mention somewhere the smoothing procedure @done (15-04-22 18:03) @project(Chapter 9 - Interpretation)
+ ✔ PDF observations of the two signal models @done (15-04-22 18:03) @project(Chapter 9 - Interpretation)
+ ✘ motivate the choice of bins with individual limits @cancelled (15-04-22 17:59) @project(Chapter 9 - Interpretation)
+ ✔ update systematic table values for both signal models  @done (15-04-22 17:59) @project(Chapter 9 - Interpretation)
+ ✔ write section for p-values and pulls @done (15-04-22 17:55) @project(Chapter 7 - Results)
+ ✔ include some current limits for mass degenerate susy @done (15-04-22 16:36) @project(Chapter 2 - Theory)
+ ✘ fastsim/fullsim syst @cancelled (15-04-22 15:49) @project(Chapter 9 - Interpretation)
+ ✔ add pull and p-value distributions @done (15-04-22 15:49) @project(Chapter 7 - Results)
+ ✔ get better T2cc feynman diagram @done (15-04-22 15:42) @project(Chapter 2 - Theory)
+ ✔ change example distributions to be MC only @done (15-04-22 13:41) @project(Chapter 5 - Analysis)
+ ✔ remove repetition of MHTMET cut explanation @done (15-04-22 13:06) @project(Chapter 5 - Analysis)
+ ✔ reword corr factors table caption @done (15-04-22 11:50) @project(Chapter 5_2 - Samples)
+ ✔ define what PFCandidates even are! @done (15-04-22 11:46) @project(Chapter 4 - Objects)
+ ✔ do >< for photon and electron tables @done (15-04-22 11:44) @project(Chapter 4 - Objects)
  ✔ reference full MHTMET plot in text @done (15-04-21 17:09) @project(Chapter 5 - Analysis)
  ✔ move SIT at ll182 to selection section @done (15-04-21 17:08) @project(Chapter 5 - Analysis)
- ✔ update all plot captions @done (15-04-20 18:45) @project(Chapter 7 - Results)
+ ✔ image for sparticle hierarchy term @done (15-04-21 17:08) @project(Chapter 2 - Theory)
+ ✔ GRID reference @done (15-04-21 17:08) @project(Chapter 3 - Detector)
+ ✔ how many layers of @done (15-04-21 17:07) @project(Chapter 3 - Detector)
+ ✔ PU profile plot @done (15-04-21 17:07) @project(Chapter 3 - Detector)
  ✔ place holder limits (from AN) @done (15-04-21 11:33) @project(Chapter 9 - Interpretation)
+ ✔ update all plot captions @done (15-04-20 18:45) @project(Chapter 7 - Results)
+ ✘ remove direct references to the control samples (not yet defined) @cancelled (15-04-20 16:47) @project(Chapter 4 - Objects)
+ ✔ reference TAI!!! @done (15-04-20 14:10) @project(Chapter 3 - Detector)
  ✘ add labels to jaxo diagram @cancelled (15-04-20 12:39) @project(Chapter 2 - Theory)
  ✔ ref for higgs mechanism @done (15-04-20 12:36) @project(Chapter 2 - Theory)
  ✔ SMS model ref @done (15-04-20 12:26) @project(Chapter 2 - Theory)
