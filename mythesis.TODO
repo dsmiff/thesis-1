@@ -21,8 +21,8 @@ Chapter 2 - Theory:
  ☐ what is electroweak bariogenesis?
  ✔ briefly write about current limits @done (15-04-22 18:24)
  ✔ charm genPt plots @done (15-04-23 09:25)
- ☐ b genPt plot
- ☐ write about gen plots - softer objects nearer the diagonal
+ ✔ b genPt plot @done (15-04-23 15:03)
+ ✔ write about gen plots - softer objects nearer the diagonal @done (15-04-23 15:03)
  ☐ work out how to raise the T2cc diagram
 
 Chapter 3 - Detector:
@@ -31,6 +31,8 @@ Chapter 3 - Detector:
     ☐ ecal
     ☐ hcal
     ☐ muon systems
+ ☐ fix broken figure references
+ ☐ check the number of L1 triggers
 
 Chapter 4 - Objects:
   ☐ look up and briefly describe jet corrections
@@ -39,6 +41,10 @@ Chapter 4 - Objects:
   ☐ add ID effs? probably should...
   ☐ mention photon->ee conversions - need to protect against
   ☐ add subsystem mentions for each object
+  ☐ keep private references?
+  ☐ CSV efficiency plot
+  ☐ mention pf-based rho corrections in text
+  ☐ photon table rho correction text
 
 Chapter 5 - Analysis:
   ☐ give an example of the MET threshold for a corresponding alphaT cut
@@ -52,19 +58,26 @@ Chapter 5_2 - Samples:
     ☐ get the corresponding value of the normalisation!
   ☐ ref for recent CMS studies - likely not public
   ☐ describe fastsim vs fullsim differences
+  ☐ 'too vague' in signal MC section
 
 Chapter 6 - Background Estimation:
   ☐ MJ background estimation systematics???
   ☐ MJ distributions
+  ☐ MJ background section - get update from AN, likely hasn't changed
 
 Chapter 7 - Results:
  ☐ update results tables with correct numbers
- ☐ defintion of pulls
+ ☐ defintion of pulls - how do they work?!
 
 Chapter 9 - Interpretation:
-  ☐ make plot showing agreement between t2cc and t24body_boost along dm=10
+  ✘ make plot showing agreement between t2cc and t24body_boost along dm=10 @cancelled (15-04-24 18:09)
+  ☐ show effect of ISR correction on T2cc?
+  ☐ deadECAL filter observations
   ☐ mhtmet cut syst
     ☐ observations from two signal models
+  ☐ example test parameter distribution for CLs method
+  ☐ best fit points? from AN!
+  ☐ get rid of t24body stop corrections section!
 
 Chapter 10 - Conclusion:
   ☐ write it!
