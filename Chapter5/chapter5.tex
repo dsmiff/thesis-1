@@ -561,13 +561,37 @@ The cutflow yields are shown in table~\ref{tab:had_data_cutflow} for data in the
   \end{tabular}
 \end{table}
 
-\subsection{Formula method}
+\subsection{Predicting high-\nb event yields}
 \label{sec:formula_method}
 
-Determining yields for high values of \nb directly from simulation becomes
+Determining yields for high \nb categries directly from simulation becomes
 inherently reliant on not only MC modelling, but also on the physics
 distribution of jet-flavours. For EWK samples, given the underlying abundance of
 low b jet multiplicity events, high \nb categories become dominated by
 mis-tagging of light-flavour jets, leading to large statistical uncertainties.
+In order to reduce this reliance on direct MC yields, a method has been
+developed REF using flavour tagging efficiencies as measured in simulation, and 
+the underlying flavour distribution in order to statistically determine more
+precise yields, particularly for the high-\nb categories.
 
-\emph{FINISH}
+This method, employed in this analysis, is described in detal in REF. 
+
+\begin{equation}
+\begin{split}
+N(n) = \sum_{n_b^{gen} + n_c^{gen} + n_q^{gen} = n_{jet}^{cat}}\:
+\sum_{n_b^{tag} + n_c^{tag} + n_q^{tag} = n}
+N(n_b^{gen}, n_c^{gen}, n_q^{gen}) \times \\
+P(n_b^{tag}, n_b^{gen}, \epsilon_{b}) \times
+P(n_c^{tag}, n_c^{gen}, \epsilon_{c}) \times
+P(n_q^{tag}, n_q^{gen}, \epsilon_{q})
+\end{split}
+\end{equation}
+% 
+where $N(n)$ is represents the predicted yield of $n$-btagged events for a given
+analysis category and \HT bin. The jet-flavour tagging binominal probability
+terms $P(n_b^{tag}, n_b^{gen}, \epsilon_{b})$,
+$P(n_c^{tag}, n_c^{gen}, \epsilon_{c})$ and 
+$P(n_q^{tag}, n_q^{gen}, \epsilon_{q})$ are measured for each \HT bin and
+analysis category for each simulated sample, including the flavour tagging
+effiencies $\epsilon_b$, $\epsilon_c$ and $\epsilon_q$ as also measured from
+each sample. \emph{enough?}
