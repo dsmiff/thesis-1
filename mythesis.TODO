@@ -67,15 +67,12 @@ Chapter 9 - Interpretation:
   ☐ example test parameter distribution for CLs method
   ☐ best fit points? from AN!
   ☐ get rid of t24body stop corrections section!
+  ☐ decide on which stop momentum corrs to use
 
 Chapter 10 - Conclusion:
   ☐ write it!
 
 Appendix 1 - Signal systematic plots:
-  ✔ fill out all captions @done (15-04-26 17:02)
-  ✔ mht/met for T2_4body now appears higher - don't under shy @done (15-04-26 18:08)
-  ✔ fix values in MHT/MET and DeadECAL plots - the avg/min/max/rms @done (15-04-26 18:08)
-  ✔ update total systematics plots to safe smoothed (no nan) @done (15-04-26 18:08)
 
 Appendix 2 - DPhiStar in signal region:
   ☐ get dphi cut eff plots from rob
@@ -84,6 +81,10 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ fill out all captions @done (15-04-26 17:02) @project(Appendix 1 - Signal systematic plots)
+ ✔ mht/met for T2_4body now appears higher - don't under shy @done (15-04-26 18:08) @project(Appendix 1 - Signal systematic plots)
+ ✔ fix values in MHT/MET and DeadECAL plots - the avg/min/max/rms @done (15-04-26 18:08) @project(Appendix 1 - Signal systematic plots)
+ ✔ update total systematics plots to safe smoothed (no nan) @done (15-04-26 18:08) @project(Appendix 1 - Signal systematic plots)
  ✔ change all 'btag' to 'b-tag' @done (15-04-26 16:57) @project(General)
  ✔ CSV efficiency plot @done (15-04-26 16:54) @project(Chapter 4 - Objects)
  ✔ describe fastsim vs fullsim differences @done (15-04-26 16:24) @project(Chapter 5_2 - Samples)
