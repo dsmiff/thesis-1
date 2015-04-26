@@ -3,7 +3,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 General:
-  ☐ change all 'btag' to 'b-tag'
   ☐ 'mistag' or 'mis-tag'?
   ☐ sort out order of references - particular in theory chapter
   ☐ new names for T2cc and T2degen
@@ -19,10 +18,6 @@ Chapter 2 - Theory:
  ☐ gravitational lensing and rotational curves refs
  ☐ MSSM breaking refs
  ☐ what is electroweak bariogenesis?
- ✔ briefly write about current limits @done (15-04-22 18:24)
- ✔ charm genPt plots @done (15-04-23 09:25)
- ✔ b genPt plot @done (15-04-23 15:03)
- ✔ write about gen plots - softer objects nearer the diagonal @done (15-04-23 15:03)
  ☐ work out how to raise the T2cc diagram
 
 Chapter 3 - Detector:
@@ -42,23 +37,18 @@ Chapter 4 - Objects:
   ☐ mention photon->ee conversions - need to protect against
   ☐ add subsystem mentions for each object
   ☐ keep private references?
-  ☐ CSV efficiency plot
   ☐ mention pf-based rho corrections in text
   ☐ photon table rho correction text
 
 Chapter 5 - Analysis:
   ☐ give an example of the MET threshold for a corresponding alphaT cut
-  ✘ what about jet eta cuts? only lead jet?! @cancelled (15-04-23 13:44)
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
-  ✔ switch axes of background composition charts @done (15-04-23 14:01)
-  ☐ finish formula method section!
+  ☐ decide what to do about the formula method section
 
 Chapter 5_2 - Samples:
   ☐ work out what process Zinv is compared to with photons. gamma to what??
     ☐ get the corresponding value of the normalisation!
   ☐ ref for recent CMS studies - likely not public
-  ☐ describe fastsim vs fullsim differences
-  ☐ 'too vague' in signal MC section
 
 Chapter 6 - Background Estimation:
   ☐ MJ background estimation systematics???
@@ -70,7 +60,6 @@ Chapter 7 - Results:
  ☐ defintion of pulls - how do they work?!
 
 Chapter 9 - Interpretation:
-  ✘ make plot showing agreement between t2cc and t24body_boost along dm=10 @cancelled (15-04-24 18:09)
   ☐ show effect of ISR correction on T2cc?
   ☐ deadECAL filter observations
   ☐ mhtmet cut syst
@@ -95,6 +84,18 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ change all 'btag' to 'b-tag' @done (15-04-26 16:57) @project(General)
+ ✔ CSV efficiency plot @done (15-04-26 16:54) @project(Chapter 4 - Objects)
+ ✔ describe fastsim vs fullsim differences @done (15-04-26 16:24) @project(Chapter 5_2 - Samples)
+ ✔ 'too vague' in signal MC section @done (15-04-26 16:24) @project(Chapter 5_2 - Samples)
+ ✔ finish formula method section! @done (15-04-26 16:18) @project(Chapter 5 - Analysis)
+ ✘ make plot showing agreement between t2cc and t24body_boost along dm=10 @cancelled (15-04-24 18:09) @project(Chapter 9 - Interpretation)
+ ✔ write about gen plots - softer objects nearer the diagonal @done (15-04-23 15:03) @project(Chapter 2 - Theory)
+ ✔ b genPt plot @done (15-04-23 15:03) @project(Chapter 2 - Theory)
+ ✔ switch axes of background composition charts @done (15-04-23 14:01) @project(Chapter 5 - Analysis)
+ ✘ what about jet eta cuts? only lead jet?! @cancelled (15-04-23 13:44) @project(Chapter 5 - Analysis)
+ ✔ charm genPt plots @done (15-04-23 09:25) @project(Chapter 2 - Theory)
+ ✔ briefly write about current limits @done (15-04-22 18:24) @project(Chapter 2 - Theory)
  ✔ book ref for SM @done (15-04-22 18:24) @project(Chapter 2 - Theory)
  ✔ add quarks to 2.2 SU(3) section @done (15-04-22 18:17) @project(Chapter 2 - Theory)
  ✔ read through SUSY hierarchy prob section @done (15-04-22 18:13) @project(Chapter 2 - Theory)
