@@ -72,10 +72,10 @@ Chapter 10 - Conclusion:
   ☐ write it!
 
 Appendix 1 - Signal systematic plots:
-  ☐ fill out all captions
-  ☐ mht/met for T2_4body now appears higher - don't under shy
-  ☐ fix values in MHT/MET and DeadECAL plots - the avg/min/max/rms
-  ☐ update total systematics plots to safe smoothed (no nan)
+  ✔ fill out all captions @done (15-04-26 17:02)
+  ✔ mht/met for T2_4body now appears higher - don't under shy @done (15-04-26 18:08)
+  ✔ fix values in MHT/MET and DeadECAL plots - the avg/min/max/rms @done (15-04-26 18:08)
+  ✔ update total systematics plots to safe smoothed (no nan) @done (15-04-26 18:08)
 
 Appendix 2 - DPhiStar in signal region:
   ☐ get dphi cut eff plots from rob
