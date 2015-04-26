@@ -67,10 +67,35 @@ displacement from the primary vertex (PV). Each algorithm
 calculates a value used to discriminate between a jet originating from a
 b-quark and a light or c-quark.
 
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/btag/csv_discrim.pdf}
+    \caption{CSV Discriminator}
+    \label{fig:btag_csv_discrim}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/btag/csv_eff.pdf}
+    \caption{CSV Efficiency}
+    \label{fig:btag_csv_eff}
+  \end{subfigure}
+  \caption{The Combined Secondary Vertex btagging algorithm disciminator
+  distribution (left) and the b-tagging efficiency (right) as measured in both
+  data and simulation. MC scale factors are shown in the lower plot of
+  \ref{fig:btag_csv_eff}.}
+  \label{fig:btag_csv}
+\end{figure}
+
 The Combined Secondary Vertex (CSV) algorithm \cite{CMS-PAS-BTV-12-001} is used
-in this analysis, using the ``Medium'' working point, or a discriminate
-threshold of $>0.679$. This working point corresponds to a mistag rate for gluons/light-quarks of 1\%, and a pT dependent efficiency in the range of 60-70\% (plot?)
-\cite{CMS-PAS-BTV-12-001}.
+in this analysis. The tagging algorithm calculates a discriminator value for
+each jet, the distribution being shown in figure~\ref{fig:btag_csv_discrim}.
+The ``Medium'' working point, or a discriminator
+threshold of $>0.679$, is used in this analysis. This working point corresponds
+to a mistag rate for gluons/light-quarks of 1\%, and a pT dependent efficiency
+in the range of 60-70\%, as shown in figure~\ref{fig:btag_csv_eff}. Also
+shown in figure~\ref{fig:btag_csv_eff} are the MC scale factors, $SF_b$, defined
+as the ratio of the CSV btaging algorithm efficiency in data and MC, to be
+applied to MC samples.
 
 
 %********************************** % Fourth Section  *************************************
