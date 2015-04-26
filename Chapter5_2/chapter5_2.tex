@@ -141,12 +141,19 @@ b-tagging efficiencies measured in data and MC.
 Interpretations are made using signal MC samples, each representing a scan in 
 the phase space of a specific SMS model. The samples used are listed in
 Table~\ref{tab:mc-signal}. Each sample is generated at the parton level using \MADGRAPHFIVE and then
-decayed using \PYTHIASIX \emph{(too vague?)}. Diagrams for up to two additional
+decayed using \PYTHIASIX. Diagrams for up to two additional
 partons are simulated
 in the initial generation step to ensure good modelling of initial state 
 radiation (ISR), however supplementary samples were produced with up to three
 additional partons to allow for systematic studies into the effect on the 
 analysis, as detailed in chapter~\ref{ch:9}.
+
+Signal MC samples use the \FASTSIM detector simulation framework in order to
+simulate detector and electronics responses. In comparison to the \FULLSIM method
+used for all other MC backgrounds, \FASTSIM aims to greatly reduce the
+processing time required to generate samples by avoiding the CPU-intensive
+full detector simulation using the \geant framework, instead employing detector
+response parametrisations tuned using \FULLSIM samples.
 
 \begin{landscape}
   \begin{center}
