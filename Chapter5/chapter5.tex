@@ -520,11 +520,61 @@ shown in figure~\ref{fig:datamc_had_inc}.
 The cutflow yields are shown in table~\ref{tab:had_data_cutflow} for data in the
 \HT > 375 \gev region, with an inclusive selection on \nj and \nb.
 
+\subsection{Predicting high-\nb event yields}
+\label{sec:formula_method}
+
+Determining yields for high-\nb analysis categries directly from simulation
+becomes
+inherently reliant on not only MC modelling, but also on the physics
+distribution of jet-flavours. For EWK samples, given the underlying abundance of
+low b-jet multiplicity events, high-\nb categories become dominated by
+mis-tagging of light-flavour jets, leading to large statistical uncertainties.
+In order to reduce this reliance on direct MC yields, a method has been
+developed REF using flavour tagging efficiencies and the underlying quark
+flavour distribution, both measured directly from simulation in order to
+statistically determine more precise yields, particularly for the high-\nb
+categories.
+
+This method and it's validation are described in detail in REF. The approach can
+be summarised by:
+% 
+\begin{equation}
+\begin{split}
+N(n) = \sum_{n_b^{gen} + n_c^{gen} + n_{\text{light}}^{gen} = n_{jet}^{cat}}\:
+\sum_{n_b^{tag} + n_c^{tag} + n_{\text{light}}^{tag} = n}
+N(n_b^{gen}, n_c^{gen}, n_q^{gen}) \times \\
+P(n_b^{tag}, n_b^{gen}, \epsilon_{b}) \times
+P(n_c^{tag}, n_c^{gen}, \epsilon_{c}) \times
+P(n_{\text{light}}^{tag}, n_{\text{light}}^{gen}, \epsilon_{\text{light}})
+\end{split}
+\end{equation}
+% 
+where $N(n)$ is represents the predicted yield of $n$ b-tagged events for a
+given
+analysis category and \HT bin. The jet-flavour tagging probability
+terms $P(n_b^{tag}, n_b^{gen}, \epsilon_{b})$,
+$P(n_c^{tag}, n_c^{gen}, \epsilon_{c})$ and 
+$P(n_{\text{light}}^{tag}, n_{\text{light}}^{gen}, \epsilon_{\text{light}})$ are measured for each \HT bin and
+analysis category for each simulated sample, including the flavour tagging
+effiencies $\epsilon_b$, $\epsilon_c$ and $\epsilon_{\text{light}}$ as also measured from
+each sample. Finally, $N(n_b^{gen}, n_c^{gen}, n_q^{gen})$ represents the
+distribution of actual generator-level jet flavours in the events.
+
+In the large-statistic sample limit this technique would not be necessary,
+as enough high-\nb events would be present to sufficiently reduce statistical
+uncertainties. However, in the absence of this un-feasible scenario,
+this technique
+makes uses of all events in a sample, thereby reducing the uncertainties
+and ultimately delivering more precise yields from simulation.
+
+
+
+
 \begin{table}[ht!]
   \caption{The cutflow of the hadronic selection in data. The subscript `fail'
   indicates an object which did not meet all ID requirements, and so is not
   considered as a `common object'. The event selection follows an inclusive
-  selection in data of $\HT > 375 \gev$, $\nj \geq 2$ and $\nb \geq 0$. }
+  selection in data of $\HT > 375$ \gev, $\nj \geq 2$ and $\nb \geq 0$. }
   \label{tab:had_data_cutflow}
   \centering
   \footnotesize
@@ -561,38 +611,121 @@ The cutflow yields are shown in table~\ref{tab:had_data_cutflow} for data in the
   \end{tabular}
 \end{table}
 
-\subsection{Predicting high-\nb event yields}
-\label{sec:formula_method}
 
-Determining yields for high \nb categries directly from simulation becomes
-inherently reliant on not only MC modelling, but also on the physics
-distribution of jet-flavours. For EWK samples, given the underlying abundance of
-low b jet multiplicity events, high \nb categories become dominated by
-mis-tagging of light-flavour jets, leading to large statistical uncertainties.
-In order to reduce this reliance on direct MC yields, a method has been
-developed REF using flavour tagging efficiencies as measured in simulation, and 
-the underlying flavour distribution in order to statistically determine more
-precise yields, particularly for the high-\nb categories.
 
-This method, employed in this analysis, is described in detal in REF. 
+\begin{table}[ht!]
+  \caption{A cutflow table T2cc.}
+  \label{tab:a_cutflow_table}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcc }
+    \hline
+    \hline
+    Cut Name    & Eff (\%) & N \\
+    \hline
+  Event Counter & 100.00  & 444.38 \\
+  SMSpointCut Gluino Mass: 250 GeV and Neutralino Mass: 240 (Raw) & 100.00  & 444.38 \\
+  $\nj \geq 2$  & 12.99  & 57.73 \\
+  MET Filters & 100.00  & 57.73 \\
+  Vertex Noise Filter & 100.00  & 57.73 \\
+  HBHE Noise Filter & 100.00  & 57.73 \\
+  DeadECAL Filter & 82.92  & 47.87 \\
+  $n_{e} = 0$ & 99.99  & 47.86 \\
+  $n_{\gamma} = 0$  & 99.95  & 47.84 \\
+  $n_{\mu} = 0$ & 99.99  & 47.83 \\
+  $\text{EMF}_{max}$ for all jets > 0.1 & 100.00  & 47.83 \\
+  Leading jet \Pt > 100 \gev  & 68.43  & 32.73 \\
+  Leading jet $\eta$ < 2.5  & 95.55  & 31.28 \\
+  Sub-Leading jet \Pt > 100 \gev  & 32.87  & 10.28 \\
+  $n_{j, fail} = 0$ & 97.61  & 10.03 \\
+  $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 99.98  & 10.03 \\
+  $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 10.03 \\
+  recHitCut & 100.00  & 10.03 \\
+  $n_{SIT} = 0$ & 92.67  & 9.30 \\
+  \mindphistar > 0.3  & 88.00  & 8.18 \\
+  \mhtmet < 1.25  & 91.05  & 7.45 \\
+  \HT > 375 \gev  & 53.53  & 3.99 \\
+  \alphat > 0.55  & 49.84  & 1.99 \\
+  \mhtmet < 1.25  & 100.00  & 1.99 \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
-\begin{equation}
-\begin{split}
-N(n) = \sum_{n_b^{gen} + n_c^{gen} + n_q^{gen} = n_{jet}^{cat}}\:
-\sum_{n_b^{tag} + n_c^{tag} + n_q^{tag} = n}
-N(n_b^{gen}, n_c^{gen}, n_q^{gen}) \times \\
-P(n_b^{tag}, n_b^{gen}, \epsilon_{b}) \times
-P(n_c^{tag}, n_c^{gen}, \epsilon_{c}) \times
-P(n_q^{tag}, n_q^{gen}, \epsilon_{q})
-\end{split}
-\end{equation}
-% 
-where $N(n)$ is represents the predicted yield of $n$ b-tagged events for a
-given
-analysis category and \HT bin. The jet-flavour tagging binominal probability
-terms $P(n_b^{tag}, n_b^{gen}, \epsilon_{b})$,
-$P(n_c^{tag}, n_c^{gen}, \epsilon_{c})$ and 
-$P(n_q^{tag}, n_q^{gen}, \epsilon_{q})$ are measured for each \HT bin and
-analysis category for each simulated sample, including the flavour tagging
-effiencies $\epsilon_b$, $\epsilon_c$ and $\epsilon_q$ as also measured from
-each sample. \emph{enough?}
+\begin{table}[ht!]
+  \caption{A cutflow table T2cc.}
+  \label{tab:a_cutflow_table}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcc }
+    \hline
+    \hline
+    Cut Name    & Eff (\%) & N \\
+    \hline
+  Event Counter & 100.00  & 4497879.00 \\
+  SMSpointCut Gluino Mass: 250 GeV and Neutralino Mass: 170 (Raw) & 10.30  & 463389.72 \\
+  $\nj \geq 2$  & 59.52  & 275817.36 \\
+  MET Filters & 100.00  & 275817.36 \\
+  Vertex Noise Filter & 100.00  & 275817.36 \\
+  HBHE Noise Filter & 100.00  & 275817.36 \\
+  DeadECAL Filter & 73.71  & 203317.98 \\
+  $n_{e} = 0$ & 99.98  & 203284.28 \\
+  $n_{\gamma} = 0$  & 99.81  & 202891.13 \\
+  $n_{\mu} = 0$ & 99.99  & 202864.65 \\
+  $\text{EMF}_{max}$ for all jets > 0.1 & 100.00  & 202862.15 \\
+  Leading jet \Pt > 100 \gev  & 56.62  & 114868.83 \\
+  Leading jet $\eta$ < 2.5  & 97.65  & 112164.15 \\
+  Sub-Leading jet \Pt > 100 \gev  & 36.86  & 41346.53 \\
+  $n_{j, fail} = 0$ & 97.07  & 40135.16 \\
+  $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 99.90  & 40094.35 \\
+  $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 40094.35 \\
+  recHitCut & 100.00  & 40094.35 \\
+  $n_{SIT} = 0$ & 92.83  & 37218.41 \\
+  \mindphistar > 0.3  & 67.43  & 25096.32 \\
+  \mhtmet < 1.25  & 82.44  & 20689.75 \\
+  \HT > 375 \gev  & 45.94  & 9504.14 \\
+  \alphat > 0.55  & 19.50  & 1853.32 \\
+  \mhtmet < 1.25  & 100.00  & 1853.32 \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[ht!]
+  \caption{A cutflow table for logfile T24body.}
+  \label{tab:a_cutflow_table}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcc }
+    \hline
+    \hline
+    Cut Name    & Eff (\%) & N \\
+    \hline
+  Event Counter & 100.00  & 818181.00 \\
+  SMSpointCut Gluino Mass: 250 GeV and Neutralino Mass: 240 (Raw) & 100.00  & 818181.00 \\
+  $\nj \geq 2$  & 10.80  & 88365.80 \\
+  MET Filters & 100.00  & 88365.80 \\
+  Vertex Noise Filter & 100.00  & 88365.80 \\
+  HBHE Noise Filter & 100.00  & 88365.80 \\
+  DeadECAL Filter & 84.49  & 74664.10 \\
+  $n_{e} = 0$ & 99.99  & 74660.20 \\
+  $n_{\gamma} = 0$  & 99.92  & 74601.20 \\
+  $n_{\mu} = 0$ & 99.97  & 74580.20 \\
+  $\text{EMF}_{max}$ for all jets > 0.1 & 100.00  & 74580.20 \\
+  Leading jet \Pt > 100 \gev  & 65.92  & 49160.40 \\
+  Leading jet $\eta$ < 2.5  & 94.94  & 46672.00 \\
+  Sub-Leading jet \Pt > 100 \gev  & 28.73  & 13410.60 \\
+  $n_{j, fail} = 0$ & 97.97  & 13138.60 \\
+  $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 99.97  & 13135.20 \\
+  $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 13135.20 \\
+  recHitCut & 100.00  & 13135.20 \\
+  $n_{SIT} = 0$ & 93.33  & 12259.40 \\
+  \mindphistar > 0.3  & 90.12  & 11047.60 \\
+  \mhtmet < 1.25  & 91.46  & 10104.60 \\
+  \HT > 375 \gev  & 44.60  & 4506.17 \\
+  \alphat > 0.55  & 48.01  & 2163.31 \\
+  \mhtmet < 1.25  & 100.00  & 2163.31 \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
