@@ -16,7 +16,7 @@ Chapter 2 - Theory:
  ☐ not enough CP violation reference
  ☐ ref for 1TeV SUSY particles for reasonable solution to hierarchy prob
  ☐ annihilation cross-sections of what???
- ☐ gravitational lensing and rotational curves refs
+ ✔ gravitational lensing and rotational curves refs @done (15-04-27 17:12)
  ☐ MSSM breaking refs
  ☐ what is electroweak bariogenesis?
  ☐ work out how to raise the T2cc diagram
@@ -27,7 +27,7 @@ Chapter 3 - Detector:
     ☐ ecal
     ☐ hcal
     ☐ muon systems
- ☐ fix broken figure references
+ ✔ fix broken figure references @done (15-04-27 17:21)
  ☐ check the number of L1 triggers
 
 Chapter 4 - Objects:
@@ -57,11 +57,12 @@ Chapter 6 - Background Estimation:
   ☐ MJ background section - get update from AN, likely hasn't changed
 
 Chapter 7 - Results:
- ☐ update results tables with correct numbers
+ ✔ update results tables with correct numbers @done (15-04-28 17:01)
  ☐ defintion of pulls - how do they work?!
+ ✔ update plots @done (15-04-28 17:01)
 
 Chapter 9 - Interpretation:
-  ☐ show effect of ISR correction on T2cc?
+  ✘ show effect of ISR correction on T2cc? @cancelled (15-04-28 16:43)
   ☐ deadECAL filter observations
   ☐ mhtmet cut syst
     ☐ observations from two signal models
@@ -69,6 +70,7 @@ Chapter 9 - Interpretation:
   ☐ best fit points? from AN!
   ☐ get rid of t24body stop corrections section!
   ☐ decide on which stop momentum corrs to use
+  ☐ check systematic value references in body text
 
 Chapter 10 - Conclusion:
   ☐ write it!
