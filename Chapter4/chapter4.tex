@@ -31,10 +31,19 @@ account for this \cite{Cacciari2008119, 1126-6708-2008-04-005}. Clustered jets
 are also corrected to establish a uniform response in $\eta$ and \Pt
 \cite{Chatrchyan:2011ds}.
 Table~\ref{tab:jet_id_loose} summarises the ID requirements used in this 
-analysis, which correspond to the ``Loose'' working point \cite{ref:jet-id} 
-(private!). Jets are further 
-corrected according to the L1FastJet, L2, L3, and L2L3Residual corrections
-\cite{ref:jet-jes} (private!).
+analysis, which correspond to the ``Loose'' working point \cite{ref:jet-id}.
+Energy deposits clustered into jet objects are corrected to ensure a
+good translation between measured energy and parton energy.
+Jets therefore have the following sequential corrections \cite{ref:jet-jes}
+\cite{2011JInst...611002C} applied:
+\begin{description}
+\item[L1] To remove energy coming from PU events, therefore removing any
+dependence on luminosity across a dataset.
+\item[L2] To ensure a flat energy response in $\eta$ across the calorimeter.
+\item[L3] To ensure a flat repsonse according to the \Pt of the deposit.
+\item[L2L3] Final, additional corrections to bring data and MC into agreement.
+\end{description}
+
 
 \begin{table}[!ht]
   \caption{Criteria for the ``loose'' jet ID working point.\label{tab:jet_id_loose}}
@@ -139,7 +148,7 @@ veto in the hadronic signal region.
     Suppresses muons from decays in flight. \\
     Track layer hits                       & $>5$      & Guarantees good \Pt 
     measurement. \\
-    PF Isolation ($\Delta\beta$ corrected) & $<0.12$   & Particle Flow based 
+    PF Isolation (PU corrected) & $<0.12$   & Particle Flow based 
     isolation, based on a cone size of $\Delta R < 0.4$, with ``$\Delta \beta$'' 
     PU corrections applied. \\
     \hline
@@ -147,17 +156,16 @@ veto in the hadronic signal region.
   \end{tabular}
 \end{table}
 
-% \emph{LOOKUP: ``muons from decays in flight''}
-
 %********************************** % Fifth Section  *************************************
 \section{Photons}  %Section - 1.5
 \label{sec:objects_photons}
 
-Photons defintions are made relative to their position in the detector, either 
+Photons defintions are made relative to their position in the ,
+either
 in the barrel or the endcap, as summarised in table~\ref{tab:photon-id-egamma}. 
-This Tight working point ID is defined by the \emph{POG} group and used for both photon
+This Tight working point ID is defined by the \emph{POG} group
+\cite{ref:photonidtwiki} and used for both photon
 selection in the \gj control sample and as a veto in the hadronic signal region.
-\emph{mention the pf-based rho pu corrs}
 
 \begin{table}[ht!]
   \caption{Photon identification (Tight working point).\label{tab:photon-id-egamma}}
@@ -178,7 +186,8 @@ selection in the \gj control sample and as a veto in the hadronic signal region.
     The cluster shape covariance of the ECAL supercluster in the $\eta$
     dimension. \\
     &&&\multirow{5}{4cm}{PF-based isolation requirements to ensure no hadronic or electromagnetic 
-    activity with a cone defined by $\Delta R < 0.3$. RHO CORRECTION}\\
+    activity with a cone defined by $\Delta R < 0.3$. The isolation is
+    corrected for PU effects.}\\
     PF charged hadron isolation   & < 0.70                               & < 0.50                               & \\
     PF neutral hadron isolation   & < 0.4 + 0.04 $\times$ $\Pt^{\gamma}$  & < 1.5 + 0.04 $\times$ $\Pt^{\gamma}$&
     \\
@@ -192,10 +201,13 @@ selection in the \gj control sample and as a veto in the hadronic signal region.
 %********************************** % Third Section  *************************************
 \section{Electrons}  %Section - 1.3
 \label{sec:objects_electrons}
-The Electron \emph{POGs} Loose working point ID is used in this analysis to veto 
+The Electron \emph{POGs} Loose working point ID \cite{ref:electronidtwiki} is
+used in this analysis to veto 
 electrons from all areas of the analysis. This cut based identification is 
 defined seperately for the barrel and endcap regions of the detector and is
-summarised in table~\ref{tab:ele-id}.
+summarised in table~\ref{tab:ele-id}. The final two requirements are
+specifically for the rejection of electrons originating from photons converted
+into $e^-e^+$ pairs.
 
 \begin{table}[ht!]
   \caption{Electron identification (Loose working point).\label{tab:ele-id}}
