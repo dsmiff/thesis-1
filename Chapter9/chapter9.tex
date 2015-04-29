@@ -381,40 +381,6 @@ two, pair-produced generator level \sTop particles.
 
 \emph{show the effect on signal acceptance for T2cc?}
 
-% \begin{figure}[!h]
-%  \begin{center}
-%    \subfigure[Signal region, (2--3,0)]{
-%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_had_eff_maps_eq0b_le3j_SITV}
-%    } 
-%    \subfigure[\mj sample, (2--3,0)]{
-%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_muon_eff_maps_eq0b_le3j_SITV}
-%    } \\
-%    \subfigure[Signal region, (2--3,1)]{
-%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_had_eff_maps_eq1b_le3j_SITV}
-%    } 
-%    \subfigure[\mj sample, (2--3,1)]{
-%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_muon_eff_maps_eq1b_le3j_SITV}
-%    } \\
-%    \subfigure[Signal region, ($\geq 4$,0)]{
-%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_had_eff_maps_eq0b_ge4j_SITV}
-%    } 
-%    \subfigure[\mj sample, ($\geq 4$,0)]{
-%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_muon_eff_maps_eq0b_ge4j_SITV}
-%    } \\
-%    \subfigure[Signal region, ($\geq 4$,1)]{
-%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_had_eff_maps_eq1b_ge4j_SITV}
-%    } 
-%    \subfigure[\mj sample, ($\geq 4$,1)]{
-%      \includegraphics[width=0.4\textwidth]{figures/sms/t2_4body/v16/T2_4body_muon_eff_maps_eq1b_ge4j_SITV}
-%    } \\
-%    \caption{Signal efficiency times acceptance for the \texttt{T2\_4body}
-%      in (left) the signal region and (right) the \mj control sample
-%      (\ie, signal contamination) for the relevant event categories
-%      defined by \nj and \nb. Note the different z-axis scales.}
-%    \label{fig:sms-eff-t2_4body}
-%  \end{center}
-% \end{figure}
-
 %********************************** % Second Section  *************************************
 \section{Systematic Uncertainties on Signal Acceptance }  %Section - 1.2
 \label{sec:interpretation_uncertainties}
@@ -528,8 +494,14 @@ noting that systematics are slightly larger for the \nb= 1 category
 (figure~\ref{fig:sms-btag-t2cc-le3j-1b}), however still at a low level with 
 respect to other systematic sources.
 
-The \texttt{T2Degen} model, containing a real b-quark, has WHAT?
-\emph{Why is T2degen at the same level as T2cc? Is that correct??}
+% The \texttt{T2Degen} model, containing a real b-quark, has WHAT?
+% \emph{Why is T2degen at the same level as T2cc? Is that correct??}
+The \texttt{T2Degen} model exhibits a similar dependence on the b-tag scale
+factor variations, indicating large changes in efficiency nearer the diagonal in
+\nb = 1 categories. This increase is visible in
+figure~\ref{fig:sms-btag-t2degen-le3j-1b} at smaller values of \deltam, where
+the final state b-quark is likely out of acceptance, and therefore tags
+originate from mis-tagged lighter quarks or gluons.
 
 
 \subsection{PDF}
@@ -593,9 +565,13 @@ with unity.
   \end{tabular}
 \end{table}
 
-\emph{T2cc plots and some observations}
-
-\emph{T2degen plots and some observations}
+While the relevant systematic for the \mhtmet requirement is taken from the
+above method, it is also interesting to study the acceptance of this cut as a
+function of the mass plane for each decay.
+Model acceptance to the \mhtmet cut is typically lower in the 4-body decay. This
+is attributed to the softer jet spectrum produced due to the increased number of
+final state particles sharing the finite energy of the decay system.
+\emph{Too little?}
 
 \subsection{Dead ECAL Filter}
 To assess any potential MC mis-modelling issues with the dead ECAL filter, a 
@@ -606,7 +582,7 @@ inclusive requirement on both \nb and \HT. As shown in table~\ref{tab:dead-ecal}
 the ratio of efficiencies between data and MC for each \nj category agree within
 statistical errors.
 
-\emph{\FULLSIM to \FASTSIM systs?}
+% \emph{\FULLSIM to \FASTSIM systs?}
 
 \begin{table}[!h]
   \caption{Efficiencies of the dead ECAL cut for the \mj selection in data and 
@@ -630,8 +606,17 @@ statistical errors.
   \end{tabular}
 \end{table}
 
-\emph{T2cc plots and some observations}
-\emph{T2degen plots and some observations}
+Similarly to the study of the \mhtmet requirement, an inspection of the
+acceptance of the dead ECAL filter in each scan plane indicates a greater
+reduction in acceptance for the 4-body decay
+with respect to the charm decay. The larger number of particles in the final
+state of the 4-body decay increases the probability for an energy deposit to be
+made near a flagged region of the calorimeter system, thereby rejecting more
+events. Rejection increases away from the diagonal, as more objects move into
+acceptance.
+
+\emph{but the \nj requirements are the same between samples...perhaps the
+fraction of 3jet/2jet within the le3j category, is greater for 4body?}
 
 \subsection{Generator Level Partons}
 At the \MADGRAPH matrix element stage of the MC simulation production, a number
