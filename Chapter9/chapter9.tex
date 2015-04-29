@@ -58,7 +58,9 @@ acceptance.
 Signal contamination in the \mj selection is shown to be negligible, given the 
 lack of leptons in the final state.
 
-% \emph{what about stop mass?}
+Example cutflows are shown in table~\ref{tab:t2cc_cutflow} for mass points with
+the two extremal \deltam values of the scan, both at values of $m_{\sTop}$ near
+the limits of sensitivity.
 
 % should be v25!
 \begin{figure}[ht!]
@@ -125,6 +127,48 @@ lack of leptons in the final state.
 %   \label{fig:}
 % \end{figure}
 
+\begin{table}[ht!]
+  \caption{Cutflow table for two mass points ($m_{\sTop} = 250$ \gev, $m_
+  {\chiz}=240$ \gev and $m_{\sTop} = 250$ \gev, $m_{\chiz}=170$ \gev) of the T2cc
+  signal model.} \label{tab:t2cc_cutflow}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcc }
+    \hline
+    \hline
+    Cut Name    & \multicolumn{2}{c}{Cumlative Eff. (\%)}\\
+    \hline
+    ($m_{\sTop}$, $m_{\chiz}$)& (250, 240) & (250, 170) \\
+    \hline
+  Event Counter & 100.00 & 100.00 \\
+  $\nj \geq 2$  & 12.99 & 59.52 \\
+  MET Filters & 12.99  & 59.52 \\
+  Vertex Noise Filter & 12.99 & 59.52 \\
+  HBHE Noise Filter & 12.99 & 59.52 \\
+  DeadECAL Filter & 10.77 & 43.88\\
+  $n_{e} = 0$ & 10.77 & 43.88\\
+  $n_{\gamma} = 0$  & 10.77 & 43.7\\
+  $n_{\mu} = 0$ & 10.77 & 43.7\\
+  $\text{EMF}_{max}$ for all jets > 0.1 & 10.77 & 43.7 \\
+  Leading jet \Pt > 100 \gev  & 7.37 & 24.79\\
+  Leading jet $\eta$ < 2.5  & 7.04 & 24.21\\
+  Sub-Leading jet \Pt > 100 \gev  & 2.31 & 8.92 \\
+  $n_{j, fail} = 0$ & 2.26 & 8.66\\
+  $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 2.26 & 8.65\\
+  $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 2.26 & 8.65\\
+  recHitCut & 2.26 & 8.65\\
+  $n_{SIT} = 0$ & 2.09 & 8.03\\
+  \mindphistar > 0.3  & 1.84 & 5.42\\
+  \mhtmet < 1.25  & 1.68 & 4.46\\
+  \HT > 375 \gev  & 0.90 & 2.05\\
+  \alphat > 0.55  & 0.45 & 0.40\\
+  \mhtmet < 1.25  & 0.45 & 0.40\\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+
 \subsection{T2\_4body}
 \label{sec:t2degen_eff}
 
@@ -149,6 +193,10 @@ splitting of the mother and daughter sparticles.
 Also of note is the increase in signal contamination observed in the \mj 
 selection, due to the presence of $f\bar{f}$ in the decay chain, potentially 
 providing leptons in the final state.
+
+Example cutflows are shown in table~\ref{tab:t2_4body_cutflow} for a mass point
+with the smallest mass splitting, at an $m_{\sTop}$ value near the limit of
+sensitivity.
 
 % should be v16!!
 \begin{figure}[ht!]
@@ -198,6 +246,47 @@ providing leptons in the final state.
   four most sensitive analysis categories with an inclusive selection on \HT.}
   \label{fig:t2_4body_eff}
 \end{figure}
+
+\begin{table}[ht!]
+  \caption{Cutflow table for the $m_{\sTop} = 250$ \gev, $m_{\chiz}=240$ \gev
+  mass point of the \texttt {T2Degen} signal model.}
+  \label{tab:t2_4body_cutflow}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcc }
+    \hline
+    \hline
+    Cut Name    & Eff (\%) & N \\
+    \hline
+    ($m_{\sTop}$, $m_{\chiz}$)& (250, 240) \\
+    \hline
+    Event Counter & 100.00  \\
+    $\nj \geq 2$  & 10.80 \\
+    MET Filters & 10.80  \\
+    Vertex Noise Filter & 10.80  \\
+    HBHE Noise Filter & 10.80  \\
+    DeadECAL Filter & 9.13 \\
+    $n_{e} = 0$ & 9.13 \\
+    $n_{\gamma} = 0$  & 9.13 \\
+    $n_{\mu} = 0$ & 9.13 \\
+    $\text{EMF}_{max}$ for all jets > 0.1 & 9.13  \\
+    Leading jet \Pt > 100 \gev  & 6.01 \\
+    Leading jet $\eta$ < 2.5  & 5.70 \\
+    Sub-Leading jet \Pt > 100 \gev  & 1.64\\
+    $n_{j, fail} = 0$ & 1.61 \\
+    $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 1.61 \\
+    $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 1.61  \\
+    recHitCut & 1.61  \\
+    $n_{SIT} = 0$ & 1.50 \\
+    \mindphistar > 0.3  & 1.35 \\
+    \mhtmet < 1.25  & 1.24 \\
+    \HT > 375 \gev  & 0.55 \\
+    \alphat > 0.55  & 0.26 \\
+    \mhtmet < 1.25  & 0.26 \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
 
 \subsubsection{Boost corrections to T2\_4body}
 Following generator level studies into the \texttt{T2degen} sample a discrepancy 
