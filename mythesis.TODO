@@ -17,17 +17,10 @@ Chapter 2 - Theory:
  ☐ work out how to raise the T2cc diagram
 
 Chapter 3 - Detector:
- ✔ energy and/or position resolutions for @done (15-04-29 13:47)
-    ✔ tracker @done (15-04-29 13:46)
-    ✔ ecal @done (15-04-29 13:46)
-    ✔ hcal @done (15-04-29 13:47)
-    ✔ muon systems @done (15-04-29 13:47)
- ✔ check the number of L1 triggers @done (15-04-29 13:09)
 
 Chapter 4 - Objects:
   ☐ look up muons from decays in flight
   ☐ add ID effs? probably should...
-  ✔ add subsystem mentions for each object @done (15-04-29 13:05)
 
 Chapter 5 - Analysis:
   ☐ give an example of the MET threshold for a corresponding alphaT cut
@@ -47,20 +40,12 @@ Chapter 7 - Results:
  ☐ defintion of pulls - how do they work?!
 
 Chapter 9 - Interpretation:
-  ✔ deadECAL filter observations @done (15-04-29 17:24)
-  ✔ mhtmet cut syst @done (15-04-29 17:24)
-    ✔ observations from two signal models @done (15-04-29 17:24)
   ☐ example test parameter distribution for CLs method
   ☐ best fit points? from AN!
-  ✔ get rid of t24body stop corrections section! @done (15-04-29 17:49)
-  ✔ decide on which stop momentum corrs to use @done (15-04-29 17:49)
   ☐ how to reference the 4body boost reweighting procedure
-  ☐ is the boost reweighting procedure event necessary to include? I didn't do it...?!
-  ✔ check systematic value references in body text @done (15-04-29 17:43)
+  ☐ is the boost reweighting procedure event necessary to include? I didn't doq
+  it...?!
   ☐ add T24body dm=80 mass splitting cutflow
-  ✔ understand why btag numbers are smaller/similar for T2_4body as T2cc @done (15-04-29 17:24)
-  ✔ lumi systematic value ref @done (15-04-29 17:41)
-  ✔ what is the lumi systematic value?! @done (15-04-29 17:41)
 
 Chapter 10 - Conclusion:
   ☐ write it!
@@ -75,24 +60,40 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
- ✔ look up and briefly describe jet corrections @done (15-04-29 11:54) @project(Chapter 4 - Objects)
- ✔ look up delatBeta corrections @done (15-04-29 12:50) @project(Chapter 4 - Objects)
+ ✔ get rid of t24body stop corrections section! @done (15-04-29 17:49) @project(Chapter 9 - Interpretation)
+ ✔ decide on which stop momentum corrs to use @done (15-04-29 17:49) @project(Chapter 9 - Interpretation)
+ ✔ check systematic value references in body text @done (15-04-29 17:43) @project(Chapter 9 - Interpretation)
+ ✔ what is the lumi systematic value?! @done (15-04-29 17:41) @project(Chapter 9 - Interpretation)
+ ✔ lumi systematic value ref @done (15-04-29 17:41) @project(Chapter 9 - Interpretation)
+ ✔ understand why btag numbers are smaller/similar for T2_4body as T2cc @done (15-04-29 17:24) @project(Chapter 9 - Interpretation)
+ ✔ observations from two signal models @done (15-04-29 17:24) @project(Chapter 9 - Interpretation)
+ ✔ mhtmet cut syst @done (15-04-29 17:24) @project(Chapter 9 - Interpretation)
+ ✔ deadECAL filter observations @done (15-04-29 17:24) @project(Chapter 9 - Interpretation)
+ ✔ muon systems @done (15-04-29 13:47) @project(Chapter 3 - Detector)
+ ✔ hcal @done (15-04-29 13:47) @project(Chapter 3 - Detector)
+ ✔ energy and/or position resolutions for @done (15-04-29 13:47) @project(Chapter 3 - Detector)
+ ✔ tracker @done (15-04-29 13:46) @project(Chapter 3 - Detector)
+ ✔ ecal @done (15-04-29 13:46) @project(Chapter 3 - Detector)
+ ✔ check the number of L1 triggers @done (15-04-29 13:09) @project(Chapter 3 - Detector)
+ ✔ add subsystem mentions for each object @done (15-04-29 13:05) @project(Chapter 4 - Objects)
+ ✔ photon table rho correction text @done (15-04-29 13:03) @project(Chapter 4 - Objects)
+ ✔ mention pf-based rho corrections in text @done (15-04-29 13:03) @project(Chapter 4 - Objects)
  ✔ mention photon->ee conversions - need to protect against @done (15-04-29 12:51) @project(Chapter 4 - Objects)
  ✔ keep private references? @done (15-04-29 12:51) @project(Chapter 4 - Objects)
- ✔ mention pf-based rho corrections in text @done (15-04-29 13:03) @project(Chapter 4 - Objects)
- ✔ photon table rho correction text @done (15-04-29 13:03) @project(Chapter 4 - Objects)
- ✔ sort out order of references - particular in theory chapter @done (15-04-26 18:34) @project(General)
- ✔ pick a better style for the bibliography @done (15-04-26 18:34) @project(General)
- ✔ gravitational lensing and rotational curves refs @done (15-04-27 17:12) @project(Chapter 2 - Theory)
- ✔ fix broken figure references @done (15-04-27 17:21) @project(Chapter 3 - Detector)
- ✔ decide what to do about the formula method section @done (15-04-27 09:04) @project(Chapter 5 - Analysis)
+ ✔ look up delatBeta corrections @done (15-04-29 12:50) @project(Chapter 4 - Objects)
+ ✔ look up and briefly describe jet corrections @done (15-04-29 11:54) @project(Chapter 4 - Objects)
  ✔ update results tables with correct numbers @done (15-04-28 17:01) @project(Chapter 7 - Results)
  ✔ update plots @done (15-04-28 17:01) @project(Chapter 7 - Results)
  ✘ show effect of ISR correction on T2cc? @cancelled (15-04-28 16:43) @project(Chapter 9 - Interpretation)
- ✔ fill out all captions @done (15-04-26 17:02) @project(Appendix 1 - Signal systematic plots)
+ ✔ fix broken figure references @done (15-04-27 17:21) @project(Chapter 3 - Detector)
+ ✔ gravitational lensing and rotational curves refs @done (15-04-27 17:12) @project(Chapter 2 - Theory)
+ ✔ decide what to do about the formula method section @done (15-04-27 09:04) @project(Chapter 5 - Analysis)
+ ✔ sort out order of references - particular in theory chapter @done (15-04-26 18:34) @project(General)
+ ✔ pick a better style for the bibliography @done (15-04-26 18:34) @project(General)
+ ✔ update total systematics plots to safe smoothed (no nan) @done (15-04-26 18:08) @project(Appendix 1 - Signal systematic plots)
  ✔ mht/met for T2_4body now appears higher - don't under shy @done (15-04-26 18:08) @project(Appendix 1 - Signal systematic plots)
  ✔ fix values in MHT/MET and DeadECAL plots - the avg/min/max/rms @done (15-04-26 18:08) @project(Appendix 1 - Signal systematic plots)
- ✔ update total systematics plots to safe smoothed (no nan) @done (15-04-26 18:08) @project(Appendix 1 - Signal systematic plots)
+ ✔ fill out all captions @done (15-04-26 17:02) @project(Appendix 1 - Signal systematic plots)
  ✔ change all 'btag' to 'b-tag' @done (15-04-26 16:57) @project(General)
  ✔ CSV efficiency plot @done (15-04-26 16:54) @project(Chapter 4 - Objects)
  ✔ describe fastsim vs fullsim differences @done (15-04-26 16:24) @project(Chapter 5_2 - Samples)
