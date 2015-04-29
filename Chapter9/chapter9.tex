@@ -293,9 +293,8 @@ Following generator level studies into the \texttt{T2degen} sample a discrepancy
 between the stop system's boost \Pt with respect to the \texttt{T2cc} sample was
 found. As the kinematics of the stop system have no dependence on the 
 decay channel, any discrepancy must be artificial and should 
-therefore be corrected. To determine the magnitude of the required corrections, 
-a direct comparison between the two samples was made, shown in
-figure~\ref{fig:t2degen_boost_compare}.
+therefore be corrected. A direct comparison between the two samples is
+shown in figure~\ref{fig:t2degen_boost_compare}.
 
 \begin{figure}[h!]
   \centering
@@ -308,22 +307,29 @@ figure~\ref{fig:t2degen_boost_compare}.
   \label{fig:t2degen_boost_compare}
 \end{figure}
 
-Corrections are taken as the ratio between \texttt{T2Degen} and \texttt{T2cc},
-as a function of the boost \Pt, for each value of $m_{\sTop}$ in the scan. The 
-values of these corrections are shown in figure~\ref{fig:t2degen_boost_weights}.
+% Corrections are taken as the ratio between \texttt{T2Degen} and \texttt{T2cc},
+% as a function of the boost \Pt, for each value of $m_{\sTop}$ in the scan. The 
+% values of these corrections are shown in figure~\ref{fig:t2degen_boost_weights}.
 
-\begin{figure}[ht!]
-  \centering
-    \includegraphics[width=0.8\textwidth]{Figs/sms/t2degen/corrs/stop_lut_weights.pdf}
-  \caption{The weights applied to the \texttt{T2degen} sample, shown as a 
-  function of $m_{\sTop}$ and boost \Pt.}
-  \label{fig:t2degen_boost_weights}
-\end{figure}
+% \begin{figure}[ht!]
+%   \centering
+%     \includegraphics[width=0.8\textwidth]{Figs/sms/t2degen/corrs/stop_lut_weights.pdf}
+%   \caption{The weights applied to the \texttt{T2degen} sample, shown as a 
+%   function of $m_{\sTop}$ and boost \Pt.}
+%   \label{fig:t2degen_boost_weights}
+% \end{figure}
 
-Acceptance at the smallest mass-splittings should be in agreement between 
-both the \texttt{T2cc} and \texttt{T2Degen} samples following these corrections,
-as sensitivity comes entirely from ISR jets and therefore the boost spectrum of 
-the \sTop particles. As shown in \emph{MAKE PLOT SHOWING AGREEMENT}
+% Acceptance at the smallest mass-splittings should be in agreement between 
+% both the \texttt{T2cc} and \texttt{T2Degen} samples following these corrections,
+% as sensitivity comes entirely from ISR jets and therefore the boost spectrum of 
+% the \sTop particles. As shown in \emph{MAKE PLOT SHOWING AGREEMENT}
+
+The discrepancy has been isolated to the 4-body decay model and as a result of
+the \Pt distribution of the ISR particles in events with two ISR
+particles. By comparison with the charm decay sample, a parameterisation has
+been determined as a function of each generator level ISR particle \Pt so
+corrective event weights can be calculated REFERENCE TO IVAN ET AL? As a
+consequence, this reweighting procedure is applied to the 4-body sample.
 
 
 \subsection{ISR Corrections to compressed spectra MC signal samples}
@@ -567,7 +573,6 @@ function of the mass plane for each decay.
 Model acceptance to the \mhtmet cut is typically lower in the 4-body decay. This
 is attributed to the softer jet spectrum produced due to the increased number of
 final state particles sharing the finite energy of the decay system.
-\emph{Too little?}
 
 \subsection{Dead ECAL Filter}
 To assess any potential MC mis-modelling issues with the dead ECAL filter, a 
