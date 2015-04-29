@@ -4,9 +4,7 @@
 
 General:
   ☐ 'mistag' or 'mis-tag'?
-  ✔ sort out order of references - particular in theory chapter @done (15-04-26 18:34)
   ☐ new names for T2cc and T2degen
-  ✔ pick a better style for the bibliography @done (15-04-26 18:34)
   ☐ write abstract
 
 Chapter 1 - Introduction:
@@ -15,36 +13,25 @@ Chapter 1 - Introduction:
 Chapter 2 - Theory:
  ☐ not enough CP violation reference
  ☐ ref for 1TeV SUSY particles for reasonable solution to hierarchy prob
- ☐ annihilation cross-sections of what???
- ✔ gravitational lensing and rotational curves refs @done (15-04-27 17:12)
  ☐ MSSM breaking refs
- ☐ what is electroweak bariogenesis?
  ☐ work out how to raise the T2cc diagram
 
 Chapter 3 - Detector:
- ☐ energy and/or position resolutions for
-    ☐ tracker
-    ☐ ecal
-    ☐ hcal
-    ☐ muon systems
- ✔ fix broken figure references @done (15-04-27 17:21)
- ☐ check the number of L1 triggers
+ ✔ energy and/or position resolutions for @done (15-04-29 13:47)
+    ✔ tracker @done (15-04-29 13:46)
+    ✔ ecal @done (15-04-29 13:46)
+    ✔ hcal @done (15-04-29 13:47)
+    ✔ muon systems @done (15-04-29 13:47)
+ ✔ check the number of L1 triggers @done (15-04-29 13:09)
 
 Chapter 4 - Objects:
-  ☐ look up and briefly describe jet corrections
-  ☐ look up delatBeta corrections
   ☐ look up muons from decays in flight
   ☐ add ID effs? probably should...
-  ☐ mention photon->ee conversions - need to protect against
-  ☐ add subsystem mentions for each object
-  ☐ keep private references?
-  ☐ mention pf-based rho corrections in text
-  ☐ photon table rho correction text
+  ✔ add subsystem mentions for each object @done (15-04-29 13:05)
 
 Chapter 5 - Analysis:
   ☐ give an example of the MET threshold for a corresponding alphaT cut
   ☐ add in some alphaT correlation plots for various background sources/signal etc @high
-  ✔ decide what to do about the formula method section @done (15-04-27 09:04)
 
 Chapter 5_2 - Samples:
   ☐ work out what process Zinv is compared to with photons. gamma to what??
@@ -57,12 +44,9 @@ Chapter 6 - Background Estimation:
   ☐ MJ background section - get update from AN, likely hasn't changed
 
 Chapter 7 - Results:
- ✔ update results tables with correct numbers @done (15-04-28 17:01)
  ☐ defintion of pulls - how do they work?!
- ✔ update plots @done (15-04-28 17:01)
 
 Chapter 9 - Interpretation:
-  ✘ show effect of ISR correction on T2cc? @cancelled (15-04-28 16:43)
   ☐ deadECAL filter observations
   ☐ mhtmet cut syst
     ☐ observations from two signal models
@@ -71,6 +55,7 @@ Chapter 9 - Interpretation:
   ☐ get rid of t24body stop corrections section!
   ☐ decide on which stop momentum corrs to use
   ☐ check systematic value references in body text
+  ☐ add T24body dm=80 mass splitting cutflow
 
 Chapter 10 - Conclusion:
   ☐ write it!
@@ -79,11 +64,26 @@ Appendix 1 - Signal systematic plots:
 
 Appendix 2 - DPhiStar in signal region:
   ☐ get dphi cut eff plots from rob
+  ☐ copy dphi cut plots from rob
 
 Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ look up and briefly describe jet corrections @done (15-04-29 11:54) @project(Chapter 4 - Objects)
+ ✔ look up delatBeta corrections @done (15-04-29 12:50) @project(Chapter 4 - Objects)
+ ✔ mention photon->ee conversions - need to protect against @done (15-04-29 12:51) @project(Chapter 4 - Objects)
+ ✔ keep private references? @done (15-04-29 12:51) @project(Chapter 4 - Objects)
+ ✔ mention pf-based rho corrections in text @done (15-04-29 13:03) @project(Chapter 4 - Objects)
+ ✔ photon table rho correction text @done (15-04-29 13:03) @project(Chapter 4 - Objects)
+ ✔ sort out order of references - particular in theory chapter @done (15-04-26 18:34) @project(General)
+ ✔ pick a better style for the bibliography @done (15-04-26 18:34) @project(General)
+ ✔ gravitational lensing and rotational curves refs @done (15-04-27 17:12) @project(Chapter 2 - Theory)
+ ✔ fix broken figure references @done (15-04-27 17:21) @project(Chapter 3 - Detector)
+ ✔ decide what to do about the formula method section @done (15-04-27 09:04) @project(Chapter 5 - Analysis)
+ ✔ update results tables with correct numbers @done (15-04-28 17:01) @project(Chapter 7 - Results)
+ ✔ update plots @done (15-04-28 17:01) @project(Chapter 7 - Results)
+ ✘ show effect of ISR correction on T2cc? @cancelled (15-04-28 16:43) @project(Chapter 9 - Interpretation)
  ✔ fill out all captions @done (15-04-26 17:02) @project(Appendix 1 - Signal systematic plots)
  ✔ mht/met for T2_4body now appears higher - don't under shy @done (15-04-26 18:08) @project(Appendix 1 - Signal systematic plots)
  ✔ fix values in MHT/MET and DeadECAL plots - the avg/min/max/rms @done (15-04-26 18:08) @project(Appendix 1 - Signal systematic plots)
