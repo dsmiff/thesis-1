@@ -47,15 +47,20 @@ Chapter 7 - Results:
  ☐ defintion of pulls - how do they work?!
 
 Chapter 9 - Interpretation:
-  ☐ deadECAL filter observations
-  ☐ mhtmet cut syst
-    ☐ observations from two signal models
+  ✔ deadECAL filter observations @done (15-04-29 17:24)
+  ✔ mhtmet cut syst @done (15-04-29 17:24)
+    ✔ observations from two signal models @done (15-04-29 17:24)
   ☐ example test parameter distribution for CLs method
   ☐ best fit points? from AN!
-  ☐ get rid of t24body stop corrections section!
-  ☐ decide on which stop momentum corrs to use
-  ☐ check systematic value references in body text
+  ✔ get rid of t24body stop corrections section! @done (15-04-29 17:49)
+  ✔ decide on which stop momentum corrs to use @done (15-04-29 17:49)
+  ☐ how to reference the 4body boost reweighting procedure
+  ☐ is the boost reweighting procedure event necessary to include? I didn't do it...?!
+  ✔ check systematic value references in body text @done (15-04-29 17:43)
   ☐ add T24body dm=80 mass splitting cutflow
+  ✔ understand why btag numbers are smaller/similar for T2_4body as T2cc @done (15-04-29 17:24)
+  ✔ lumi systematic value ref @done (15-04-29 17:41)
+  ✔ what is the lumi systematic value?! @done (15-04-29 17:41)
 
 Chapter 10 - Conclusion:
   ☐ write it!
