@@ -28,7 +28,7 @@ Small inconsistencies in the handling of such large backgrounds or rare detector
 effects can therefore 
 have a significant impact on an analysis. This background is reduced to an 
 entirely negligible level using the dimensionless kinematic variable, \alphat
-(later described in section~\ref{sec:alphat}).
+(described in section~\ref{sec:alphat}).
 
 % OLD
 % Analyses searching in the jets and \met final state encounter significant 
@@ -52,7 +52,6 @@ minimum.
   \caption{\HT bin lower bounds used for each \nj and \nb category.\label
   {tab:ht-bins}}
   \centering
-  % \scriptsize % too big to fit on page
   \small
   \begin{tabular}{ lrrrrrrrrrrr }
     \hline
@@ -144,8 +143,8 @@ by the black contours of constant \alphat. The different physics sources
 will populate various regions of this plane. Most notably QCD exhibits a strong
 correlation between the two variables at low \alphat values
 (figure~\ref{fig:alphat_corr_qcd}), while processes with real \met break this
-correlation, sitting at high values of \alphat (figures~\ref{fig:alphat_corr_zinv}
-and \ref{fig:alphat_corr_t2cc}).
+correlation, sitting also at higher values of \alphat
+(figures~\ref{fig:alphat_corr_zinv} and \ref{fig:alphat_corr_t2cc}).
 
 \begin{figure}[h!]
   \centering
@@ -161,13 +160,15 @@ and \ref{fig:alphat_corr_t2cc}).
   \end{subfigure}\\
   \begin{subfigure}[b]{.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_T2cc_250_240.pdf}
-    \caption{T2cc (250, 240)}
+    \caption{\texttt{T2cc} (250, 240)}
     \label{fig:alphat_corr_t2cc}
   \end{subfigure}
-  \caption{Stuff n shit}
+  \caption{Plots showing the correlation between \mht and \deltaHT for QCD,
+  \zinv and an example SUSY signature \texttt{T2cc} ($m_{\sTop} = 250$ \gev,
+  $m_{\chiz} = 240$ \gev). Contours of constant \alphat are shown in black.
+  Each axis is normalised according to the event \HT \emph{show all three?}.}
   \label{fig:alphat_corr}
 \end{figure}
-
 
 
 %********************************** % First Section  *************************************
@@ -471,6 +472,13 @@ threshold for a given HT bin.}
 
 \end{description}
 
+\subsection{Residual QCD cleaning}
+
+While the \alphat requirement removes many order of magnitude of QCD events,
+there still exists scenarios in which such events may pass the signal region
+selection. Accordingly, further requirements are made to ensure the search
+region is free of residual QCD contamination.
+
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.6\textwidth]
@@ -482,15 +490,14 @@ selection of $\nb \geq 0$, $\nj \geq 2$ and \HT > 200 \gev.}
 \label{fig:full_mhtmet_distro}
 \end{figure}
 
-
-It is possible for events to acquire significant amounts of \mht without having any
-real \met present when multiple jets are below the analysis threshold. Figure
-~\ref{fig:full_mhtmet_distro} shows the presence of significant QCD contamination
+Events can acquire significant amounts of \mht without the presence of
+real \met if multiple jets are below the analysis threshold.
+Figure~\ref{fig:full_mhtmet_distro} shows the presence of significant QCD contamination
 at high values of \mhtmet, even after an \alphat requirement. To protect against
 this scenario, events are required to have a low ratio of the two variables,
 specifically \mhtmet < 1.25.
 
-Events can also acquire fake \mht if they overlap with areas of the calorimeter 
+Events may also acquire fake \mht if they overlap with areas of the calorimeter 
 system which are damaged or known to be faulty, where jets can be mis-measured or 
 lost as a result. To protect against this, for a given jet $j$, the angular separation
 between the event \mht, calculated excluding jet $j$, and the jet itself is used, defined
@@ -508,9 +515,45 @@ A small value of $\dphistar_j$ indicates that the momentum vector of $j$
 is aligned with the \mht vector, implying the jet is mis-measured. Events are 
 vetoed if a jet with \dphistar< 0.5 is within $\Delta R < 0.3$ of a known
 `dead' region of the ECAL.
+\emph{show hotspot maps before and after deadECAL cut to show it works proper
+bo}
 
-Events are required to have \dphistar > 0.3, in order to clean any remaining 
-events with jets containing sources of genuine \met jet (see
+\emph{where to introduce \mindphistar??? probably before hotspot maps}
+
+Many event filters are applied to remove any jet mismeasurements due
+to instrumental effects, however hypothetically previously un-discovered and
+therefore rare detector effects could still be present. To check for this, the
+jet giving the minimum \dphistar value in an event, \mindphistar, is determined,
+and a single entry of the $\eta$ and $\phi$ direction of the jet's axis is entered
+into a map of the detector FIGREF. Any areas of instrumental issue would be
+visible as clusters of high event counts. The maps are shown both before and
+after the aforementioned dead ECAL filter is applied REF REF, and no areas of
+potential problem are found.
+
+\emph{also jets with real MET in their decay}
+
+% The \dphistar variable can be used to identify QCD events with \met
+% originating from mismeasured jets. The jet most responsible for the \met
+% vector can be isolated by finding that which has the minimum \dphistar value.
+Jets can also appear to be mis-measured if they contain leptonic decays of heavy
+flavour mesons (see appendix~\ref{ch:app_dphistar}). 
+
+\emph{ratio of R(MHT/MET) can be used as a function of alphaT to check for
+these events. MHT roughly equal to MET, ratio roughly 1. would expect a steeply
+falling distribution as function of alphaT, but then a constant pedestal from
+these events, which pass alphaT}.
+
+\emph{can study these events using control region and un-prescaled HT triggers}
+
+\emph{what if we make the >0.3 requirement? they seem isolated below 0.3 -
+robin's plots?}
+
+\emph{R(MHTMET) plots}
+
+\emph{dphistar pass/fail plots}
+
+Events are required to have \dphistar > 0.3, in
+order to clean any remaining events with jets containing sources of genuine \met jet (see
 appendix~\ref{ch:app_dphistar}).
 
 % For bins of $\HT>375$ \gev the leading two jets in the event are required to 
@@ -518,6 +561,8 @@ appendix~\ref{ch:app_dphistar}).
 % $\Pt>50$ \gev. In order to maintain a similar kinematic phase space throughout
 % the many \HT bins, these jet \Pt requirements are scaled for the lower \HT bins 
 % as shown in Table~\ref{tab:jet_pt_thresholds}.
+
+\subsection{Example distributions and cutflow}
 
 Example distributions from MC simulations of \alphat, \HT, \mht and jet \Pt  are
 shown in figure~\ref{fig:datamc_had_inc}.
