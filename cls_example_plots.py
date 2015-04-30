@@ -62,27 +62,27 @@ def make_observed(bkg = None, sig = None):
 
 def main():
 
-    mode = ["expected", "observed"][0]
+    mode = ["expected", "observed"][1]
 
     hbg, hsg = make_pdfs()
 
     canv = r.TCanvas()
 
-    lg = r.TLegend(0.6, 0.7, 0.89, 0.89)
+    lg = r.TLegend(0.6, 0.64, 0.89, 0.89)
 
     hbg.Draw("hist")
     hbg.SetLineColor(r.kBlue)
     hbg.SetLineWidth(2)
-    lg.AddEntry(hbg, "P(#lambda  | b only)", "L")
+    lg.AddEntry(hbg, "P(q_{#mu}  | b only)", "L")
 
     hbg.SetTitle("")
-    hbg.GetXaxis().SetTitle("#lambda")
+    hbg.GetXaxis().SetTitle("q_{#mu}")
     hbg.GetYaxis().SetTitle("Counts")
 
     hsg.Draw("histsame")
     hsg.SetLineColor(r.kOrange+2)
     hsg.SetLineWidth(2)
-    lg.AddEntry(hsg, "P(#lambda  | b+s only)", "L")
+    lg.AddEntry(hsg, "P(q_{#mu}  | b+s only)", "L")
 
     if mode == "expected":
         hexp, hexprange = make_expected(bkg = hbg)
@@ -100,7 +100,7 @@ def main():
         hexp.SetFillColor(r.kViolet+1)
         hexp.SetLineColor(r.kViolet+1)
         hexp.SetMarkerColor(r.kViolet+1)
-        lg.AddEntry(hexp, "Median expected #lambda")
+        lg.AddEntry(hexp, "Median expected q_{#mu}")
 
         lg.Draw()
         lg.SetLineColor(0)
@@ -118,20 +118,20 @@ def main():
         hbkgobs.SetLineColor(r.kBlue)
         hbkgobs.SetFillStyle(3001)
         # hbkgobs.SetLineStyle(2)
-        lg.AddEntry(hbkgobs, "1-CLb", "L")
+        lg.AddEntry(hbkgobs, "1-CL_{b}", "L")
 
         hsigobs.Draw("histsame")
         hsigobs.SetFillColor(r.kOrange+2)
         hsigobs.SetLineColor(r.kOrange+2)
         hsigobs.SetFillStyle(3001)
         # hsigobs.SetLineStyle(2)
-        lg.AddEntry(hsigobs, "CLsb", "L")
+        lg.AddEntry(hsigobs, "CL_{sb}", "L")
 
         hobs.Draw("histsame")
         hobs.SetLineColor(r.kBlack)
         # hobs.SetFillColor(r.kBlack)
         hobs.SetLineWidth(3)
-        lg.AddEntry(hobs, "#lambda  observed")
+        lg.AddEntry(hobs, "q_{#mu}  observed")
 
         lg.Draw()
         lg.SetLineColor(0)
