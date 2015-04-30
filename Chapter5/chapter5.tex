@@ -132,12 +132,42 @@ form:
 % 
 \begin{equation}
 \alphat = \frac{1}{2} \times \frac{\HT-\deltaHT}{\sqrt{\HT^2 - \mht^2}} = 
-\frac{1}{2} \times \frac{1-\frac{\deltaHT}{\HT}}{\sqrt{1 - \big(\frac{\mht}{\HT}\big)^2}}
+\frac{1}{2} \times \frac{1-\frac{\deltaHT}{\HT}}{\sqrt{1 - \big(\frac{\mht}
+{\HT}\big)^2}}.
 \label{eq:alphat_njet}
 \end{equation}
 % 
-\emph{show plots of correlations between \mht and \deltaHT for QCD, 
-signal, SM real MET etc.}
+
+The \alphat variable introduces a correlation between the two variables of \mht
+and \deltaHT. This relationship is demonstrated in figure~\ref{fig:alphat_corr}
+by the black contours of constant \alphat. The different physics sources
+will populate various regions of this plane. Most notably QCD exhibits a strong
+correlation between the two variables at low \alphat values
+(figure~\ref{fig:alphat_corr_qcd}), while processes with real \met break this
+correlation, sitting at high values of \alphat (figures~\ref{fig:alphat_corr_zinv}
+and \ref{fig:alphat_corr_t2cc}).
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_QCD.pdf}
+    \caption{QCD}
+    \label{fig:alphat_corr_qcd}
+  \end{subfigure}
+  \begin{subfigure}[b]{.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_Zinv.pdf}
+    \caption{\zinv}
+    \label{fig:alphat_corr_zinv}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_T2cc_250_240.pdf}
+    \caption{T2cc (250, 240)}
+    \label{fig:alphat_corr_t2cc}
+  \end{subfigure}
+  \caption{Stuff n shit}
+  \label{fig:alphat_corr}
+\end{figure}
+
 
 
 %********************************** % First Section  *************************************
