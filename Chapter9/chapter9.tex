@@ -129,8 +129,8 @@ the limits of sensitivity.
 
 \begin{table}[ht!]
   \caption{Cutflow table for two mass points ($m_{\sTop} = 250$ \gev, $m_
-  {\chiz}=240$ \gev and $m_{\sTop} = 250$ \gev, $m_{\chiz}=170$ \gev) of the T2cc
-  signal model.} \label{tab:t2cc_cutflow}
+  {\chiz}=240$ \gev and $m_{\sTop} = 250$ \gev, $m_{\chiz}=170$ \gev) of the
+  \texttt{T2cc} signal model.} \label{tab:t2cc_cutflow}
   \centering
   \footnotesize
   \begin{tabular}{ lcc }
@@ -248,41 +248,42 @@ sensitivity.
 \end{figure}
 
 \begin{table}[ht!]
-  \caption{Cutflow table for the $m_{\sTop} = 250$ \gev, $m_{\chiz}=240$ \gev
-  mass point of the \texttt {T2Degen} signal model.}
+  \caption{Cutflow table for two mass points ($m_{\sTop} = 250$ \gev, $m_
+  {\chiz}=240$ \gev and $m_{\sTop} = 250$ \gev, $m_{\chiz}=170$ \gev) of the
+  \texttt{T2Degen} signal model.}
   \label{tab:t2_4body_cutflow}
   \centering
   \footnotesize
   \begin{tabular}{ lcc }
     \hline
     \hline
-    Cut Name    & Eff (\%) & N \\
+    Cut Name    & \multicolumn{2}{c}{Cumlative Eff. (\%)}\\
     \hline
-    ($m_{\sTop}$, $m_{\chiz}$)& (250, 240) \\
+    ($m_{\sTop}$, $m_{\chiz}$)& (250, 240) & (250, 170) \\
     \hline
-    Event Counter & 100.00  \\
-    $\nj \geq 2$  & 10.80 \\
-    MET Filters & 10.80  \\
-    Vertex Noise Filter & 10.80  \\
-    HBHE Noise Filter & 10.80  \\
-    DeadECAL Filter & 9.13 \\
-    $n_{e} = 0$ & 9.13 \\
-    $n_{\gamma} = 0$  & 9.13 \\
-    $n_{\mu} = 0$ & 9.13 \\
-    $\text{EMF}_{max}$ for all jets > 0.1 & 9.13  \\
-    Leading jet \Pt > 100 \gev  & 6.01 \\
-    Leading jet $\eta$ < 2.5  & 5.70 \\
-    Sub-Leading jet \Pt > 100 \gev  & 1.64\\
-    $n_{j, fail} = 0$ & 1.61 \\
-    $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 1.61 \\
-    $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 1.61  \\
-    recHitCut & 1.61  \\
-    $n_{SIT} = 0$ & 1.50 \\
-    \mindphistar > 0.3  & 1.35 \\
-    \mhtmet < 1.25  & 1.24 \\
-    \HT > 375 \gev  & 0.55 \\
-    \alphat > 0.55  & 0.26 \\
-    \mhtmet < 1.25  & 0.26 \\
+    Event Counter & 100.00 & 100.00 \\
+    $\nj \geq 2$  & 10.80 & 32.33 \\
+    MET Filters & 10.80 & 32.33 \\
+    Vertex Noise Filter & 10.80 & 32.33 \\
+    HBHE Noise Filter & 10.80 & 32.33 \\
+    DeadECAL Filter & 9.13 & 21.30 \\
+    $n_{e} = 0$ & 9.13 & 19.70 \\
+    $n_{\gamma} = 0$  & 9.13 & 19.55 \\
+    $n_{\mu} = 0$ & 9.13 & 17.41 \\
+    $\text{EMF}_{max}$ for all jets > 0.1 & 9.13 & 17.41 \\
+    Leading jet \Pt > 100 \gev  & 6.01 & 8.70 \\
+    Leading jet $\eta$ < 2.5  & 5.70 & 8.37 \\
+    Sub-Leading jet \Pt > 100 \gev  & 1.64 & 2.23 \\
+    $n_{j, fail} = 0$ & 1.61 & 2.17 \\
+    $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 1.61 & 2.11 \\
+    $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 1.61 & 2.11 \\
+    recHitCut & 1.61 & 2.11 \\
+    $n_{SIT} = 0$ & 1.50 & 1.67 \\
+    \mindphistar > 0.3  & 1.35 & 0.93 \\
+    \mhtmet < 1.25  & 1.24 & 0.68 \\
+    \HT > 375 \gev  & 0.55 & 0.37 \\
+    \alphat > 0.55  & 0.26 & VAL \\
+    \mhtmet < 1.25  & 0.26 & VAL \\
     \hline
     \hline
   \end{tabular}
@@ -748,20 +749,21 @@ experiments from least to most signal-like, is defined as:
 % 
 \begin{equation}
 q_{\mu} = \begin{cases} -2log\lambda(\mu), & \mbox{if } \mu \geq \hat{\mu} \\
-0., & \mbox{otherwise} \end{cases}
+0., & \mbox{otherwise} \end{cases},
 \end{equation}
 % 
 where:
 % 
 \begin{equation}
-\lambda(\mu) = \frac{L(\mu, \theta_{\mu})}{L(\hat{\mu}, \hat{\theta_{\mu}})}
+\lambda(\mu) = \frac{L(\mu, \theta_{\mu})}{L(\hat{\mu}, \hat{\theta_{\mu}})},
 \end{equation}
 % 
 $\mu$ is the signal strength parameter (equivalent to the variable $f$ defined
 in section~\ref{sec:results_likelihood}, where $\mu=1$ represents a given
 signal at it's nominal cross-section), $\theta_{\mu}$ is a set of nuisance 
 parameters for a given $\mu$, $\hat {\mu}$ is the Maximum Likelihood
-(ML) value of $\mu$, and $\hat{\theta}$ is the ML set of nuisance parameters.
+(ML) value of $\mu$, and $\hat{\theta}$ is the corresponding ML set of nuisance
+parameters.
 
 Distributions of $q_{\mu}$ are populated from pseudo-experiments under
 signal+background and background only hypotheses. For a given observation, 1
@@ -769,8 +771,8 @@ minus the quantiles of each distribution are used to determine $CL_{s+b}$ and
 $CL_b$, which are used to define:
 % 
 \begin{equation}
-CL_s = \frac{CL_{s+b}}{CL_b}
-\end{equation}.
+CL_s = \frac{CL_{s+b}}{CL_b}.
+\end{equation}
 % 
 A model is considered to be excluded at 95\% confidence level if
 $CL_s \leq 0.05$.
