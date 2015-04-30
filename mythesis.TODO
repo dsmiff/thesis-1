@@ -7,14 +7,12 @@ General:
   ☐ new names for T2cc and T2degen
   ☐ write abstract
   ☐ punctuate equations
+  ☐ thesis title!
 
 Chapter 1 - Introduction:
- ✔ write it! @done (15-04-30 19:29)
 
 Chapter 2 - Theory:
  ☐ not enough CP violation reference
- ☐ ref for 1TeV SUSY particles for reasonable solution to hierarchy prob
- ☐ MSSM breaking refs
  ☐ work out how to raise the T2cc diagram
 
 Chapter 3 - Detector:
@@ -29,7 +27,7 @@ Chapter 5 - Analysis:
     ☐ hotspot maps before and after dead ECAL
     ☐ dphi acceptance plots - cut at 0.3
     ☐ rmhtmet plots - before/after 0.3 requirement
-  ☐ put all trigger plots on their own page?
+  ✔ put all trigger plots on their own page? @done (15-04-30 22:58)
 
 Chapter 5_2 - Samples:
   ☐ work out what process Zinv is compared to with photons. gamma to what??
@@ -37,9 +35,6 @@ Chapter 5_2 - Samples:
   ☐ ref for recent CMS studies - likely not public
 
 Chapter 6 - Background Estimation:
-  ✘ MJ background estimation systematics??? @cancelled (15-04-30 19:36)
-  ✘ MJ distributions @cancelled (15-04-30 19:36)
-  ✘ MJ background section - get update from AN, likely hasn't changed @cancelled (15-04-30 19:36)
   ☐ remove MJ method and move largely to analysis chapter
     - this will then be used to show that we're QCD free with the dphi* cut
 
@@ -49,7 +44,6 @@ Chapter 7 - Results:
 Chapter 9 - Interpretation:
   ☐ example test parameter distribution for CLs method
   ☐ best fit points? from AN!
-  ✔ is the boost reweighting procedure event necessary to include? I didn't doq @done (15-04-30 18:22)
   ☐ rerun t2_4body 80 with alphaT 0.55
 
 Chapter 10 - Conclusion:
@@ -65,6 +59,13 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ ref for 1TeV SUSY particles for reasonable solution to hierarchy prob @done (15-04-30 22:53) @project(Chapter 2 - Theory)
+ ✔ MSSM breaking refs @done (15-04-30 22:53) @project(Chapter 2 - Theory)
+ ✘ MJ distributions @cancelled (15-04-30 19:36) @project(Chapter 6 - Background Estimation)
+ ✘ MJ background section - get update from AN, likely hasn't changed @cancelled (15-04-30 19:36) @project(Chapter 6 - Background Estimation)
+ ✘ MJ background estimation systematics??? @cancelled (15-04-30 19:36) @project(Chapter 6 - Background Estimation)
+ ✔ write it! @done (15-04-30 19:29) @project(Chapter 1 - Introduction)
+ ✔ is the boost reweighting procedure event necessary to include? I didn't doq @done (15-04-30 18:22) @project(Chapter 9 - Interpretation)
  ✔ add in some alphaT correlation plots for various background sources/signal etc @high @done (15-04-30 18:21) @project(Chapter 5 - Analysis)
  ✘ how to reference the 4body boost reweighting procedure @cancelled (15-04-30 17:09) @project(Chapter 9 - Interpretation)
  ✔ format t24body 80 effs @done (15-04-30 14:29) @project(Chapter 9 - Interpretation)
