@@ -6,9 +6,10 @@ General:
   ☐ 'mistag' or 'mis-tag'?
   ☐ new names for T2cc and T2degen
   ☐ write abstract
+  ☐ punctuate equations
 
 Chapter 1 - Introduction:
- ☐ write it!
+ ✔ write it! @done (15-04-30 19:29)
 
 Chapter 2 - Theory:
  ☐ not enough CP violation reference
@@ -19,12 +20,16 @@ Chapter 2 - Theory:
 Chapter 3 - Detector:
 
 Chapter 4 - Objects:
-  ☐ look up muons from decays in flight
   ☐ add ID effs? probably should...
 
 Chapter 5 - Analysis:
   ☐ give an example of the MET threshold for a corresponding alphaT cut
-  ☐ add in some alphaT correlation plots for various background sources/signal etc @high
+  ☐ introduce section on QCD? show dphi plots?
+    ☐ two sources: intrumental and mis-measurement
+    ☐ hotspot maps before and after dead ECAL
+    ☐ dphi acceptance plots - cut at 0.3
+    ☐ rmhtmet plots - before/after 0.3 requirement
+  ☐ put all trigger plots on their own page?
 
 Chapter 5_2 - Samples:
   ☐ work out what process Zinv is compared to with photons. gamma to what??
@@ -32,9 +37,11 @@ Chapter 5_2 - Samples:
   ☐ ref for recent CMS studies - likely not public
 
 Chapter 6 - Background Estimation:
-  ☐ MJ background estimation systematics???
-  ☐ MJ distributions
-  ☐ MJ background section - get update from AN, likely hasn't changed
+  ✘ MJ background estimation systematics??? @cancelled (15-04-30 19:36)
+  ✘ MJ distributions @cancelled (15-04-30 19:36)
+  ✘ MJ background section - get update from AN, likely hasn't changed @cancelled (15-04-30 19:36)
+  ☐ remove MJ method and move largely to analysis chapter
+    - this will then be used to show that we're QCD free with the dphi* cut
 
 Chapter 7 - Results:
  ☐ defintion of pulls - how do they work?!
@@ -42,10 +49,8 @@ Chapter 7 - Results:
 Chapter 9 - Interpretation:
   ☐ example test parameter distribution for CLs method
   ☐ best fit points? from AN!
-  ☐ how to reference the 4body boost reweighting procedure
-  ☐ is the boost reweighting procedure event necessary to include? I didn't doq
-  it...?!
-  ☐ add T24body dm=80 mass splitting cutflow
+  ✔ is the boost reweighting procedure event necessary to include? I didn't doq @done (15-04-30 18:22)
+  ☐ rerun t2_4body 80 with alphaT 0.55
 
 Chapter 10 - Conclusion:
   ☐ write it!
@@ -60,6 +65,10 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ add in some alphaT correlation plots for various background sources/signal etc @high @done (15-04-30 18:21) @project(Chapter 5 - Analysis)
+ ✘ how to reference the 4body boost reweighting procedure @cancelled (15-04-30 17:09) @project(Chapter 9 - Interpretation)
+ ✔ format t24body 80 effs @done (15-04-30 14:29) @project(Chapter 9 - Interpretation)
+ ✔ add T24body dm=80 mass splitting cutflow @done (15-04-30 09:56) @project(Chapter 9 - Interpretation)
  ✔ get rid of t24body stop corrections section! @done (15-04-29 17:49) @project(Chapter 9 - Interpretation)
  ✔ decide on which stop momentum corrs to use @done (15-04-29 17:49) @project(Chapter 9 - Interpretation)
  ✔ check systematic value references in body text @done (15-04-29 17:43) @project(Chapter 9 - Interpretation)
