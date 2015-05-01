@@ -410,162 +410,162 @@ in figure~\ref{fig:datamc_pho_inc}.
 \end{figure}
 
 %********************************** % Third Section  *************************************
-\section{Estimating multijet backgrounds}  %Section - 1.3
-\label{sec:background_qcd}
+% \section{Estimating multijet backgrounds}  %Section - 1.3
+% \label{sec:background_qcd}
 
-A data-driven technique has been developed to measure any remaining QCD events
-in the signal region. This is used to determine a \HT dependent \alphat
-requirement such that QCD is at the sub-percent level with respect to the total
-EWK background.
+% A data-driven technique has been developed to measure any remaining QCD events
+% in the signal region. This is used to determine a \HT dependent \alphat
+% requirement such that QCD is at the sub-percent level with respect to the total
+% EWK background.
 
-\subsection{Multijet control sample}
-In order to predict the contamination of QCD MJ events in the signal region a 
-control region of hadronic events is constructed.
+% \subsection{Multijet control sample}
+% In order to predict the contamination of QCD MJ events in the signal region a 
+% control region of hadronic events is constructed.
 
-\subsubsection{Triggers}
-Events are collected using a suite of triggers requiring various thresholds of 
-\HT. By using single-object \HT triggers it is possible to study events
-across a spectrum of \alphat values. The high rates expected through these
-triggers were maintained throughout
-the 2012 run with a variety of prescales. Each trigger seeds a single \HT bin in
-the analysis, with a 25 \gev offset between the online trigger requirement and 
-the offline threshold. Efficiencies are measured with the same technique as the
-signal triggers, using the \verb!HLT_IsoMu24_eta2p1! trigger as a reference. 
-The efficiencies of these triggers are summarised in table~\ref{tab:ht-triggers}.
+% \subsubsection{Triggers}
+% Events are collected using a suite of triggers requiring various thresholds of 
+% \HT. By using single-object \HT triggers it is possible to study events
+% across a spectrum of \alphat values. The high rates expected through these
+% triggers were maintained throughout
+% the 2012 run with a variety of prescales. Each trigger seeds a single \HT bin in
+% the analysis, with a 25 \gev offset between the online trigger requirement and 
+% the offline threshold. Efficiencies are measured with the same technique as the
+% signal triggers, using the \verb!HLT_IsoMu24_eta2p1! trigger as a reference. 
+% The efficiencies of these triggers are summarised in table~\ref{tab:ht-triggers}.
 
-\begin{table}[!ht]
-  \caption{List of \texttt{HTxxx} triggers and their efficiencies
-    (\%), as measured in data for each \HT bin and \nj category. Also listed are
-    the typical prescales applied and the L1 seed triggers.}
-  \label{tab:ht-triggers}
-  \centering
-  \scriptsize
-  \begin{tabular}{ ccccll }
-    \hline
-    \hline
-    Offline \HT & L1 seed (\verb!L1_?!) & Trigger (\verb!HLT_?!) &    Typical & \multicolumn{2}{c}{Efficiency (\%)}\\ [0.5ex]
-   region (\gev) & (highest thresholds) &  & prescale & \multicolumn{1}{c}{$2 \leq \nj \leq 3$} & \multicolumn{1}{c}{$\nj \geq 4$} \\ [0.5ex]
+% \begin{table}[!ht]
+%   \caption{List of \texttt{HTxxx} triggers and their efficiencies
+%     (\%), as measured in data for each \HT bin and \nj category. Also listed are
+%     the typical prescales applied and the L1 seed triggers.}
+%   \label{tab:ht-triggers}
+%   \centering
+%   \scriptsize
+%   \begin{tabular}{ ccccll }
+%     \hline
+%     \hline
+%     Offline \HT & L1 seed (\verb!L1_?!) & Trigger (\verb!HLT_?!) &    Typical & \multicolumn{2}{c}{Efficiency (\%)}\\ [0.5ex]
+%    region (\gev) & (highest thresholds) &  & prescale & \multicolumn{1}{c}{$2 \leq \nj \leq 3$} & \multicolumn{1}{c}{$\nj \geq 4$} \\ [0.5ex]
 
-    \hline
-    $200 < \HT < 275$  & \verb!DoubleJetC64!           & \verb!HT250! & 4800     & $\phantom{1}66.4 \pm 14.1$                & $154.3 \pm 154.3$                     \\
-    $275 < \HT < 325$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT250! & 2400     & $\phantom{1}97.3 \pm 23.0$                & $\phantom{1}91.7 \pm \phantom{1}53.1$ \\
-    $325 < \HT < 375$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT300! & 1200     & $\phantom{1}79.5 \pm 20.6$                & $198.1 \pm \phantom{1}81.2$           \\
-    $375 < \HT < 475$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT350! & 600      & $108.7 \pm 18.7$                          & $\phantom{1}54.5 \pm \phantom{1}31.6$ \\
-    $475 < \HT < 575$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT450! & 150      & $110.6 \pm 15.9$                          & $106.4 \pm \phantom{1}26.8$           \\
-    $575 < \HT < 675$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT550! & 70       & $\phantom{1}96.1 \pm 14.7$                & $104.4 \pm \phantom{1}23.1$           \\
-    $675 < \HT < 775$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT650! & 25       & $\phantom{1}94.3 \pm 15.4$                & $101.2 \pm \phantom{1}21.5$           \\
-    $775 < \HT < 875$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT750! & 1        & $\phantom{1}96.9 \pm \phantom{1}6.1$      & $\phantom{1}94.4 \pm \phantom{11}8.3$ \\
-    $875 < \HT < 975$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT750! & 1        & $100.0 \pm \phantom{1}8.4$                & $100.0 \pm \phantom{1}12.6$           \\
-    $975 < \HT < 1075$ & \verb!DoubleJetC64 OR HTT175! & \verb!HT750! & 1        & $100.0 \pm 11.2$                          & $100.0 \pm \phantom{1}15.3$           \\
-    $\HT > 1075$       & \verb!DoubleJetC64 OR HTT175! & \verb!HT750! & 1        & $100.0 \pm 15.0$                          & $100.0 \pm \phantom{1}22.9$           \\
-    \hline
-    \hline
-  \end{tabular}
-\end{table}
+%     \hline
+%     $200 < \HT < 275$  & \verb!DoubleJetC64!           & \verb!HT250! & 4800     & $\phantom{1}66.4 \pm 14.1$                & $154.3 \pm 154.3$                     \\
+%     $275 < \HT < 325$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT250! & 2400     & $\phantom{1}97.3 \pm 23.0$                & $\phantom{1}91.7 \pm \phantom{1}53.1$ \\
+%     $325 < \HT < 375$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT300! & 1200     & $\phantom{1}79.5 \pm 20.6$                & $198.1 \pm \phantom{1}81.2$           \\
+%     $375 < \HT < 475$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT350! & 600      & $108.7 \pm 18.7$                          & $\phantom{1}54.5 \pm \phantom{1}31.6$ \\
+%     $475 < \HT < 575$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT450! & 150      & $110.6 \pm 15.9$                          & $106.4 \pm \phantom{1}26.8$           \\
+%     $575 < \HT < 675$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT550! & 70       & $\phantom{1}96.1 \pm 14.7$                & $104.4 \pm \phantom{1}23.1$           \\
+%     $675 < \HT < 775$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT650! & 25       & $\phantom{1}94.3 \pm 15.4$                & $101.2 \pm \phantom{1}21.5$           \\
+%     $775 < \HT < 875$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT750! & 1        & $\phantom{1}96.9 \pm \phantom{1}6.1$      & $\phantom{1}94.4 \pm \phantom{11}8.3$ \\
+%     $875 < \HT < 975$  & \verb!DoubleJetC64 OR HTT175! & \verb!HT750! & 1        & $100.0 \pm \phantom{1}8.4$                & $100.0 \pm \phantom{1}12.6$           \\
+%     $975 < \HT < 1075$ & \verb!DoubleJetC64 OR HTT175! & \verb!HT750! & 1        & $100.0 \pm 11.2$                          & $100.0 \pm \phantom{1}15.3$           \\
+%     $\HT > 1075$       & \verb!DoubleJetC64 OR HTT175! & \verb!HT750! & 1        & $100.0 \pm 15.0$                          & $100.0 \pm \phantom{1}22.9$           \\
+%     \hline
+%     \hline
+%   \end{tabular}
+% \end{table}
 
-\subsubsection{Selection Criteria}
-The selection of this sample matches that of the hadronic signal region, with 
-the exception that both the \alphat and \mhtmet requirements are removed 
-ensuring a very high yield of QCD MJ events.
+% \subsubsection{Selection Criteria}
+% The selection of this sample matches that of the hadronic signal region, with 
+% the exception that both the \alphat and \mhtmet requirements are removed 
+% ensuring a very high yield of QCD MJ events.
 
 
-\subsection{Prediction Technique}
+% \subsection{Prediction Technique}
 
-Events from the hadronic control sample are used to populate a plane of \mhtmet 
-and \alphat. A prediction of the EWK contribution to this sample is determined 
-from the \mj control sample with the \mhtmet requirement removed, using the TF 
-factor method described in section~\ref{sec:background_overview}. The prediction
-is subtracted from the hadronic control sample yields as a function of \mhtmet
-and \alphat, leaving a pure sample of QCD MJ events (SHOW PLOTS?).
+% Events from the hadronic control sample are used to populate a plane of \mhtmet 
+% and \alphat. A prediction of the EWK contribution to this sample is determined 
+% from the \mj control sample with the \mhtmet requirement removed, using the TF 
+% factor method described in section~\ref{sec:background_overview}. The prediction
+% is subtracted from the hadronic control sample yields as a function of \mhtmet
+% and \alphat, leaving a pure sample of QCD MJ events (SHOW PLOTS?).
 
-By considering events both above and below the nominal \mhtmet threshold of
-1.25, the ratio \rmhtmet is constructed, defined as:
-% 
-\begin{equation}
-\label{eq:rmhtmet}
-\rmhtmet = \frac{N(\mhtmet<1.25)}{N(\mhtmet>1.25)}
-\end{equation}
+% By considering events both above and below the nominal \mhtmet threshold of
+% 1.25, the ratio \rmhtmet is constructed, defined as:
+% % 
+% \begin{equation}
+% \label{eq:rmhtmet}
+% \rmhtmet = \frac{N(\mhtmet<1.25)}{N(\mhtmet>1.25)}
+% \end{equation}
 
-A fit is made to this variable as a function of \alphat, using an exponential 
-functional form:
-% 
-\begin{equation}
-\label{eq:fit_exp}
-\rmhtmet(\alphat) = e^{{-(a+b.\alphat)}^n}
-\end{equation}
-% 
-both for $n=0$ and also when $n$ is allowed to float as a free 
-parameter within the range $0-2$ in order to span the scenarios from flat to a
-Gaussian form. Example distributions and fits are shown in FIGURE.
+% A fit is made to this variable as a function of \alphat, using an exponential 
+% functional form:
+% % 
+% \begin{equation}
+% \label{eq:fit_exp}
+% \rmhtmet(\alphat) = e^{{-(a+b.\alphat)}^n}
+% \end{equation}
+% % 
+% both for $n=0$ and also when $n$ is allowed to float as a free 
+% parameter within the range $0-2$ in order to span the scenarios from flat to a
+% Gaussian form. Example distributions and fits are shown in FIGURE.
 
-QCD yield predictions are made and compared with the relevant EWK background 
-contributions in table~\ref{tab:qcd-pred-data}. \alphat thresholds are chosen 
-for each \HT bin such that the ratio of QCD to EWK is at the sub-percent level. 
-The chosen \alphat threshold values are summarised in
-table~\ref{tab:alphat_thresholds_qcd}.
+% QCD yield predictions are made and compared with the relevant EWK background 
+% contributions in table~\ref{tab:qcd-pred-data}. \alphat thresholds are chosen 
+% for each \HT bin such that the ratio of QCD to EWK is at the sub-percent level. 
+% The chosen \alphat threshold values are summarised in
+% table~\ref{tab:alphat_thresholds_qcd}.
 
-\begin{table}[h!]
-\centering
-\scriptsize
-  \caption{QCD multijet background contribution prediction summarised for the 
-  main analysis categories of \nb, \nj and \HT as a function of \alphat. The 
-  predicted EWK background contribution is included for comparison, and a 
-  the ratio of QCD/EWK is also shown.}
-\label{tab:qcd-pred-data}
-\begin{tabular}{ccccrrr}
-\hline
-\hline
-\nj & \nb & \HT (GeV) & Bkgd & \multicolumn{3}{c}{\alphat threshold} \\
-\cline{5-7}
- & & & & \multicolumn{1}{c}{0.550}   & \multicolumn{1}{c}{0.600}   & \multicolumn{1}{c}{0.650} \\
-\hline
-2--3 & 0 & 200--275 & QCD  & $\left(3.8 \pm 1.3 \pm 1.2 \right) \times 10^{3}$ & $\left(4.1 \pm 2.4 \pm 3.0 \right) \times 10^{1}$ & $\left(0.9 \pm 0.8 \pm 1.5 \right) \times 10^{0}$\\
-2--3 & 0 & 200--275 & EWK  & $\left(2.1 \pm 0.1\right) \times 10^{4}$ & $\left(1.5 \pm 0.0\right) \times 10^{4}$ & $\left(1.2 \pm 0.0\right) \times 10^{4}$\\
-2--3 & 0 & 200--275 & Ratio  & $0.2 \pm 0.1$ & $0.003 \pm 0.003$ & $0.0001 \pm 0.0001$\\ [1.0ex]
-2--3 & 0 & 275--325 & QCD  & $\left(1.0 \pm 0.3 \pm 1.5 \right) \times 10^{4}$ & $\left(0.2 \pm 0.1 \pm 0.7 \right) \times 10^{0}$ & $\left(0.8 \pm 0.3 \pm 4.8 \right) \times 10^{-3}$\\
-2--3 & 0 & 275--325 & EWK  & $\left(7.9 \pm 0.2\right) \times 10^{3}$ & $\left(5.3 \pm 0.2\right) \times 10^{3}$ & $\left(4.0 \pm 0.2\right) \times 10^{3}$\\
-2--3 & 0 & 275--325 & Ratio  & $1 \pm 2$ & $0.0000 \pm 0.0001$ & $\left(0 \pm 1\right) \times 10^{-6}$\\ [1.0ex]
-2--3 & 0 & 325--375 & QCD  & $\left(2.8 \pm 0.4 \pm 2.1 \right) \times 10^{1}$ & $\left(0.9 \pm 0.2 \pm 1.3 \right) \times 10^{-1}$ & $\left(0.6 \pm 0.4 \pm 1.2 \right) \times 10^{-3}$\\
-2--3 & 0 & 325--375 & EWK  & $\left(3.4 \pm 0.1\right) \times 10^{3}$ & $\left(2.2 \pm 0.1\right) \times 10^{3}$ & $\left(1.7 \pm 0.1\right) \times 10^{3}$\\
-2--3 & 0 & 325--375 & Ratio  & $0.008 \pm 0.006$ & $\left(4 \pm 6\right) \times 10^{-5}$ & $\left(4 \pm 8\right) \times 10^{-7}$\\ [1.0ex]
-$\geq 4$ & 0 & 200--275 & QCD  & $\left(2.8 \pm 1.5 \pm 1.3 \right) \times 10^{3}$ & $\left(1.1 \pm 0.7 \pm 0.2 \right) \times 10^{1}$ & $\left(0.2 \pm 0.2 \pm 0.0 \right) \times 10^{0}$\\
-$\geq 4$ & 0 & 200--275 & EWK  & $\left(4.3 \pm 0.3\right) \times 10^{2}$ & $\left(2.0 \pm 0.1\right) \times 10^{2}$ & $\left(1.0 \pm 0.1\right) \times 10^{2}$\\
-$\geq 4$ & 0 & 200--275 & Ratio  & $7 \pm 5$ & $0.06 \pm 0.04$ & $0.002 \pm 0.002$\\ [1.0ex]
-$\geq 4$ & 0 & 275--325 & QCD  & $\left(1.5 \pm 1.2 \pm 1.0 \right) \times 10^{4}$ & $\left(1.5 \pm 1.7 \pm 0.3 \right) \times 10^{0}$ & $\left(0.1 \pm 0.2 \pm 0.0 \right) \times 10^{-1}$\\
-$\geq 4$ & 0 & 275--325 & EWK  & $\left(1.2 \pm 0.0\right) \times 10^{3}$ & $\left(5.3 \pm 0.2\right) \times 10^{2}$ & $\left(2.9 \pm 0.1\right) \times 10^{2}$\\
-$\geq 4$ & 0 & 275--325 & Ratio  & $\left(1 \pm 1\right) \times 10^{1}$ & $0.003 \pm 0.003$ & $\left(4 \pm 7\right) \times 10^{-5}$\\ [1.0ex]
-$\geq 4$ & 0 & 325--375 & QCD  & $\left(0.7 \pm 0.1 \pm 0.8 \right) \times 10^{0}$ & $\left(2.5 \pm 0.6 \pm 6.5 \right) \times 10^{-5}$ & $\left(0.7 \pm 0.3 \pm 2.8 \right) \times 10^{-8}$\\
-$\geq 4$ & 0 & 325--375 & EWK  & $\left(4.8 \pm 0.3\right) \times 10^{2}$ & $\left(2.0 \pm 0.1\right) \times 10^{2}$ & $\left(1.1 \pm 0.1\right) \times 10^{2}$\\
-$\geq 4$ & 0 & 325--375 & Ratio  & $0.002 \pm 0.002$ & $\left(1 \pm 3\right) \times 10^{-7}$ & $\left(1 \pm 3\right) \times 10^{-10}$\\ [1.0ex]
-%2--3 & $\geq 1$ & 200--275 & QCD  & $\left(2.2 \pm 1.1 \pm 4.5 \right) \times 10^{2}$ & $\left(0.5 \pm 0.2 \pm 3.2 \right) \times 10^{0}$ & $\left(0.3 \pm 0.1 \pm 4.5 \right) \times 10^{-2}$\\
-%2--3 & $\geq 1$ & 200--275 & EWK  & $\left(3.7 \pm 0.1\right) \times 10^{3}$ & $\left(2.5 \pm 0.1\right) \times 10^{3}$ & $\left(1.9 \pm 0.1\right) \times 10^{3}$\\
-%2--3 & $\geq 1$ & 200--275 & Ratio  & $0.1 \pm 0.1$ & $0.000 \pm 0.001$ & $\left(0 \pm 2\right) \times 10^{-5}$\\ [1.0ex]
-\hline
-\hline
-\end{tabular}
-\end{table}
+% \begin{table}[h!]
+% \centering
+% \scriptsize
+%   \caption{QCD multijet background contribution prediction summarised for the 
+%   main analysis categories of \nb, \nj and \HT as a function of \alphat. The 
+%   predicted EWK background contribution is included for comparison, and a 
+%   the ratio of QCD/EWK is also shown.}
+% \label{tab:qcd-pred-data}
+% \begin{tabular}{ccccrrr}
+% \hline
+% \hline
+% \nj & \nb & \HT (GeV) & Bkgd & \multicolumn{3}{c}{\alphat threshold} \\
+% \cline{5-7}
+%  & & & & \multicolumn{1}{c}{0.550}   & \multicolumn{1}{c}{0.600}   & \multicolumn{1}{c}{0.650} \\
+% \hline
+% 2--3 & 0 & 200--275 & QCD  & $\left(3.8 \pm 1.3 \pm 1.2 \right) \times 10^{3}$ & $\left(4.1 \pm 2.4 \pm 3.0 \right) \times 10^{1}$ & $\left(0.9 \pm 0.8 \pm 1.5 \right) \times 10^{0}$\\
+% 2--3 & 0 & 200--275 & EWK  & $\left(2.1 \pm 0.1\right) \times 10^{4}$ & $\left(1.5 \pm 0.0\right) \times 10^{4}$ & $\left(1.2 \pm 0.0\right) \times 10^{4}$\\
+% 2--3 & 0 & 200--275 & Ratio  & $0.2 \pm 0.1$ & $0.003 \pm 0.003$ & $0.0001 \pm 0.0001$\\ [1.0ex]
+% 2--3 & 0 & 275--325 & QCD  & $\left(1.0 \pm 0.3 \pm 1.5 \right) \times 10^{4}$ & $\left(0.2 \pm 0.1 \pm 0.7 \right) \times 10^{0}$ & $\left(0.8 \pm 0.3 \pm 4.8 \right) \times 10^{-3}$\\
+% 2--3 & 0 & 275--325 & EWK  & $\left(7.9 \pm 0.2\right) \times 10^{3}$ & $\left(5.3 \pm 0.2\right) \times 10^{3}$ & $\left(4.0 \pm 0.2\right) \times 10^{3}$\\
+% 2--3 & 0 & 275--325 & Ratio  & $1 \pm 2$ & $0.0000 \pm 0.0001$ & $\left(0 \pm 1\right) \times 10^{-6}$\\ [1.0ex]
+% 2--3 & 0 & 325--375 & QCD  & $\left(2.8 \pm 0.4 \pm 2.1 \right) \times 10^{1}$ & $\left(0.9 \pm 0.2 \pm 1.3 \right) \times 10^{-1}$ & $\left(0.6 \pm 0.4 \pm 1.2 \right) \times 10^{-3}$\\
+% 2--3 & 0 & 325--375 & EWK  & $\left(3.4 \pm 0.1\right) \times 10^{3}$ & $\left(2.2 \pm 0.1\right) \times 10^{3}$ & $\left(1.7 \pm 0.1\right) \times 10^{3}$\\
+% 2--3 & 0 & 325--375 & Ratio  & $0.008 \pm 0.006$ & $\left(4 \pm 6\right) \times 10^{-5}$ & $\left(4 \pm 8\right) \times 10^{-7}$\\ [1.0ex]
+% $\geq 4$ & 0 & 200--275 & QCD  & $\left(2.8 \pm 1.5 \pm 1.3 \right) \times 10^{3}$ & $\left(1.1 \pm 0.7 \pm 0.2 \right) \times 10^{1}$ & $\left(0.2 \pm 0.2 \pm 0.0 \right) \times 10^{0}$\\
+% $\geq 4$ & 0 & 200--275 & EWK  & $\left(4.3 \pm 0.3\right) \times 10^{2}$ & $\left(2.0 \pm 0.1\right) \times 10^{2}$ & $\left(1.0 \pm 0.1\right) \times 10^{2}$\\
+% $\geq 4$ & 0 & 200--275 & Ratio  & $7 \pm 5$ & $0.06 \pm 0.04$ & $0.002 \pm 0.002$\\ [1.0ex]
+% $\geq 4$ & 0 & 275--325 & QCD  & $\left(1.5 \pm 1.2 \pm 1.0 \right) \times 10^{4}$ & $\left(1.5 \pm 1.7 \pm 0.3 \right) \times 10^{0}$ & $\left(0.1 \pm 0.2 \pm 0.0 \right) \times 10^{-1}$\\
+% $\geq 4$ & 0 & 275--325 & EWK  & $\left(1.2 \pm 0.0\right) \times 10^{3}$ & $\left(5.3 \pm 0.2\right) \times 10^{2}$ & $\left(2.9 \pm 0.1\right) \times 10^{2}$\\
+% $\geq 4$ & 0 & 275--325 & Ratio  & $\left(1 \pm 1\right) \times 10^{1}$ & $0.003 \pm 0.003$ & $\left(4 \pm 7\right) \times 10^{-5}$\\ [1.0ex]
+% $\geq 4$ & 0 & 325--375 & QCD  & $\left(0.7 \pm 0.1 \pm 0.8 \right) \times 10^{0}$ & $\left(2.5 \pm 0.6 \pm 6.5 \right) \times 10^{-5}$ & $\left(0.7 \pm 0.3 \pm 2.8 \right) \times 10^{-8}$\\
+% $\geq 4$ & 0 & 325--375 & EWK  & $\left(4.8 \pm 0.3\right) \times 10^{2}$ & $\left(2.0 \pm 0.1\right) \times 10^{2}$ & $\left(1.1 \pm 0.1\right) \times 10^{2}$\\
+% $\geq 4$ & 0 & 325--375 & Ratio  & $0.002 \pm 0.002$ & $\left(1 \pm 3\right) \times 10^{-7}$ & $\left(1 \pm 3\right) \times 10^{-10}$\\ [1.0ex]
+% %2--3 & $\geq 1$ & 200--275 & QCD  & $\left(2.2 \pm 1.1 \pm 4.5 \right) \times 10^{2}$ & $\left(0.5 \pm 0.2 \pm 3.2 \right) \times 10^{0}$ & $\left(0.3 \pm 0.1 \pm 4.5 \right) \times 10^{-2}$\\
+% %2--3 & $\geq 1$ & 200--275 & EWK  & $\left(3.7 \pm 0.1\right) \times 10^{3}$ & $\left(2.5 \pm 0.1\right) \times 10^{3}$ & $\left(1.9 \pm 0.1\right) \times 10^{3}$\\
+% %2--3 & $\geq 1$ & 200--275 & Ratio  & $0.1 \pm 0.1$ & $0.000 \pm 0.001$ & $\left(0 \pm 2\right) \times 10^{-5}$\\ [1.0ex]
+% \hline
+% \hline
+% \end{tabular}
+% \end{table}
 
-\emph{RELATED SYSTEMATICS?}
+% \emph{RELATED SYSTEMATICS?}
 
-\begin{table}[!ht]
-  \caption{\alphat thresholds for each analysis \HT bin as determined from the 
-  QCD MJ prediction method, such that QCD is at the sub-percent level.}
-  \label{tab:alphat_thresholds_qcd}
-  \centering
-  \small
-  \begin{tabular}{ cc }
-    \hline
-    \hline
-    \HT (GeV) & \alphat threshold \\ [0.5ex]
+% \begin{table}[!ht]
+%   \caption{\alphat thresholds for each analysis \HT bin as determined from the 
+%   QCD MJ prediction method, such that QCD is at the sub-percent level.}
+%   \label{tab:alphat_thresholds_qcd}
+%   \centering
+%   \small
+%   \begin{tabular}{ cc }
+%     \hline
+%     \hline
+%     \HT (GeV) & \alphat threshold \\ [0.5ex]
                                        
-    \hline
-    200--275  & 0.65 \\
-    275--325  & 0.60 \\
-    >325  & 0.55 \\
-    \hline
-    \hline
-  \end{tabular}
-\end{table}
+%     \hline
+%     200--275  & 0.65 \\
+%     275--325  & 0.60 \\
+%     >325  & 0.55 \\
+%     \hline
+%     \hline
+%   \end{tabular}
+% \end{table}
 
 
 %********************************** % Fifth Section  *************************************
