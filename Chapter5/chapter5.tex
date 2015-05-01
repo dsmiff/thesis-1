@@ -236,8 +236,8 @@ single top quark, diboson and Drell-Yann processes.
 \hspace{0cm}\includegraphics[width=0.9\textwidth, trim=0 00 0 0, clip=true]
 {Figs/ra1_had_bg_comp_v3.png}
 \label{fig:background_decomp}
-\caption{The breakdown of the total electroweak background into component proc
-esses as a function of \nj and \nb, for \HT>200 \gev.}
+\caption{The breakdown of the total electroweak background into component
+processes as a function of \nj and \nb, for \HT>200 \gev.}
 \end{figure}
 
 \subsubsection{Fake \met}
@@ -505,7 +505,7 @@ contamination at high values of \mhtmet is observed, despite an \alphat
 requirement. To protect against this scenario, events are required to have a low
 ratio of the two variables, specifically \mhtmet < 1.25.
 
-Events may also acquire fake \mht if they overlap with areas of the calorimeter 
+Fake \mht may also be produced if jets overlap with areas of the calorimeter 
 system which are damaged or known to be faulty, where jets can be mis-measured or 
 lost as a result. To protect against this, for a given jet $j$, the angular separation
 between the event \mht, calculated excluding jet $j$, and the jet itself is used, defined
@@ -516,27 +516,58 @@ as:
 \label{eq:biasdphi}
 \end{equation}
 % 
-The advantage of this variable with respect to the often used
+An advantage of this variable with respect to the often used
 $\Delta R(jet, MHT)$ is it's detection of spurious missing energy vectors caused
 by both under-measurements and over-measurements of a jet's transverse momentum.
 A small value of $\dphistar_j$ indicates that the momentum vector of $j$
 is aligned with the \mht vector, implying the jet is mis-measured. Events are 
 vetoed if a jet with \dphistar< 0.5 is within $\Delta R < 0.3$ of a known
 `dead' region of the ECAL.
-\emph{show hotspot maps before and after deadECAL cut to show it works proper
-bo}
 
-\emph{where to introduce \mindphistar??? probably before hotspot maps}
-
-Many event filters are applied to remove any jet mismeasurements due
-to instrumental effects, however hypothetically previously un-discovered and
-therefore rare detector effects could still be present. To check for this, the
-jet giving the minimum \dphistar value in an event, \mindphistar, is determined,
+Multiple event filters are applied to remove any jet mismeasurements arising due
+to instrumental effects, however previously un-discovered and
+therefore rare detector effects may hypothetically be present. To check
+for this, the
+jet giving the minimum \dphistar value in an event, \mindphistar, is found,
 and a single entry of the $\eta$ and $\phi$ direction of the jet's axis is entered
-into a map of the detector FIGREF. Any areas of instrumental issue would be
-visible as clusters of high event counts. The maps are shown both before and
-after the aforementioned dead ECAL filter is applied REF REF, and no areas of
-potential problem are found.
+into a map of the detector, figure~\ref{fig:hotspots}. Any areas of instrumental issue would
+be visible as clusters of high event counts. Figures~\ref{fig:hotspots_2d_nodeadECAL} and
+\ref{fig:hotspots_1d_nodeadECAL} shows the detector map and the 1d distribution
+of counts are shown before the dead ECAL filter is applied. Areas of
+potential instrumental defects are clearly visible, notably as outliers in
+figure~\ref{fig:hotspots_1d_nodeadECAL}. Following the application of the dead
+ECAL filter the hotspot areas and the corresponding outliers removed, as seen in
+figures~\ref{fig:hotspots_2d_withdeadECAL} and \ref{fig:hotspots_1d_withdeadECAL}.
+
+\begin{figure}[h!]
+  \begin{center}
+    \begin{subfigure}[b]{0.46\textwidth}
+      \includegraphics[width=\textwidth]{Figs/dphi/HT_dependent_AlphaT_thresholds/th2d_denom_summed_ge2j_ge0b_200.pdf}
+      \caption{No ``dead ECAL filter''.}
+      \label{fig:hotspots_2d_nodeadECAL}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.46\textwidth}
+      \includegraphics[width=\textwidth]{Figs/dphi/HT_dependent_AlphaT_thresholds/th1d_denom_summed_ge2j_ge0b_200.pdf}
+      \caption{No ``dead ECAL filter''.}
+      \label{fig:hotspots_1d_nodeadECAL}
+    \end{subfigure} \\ 
+    \begin{subfigure}[b]{0.46\textwidth}
+      \includegraphics[width=\textwidth]{Figs/dphi/Nominal_AlphaT_thresholds/th2d_numer_summed_ge2j_ge0b_200.pdf}
+      \caption{With ``dead ECAL filter''.}
+      \label{fig:hotspots_2d_withdeadECAL}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.46\textwidth}
+      \includegraphics[width=\textwidth]{Figs/dphi/Nominal_AlphaT_thresholds/th1d_numer_summed_ge2j_ge0b_200.pdf}
+      \caption{With ``dead ECAL filter''.}
+      \label{fig:hotspots_1d_withdeadECAL}
+    \end{subfigure} \\ 
+    \caption{Distribution of jets in ($\eta$,$\phi$)-space that are
+      responsible for an event satisfying the requirement $\dphistar <
+      0.3$, with (a,b) and without (c,d) the ``dead ECAL filter''
+      requirement applied as part of the signal region selection.}
+    \label{fig:hotspots}
+  \end{center}
+\end{figure}
 
 \emph{also jets with real MET in their decay}
 
