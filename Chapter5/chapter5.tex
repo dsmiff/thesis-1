@@ -170,19 +170,24 @@ correlation, sitting also at higher values of \alphat
   \label{fig:alphat_corr}
 \end{figure}
 
+Through the requirement of \alphat in a given region of \HT, an implied missing
+energy threshold is made. Figure~\ref{fig:alphat_mht_corr} shows this, for the
+assumption of \deltaHT = 0 - an assumption which yields the minimal \mht values.
+By lowering the \alphat threshold at higher \HT, the implicit missing energy
+threshold can be maintained similar to that at low \HT.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figs/alphat/mht_correlation.pdf}
+  \caption{The correlation between \HT and \mht for different \alphat values,
+  with the assumption of \deltaHT = 0.}
+  \label{fig:alphat_mht_corr}
+\end{figure}
 
 %********************************** % First Section  *************************************
-\section{Hadronic Signal Region}
-\label{sec:selection_hadronic}
-% Introduce that QCD is a dominant background due to jet mis-measurement.
 
-This section outlines the relevant background sources of this analysis, and
-describes the basic hadronic pre-selection made for the signal 
-region, as well as the relevant trigger requirements.
-
-
-\subsection{Standard Model Backgrounds}
-\subsubsection{Genuine \met}
+\section{Standard Model Backgrounds}
+\subsection{Genuine \met}
 The dominant EWK source of genuine missing energy comes from Z-boson 
 production where the Z decays
 to neutrinos, \zinv, with associated jet production. This source of background
@@ -240,7 +245,7 @@ single top quark, diboson and Drell-Yann processes.
 processes as a function of \nj and \nb, for \HT>200 \gev.}
 \end{figure}
 
-\subsubsection{Fake \met}
+\subsection{Fake \met}
 
 As mentioned previously, the dominant source of background for analyses 
 searching for a multijet final state is from QCD. A fully-measured QCD event 
@@ -274,7 +279,7 @@ ratio \mhtmet.
 % the JetMET \emph{POG}, and are applied to all selections.
 
 
-\subsection{Signal Triggers}
+\section{Signal Triggers}
 
 Events are collected at the HLT using a dedicated suite of
 signal triggers. For an event to pass the trigger
@@ -412,7 +417,7 @@ the signal triggers remained unprescaled for the entirety of the 8 \tev
 data taking.
 
 
-\subsection{Selection Criteria}
+\section{Selection Criteria}
 \label{sec:selec_crit}
 
 Event selection requirements for the hadronic signal region are chosen with an
@@ -477,12 +482,14 @@ threshold for a given HT bin.}
 
 \end{description}
 
-\subsection{Residual QCD cleaning}
+\section{Residual QCD cleaning}
 
 While the \alphat requirement removes many order of magnitude of QCD events,
 there still exists scenarios in which events may pass the signal region
 selection. Accordingly, further requirements are made to ensure the search
 region is free of any residual QCD contamination.
+
+\subsection{Multiple jets below threshold}
 
 \begin{figure}[ht!]
 \centering
@@ -504,6 +511,9 @@ figure~\ref{fig:full_mhtmet_distro} where the presence of significant QCD
 contamination at high values of \mhtmet is observed, despite an \alphat
 requirement. To protect against this scenario, events are required to have a low
 ratio of the two variables, specifically \mhtmet < 1.25.
+
+
+\subsection{Instrumental effects}
 
 Fake \mht may also be produced if jets overlap with areas of the calorimeter 
 system which are damaged or known to be faulty, where jets can be mis-measured or 
@@ -571,20 +581,28 @@ remaining instrumental issues.
   \end{center}
 \end{figure}
 
-\emph{also jets with real MET in their decay}
+\subsection{Heavy-flavour jet decays}
 
-% The \dphistar variable can be used to identify QCD events with \met
-% originating from mismeasured jets. The jet most responsible for the \met
-% vector can be isolated by finding that which has the minimum \dphistar value.
-Jets can also appear to be mis-measured if they contain leptonic decays of heavy
-flavour mesons (see appendix~\ref{ch:app_dphistar}). 
+Jets can also appear to be mis-measured if they contain the parton
+shower contains heavy flavour mesons which decay leptonically. In rare
+circumstances, these decays can give the largest fraction of the available
+momenta to the neutrino, leading to significant amounts of real \met and
+soft-leptons which evade the lepton vetoes (see appendix~\ref{ch:app_dphistar}).
+This effect is compounded when multiple neutrinos are produced in the shower,
+with a significant fraction of the jet's energy is invisible.
+
+To better study events of this type a control sample is defined, based on using
+the single-object \HT trigger, \verb!HLT_HT750!, which remained un-prescaled
+throughout \runone. As opposed to the typical signal trigger, the lack of an
+\alphat requirement allows lower regions of \alphat to be studied. The region is
+therefore defined by \HT > 775 \gev and \alphat > 0.507, where this trigger is
+full efficient. Due to the intrinsic correlation of \HT and \mht in the \alphat
+variable, this selection leads to an effective \mht requirement of around 
 
 \emph{ratio of R(MHT/MET) can be used as a function of alphaT to check for
 these events. MHT roughly equal to MET, ratio roughly 1. would expect a steeply
 falling distribution as function of alphaT, but then a constant pedestal from
 these events, which pass alphaT}.
-
-\emph{can study these events using control region and un-prescaled HT triggers}
 
 \emph{what if we make the >0.3 requirement? they seem isolated below 0.3 -
 robin's plots?}
@@ -603,40 +621,7 @@ appendix~\ref{ch:app_dphistar}).
 % the many \HT bins, these jet \Pt requirements are scaled for the lower \HT bins 
 % as shown in Table~\ref{tab:jet_pt_thresholds}.
 
-\subsection{Example distributions and cutflow}
-
-Example distributions from MC simulations of \alphat, \HT, \mht and jet \Pt  are
-shown in figure~\ref{fig:datamc_had_inc}.
-
-\begin{figure}[!ht]
-  \centering
-    \begin{subfigure}[b]{0.48\textwidth}
-      \includegraphics[width=\textwidth]{Figs/datamc/had/v1/AlphaT_all_200_upwards}
-      \caption{\alphat}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.48\textwidth}
-      \includegraphics[width=\textwidth]{Figs/datamc/had/v1/HT_all_200_upwards}
-      \caption{\HT}
-    \end{subfigure} \\
-    \begin{subfigure}[b]{0.48\textwidth}
-      \includegraphics[width=\textwidth]{Figs/datamc/had/v1/MHT_all_200_upwards}
-      \caption{\mht}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.48\textwidth}
-      \includegraphics[width=\textwidth]{Figs/datamc/had/v1/CommonJetPt_all_200_upwards}
-      \caption{Jet \Pt}
-    \end{subfigure} \\
-    \caption{\label{fig:datamc_had_inc}
-    MC distributions for the full hadronic signal selection. The 
-    sum of the individual sample contributions is shown in green. Plots
-    are for $\HT>200$ \gev, $\nj\geq2, \nb\geq0$.
-    }
-\end{figure}
-  
-The cutflow yields are shown in table~\ref{tab:had_data_cutflow} for data in the
-\HT > 375 \gev region, with an inclusive selection on \nj and \nb.
-
-\subsection{Predicting high-\nb event yields}
+\section{Predicting high-\nb event yields}
 \label{sec:formula_method}
 
 Determining yields for high-\nb analysis categries directly from simulation
@@ -684,7 +669,38 @@ makes uses of all events in a sample, thereby reducing the uncertainties
 and ultimately delivering more precise yields from simulation.
 
 
+\section{Example distributions and cutflow}
 
+Example distributions from MC simulations of \alphat, \HT, \mht and jet \Pt  are
+shown in figure~\ref{fig:datamc_had_inc}.
+
+\begin{figure}[!ht]
+  \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Figs/datamc/had/v1/AlphaT_all_200_upwards}
+      \caption{\alphat}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Figs/datamc/had/v1/HT_all_200_upwards}
+      \caption{\HT}
+    \end{subfigure} \\
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Figs/datamc/had/v1/MHT_all_200_upwards}
+      \caption{\mht}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Figs/datamc/had/v1/CommonJetPt_all_200_upwards}
+      \caption{Jet \Pt}
+    \end{subfigure} \\
+    \caption{\label{fig:datamc_had_inc}
+    MC distributions for the full hadronic signal selection. The 
+    sum of the individual sample contributions is shown in green. Plots
+    are for $\HT>200$ \gev, $\nj\geq2, \nb\geq0$.
+    }
+\end{figure}
+  
+The cutflow yields are shown in table~\ref{tab:had_data_cutflow} for data in the
+\HT > 375 \gev region, with an inclusive selection on \nj and \nb.
 
 \begin{table}[ht!]
   \caption{The cutflow of the hadronic selection in data. The subscript `fail'
