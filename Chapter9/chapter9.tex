@@ -62,6 +62,7 @@ Example cutflows are shown in table~\ref{tab:t2cc_cutflow} for mass points with
 the two extremal \deltam values of the scan, both at values of $m_{\sTop}$ near
 the limits of sensitivity.
 
+\afterpage{%
 % should be v25!
 \begin{figure}[ht!]
   \centering
@@ -111,6 +112,8 @@ the limits of sensitivity.
   four most sensitive analysis categories with an inclusive selection on \HT.}
   \label{fig:t2cc_eff}
 \end{figure}
+\clearpage
+}
 
 % \begin{figure}[h!]
 %   \centering
@@ -201,6 +204,7 @@ Example cutflows are shown in table~\ref{tab:t2_4body_cutflow} for a mass point
 with the smallest mass splitting, at an $m_{\sTop}$ value near the limit of
 sensitivity.
 
+\afterpage{%
 % should be v16!!
 \begin{figure}[ht!]
   \centering
@@ -250,6 +254,8 @@ sensitivity.
   four most sensitive analysis categories with an inclusive selection on \HT.}
   \label{fig:t2_4body_eff}
 \end{figure}
+\clearpage
+}
 
 \begin{table}[ht!]
   \caption{Cutflow table for two mass points ($m_{\sTop} = 250$ \gev, $m_
@@ -354,6 +360,15 @@ vectorial sum of the lepton \Ptvect's and the recoil jet system's \Ptvect indica
 over-prediction in MC as a function of the system's \Pt, of up to 20\% in 
 high \Pt scenarios, shown in figure~\ref{fig:isr_datamc}.
 
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figs/isr/isr_zjets_distros.pdf}
+    \caption{Data to MC comparisons for an enriched $Z \ra l\bar{l}$ selection, 
+    with the vectorial sum of lepton \Pt's (left) and of the recoil jets (right)
+    \cite{susy-isrrw}.}
+    \label{fig:isr_datamc}
+\end{figure}
+
 Correction factors for \MADGRAPH based samples, dependent on the \Pt of the jet
 system, can therefore be derived by extracting the ratio of data to MC. These 
 values are summarised in table~\ref{tab:isr_weights}. Weights are applied to 
@@ -380,18 +395,7 @@ two, pair-produced generator level \sTop particles.
   \end{tabular}
 \end{table}
 
-\begin{figure}[h]
-  \begin{center}
-    \includegraphics[width=0.8\textwidth]{Figs/isr/isr_zjets_distros.pdf}
-    % \caption{blah}
-    \caption{Data to MC comparisons for an enriched $Z \ra l\bar{l}$ selection, 
-    with the vectorial sum of lepton \Pt's (left) and of the recoil jets (right).
-    \cite{susy-isrrw}}
-    \label{fig:isr_datamc}
-  \end{center}
-\end{figure}
-
-\emph{show the effect on signal acceptance for T2cc?}
+% \emph{show the effect on signal acceptance for T2cc?}
 
 %********************************** % Second Section  *************************************
 \section{Systematic Uncertainties on Signal Acceptance }  %Section - 1.2
@@ -771,7 +775,7 @@ parameters for a given $\mu$, $\hat {\mu}$ is the Maximum Likelihood
 parameters.
 
 Distributions of $q_{\mu}$ are populated from pseudo-experiments under
-signal+background and background only hypotheses. For a given observation, 1
+signal + background and background only hypotheses. For a given observation, 1
 minus the quantiles of each distribution are used to determine $CL_{s+b}$ and
 $CL_b$, which are used to define:
 % 
