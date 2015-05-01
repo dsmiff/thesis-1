@@ -240,9 +240,9 @@ single top quark, diboson and Drell-Yann processes.
 \centering
 \hspace{0cm}\includegraphics[width=0.9\textwidth, trim=0 00 0 0, clip=true]
 {Figs/ra1_had_bg_comp_v3.png}
-\label{fig:background_decomp}
 \caption{The breakdown of the total electroweak background into component
 processes as a function of \nj and \nb, for \HT>200 \gev.}
+\label{fig:background_decomp}
 \end{figure}
 
 \subsection{Fake \met}
@@ -490,6 +490,7 @@ selection. Accordingly, further requirements are made to ensure the search
 region is free of any residual QCD contamination.
 
 \subsection{Multiple jets below threshold}
+\label{sec:qcd_cleaning_below_thresh}
 
 \begin{figure}[ht!]
 \centering
@@ -597,15 +598,90 @@ throughout \runone. As opposed to the typical signal trigger, the lack of an
 \alphat requirement allows lower regions of \alphat to be studied. The region is
 therefore defined by \HT > 775 \gev and \alphat > 0.507, where this trigger is
 full efficient. Due to the intrinsic correlation of \HT and \mht in the \alphat
-variable, this selection leads to an effective \mht requirement of around 
+variable (figure~\ref{fig:alphat_mht_corr}), this selection leads to an
+effective \mht requirement similar to that of the low \HT categories of the
+nominal analysis.
 
-\emph{ratio of R(MHT/MET) can be used as a function of alphaT to check for
-these events. MHT roughly equal to MET, ratio roughly 1. would expect a steeply
-falling distribution as function of alphaT, but then a constant pedestal from
-these events, which pass alphaT}.
+Events containing jets containing real \met sources are likely to have
+$\mht \approx \met$, and would therefore not be protected against by the \mhtmet
+described in section~\ref{sec:qcd_cleaning_below_thresh}. Consider the ratio
+of events passing and failing the \mhtmet requirement:
+% 
+\begin{equation}
+\label{eq:rmhtmet}
+\rmhtmet = \frac{N(\mhtmet<1.25)}{N(\mhtmet>1.25)}.
+\end{equation}
+% 
+This variable is plotted as a function of \alphat with the predicted EWK
+background (as determined using the method outlined in chapter~\ref{ch:6})
+subtracted, leaving only QCD multijet events.
+In the absence of events with jets containing real \met a strong
+exponential decrease would be expected. However, given these events populate the
+\mhtmet < 1.25 region, a constant pedestal is observed REF REF, leading to the
+conclusion of residual QCD contamination in the signal region.
 
-\emph{what if we make the >0.3 requirement? they seem isolated below 0.3 -
-robin's plots?}
+\emph{rmhtmet plots!}
+
+Jets containing a \met source appear to be mismeasured and will therefore
+populate a region of low \dphistar.
+Figure~\ref{fig:qcd_region_pred_dphistar_incl} shows the data compared to the
+EWK background prediction (this method is discussed later in chapter~\ref{ch:6})
+as a function of the \mindphistar value of each event. The disagreement observed
+at low \mindphistar is well accounted for by the yield from QCD MC. It should be
+noted that while MC can be relied on for a qualitative understanding of the QCD
+contamination, it should not be used to determine a quantitative understanding
+of the phenomenon.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]
+  {Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/Prediction_ComMinBiasDPhi_acceptedJets_all_775_upwards_QCD}
+  \caption{Data (black points) against the EWK background prediction 
+  (stacked, yellow and purple) as a function of \mindphistar. The expected yield
+  from QCD MC (cyan) is stacked on top of the EWK prediction. The plot represents
+  the QCD control study region, with $\nb \geq 0$, $\nj \geq 2$, $\HT > 775
+  \gev$ and $\alphat > 0.507$.}
+  \label{fig:qcd_region_pred_dphistar_incl}
+\end{figure}
+
+As motivated by figure~\ref{fig:qcd_region_pred_dphistar_incl}, the residual QCD
+events appear to be well isolated in the region $\mindphistar < 0.3$. The effect
+of applying this threshold in the QCD control study region is shown in
+figure~\ref{fig:data_pred_dphistar_eff}. The $\dphistar > 0.3$ requirement
+removes these events entirely (CHECK!).
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/dphi/chris2/qcd_mc/dphi_incl/dphi_eq3j_ge0b_775}
+    \caption{$\nj = 3$, simulation}
+    \label{fig:dphi_acceptance_sim_3j}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/dphi/chris2/data/dphi_incl/dphi_eq3j_ge0b_775}
+    \caption{$\nj = 3$, data}
+    \label{fig:dphi_acceptance_data_3j}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/dphi/chris2/qcd_mc/dphi_incl/dphi_eq4j_ge0b_775}
+    \caption{$\nj = 4$, simulation}
+    \label{fig:dphi_acceptance_sim_4j}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.46\textwidth}
+    \includegraphics[width=\textwidth]{Figs/dphi/chris2/data/dphi_incl/dphi_eq4j_ge0b_775}
+    \caption{$\nj = 4$, data}
+    \label{fig:dphi_acceptance_data_4j}
+  \end{subfigure}\\
+  \caption{The \alphat distribution for events with no \dphistar
+    requirement (red circles) and with the $\dphistar > 0.3$
+    requirement (blue circles) as determined from QCD multijet
+    simulation (left column) or data (right column) and the exclusive
+    $\nj =3$
+    (top row) or $\nj = 4$ (bottom row). The QCD control study region
+    requirements have been applied, $\HT > 775$ \gev and $\alphat > 0.507$, with
+    $\nb \geq 0$.}
+    \label{fig:data_pred_dphistar_eff}
+\end{figure}
 
 \emph{R(MHTMET) plots}
 
