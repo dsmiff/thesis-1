@@ -470,7 +470,7 @@ The topology of the event is required to pass a threshold of $\alphat > 0.55$,
 a requirement which itself varies as a function of the \HT category being
 considered, always
 chosen such that QCD MJ events contribute a negligible amount to the overall 
-background. While no absolute \met requirement is made, the cut on 
+background UPDATE. While no absolute \met requirement is made, the cut on 
 \alphat imposes an implied threshold, which maintains the analysis'
 sensitivity to very low regions of \met. \emph{give an example of the actual met
 threshold for a given HT bin.}
@@ -480,9 +480,9 @@ threshold for a given HT bin.}
 \subsection{Residual QCD cleaning}
 
 While the \alphat requirement removes many order of magnitude of QCD events,
-there still exists scenarios in which such events may pass the signal region
+there still exists scenarios in which events may pass the signal region
 selection. Accordingly, further requirements are made to ensure the search
-region is free of residual QCD contamination.
+region is free of any residual QCD contamination.
 
 \begin{figure}[ht!]
 \centering
@@ -495,12 +495,15 @@ selection of $\nb \geq 0$, $\nj \geq 2$ and \HT > 200 \gev.}
 \label{fig:full_mhtmet_distro}
 \end{figure}
 
-Events can acquire significant amounts of \mht without the presence of
-real \met if multiple jets are below the analysis threshold.
-Figure~\ref{fig:full_mhtmet_distro} shows the presence of significant QCD contamination
-at high values of \mhtmet, even after an \alphat requirement. To protect against
-this scenario, events are required to have a low ratio of the two variables,
-specifically \mhtmet < 1.25.
+Events can acquire non-negligible amounts of \mht without the presence of
+real \met if multiple jets are below the analysis threshold, where their
+configuration can conspire to give a topology passing the \alphat thresholds.
+Such events will contain a disparity between the energy deposit based \met and
+jet object based \mht variables. This effect is seen in
+figure~\ref{fig:full_mhtmet_distro} where the presence of significant QCD
+contamination at high values of \mhtmet is observed, despite an \alphat
+requirement. To protect against this scenario, events are required to have a low
+ratio of the two variables, specifically \mhtmet < 1.25.
 
 Events may also acquire fake \mht if they overlap with areas of the calorimeter 
 system which are damaged or known to be faulty, where jets can be mis-measured or 
