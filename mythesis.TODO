@@ -5,15 +5,16 @@
 General:
   ☐ 'mistag' or 'mis-tag'?
   ☐ new names for T2cc and T2degen
-  ☐ write abstract
   ☐ punctuate equations
-  ☐ thesis title!
+  ☐ remove all references to MJ method
 
 Chapter 1 - Introduction:
+  ☐ why is jets + MET the best channel?
+  ☐ finish last para
 
 Chapter 2 - Theory:
- ☐ not enough CP violation reference
- ☐ work out how to raise the T2cc diagram
+  ☐ not enough CP violation reference
+  ☐ work out how to raise the T2cc diagram
 
 Chapter 3 - Detector:
 
@@ -21,13 +22,7 @@ Chapter 4 - Objects:
   ☐ add ID effs? probably should...
 
 Chapter 5 - Analysis:
-  ☐ give an example of the MET threshold for a corresponding alphaT cut
-  ☐ introduce section on QCD? show dphi plots?
-    ☐ two sources: intrumental and mis-measurement
-    ☐ hotspot maps before and after dead ECAL
-    ☐ dphi acceptance plots - cut at 0.3
     ☐ rmhtmet plots - before/after 0.3 requirement
-  ✔ put all trigger plots on their own page? @done (15-04-30 22:58)
 
 Chapter 5_2 - Samples:
   ☐ work out what process Zinv is compared to with photons. gamma to what??
@@ -35,16 +30,15 @@ Chapter 5_2 - Samples:
   ☐ ref for recent CMS studies - likely not public
 
 Chapter 6 - Background Estimation:
-  ☐ remove MJ method and move largely to analysis chapter
-    - this will then be used to show that we're QCD free with the dphi* cut
 
 Chapter 7 - Results:
- ☐ defintion of pulls - how do they work?!
+  ☐ defintion of pulls - how do they work?!
 
 Chapter 9 - Interpretation:
   ☐ example test parameter distribution for CLs method
   ☐ best fit points? from AN!
-  ☐ rerun t2_4body 80 with alphaT 0.55
+  ☐ rerun t2_4body cutflows with ISR and boost reweighting
+  ☐ rerun t2cc cutflows with ISR reweighting
 
 Chapter 10 - Conclusion:
   ☐ write it!
@@ -52,13 +46,24 @@ Chapter 10 - Conclusion:
 Appendix 1 - Signal systematic plots:
 
 Appendix 2 - DPhiStar in signal region:
-  ☐ get dphi cut eff plots from rob
-  ☐ copy dphi cut plots from rob
 
 Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✘ get dphi cut eff plots from rob @cancelled (15-05-01 15:44) @project(Appendix 2 - DPhiStar in signal region)
+ ✘ copy dphi cut plots from rob @cancelled (15-05-01 15:44) @project(Appendix 2 - DPhiStar in signal region)
+ ✔ this will then be used to show that we're QCD free with the dphi* cut @done (15-05-01 15:44) @project(Chapter 6 - Background Estimation)
+ ✔ remove MJ method and move largely to analysis chapter @done (15-05-01 15:44) @project(Chapter 6 - Background Estimation)
+ ✔ introduce section on QCD? show dphi plots? @done (15-05-01 15:44) @project(Chapter 5 - Analysis)
+ ✔ give an example of the MET threshold for a corresponding alphaT cut @done (15-05-01 15:44) @project(Chapter 5 - Analysis)
+ ✔ dphi acceptance plots - cut at 0.3 @done (15-05-01 15:44) @project(Chapter 5 - Analysis)
+ ✔ write abstract @done (15-05-01 15:42) @project(General)
+ ✔ thesis title! @done (15-05-01 15:42) @project(General)
+ ✔ two sources: intrumental and mis-measurement @done (15-05-01 10:31) @project(Chapter 5 - Analysis)
+ ✔ hotspot maps before and after dead ECAL @done (15-05-01 10:31) @project(Chapter 5 - Analysis)
+ ✔ rerun t2_4body 80 with alphaT 0.55 @done (15-04-30 23:16) @project(Chapter 9 - Interpretation)
+ ✔ put all trigger plots on their own page? @done (15-04-30 22:58) @project(Chapter 5 - Analysis)
  ✔ ref for 1TeV SUSY particles for reasonable solution to hierarchy prob @done (15-04-30 22:53) @project(Chapter 2 - Theory)
  ✔ MSSM breaking refs @done (15-04-30 22:53) @project(Chapter 2 - Theory)
  ✘ MJ distributions @cancelled (15-04-30 19:36) @project(Chapter 6 - Background Estimation)
