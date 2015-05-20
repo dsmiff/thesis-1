@@ -45,7 +45,7 @@ and the MC yield of a given control region, \\$N_{data}^{control}\big(\HT, \nj, 
 as a function of the analysis binning, \HT, \nj and \nb, defined as:
 % 
 \begin{equation}
-TF = \frac{N_{MC}^{signal}\big(\HT, \nj, \nb\big)}{N_{MC}^{control}\big(\HT, \nj, \nb\big)}
+TF = \frac{N_{MC}^{signal}\big(\HT, \nj, \nb\big)}{N_{MC}^{control}\big(\HT, \nj, \nb\big)} .
 \label{eq:transfer_factor}
 \end{equation}
 % 
@@ -55,7 +55,7 @@ to the signal region $N_{pred}^{signal}\big(\HT, \nj, \nb\big)$, using:
 % 
 \begin{equation}
 N_{pred}^{signal}\big(\HT, \nj, \nb\big) = N_{data}^{control}\big(\HT, \nj, \nb\big)
-\times TF
+\times TF .
 \label{eq:transfer_equation}
 \end{equation}
 % 
@@ -84,7 +84,7 @@ analysis category:
 % 
 \begin{equation}
 N_{MC}^{control}\big(\HT, \nj, \nb\big) = \numw + \numtt + \numdy + \numgam + 
-\numtop + \numdibo + \numzinv
+\numtop + \numdibo + \numzinv .
 \label{eq:trans_fact_denom}
 \end{equation}
 % 
@@ -95,7 +95,7 @@ are therefore used with the exception of \zinv:
 % 
 \begin{equation}
 N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1\big) = \numw + \numtt + \numdy + \numgam + 
-\numtop + \numdibo
+\numtop + \numdibo .
 \label{eq:trans_fact_num_le1b_noz}
 \end{equation}
 % 
@@ -103,7 +103,7 @@ The \zinv + jets component of the background is predicted using the \mmj
 and \gj control samples, using only the \zinv MC yields:
 % 
 \begin{equation}
-N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1 \big) = \numzinv
+N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1 \big) = \numzinv .
 \label{eq:trans_fact_num_le1b_z}
 \end{equation}
 %
@@ -112,14 +112,14 @@ SM processes, including \zinv, and therefore the numerator of the TF is defined 
 % 
 \begin{equation}
 N_{MC}^{signal}\big(\HT, \nj, \nb \geq 2 \big) = \numw + \numtt + \numdy + \numgam + 
-\numtop + \numdibo + \numzinv
+\numtop + \numdibo + \numzinv ,
 \label{eq:trans_fact_num_geq2b}
 \end{equation}
 % 
 or equivalently:
 % 
 \begin{equation}
-N_{MC}^{signal}\big(\HT, \nj, \nb \geq 2 \big) = N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1\big) + \numzinv
+N_{MC}^{signal}\big(\HT, \nj, \nb \geq 2 \big) = N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1\big) + \numzinv .
 \end{equation}
 
 The \mmj and \gj control samples are not used beyond the $\nb \leq 1$ categories
@@ -794,7 +794,7 @@ shown as grey bands.
   from the eight core closure tests, for each \nj category and \HT region.}
   \label{tab:syst_values}
   \centering
-  \footnotesize
+  \small
   \begin{tabular}{ cccccccc }
     \hline
     \hline

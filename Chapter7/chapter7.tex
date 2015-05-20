@@ -108,7 +108,7 @@ L_{\mu\text{ syst.}} = \prod_j \text{Logn}(1.0 | \rhomw, \sigmamw),
 where Logn is the log-normal distribution (as recommended by \cite{cousins-log-normal}):
 % 
 \begin{equation}
-\text{Logn}(x|\mu, \sigma) = \frac{1}{x\sqrt{2\pi}\text{ln}k} exp \Bigg(-\frac{\text{ln}^2 \big(\frac{x}{\mu}\big)}{2\text{ln}^2k}\Bigg); \xspace k = 1+\sigma
+\text{Logn}(x|\mu, \sigma) = \frac{1}{x\sqrt{2\pi}\text{ln}k} exp \Bigg(-\frac{\text{ln}^2 \big(\frac{x}{\mu}\big)}{2\text{ln}^2k}\Bigg); \xspace k = 1+\sigma .
 \end{equation}
 % 
 These terms are combined as:
@@ -144,17 +144,17 @@ yield of signal in the muon sample (i.e. ``signal contamination''), $s^i_{\mu}$,
 can be written as:
 % 
 \begin{equation}
-s^i = f\rho_{sig}xl\epsilon_{had}
+s^i = f\rho_{sig}xl\epsilon_{had} , 
 \end{equation}
 \begin{equation}
-s^i_{\mu} = f\rho_{sig}xl\epsilon_{\mu}
+s^i_{\mu} = f\rho_{sig}xl\epsilon_{\mu} .
 \end{equation}
 % 
 Furthermore, the signal systematic contribution to the likelihood is included as
 the term:
 % 
 \begin{equation}
-L_{signal} = \text{Logn}(1.0 | \rho_{sig}, \delta)
+L_{signal} = \text{Logn}(1.0 | \rho_{sig}, \delta) .
 \end{equation}
 % 
 \subsection{Total Likelihood}
@@ -164,7 +164,7 @@ constructed as:
 % 
 \begin{equation}
 L^k_{total} = L^k_{hadronic} \times L^k_{\mu} \times L^k_{\gamma} \times L^k_{\mu\mu} 
-\times L^k_{\text{EWK syst.}}
+\times L^k_{\text{EWK syst.}} .
 \label{eq:total_likelihood}
 \end{equation}
 % 
@@ -197,7 +197,7 @@ table~\ref{tab:nuisance_param_summary}.
 When considering signal an additional term is introduced:
 % 
 \begin{equation}
-L = L_{signal} \times \prod_k L^k_{total}
+L = L_{signal} \times \prod_k L^k_{total} .
 \label{eq:total_likelihood_wsignal}
 \end{equation}
 % 
