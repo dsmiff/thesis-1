@@ -5,11 +5,11 @@
 General:
   ☐ 'mistag' or 'mis-tag'?
   ☐ new names for T2cc and T2degen
-  ☐ punctuate equations
+  ✔ punctuate equations @done (15-05-26 16:07)
   ☐ remove all references to MJ method
 
 Abstract:
-  ☐ define event level variables
+  ✔ define event level variables @done (15-05-26 16:07)
   ☐ mention decay chains
   ☐ describe some mass limits
 
@@ -26,8 +26,8 @@ Chapter 1 - Introduction:
 Chapter 2 - Theory:
   ☐ not enough CP violation reference
   ☐ work out how to raise the T2cc diagram
-  ☐ add SM particle table
-  ☐ add basic SUSY particle table
+  ✔ add SM particle table @done (15-05-26 15:50)
+  ✔ add basic SUSY particle table @done (15-05-26 15:50)
 
 Chapter 3 - Detector:
 
