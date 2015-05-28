@@ -5,29 +5,23 @@
 General:
   ☐ 'mistag' or 'mis-tag'?
   ☐ new names for T2cc and T2degen
-  ✔ punctuate equations @done (15-05-26 16:07)
   ☐ remove all references to MJ method
+  ✔ fix chapter references @done (15-05-28 16:40)
 
 Abstract:
-  ✔ define event level variables @done (15-05-26 16:07)
-  ☐ mention decay chains
-  ☐ describe some mass limits
 
 Chapter 1 - Introduction:
-  ☐ why is jets + MET the best channel?
-  ☐ finish last para
-  ☐ get ordering of history (rutherford, fermi etc) correct!
-  ☐ examples of fundamental constants of nature
-  ☐ describe a few of the SM particles before claiming the 4% thing
   ☐ unification of gauge couplings
-  ☐ relationship between susy and sm particles
-  ☐ outline what is to come in the thesis
 
 Chapter 2 - Theory:
   ☐ not enough CP violation reference
   ☐ work out how to raise the T2cc diagram
-  ✔ add SM particle table @done (15-05-26 15:50)
-  ✔ add basic SUSY particle table @done (15-05-26 15:50)
+  ☐ sort out significant figures for masses in particle tables
+  ✔ reference particle tables in text @done (15-05-28 16:26)
+  ✔ ref susy particle table in text @done (15-05-28 16:26)
+  ✔ change higgs mass reference paper to WR paper @done (15-05-28 16:50)
+  ☐ are the new higgs doublets considered sparticles?
+  ☐ should A0 be in the susy particle table?
 
 Chapter 3 - Detector:
 
@@ -64,6 +58,19 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ why is jets + MET the best channel? @done (15-05-28 15:21) @project(Chapter 1 - Introduction)
+ ✔ finish last para @done (15-05-28 15:21) @project(Chapter 1 - Introduction)
+ ✔ mention decay chains @done (15-05-27 14:30) @project(Abstract)
+ ✔ describe some mass limits @done (15-05-27 14:30) @project(Abstract)
+ ✔ relationship between susy and sm particles @done (15-05-27 12:20) @project(Chapter 1 - Introduction)
+ ✔ get ordering of history (rutherford, fermi etc) correct! @done (15-05-27 12:20) @project(Chapter 1 - Introduction)
+ ✔ examples of fundamental constants of nature @done (15-05-27 12:20) @project(Chapter 1 - Introduction)
+ ✔ describe a few of the SM particles before claiming the 4% thing @done (15-05-27 12:20) @project(Chapter 1 - Introduction)
+ ✔ outline what is to come in the thesis @done (15-05-27 10:34) @project(Chapter 1 - Introduction)
+ ✔ punctuate equations @done (15-05-26 16:07) @project(General)
+ ✔ define event level variables @done (15-05-26 16:07) @project(Abstract)
+ ✔ add basic SUSY particle table @done (15-05-26 15:50) @project(Chapter 2 - Theory)
+ ✔ add SM particle table @done (15-05-26 15:50) @project(Chapter 2 - Theory)
  ✘ get dphi cut eff plots from rob @cancelled (15-05-01 15:44) @project(Appendix 2 - DPhiStar in signal region)
  ✘ copy dphi cut plots from rob @cancelled (15-05-01 15:44) @project(Appendix 2 - DPhiStar in signal region)
  ✔ this will then be used to show that we're QCD free with the dphi* cut @done (15-05-01 15:44) @project(Chapter 6 - Background Estimation)
