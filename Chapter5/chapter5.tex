@@ -484,7 +484,7 @@ sensitivity to very low regions of \met as shown by figure~\ref{fig:alphat_mht_c
 \section{Residual QCD cleaning}
 
 While the \alphat requirement removes many order of magnitude of QCD events,
-there still exists scenarios in which events may pass the signal region
+there still exist scenarios in which events may pass the signal region
 selection. Accordingly, further requirements are made to ensure the search
 region is free of any residual QCD contamination.
 
@@ -503,20 +503,21 @@ selection of $\nb \geq 0$, $\nj \geq 2$ and \HT > 200 \gev.}
 \end{figure}
 
 Events can acquire non-negligible amounts of \mht without the presence of
-real \met if multiple jets are below the analysis threshold, where their
-configuration can conspire to give a topology passing the \alphat thresholds.
+real \met if multiple jets are below the analysis threshold and their
+configuration conspires to give a topology that passes the \alphat thresholds.
 Such events will contain a disparity between the energy deposit based \met and
-jet object based \mht variables. This effect is seen in
+the jet object based \mht variables. This effect is seen in
 figure~\ref{fig:full_mhtmet_distro} where the presence of significant QCD
-contamination at high values of \mhtmet is observed, despite an \alphat
+contamination at high values of the ratio \mhtmet is observed, despite an
+\alphat
 requirement. To protect against this scenario, events are required to have a low
 ratio of the two variables, specifically \mhtmet < 1.25.
 
 
 \subsection{Instrumental effects}
 
-Fake \mht may also be produced if jets overlap with areas of the calorimeter 
-system which are damaged or known to be faulty, where jets can be mis-measured or 
+Fake \mht may also be produced when jets overlap with areas of the calorimeter 
+system which are damaged or known to be faulty, and jets are mis-measured or 
 lost as a result. To protect against this, for a given jet $j$, the angular separation
 between the event \mht, calculated excluding jet $j$, and the jet itself is used, defined
 as:
@@ -528,29 +529,32 @@ as:
 \end{equation}
 % 
 An advantage of this variable with respect to the often used
-$\Delta R(jet, MHT)$ is it's detection of spurious missing energy vectors caused
+$\Delta R(jet, \mht)$ is it's detection of spurious missing energy vectors
+caused
 by both under-measurements and over-measurements of a jet's transverse momentum.
-A small value of $\dphistar_j$ indicates that the momentum vector of $j$
-is aligned with the \mht vector, implying the jet is mis-measured. Events are 
+A small value of $\dphistar_j$ indicates that the momentum vector of the jet $j$
+is aligned with the \mht vector, implying the jet to be mis-measured. Events are
 vetoed if a jet with \dphistar< 0.5 is within $\Delta R < 0.3$ of a known
 `dead' region of the ECAL.
 
-Multiple event filters are applied to remove any jet mismeasurements arising due
-to instrumental effects, however previously un-discovered and
-therefore rare detector effects may hypothetically be present. To check
-for this, the
+In order to protext against further jet mismeasurements arising due to
+instrumental effects, multiple event filters are applied. However, previously
+un-discovered and therefore rare detector effects may still hypothetically be
+present. To check for this, the
 jet giving the minimum \dphistar value in an event, \mindphistar, is found,
 and a single entry of the $\eta$ and $\phi$ direction of the jet's axis is entered
-into a map of the detector, figure~\ref{fig:hotspots}. Any areas of instrumental issue would
+into a map of the detector, shown in figure~\ref{fig:hotspots}. Any areas of
+instrumental issue would
 be visible as clusters of high event counts. Figures~\ref{fig:hotspots_2d_nodeadECAL} and
-\ref{fig:hotspots_1d_nodeadECAL} shows the detector map and the 1d distribution
-of counts are shown before the dead ECAL filter is applied. Areas of
+\ref{fig:hotspots_1d_nodeadECAL} show the detector map and the 1d distribution
+of counts before the dead ECAL filter is applied. Areas of
 potential instrumental defects are clearly visible, notably as outliers in
 figure~\ref{fig:hotspots_1d_nodeadECAL}. Following the application of the dead
 ECAL filter the hotspot areas and the corresponding outliers removed, as seen in
 figures~\ref{fig:hotspots_2d_withdeadECAL} and
-\ref{fig:hotspots_1d_withdeadECAL}, indicating there to be no
-remaining instrumental issues.
+\ref{fig:hotspots_1d_withdeadECAL}. The lack of localised high-count regions, or
+the presence of a tail in the 1D distribution indicates there to be
+no significant remaining instrumental issues.
 
 \begin{figure}[h!]
   \begin{center}
@@ -795,29 +799,29 @@ The cutflow yields are shown in table~\ref{tab:had_data_cutflow} for data in the
     \hline
     Cut Name    & Eff (\%) & N \\
     \hline
-  Event Count  & 100.00  & 161866108.00 \\
-  Good Event JSON Filter  & 94.97  & 153716716.00 \\
-  $\nj \geq 2$  & 98.68  & 151689664.00 \\
-  MET Filters & 98.81  & 149885013.00 \\
-  Vertex Noise Filter & 99.91  & 149746017.00 \\
-  DeadECAL Filter & 35.44  & 53066597.00 \\
-  Select seed Trigger & 3.76  & 1995549.00 \\
-  $n_{e} = 0$ & 98.48  & 1965269.00 \\
-  $n_{\gamma} = 0$  & 97.70  & 1920124.00 \\
-  $n_{\mu} = 0$ & 98.36  & 1888711.00 \\
-  $\text{EMF}_{max}$ for all jets > 0.1 & 99.99  & 1888576.00 \\
-  Leading jet \Pt > 100 \gev  & 97.83  & 1847501.00 \\
-  Leading jet $\eta$ < 2.5  & 97.31  & 1797777.00 \\
-  Sub-Leading jet \Pt > 100 \gev  & 81.75  & 1469654.00 \\
-  $n_{jet, fail} = 0$ & 81.73  & 1201096.00 \\
-  $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 98.77  & 1186370.00 \\
-  $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 1186368.00 \\
-  recHitCut & 98.44  & 1167861.00 \\
-  $n_{SIT} = 0$ & 85.77  & 1001646.00 \\
-  \mindphistar > 0.3  & 19.50  & 195361.00 \\
-  \HT > 375 \gev  & 73.33  & 143255.00 \\
-  \mhtmet < 1.25  & 9.26  & 13263.00 \\
-  \alphat > 0.55  & 38.25  & 5073.00 \\
+  Event Count  & 100.00  & 161866108 \\
+  Good Event JSON Filter  & 94.97  & 153716716 \\
+  $\nj \geq 2$  & 98.68  & 151689664 \\
+  MET Filters & 98.81  & 149885013 \\
+  Vertex Noise Filter & 99.91  & 149746017 \\
+  DeadECAL Filter & 35.44  & 53066597 \\
+  Select seed Trigger & 3.76  & 1995549 \\
+  $n_{e} = 0$ & 98.48  & 1965269 \\
+  $n_{\gamma} = 0$  & 97.70  & 1920124 \\
+  $n_{\mu} = 0$ & 98.36  & 1888711 \\
+  $\text{EMF}_{max}$ for all jets > 0.1 & 99.99  & 1888576 \\
+  Leading jet \Pt > 100 \gev  & 97.83  & 1847501 \\
+  Leading jet $\eta$ < 2.5  & 97.31  & 1797777 \\
+  Sub-Leading jet \Pt > 100 \gev  & 81.75  & 1469654 \\
+  $n_{jet, fail} = 0$ & 81.73  & 1201096 \\
+  $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 98.77  & 1186370 \\
+  $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 1186368 \\
+  recHitCut & 98.44  & 1167861 \\
+  $n_{SIT} = 0$ & 85.77  & 1001646 \\
+  \mindphistar > 0.3  & 19.50  & 195361 \\
+  \HT > 375 \gev  & 73.33  & 143255 \\
+  \mhtmet < 1.25  & 9.26  & 13263 \\
+  \alphat > 0.55  & 38.25  & 5073 \\
     \hline
     \hline
   \end{tabular}
