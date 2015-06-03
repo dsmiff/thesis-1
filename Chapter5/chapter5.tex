@@ -695,21 +695,81 @@ of events passing and failing the \mhtmet requirement, as
 \rmhtmet = \frac{N(\mhtmet<1.25)}{N(\mhtmet>1.25)}.
 \end{equation}
 % 
-This variable is plotted as a function of \alphat after subtracting the
-predicted EWK background (as determined using the method outlined in
+Another method to determine that QCD MJ contamination is to study this variable
+plotted as a function of \alphat after subtracting the
+predicted EWK background (again, as determined using the method outlined in
 chapter~\ref{ch:background}), leaving only QCD multijet events.
 In the absence of events with jets containing sources of real \met, a strong
 exponential decrease would be expected. However, given these events populate the
-\mhtmet < 1.25 region, a constant pedestal in \alphat is observed REF REF,
-leading to the conclusion of residual QCD contamination in the signal region.
+\mhtmet < 1.25 region, a constant pedestal in \alphat is expected, as is shown
+in REF REF.
 
-\emph{rmhtmet plots!}
+\afterpage{
+  \begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.46\textwidth}
+      \includegraphics[width=\textwidth]
+      {Figs/dphi/chris2/qcd_mc/dphi_lt0p3/v2/ratio_eq3j_ge0b_775}
+      \caption{Simulation, $\nj = 3$, \mindphistar < 0.3}
+      \label{fig:rdphi_sim_j3_lt0p3}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.46\textwidth}
+      \includegraphics[width=\textwidth]
+      {Figs/dphi/chris2/data/dphi_lt0p3/v2/ratio_eq3j_ge0b_775}
+      \caption{Data, $\nj = 3$, \mindphistar < 0.3}
+      \label{fig:rdphi_data_j3_lt0p3}
+    \end{subfigure} \\
 
-\emph{R(MHTMET) plots}
+    \begin{subfigure}[b]{0.46\textwidth}
+      \includegraphics[width=\textwidth]
+      {Figs/dphi/chris2/qcd_mc/dphi_gt0p3/v2/ratio_eq3j_ge0b_775}
+      \caption{Simulation, $\nj = 3$, \mindphistar > 0.3}
+      \label{fig:rdphi_sim_j3_gt0p3}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.46\textwidth}
+      \includegraphics[width=\textwidth]
+      {Figs/dphi/chris2/data/dphi_gt0p3/v2/ratio_eq3j_ge0b_775}
+      \caption{Data, $\nj = 3$, \mindphistar > 0.3}
+      \label{fig:rdphi_data_j3_gt0p3}
+    \end{subfigure} \\
 
-\emph{dphistar pass/fail plots}
+    \begin{subfigure}[b]{0.46\textwidth}
+      \includegraphics[width=\textwidth]
+      {Figs/dphi/chris2/qcd_mc/dphi_lt0p3/v2/ratio_eq4j_ge0b_775}
+      \caption{Simulation, $\nj = 4$, \mindphistar < 0.3}
+      \label{fig:rdphi_sim_j4_lt0p3}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.46\textwidth}
+      \includegraphics[width=\textwidth]
+      {Figs/dphi/chris2/data/dphi_lt0p3/v2/ratio_eq4j_ge0b_775}
+      \caption{Data, $\nj = 4$, \mindphistar < 0.3}
+      \label{fig:rdphi_data_j4_lt0p3}
+    \end{subfigure} \\
 
-Events are required to have \dphistar > 0.3, in
+    \begin{subfigure}[b]{0.46\textwidth}
+      \includegraphics[width=\textwidth]
+      {Figs/dphi/chris2/qcd_mc/dphi_gt0p3/v2/ratio_eq4j_ge0b_775}
+      \caption{Simulation, $\nj = 4$, \mindphistar > 0.3}
+      \label{fig:rdphi_sim_j4_gt0p3}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.46\textwidth}
+      \includegraphics[width=\textwidth]
+      {Figs/dphi/chris2/data/dphi_gt0p3/v2/ratio_eq4j_ge0b_775}
+      \caption{Data, $\nj = 4$, \mindphistar > 0.3}
+      \label{fig:rdphi_data_j4_gt0p3}
+    \end{subfigure}
+    \caption{Ratio of events passing and failing the \mhtmet < 1.25
+    requirement, both for simulation (left column) and data (right column).
+    Individual plots are shown for all combinations of $\nj = 3$ or $\nj = 4$,
+    and \mindphistar > 0.3 or \mindphistar < 0.3. Note that data plots
+    represent events counts after the EWK background prediction has been
+    subtracted.}
+    \label{fig:rmhtmet_dphi_data_sim}
+  \end{figure}
+\clearpage
+}
+
+Events are therefore required to have \dphistar > 0.3, in
 order to clean any remaining events with jets containing sources of genuine \met jet (see
 appendix~\ref{ch:app_dphistar}).
 
