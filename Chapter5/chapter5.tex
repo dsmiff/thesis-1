@@ -704,57 +704,48 @@ exponential decrease would be expected. However, given these events populate the
 \mhtmet < 1.25 region, a constant pedestal in \alphat is expected, as is shown
 in figure~\ref{fig:rmhtmet_dphi_data_sim}.
 
-\afterpage{
-  \begin{figure}[h!]
+  \begin{figure}[p!]
     \centering
     \begin{subfigure}[b]{0.46\textwidth}
-      \includegraphics[width=\textwidth]
-      {Figs/dphi/chris2/qcd_mc/dphi_lt0p3/v2/ratio_eq3j_ge0b_775}
+      \includegraphics[width=\textwidth]{Figs/dphi/chris2/qcd_mc/dphi_lt0p3/v2/ratio_eq3j_ge0b_775}
       \caption{Simulation, $\nj = 3$, \mindphistar < 0.3}
       \label{fig:rdphi_sim_j3_lt0p3}
     \end{subfigure}
     \begin{subfigure}[b]{0.46\textwidth}
-      \includegraphics[width=\textwidth]
-      {Figs/dphi/chris2/data/dphi_lt0p3/v2/ratio_eq3j_ge0b_775}
+      \includegraphics[width=\textwidth]{Figs/dphi/chris2/data/dphi_lt0p3/v2/ratio_eq3j_ge0b_775}
       \caption{Data, $\nj = 3$, \mindphistar < 0.3}
       \label{fig:rdphi_data_j3_lt0p3}
     \end{subfigure} \\
 
     \begin{subfigure}[b]{0.46\textwidth}
-      \includegraphics[width=\textwidth]
-      {Figs/dphi/chris2/qcd_mc/dphi_gt0p3/v2/ratio_eq3j_ge0b_775}
+      \includegraphics[width=\textwidth]{Figs/dphi/chris2/qcd_mc/dphi_gt0p3/v2/ratio_eq3j_ge0b_775}
       \caption{Simulation, $\nj = 3$, \mindphistar > 0.3}
       \label{fig:rdphi_sim_j3_gt0p3}
     \end{subfigure}
     \begin{subfigure}[b]{0.46\textwidth}
-      \includegraphics[width=\textwidth]
-      {Figs/dphi/chris2/data/dphi_gt0p3/v2/ratio_eq3j_ge0b_775}
+      \includegraphics[width=\textwidth]{Figs/dphi/chris2/data/dphi_gt0p3/v2/ratio_eq3j_ge0b_775}
       \caption{Data, $\nj = 3$, \mindphistar > 0.3}
       \label{fig:rdphi_data_j3_gt0p3}
     \end{subfigure} \\
 
     \begin{subfigure}[b]{0.46\textwidth}
-      \includegraphics[width=\textwidth]
-      {Figs/dphi/chris2/qcd_mc/dphi_lt0p3/v2/ratio_eq4j_ge0b_775}
+      \includegraphics[width=\textwidth]{Figs/dphi/chris2/qcd_mc/dphi_lt0p3/v2/ratio_eq4j_ge0b_775}
       \caption{Simulation, $\nj = 4$, \mindphistar < 0.3}
       \label{fig:rdphi_sim_j4_lt0p3}
     \end{subfigure}
     \begin{subfigure}[b]{0.46\textwidth}
-      \includegraphics[width=\textwidth]
-      {Figs/dphi/chris2/data/dphi_lt0p3/v2/ratio_eq4j_ge0b_775}
+      \includegraphics[width=\textwidth]{Figs/dphi/chris2/data/dphi_lt0p3/v2/ratio_eq4j_ge0b_775}
       \caption{Data, $\nj = 4$, \mindphistar < 0.3}
       \label{fig:rdphi_data_j4_lt0p3}
     \end{subfigure} \\
 
     \begin{subfigure}[b]{0.46\textwidth}
-      \includegraphics[width=\textwidth]
-      {Figs/dphi/chris2/qcd_mc/dphi_gt0p3/v2/ratio_eq4j_ge0b_775}
+      \includegraphics[width=\textwidth]{Figs/dphi/chris2/qcd_mc/dphi_gt0p3/v2/ratio_eq4j_ge0b_775}
       \caption{Simulation, $\nj = 4$, \mindphistar > 0.3}
       \label{fig:rdphi_sim_j4_gt0p3}
     \end{subfigure}
     \begin{subfigure}[b]{0.46\textwidth}
-      \includegraphics[width=\textwidth]
-      {Figs/dphi/chris2/data/dphi_gt0p3/v2/ratio_eq4j_ge0b_775}
+      \includegraphics[width=\textwidth]{Figs/dphi/chris2/data/dphi_gt0p3/v2/ratio_eq4j_ge0b_775}
       \caption{Data, $\nj = 4$, \mindphistar > 0.3}
       \label{fig:rdphi_data_j4_gt0p3}
     \end{subfigure}
@@ -766,8 +757,6 @@ in figure~\ref{fig:rmhtmet_dphi_data_sim}.
     subtracted.}
     \label{fig:rmhtmet_dphi_data_sim}
   \end{figure}
-\clearpage
-}
 
 When the QCD-enriched \mindphistar < 0.3 region is considered, for low \alphat
 values the ratio \rmhtmet is seen to fall exponentially. However when moving to
@@ -809,14 +798,14 @@ This method and it's validation are described in detail in REF. The approach can
 be summarised by:
 % 
 \begin{equation}
-\begin{split}
-N(n) = \sum_{n_b^{gen} + n_c^{gen} + n_{\text{light}}^{gen} = n_{jet}^{cat}}\:
-\sum_{n_b^{tag} + n_c^{tag} + n_{\text{light}}^{tag} = n}
-N(n_b^{gen}, n_c^{gen}, n_q^{gen}) \times \\
-P(n_b^{tag}, n_b^{gen}, \epsilon_{b}) \times
-P(n_c^{tag}, n_c^{gen}, \epsilon_{c}) \times
-P(n_{\text{light}}^{tag}, n_{\text{light}}^{gen}, \epsilon_{\text{light}}) ,
-\end{split}
+  \begin{split}
+  N(n) = \sum_{n_b^{gen} + n_c^{gen} + n_{\text{light}}^{gen} = n_{jet}^{cat}}\:
+  \sum_{n_b^{tag} + n_c^{tag} + n_{\text{light}}^{tag} = n}
+  N(n_b^{gen}, n_c^{gen}, n_q^{gen}) \times \\
+  P(n_b^{tag}, n_b^{gen}, \epsilon_{b}) \times
+  P(n_c^{tag}, n_c^{gen}, \epsilon_{c}) \times
+  P(n_{\text{light}}^{tag}, n_{\text{light}}^{gen}, \epsilon_{\text{light}}) ,
+  \end{split}
 \end{equation}
 % 
 where $N(n)$ is represents the predicted yield of $n$ b-tagged events for a
