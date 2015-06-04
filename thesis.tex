@@ -115,10 +115,10 @@
 
 \ifdefineChapter
   % \includeonly{Chapter1/chapter1}
- % \includeonly{Chapter2/chapter2}
+ \includeonly{Chapter2/chapter2}
 % \includeonly{Chapter3/chapter3}
  % \includeonly{Chapter4/chapter4}
- \includeonly{Chapter5/chapter5}
+ % \includeonly{Chapter5/chapter5}
  % \includeonly{Chapter5_2/chapter5_2}
   % \includeonly{Chapter6/chapter6}
  % \includeonly{Chapter7/chapter7}
@@ -178,7 +178,7 @@
 %\backmatter
 
 % ********************************** Bibliography ******************************
-\begin{spacing}{0.9}
+\begin{spacing}{1.2}
 
 % To use the conventional natbib style referencing
 % Bibliography style previews: http://nodonn.tipido.net/bibstyle.php
@@ -186,11 +186,11 @@
 
 % \bibliographystyle{apalike}
 % \bibliographystyle{plain}
-\bibliographystyle{ieeetr}
+\bibliographystyle{lucas_unsrt} % stolen from Darren's thesis - custom bib style
 % \bibliographystyle{plainnat} % use this to have URLs listed in References
 \cleardoublepage
 \bibliography{References/references} % Path to your References.bib file
-
+% \newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}
 
 % If you would like to use BibLaTeX for your references, pass `custombib' as
 % an option in the document class. The location of 'reference.bib' should be
