@@ -483,8 +483,8 @@ sensitivity to very low regions of \met as shown by figure~\ref{fig:alphat_mht_c
 
 \section{Residual QCD cleaning}
 
-While the \alphat requirement removes many order of magnitude of QCD events,
-there still exist scenarios in which events may pass the signal region
+While the \alphat requirement removes many orders of magnitude of QCD events,
+there still exist scenarios in which these events may pass the signal region
 selection. Accordingly, further requirements are made to ensure the search
 region is free of any residual QCD contamination.
 
@@ -502,24 +502,24 @@ selection of $\nb \geq 0$, $\nj \geq 2$ and \HT > 200 \gev.}
 \label{fig:full_mhtmet_distro}
 \end{figure}
 
-Events can acquire non-negligible amounts of \mht without the presence of
-real \met if multiple jets are below the analysis threshold and their
-configuration conspires to give a topology that passes the \alphat thresholds.
-Such events will contain a disparity between the energy deposit based \met and
-the jet object based \mht variables. This effect is seen in
-figure~\ref{fig:full_mhtmet_distro} where the presence of significant QCD
-contamination at high values of the ratio \mhtmet is observed, despite an
-\alphat
-requirement. To protect against this scenario, events are required to have a low
-ratio of the two variables, specifically \mhtmet < 1.25.
+Events are able to acquire non-negligible amounts of \mht without the presence
+of
+real \met if multiple jets are below the jet \Pt threshold and their
+configuration conspires to give a topology that gives high values of \alphat.
+Such events will contain a disparity between the \met and
+\mht variables, given that the former is reconstructed using energy deposits,
+and the latter with reconstructed jet objects.
+Figure~\ref{fig:full_mhtmet_distro} shows the significant contribution of QCD at
+high \mhtmet values, even following the \alphat requirement.
+To protect against this scenario, events are required to have \mhtmet < 1.25.
 
 
 \subsection{Instrumental effects}
 
-Fake \mht may also be produced when jets overlap with areas of the calorimeter 
+Fake \mht may also be produced if jets overlap with areas of the calorimeter 
 system which are damaged or known to be faulty, and jets are mis-measured or 
-lost as a result. To protect against this, for a given jet $j$, the angular separation
-between the event \mht, calculated excluding jet $j$, and the jet itself is used, defined
+lost as a result. To protect against this, for a given jet $j$ the angular separation
+between the event \mht, calculated excluding jet $j$, and the jet itself is defined
 as:
 % 
 \begin{equation}
@@ -531,30 +531,31 @@ as:
 An advantage of this variable with respect to the often used
 $\Delta R(jet, \mht)$ is it's detection of spurious missing energy vectors
 caused
-by both under-measurements and over-measurements of a jet's transverse momentum.
+by both under-measurements and over-measurements of a jet's energy.
 A small value of $\dphistar_j$ indicates that the momentum vector of the jet $j$
 is aligned with the \mht vector, implying the jet to be mis-measured. Events are
 vetoed if a jet with \dphistar< 0.5 is within $\Delta R < 0.3$ of a known
-`dead' region of the ECAL.
+`dead' region of the calorimeter.
 
-In order to protext against further jet mismeasurements arising due to
+To protect against further jet mismeasurements arising due to
 instrumental effects, multiple event filters are applied. However, previously
-un-discovered and therefore rare detector effects may still hypothetically be
-present. To check for this, the
-jet giving the minimum \dphistar value in an event, \mindphistar, is found,
+un-discovered and therefore rare detector effects may still be
+present. To check for such issues the
+jet giving the minimum \dphistar value in an event, \mindphistar, is found
 and a single entry of the $\eta$ and $\phi$ direction of the jet's axis is entered
 into a map of the detector, shown in figure~\ref{fig:hotspots}. Any areas of
 instrumental issue would
-be visible as clusters of high event counts. Figures~\ref{fig:hotspots_2d_nodeadECAL} and
-\ref{fig:hotspots_1d_nodeadECAL} show the detector map and the 1d distribution
+be visible as clusters of high event counts.
+Figures~\ref{fig:hotspots_2d_nodeadECAL} and \ref{fig:hotspots_1d_nodeadECAL}
+show the detector map and the 1D distribution
 of counts before the dead ECAL filter is applied. Areas of
 potential instrumental defects are clearly visible, notably as outliers in
-figure~\ref{fig:hotspots_1d_nodeadECAL}. Following the application of the dead
-ECAL filter the hotspot areas and the corresponding outliers removed, as seen in
-figures~\ref{fig:hotspots_2d_withdeadECAL} and
+1D distribution. Following the application of the dead
+ECAL filter the hotspot areas and the corresponding outliers are removed, as
+seen in figures~\ref{fig:hotspots_2d_withdeadECAL} and
 \ref{fig:hotspots_1d_withdeadECAL}. The lack of localised high-count regions, or
 the presence of a tail in the 1D distribution indicates there to be
-no significant remaining instrumental issues.
+no significant instrumental issues remaining.
 
 \begin{figure}[h!]
   \begin{center}
@@ -587,8 +588,6 @@ no significant remaining instrumental issues.
 \end{figure}
 
 \subsection{Heavy-flavour jet decays}
-\emph{This section is still a work in progress and will be updated inline with
-our analysis note.}
 
 Jets can also appear to be mis-measured if the parton
 shower contains heavy flavour mesons which decay leptonically. In rare
