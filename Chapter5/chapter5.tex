@@ -56,7 +56,7 @@ minimum.
   \begin{tabular}{ lrrrrrrrrrrr }
     \hline
     \hline
-    (\nj,\nb)       & \multicolumn{11}{c}{\HT bins (\gev)}                                                                                \\
+    (\nj,\nb)       & \multicolumn{11}{c}{\HT bins (\gev)} \\
     \hline
     (2-3,0)           & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & 875 & 975 & $>$1075  \\
     (2-3,1)           & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & 875 & 975 & $>$1075  \\
@@ -66,13 +66,13 @@ minimum.
     ($\geq$4,1)       & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & 875 & 975 & $>$1075  \\
     ($\geq$4,2)       & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & $>$875   & \multicolumn{2}{c}{} \\
     ($\geq$4,3)       & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & $>$875   & \multicolumn{2}{c}{} \\
-    ($\geq$4,$\geq$4) & 200 & 275 & 325 & $>$375   & \multicolumn{7}{c}{}                                                        \\
+    ($\geq$4,$\geq$4) & 200 & 275 & 325 & $>$375   & \multicolumn{7}{c}{}    \\
     \hline
     \hline
   \end{tabular}
 \end{table}
 
-The main analysis signal region is described in the remainder of this chapter.
+The main analysis search region is described in the remainder of this chapter.
 
 
 \subsection{The \alphat kinematic variable}
@@ -83,8 +83,9 @@ The main analysis signal region is described in the remainder of this chapter.
 % purely QCD MJ event can lead to non-negligible amounts of \mht, therefore 
 % passing the signal selection.
 Attempting to accurately measure the QCD contribution to the total background is
-made very difficult given the hadronic environment of the LHC, and the lack of 
-precise measurements and calculations of the large multijet cross sections. As an 
+particularly challenging given the hadronic environment of the LHC and the lack
+of precise measurements and calculations of the large multijet cross sections
+involved. As an
 alternative approach, the goal of this analysis is to reduce QCD down to an
 entirely negligible level through the use of the dimensionless kinematic
 variable, \alphat. The di-jet variable
@@ -139,7 +140,7 @@ form:
 
 The \alphat variable introduces a correlation between the two variables of \mht
 and \deltaHT. This relationship is demonstrated in figure~\ref{fig:alphat_corr}
-by the black contours of constant \alphat. The different physics sources
+by the black contours of constant \alphat. Different physics processes
 will populate various regions of this plane. Most notably QCD exhibits a strong
 correlation between the two variables at low \alphat values
 (figure~\ref{fig:alphat_corr_qcd}), while processes with real \met break this
@@ -166,15 +167,15 @@ correlation, sitting also at higher values of \alphat
   \caption{Plots showing the correlation between \mht and \deltaHT for QCD,
   \zinv and an example SUSY signature \texttt{T2cc} ($m_{\sTop} = 250$ \gev,
   $m_{\chiz} = 240$ \gev). Contours of constant \alphat are shown in black.
-  Each axis is normalised according to the event \HT \emph{show all three?}.}
+  Each axis is normalised according to the events \HT.}
   \label{fig:alphat_corr}
 \end{figure}
 
 Through the requirement of \alphat in a given region of \HT, an implied missing
 energy threshold is made. Figure~\ref{fig:alphat_mht_corr} shows this, for the
 assumption of \deltaHT = 0 - an assumption which yields the minimal \mht values.
-By lowering the \alphat threshold at higher \HT, the implicit missing energy
-threshold can be maintained similar to that at low \HT.
+Given this correlation, the implicit missing energy threshold can be maintained
+across the \HT range by lowering \alphat thresholds in the high \HT region.
 
 \begin{figure}
   \centering
@@ -188,15 +189,15 @@ threshold can be maintained similar to that at low \HT.
 
 \section{Standard Model Backgrounds}
 \subsection{Genuine \met}
-The dominant EWK source of genuine missing energy comes from Z-boson 
-production where the Z decays
+The dominant Electroweak (EWK) source of genuine missing energy comes from
+Z-boson production where the Z decays
 to neutrinos, \zinv, with associated jet production. This source of background
 is considered irreducible.
 
 Events containing leptonic decays of W bosons, \wlnu, originating either
 from direct W production, or via the decay of a top quark from \ttbar 
 production, are sources of genuine 
-missing energy, due to the presence of a weakly interacting neutrino which
+missing energy due to the presence of a weakly interacting neutrino which
 evades detection. Such events are vetoed in the signal
 region due to the presence of a 
 lepton, however if the lepton is missed for whatever reason, leptonic W decays 
@@ -213,7 +214,8 @@ can pass the signal selection, forming a significant SM background.
 
 Leptons can be `lost' for a variety different reasons, but ultimately for failing
 the lepton ID criteria. There are numerous potential causes, the 
-most prevalent being soft-leptons below ID threshold or non-isolated leptons 
+most prevalent being soft-leptons below the ID's \Pt threshold or non-isolated
+leptons
 which pass the ID quality cuts but fail the isolation requirement.
 
 
@@ -225,15 +227,16 @@ which pass the ID quality cuts but fail the isolation requirement.
 % removes background contributions from single-pronged hadronical decays of $\tau$
 % leptons.
 
-While originally designed to target hadronically decaying tau leptons, 
-this requirement reduces the remaining lost-lepton backgrounds also.
+% While originally designed to target hadronically decaying tau leptons, 
+% this requirement reduces the remaining lost-lepton backgrounds also.
 
-Following the hadronic selection requirements,
+Following the hadronic selection requirements (outlined in
+section~\ref{sec:selec_crit}),
 any remaining contributions from SM EWK backgrounds are estimated using a 
 fully data-driven transfer factor technique, described in detail in
 Section~\ref{sec:background_overview}. A breakdown of the EWK background 
 composition is shown in Figure~\ref{fig:background_decomp}, split into the main 
-categories of \zinv, \wj, \ttbar and remaining residual backgrounds, such as
+categories of \zinv, \wj, \ttbar and all remaining residual backgrounds, such as
 single top quark, diboson and Drell-Yann processes.
 
 \begin{figure}[hb!]
@@ -253,7 +256,8 @@ would consist of multiple jets balancing each other in all planes, however in
 order to enter the signal region, an event must contain missing energy, 
 \mht (equivalent to \met in all-hadronic events).
 
-The most common way for a balanced multijet (MJ) event to gain \mht is when one 
+The most common way for a balanced multijet (MJ) event to gain \mht occurs if
+one
 or more of the jets are mis-measured, such that their vectorial sum then leads to non-zero
 \mht. This can occur due to detector issues, or due to stochastic fluctuations
 within
@@ -273,6 +277,8 @@ event is measured as imbalanced and containing \mht. Events such as these are la
 removed with the \alphat requirement, however in addition a requirement is made on the
 ratio \mhtmet.
 
+Residual QCD cleaning details are given later in section~\ref{sec:qcd_cleaning}.
+
 % Finally, it is also possible for rare instrumentation effects to lead to jet 
 % energy
 % mismeasurements. To protect against this, a suite of MET filters are defined by 
@@ -285,16 +291,16 @@ Events are collected at the HLT using a dedicated suite of
 signal triggers. For an event to pass the trigger
 requirements, it must exceed both a \HT and an \alphat threshold. Trigger rate 
 can be maintained by varying the
-threshold requirement on each of these independent requirements, as shown in
+threshold on each of these independent requirements, as shown in
 Table~\ref{tab:sig_trigs}. Each \HT bin in the analysis is seeded by a
-particular signal
-trigger, with a 25 \gev offset in online and offline \HT, with the exception of
-the 200 \gev bin.
+specific signal
+trigger, with a 25 \gev offset between online and offline \HT, with the
+exception of the 200 \gev bin.
 
 Exclusively for this analysis, the additional `Parked' trigger 
 \\\verb!HT200_AlphaT0p57! is included, seeding the new \HT> 200 \gev bin. Such a low
-threshold allow sensitivity to be maintained for softer physics signatures, such
-as those expected from compressed spectra SUSY decays.
+threshold allows sensitivity to be maintained for softer physics signatures, such
+as those expected from compressed spectra SUSY decays studied in this work.
 
 \begin{table}[!ht]
   \caption{Signal triggers, the L1 seed triggers and their efficiencies measured
@@ -318,10 +324,10 @@ as those expected from compressed spectra SUSY decays.
   \end{tabular}
 \end{table}
 
-Trigger efficiencies are measured using an unbiased single muon reference
+Trigger efficiencies are measured using an unbiased single-muon reference
 trigger,
-\\\verb!HLT_IsoMu24_eta2p1!, using a muon tag and probe method where a
-single muon is selected and then subsequently ignored from the analysis when 
+\\\verb!HLT_IsoMu24_eta2p1!, via a muon tag and probe method where a
+single-muon is selected and then subsequently ignored from the analysis when 
 calculating event level variables such as \HT, \mht and \alphat. Efficiencies 
 are measured for each \HT bin and for each \nj category, as summarised in 
 table~\ref{tab:sig_trigs}. Example trigger `turn-on' curves are shown for the 3 
@@ -329,8 +335,8 @@ lowest \HT bins in figures~\ref{fig:eff_alphat_le3j} and \ref{fig:eff_alphat_ge4
 The curves are shown both differentially and cumulatively, to show the
 efficiency for events of a given \alphat value and above an \alphat threshold
 respectively.
-Across the higher \HT 
-bins the triggers are fully efficient. Inefficiencies in the low \HT bins are
+Across the higher \HT  bins the triggers are measured as fully efficient.
+Inefficiencies in the low \HT bins are
 understood as being due to the relatively high threshold L1 seed trigger used
 for this region, in order to maintain
 low rates in the high PU environment encountered throughout \runone. Lower 
@@ -338,8 +344,8 @@ efficiencies are also observed in the \njhigh category attributed to the presenc
 softer jets, as an increased number of jets must equate to the same total \HT 
 requirement of the bin.
 
-\afterpage{%
-\begin{figure}[!ht]
+% \afterpage{%
+\begin{figure}[p!]
   \centering
     \begin{subfigure}[b]{0.48\textwidth}
       \includegraphics[width=\textwidth,page=11, trim=0 0 0 20, clip=true]{figures/trigger/HT200_275_73_73_36_AlphaT_le3j_RunAtFNAL}
@@ -367,14 +373,14 @@ requirement of the bin.
     \end{subfigure} \\
   
     \caption{\label{fig:eff_alphat_le3j}
-      Differential (left) and Cumulative (right) efficiency turn-on curves for 
+      Differential (left) and cumulative (right) efficiency turn-on curves for 
       the signal triggers, for the three lowest \HT bins and \njlow.}
 \end{figure}
-\clearpage
-}
+% \clearpage
+% }
 
-\afterpage{%
-\begin{figure}[!ht]
+% \afterpage{%
+\begin{figure}[p!]
   \centering
     \begin{subfigure}[b]{0.48\textwidth}
       \includegraphics[width=\textwidth,page=11]{figures/trigger/HT200_275_73_73_36_AlphaT_ge4j_RunAtFNAL}
@@ -402,19 +408,19 @@ requirement of the bin.
     \end{subfigure} \\
   
     \caption{\label{fig:eff_alphat_ge4j}
-      Differential (left) and Cumulative (right) efficiency turn-on curves for 
+      Differential (left) and cumulative (right) efficiency turn-on curves for 
       the signal triggers, for the three lowest \HT bins and \njhigh.}
 \end{figure}
-\clearpage
-}
+% \clearpage
+% }
 
 All triggers were present throughout \runone, however the 
-\\\verb!HLT_HT200_AlphaT0p57! trigger was used as part of the `Parked' stream of 
-data which was reconstructed at a later date, following the active data taking 
-period. During data taking triggers may have `prescale' factors applied to them 
+\\\verb!HLT_HT200_AlphaT0p57! trigger was used as part of the `Parked' data
+stream which was reconstructed at a later date, following the active data-taking
+period. During data-taking triggers may have `prescale' factors applied to them 
 such that only every $n$ triggered events are actually recorded, however all of
-the signal triggers remained unprescaled for the entirety of the 8 \tev
-data taking.
+the signal triggers remained without a prescale for the entirety of the 8 \tev
+data-taking.
 
 
 \section{Selection Criteria}
@@ -428,7 +434,7 @@ made on:
 
 \begin{description}
 \item[Jets]
-Events are required to contain at least two jets with at least
+Events are required to contain at least two jets with
 $\HT > 200$ \gev, to ensure the presence of significant hadronic activity. As 
 mentioned previously, events are categorised by \HT, with jet \Pt
 requirements on the two leading and the remaining additional jets seperately.
@@ -436,7 +442,35 @@ The jet \Pt thresholds vary as a function of the \HT bin of the event, as shown 
 Table~\ref{tab:jet_pt_thresholds}, in order to maintain a similar kinematic
 phase space throughout the \HT range.
 
-\begin{table}[h!]
+\item[Leptons]
+Any events containing leptons are vetoed to ensure only hadronic events
+are considered, thereby suppressing events with genuine \met from leptonic decays to
+neutrinos such as \wlnu.
+
+\item[Photons]
+Events containing photons are vetoed, for similar reasons as the leptonic 
+vetoes, in order to maintain a purely hadronic environment.
+
+\item[Single Isolated Tracks]
+Events containing a Single Isolated Track (SIT) are vetoed from the signal 
+region. This tracker based veto is particularly useful for vetoing additional events 
+that contain leptons which have failed our lepton ID requirements entirely and 
+are therefore not considered by the leptonic vetoes. Additionally, the veto also
+removes background contributions from single-pronged hadronical decays of $\tau$
+leptons.
+
+\item[Event]
+The topology of the event is required to pass a threshold of $\alphat > 0.55$, 
+a requirement which itself varies as a function of the \HT category being
+considered, always
+chosen such that the signal triggers are in the efficiency plateau. While no
+absolute \met requirement is made, the cut on
+\alphat imposes an implied threshold, which maintains the analysis'
+sensitivity to very low regions of \met as shown by figure~\ref{fig:alphat_mht_corr}.
+
+\end{description}
+
+\begin{table}[t!]
   \caption{Jet \Et thresholds per \HT bin.\label{tab:jet_pt_thresholds}}
   \centering
   \footnotesize
@@ -453,35 +487,8 @@ phase space throughout the \HT range.
   \end{tabular}
 \end{table}
 
-\item[Leptons]
-Any events containing leptons are vetoed to ensure hadronic events
-are considered, thereby suppressing events with genuine \met from leptonic decays to
-neutrinos such as \wlnu.
-
-\item[Photons]
-Events containing photons are vetoed, for similar reasons as the leptonic 
-vetoes, in order to maintain a purely hadronic environment.
-
-\item[Single Isolated Tracks]
-Events containing a Single Isolated Track (SIT) are vetoed from the signal 
-region. This tracker based veto is particularly useful for vetoing additional events 
-that contain leptons which have failed our lepton ID requirements entirely, and 
-are therefore not considered by the leptonic vetoes. Additionally, the veto also
-removes background contributions from single-pronged hadronical decays of $\tau$
-leptons.
-
-\item[Event]
-The topology of the event is required to pass a threshold of $\alphat > 0.55$, 
-a requirement which itself varies as a function of the \HT category being
-considered, always
-chosen such that the signal triggers are in the efficiency plateau. While no
-absolute \met requirement is made, the cut on
-\alphat imposes an implied threshold, which maintains the analysis'
-sensitivity to very low regions of \met as shown by figure~\ref{fig:alphat_mht_corr}.
-
-\end{description}
-
 \section{Residual QCD cleaning}
+\label{sec:qcd_cleaning}
 
 While the \alphat requirement removes many orders of magnitude of QCD events,
 there still exist scenarios in which these events may pass the signal region
@@ -496,7 +503,7 @@ region is free of any residual QCD contamination.
 \includegraphics[width=0.6\textwidth]
 {Figs/datamc/had/v1/Stacked_MHTovMET_all_200_upwards.png}
 \caption{The \mhtmet distribution of MC events following the hadronic selection
-criteria, minus the \mhtmet requirement.The MC yields are stacked,
+criteria, minus the nominal \mhtmet requirement.The MC yields are stacked,
 with the QCD contribution shown in cyan. The plot is for a fully inclusive
 selection of $\nb \geq 0$, $\nj \geq 2$ and \HT > 200 \gev.}
 \label{fig:full_mhtmet_distro}
@@ -505,9 +512,9 @@ selection of $\nb \geq 0$, $\nj \geq 2$ and \HT > 200 \gev.}
 Events are able to acquire non-negligible amounts of \mht without the presence
 of
 real \met if multiple jets are below the jet \Pt threshold and their
-configuration conspires to give a topology that gives high values of \alphat.
+configuration conspires to form a topology that gives high values of \alphat.
 Such events will contain a disparity between the \met and
-\mht variables, given that the former is reconstructed using energy deposits,
+\mht variables, given that the former is reconstructed using energy deposits
 and the latter with reconstructed jet objects.
 Figure~\ref{fig:full_mhtmet_distro} shows the significant contribution of QCD at
 high \mhtmet values, even following the \alphat requirement.
@@ -517,10 +524,10 @@ To protect against this scenario, events are required to have \mhtmet < 1.25.
 \subsection{Instrumental effects}
 
 Fake \mht may also be produced if jets overlap with areas of the calorimeter 
-system which are damaged or known to be faulty, and jets are mis-measured or 
-lost as a result. To protect against this, for a given jet $j$ the angular separation
-between the event \mht, calculated excluding jet $j$, and the jet itself is defined
-as:
+system which are damaged or known to be faulty (hereby referred to as `dead'),
+and jets are mis-measured or lost as a result. To protect against this, for a
+given jet $j$ the angular separation between the event \mht, calculated
+excluding jet $j$, and the jet itself is defined as:
 % 
 \begin{equation}
 \dphistar_j = \Delta \phi\big(\overrightarrow{\Pt}_j,-\sum_{i\neq j}
@@ -529,7 +536,8 @@ as:
 \end{equation}
 % 
 An advantage of this variable with respect to the often used
-$\Delta R(jet, \mht)$ is it's detection of spurious missing energy vectors
+$\Delta R(\overrightarrow{\Pt}_j, \mht)$ is it's detection of spurious missing
+energy vectors
 caused
 by both under-measurements and over-measurements of a jet's energy.
 A small value of $\dphistar_j$ indicates that the momentum vector of the jet $j$
@@ -548,13 +556,13 @@ instrumental issue would
 be visible as clusters of high event counts.
 Figures~\ref{fig:hotspots_2d_nodeadECAL} and \ref{fig:hotspots_1d_nodeadECAL}
 show the detector map and the 1D distribution
-of counts before the dead ECAL filter is applied. Areas of
-potential instrumental defects are clearly visible, notably as outliers in
+of counts before the dead ECAL filter is applied, with areas of
+potential instrumental defects clearly visible, notably as outliers in
 1D distribution. Following the application of the dead
 ECAL filter the hotspot areas and the corresponding outliers are removed, as
 seen in figures~\ref{fig:hotspots_2d_withdeadECAL} and
-\ref{fig:hotspots_1d_withdeadECAL}. The lack of localised high-count regions, or
-the presence of a tail in the 1D distribution indicates there to be
+\ref{fig:hotspots_1d_withdeadECAL}. The lack of localised high-count regions or
+the presence of a tail in the 1D distribution indicate there to be
 no significant instrumental issues remaining.
 
 \begin{figure}[h!]
@@ -579,9 +587,9 @@ no significant instrumental issues remaining.
       \caption{With ``dead ECAL filter''.}
       \label{fig:hotspots_1d_withdeadECAL}
     \end{subfigure} \\ 
-    \caption{Distribution of jets in ($\eta$,$\phi$)-space that are
-      responsible for an event satisfying the requirement $\dphistar <
-      0.3$, with (a,b) and without (c,d) the ``dead ECAL filter''
+    \caption{Distribution of jets in ($\eta$, $\phi$)-space that are
+      responsible for an event satisfying the requirement $\mindphistar <
+      0.3$, with (a, b) and without (c, d) the ``dead ECAL filter''
       requirement applied as part of the signal region selection.}
     \label{fig:hotspots}
   \end{center}
@@ -589,17 +597,19 @@ no significant instrumental issues remaining.
 
 \subsection{Heavy-flavour jet decays}
 
-Jets can also appear to be mis-measured if the parton
-shower contains heavy flavour mesons which decay leptonically. In rare
+Jets can also appear to be mismeasured if the parton
+shower contains heavy flavour mesons which decay leptonically EXAMPLE. In rare
 circumstances, these decays can give the largest fraction of the available
 momenta to the neutrino, leading to significant amounts of real \met and
 soft-leptons which can evade the lepton vetoes.
 This effect is compounded when multiple neutrinos are produced in the shower,
-with a significant fraction of the jet's energy therefore evading detection.
+with a significant fraction of the jet's energy therefore evading detection. An
+example event display is shown in appendix~\ref{ch:app_dphistar}, in
+figure~\ref{fig:event_display_QCD}.
 
-To better study events of this type a study region is defined, based on using
-the single-object \HT trigger, \verb!HLT_HT750!, which remained un-prescaled
-throughout \runone. As opposed to the typical signal trigger, the lack of an
+To better study events of this type a study region is defined, populated by the
+the single-object \HT trigger, \verb!HLT_HT750!, which remained unprescaled
+throughout \runone. As opposed to a typical signal trigger, the lack of an
 \alphat requirement allows lower regions of \alphat to be studied. The region is
 therefore defined by \HT > 775 \gev and \alphat > 0.507, where this trigger is
 fully efficient. Due to the intrinsic correlation of \HT and \mht within the
@@ -607,35 +617,35 @@ fully efficient. Due to the intrinsic correlation of \HT and \mht within the
 an effective \mht requirement similar to that of the low \HT categories of the
 nominal analysis.
 
-Jets containing a \met source appear to be mismeasured and will therefore
+\begin{figure}[b!]
+  \centering
+  \includegraphics[width=0.6\textwidth]
+  {Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/Prediction_ComMinBiasDPhi_acceptedJets_all_775_upwards_QCD}
+  \caption{Data (black points) against the EWK background prediction 
+  (stacked, yellow and purple) as a function of \mindphistar. The expected yield
+  from QCD MC (cyan) is stacked on top of the EWK prediction, but not included
+  in the ratio plot. The plot represents
+  the QCD control study region, with $\nb \geq 0$, $\nj \geq 2$, $\HT > 775
+  \gev$ and $\alphat > 0.507$.}
+  \label{fig:qcd_region_pred_dphistar_incl}
+\end{figure}
+
+Jets containing a \met source will appear as mismeasured and therefore
 populate a region of low \dphistar (equation~\ref{eq:biasdphi}).
 Figure~\ref{fig:qcd_region_pred_dphistar_incl} shows the data compared to the
 EWK background prediction (this method is discussed later in
 chapter~\ref{ch:background})
 as a function of the \mindphistar value of each event. The disagreement observed
 at low \mindphistar is well accounted for by the yield from QCD MC. However, it
-should be
-noted that while MC can be relied on for a qualitative understanding of the QCD
-contamination, it should not be used to determine a quantitative understanding
-of the phenomenon.
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.6\textwidth]
-  {Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/Prediction_ComMinBiasDPhi_acceptedJets_all_775_upwards_QCD}
-  \caption{Data (black points) against the EWK background prediction 
-  (stacked, yellow and purple) as a function of \mindphistar. The expected yield
-  from QCD MC (cyan) is stacked on top of the EWK prediction. The plot represents
-  the QCD control study region, with $\nb \geq 0$, $\nj \geq 2$, $\HT > 775
-  \gev$ and $\alphat > 0.507$.}
-  \label{fig:qcd_region_pred_dphistar_incl}
-\end{figure}
+should be noted that while MC can provide a qualitative understanding of the QCD
+contamination, it should not be relied upon to determine a quantitative
+understanding of the phenomenon.
 
 As motivated by figure~\ref{fig:qcd_region_pred_dphistar_incl}, the residual QCD
 events appear to be well isolated in the region $\mindphistar < 0.3$. The effect
 of applying this threshold in the QCD control study region is shown in
 figure~\ref{fig:data_pred_dphistar_eff}.
-
+% 
 \begin{figure}[h!]
   \centering
   \begin{subfigure}[b]{0.46\textwidth}
@@ -669,23 +679,26 @@ figure~\ref{fig:data_pred_dphistar_eff}.
     0.507$, with $\nb \geq 0$.}
     \label{fig:data_pred_dphistar_eff}
 \end{figure}
-
+% 
 When considering simulation (figures~\ref{fig:dphi_acceptance_sim_3j} and
 \ref{fig:dphi_acceptance_sim_4j}), the requirement of \mindphistar > 0.3 appears
-to remove any contributions at high values of \alphat. However care must be
-taken when interpretting the same plots for data
+to remove any contributions particularly at high values of \alphat. However care
+must be taken when interpreting the same plots for data
 (figures~\ref{fig:dphi_acceptance_data_3j} and
-\ref{fig:dphi_acceptance_data_4j}). To extract the QCD MJ contribution in data,
+\ref{fig:dphi_acceptance_data_4j}). To extract the QCD MJ contribution from
+data,
 observed event counts are corrected to subtract the contribution from the EWK
 background processes, as estimated using the standard EWK background prediction
-process which has inherent statistical and systematic uncertainties.
-Subsequently, the QCD prediction as shown in the plots, has an error associated
-with it. Despite this, it is still visible that the \mindphistar requirement
+process which itself has inherent statistical and systematic uncertainties.
+Subsequently, the QCD prediction as shown in the plots, has a non-zero error
+associated
+with it. Despite this, it is still visible that the \mindphistar > 0.3
+requirement
 leads to QCD MJ observations in data that are compatible with zero.
 
 Events with jets containing real \met sources are likely to have
 $\mht \approx \met$ by definition, and would therefore not be protected against
-by the \mhtmet
+by the \mhtmet threshold
 described in section~\ref{sec:qcd_cleaning_below_thresh}. Consider the ratio
 of events passing and failing the \mhtmet requirement, as
 % 
@@ -694,13 +707,13 @@ of events passing and failing the \mhtmet requirement, as
 \rmhtmet = \frac{N(\mhtmet<1.25)}{N(\mhtmet>1.25)}.
 \end{equation}
 % 
-Another method to determine that QCD MJ contamination is to study this variable
+Another method to determine the QCD MJ contamination is to study this variable
 plotted as a function of \alphat after subtracting the
-predicted EWK background (again, as determined using the method outlined in
-chapter~\ref{ch:background}), leaving only QCD multijet events.
+predicted EWK background, leaving only QCD multijet events.
 In the absence of events with jets containing sources of real \met, a strong
-exponential decrease would be expected. However, given these events populate the
-\mhtmet < 1.25 region, a constant pedestal in \alphat is expected, as is shown
+exponential decrease as a function of \alphat would be expected. However, given
+these events populate the
+\mhtmet < 1.25 region, a constant pedestal in \alphat is observed, as is shown
 in figure~\ref{fig:rmhtmet_dphi_data_sim}.
 
   \begin{figure}[p!]
@@ -758,7 +771,7 @@ in figure~\ref{fig:rmhtmet_dphi_data_sim}.
   \end{figure}
 
 When the QCD-enriched \mindphistar < 0.3 region is considered, for low \alphat
-values the ratio \rmhtmet is seen to fall exponentially. However when moving to
+values the ratio \rmhtmet is seen to fall exponentially. However at
 higher \alphat values, where the bulk of QCD events are rejected, the
 constant pedestal arises due to heavy-flavour QCD jets. Inverting
 the \mindphistar requirement reduces the pedestal to entirely negligible
@@ -766,8 +779,8 @@ levels. Similarly to figure~\ref{fig:data_pred_dphistar_eff}, data counts are
 corrected to remove the EWK background prediction and so gain a reasonably
 large uncertainty, however still agree statistically with zero.
 
-As a consequence of these studies of
-such events with jets containing sources of genuine \met jet, the analysis
+As a consequence of these studies of events with jets containing sources of
+genuine \met jet, the analysis
 additionally requires that all events have \mindphistar > 0.3 in the signal
 region. The effect of this requirement on signal efficiency for the models 
 considered in this thesis are discussed in appendix~\ref{ch:app_dphistar}.
@@ -781,7 +794,7 @@ considered in this thesis are discussed in appendix~\ref{ch:app_dphistar}.
 \section{Predicting high-\nb event yields}
 \label{sec:formula_method}
 
-Determining yields for high-\nb analysis categries directly from simulation
+Determining yields for high-\nb analysis categories directly from simulation
 becomes
 inherently reliant on not only MC modelling, but also on the physics
 distribution of jet-flavours. For EWK samples, given the underlying abundance of
@@ -789,9 +802,9 @@ low b-jet multiplicity events, high-\nb categories become dominated by
 mis-tagging of light-flavour jets, leading to large statistical uncertainties.
 In order to reduce this reliance on direct MC yields, a method has been
 developed REF using flavour tagging efficiencies and the underlying quark
-flavour distribution, both measured directly from simulation in order to
-statistically determine more precise yields, particularly for the high-\nb
-categories.
+flavour distribution, both measured directly from simulation. This method
+therefore has the goal of providing more statistically precise yields,
+particularly for the high-\nb categories.
 
 This method and it's validation are described in detail in REF. The approach can
 be summarised by:
@@ -807,7 +820,7 @@ be summarised by:
   \end{split}
 \end{equation}
 % 
-where $N(n)$ is represents the predicted yield of $n$ b-tagged events for a
+where $N(n)$ represents the predicted yield of $n$ b-tagged events for a
 given
 analysis category and \HT bin. The jet-flavour tagging probability
 terms $P(n_b^{tag}, n_b^{gen}, \epsilon_{b})$,
@@ -822,14 +835,16 @@ In the large-statistic sample limit this technique would not be necessary,
 as enough high-\nb events would be present to sufficiently reduce statistical
 uncertainties. However, in the absence of this un-feasible scenario,
 this technique
-makes uses of all events in a sample, thereby reducing the uncertainties
+makes uses of all events in a sample, thereby reducing uncertainties
 and ultimately delivering more precise yields from simulation.
 
 
 \section{Example distributions and cutflow}
 
 Example distributions from MC simulations of \alphat, \HT, \mht and jet \Pt  are
-shown in figure~\ref{fig:datamc_had_inc}.
+shown in figure~\ref{fig:datamc_had_inc}. Example cutflow yields are shown in
+table~\ref{tab:had_data_cutflow} for data in the \HT > 375 \gev region, with an
+inclusive selection on \nj and \nb.
 
 \begin{figure}[!ht]
   \centering
@@ -855,9 +870,6 @@ shown in figure~\ref{fig:datamc_had_inc}.
     are for $\HT>200$ \gev, $\nj\geq2, \nb\geq0$.
     }
 \end{figure}
-  
-The cutflow yields are shown in table~\ref{tab:had_data_cutflow} for data in the
-\HT > 375 \gev region, with an inclusive selection on \nj and \nb.
 
 \begin{table}[ht!]
   \caption{The cutflow of the hadronic selection in data. The subscript `fail'
