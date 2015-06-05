@@ -3,15 +3,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 General:
-  ☐ 'mistag' or 'mis-tag'?
   ☐ new names for T2cc and T2degen
-  ☐ remove all references to MJ method
   ☐ write declaration
   ☐ write acknowledgements
-  ☐ 'data taking' to 'data-taking'
-  ☐ check other hypenated words
-  ☐ 'mis-measured' to 'mismeasured'
-  ☐ 'un-prescaled'?
   ☐ get doi and arxiv in pink like darren's
   ☐ add acronyms section?
 
@@ -22,7 +16,7 @@ Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
   ☐ not enough CP violation reference
-  ☐ work out how to raise the T2cc diagram
+  ✔ work out how to raise the T2cc diagram @done (15-06-05 14:26)
   ☐ sort out significant figures for masses in particle tables
   ☐ are the new higgs doublets considered sparticles?
   ☐ should A0 be in the susy particle table?
@@ -67,6 +61,13 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ 'mistag' or 'mis-tag'? @done (15-06-05 12:15) @project(General)
+ ✔ remove all references to MJ method @done (15-06-05 12:15) @project(General)
+ ✔ 'data taking' to 'data-taking' @done (15-06-05 12:06) @project(General)
+ ✔ check other hypenated words @done (15-06-05 12:15) @project(General)
+ ✔ 'mis-measured' to 'mismeasured' @done (15-06-05 12:09) @project(General)
+ ✔ 'un-prescaled'? @done (15-06-05 12:13) @project(General)
+ ✔ sort out the sorting of bib refs @done (15-06-04 18:25) @project(General)
  ✔ fix chapter references @done (15-05-28 16:40) @project(General)
  ✔ reference particle tables in text @done (15-05-28 16:26) @project(Chapter 2 - Theory)
  ✔ ref susy particle table in text @done (15-05-28 16:26) @project(Chapter 2 - Theory)
