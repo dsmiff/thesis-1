@@ -34,7 +34,7 @@ entirely negligible level using the dimensionless kinematic variable, \alphat
 % Analyses searching in the jets and \met final state encounter significant 
 % backgrounds from SM sources of both genuine \met, originating from the leptonic 
 % decays of W bosons, 
-% and fake \met, originating from jet mis-measurement. The \alphat 
+% and fake \met, originating from jet mismeasurement. The \alphat 
 % analysis makes predictions for the former using a data-driven transfer factor 
 % technique to extrapolate yields from statistically independent control samples 
 % into the signal region. However the latter, sources of fake \met from QCD multijet events,
@@ -79,7 +79,7 @@ The main analysis search region is described in the remainder of this chapter.
 \label{sec:alphat}
 
 % QCD multijet (MJ) events dominate the SM background in any search with multiple jets 
-% in the final state. Jet energy mis-measurements in a 
+% in the final state. Jet energy mismeasurements in a 
 % purely QCD MJ event can lead to non-negligible amounts of \mht, therefore 
 % passing the signal selection.
 Attempting to accurately measure the QCD contribution to the total background is
@@ -258,7 +258,7 @@ order to enter the signal region, an event must contain missing energy,
 
 The most common way for a balanced multijet (MJ) event to gain \mht occurs if
 one
-or more of the jets are mis-measured, such that their vectorial sum then leads to non-zero
+or more of the jets are mismeasured, such that their vectorial sum then leads to non-zero
 \mht. This can occur due to detector issues, or due to stochastic fluctuations
 within
 the inherant jet-resolution of the 
@@ -525,7 +525,7 @@ To protect against this scenario, events are required to have \mhtmet < 1.25.
 
 Fake \mht may also be produced if jets overlap with areas of the calorimeter 
 system which are damaged or known to be faulty (hereby referred to as `dead'),
-and jets are mis-measured or lost as a result. To protect against this, for a
+and jets are mismeasured or lost as a result. To protect against this, for a
 given jet $j$ the angular separation between the event \mht, calculated
 excluding jet $j$, and the jet itself is defined as:
 % 
@@ -541,13 +541,13 @@ energy vectors
 caused
 by both under-measurements and over-measurements of a jet's energy.
 A small value of $\dphistar_j$ indicates that the momentum vector of the jet $j$
-is aligned with the \mht vector, implying the jet to be mis-measured. Events are
+is aligned with the \mht vector, implying the jet to be mismeasured. Events are
 vetoed if a jet with \dphistar< 0.5 is within $\Delta R < 0.3$ of a known
 `dead' region of the calorimeter.
 
 To protect against further jet mismeasurements arising due to
 instrumental effects, multiple event filters are applied. However, previously
-un-discovered and therefore rare detector effects may still be
+undiscovered and therefore rare detector effects may still be
 present. To check for such issues the
 jet giving the minimum \dphistar value in an event, \mindphistar, is found
 and a single entry of the $\eta$ and $\phi$ direction of the jet's axis is entered
@@ -799,7 +799,7 @@ becomes
 inherently reliant on not only MC modelling, but also on the physics
 distribution of jet-flavours. For EWK samples, given the underlying abundance of
 low b-jet multiplicity events, high-\nb categories become dominated by
-mis-tagging of light-flavour jets, leading to large statistical uncertainties.
+mistagging of light-flavour jets, leading to large statistical uncertainties.
 In order to reduce this reliance on direct MC yields, a method has been
 developed REF using flavour tagging efficiencies and the underlying quark
 flavour distribution, both measured directly from simulation. This method
@@ -833,7 +833,7 @@ distribution of actual generator-level jet flavours in the events.
 
 In the large-statistic sample limit this technique would not be necessary,
 as enough high-\nb events would be present to sufficiently reduce statistical
-uncertainties. However, in the absence of this un-feasible scenario,
+uncertainties. However, in the absence of this unfeasible scenario,
 this technique
 makes uses of all events in a sample, thereby reducing uncertainties
 and ultimately delivering more precise yields from simulation.
@@ -845,6 +845,7 @@ Example distributions from MC simulations of \alphat, \HT, \mht and jet \Pt  are
 shown in figure~\ref{fig:datamc_had_inc}. Example cutflow yields are shown in
 table~\ref{tab:had_data_cutflow} for data in the \HT > 375 \gev region, with an
 inclusive selection on \nj and \nb.
+
 
 \begin{figure}[!ht]
   \centering
