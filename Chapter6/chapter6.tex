@@ -208,44 +208,67 @@ using a tag-and-probe method [REF], in bins of the muon \Pt and $\eta$, as summa
 in table~\ref{tab:muon-trig-effs}. Statistical uncertainties are at the
 per-mille level, and systematics are assumed to be 1\%.
 
+% \begin{table}[!ht]
+%   \caption{Muon trigger efficiencies (\%) for the \mj selection listed by \HT bin and
+%   \nj category.}
+%   \label{tab:muon-trig-effs}
+%   \centering
+%   \small
+%   \begin{tabular}{ cccc }
+%     \hline
+%     \hline
+%     \HT (GeV) & 2-3 & $\geq$4 \\ [0.5ex]
+%     \hline
+% %    200--275  & 89.1 & 89.8  \\
+% %    275--325  & 89.3 & 89.8  \\
+% %    325--375  & 89.5 & 90.0  \\
+% %    375--475  & 89.7 & 90.3  \\
+% %    475--575  & 89.8 & 90.5  \\
+% %    575--675  & 90.0 & 90.6  \\
+% %    675--775  & 90.1 & 90.7  \\
+% %    775--875  & 90.2 & 90.8  \\
+% %    875--975  & 90.4 & 90.6  \\
+% %    975--1075 & 90.3 & 90.6  \\
+% %    $>$1075   & 90.0 & 91.2  \\
+%     150--200  & 87.2 & 88.1  \\
+%     200--275  & 87.5 & 88.1  \\
+%     275--325  & 87.8 & 88.2  \\
+%     325--375  & 87.9 & 88.4  \\
+%     375--475  & 88.1 & 88.6  \\
+%     475--575  & 88.2 & 88.8  \\
+%     575--675  & 88.4 & 88.9  \\
+%     675--775  & 88.5 & 89.0  \\
+%     775--875  & 88.6 & 89.1  \\
+%     875--975  & 88.8 & 89.0  \\
+%     975--1075 & 88.7 & 89.0  \\
+%     $>$1075   & 88.4 & 89.6  \\
+%     \hline
+%     \hline
+%   \end{tabular}
+% \end{table}
+
 \begin{table}[!ht]
   \caption{Muon trigger efficiencies (\%) for the \mj selection listed by \HT bin and
   \nj category.}
   \label{tab:muon-trig-effs}
   \centering
-  \small
-  \begin{tabular}{ cccc }
+  \footnotesize
+  \begin{tabular}{ l|cccccccccccc }
     \hline
     \hline
-    \HT (GeV) & 2-3 & $\geq$4 \\ [0.5ex]
+    \multirow{2}{*}{\nj} & \multicolumn{10}{c}{HT bin low edge (GeV)} \\
+    & 150 & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & 875 & 975 & 1075 \\
     \hline
-%    200--275  & 89.1 & 89.8  \\
-%    275--325  & 89.3 & 89.8  \\
-%    325--375  & 89.5 & 90.0  \\
-%    375--475  & 89.7 & 90.3  \\
-%    475--575  & 89.8 & 90.5  \\
-%    575--675  & 90.0 & 90.6  \\
-%    675--775  & 90.1 & 90.7  \\
-%    775--875  & 90.2 & 90.8  \\
-%    875--975  & 90.4 & 90.6  \\
-%    975--1075 & 90.3 & 90.6  \\
-%    $>$1075   & 90.0 & 91.2  \\
-    150--200  & 87.2 & 88.1  \\
-    200--275  & 87.5 & 88.1  \\
-    275--325  & 87.8 & 88.2  \\
-    325--375  & 87.9 & 88.4  \\
-    375--475  & 88.1 & 88.6  \\
-    475--575  & 88.2 & 88.8  \\
-    575--675  & 88.4 & 88.9  \\
-    675--775  & 88.5 & 89.0  \\
-    775--875  & 88.6 & 89.1  \\
-    875--975  & 88.8 & 89.0  \\
-    975--1075 & 88.7 & 89.0  \\
-    $>$1075   & 88.4 & 89.6  \\
+    2--3 & 87.2 & 87.5 & 87.8 & 87.9 & 88.1 & 88.2 & 88.4 & 88.5 & 88.6 & 88.8 &
+    88.7 & 88.4 \\
+    $\geq$4 & 88.1 & 88.1 & 88.2 & 88.4 & 88.6 & 88.8 & 88.9 & 89.0 & 89.1 &
+    89.0 & 89.0 & 89.6 \\
     \hline
     \hline
   \end{tabular}
 \end{table}
+
+
 
 \subsubsection{Selection Criteria}
 \label{sec:mujets_control_selection}
@@ -301,50 +324,58 @@ improved for the dimuon selection given that either of the muons
 can cause a positive trigger decision, as shown in table~\ref{tab:dimuon-trig-effs}. 
 Relative errors are considered the same as for the \mj trigger efficiencies.
 
-\begin{table}[!ht]
-  \caption{Muon trigger efficiencies (\%) for the \mmj selection listed by
-  \HT bin and \nj category.}
+% \begin{table}[!ht]
+%   \caption{Muon trigger efficiencies (\%) for the \mmj selection listed by
+%   \HT bin and \nj category.}
+%   \label{tab:dimuon-trig-effs}
+%   \centering
+%   \small
+%   \begin{tabular}{ cccc }
+%     \hline
+%     \hline
+%     \HT (GeV) & 2-3 & $\geq$4 \\ [0.5ex]
+                                       
+%     \hline
+%     150--200  & 98.4 & 98.4  \\
+%     200--275  & 98.5 & 98.4  \\
+%     275--325  & 98.5 & 98.4  \\
+%     325--375  & 98.6 & 98.6  \\
+%     375--475  & 98.6 & 98.5  \\
+%     475--575  & 98.6 & 98.6  \\
+%     575--675  & 98.6 & 98.6  \\
+%     675--775  & 98.7 & 98.6  \\
+%     775--875  & 98.6 & 98.6  \\
+%     875--975  & 98.7 & 98.6  \\
+%     975--1075 & 98.7 & 98.8  \\
+%     $>$1075   & 98.7 & 98.7  \\
+%     \hline
+%     \hline
+%   \end{tabular}
+% \end{table}
+
+\begin{table}[!h]
+  \caption{Muon trigger efficiencies (\%) for the \mmj selection listed by \HT bin and
+  \nj category.}
   \label{tab:dimuon-trig-effs}
   \centering
-  \small
-  \begin{tabular}{ cccc }
+  \footnotesize
+  \begin{tabular}{ l|cccccccccccc }
     \hline
     \hline
-    \HT (GeV) & 2-3 & $\geq$4 \\ [0.5ex]
-                                       
+    \multirow{2}{*}{\nj} & \multicolumn{10}{c}{HT bin low edge (GeV)} \\
+    & 150 & 200 & 275 & 325 & 375 & 475 & 575 & 675 & 775 & 875 & 975 & 1075 \\
     \hline
-    150--200  & 98.4 & 98.4  \\
-    200--275  & 98.5 & 98.4  \\
-    275--325  & 98.5 & 98.4  \\
-    325--375  & 98.6 & 98.6  \\
-    375--475  & 98.6 & 98.5  \\
-    475--575  & 98.6 & 98.6  \\
-    575--675  & 98.6 & 98.6  \\
-    675--775  & 98.7 & 98.6  \\
-    775--875  & 98.6 & 98.6  \\
-    875--975  & 98.7 & 98.6  \\
-    975--1075 & 98.7 & 98.8  \\
-    $>$1075   & 98.7 & 98.7  \\
-    \hline
+    2--3 & 98.4 & 98.5 & 98.5 & 98.6 & 98.6 & 98.6 & 98.6 & 98.7 & 98.6 & 98.7 &
+    98.7 & 98.7 \\
+    $\geq 4$ & 98.4 & 98.4 & 98.4 & 98.6 & 98.5 & 98.6 & 98.6 & 98.6 & 98.6 & 98.6 & 98.8 &
+    98.7 \\
     \hline
   \end{tabular}
 \end{table}
 
 \subsubsection{Selection Criteria}
-The selection for the \mmj sample is very similar to that of the \mj sample, 
-described in section~\ref{sec:mujets_control_selection}, with differences chosen
-to enrich the sample in Z bosons decaying to pairs of muons in the kinematic 
-phase space of the signal region. Two tight isolated muons are selected, each 
-with $\Pt > 30$ \gev and $|\eta| < 2.1$. Their invariant mass is chosen to be
-tight around $m_Z$, $m_Z - 25 < M_{\mu_1\mu_2} < m_Z + 25$ \gev. Furthermore, a 
-veto is made on events satisfying $\Delta R(\mu_i, jet_j) < 0.5$, for every muon 
-$i$ and every jet $j$. Similarly as in the \mj sample selection, no \alphat
-requirement is made.
 
-Example distributions of $M_T(\mu\mu)$ and $\mu_2$ \Pt for this selection are
-shown in figure~\ref{fig:datamc_mumu_inc}.
-
-\begin{figure}[!ht]
+\begin{figure}[!b]
   \centering
     \begin{subfigure}[b]{0.48\textwidth}
       \includegraphics[width=\textwidth]{Figs/datamc/mumu/Stacked_DiMuon_Mass_all_DiMuon_200_upwards}
@@ -358,6 +389,19 @@ shown in figure~\ref{fig:datamc_mumu_inc}.
     Comparison of data with MC for the \mmj control selection. Plots 
     are for $\HT>200$ \gev, $\nj\geq2, \nb\geq0$.}
 \end{figure}
+
+The selection for the \mmj sample is very similar to that of the \mj sample, 
+described in section~\ref{sec:mujets_control_selection}, with differences chosen
+to enrich the sample in Z bosons decaying to pairs of muons in the kinematic 
+phase space of the signal region. Two tight isolated muons are selected, each 
+with $\Pt > 30$ \gev and $|\eta| < 2.1$. Their invariant mass is chosen to be
+tight around $m_Z$, $m_Z - 25 < M_{\mu_1\mu_2} < m_Z + 25$ \gev. Furthermore, a 
+veto is made on events satisfying $\Delta R(\mu_i, jet_j) < 0.5$, for every muon 
+$i$ and every jet $j$. Similarly as in the \mj sample selection, no \alphat
+requirement is made.
+
+Example distributions of $M_T(\mu\mu)$ and $\mu_2$ \Pt for this selection are
+shown in figure~\ref{fig:datamc_mumu_inc}.
 
 \subsection{\gj}
 \label{sec:gjets_control_sample}
@@ -600,12 +644,7 @@ significant deviation from zero, or a trend in \HT.
     \includegraphics[width=\textwidth]{Figs/syst/v0/ge4j/summary_plot}
     \caption{$\nj \geq 4$}
     \label{fig:closure_summary_ge4j}
-  \end{subfigure}             
-  % \caption{Sets of closure tests (open symbols) overlaid on top of
-  %     the systematic uncertainty used for each of the five \HT
-  %     regions (shaded bands) and for the two different jet
-  %     multiplicity bins: (a) $2 \leq \nj \leq 3$ and (b) $\nj \geq
-  %     4$. RE}
+  \end{subfigure}
   \caption{The results of the eight core closure tests (open symbols), shown 
   over the systematic uncertainty bands for each of the five \HT regions
   (shaded grey), for the two jet multiplicity regions (a) \njlow and (b) \njhigh 
