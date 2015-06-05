@@ -62,9 +62,7 @@ Example cutflows are shown in table~\ref{tab:t2cc_cutflow} for mass points with
 the two extremal \deltam values of the scan, both at values of $m_{\sTop}$ near
 the limits of sensitivity.
 
-\afterpage{%
-% should be v25!
-\begin{figure}[ht!]
+\begin{figure}[p]
   \centering
   \begin{subfigure}[b]{0.47\textwidth}
     \includegraphics[width=\textwidth]{Figs/sms/t2cc/v37/effs/T2cc_had_eff_maps_eq0b_le3j_SITV.pdf}
@@ -112,8 +110,6 @@ the limits of sensitivity.
   four most sensitive analysis categories with an inclusive selection on \HT.}
   \label{fig:t2cc_eff}
 \end{figure}
-\clearpage
-}
 
 % \begin{figure}[h!]
 %   \centering
@@ -190,23 +186,57 @@ acceptance is almost entirely due to hard ISR jets within acceptance. There is a
 significant difference however, when a b-tagged jet is required, for example in 
 the \njlow, \nb= 1 category (figure~\ref{fig:t2_4body_sig_eff_le3j_1b}), where
 the presence of a jet originating from a real 
+%
+\begin{table}[b!]
+  \caption{Cutflow table for two mass points ($m_{\sTop} = 250$ \gev, $m_
+  {\chiz}=240$ \gev and $m_{\sTop} = 250$ \gev, $m_{\chiz}=170$ \gev) of the
+  \texttt{T2Degen} signal model. The selection represents the hadronic signal
+  region for the \HT > 375 \gev region.}
+  \label{tab:t2_4body_cutflow}
+  \centering
+  \footnotesize
+  \begin{tabular}{ lcc }
+    \hline
+    \hline
+    Cut Name    & \multicolumn{2}{c}{Cumlative Eff. (\%)}\\
+    \hline
+    ($m_{\sTop}$, $m_{\chiz}$)& (250, 240) & (250, 170) \\
+    \hline
+    Event Counter & 100.00 & 100.00 \\
+    $\nj \geq 2$  & 10.80 & 32.33 \\
+    MET Filters & 10.80 & 32.33 \\
+    Vertex Noise Filter & 10.80 & 32.33 \\
+    HBHE Noise Filter & 10.80 & 32.33 \\
+    DeadECAL Filter & 9.13 & 21.30 \\
+    $n_{e} = 0$ & 9.13 & 19.70 \\
+    $n_{\gamma} = 0$  & 9.13 & 19.55 \\
+    $n_{\mu} = 0$ & 9.13 & 17.41 \\
+    $\text{EMF}_{max}$ for all jets > 0.1 & 9.13 & 17.41 \\
+    Leading jet \Pt > 100 \gev  & 6.01 & 8.70 \\
+    Leading jet $\eta$ < 2.5  & 5.70 & 8.37 \\
+    Sub-Leading jet \Pt > 100 \gev  & 1.64 & 2.23 \\
+    $n_{j, fail} = 0$ & 1.61 & 2.17 \\
+    $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 1.61 & 2.11 \\
+    $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 1.61 & 2.11 \\
+    recHitCut & 1.61 & 2.11 \\
+    $n_{SIT} = 0$ & 1.50 & 1.67 \\
+    \mindphistar > 0.3  & 1.35 & 0.93 \\
+    \mhtmet < 1.25  & 1.24 & 0.68 \\
+    \HT > 375 \gev  & 0.55 & 0.37 \\
+    \alphat > 0.55  & 0.26 & 0.08 \\
+    \mhtmet < 1.25  & 0.26 & 0.08 \\
+    \hline
+    \hline
+  \end{tabular}
+\end{table}
+%
 b quark improves acceptance, particularly away from the diagonal where this jet 
 would be more likely to pass analysis thresholds. Less significant are the 
 efficiencies seen in the \njhigh categories, given the larger number of final 
 state objects, each requiring a share of the energy originating from the mass 
 splitting of the mother and daughter sparticles.
 
-Also of note is the increase in signal contamination observed in the \mj 
-selection, due to the presence of $f\bar{f}$ in the decay chain, potentially 
-providing leptons in the final state.
-
-Example cutflows are shown in table~\ref{tab:t2_4body_cutflow} for a mass point
-with the smallest mass splitting, at an $m_{\sTop}$ value near the limit of
-sensitivity.
-
-\afterpage{%
-% should be v16!!
-\begin{figure}[ht!]
+\begin{figure}[p]
   \centering
   \begin{subfigure}[b]{0.47\textwidth}
     \includegraphics[width=\textwidth]{Figs/sms/t2degen/v23/effs/T2_4body_had_eff_maps_eq0b_le3j_SITV.pdf}
@@ -254,51 +284,14 @@ sensitivity.
   four most sensitive analysis categories with an inclusive selection on \HT.}
   \label{fig:t2_4body_eff}
 \end{figure}
-\clearpage
-}
 
-\begin{table}[ht!]
-  \caption{Cutflow table for two mass points ($m_{\sTop} = 250$ \gev, $m_
-  {\chiz}=240$ \gev and $m_{\sTop} = 250$ \gev, $m_{\chiz}=170$ \gev) of the
-  \texttt{T2Degen} signal model. The selection represents the hadronic signal
-  region for the \HT > 375 \gev region.}
-  \label{tab:t2_4body_cutflow}
-  \centering
-  \footnotesize
-  \begin{tabular}{ lcc }
-    \hline
-    \hline
-    Cut Name    & \multicolumn{2}{c}{Cumlative Eff. (\%)}\\
-    \hline
-    ($m_{\sTop}$, $m_{\chiz}$)& (250, 240) & (250, 170) \\
-    \hline
-    Event Counter & 100.00 & 100.00 \\
-    $\nj \geq 2$  & 10.80 & 32.33 \\
-    MET Filters & 10.80 & 32.33 \\
-    Vertex Noise Filter & 10.80 & 32.33 \\
-    HBHE Noise Filter & 10.80 & 32.33 \\
-    DeadECAL Filter & 9.13 & 21.30 \\
-    $n_{e} = 0$ & 9.13 & 19.70 \\
-    $n_{\gamma} = 0$  & 9.13 & 19.55 \\
-    $n_{\mu} = 0$ & 9.13 & 17.41 \\
-    $\text{EMF}_{max}$ for all jets > 0.1 & 9.13 & 17.41 \\
-    Leading jet \Pt > 100 \gev  & 6.01 & 8.70 \\
-    Leading jet $\eta$ < 2.5  & 5.70 & 8.37 \\
-    Sub-Leading jet \Pt > 100 \gev  & 1.64 & 2.23 \\
-    $n_{j, fail} = 0$ & 1.61 & 2.17 \\
-    $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 1.61 & 2.11 \\
-    $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 1.61 & 2.11 \\
-    recHitCut & 1.61 & 2.11 \\
-    $n_{SIT} = 0$ & 1.50 & 1.67 \\
-    \mindphistar > 0.3  & 1.35 & 0.93 \\
-    \mhtmet < 1.25  & 1.24 & 0.68 \\
-    \HT > 375 \gev  & 0.55 & 0.37 \\
-    \alphat > 0.55  & 0.26 & 0.08 \\
-    \mhtmet < 1.25  & 0.26 & 0.08 \\
-    \hline
-    \hline
-  \end{tabular}
-\end{table}
+Also of note is the increase in signal contamination observed in the \mj 
+selection, due to the presence of $f\bar{f}$ in the decay chain, potentially 
+providing leptons in the final state.
+
+Example cutflows are shown in table~\ref{tab:t2_4body_cutflow} for a mass point
+with the smallest mass splitting, at an $m_{\sTop}$ value near the limit of
+sensitivity.
 
 % \subsubsection{Boost corrections to T2\_4body}
 % Following generator level studies into the \texttt{T2degen} sample a discrepancy 
