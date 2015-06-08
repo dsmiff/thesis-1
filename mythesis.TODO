@@ -13,6 +13,7 @@ Abstract:
 
 Chapter 1 - Introduction:
   ☐ unification of gauge couplings
+  ☐ backgrounds from likelihood fit to sidebands
 
 Chapter 2 - Theory:
   ☐ not enough CP violation reference
@@ -35,24 +36,27 @@ Chapter 5 - Analysis:
   ☐ get rid of data point in overflow bin of full mhtmet distro
 
 Chapter 5_2 - Samples:
-  ☐ work out what process Zinv is compared to with photons. gamma to what??
+  ✔ work out what process Zinv is compared to with photons. gamma to what?? @done (15-06-08 17:03)
     ☐ get the corresponding value of the normalisation!
   ☐ ref for recent CMS studies - likely not public
 
 Chapter 6 - Background Estimation:
-  ☐ muon tag and probe method reference
+  ✘ muon tag and probe method reference @cancelled (15-06-08 15:16)
 
 Chapter 7 - Results:
   ☐ defintion of pulls - how do they work?!
+  ☐ remove 'chris_latest2' from french flag plot
 
 Chapter 9 - Interpretation:
   ☐ example test parameter distribution for CLs method
   ☐ best fit points? from AN!
   ☐ rerun t2_4body cutflows with ISR and boost reweighting
   ☐ rerun t2cc cutflows with ISR reweighting
+  ☐ fix muon sig eff plots with "min=1." text
+  ☐ why is deadECAL filter different for the two models
 
 Chapter 10 - Conclusion:
-  ☐ write it!
+  ✔ write it! @done (15-06-08 17:03)
 
 Appendix 1 - Signal systematic plots:
 
