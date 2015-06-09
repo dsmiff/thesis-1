@@ -58,7 +58,7 @@ acceptance.
 Signal contamination in the \mj selection is shown to be negligible, given the 
 lack of leptons in the final state.
 
-Example cutflows are shown in table~\ref{tab:t2cc_cutflow} for mass points with
+Example cut-flows are shown in table~\ref{tab:t2cc_cutflow} for mass points with
 the two extremal \deltam values of the scan, both at values of $m_{\sTop}$ near
 the limits of sensitivity.
 
@@ -138,7 +138,7 @@ the limits of sensitivity.
   \begin{tabular}{ lcc }
     \hline
     \hline
-    Cut Name    & \multicolumn{2}{c}{Cumlative Eff. (\%)}\\
+    Cut Name    & \multicolumn{2}{c}{Cumulative Eff. (\%)}\\
     \hline
     ($m_{\sTop}$, $m_{\chiz}$)& (250, 240) & (250, 170) \\
     \hline
@@ -198,7 +198,7 @@ the presence of a jet originating from a real
   \begin{tabular}{ lcc }
     \hline
     \hline
-    Cut Name    & \multicolumn{2}{c}{Cumlative Eff. (\%)}\\
+    Cut Name    & \multicolumn{2}{c}{Cumulative Eff. (\%)}\\
     \hline
     ($m_{\sTop}$, $m_{\chiz}$)& (250, 240) & (250, 170) \\
     \hline
@@ -289,7 +289,7 @@ Also of note is the increase in signal contamination observed in the \mj
 selection, due to the presence of $f\bar{f}$ in the decay chain, potentially 
 providing leptons in the final state.
 
-Example cutflows are shown in table~\ref{tab:t2_4body_cutflow} for a mass point
+Example cut-flows are shown in table~\ref{tab:t2_4body_cutflow} for a mass point
 with the smallest mass splitting, at an $m_{\sTop}$ value near the limit of
 sensitivity.
 
@@ -470,7 +470,7 @@ and \texttt{T2Degen} respectively. Due to the overall dependence on ISR, the
 related systematics are the largest contribution to the total systematic value.
 
 
-\subsection{Btag scale factors}
+\subsection{B tag scale factors}
 Specifically for \FASTSIM signal samples, events are not weighted using the 
 b-tag formula method described in section~\ref{sec:formula_method}, but instead
 using the 
@@ -514,7 +514,7 @@ originate from mistagged lighter quarks or gluons.
 
 
 \subsection{PDF}
-Montecarlo generation includes a simulation of the Parton Density Function (PDF) 
+MonteCarlo generation includes a simulation of the Parton Density Function (PDF)
 of the incoming partons, described by a `PDF set'. Signal samples are produced
 using the \textsc{CTEQ6L1} PDF set. The acceptance 
 sensitivity to the PDF set is investigated by comparing results using three
@@ -626,17 +626,17 @@ fraction of 3jet/2jet within the le3j category, is greater for 4body?}
 
 \subsection{Generator Level Partons}
 At the \MADGRAPH matrix element stage of the MC simulation production, a number
-of additional feynman diagrams are simulated to account for associated parton 
+of additional Feynman diagrams are simulated to account for associated parton 
 interactions, such as Initial State Radiation (ISR) and Final State Radiation
 (FSR). Given the dependence on such processes in the
 compressed spectra regime, an additional sub-sample of the \texttt{T2cc} scan 
 has been produced with up to 3 additional partons, to compare against the up to
 2 additional partons of the complete scan. This sample contains two mass points 
 at a stop mass near the region of maximum sensitivity, with mass splittings 
-covering both extremeties of the scan ($\deltam = 10$ \gev, 80 \gev). The relative
+covering both extremities of the scan ($\deltam = 10$ \gev, 80 \gev). The relative
 change in efficiency times 
 acceptance between the two scans is shown in table~\ref{tab:sms-t2cc-2v3part}. 
-These values are interpretted as systematic uncertainties on the number of 
+These values are interpreted as systematic uncertainties on the number of 
 associated partons modelled for such compressed spectra models, and are applied 
 as flat contributions across the scan plan for all models.
 
@@ -666,7 +666,7 @@ as flat contributions across the scan plan for all models.
 
 \subsection{Luminosity Measurement}
 Flat corrections across the scan plane are made to account for the uncertainty 
-of the luminosity measurement, as quoted by Lumi \emph{POG} at 2.5\%
+of the luminosity measurement, as quoted by the Lumi \emph{POG} at 2.5\%
 \cite{CMS:2013gfa}.
 
 \subsection{Summary}
@@ -676,8 +676,8 @@ quadrature of all individual contributions. Representative values are summarised
 in tables~\ref{tab:sms-syst-t2cc} and \ref{tab:sms-syst-t2_4body}, with full
 results shown in figures~\ref{fig:sms-totalsyst-t2cc} and
 \ref{fig:sms-totalsyst-t2degen} in the mass plane of \texttt{T2cc} and
-\texttt{T2Degen} respecitively. The distribution of total systematic values seen
-in these plots has been corrected to account for statistical fluctations through
+\texttt{T2Degen} respectively. The distribution of total systematic values seen
+in these plots has been corrected to account for statistical fluctuations through
 the use of an iterative smoothing procedure that considers a weighted average of
 each mass point value of the surrounding points. This procedure is carefully
 checked to ensure no loss of total systematic trends in either $m_{\sTop}$ or
