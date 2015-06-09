@@ -8,6 +8,7 @@ General:
   ☐ write acknowledgements
   ☐ get doi and arxiv in pink like darren's
   ☐ add acronyms section?
+  ☐ add ~ to every unit...!!
 
 Abstract:
 
@@ -23,9 +24,17 @@ Chapter 2 - Theory:
   ☐ should A0 be in the susy particle table?
 
 Chapter 3 - Detector:
+  ☐ ref for acc complex diagram
+  ☐ ref for LHC diagram
+  ☐ ref for muon syst schematic
+  ☐ "Pileup distribution for Run Iis shown in figure 1.4"
+  ☐ ref for L1 trigger schematic
+  ☐ tidy up jet corrections section
 
 Chapter 4 - Objects:
   ☐ add ID effs? probably should...
+  ☐ reference for Btagger plots
+  ☐ give the names of the energy sums
 
 Chapter 5 - Analysis:
   ☐ describe alphaT as removing QCD entirely? 
@@ -37,8 +46,10 @@ Chapter 5 - Analysis:
 
 Chapter 5_2 - Samples:
   ✔ work out what process Zinv is compared to with photons. gamma to what?? @done (15-06-08 17:03)
-    ☐ get the corresponding value of the normalisation!
+    ✘ get the corresponding value of the normalisation! @cancelled (15-06-09 17:05)
   ☐ ref for recent CMS studies - likely not public
+  ☐ geant version
+  ☐ fastsim ref
 
 Chapter 6 - Background Estimation:
   ✘ muon tag and probe method reference @cancelled (15-06-08 15:16)
