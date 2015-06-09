@@ -10,38 +10,37 @@
 
 
 %********************************** % First Section  *************************************
-\section{Introduction}  %Section - 1.1 
-\label{sec:objects_introduction}
 
 Physics objects are observed as energy deposits in the various detector 
-subsystems throughout the CMS detector. Specific definitions for the different 
-objects are provided by the Physics Object Groups (\emph{POGs}) and are used in this 
-analysis. The following sections describe the objects used.
+subsystems throughout CMS. Specific definitions for the different 
+objects are provided by the Physics Object Groups (\emph{POGs}), are used in
+this analysis and described in the following sections.
 
 
 %********************************** % Second Section  *************************************
 \section{Jets}  %Section - 1.2
 \label{sec:objects_jets}
 
-Jets are produced when a single quark or gluon is produced, subsequently 
+Jets occur when a single quark or gluon is produced, subsequently 
 hadronizing and showering throughout the calorimeter systems. Energy deposits in
 the hadronic calorimeter are clustered using the anti-$k_T$ algorithm \cite{antikt} with
-a $R=0.5$ cone size parameter. The raw energy measurements are subject to 
+an $R=0.5$ cone size parameter.
+Table~\ref{tab:jet_id_loose} summarises the ID requirements used in this 
+analysis, which correspond to the ``Loose'' working point \cite{ref:jet-id}.
+The raw energy measurements are subject to 
 effects from overlapping pp collisions (PU), therefore corrections are made to
 account for this \cite{Cacciari2008119, 1126-6708-2008-04-005}. Clustered jets 
 are also corrected to establish a uniform response in $\eta$ and \Pt
 \cite{Chatrchyan:2011ds}.
-Table~\ref{tab:jet_id_loose} summarises the ID requirements used in this 
-analysis, which correspond to the ``Loose'' working point \cite{ref:jet-id}.
 Energy deposits clustered into jet objects are corrected to ensure a
 good translation between measured energy and parton energy.
 Jets therefore have the following sequential corrections \cite{ref:jet-jes}
 \cite{2011JInst...611002C} applied:
 \begin{description}
-\item[L1] To remove energy coming from PU events, therefore removing any
+\item[L1] To remove energy originating from PU events, therefore removing any
 dependence on luminosity across a dataset.
 \item[L2] To ensure a flat energy response in $\eta$ across the calorimeter.
-\item[L3] To ensure a flat repsonse according to the \Pt of the deposit.
+\item[L3] To ensure a flat response according to the \Pt of the deposit.
 \item[L2L3] Final, additional corrections to bring data and MC into agreement.
 \end{description}
 
@@ -58,7 +57,7 @@ dependence on luminosity across a dataset.
       f$_{HPD} < 0.98$           & Fractional contribution from the ``hottest'' Hybrid Photo Diode. \\
       f$_{EM} > 0.01$            & Minimum electromagnetic fractional component.                    \\
       N$^{90}_{\rm hits} \geq$ 2 & Number of HCAL channels containing at least
-      90\% of total energy      \\
+      90\% of total energy.      \\
       \hline
       \hline
     \end{tabular}
@@ -69,13 +68,13 @@ dependence on luminosity across a dataset.
 \subsection{Tagging jets from b-quarks}
 
 Jets originating from b-quarks can be identified using information from the 
-vertex detector due to their increased lifetime with respect to light
-flavour quarks (u, d, s) and charm quarks. 
-B-tagging algorithms are designed to determine the probability that a jet 
+vertex detector due to their increased lifetime with respect to gluons, light
+flavour quarks (u, d, s) or charm quarks. 
+B tagging algorithms are designed to determine the probability that a jet 
 originates from a b-quark, given, amongst other properties, track
 displacement from the primary vertex (PV). Each algorithm
 calculates a value used to discriminate between a jet originating from a
-b-quark and a light or c-quark.
+b-quark or other sources.
 
 \begin{figure}[h!]
   \centering
@@ -89,22 +88,23 @@ b-quark and a light or c-quark.
     \caption{CSV Efficiency}
     \label{fig:btag_csv_eff}
   \end{subfigure}
-  \caption{The Combined Secondary Vertex b-tagging algorithm disciminator
-  distribution (left) and the b-tagging efficiency (right) as measured in both
+  \caption{The Combined Secondary Vertex b tagging algorithm discriminator
+  distribution (left) and the b tagging efficiency (right) as measured in both
   data and simulation. MC scale factors are shown in the lower plot of
   \ref{fig:btag_csv_eff}.}
   \label{fig:btag_csv}
 \end{figure}
 
 The Combined Secondary Vertex (CSV) algorithm \cite{CMS-PAS-BTV-12-001} is used
-in this analysis. The tagging algorithm calculates a discriminator value for
-each jet, the distribution being shown in figure~\ref{fig:btag_csv_discrim}.
-The ``Medium'' working point, or a discriminator
-threshold of $>0.679$, is used in this analysis. This working point corresponds
+in this analysis. The distribution of discriminator values is shown in
+figure~\ref {fig:btag_csv_discrim}.
+The ``Medium'' working point corresponds to a discriminator
+threshold of $>0.679$, and is used in this analysis. This working point
+corresponds
 to a mistag rate for gluons/light-quarks of 1\%, and a pT dependent efficiency
 in the range of 60-70\%, as shown in figure~\ref{fig:btag_csv_eff}. Also
 shown in figure~\ref{fig:btag_csv_eff} are the MC scale factors, $SF_b$, defined
-as the ratio of the CSV b-tagging algorithm efficiency in data and MC, to be
+as the ratio of the CSV b tagging algorithm efficiency in data and MC, to be
 applied to MC samples.
 
 
@@ -114,8 +114,9 @@ applied to MC samples.
 Muons are identified from energy deposits predominantly in the muon systems and
 the tracker using the muon \emph {POG's} Tight working point definition
 \cite{ref:muon-id}, as summarised in table~\ref{tab:muon-id}. This definition is
-used in both muon selection in the \mj and \mmj control regions, and the muon
-veto in the hadronic signal region.
+used in both the muon selection in the \mj and \mmj control regions, and the
+muon veto in the hadronic signal region.
+% 
 \begin{table}[ht!]
   \caption{Muon identification (Tight working point).\label{tab:muon-id}}
   \centering
@@ -123,13 +124,13 @@ veto in the hadronic signal region.
   \begin{tabular}{ lcp{8cm} }
     \hline
     \hline
-    Varible & Requirment & Description \\
+    Variable & Requirement & Description \\
     \hline
     Global Muon                            & True      & Muon object 
     is reconstructed from both hits in the muon systems and matched hits in the 
     silicon tracker \\
-    PFMuon                                 & True      & Muon object reconstruct
-    ed with multiple subsystems using Particle Flow techniques\\ $\chi^{2}
+    PFMuon                                 & True      & Muon object reconstructed
+    with multiple subsystems using Particle Flow techniques\\ $\chi^{2}
     /ndof$ of fit & $<10$ & Goodness of fit
     of the global muon track fit. Suppresses hadronic punch-through and muons 
     decaying in flight.\\
@@ -142,7 +143,8 @@ veto in the hadronic signal region.
     Transverse impact $d_{xy}$             & $<0.2$ mm & Tracker track is close 
     to Primary Vertex in the x-y plane. Helps suppress cosmic ray muons and muons 
     from decays in flight. \\
-    Longitudinal dist $d_{z}$              & $<0.5$ mm & Tracker track is close 
+    Longitudinal distance $d_{z}$              & $<0.5$ mm & Tracker track is
+    close 
     to Primary Vertex in z-direction. Suppresses muons from cosmic rays, decays in flight 
     and PU. \\
     Pixel hits                             & $>0$      & At least 1 pixel hit. 
@@ -161,11 +163,11 @@ veto in the hadronic signal region.
 \section{Photons}  %Section - 1.5
 \label{sec:objects_photons}
 
-Photons defintions are made relative to their position in the ECAL,
+Photon definitions are made relative to their position in the ECAL,
 either
 in the barrel or the endcap, as summarised in table~\ref{tab:photon-id-egamma}. 
 This Tight working point ID is defined by the \emph{POG} group
-\cite{ref:photonidtwiki} and used for both photon
+\cite{ref:photonidtwiki} and used for both the photon
 selection in the \gj control sample and as a veto in the hadronic signal region.
 
 \begin{table}[ht!]
@@ -175,7 +177,7 @@ selection in the \gj control sample and as a veto in the hadronic signal region.
   \begin{tabular}{ cccp{4.4cm} }
     \hline
     \hline
-    Categories                    & Barrel                             & EndCap 
+    Categories                    & Barrel                             & Endcap
     & Description                         \\
     \hline
     % Conversion safe electron veto & Yes                                & Yes &
@@ -207,8 +209,9 @@ selection in the \gj control sample and as a veto in the hadronic signal region.
 The Electron \emph{POGs} Loose working point ID \cite{ref:electronidtwiki} is
 used in this analysis to veto 
 electrons from all areas of the analysis. This cut based identification is 
-defined seperately for the barrel and endcap regions of the detector, uses in
-formation from the calorimeter systems as well as the tracker, and is
+defined separately for the barrel and endcap regions of the detector, uses
+information
+from the calorimeter systems as well as the tracker, and is
 summarised in table~\ref{tab:ele-id}. The final two requirements are
 specifically for the rejection of electrons originating from photons converted
 into $e^-e^+$ pairs.
@@ -220,28 +223,29 @@ into $e^-e^+$ pairs.
   \begin{tabular}{ lccp{8cm} }
     \hline
     \hline
-    Categories                                               & Barrel    & EndCap    & 
+    Categories                                               & Barrel    &
+    Endcap    & 
     Description \\
     \hline
     $\Delta \eta_{In}$                                       & < 0.007     &
     < 0.009     & 
-    The difference between the track and ECAL supercluser in the $\eta$ dimension. \\
+    The difference between the track and ECAL supercluster in the $\eta$ dimension. \\
     $\Delta \phi_{In}$                                       & < 0.15      &
     < 0.10      &
-    The difference between the track and ECAL supercluser in the $\phi$ dimension. \\
+    The difference between the track and ECAL supercluster in the $\phi$ dimension. \\
     $\sigma_{i\eta i\eta}$                                   & < 0.01      &
     < 0.03      & 
     The cluster shape covariance of the ECAL supercluster in the $\eta$ dimension. \\
     H/E                                                      & < 0.12      & < 0.10      &
     Ratio of energy deposited in the HCAL towers within $\Delta R<0.15$ of the ECAL 
-    supercluster, and the ECAL supercluster itself. \\
+    supercluster and the ECAL supercluster itself. \\
     d0 (vtx)                                                 & < 0.02      & < 0.02      &
     The transverse distance of the track from the PV. \\
     dZ (vtx)                                                 & < 0.2       & < 0.20      &
     The longitudinal distance of the track from the PV. \\
     $\lvert(1/E_{\textrm{ECAL}} - 1/p_{\textrm{trk}})\rvert$ & < 0.05      & < 0.05      &
-    Comparison of the ECAL supercluster energy and the track \Pt. Suppresses low 
-    \Pt fakes. \\
+    Comparison of the ECAL supercluster energy and the track \Pt, to suppress
+    low \Pt fakes. \\
     PF relative isolation                                    & < 0.15      & 0< .15      &
     PF based isolation calculated from particle activity within a cone of
     $\Delta R < 0.3$. \\
@@ -292,12 +296,12 @@ signals.
     Filter Name & Description \\
     \hline
     Beam Halo CSC ID        & Beam interactions with residual gases in the beam pipe
-    or with mechanical appertures, causing secondary particle production. Events 
+    or with mechanical apertures, causing secondary particle production. Events 
     are vetoed if an event contains a positive beam halo ID from the CSC
     detectors. \\ \\
     HBHE Noise              & Noise originating from instrumentation issues with
     the HCAL's Hybrid Photo Diodes (HPDs) or the Readout Boxes (RBXs). Events are
-    vetoed if they contain isolated cluster of noisy cells in either the barrel 
+    vetoed if they contain isolated clusters of noisy cells in either the barrel 
     or endcap.\\ \\
     Tracking Failure        & Significant energy deposits in the calorimeter 
     systems with no corresponding tracks due to tracker algorithm failure. 
@@ -318,13 +322,13 @@ signals.
 \section{Single Isolated Tracks}  %Section - 1.7
 \label{sec:objects_sit}
 Single Isolated Tracks are used to identify hadronically decaying $\tau$ leptons
-and leptonically decaying W bosons where the corresonding lepton has been
-unidentified for whatever reason. 
+and leptonically decaying W bosons where the corresponding lepton has failed
+identification for whatever reason.
 Summarised in table~\ref{tab:sit-id}, the selection is based on particle flow
 candidates - objects which have been constructed from energy deposits in various
-detector subsystems according to `particle flow' algorithms. This ID is used as
+detector subsystems according to `Particle Flow' algorithms. This ID is used as
 a veto in all selections, with the selected `tag' lepton ignored in the \mj and
-\mmj control selections. The ID defintion is taken from \cite{singleleptonstop}.
+\mmj control selections. The ID definition is taken from \cite{singleleptonstop}.
 
 \begin{table}[ht!]
   \caption{Single Isolated Track identification.\label{tab:sit-id}}
@@ -333,11 +337,10 @@ a veto in all selections, with the selected `tag' lepton ignored in the \mj and
   \begin{tabular}{ lcp{8cm} }
     \hline
     \hline
-    Varible & Requirment & Description \\
+    Variable & Requirement & Description \\
     \hline
     Charge                      & $\neq 0$      & Candidate is charged. \\
-    Track \Pt                   & $> 10$ \gev   & Track transverse momentum
-    requirement. \\
+    Track \Pt                   & $> 10$ \gev   & Track transverse momentum. \\
     $\Delta z(track, PV)$       & $<0.05$ cm     & Longitudinal distance of
     track
     from primary vertex. \\
