@@ -15,7 +15,7 @@ include the primary signal sample datasets, named `HTMHTParked', and other
 datasets containing events from triggers used for background estimation.
 
 \begin{table}[ht]
-  \caption{8 \tev Datasets.}
+\caption{8 \tev Datasets with the integrated luminosity for each.}
   \label{tab:datasets}
   \centering
   \footnotesize
@@ -59,7 +59,7 @@ to the
 CTEQ6L1 distribution, the matrix-element level hard-scatter performed by
 \MADGRAPHFIVE or \PYTHIASIX, with outgoing partons showered in \PYTHIASIX. The
 produced generator level particles are then put through a full detector
-simulation in \GEANT, and detector hits `digitized' in order to simulate the
+simulation in \GEANTFOUR, and detector hits `digitized' in order to simulate the
 response of detector electronics. Prior to digitization, a number of
 `MinimumBias' events are
 over-layed in order to reproduce LHC run conditions. Event-level weights
@@ -67,8 +67,8 @@ are applied to each simulated sample such that both the PU and equivalent
 integrated luminosity are matched to a given data sample.
 
 Additional corrections are made to simulated event samples in order to correct
-the efficiency of b-tagging algorithms to match that seen in data. Corrections
-are determined as a function of jet-flavour (light/c/b), defined as:
+the efficiency of b tagging algorithms to match that observed in data.
+Corrections are determined as a function of jet-flavour (light/c/b), defined as:
 % 
 \begin{equation}
 SF_{light,c,b} = \frac{\epsilon^{data}_{light,c,b}(\Pt, \eta)}{\epsilon^
@@ -76,12 +76,13 @@ SF_{light,c,b} = \frac{\epsilon^{data}_{light,c,b}(\Pt, \eta)}{\epsilon^
 \end{equation}
 % 
 where $\epsilon^{X}_{light, c, b}$ represents \Pt and $\eta$ dependent
-b-tagging efficiencies measured in data and MC.
+b tagging efficiencies measured in data and MC.
 
 \begin{landscape}
   \begin{center}
     \begin{table}[ht]
-      \caption{MC samples for Standard Model processes.}
+      \caption{MC samples for Standard Model processes with their NNLO cross
+      sections and equivalent integrated luminosity.}
       \label{tab:mc-sm}
       \centering
       \tiny
@@ -145,15 +146,15 @@ decayed using \PYTHIASIX. Diagrams for up to two additional
 partons are simulated
 in the initial generation step to ensure good modelling of initial state 
 radiation (ISR), however supplementary samples were produced with up to three
-additional partons to allow for systematic studies into the effect on the 
-analysis, as detailed in chapter~\ref{ch:interpretation}.
+additional partons to allow for systematic studies into the effect on 
+analysis acceptance, as detailed in chapter~\ref{ch:interpretation}.
 
 Signal MC samples use the \FASTSIM detector simulation framework in order to
 simulate detector and electronics responses. In comparison to the \FULLSIM method
 used for all other MC backgrounds, \FASTSIM aims to greatly reduce the
 processing time required to generate samples by avoiding the CPU-intensive
 full detector simulation using the \GEANT framework, instead employing detector
-response parametrisations tuned using \FULLSIM samples.
+response parametrisations tuned using \FULLSIM samples REF.
 
 \begin{landscape}
   \begin{center}
@@ -214,16 +215,16 @@ and the \dyj inclusive sample.
   \end{subfigure}             
   \caption{Generator level \HTpart distributions from the
     inclusive DY + jets and the \HTpart binned \zj
-    samples.}
+    samples., both before and after cross section corrections.}
   \label{fig:xsec_study}
 \end{figure}
 
 Two of the binned samples have corresponding inclusive samples to allow for 
-this comparison to be made, namely \wj and \dyj. For these two cases, the 
-derivation of corrections for each \HTpart binned sample is simple. However, for 
-\zj no such inclusive sample exists. This sample is 
+a comparison to be made, namely \wj and \dyj. For these two cases, the 
+derivation of corrections for each \HTpart binned sample is trivial. However,
+for \zj no such inclusive sample exists. This sample is 
 compared with the inclusive \dyj sample, where the overall normalisation is 
-set according to the relative cross section of \zinv to
+set as the relative cross section of \zinv to
 $Z \to \ell\ell$, 0.505. An example ratio plot is
 shown in figure~\ref{fig:xsec_study_after}, where a constant ratio between the 
 samples is found following the application of corrections to the individual
@@ -231,24 +232,29 @@ sample cross sections.
 
 
 \subsection{HT sideband normalisation}
-As mentioned previously in section~\ref{sec:mc_xsec_corrs}, absolute MC 
+
+As mentioned in section~\ref{sec:mc_xsec_corrs}, absolute MC 
 normalisation is not well modelled in the high-\met region of 
-phase-space in which many SUSY analyses search. As such, data and MC appear to
+phase-space in which many SUSY analyses search. As such, data and MC are seen to
 disagree using standard MC samples and cross-sections. While data and MC
 comparisons are not explicitly used in this analysis, ratios of MC yields are, 
 and so cross-section correction factors for the main 
-MC processes are determined. These are measured as the data to MC ratio in the
+MC processes must be derived. Corrections are taken as the data to MC ratio
+in the
 $150 \leq \HT < 200$ \gev sideband region, in a given control sample with a 
 targeted selection, designed to yield a pure sample of a background process.
-A summary of the selections and their relevant purities are given in
-table~\ref{tab:ht_sideband}.
+A summary of the selections, their relevant purities and the derived
+corrections are given in table~\ref{tab:ht_sideband}.
 
 \begin{table}[!ht]
-  \caption{Correction factors determined as the ratio of yields in data to
-  those in MC, for a sideband region of $150 < \HT < 200$ \gev. Factors are
-  calculated for process-specific MC samples by choosing a selection enriched in
-  the relevant process, and applied as a global correction.}
-  \label {tab:ht_sideband} \centering
+  % \caption{Correction factors determined as the ratio of yields in data to
+  % those in MC, for a sideband region of $150 < \HT < 200$ \gev. Factors are
+  % calculated for process-specific MC samples by choosing a selection enriched in
+  % the relevant process, and applied as a global correction.}
+  \caption{The process-specific sideband corrections applied to MC sample, with
+  the selection used and it's corresponding purity.}
+  \label{tab:ht_sideband}
+  \centering
   \small
   \begin{tabular}{ llcc }
     \hline
@@ -265,4 +271,4 @@ table~\ref{tab:ht_sideband}.
 \end{table}
 
 These derived correction factors are tested in the closure tests performed
-following their application (section~\ref{sec:closure_tests}).
+following their application (discussed in section~\ref{sec:closure_tests}).
