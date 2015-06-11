@@ -9,21 +9,28 @@ General:
   ☐ get doi and arxiv in pink like darren's
   ☐ add acronyms section?
   ☐ add ~ to every unit...!!
-  ☐ check for no-titled first paragraphs in each chapter
-  ☐ "b-quark" to "b quark" (and other flavours)
+  ✔ check for no-titled first paragraphs in each chapter @done (15-06-11 14:15)
+  ✔ "b-quark" to "b quark" (and other flavours) @done (15-06-11 14:20)
 
 Abstract:
 
 Chapter 1 - Introduction:
   ☐ unification of gauge couplings
   ☐ backgrounds from likelihood fit to sidebands
+  ☐ try to move the goal of thesis to somewhere earlier
+  ☐ introduce chapters 4 and 5
 
 Chapter 2 - Theory:
   ☐ not enough CP violation reference
+  ☐ how is the CP violation measured? gamma angle - specific decays etc
   ✔ work out how to raise the T2cc diagram @done (15-06-05 14:26)
   ☐ sort out significant figures for masses in particle tables
-  ☐ are the new higgs doublets considered sparticles?
-  ☐ should A0 be in the susy particle table?
+  ✔ are the new higgs doublets considered sparticles? @done (15-06-11 16:02)
+  ✔ should A0 be in the susy particle table? @done (15-06-11 16:02)
+  ☐ mention T2cc existing limit only on the diagonal
+  ☐ include neutrino mass limits
+  ☐ new 'Why SUSY?' subsection about unification of gauge couplings
+  ☐ mention some values for dark matter relative abundance
 
 Chapter 3 - Detector:
   ✔ ref for acc complex diagram @done (15-06-10 11:42)
@@ -71,9 +78,11 @@ Chapter 9 - Interpretation:
   ☐ fix muon sig eff plots with "min=1." text
   ☐ why is deadECAL filter different for the two models
   ☐ ref the poisson function?
+  ☐ describe the limit plots?
 
 Chapter 10 - Conclusion:
   ✔ write it! @done (15-06-08 17:03)
+  ☐ mention how it's better across all dM
 
 Appendix 1 - Signal systematic plots:
 
