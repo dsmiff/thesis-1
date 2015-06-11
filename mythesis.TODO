@@ -9,6 +9,8 @@ General:
   ☐ get doi and arxiv in pink like darren's
   ☐ add acronyms section?
   ☐ add ~ to every unit...!!
+  ☐ check for no-titled first paragraphs in each chapter
+  ☐ "b-quark" to "b quark" (and other flavours)
 
 Abstract:
 
@@ -24,11 +26,12 @@ Chapter 2 - Theory:
   ☐ should A0 be in the susy particle table?
 
 Chapter 3 - Detector:
-  ☐ ref for acc complex diagram
-  ☐ ref for LHC diagram
+  ✔ ref for acc complex diagram @done (15-06-10 11:42)
+  ✔ ref for LHC diagram @done (15-06-10 11:42)
+  ☐ change LHC diagram to english
   ☐ ref for muon syst schematic
   ☐ "Pileup distribution for Run Iis shown in figure 1.4"
-  ☐ ref for L1 trigger schematic
+  ✔ ref for L1 trigger schematic @done (15-06-10 14:59)
   ☐ tidy up jet corrections section
 
 Chapter 4 - Objects:
@@ -53,10 +56,12 @@ Chapter 5_2 - Samples:
 
 Chapter 6 - Background Estimation:
   ✘ muon tag and probe method reference @cancelled (15-06-08 15:16)
+  ☐ sort out table placement for the CT section
 
 Chapter 7 - Results:
   ☐ defintion of pulls - how do they work?!
   ☐ remove 'chris_latest2' from french flag plot
+  ☐ sort out layout of final tables and paragraphs
 
 Chapter 9 - Interpretation:
   ☐ example test parameter distribution for CLs method
@@ -65,6 +70,7 @@ Chapter 9 - Interpretation:
   ☐ rerun t2cc cutflows with ISR reweighting
   ☐ fix muon sig eff plots with "min=1." text
   ☐ why is deadECAL filter different for the two models
+  ☐ ref the poisson function?
 
 Chapter 10 - Conclusion:
   ✔ write it! @done (15-06-08 17:03)
