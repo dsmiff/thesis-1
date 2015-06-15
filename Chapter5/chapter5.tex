@@ -15,17 +15,17 @@
 
 Analyses searching in the jets and \met final state encounter significant 
 backgrounds from SM sources of both genuine and fake \met. Genuine \met 
-originates from W and Z boson production, decaying with one or more neutrinos in
-the final state. In this analysis background predictions are made for these
-processes using 
+originates from \ttbar, W and Z boson production, with one or more
+neutrinos in the final state. In this analysis background predictions are made
+for these processes using 
 extrapolations into the signal region from independent, process-specific control
 samples, as described in chapter~\ref{ch:background}.
-Fake \met predominantly is found due to mismeasurements of QCD 
-multijet (MJ) events, which is the dominant process in the hadronic environment
-and 
-phase space considered in this analysis due to it's very large cross section. 
-Small inconsistencies in the handling of such large backgrounds or rare detector
-effects can therefore 
+Fake \met predominantly originates from mismeasurements of QCD 
+multijet (MJ) production, which is the dominant process in the hadronic
+environment
+and  phase space considered in this analysis due to it's very large cross
+section.  Small inconsistencies in the handling of such large backgrounds or
+rare detector effects can therefore 
 have a significant impact on an analysis. This background is reduced to an 
 entirely negligible level using the dimensionless kinematic variable, \alphat
 (described in section~\ref{sec:alphat}).
@@ -87,7 +87,8 @@ particularly challenging given the hadronic environment of the LHC and the lack
 of precise measurements and calculations of the large multijet cross sections
 involved. As an
 alternative approach, the goal of this analysis is to reduce QCD down to an
-entirely negligible level through the use of the dimensionless kinematic
+entirely negligible levels with respect to background processes with genuine
+\met, achieved through the use of the dimensionless kinematic
 variable, \alphat. The di-jet variable
 $\alpha$ was first proposed by Randall et al. in 2008 \cite{Randall:2008rw},
 and later translated into the transverse plane for use with LHC analyses
@@ -100,7 +101,7 @@ and later translated into the transverse plane for use with LHC analyses
 \end{equation}
 % 
 where $E_T^{j_1}$ and $E_T^{j_2}$ are the reconstructed transverse energies of 
-the first and second jets respectively, and $\Delta \phi$ is the seperation 
+the first and second jets respectively, and $\Delta \phi$ is the separation 
 between the two jets in the $\phi$ plane.
 
 A perfectly measured di-jet event containing back to back jets in $\phi$ of equal energy will
@@ -141,41 +142,43 @@ form:
 The \alphat variable introduces a correlation between the two variables of \mht
 and \deltaHT. This relationship is demonstrated in figure~\ref{fig:alphat_corr}
 by the black contours of constant \alphat. Different physics processes
-will populate various regions of this plane. Most notably QCD exhibits a strong
+will populate various regions of this plane, as shown in the MC study in
+figure~\ref{fig:alphat_corr}. Most notably QCD exhibits a strong
 correlation between the two variables at low \alphat values
 (figure~\ref{fig:alphat_corr_qcd}), while processes with real \met break this
 correlation, sitting also at higher values of \alphat
 (figures~\ref{fig:alphat_corr_zinv} and \ref{fig:alphat_corr_t2cc}).
 
-\begin{figure}[h!]
+\begin{figure}[t!]
   \centering
-  \begin{subfigure}[b]{.46\textwidth}
+  \begin{subfigure}[t]{.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_QCD.pdf}
     \caption{QCD}
     \label{fig:alphat_corr_qcd}
   \end{subfigure}
-  \begin{subfigure}[b]{.46\textwidth}
+  \begin{subfigure}[t]{.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_Zinv.pdf}
     \caption{\zinv}
     \label{fig:alphat_corr_zinv}
   \end{subfigure}\\
-  \begin{subfigure}[b]{.46\textwidth}
+  \begin{subfigure}[t]{.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_T2cc_250_240.pdf}
     \caption{\texttt{T2cc} (250, 240)}
     \label{fig:alphat_corr_t2cc}
   \end{subfigure}
-  \caption{Plots showing the correlation between \mht and \deltaHT for QCD,
+  \caption{The correlation between \mht and \deltaHT for MC samples of QCD,
   \zinv and an example SUSY signature \texttt{T2cc} ($m_{\sTop} = 250$~\gev,
   $m_{\chiz} = 240$~\gev). Contours of constant \alphat are shown in black.
   Each axis is normalised according to the events \HT.}
   \label{fig:alphat_corr}
 \end{figure}
 
-Through the requirement of \alphat in a given region of \HT, an implied missing
-energy threshold is made. Figure~\ref{fig:alphat_mht_corr} shows this, for the
-assumption of \deltaHT = 0 - an assumption which yields the minimal \mht values.
-Given this correlation, the implicit missing energy threshold can be maintained
-across the \HT range by lowering \alphat thresholds in the high \HT region.
+Through the requirement of \alphat in a given region of \HT, a certain missing
+energy threshold is implied. Figure~\ref{fig:alphat_mht_corr} shows this, for
+the assumption of \deltaHT = 0 - an assumption which yields the minimum \mht
+values. Given this correlation, the implicit missing energy threshold can be
+maintained across the \HT range by lowering \alphat thresholds in the high \HT
+region.
 
 \begin{figure}
   \centering
@@ -200,7 +203,7 @@ production, are sources of genuine
 missing energy due to the presence of a weakly interacting neutrino which
 evades detection. Such events are vetoed in the signal
 region due to the presence of a 
-lepton, however if the lepton is missed for whatever reason, leptonic W decays 
+lepton, however if the lepton is missed leptonic W decays 
 can pass the signal selection, forming a significant SM background.
 
 % While lepton and photon vetoes employed in the signal region suppress 
@@ -224,7 +227,7 @@ which pass the ID quality cuts but fail the isolation requirement.
 % region. This tracker based veto is particularly useful for vetoing additional events 
 % that contain leptons which have failed our lepton ID requirements entirely, and 
 % are therefore not considered by the leptonic vetoes. Additionally, the veto also
-% removes background contributions from single-pronged hadronical decays of $\tau$
+% removes background contributions from single-pronged hadronic decays of $\tau$
 % leptons.
 
 % While originally designed to target hadronically decaying tau leptons, 
@@ -234,19 +237,7 @@ Following the hadronic selection requirements (outlined in
 section~\ref{sec:selec_crit}),
 any remaining contributions from SM EWK backgrounds are estimated using a 
 fully data-driven transfer factor technique, described in detail in
-Section~\ref{sec:background_overview}. A breakdown of the EWK background 
-composition is shown in Figure~\ref{fig:background_decomp}, split into the main 
-categories of \zinv, \wj, \ttbar and all remaining residual backgrounds, such as
-single top quark, diboson and Drell-Yann processes.
-
-\begin{figure}[hb!]
-\centering
-\hspace{0cm}\includegraphics[width=0.9\textwidth, trim=0 00 0 0, clip=true]
-{Figs/ra1_had_bg_comp_v3.png}
-\caption{The breakdown of the total electroweak background into component
-processes as a function of \nj and \nb, for \HT>200~\gev.}
-\label{fig:background_decomp}
-\end{figure}
+Section~\ref{sec:background_overview}.
 
 \subsection{Fake \met}
 
@@ -433,30 +424,49 @@ rejecting as many QCD-type processes as possible. To do so, requirements are
 made on:
 
 \begin{table}[b!]
-  \caption{Jet \Et thresholds per \HT bin.\label{tab:jet_pt_thresholds}}
+  \caption{Jet \Et and \alphat thresholds per \HT bin.
+  \label{tab:analysis_thresholds}}
   \centering
-  \footnotesize
+  \small
   \begin{tabular}{ lcccc }
     \hline
     \hline
     \HT bin        & 200--275 & 275--325 & 325--375 & $>$375 \\
     \hline
-    Lead jet       & 73.3     & 73.3     & 86.7     & 100.0  \\
-    Second jet     & 73.3     & 73.3     & 86.7     & 100.0  \\
-    All other jets & 36.7     & 36.7     & 43.3     & 50.0   \\
+    Lead jet (\gev)       & 73.3     & 73.3     & 86.7     & 100.0  \\
+    Second jet (\gev)     & 73.3     & 73.3     & 86.7     & 100.0  \\
+    All other jets (\gev) & 36.7     & 36.7     & 43.3     & 50.0   \\
+    \hline
+    \alphat        & 0.65     & 0.60     & 0.55     & 0.55    \\
     \hline
     \hline
   \end{tabular}
 \end{table}
 
+% \begin{table}[b]
+%   \caption{\alphat thresholds per \HT bin.\label{tab:alphat_thresholds}}
+%   \centering
+%   \footnotesize
+%   \begin{tabular}{ lccc }
+%     \hline
+%     \hline
+%     \HT bin        & 200--275 & 275--325 & $>$325 \\
+%     \hline
+%     Lead jet       & 0.65     & 0.60     & 0.55  \\
+%     \hline
+%     \hline
+%   \end{tabular}
+% \end{table}
+
+
 \begin{description}
 \item[Jets]
 Events are required to contain at least two jets with
-$\HT > 200$~\gev, to ensure the presence of significant hadronic activity. As 
-mentioned previously, events are categorised by \HT, with jet \Pt
-requirements on the two leading and the remaining additional jets seperately.
+$\HT > 200$~\gev, to ensure the presence of significant hadronic activity.
+They are categorised by \HT, with jet \Pt
+requirements on the two leading and the remaining additional jets separately.
 The jet \Pt thresholds vary as a function of the \HT bin of the event, as shown in
-Table~\ref{tab:jet_pt_thresholds}, in order to maintain a similar kinematic
+Table~\ref{tab:analysis_thresholds}, in order to maintain a similar kinematic
 phase space throughout the \HT range.
 
 \item[Leptons]
@@ -473,19 +483,33 @@ Events containing a Single Isolated Track (SIT) are vetoed from the signal
 region. This tracker based veto is particularly useful for vetoing additional events 
 that contain leptons which have failed our lepton ID requirements entirely and 
 are therefore not considered by the leptonic vetoes. Additionally, the veto also
-removes background contributions from single-pronged hadronical decays of $\tau$
+removes background contributions from single-pronged hadronic decays of $\tau$
 leptons.
 
 \item[Event]
-The topology of the event is required to pass a threshold of $\alphat > 0.55$, 
-a requirement which itself varies as a function of the \HT category being
-considered, always
-chosen such that the signal triggers are in the efficiency plateau. While no
+The topology of the event is required to pass a threshold of at least $\alphat >
+0.55$, a requirement which itself varies as a function of the \HT category being
+considered, always chosen such that the signal triggers are in the efficiency
+plateau, as summarised in table~\ref{tab:analysis_thresholds}. While no
 absolute \met requirement is made, the cut on
 \alphat imposes an implied threshold, which maintains the analysis'
 sensitivity to very low regions of \met as shown by figure~\ref{fig:alphat_mht_corr}.
 
 \end{description}
+
+A breakdown of the EWK background 
+composition is shown in Figure~\ref{fig:background_decomp}, split into the main 
+categories of \zinv, \wj, \ttbar and all remaining residual backgrounds, such as
+single top quark, diboson and Drell-Yann processes.
+
+\begin{figure}[hb!]
+\centering
+\hspace{0cm}\includegraphics[width=0.9\textwidth, trim=0 00 0 0, clip=true]
+{Figs/ra1_had_bg_comp_v3.png}
+\caption{The breakdown of the total electroweak background into component
+processes as a function of \nj and \nb, for \HT>200~\gev.}
+\label{fig:background_decomp}
+\end{figure}
 
 \section{Residual QCD cleaning}
 \label{sec:qcd_cleaning}
@@ -789,7 +813,7 @@ considered in this thesis are discussed in appendix~\ref{ch:app_dphistar}.
 % have $\Pt>100$~\gev, with all additional jets having half the requirement of
 % $\Pt>50$~\gev. In order to maintain a similar kinematic phase space throughout
 % the many \HT bins, these jet \Pt requirements are scaled for the lower \HT bins 
-% as shown in Table~\ref{tab:jet_pt_thresholds}.
+% as shown in Table~\ref{tab:analysis_thresholds}.
 
 
 \section{Example distributions and cutflow}
