@@ -4,13 +4,11 @@
 
 General:
   ☐ new names for T2cc and T2degen
-  ✔ write declaration @done (15-06-08 17:28)
   ☐ write acknowledgements
   ☐ get doi and arxiv in pink like darren's
-  ☐ add acronyms section?
   ☐ add ~ to every unit...!!
-  ✔ check for no-titled first paragraphs in each chapter @done (15-06-11 14:15)
-  ✔ "b-quark" to "b quark" (and other flavours) @done (15-06-11 14:20)
+  ☐ move plots to top of page if possible
+  ☐ mht data vs pred plot for before and after dPhi cut (normal/inverted)
 
 Abstract:
 
@@ -19,26 +17,19 @@ Chapter 1 - Introduction:
   ☐ backgrounds from likelihood fit to sidebands
   ☐ try to move the goal of thesis to somewhere earlier
   ☐ introduce chapters 4 and 5
+  ☐ parked trigger - better sensitivity blah
 
 Chapter 2 - Theory:
   ☐ not enough CP violation reference
   ☐ how is the CP violation measured? gamma angle - specific decays etc
-  ✔ work out how to raise the T2cc diagram @done (15-06-05 14:26)
   ☐ sort out significant figures for masses in particle tables
-  ✔ are the new higgs doublets considered sparticles? @done (15-06-11 16:02)
-  ✔ should A0 be in the susy particle table? @done (15-06-11 16:02)
   ☐ mention T2cc existing limit only on the diagonal
   ☐ include neutrino mass limits
   ☐ new 'Why SUSY?' subsection about unification of gauge couplings
   ☐ mention some values for dark matter relative abundance
 
 Chapter 3 - Detector:
-  ✔ ref for acc complex diagram @done (15-06-10 11:42)
-  ✔ ref for LHC diagram @done (15-06-10 11:42)
-  ☐ change LHC diagram to english
   ☐ ref for muon syst schematic
-  ☐ "Pileup distribution for Run Iis shown in figure 1.4"
-  ✔ ref for L1 trigger schematic @done (15-06-10 14:59)
   ☐ tidy up jet corrections section
 
 Chapter 4 - Objects:
@@ -53,16 +44,14 @@ Chapter 5 - Analysis:
   ☐ recalculate the dphi* >< predictions with fully correlated single mu numbers
   ☐ formula method AN reference
   ☐ get rid of data point in overflow bin of full mhtmet distro
+  ☐ back reference objects chapter in selection section
 
 Chapter 5_2 - Samples:
-  ✔ work out what process Zinv is compared to with photons. gamma to what?? @done (15-06-08 17:03)
-    ✘ get the corresponding value of the normalisation! @cancelled (15-06-09 17:05)
   ☐ ref for recent CMS studies - likely not public
   ☐ geant version
   ☐ fastsim ref
 
 Chapter 6 - Background Estimation:
-  ✘ muon tag and probe method reference @cancelled (15-06-08 15:16)
   ☐ sort out table placement for the CT section
 
 Chapter 7 - Results:
@@ -77,11 +66,9 @@ Chapter 9 - Interpretation:
   ☐ rerun t2cc cutflows with ISR reweighting
   ☐ fix muon sig eff plots with "min=1." text
   ☐ why is deadECAL filter different for the two models
-  ☐ ref the poisson function?
   ☐ describe the limit plots?
 
 Chapter 10 - Conclusion:
-  ✔ write it! @done (15-06-08 17:03)
   ☐ mention how it's better across all dM
 
 Appendix 1 - Signal systematic plots:
@@ -92,19 +79,36 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
- ✔ 'mistag' or 'mis-tag'? @done (15-06-05 12:15) @project(General)
+ ✘ ref the poisson function? @cancelled (15-06-12 16:48) @project(Chapter 9 - Interpretation)
+ ✘ add acronyms section? @cancelled (15-06-12 16:36) @project(General)
+ ✔ change LHC diagram to english @done (15-06-12 16:03) @project(Chapter 3 - Detector)
+ ✔ "Pileup distribution for Run Iis shown in figure 1.4" @done (15-06-12 15:34) @project(Chapter 3 - Detector)
+ ✔ should A0 be in the susy particle table? @done (15-06-11 16:02) @project(Chapter 2 - Theory)
+ ✔ are the new higgs doublets considered sparticles? @done (15-06-11 16:02) @project(Chapter 2 - Theory)
+ ✔ "b-quark" to "b quark" (and other flavours) @done (15-06-11 14:20) @project(General)
+ ✔ check for no-titled first paragraphs in each chapter @done (15-06-11 14:15) @project(General)
+ ✔ ref for L1 trigger schematic @done (15-06-10 14:59) @project(Chapter 3 - Detector)
+ ✔ ref for acc complex diagram @done (15-06-10 11:42) @project(Chapter 3 - Detector)
+ ✔ ref for LHC diagram @done (15-06-10 11:42) @project(Chapter 3 - Detector)
+ ✘ get the corresponding value of the normalisation! @cancelled (15-06-09 17:05) @project(Chapter 5_2 - Samples)
+ ✔ write declaration @done (15-06-08 17:28) @project(General)
+ ✔ write it! @done (15-06-08 17:03) @project(Chapter 10 - Conclusion)
+ ✔ work out what process Zinv is compared to with photons. gamma to what?? @done (15-06-08 17:03) @project(Chapter 5_2 - Samples)
+ ✘ muon tag and probe method reference @cancelled (15-06-08 15:16) @project(Chapter 6 - Background Estimation)
+ ✔ work out how to raise the T2cc diagram @done (15-06-05 14:26) @project(Chapter 2 - Theory)
  ✔ remove all references to MJ method @done (15-06-05 12:15) @project(General)
- ✔ 'data taking' to 'data-taking' @done (15-06-05 12:06) @project(General)
  ✔ check other hypenated words @done (15-06-05 12:15) @project(General)
- ✔ 'mis-measured' to 'mismeasured' @done (15-06-05 12:09) @project(General)
+ ✔ 'mistag' or 'mis-tag'? @done (15-06-05 12:15) @project(General)
  ✔ 'un-prescaled'? @done (15-06-05 12:13) @project(General)
+ ✔ 'mis-measured' to 'mismeasured' @done (15-06-05 12:09) @project(General)
+ ✔ 'data taking' to 'data-taking' @done (15-06-05 12:06) @project(General)
  ✔ sort out the sorting of bib refs @done (15-06-04 18:25) @project(General)
+ ✔ update heavy flavour QCD section with latest plots from AN @done (15-06-03 15:46) @project(Chapter 5 - Analysis)
+ ✔ rmhtmet plots - before/after 0.3 requirement @done (15-06-03 15:46) @project(Chapter 5 - Analysis)
+ ✔ change higgs mass reference paper to WR paper @done (15-05-28 16:50) @project(Chapter 2 - Theory)
  ✔ fix chapter references @done (15-05-28 16:40) @project(General)
  ✔ reference particle tables in text @done (15-05-28 16:26) @project(Chapter 2 - Theory)
  ✔ ref susy particle table in text @done (15-05-28 16:26) @project(Chapter 2 - Theory)
- ✔ change higgs mass reference paper to WR paper @done (15-05-28 16:50) @project(Chapter 2 - Theory)
- ✔ rmhtmet plots - before/after 0.3 requirement @done (15-06-03 15:46) @project(Chapter 5 - Analysis)
- ✔ update heavy flavour QCD section with latest plots from AN @done (15-06-03 15:46) @project(Chapter 5 - Analysis)
  ✔ why is jets + MET the best channel? @done (15-05-28 15:21) @project(Chapter 1 - Introduction)
  ✔ finish last para @done (15-05-28 15:21) @project(Chapter 1 - Introduction)
  ✔ mention decay chains @done (15-05-27 14:30) @project(Abstract)
