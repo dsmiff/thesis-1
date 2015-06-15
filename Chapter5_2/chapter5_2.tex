@@ -272,3 +272,50 @@ corrections are given in table~\ref{tab:ht_sideband}.
 
 These derived correction factors are tested in the closure tests performed
 following their application (discussed in section~\ref{sec:closure_tests}).
+
+\section{Predicting high-\nb event yields}
+\label{sec:formula_method}
+
+Determining yields for high-\nb analysis categories directly from simulation
+becomes
+inherently reliant on not only MC modelling, but also on the physics
+distribution of jet-flavours. For EWK samples, given the underlying abundance of
+low b-jet multiplicity events, high-\nb categories become dominated by
+mistagging of light-flavour jets, leading to large statistical uncertainties.
+In order to reduce this reliance on direct MC yields, a method has been
+developed REF using flavour tagging efficiencies and the underlying quark
+flavour distribution, both measured directly from simulation. This method
+therefore has the goal of providing more statistically precise yields,
+particularly for the high-\nb categories.
+
+This method and it's validation are described in detail in REF. The approach can
+be summarised by:
+% 
+\begin{equation}
+  \begin{split}
+  N(n) = \sum_{n_b^{gen} + n_c^{gen} + n_{\text{light}}^{gen} = n_{jet}^{cat}}\:
+  \sum_{n_b^{tag} + n_c^{tag} + n_{\text{light}}^{tag} = n}
+  N(n_b^{gen}, n_c^{gen}, n_q^{gen}) \times \\
+  P(n_b^{tag}, n_b^{gen}, \epsilon_{b}) \times
+  P(n_c^{tag}, n_c^{gen}, \epsilon_{c}) \times
+  P(n_{\text{light}}^{tag}, n_{\text{light}}^{gen}, \epsilon_{\text{light}}) ,
+  \end{split}
+\end{equation}
+% 
+where $N(n)$ represents the predicted yield of $n$ b-tagged events for a
+given
+analysis category and \HT bin. The jet-flavour tagging probability
+terms $P(n_b^{tag}, n_b^{gen}, \epsilon_{b})$,
+$P(n_c^{tag}, n_c^{gen}, \epsilon_{c})$ and 
+$P(n_{\text{light}}^{tag}, n_{\text{light}}^{gen}, \epsilon_{\text{light}})$ are measured for each \HT bin and
+analysis category for each simulated sample, including the flavour tagging
+effiencies $\epsilon_b$, $\epsilon_c$ and $\epsilon_{\text{light}}$ as also measured from
+each sample. Finally, $N(n_b^{gen}, n_c^{gen}, n_q^{gen})$ represents the
+distribution of actual generator-level jet flavours in the events.
+
+In the large-statistic sample limit this technique would not be necessary,
+as enough high-\nb events would be present to sufficiently reduce statistical
+uncertainties. However, in the absence of this infeasible scenario,
+this technique
+makes uses of all events in a sample, thereby reducing uncertainties
+and ultimately delivering more precise yields from simulation.
