@@ -15,7 +15,6 @@ Chapter 1 - Introduction:
   ☐ try to move the goal of thesis to somewhere earlier
 
 Chapter 2 - Theory:
-  ☐ not enough CP violation reference
   ☐ how is the CP violation measured? gamma angle - specific decays etc
   ☐ sort out significant figures for masses in particle tables
   ☐ new 'Why SUSY?' subsection about unification of gauge couplings
@@ -37,21 +36,23 @@ Chapter 6 - Background Estimation:
 
 Chapter 7 - Results:
   ☐ defintion of pulls - how do they work?!
-  ☐ sort out layout of final tables and paragraphs
 
 Chapter 9 - Interpretation:
   ☐ example test parameter distribution for CLs method
-  ☐ best fit points? from AN!
+  ✘ best fit points? from AN! @cancelled (15-06-16 21:33)
   ☐ rerun t2_4body cutflows with ISR and boost reweighting
   ☐ rerun t2cc cutflows with ISR reweighting
-  ☐ fix muon sig eff plots with "min=1." text
+  ✔ fix muon sig eff plots with "min=1." text @done (15-06-16 21:32)
   ☐ why is deadECAL filter different for the two models
   ☐ describe the limit plots?
+  ☐ make sure new sysmteatics plots match text
+  ☐ mention the inclusive selection for JES
 
 Chapter 10 - Conclusion:
   ☐ mention how it's better across all dM
 
 Appendix 1 - Signal systematic plots:
+  ☐ match order of plots to the text in ch9
 
 Appendix 2 - DPhiStar in signal region:
 
@@ -59,6 +60,9 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ sort out layout of final tables and paragraphs @done (15-06-16 21:24) @project(Chapter 7 - Results)
+ ✔ not enough CP violation reference @done (15-06-16 21:24) @project(Chapter 2 - Theory)
+ ✔ udpate the total sysmteatics table @done (15-06-16 20:20) @project(Chapter 9 - Interpretation)
  ✔ backgrounds from likelihood fit to sidebands @done (15-06-16 14:04) @project(Chapter 1 - Introduction)
  ✔ unification of gauge couplings @done (15-06-16 14:00) @project(Chapter 1 - Introduction)
  ✔ parked trigger - better sensitivity blah @done (15-06-16 13:59) @project(Chapter 1 - Introduction)
