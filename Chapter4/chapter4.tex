@@ -27,20 +27,20 @@ the hadronic calorimeter are clustered using the anti-$k_T$ algorithm \cite{anti
 an $R=0.5$ cone size parameter.
 Table~\ref{tab:jet_id_loose} summarises the ID requirements used in this 
 analysis, which correspond to the ``Loose'' working point \cite{ref:jet-id}.
-The raw energy measurements are subject to 
-effects from overlapping pp collisions (PU), therefore corrections are made to
-account for this \cite{Cacciari2008119, 1126-6708-2008-04-005}. Clustered jets 
-are also corrected to establish a uniform response in $\eta$ and \Pt
-\cite{Chatrchyan:2011ds}.
-Energy deposits clustered into jet objects are corrected to ensure a
-good translation between measured energy and parton energy.
-Jets therefore have the following sequential corrections \cite{ref:jet-jes}
-\cite{2011JInst...611002C} applied:
+% The raw energy measurements are subject to 
+% effects from overlapping pp collisions (PU), therefore corrections are made to
+% account for this . Clustered jets 
+% are also corrected to establish a uniform response in $\eta$ and \Pt
+% .
+% Energy deposits clustered into jet objects are corrected to ensure a
+% good translation between measured energy and parton energy.
+Raw energy measurements that form jets have the following sequential
+corrections \cite{ref:jet-jes, 2011JInst...611002C} applied:
 \begin{description}
 \item[L1] To remove energy originating from PU events, therefore removing any
-dependence on luminosity across a dataset.
-\item[L2] To ensure a flat energy response in $\eta$ across the calorimeter.
-\item[L3] To ensure a flat response according to the \Pt of the deposit.
+dependence on luminosity across a dataset \cite{Cacciari2008119, 1126-6708-2008-04-005}.
+\item[L2] To ensure a uniform energy response in $\eta$ across the calorimeter \cite{Chatrchyan:2011ds}.
+\item[L3] To ensure a uniform response according to the \Pt of the deposit \cite{Chatrchyan:2011ds}.
 \item[L2L3] Final, additional corrections to bring data and MC into agreement.
 \end{description}
 
