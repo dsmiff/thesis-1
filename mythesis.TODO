@@ -6,7 +6,6 @@ General:
   ☐ new names for T2cc and T2degen
   ☐ write acknowledgements
   ☐ get doi and arxiv in pink like darren's
-  ☐ add ~ to every unit...!!
   ☐ move plots to top of page if possible
   ☐ mht data vs pred plot for before and after dPhi cut (normal/inverted)
 
@@ -23,40 +22,31 @@ Chapter 2 - Theory:
   ☐ not enough CP violation reference
   ☐ how is the CP violation measured? gamma angle - specific decays etc
   ☐ sort out significant figures for masses in particle tables
-  ☐ mention T2cc existing limit only on the diagonal
-  ☐ include neutrino mass limits
+  ☐ include neutralino mass limits
   ☐ new 'Why SUSY?' subsection about unification of gauge couplings
   ☐ mention some values for dark matter relative abundance
 
 Chapter 3 - Detector:
-  ☐ ref for muon syst schematic
   ☐ tidy up jet corrections section
 
 Chapter 4 - Objects:
   ☐ add ID effs? probably should...
-  ☐ reference for Btagger plots
   ☐ give the names of the energy sums
 
 Chapter 5 - Analysis:
-  ☐ describe alphaT as removing QCD entirely? 
-  ☐ better motivation for alphaT thresholds...
-  ☐ heavy flavour leptonic jet decay example
-  ☐ recalculate the dphi* >< predictions with fully correlated single mu numbers
-  ☐ formula method AN reference
-  ☐ get rid of data point in overflow bin of full mhtmet distro
   ☐ back reference objects chapter in selection section
 
 Chapter 5_2 - Samples:
   ☐ ref for recent CMS studies - likely not public
   ☐ geant version
   ☐ fastsim ref
+  ☐ formula method AN reference
 
 Chapter 6 - Background Estimation:
-  ☐ sort out table placement for the CT section
+  ☐ heavy flavour leptonic jet decay example
 
 Chapter 7 - Results:
   ☐ defintion of pulls - how do they work?!
-  ☐ remove 'chris_latest2' from french flag plot
   ☐ sort out layout of final tables and paragraphs
 
 Chapter 9 - Interpretation:
@@ -79,6 +69,18 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ get rid of data point in overflow bin of full mhtmet distro @done (15-06-16 11:33) @project(Chapter 5 - Analysis)
+ ✔ remove 'chris_latest2' from french flag plot @done (15-06-16 11:26) @project(Chapter 7 - Results)
+ ✔ sort out table placement for the CT section @done (15-06-16 11:19) @project(Chapter 6 - Background Estimation)
+ ✔ add some intro about closure tests @done (15-06-16 11:12) @project(Chapter 6 - Background Estimation)
+ ✔ add some in the intro about residual QCD removal @done (15-06-16 11:12) @project(Chapter 6 - Background Estimation)
+ ✔ better motivation for alphaT thresholds... @done (15-06-16 10:56) @project(Chapter 5 - Analysis)
+ ✔ ref for muon system schematic @done (15-06-16 10:54) @project(Chapter 3 - Detector)
+ ✔ mention T2cc existing limit only on the diagonal @done (15-06-15 18:48) @project(Chapter 2 - Theory)
+ ✘ recalculate the dphi* >< predictions with fully correlated single mu numbers @cancelled (15-06-15 14:10) @project(Chapter 5 - Analysis)
+ ✔ reference for Btagger plots @done (15-06-15 14:10) @project(Chapter 4 - Objects)
+ ✔ describe alphaT as removing QCD entirely?  @done (15-06-15 14:10) @project(Chapter 5 - Analysis)
+ ✔ add ~ to every unit...!! @done (15-06-15 14:10) @project(General)
  ✘ ref the poisson function? @cancelled (15-06-12 16:48) @project(Chapter 9 - Interpretation)
  ✘ add acronyms section? @cancelled (15-06-12 16:36) @project(General)
  ✔ change LHC diagram to english @done (15-06-12 16:03) @project(Chapter 3 - Detector)
