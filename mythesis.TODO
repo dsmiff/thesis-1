@@ -22,7 +22,7 @@ Chapter 2 - Theory:
   ☐ not enough CP violation reference
   ☐ how is the CP violation measured? gamma angle - specific decays etc
   ☐ sort out significant figures for masses in particle tables
-  ☐ include neutralino mass limits
+  ☐ include neutrino mass limits in particle table
   ☐ new 'Why SUSY?' subsection about unification of gauge couplings
   ☐ mention some values for dark matter relative abundance
 
@@ -31,15 +31,12 @@ Chapter 3 - Detector:
 
 Chapter 4 - Objects:
   ☐ add ID effs? probably should...
-  ☐ give the names of the energy sums
+  ✔ give the names of the energy sums @done (15-06-16 11:42)
 
 Chapter 5 - Analysis:
   ☐ back reference objects chapter in selection section
 
 Chapter 5_2 - Samples:
-  ☐ ref for recent CMS studies - likely not public
-  ☐ geant version
-  ☐ fastsim ref
   ☐ formula method AN reference
 
 Chapter 6 - Background Estimation:
@@ -69,6 +66,9 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ ref for recent CMS studies - likely not public @done (15-06-16 11:39) @project(Chapter 5_2 - Samples)
+ ✔ geant version @done (15-06-16 11:37) @project(Chapter 5_2 - Samples)
+ ✔ fastsim ref @done (15-06-16 11:39) @project(Chapter 5_2 - Samples)
  ✔ get rid of data point in overflow bin of full mhtmet distro @done (15-06-16 11:33) @project(Chapter 5 - Analysis)
  ✔ remove 'chris_latest2' from french flag plot @done (15-06-16 11:26) @project(Chapter 7 - Results)
  ✔ sort out table placement for the CT section @done (15-06-16 11:19) @project(Chapter 6 - Background Estimation)
