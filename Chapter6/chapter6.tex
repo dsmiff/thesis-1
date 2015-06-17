@@ -983,15 +983,15 @@ momenta to the neutrino, leading to significant amounts of real \met and
 soft-leptons which can evade the lepton vetoes.
 This effect is compounded when multiple neutrinos are produced in the shower,
 with a significant fraction of the jet's energy therefore evading detection. An
-example event display is shown in appendix~\ref{ch:app_dphistar}, in
+example event display is shown in appendix~\ref{ch:app_dphistar},
 figure~\ref{fig:event_display_QCD}.
 
-To better study events of this type a study region is defined, populated by the
-the single-object \HT trigger, \verb!HLT_HT750!, which remained unprescaled
+To better study events of this type a control region is defined, populated by
+the the single-object \HT trigger, \verb!HLT_HT750!, which remained unprescaled
 throughout \runone. As opposed to a typical signal trigger, the lack of an
 \alphat requirement allows lower regions of \alphat to be studied. The region is
-therefore defined by \HT > 775~\gev and \alphat > 0.507, where this trigger is
-fully efficient. Due to the intrinsic correlation of \HT and \mht within the
+therefore defined by \HT > 775~\gev and 0.507 < \alphat < 0.55. Due to the
+intrinsic correlation of \HT and \mht within the
 \alphat variable (figure~\ref{fig:alphat_mht_corr}), this selection provides
 an effective \mht requirement similar to that of the low \HT categories of the
 nominal analysis.
@@ -1009,11 +1009,10 @@ nominal analysis.
   \label{fig:qcd_region_pred_dphistar_incl}
 \end{figure}
 
-Jets containing a \met source will appear as mismeasured and therefore
+Jets containing a \met source appear as mismeasured and therefore
 populate a region of low \dphistar (equation~\ref{eq:biasdphi}).
 Figure~\ref{fig:qcd_region_pred_dphistar_incl} shows the data compared to the
-EWK background prediction (this method is discussed later in
-chapter~\ref{ch:background})
+EWK background prediction
 as a function of the \mindphistar value of each event. The disagreement observed
 at low \mindphistar is well accounted for by the yield from QCD MC. However, it
 should be noted that while MC can provide a qualitative understanding of the QCD
@@ -1029,7 +1028,7 @@ figure~\ref{fig:data_pred_dphistar_eff}.
   \centering
   \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/dphi/chris2/qcd_mc/dphi_incl/v2/dphi_eq3j_ge0b_775}
-    \caption{$\nj = 3$, simulation}
+    \caption{$\nj = 3$, QCD MC simulation}
     \label{fig:dphi_acceptance_sim_3j}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
@@ -1039,7 +1038,7 @@ figure~\ref{fig:data_pred_dphistar_eff}.
   \end{subfigure}\\
   \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/dphi/chris2/qcd_mc/dphi_incl/v2/dphi_eq4j_ge0b_775}
-    \caption{$\nj = 4$, simulation}
+    \caption{$\nj = 4$, QCD MC simulation}
     \label{fig:dphi_acceptance_sim_4j}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
@@ -1060,20 +1059,19 @@ figure~\ref{fig:data_pred_dphistar_eff}.
 \end{figure}
 % 
 When considering simulation (figures~\ref{fig:dphi_acceptance_sim_3j} and
-\ref{fig:dphi_acceptance_sim_4j}), the requirement of \mindphistar > 0.3 appears
-to remove any contributions. However care
+\ref{fig:dphi_acceptance_sim_4j}), the requirement of \mindphistar > 0.3
+removes all QCD events. However care
 must be taken when interpreting the same plots for data
 (figures~\ref{fig:dphi_acceptance_data_3j} and
-\ref{fig:dphi_acceptance_data_4j}). To extract the QCD MJ contribution from
-data,
-observed event counts are corrected to subtract the contribution from the EWK
-background processes, as estimated using the standard EWK background prediction
-process which itself has inherent statistical and systematic uncertainties.
-Subsequently, the QCD prediction as shown in the plots, has a non-zero error
-associated
-with it. Despite this, it is still visible that the \mindphistar > 0.3
-requirement
-leads to QCD MJ observations in data that are compatible with zero.
+\ref{fig:dphi_acceptance_data_4j}). To extract the expected QCD MJ contribution
+from data, observed event counts are corrected to subtract the contribution from
+the EWK background processes, as estimated using the standard EWK background
+prediction process.
+Subsequently, the QCD expectations as shown in the plots gain a non-zero error
+but crucially remain statistically compatible with zero. This mirrors the
+conclusion found
+in simulation that the heavy flavour QCD events are removed by the application
+of the \mindphistar > 0.3 requirement.
 
 
 % Events with jets containing real \met sources are likely to have
