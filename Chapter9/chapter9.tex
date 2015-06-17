@@ -17,7 +17,7 @@ Model acceptance is determined as a function of analysis category (\nb, \nj) and
 scan plane for both the hadronic and muon selections (to determine 
 signal contamination in the control region). Interpretations are made using a
 selected subset of the most sensitive analysis 
-categories, but an inclusive \HT selection. The analysis categories used are 
+categories, but an inclusive \HT selection. The analysis categories are 
 selected after an inspection of each for their significance given signal 
 injection from specific mass points.
 
@@ -30,7 +30,7 @@ The largest acceptance is seen in the \njlow,
 are around the percent level. At 
 small mass splittings, nearest the kinematically inaccessible diagonal region, 
 acceptance is due to hard initial state radiation (ISR) jets balancing a soft 
-SUSY decay system. Small mass splittings imply little energy is available for 
+SUSY decay system. Small mass splittings imply little energy being available for
 decay products to gain sufficient momentum to be within acceptance, and therefore 
 become invisible to the analysis. In order for such an event to pass the 
 selection criteria of the signal sample, hard ISR jets are required to be within
@@ -40,7 +40,7 @@ Moving away from the
 diagonal to increasing values of \deltam indicates a drop in acceptance, 
 eventually leading to an increase due to a competing effect from the increase in
 available kinematic phase space. Far from the diagonal, decay products are able 
-to gain sufficient momentum to enter acceptance, becoming visible. There
+to gain sufficient momentum to enter acceptance and become visible. There
 is still a dependence on ISR jets boosting this system, however crucially jets 
 originating from charm quarks can now be observed. Contributions to acceptance
 therefore increase not only for this \nb= 0 category, but similarly for \nb= 1
@@ -49,8 +49,8 @@ acceptance is observed at small \deltam.
 
 Finally, increased acceptance is observed in the \njhigh categories, 
 predominantly away from the diagonal. Again, given the increased kinematic phase
-space of the larger mass splitting scenarios, more jets can be in 
-acceptance.
+space of the larger mass splitting scenarios, more jets are above the analysis
+threshold and therefore visible.
 
 % \emph{somewhere describe the significance plots, leading to the choice of these 
 % particularly categories.}
@@ -58,9 +58,9 @@ acceptance.
 Signal contamination in the \mj selection is shown to be negligible, given the 
 lack of leptons in the final state.
 
-Example cut-flows are shown in table~\ref{tab:t2cc_cutflow} for mass points with
-the two extremal \deltam values of the scan, both at values of $m_{\sTop}$ near
-the limits of sensitivity.
+Example cut-flows are shown in table~\ref{tab:t2cc_cutflow} for two mass points
+with the extremal \deltam values of the scan, both for values of $m_{\sTop}$
+near the limits of sensitivity.
 
 \begin{figure}[p]
   \centering
@@ -176,13 +176,16 @@ the limits of sensitivity.
 
 The signal efficiency times acceptance distributions for the \texttt{T2degen} model,
 \Ttwodegen, are shown 
-in figure~\ref{fig:t2_4body_eff} in the four most sensitive analysis categories,
-with an inclusive \HT selection, both for the hadronic and \mj selections. There
-are strong similarities with those shown earlier for the \texttt{T2cc} model, 
+in figure~\ref{fig:t2_4body_eff} in the four most sensitive analysis categories.
+The plots show inclusive \HT selections, both for the hadronic and \mj
+selections. There
+are strong similarities with the acceptance profiles shown earlier for the
+\texttt {T2cc} model,
 both in magnitude and distribution about the plane. At small values of \deltam, 
 given that the entire SUSY decay system becomes invisible due to a lack of 
-kinematic phase space, both models show very similar efficiencies, where 
-acceptance is almost entirely due to hard ISR jets within acceptance. There is a
+available kinematic phase space, both models show very similar efficiencies,
+where
+acceptance is almost entirely due to hard ISR jets. There is a
 significant difference however, when a b-tagged jet is required, for example in 
 the \njlow, \nb= 1 category (figure~\ref{fig:t2_4body_sig_eff_le3j_1b}), where
 the presence of a jet originating from a real 
@@ -230,8 +233,8 @@ the presence of a jet originating from a real
   \end{tabular}
 \end{table}
 %
-b quark improves acceptance, particularly away from the diagonal where this jet 
-would be more likely to pass analysis thresholds. Less significant are the 
+b quark improves acceptance, particularly away from the diagonal where the jet 
+is more likely to pass analysis thresholds. Less significant are the 
 efficiencies seen in the \njhigh categories, given the larger number of final 
 state objects, each requiring a share of the energy originating from the mass 
 splitting of the mother and daughter sparticles.
@@ -287,11 +290,11 @@ splitting of the mother and daughter sparticles.
 
 Also of note is the increase in signal contamination observed in the \mj 
 selection, due to the presence of $f\bar{f}$ in the decay chain, potentially 
-providing leptons in the final state.
+introducing leptons to the final state.
 
-Example cut-flows are shown in table~\ref{tab:t2_4body_cutflow} for a mass point
-with the smallest mass splitting, at an $m_{\sTop}$ value near the limit of
-sensitivity.
+Example cut-flows are shown in table~\ref{tab:t2_4body_cutflow} for two mass
+points with extremal \deltam, at an $m_{\sTop}$ value near the limit
+of sensitivity.
 
 % \subsubsection{Boost corrections to T2\_4body}
 % Following generator level studies into the \texttt{T2degen} sample a discrepancy 
@@ -344,10 +347,10 @@ Given the reliance of such compressed spectra models on ISR jets for acceptance,
 a dedicated study was performed within the SUSY Physics Analysis Group (\emph{PAG})
 into the accuracy of it's modelling and relevant systematic uncertainties \cite{susy-isrrw}.
 
-A comparison of data to MC was performed for a pure, high-statistics selection
+A comparison of data to MC for a pure, high-statistics selection
 of Z boson production with associated jets, where the Z decays to an opposite-sign,
 same-flavour (OSSF) lepton pair, $Z\ra l\bar{l}$. By tagging the leptons in 
-the event, remaining jets can be considered as an ISR jet based ``recoil system'' 
+the event, remaining jets can be considered as an ISR jet ``recoil system'' 
 against that of the Z boson decay. Comparisons of data to MC for both the 
 vectorial sum of the lepton \Ptvect's and the recoil jet system's \Ptvect indicate an
 over-prediction in MC as a function of the system's \Pt, of up to 20\% in 
@@ -404,7 +407,8 @@ are applied as a flat contribution across the entire plane, considered as a
 conservative approach.
 
 Although systematics are considered as a function of the \HT dimension of the 
-analysis, all plots shown represent an inclusive selection of \HT>200~\gev.
+analysis, all results discussed here are representative of an inclusive
+selection of \HT>200~\gev.
 
 \subsection{Jet energy scale}
 The acceptance times signal efficiency is tested for sensitivity to jet energies by measuring
@@ -413,8 +417,8 @@ it's change to upwards and downwards variations of all jet energies by the
 the JetMET \emph{POG}.
 
 Distributions showing the acceptance changes due to the variations in JES are 
-shown in Appendices~\ref{sec:t2cc_jes_plots} for the \texttt{T2cc} model and
-\ref{sec:t2degen_jes_plots} for the \texttt{T2Degen} model.
+shown in Appendix~\ref{sec:t2cc_jes_plots} for the \texttt{T2cc} and
+\texttt{T2Degen} models.
 
 In both models, the effects of applying 
 JES variations are stronger in the \njhigh category. An increased number of jets
@@ -432,8 +436,8 @@ the \nb=1 category (figure~\ref{fig:sms-jes-tdegen-le3j-1b}).
 
 
 \subsection{Initial State Radiation}
-As described in section~\ref{sec:isr_reweighting}, boost \Pt dependent 
-event weights are taken from the data to MC comparison study performed within
+As described in section~\ref{sec:isr_reweighting}, boost-\Pt dependent 
+event weights are taken from the study performed within
 the SUSY \emph{PAG}. A procedure is also defined to determine related systematics, by
 applying upwards and downwards variations of weights corresponding to the 
 magnitude of the corrections themselves, and studying the effect on signal 
@@ -467,7 +471,8 @@ the soft SUSY decay system. Subsequently, systematics due to ISR variations are
 observed to be largest nearest the diagonal for all analysis categories, as shown in
 figure~\ref{fig:sms-isr-t2cc} and \ref{fig:sms-isr-t2degen} for \texttt{T2cc} 
 and \texttt{T2Degen} respectively. Due to the overall dependence on ISR, the 
-related systematics are the largest contribution to the total systematic value.
+related systematics are the largest contribution to the total systematic value
+for the compressed models considered here.
 
 
 \subsection{B tag scale factors}
@@ -491,7 +496,6 @@ are measured in SM MC for both the hadronic and \mj samples, in each \HT bin.
 Applying this event weight provides `corrected' MC yields, which then 
 have further \FASTSIM to \FULLSIM correction factors applied, as recommended by
 \cite{btagpogtwiki}.
-
 Systematic variations equal to the errors of these corrections are applied as 
 upwards and downwards variations, and any effects on signal efficiency times 
 acceptance are studied.
@@ -521,7 +525,7 @@ sensitivity to the PDF set is investigated by comparing results using three
 other commonly used PDF sets, namely \textsc{CT10}, \textsc{NNPDF2.1} and
 \textsc{MSTW2008}. Following PDF4LHC recommendations, the output is 
 combined to determine an `envelope' value combining the three alternative PDF 
-sets, and a related systematic uncertainty \cite{pdf4lhc}.
+sets and a related systematic uncertainty \cite{pdf4lhc}.
 
 The effect on selection efficiency was studied for \texttt{T2cc} with the
 central value and upwards and downwards fluctuation plots summarised in
@@ -589,7 +593,7 @@ statistical errors.
 % \emph{\FULLSIM to \FASTSIM systs?}
 
 \begin{table}[!h]
-  \caption{Efficiencies of the dead ECAL cut for the \mj selection in data
+  \caption{Efficiencies of the dead ECAL filter for the \mj selection in data
   $\epsilon_{\text{data}}$ and MC $\epsilon_{\text{MC}}$, as well as the ratio
   of both. Efficiencies are shown for the two \nj categories and the four lowest
   \HT bins, with an inclusive requirements are made of \nb.}
@@ -621,15 +625,15 @@ made near a flagged region of the calorimeter system, thereby rejecting more
 events. Rejection increases away from the diagonal, as more objects move into
 acceptance.
 
-\emph{but the \nj requirements are the same between samples...perhaps the
-fraction of 3-jet/2-jet within the le3j category, is greater for 4body?}
+% \emph{but the \nj requirements are the same between samples...perhaps the
+% fraction of 3-jet/2-jet within the le3j category, is greater for 4body?}
 
 \subsection{Generator Level Partons}
 At the \MADGRAPH matrix element stage of the MC simulation production, a number
 of additional Feynman diagrams are simulated to account for associated parton 
 interactions, such as Initial State Radiation (ISR) and Final State Radiation
 (FSR). Given the dependence on such processes in the
-compressed spectra regime, an additional sub-sample of the \texttt{T2cc} scan 
+compressed regime, an additional sub-sample of the \texttt{T2cc} scan 
 has been produced with up to 3 additional partons, to compare against the up to
 2 additional partons of the complete scan. This sample contains two mass points 
 at a stop mass near the region of maximum sensitivity, with mass splittings 
@@ -678,10 +682,10 @@ results shown in figures~\ref{fig:sms-totalsyst-t2cc} and
 \ref{fig:sms-totalsyst-t2degen} in the mass plane of \texttt{T2cc} and
 \texttt{T2Degen} respectively. The distribution of total systematic values seen
 in these plots has been corrected to account for statistical fluctuations through
-the use of an iterative smoothing procedure that considers a weighted average of
-each mass point value of the surrounding points. This procedure is carefully
-checked to ensure no loss of total systematic trends in either $m_{\sTop}$ or
-\deltam.
+the use of an iterative smoothing procedure that considers a weighted average
+for each mass point of the surrounding point values. This procedure is
+carefully checked to ensure no loss of total systematic trends in either $m_
+{\sTop}$ or \deltam.
 
 \begin{table}[h!]
   \caption{Representative ranges for each contribution to the total
@@ -774,8 +778,8 @@ where:
 % 
 $\mu$ is the signal strength parameter (equivalent to the variable $f$ defined
 in section~\ref{sec:results_likelihood}, where $\mu=1$ represents a given
-signal at it's nominal cross-section), $\theta_{\mu}$ is a set of nuisance 
-parameters for a given $\mu$, $\hat {\mu}$ is the Maximum Likelihood
+signal at it's nominal theoretical cross-section), $\theta_{\mu}$ is a set of
+nuisance parameters for a given $\mu$, $\hat {\mu}$ is the Maximum Likelihood
 (ML) value of $\mu$, and $\hat{\theta}$ is the corresponding ML set of nuisance
 parameters.
 
@@ -798,9 +802,9 @@ Limits are calculated using 1000 pseudo-experiments per model mass point.
 Expected limits are determined by considering a scenario where data observations
 are assumed to be equal to the result of the green-band fits
 (section~\ref{sec:results_fit_green}), and observed
-limits by considering that actual data observations.
+limits by considering the actual data observations.
 A point is considered excluded if the calculated upper limit cross section is
-less than the nominal cross-section (NLO+NLL).
+less than the nominal theoretical cross-section (NLO+NLL).
 
 \begin{figure}[h!]
 \centering
