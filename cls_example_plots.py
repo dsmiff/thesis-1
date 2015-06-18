@@ -118,14 +118,21 @@ def main(mode = ""):
         hbkgobs.SetFillStyle(3004)
         # hbkgobs.SetLineStyle(2)
         # lg.AddEntry(hbkgobs, "1-CL_{b}", "L")
-        lg.AddEntry(hbkgobs, "CL_{b}", "L")
-
+        
         hsigobs.Draw("histsame")
         hsigobs.SetFillColor(r.kOrange+2)
         hsigobs.SetLineColor(r.kOrange+2)
         hsigobs.SetFillStyle(3005)
         # hsigobs.SetLineStyle(2)
-        lg.AddEntry(hsigobs, "CL_{sb}", "L")
+        
+
+        lg.AddEntry(hsigobs, "S+B toy experiments", "L")
+        lg.AddEntry(hbkgobs, "B only toy experiments", "L")
+        lg.AddEntry(hsigobs, "CL_{sb}", "f")
+        lg.AddEntry(hbkgobs, "CL_{b}", "f")
+        
+
+
 
         hobs.Draw("histsame")
         hobs.SetLineColor(r.kBlack)
