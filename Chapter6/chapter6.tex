@@ -867,13 +867,14 @@ expected, for example between adjacent \HT bins.
 
 %********************************** % blah Section  *************************************
 
-\section{QCD control}
+\section{Eliminating QCD events}
 \label{sec:qcd_cleaning}
 
 While the \alphat requirement removes many orders of magnitude of QCD events,
 there still exist scenarios in which these events may pass the signal region
 selection. Accordingly, further requirements are made to ensure the search
-region is free of any residual QCD contamination.
+region is free of any residual QCD contamination, such that it is negligible
+when compared to the uncertainty on the EWK background prediction.
 
 \subsection{Multiple jets below threshold}
 \label{sec:qcd_cleaning_below_thresh}
@@ -977,14 +978,25 @@ no significant instrumental issues remaining.
 \subsection{Heavy-flavour jet decays}
 
 Jets can also appear to be mismeasured if the parton
-shower contains heavy flavour mesons which decay leptonically EXAMPLE. In rare
+shower contains heavy flavour mesons which decay semi-leptonically. In
+rare
 circumstances, these decays can give the largest fraction of the available
 momenta to the neutrino, leading to significant amounts of real \met and
 soft-leptons which can evade the lepton vetoes.
 This effect is compounded when multiple neutrinos are produced in the shower,
-with a significant fraction of the jet's energy therefore evading detection. An
-example event display is shown in appendix~\ref{ch:app_dphistar},
-figure~\ref{fig:event_display_QCD}.
+with a significant fraction of the jet's energy therefore evading detection.
+
+An event display of a typical event is shown in figure~\ref{fig:event_display_QCD}.
+It is important to note the high amount, 185~\gev, of generator level
+\met (`genmetP4True', thin pink arrow) pointing along the axis of a reconstructed
+jet with $\Pt = 119$~\gev (bold blue arrow) - a configuration which,
+coupled with multiple additional jets, can conspire to give
+large values of \alphat. The sum of the generator level \met and
+the \Pt of the jet sum to the \Pt of the generator level jet (bold black arrow),
+indicating that the missing energy of the event comes almost entirely from the
+neutrinos from the decay of the jet. Furthermore, this implies the ratio
+\mhtmet to be near unity, therefore allowing events to also evade the \mhtmet <
+1.25 requirement of the signal region.
 
 To better study events of this type a control region is defined, populated by
 the the single-object \HT trigger, \verb!HLT_HT750!, which remained unprescaled
@@ -1024,7 +1036,7 @@ events appear to be well isolated in the region $\mindphistar < 0.3$. The effect
 of applying this threshold in the QCD control study region is shown in
 figure~\ref{fig:data_pred_dphistar_eff}.
 % screw you latex.
-\begin{figure}[h!]
+\begin{figure}[t]
   \centering
   \begin{subfigure}[b]{0.46\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/dphi/chris2/qcd_mc/dphi_incl/v2/dphi_eq3j_ge0b_775}
@@ -1074,8 +1086,9 @@ removes all QCD events. However care
 must be taken when interpreting the same plots for data
 (figures~\ref{fig:dphi_acceptance_data_3j} and
 \ref{fig:dphi_acceptance_data_4j}). To extract the expected QCD MJ contribution
-from data, observed event counts are corrected to subtract the contribution from
-the EWK background processes, as estimated using the standard EWK background
+from data, observed event counts are corrected to subtract the expected
+contribution from
+EWK background processes, as estimated using the standard EWK background
 prediction method. Given this subtraction, the remaining number of events is
 expected to be compatible with zero within errors as opposed to exactly zero, as
 is seen in the distributions. This supports the conclusion found in simulation
@@ -1166,17 +1179,17 @@ events are removed by the application of the \mindphistar > 0.3 requirement.
 % corrected to remove the EWK background prediction and so gain a reasonably
 % large uncertainty, however still agree statistically with zero.
 
-\begin{figure}[h!]
+\begin{figure}[t]
   \centering
   \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]
-    {Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/Prediction_MHT_all_775_upwards.pdf}
+    {Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/Prediction_MHT_all_775_upwards_QCD.pdf}
     \caption{\mindphistar < 0.3}
     \label{fig:datapred_mht_lt0p3}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]
-    {Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/gt0p3/Prediction_MHT_all_775_upwards.pdf}
+    {Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/gt0p3/Prediction_MHT_all_775_upwards_QCD.pdf}
     \caption{\mindphistar > 0.3}
     \label{fig:datapred_mht_gt0p3}
   \end{subfigure}
@@ -1185,7 +1198,9 @@ events are removed by the application of the \mindphistar > 0.3 requirement.
   An inclusive selection is made in the QCD study region, \HT > 775~\gev,
   0.507 < \alphat, $\nj \geq 2$ and $\nb \geq 0$. Plots are shown for
   both the
-  QCD-enriched \mindphistar < 0.3 and QCD-cleaned \mindphistar > 0.3 regions.}
+  QCD-enriched \mindphistar < 0.3 and QCD-cleaned \mindphistar > 0.3 regions.
+  Yields from QCD MC (cyan) are shown stacked on the total EWK background
+  prediction, but not included in the ratio.}
   \label{fig:datapred_mht_before_after_dphi}
 \end{figure}
 
@@ -1197,9 +1212,19 @@ function of \mht for the QCD study region, in both the
 removal of the low \mindphistar events, observations agree well with the EWK
 prediction. As a consequence of these studies, the analysis additionally
 requires that all
-events have \mindphistar > 0.3 in the signal region. The effect of this
-requirement on signal efficiency for the models
-considered in this thesis are discussed in appendix~\ref{ch:app_dphistar}.
+events have \mindphistar > 0.3 in the signal region.
+
+
+\clearpage
+\begin{sidewaysfigure}
+    \centering
+    \includegraphics[width=0.95\textwidth]
+    {Figs/eventDisplays/Had_QCD_MG_MC_HT375_skim_displays_singleEvent_2_noPF.pdf}
+    \caption{An event display of a typical heavy flavour QCD event, with a jet
+    decaying leptonically with high-\Pt neutrinos and therefore considerable
+    generator-level \met.}
+    \label{fig:event_display_QCD}
+\end{sidewaysfigure}
 
 % For bins of $\HT>375$~\gev the leading two jets in the event are required to 
 % have $\Pt>100$~\gev, with all additional jets having half the requirement of
