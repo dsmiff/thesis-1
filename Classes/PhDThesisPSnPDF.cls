@@ -939,10 +939,10 @@ wish to left align your text}
 \chapter*{\centering \Large Declaration}
 \thispagestyle{empty}
 }{
-\flushright
-%\@author{}\\
+%\flushright
+%#\@author{}\\
 %\@degreedate{}
-\vfill
+%\vfill
 }
 
 
