@@ -547,6 +547,47 @@ inclusive selection on \nj and \nb.
     }
 \end{figure}
 
+% \begin{table}[ht!]
+%   \caption{The cutflow of the hadronic selection in data. The subscript `fail'
+%   indicates an object which did not meet all ID requirements, and so is not
+%   considered as a `common object'. The event selection follows an inclusive
+%   selection in data of $\HT > 375$~\gev, $\nj \geq 2$ and $\nb \geq 0$. }
+%   \label{tab:had_data_cutflow}
+%   \centering
+%   \footnotesize
+%   \begin{tabular}{ lcc }
+%     \hline
+%     \hline
+%     Cut    & Eff (\%) & N \\
+%     \hline
+%   Event Count  & 100.00  & 161866108 \\
+%   Good Event JSON Filter  & 94.97  & 153716716 \\
+%   $\nj \geq 2$  & 98.68  & 151689664 \\
+%   MET Filters & 98.81  & 149885013 \\
+%   Vertex Noise Filter & 99.91  & 149746017 \\
+%   DeadECAL Filter & 35.44  & 53066597 \\
+%   Select seed Trigger & 3.76  & 1995549 \\
+%   $n_{e} = 0$ & 98.48  & 1965269 \\
+%   $n_{\gamma} = 0$  & 97.70  & 1920124 \\
+%   $n_{\mu} = 0$ & 98.36  & 1888711 \\
+%   $\text{EMF}_{max}$ for all jets > 0.1 & 99.99  & 1888576 \\
+%   Leading jet \Pt > 100~\gev  & 97.83  & 1847501 \\
+%   Leading jet $\eta$ < 2.5  & 97.31  & 1797777 \\
+%   Sub-Leading jet \Pt > 100~\gev  & 81.75  & 1469654 \\
+%   $n_{jet, fail} = 0$ & 81.73  & 1201096 \\
+%   $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 98.77  & 1186370 \\
+%   $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 1186368 \\
+%   recHitCut & 98.44  & 1167861 \\
+%   $n_{SIT} = 0$ & 85.77  & 1001646 \\
+%   \mindphistar > 0.3  & 19.50  & 195361 \\
+%   \HT > 375~\gev  & 73.33  & 143255 \\
+%   \mhtmet < 1.25  & 9.26  & 13263 \\
+%   \alphat > 0.55  & 38.25  & 5073 \\
+%     \hline
+%     \hline
+%   \end{tabular}
+% \end{table}
+
 \begin{table}[ht!]
   \caption{The cutflow of the hadronic selection in data. The subscript `fail'
   indicates an object which did not meet all ID requirements, and so is not
@@ -558,37 +599,33 @@ inclusive selection on \nj and \nb.
   \begin{tabular}{ lcc }
     \hline
     \hline
-    Cut    & Eff (\%) & N \\
+    Cut Name    & Eff (\%) & N \\
     \hline
-  Event Count  & 100.00  & 161866108 \\
-  Good Event JSON Filter  & 94.97  & 153716716 \\
-  $\nj \geq 2$  & 98.68  & 151689664 \\
-  MET Filters & 98.81  & 149885013 \\
-  Vertex Noise Filter & 99.91  & 149746017 \\
-  DeadECAL Filter & 35.44  & 53066597 \\
-  Select seed Trigger & 3.76  & 1995549 \\
-  $n_{e} = 0$ & 98.48  & 1965269 \\
-  $n_{\gamma} = 0$  & 97.70  & 1920124 \\
-  $n_{\mu} = 0$ & 98.36  & 1888711 \\
-  $\text{EMF}_{max}$ for all jets > 0.1 & 99.99  & 1888576 \\
-  Leading jet \Pt > 100~\gev  & 97.83  & 1847501 \\
-  Leading jet $\eta$ < 2.5  & 97.31  & 1797777 \\
-  Sub-Leading jet \Pt > 100~\gev  & 81.75  & 1469654 \\
-  $n_{jet, fail} = 0$ & 81.73  & 1201096 \\
-  $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 98.77  & 1186370 \\
-  $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 1186368 \\
-  recHitCut & 98.44  & 1167861 \\
-  $n_{SIT} = 0$ & 85.77  & 1001646 \\
-  \mindphistar > 0.3  & 19.50  & 195361 \\
-  \HT > 375~\gev  & 73.33  & 143255 \\
-  \mhtmet < 1.25  & 9.26  & 13263 \\
-  \alphat > 0.55  & 38.25  & 5073 \\
+    Trigger  & 100.00  & 12843698.00 \\
+    Good Event JSON Filter  & 95.32  & 12242217.00 \\
+    $\nj \geq 2$  & 98.93  & 12110634.00 \\
+    MET Filters & 98.68  & 11951541.00 \\
+    Vertex Noise Filter & 99.92  & 11941983.00 \\
+    DeadECAL Filter & 25.59  & 3056360.00 \\
+    $n_{e} = 0$ & 98.62  & 3014305.00 \\
+    $n_{\gamma} = 0$  & 97.82  & 2948741.00 \\
+    $n_{\mu} = 0$ & 98.77  & 2912517.00 \\
+    Leading jet \Pt > 100 \gev  & 98.20  & 2860068.00 \\
+    Leading jet $\eta$ < 2.5  & 97.29  & 2782463.00 \\
+    Sub-Leading jet \Pt > 100 \gev  & 84.24  & 2343910.00 \\
+    $n_{j, fail} = 0$ & 83.45  & 1955899.00 \\
+    $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 98.87  & 1933858.00 \\
+    $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 1933855.00 \\
+    recHitCut & 98.44  & 1903597.00 \\
+    $n_{SIT} = 0$ & 85.61  & 1629716.00 \\
+    \HT > 375 \gev  & 93.45  & 1522986.00 \\
+    \alphat > 0.55  & 0.55  & 8305.00 \\
+    \mhtmet < 1.25  & 66.82  & 5549.00 \\
+    \mindphistar > 0.3  & 90.83  & 5040.00 \\
     \hline
     \hline
   \end{tabular}
 \end{table}
-
-
 
 
 
