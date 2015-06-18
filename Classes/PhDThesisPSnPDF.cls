@@ -940,8 +940,8 @@ wish to left align your text}
 \thispagestyle{empty}
 }{
 \flushright
-\@author{}\\
-\@degreedate{}
+%\@author{}\\
+%\@degreedate{}
 \vfill
 }
 
