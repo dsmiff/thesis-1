@@ -6,8 +6,6 @@ General:
   ☐ new names for T2cc and T2degen
   ☐ write acknowledgements
   ☐ get doi and arxiv in pink like darren's
-  ✔ move plots to top of page if possible @done (15-06-16 22:03)
-  ☐ mht data vs pred plot for before and after dPhi cut (normal/inverted)
 
 Abstract:
 
@@ -27,26 +25,28 @@ Chapter 4 - Objects:
 
 Chapter 5 - Analysis:
   ☐ back reference objects chapter in selection section
+  ✔ include MHTMET, dphiStar in event cuts section @done (15-06-17 15:35)
 
 Chapter 5_2 - Samples:
   ☐ formula method AN reference
 
 Chapter 6 - Background Estimation:
   ☐ heavy flavour leptonic jet decay example
+  ✔ mht data vs pred plot for before and after dPhi cut (normal/inverted) @done (15-06-18 11:49)
+  ✔ add legends to dphi acceptance plots @done (15-06-17 13:26)
 
 Chapter 7 - Results:
   ☐ defintion of pulls - how do they work?!
 
 Chapter 9 - Interpretation:
-  ☐ example test parameter distribution for CLs method
-  ✘ best fit points? from AN! @cancelled (15-06-16 21:33)
+  ✔ example test parameter distribution for CLs method @done (15-06-18 11:48)
+  ☐ write about new test parameter distro for CLs
   ☐ rerun t2_4body cutflows with ISR and boost reweighting
   ☐ rerun t2cc cutflows with ISR reweighting
-  ✔ fix muon sig eff plots with "min=1." text @done (15-06-16 21:32)
-  ☐ why is deadECAL filter different for the two models
+  ✔ why is deadECAL filter different for the two models @done (15-06-18 11:55)
   ☐ describe the limit plots?
   ☐ make sure new sysmteatics plots match text
-  ☐ mention the inclusive selection for JES
+  ☐ change JES section to describe new inclusive technique
 
 Chapter 10 - Conclusion:
   ☐ mention how it's better across all dM
@@ -60,6 +60,9 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ move plots to top of page if possible @done (15-06-16 22:03) @project(General)
+ ✘ best fit points? from AN! @cancelled (15-06-16 21:33) @project(Chapter 9 - Interpretation)
+ ✔ fix muon sig eff plots with "min=1." text @done (15-06-16 21:32) @project(Chapter 9 - Interpretation)
  ✔ sort out layout of final tables and paragraphs @done (15-06-16 21:24) @project(Chapter 7 - Results)
  ✔ not enough CP violation reference @done (15-06-16 21:24) @project(Chapter 2 - Theory)
  ✔ udpate the total sysmteatics table @done (15-06-16 20:20) @project(Chapter 9 - Interpretation)
