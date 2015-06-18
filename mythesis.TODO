@@ -11,9 +11,11 @@ General:
   ☐ check through charm and four-body sentences make sense
 
 Abstract:
-
+  ☐ add parked data - improved sensitivity to compressed models
+  ☐ while trying to remain inclusive, shown here are interpretations in compressed models
+  
 Chapter 1 - Introduction:
-  ☐ try to move the goal of thesis to somewhere earlier
+  ✘ try to move the goal of thesis to somewhere earlier @cancelled (15-06-18 17:55)
 
 Chapter 2 - Theory:
   ☐ how is the CP violation measured? gamma angle - specific decays etc
@@ -24,17 +26,19 @@ Chapter 2 - Theory:
 Chapter 3 - Detector:
 
 Chapter 4 - Objects:
-  ☐ add ID effs? probably should...
+  ✘ add ID effs? probably should... @cancelled (15-06-18 17:55)
 
 Chapter 5 - Analysis:
-  ☐ back reference objects chapter in selection section
+  ✘ back reference objects chapter in selection section @cancelled (15-06-18 17:55)
+  ☐ cutflow cut order - move alphat up to show QCD reduction
 
 Chapter 5_2 - Samples:
   ☐ formula method AN reference
 
 Chapter 6 - Background Estimation:
-  ☐ heavy flavour leptonic jet decay example
-  ☐ argue EWK BG subtraction works at low alphat for dphi acc plots
+  ✘ heavy flavour leptonic jet decay example @cancelled (15-06-18 17:02)
+  ✔ argue EWK BG subtraction works at low alphat for dphi acc plots @done (15-06-18 17:02)
+  ✔ check format after including event display - is it fucked? @done (15-06-18 17:55)
 
 Chapter 7 - Results:
   ✔ defintion of pulls - how do they work?! @done (15-06-18 16:10)
@@ -50,8 +54,9 @@ Chapter 10 - Conclusion:
   ☐ mention how it's better across all dM
 
 Appendix 1 - Signal systematic plots:
-
+  ☐ title for total systematics 
 Appendix 2 - DPhiStar in signal region:
+  ✔ move ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
 
 Defintions:
 
