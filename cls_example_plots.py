@@ -5,17 +5,17 @@ r.gROOT.SetBatch(0)
 r.gStyle.SetOptStat(0)
 
 def hist_params():
-    return 200, 0, 10.
+    return 200, 0, 6.
 
 def make_pdfs():
     mean = 0.5
-    sigma = 0.7
+    sigma = 0.25
 
     hbg = r.TH1D("bg", "bg", *hist_params())
     hsg = r.TH1D("sg", "sg", *hist_params())
     for i in range(50000):
         hbg.Fill(np.random.lognormal(mean, sigma))
-        hsg.Fill(np.random.lognormal(mean, 1.4*sigma)+1.7)
+        hsg.Fill(np.random.lognormal(mean, 1.4*sigma)+1.)
 
     return hbg, hsg
 
@@ -60,9 +60,7 @@ def make_observed(bkg = None, sig = None):
 
     return obs, bkgobs, sigobs
 
-def main():
-
-    mode = ["expected", "observed"][1]
+def main(mode = ""):
 
     hbg, hsg = make_pdfs()
 
@@ -78,6 +76,7 @@ def main():
     hbg.SetTitle("")
     hbg.GetXaxis().SetTitle("q_{#mu}")
     hbg.GetYaxis().SetTitle("Counts")
+    hbg.GetYaxis().SetTitleOffset(1.35)
 
     hsg.Draw("histsame")
     hsg.SetLineColor(r.kOrange+2)
@@ -116,14 +115,15 @@ def main():
         hbkgobs.Draw("histsame")
         hbkgobs.SetFillColor(r.kBlue)
         hbkgobs.SetLineColor(r.kBlue)
-        hbkgobs.SetFillStyle(3001)
+        hbkgobs.SetFillStyle(3004)
         # hbkgobs.SetLineStyle(2)
-        lg.AddEntry(hbkgobs, "1-CL_{b}", "L")
+        # lg.AddEntry(hbkgobs, "1-CL_{b}", "L")
+        lg.AddEntry(hbkgobs, "CL_{b}", "L")
 
         hsigobs.Draw("histsame")
         hsigobs.SetFillColor(r.kOrange+2)
         hsigobs.SetLineColor(r.kOrange+2)
-        hsigobs.SetFillStyle(3001)
+        hsigobs.SetFillStyle(3005)
         # hsigobs.SetLineStyle(2)
         lg.AddEntry(hsigobs, "CL_{sb}", "L")
 
@@ -140,7 +140,9 @@ def main():
         canv.Print("tmp_obs.pdf")
 
 if __name__ == "__main__":
-    main()
+
+    for m in ["expected", "observed"]:
+        main(m)
 
 
 
