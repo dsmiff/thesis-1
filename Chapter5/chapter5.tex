@@ -27,8 +27,7 @@ and  phase space considered in this analysis due to it's very large cross
 section.  Small inconsistencies in the handling of such large backgrounds or
 rare detector effects can therefore 
 have a significant impact on an analysis. This background is reduced to an 
-entirely negligible level using the dimensionless kinematic variable, \alphat
-(described in section~\ref{sec:alphat}).
+entirely negligible level using the dimensionless kinematic variable, \alphat.
 
 % OLD
 % Analyses searching in the jets and \met final state encounter significant 
@@ -90,7 +89,7 @@ alternative approach, the goal of this analysis is to reduce QCD down to an
 entirely negligible levels with respect to background processes with genuine
 \met, achieved through the use of the dimensionless kinematic
 variable, \alphat. The di-jet variable
-$\alpha$ was first proposed by Randall et al. in 2008 \cite{Randall:2008rw},
+$\alpha$ was first proposed by Randall et al.\ in 2008 \cite{Randall:2008rw},
 and later translated into the transverse plane for use with LHC analyses
 \cite{CMS:2008vya, CMS-PAS-SUS-09-001}.
 \alphat is defined for di-jets as:
@@ -142,9 +141,9 @@ form:
 The \alphat variable introduces a correlation between the two variables of \mht
 and \deltaHT. This relationship is demonstrated in figure~\ref{fig:alphat_corr}
 by the black contours of constant \alphat. Different physics processes
-will populate various regions of this plane, as shown in the MC study in
+will populate various regions of this plane, as also shown in the MC study in
 figure~\ref{fig:alphat_corr}. Most notably QCD exhibits a strong
-correlation between the two variables at low \alphat values
+correlation between the two variables at low values of \alphat
 (figure~\ref{fig:alphat_corr_qcd}), while processes with real \met break this
 correlation, sitting also at higher values of \alphat
 (figures~\ref{fig:alphat_corr_zinv} and \ref{fig:alphat_corr_t2cc}).
@@ -174,10 +173,12 @@ correlation, sitting also at higher values of \alphat
 \end{figure}
 
 Through the requirement of \alphat in a given region of \HT, a certain missing
-energy threshold is implied. Figure~\ref{fig:alphat_mht_corr} shows this, for
+energy threshold is implied. Figure~\ref{fig:alphat_mht_corr} demonstrates this,
+relationship for
 the assumption of \deltaHT = 0 - an assumption which yields the minimum \mht
 values. Given this correlation, the implicit missing energy threshold can be
-maintained across the \HT range by lowering \alphat thresholds in the high \HT
+maintained across the \HT range by lowering the \alphat thresholds in the high
+\HT
 region.
 
 \begin{figure}
@@ -194,7 +195,7 @@ region.
 \subsection{Genuine \met}
 The dominant Electroweak (EWK) source of genuine missing energy comes from
 Z-boson production where the Z decays
-to neutrinos, \zinv, with associated jet production. This source of background
+to neutrinos, \zinv, with associated jets. This source of background
 is considered irreducible.
 
 Events containing leptonic decays of W bosons, \wlnu, originating either
@@ -203,7 +204,7 @@ production, are sources of genuine
 missing energy due to the presence of a weakly interacting neutrino which
 evades detection. Such events are vetoed in the signal
 region due to the presence of a 
-lepton, however if the lepton is missed leptonic W decays 
+lepton. However, if the lepton is not detected, leptonic W decays 
 can pass the signal selection, forming a significant SM background.
 
 % While lepton and photon vetoes employed in the signal region suppress 
@@ -243,8 +244,8 @@ Section~\ref{sec:background_overview}.
 
 As mentioned previously, the dominant source of background for analyses 
 searching for a multijet final state is from QCD. A fully-measured QCD event 
-would consist of multiple jets balancing each other in all planes, however in 
-order to enter the signal region, an event must contain missing energy, 
+would consist of multiple jets balancing each other in all planes. However, in 
+order to enter the signal region an event must contain missing energy, 
 \mht (equivalent to \met in all-hadronic events).
 
 The most common way for a balanced multijet (MJ) event to gain \mht occurs if
@@ -254,7 +255,7 @@ or more of the jets are mismeasured, such that their vectorial sum then leads to
 within
 the inherant jet-resolution of the 
 detector. The former is protected against by the \met filters summarised in 
-table~\ref{tab:met_filters} and using a filter to remove events
+table~\ref{tab:met_filters} and using a further filter to remove events
 affected by non-functioning or damaged regions of the ECAL system, where 
 events are vetoed if they contain significant energy deposits within a given 
 distance from a known problematic region. The latter is dealt with using a
@@ -268,7 +269,8 @@ event is measured as imbalanced and containing \mht. Events such as these are la
 removed with the \alphat requirement, however in addition a requirement is made on the
 ratio \mhtmet.
 
-Residual QCD cleaning details are given later in section~\ref{sec:qcd_cleaning}.
+Details of residual QCD cleaning cuts are given later in
+section~\ref{sec:qcd_cleaning}.
 
 % Finally, it is also possible for rare instrumentation effects to lead to jet 
 % energy
@@ -333,7 +335,7 @@ for this region, in order to maintain
 low rates in the high PU environment encountered throughout \runone. Lower 
 efficiencies are also observed in the \njhigh category attributed to the presence of 
 softer jets, as an increased number of jets must equate to the same total \HT 
-requirement of the bin.
+requirement of a given bin.
 
 % \afterpage{%
 \begin{figure}[p!]
@@ -461,7 +463,7 @@ made on:
 
 \begin{description}
 \item[Jets]
-Events are required to contain at least two jets with
+Events are required to contain at least two jets, and have
 $\HT > 200$~\gev, to ensure the presence of significant hadronic activity.
 They are categorised by \HT, with jet \Pt
 requirements on the two leading and the remaining additional jets separately.
