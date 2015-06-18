@@ -3,9 +3,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 General:
-  ☐ new names for T2cc and T2degen
+  ✔ new names for T2cc and T2degen @done (15-06-18 16:36)
   ☐ write acknowledgements
   ☐ get doi and arxiv in pink like darren's
+  ☐ check through table and figure captions
+  ☐ check through bibliography
+  ☐ check through charm and four-body sentences make sense
 
 Abstract:
 
@@ -15,8 +18,8 @@ Chapter 1 - Introduction:
 Chapter 2 - Theory:
   ☐ how is the CP violation measured? gamma angle - specific decays etc
   ☐ sort out significant figures for masses in particle tables
-  ☐ new 'Why SUSY?' subsection about unification of gauge couplings
-  ☐ mention some values for dark matter relative abundance
+  ✔ new 'Why SUSY?' subsection about unification of gauge couplings @done (15-06-18 15:43)
+  ✔ mention some values for dark matter relative abundance @done (15-06-18 16:00)
 
 Chapter 3 - Detector:
 
@@ -34,14 +37,14 @@ Chapter 6 - Background Estimation:
   ☐ argue EWK BG subtraction works at low alphat for dphi acc plots
 
 Chapter 7 - Results:
-  ☐ defintion of pulls - how do they work?!
+  ✔ defintion of pulls - how do they work?! @done (15-06-18 16:10)
 
 Chapter 9 - Interpretation:
-  ☐ write about new test parameter distro for CLs
-  ☐ rerun t2_4body cutflows with ISR and boost reweighting
-  ☐ rerun t2cc cutflows with ISR reweighting
-  ☐ describe the limit plots?
-  ☐ make sure new sysmteatics plots match text
+  ✔ write about new test parameter distro for CLs @done (15-06-18 16:01)
+  ✘ rerun t2_4body cutflows with ISR and boost reweighting @cancelled (15-06-18 16:10)
+  ✘ rerun t2cc cutflows with ISR reweighting @cancelled (15-06-18 16:10)
+  ✔ describe the limit plots? @done (15-06-18 16:01)
+  ✔ make sure new sysmteatics plots match text @done (15-06-18 16:37)
 
 Chapter 10 - Conclusion:
   ☐ mention how it's better across all dM
