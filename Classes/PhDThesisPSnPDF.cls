@@ -547,6 +547,9 @@ supported!}
 \pdfpageheight=\the\paperheight
 \fi
 
+% hex code for a ridiculous pink colour
+\definecolor{brightpink}{rgb}{1.0, 0.0, 0.5}
+
 \if@print
     % For Print version
     \hypersetup{
