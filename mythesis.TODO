@@ -3,9 +3,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 General:
-  ☐ write acknowledgements
-  ☐ check through bibliography
-  ☐ check through charm and four-body sentences make sense
+  ☐ references appear to start at 13...?
+  ☐ work out wy url's get chopped in bib
 
 Abstract:
   
@@ -30,13 +29,16 @@ Chapter 9 - Interpretation:
 Chapter 10 - Conclusion:
 
 Appendix 1 - Signal systematic plots:
-  
+
 Appendix 2 - DPhiStar in signal region:
 
 Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ write acknowledgements @done (15-06-19 01:20) @project(General)
+ ✔ check through bibliography @done (15-06-18 23:47) @project(General)
+ ✔ check through charm and four-body sentences make sense @done (15-06-18 23:34) @project(General)
  ✘ get doi and arxiv in pink like darren's @cancelled (15-06-18 20:46) @project(General)
  ✔ while trying to remain inclusive, shown here are interpretations in compressed models @done (15-06-18 20:46) @project(Abstract)
  ✔ add parked data - improved sensitivity to compressed models @done (15-06-18 20:46) @project(Abstract)
