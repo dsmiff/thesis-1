@@ -15,7 +15,7 @@ selection of leptons or photons - particles which are subsequently ignored such
 that the selection kinematics of each event is kept similar to the corresponding
 process. For each sample, Transfer Factors (TF) are 
 constructed from yields in MC, to extract a prediction in the signal 
-region for a given process. This process is described at length in
+region for a given process. This process is described in detail in
 section~\ref{sec:background_overview}. The validity of this procedure is
 extensively tested using a suite of Closure Tests, probing multiple
 characteristics of the prediction technique while allowing for \HT-dependent
@@ -34,7 +34,7 @@ accounted for.
 Residual contamination from QCD processes are removed through additional
 cleaning cuts. Studies performed in a QCD enriched sideband region in \alphat
 lead to the definition of these cuts, as described in
-section~\ref{sec:qcd_cleaning}, ensuring no significant QCD remains.
+section~\ref{sec:qcd_cleaning}, ensuring no significant QCD background remains.
 
 % Thresholds of the \alphat variable are determined such that the QCD MJ 
 % contribution to the SM background is negligible. These are found using a
@@ -169,7 +169,7 @@ prediction.
 By employing a technique that uses a ratio of MC yields, direct dependence on
 MC modelling is 
 greatly reduced. Sources of error inherent to MC samples, such as mismodelling effects, 
-will cancel in the ratio. These errors can potentially include kinematic
+will approximately cancel in the ratio. These errors can potentially include kinematic
 mismodelling, which would affect analysis acceptance, and mismodelling of 
 instrumental effects, which could affect object 
 reconstruction efficiencies. However, any remaining systematics such as these
@@ -431,12 +431,12 @@ as shown by the turn on curves in figure~\ref{fig:photon_control_trigeff}.
 \begin{figure}[t]
   \centering
   \begin{subfigure}[b]{0.35\textwidth}
-    \includegraphics[width=\textwidth, page=3,trim=40 40 160 120,clip=true]{figures/trigger/g_barrel_375_caloJet_le3j.pdf}
+    \includegraphics[width=\textwidth, page=3,trim=40 40 160 120,clip=true]{Figs/trigger/g_barrel_375_caloJet_le3j.pdf}
     \caption{\njlow}
     \label{fig:photon_control_trigeff_le3j}
   \end{subfigure}
   \begin{subfigure}[b]{0.35\textwidth}
-    \includegraphics[width=\textwidth, page=3,trim=40 40 160 120,clip=true]{figures/trigger/g_barrel_375_caloJet_ge4j.pdf}
+    \includegraphics[width=\textwidth, page=3,trim=40 40 160 120,clip=true]{Figs/trigger/g_barrel_375_caloJet_ge4j.pdf}
     \caption{\njhigh}
     \label{fig:photon_control_trigeff_ge4j}
   \end{subfigure}
@@ -734,22 +734,22 @@ bins contain a statistical fluctuation as opposed to a systematic bias.
 \begin{figure}[t]
   \centering
   \begin{subfigure}[b]{0.46\textwidth}
-    \includegraphics[width=\textwidth]{figures/syst/v0/le3j/summary_plot_pol0}
+    \includegraphics[width=\textwidth]{Figs/syst/v0/le3j/summary_plot_pol0}
     \caption{$2 \leq \nj \leq 3$ (constant function fits)}
     \label{fig:closure_fit_le3j_pol0}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
-    \includegraphics[width=\textwidth]{figures/syst/v0/le3j/summary_plot_pol1}
+    \includegraphics[width=\textwidth]{Figs/syst/v0/le3j/summary_plot_pol1}
     \caption{$2 \leq \nj \leq 3$ (linear function fits)}
     \label{fig:closure_fit_le3j_pol1}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
-    \includegraphics[width=\textwidth]{figures/syst/v0/ge4j/summary_plot_pol0}
+    \includegraphics[width=\textwidth]{Figs/syst/v0/ge4j/summary_plot_pol0}
     \caption{$\nj \geq 4$ (constant function fits)}
     \label{fig:closure_fit_ge4j_pol0}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
-    \includegraphics[width=\textwidth]{figures/syst/v0/ge4j/summary_plot_pol1}
+    \includegraphics[width=\textwidth]{Figs/syst/v0/ge4j/summary_plot_pol1}
     \caption{$\nj \geq 4$ (linear function fits)}
     \label{fig:closure_fit_ge4j_pol1}
   \end{subfigure}
@@ -859,7 +859,7 @@ shown as grey bands.
   \end{tabular}
 \end{table}
 
-Systematic values are considered as fully uncorrelated between the 
+Systematic uncertainties are considered as fully uncorrelated between the 
 different analysis categories and the \HT regions, which is again 
 considered as a conservative approach given that some correlation is to be 
 expected, for example between adjacent \HT bins.
@@ -982,7 +982,7 @@ rare
 circumstances, these decays can give the largest fraction of the available
 momenta to the subsequent neutrino, leading to significant amounts of real \met
 and soft-leptons which can evade the lepton vetoes.
-This effect is compounded when multiple neutrinos are produced in the shower,
+This effect is compounded when multiple neutrinos are produced in the decay,
 with a significant fraction of the jet's energy therefore evading detection.
 
 An event display of a typical event is shown in figure~\ref{fig:event_display_QCD}.
