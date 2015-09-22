@@ -3,10 +3,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 General:
- ☐ references appear to start at 13...?
+ ✘ references appear to start at 13...? @cancelled (15-09-22 16:24)
  ☐ work out why url's get chopped in bib
  ☐ check why references are starting at SUSY Primer
  ☐ Add in section describing exactly what my contributions were - couple of pages at the start?
+ ☐ tighten up the use of 'control region' and 'control sample' interchangeably
+ ☐ it's!!
 
 Abstract:
   
@@ -17,6 +19,7 @@ Chapter 2 - Theory:
  ☐ describe why exactly these two models are important
  ☐ include a plot of the stop mass plane with the different regions and their relevant decay scenarios
  ☐ add the most relevant 4body decay feynman diagram
+ ☐ state charm and bquark gen plots are mine (or infer...)
 
 Chapter 3 - Detector:
  ☐ understand Jonas' lorentz invariance comments about eta
@@ -24,27 +27,75 @@ Chapter 3 - Detector:
 Chapter 4 - Objects:
  ☐ explain why we don't use PF jets (trigger rate)
  ☐ find out how PFMET plays with calojets - PFMET_NoCalo?
+ ☐ is PFMET constructed with energy sums or PF objects?
+ ☐ state explicitly that I implemented SITV?
 
 Chapter 5 - Analysis:
- ☐ 
+ ☐ explain alphat pseudo-jet construction in greater detail
+ ☐ why is QCD 2D distribution not peaked around 0.5? maybe include 1D projection?
+ ☐ HT-slash instead of MHT on the 6.1 axes
+ ☐ what's the deal with spikes in diff trig turn-ons?
+ ☐ explain the difference between 'online' and 'offline' HT thresholds
+ ☐ why the pedestal in the cumulative turn-ons?
+ ☐ sort out table 6.3 to have 'HT bin' at the top
+ ☐ make sure the 'example' cutflow is clear - where does it come from?
+ ☐ explain each cut?
+ ☐ Summary - in this chapter we learned...
 
 Chapter 5_2 - Samples:
- ☐ add descriptions of datasets and which is used for what
+ ☐ add descriptions of datasets and which is used for what - include the total lumi
  ☐ add descriptions of the MC samples and what's in them
+ ☐ add references to CTEQ6L1, MADGRAPH, PYTHIA and GEANT4
+ ☐ reference the btag pog for supplying SF corrs
  ☐ find out exactly what partonHT is, and include a description
  ☐ much more detail in 5.3.1
+ ☐ make fig 5.1 bigger
+ ☐ don't use the word 'trivial'!
  ☐ more detail in formula method - even a whole page?
  ☐ make a better connection between what the sideband normalisation is trying to do and the table (purity values etc)
 
 Chapter 6 - Background Estimation:
+ ☐ explain why we remove zinv from the numerator (point to later in chapter where it's explained)
+ ☐ think about the ordering - describe control samples first, then the procedure?
+ ☐ say that all N_process yields are after all selection and weighting procedures
+ ☐ explain what is meant by the global likelihood fit (after eq 7.7)
+ ☐ clarify: 'loosely isolated, eta-restricted'
+ ☐ how do we make the photon turn-on curves?
+ ☐ state how the closure test prediction is made (exactly the same as the ewk bg pred)
+ ☐ make seperate closure test fit plots
+ ☐ think of a better way to argue away the two dodgy bins!!
+ ☐ explain the logic of summing the weighted mean and variance to get the systematic
+ ☐ explain that the 'derived systematics' are for the ewk bg prediction
+ ☐ why is assuming uncorrelated systematic uncertainties 'conservative'?
+ ☐ is the minBiasDPhi under the assumption that the mis-measurement effects only a single jet?
+ ☐ explain biasDPhi better - using diagrams?
+ ☐ do I mean to compare to deltaPhi(jet, MHT) instead of deltaR?
+ ☐ make sure to give the dead ECAL filter it's name when it's described. the name is used in the next paragraph, but not before
+ ☐ clear up the confusion of 'rare detector effects' - explain why they might be undiscovered, and so need to be checked against
 
 Chapter 7 - Results:
+ ☐ change title to something including the fit model and description?
+ ☐ 'purely due to convention' the inverse TF terms in the likelihood
+ ☐ correct the 'using their difference from the ML value as their uncert' part - should be 68% coverage
+ ☐ explain in more detail what we see in the HT fits
+ ☐ why are the fit results (assume the control samples?) apparently 'too good'?
+ ☐ state what the 'SM' entries mean in each table
+ ☐ what's the error for the data?
+ ☐ add labels to 8.1 plots
+ ☐ describe the 8.1 plots in more detail - e.g. what is the 'profile likelihood method'
+ ☐ fix spacing between subfig caption and the subfig
+ ☐ what do we learn from the results?
 
 Chapter 9 - Interpretation:
+ ☐ justify the inclusive cat for JES syst, and remove 'negate this effect'
+ ☐ what are the extra partons? They aren't ISR or FSR, they will just help model their spectrum...
+ ☐ clarify the 'iterative' smoothing procedure - what is it? make sure to say we ensure global trends remain after smoothing...
+ ☐ compare limits to previous experimental limits
 
 Chapter 10 - Conclusion:
 
 Appendix 1 - Signal systematic plots:
+ ☐ replace deadECAL plots
 
 Appendix 2 - DPhiStar in signal region:
 
