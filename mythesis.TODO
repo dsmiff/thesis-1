@@ -3,22 +3,38 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 General:
-  ☐ references appear to start at 13...?
-  ☐ work out wy url's get chopped in bib
+ ☐ references appear to start at 13...?
+ ☐ work out why url's get chopped in bib
+ ☐ check why references are starting at SUSY Primer
+ ☐ Add in section describing exactly what my contributions were - couple of pages at the start?
 
 Abstract:
   
 Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
+ ☐ Add description of existing limits
+ ☐ describe why exactly these two models are important
+ ☐ include a plot of the stop mass plane with the different regions and their relevant decay scenarios
+ ☐ add the most relevant 4body decay feynman diagram
 
 Chapter 3 - Detector:
+ ☐ understand Jonas' lorentz invariance comments about eta
 
 Chapter 4 - Objects:
+ ☐ explain why we don't use PF jets (trigger rate)
+ ☐ find out how PFMET plays with calojets - PFMET_NoCalo?
 
 Chapter 5 - Analysis:
+ ☐ 
 
 Chapter 5_2 - Samples:
+ ☐ add descriptions of datasets and which is used for what
+ ☐ add descriptions of the MC samples and what's in them
+ ☐ find out exactly what partonHT is, and include a description
+ ☐ much more detail in 5.3.1
+ ☐ more detail in formula method - even a whole page?
+ ☐ make a better connection between what the sideband normalisation is trying to do and the table (purity values etc)
 
 Chapter 6 - Background Estimation:
 
