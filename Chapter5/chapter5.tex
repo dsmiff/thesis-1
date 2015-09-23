@@ -125,10 +125,16 @@ can have values of $\alphat > 0.5$.
 % where $E_T^{j_i}$, $p_x^{j_i}$ and $p_y^{j_i}$ are the transverse energy and 
 % transverse momentum in the $x$ and $y$ planes, for the jet $j_i$.
 
-The \alphat variable can be generalised to an n-jet case by considering the event as a 
-pseudo-di-jet system, constructing each pseudo-jet such that the difference in \HT
-between each pseudo-jet system, \deltaHT, is minimised. \alphat then takes the 
-form:
+% The \alphat variable can be generalised to an n-jet case by considering the event as a 
+% pseudo-di-jet system, constructing each pseudo-jet such that the difference in \HT
+% between each pseudo-jet system, \deltaHT, is minimised. \alphat then takes the 
+% form:
+The \alphat variable can be generalised to any higher jet multiplicity by reducing an n-jet
+system to two pseudo-jets. Each pseudo-jet is constructed from any number of jets.
+All possible combinations are considered with the goal of finding the configuration
+for which the difference in \HT between each pseudo-jet, \deltaHT, is minimised.
+\alphat then takes the form:
+
 % 
 \begin{equation}
 \alphat = \frac{1}{2} \times \frac{\HT-\deltaHT}{\sqrt{\HT^2 - \mht^2}} = 
@@ -432,9 +438,8 @@ made on:
   \small
   \begin{tabular}{ lcccc }
     \hline
+    \hline
     & \multicolumn{4}{c}{\HT bin} \\
-    \hline
-    \hline
     & 200--275 & 275--325 & 325--375 & $>$375 \\
     \hline
     Lead jet \Pt (\gev)       & 73.3     & 73.3     & 86.7     & 100.0  \\
