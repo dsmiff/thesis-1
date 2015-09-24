@@ -16,8 +16,8 @@ Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
  ☐ Add description of existing limits
- ☐ describe why exactly these two models are important
- ☐ include a plot of the stop mass plane with the different regions and their relevant decay scenarios
+ ✔ describe why exactly these two models are important @done (15-09-24 15:50)
+ ✔ include a plot of the stop mass plane with the different regions and their relevant decay scenarios @done (15-09-24 15:50)
  ☐ add the most relevant 4body decay feynman diagram
  ☐ state charm and bquark gen plots are mine (or infer...)
 
@@ -31,13 +31,13 @@ Chapter 4 - Objects:
  ☐ state explicitly that I implemented SITV?
 
 Chapter 5 - Analysis:
- ☐ explain alphat pseudo-jet construction in greater detail
+ ✔ explain alphat pseudo-jet construction in greater detail @done (15-09-23 09:37)
  ☐ why is QCD 2D distribution not peaked around 0.5? maybe include 1D projection?
  ☐ HT-slash instead of MHT on the 6.1 axes
  ☐ what's the deal with spikes in diff trig turn-ons?
  ☐ explain the difference between 'online' and 'offline' HT thresholds
  ☐ why the pedestal in the cumulative turn-ons?
- ☐ sort out table 6.3 to have 'HT bin' at the top
+ ✔ sort out table 6.3 to have 'HT bin' at the top @done (15-09-23 10:13)
  ☐ make sure the 'example' cutflow is clear - where does it come from?
  ☐ explain each cut?
  ☐ Summary - in this chapter we learned...
@@ -45,11 +45,11 @@ Chapter 5 - Analysis:
 Chapter 5_2 - Samples:
  ☐ add descriptions of datasets and which is used for what - include the total lumi
  ☐ add descriptions of the MC samples and what's in them
- ☐ add references to CTEQ6L1, MADGRAPH, PYTHIA and GEANT4
- ☐ reference the btag pog for supplying SF corrs
+ ✔ add references to CTEQ6L1, MADGRAPH, PYTHIA and GEANT4 @done (15-09-24 16:16)
+ ✔ reference the btag pog for supplying SF corrs @done (15-09-24 16:26)
  ☐ find out exactly what partonHT is, and include a description
  ☐ much more detail in 5.3.1
- ☐ make fig 5.1 bigger
+ ✔ make fig 5.1 bigger @done (15-09-24 16:26)
  ☐ don't use the word 'trivial'!
  ☐ more detail in formula method - even a whole page?
  ☐ make a better connection between what the sideband normalisation is trying to do and the table (purity values etc)
@@ -75,22 +75,29 @@ Chapter 6 - Background Estimation:
 
 Chapter 7 - Results:
  ☐ change title to something including the fit model and description?
- ☐ 'purely due to convention' the inverse TF terms in the likelihood
+ ✔ 'purely due to convention' the inverse TF terms in the likelihood @done (15-09-24 11:31)
  ☐ correct the 'using their difference from the ML value as their uncert' part - should be 68% coverage
  ☐ explain in more detail what we see in the HT fits
  ☐ why are the fit results (assume the control samples?) apparently 'too good'?
- ☐ state what the 'SM' entries mean in each table
+ ✔ state what the 'SM' entries mean in each table @done (15-09-24 11:28)
  ☐ what's the error for the data?
  ☐ add labels to 8.1 plots
  ☐ describe the 8.1 plots in more detail - e.g. what is the 'profile likelihood method'
- ☐ fix spacing between subfig caption and the subfig
+ ✔ fix spacing between subfig caption and the subfig @done (15-09-24 11:41)
  ☐ what do we learn from the results?
 
 Chapter 9 - Interpretation:
  ☐ justify the inclusive cat for JES syst, and remove 'negate this effect'
  ☐ what are the extra partons? They aren't ISR or FSR, they will just help model their spectrum...
- ☐ clarify the 'iterative' smoothing procedure - what is it? make sure to say we ensure global trends remain after smoothing...
- ☐ compare limits to previous experimental limits
+ ✔ clarify the 'iterative' smoothing procedure - what is it? make sure to say we ensure global trends remain after smoothing... @done (15-09-24 11:47)
+ ☐ compare limits to previous experimental limit
+ ☐ explain that we rank bins by considering backgrounds, and only using green fits (i.e. not signal data, which would bias the result)
+ ✔ what is ff'? (already described in the pheno section?) @done (15-09-24 12:02)
+ ☐ consider promoting ISR plots to main text? or discuss their content?
+ ☐ rework the fastsim btag correction factor - include what SF_ terms are
+ ✔ be careful of the 'f' for signal strength and 'f' for the poisson function @done (15-09-24 11:54)
+ ☐ how did i generate the cartoon example q_mu diagram?
+ ☐ how do we generate the pseudo-experiments?
 
 Chapter 10 - Conclusion:
 
