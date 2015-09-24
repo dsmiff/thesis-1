@@ -56,13 +56,14 @@ order (NNLO) cross section and an effective integrated luminosity for each.
 
 The Parton Density Functions (PDF) of colliding protons are modelled according
 to the
-CTEQ6L1 distribution, the matrix-element level hard-scatter performed by
-\MADGRAPHFIVE or \PYTHIASIX, with outgoing partons showered in \PYTHIASIX. The
+CTEQ6L1 distribution \cite{Pumplin:2002vw}, the matrix-element level hard-scatter
+performed by
+\MADGRAPHFIVE \cite{Alwall:2007st} or \PYTHIASIX \cite{Sjostrand:2000wi}, with
+outgoing partons showered in \PYTHIASIX. The
 produced generator level particles are then put through a full detector
-simulation in \GEANTFOUR, and detector hits `digitized' in order to simulate the
-response of detector electronics. Prior to digitization, a number of
-`MinimumBias' events are
-overlayed in order to reproduce LHC run conditions. Event-level weights
+simulation in \GEANTFOUR \cite{Agostinelli2003250}, and detector hits `digitized'
+in order to simulate the response of detector electronics. Prior to digitization, a number of
+`MinimumBias' events are overlayed in order to reproduce LHC run conditions. Event-level weights
 are applied to each simulated sample such that both the PU and equivalent
 integrated luminosity are matched to a given data sample.
 
@@ -203,12 +204,12 @@ and the \dyj inclusive sample.
 
 \begin{figure}[b!]
   \centering
-  \begin{subfigure}[b]{0.45\textwidth}
+  \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{/Users/chrislucas/SUSY/thesis/Figs/xs_study/compar_genPartonHT_zmass_0_inc_inc_DYZJets_noCuts_sitv_log_HCPxS.pdf}
     \caption{No corrections.}
     \label{fig:xsec_study_before}
   \end{subfigure}             
-  \begin{subfigure}[b]{0.45\textwidth}
+  \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{/Users/chrislucas/SUSY/thesis/Figs/xs_study/compar_genPartonHT_zmass_0_inc_inc_DYZJets_noCuts_sitv_log.pdf}
     \caption{With corrections.}
     \label{fig:xsec_study_after}
