@@ -3,6 +3,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 General:
+ ☐ should figures/chapters/tables have captial letters? ie. 'blah blah Figure 1'
  ☐ work out why url's get chopped in bib
  ☐ check why references are starting at SUSY Primer
  ☐ Add in section describing exactly what my contributions were - couple of pages at the start?
@@ -29,6 +30,7 @@ Chapter 4 - Objects:
 
 Chapter 5 - Analysis:
  ☐ why is QCD 2D distribution not peaked around 0.5? maybe include 1D projection? @high
+ ☐ are the alphaT curves correct?!
  ☐ HT-slash instead of MHT on the 6.1 axes
  ☐ what's the deal with spikes in diff trig turn-ons? @high
  ☐ explain the difference between 'online' and 'offline' HT thresholds
@@ -38,32 +40,18 @@ Chapter 5 - Analysis:
  ☐ Summary - in this chapter we learned...
 
 Chapter 5_2 - Samples:
- ☐ add descriptions of datasets and which is used for what - include the total lumi
- ☐ add descriptions of the MC samples and what's in them
  ☐ find out exactly what partonHT is, and include a description @high
- ☐ much more detail in 5.3.1
- ☐ don't use the word 'trivial'!
  ☐ more detail in formula method - even a whole page?
- ☐ make a better connection between what the sideband normalisation is trying to do and the table (purity values etc)
 
 Chapter 6 - Background Estimation:
- ☐ explain why we remove zinv from the numerator (point to later in chapter where it's explained)
  ☐ think about the ordering - describe control samples first, then the procedure? @high
- ☐ say that all N_process yields are after all selection and weighting procedures
- ☐ explain what is meant by the global likelihood fit (after eq 7.7)
- ☐ clarify: 'loosely isolated, eta-restricted'
  ☐ how do we make the photon turn-on curves? @high
- ☐ state how the closure test prediction is made (exactly the same as the ewk bg pred)
  ☐ make seperate closure test fit plots @high
  ☐ think of a better way to argue away the two dodgy bins!! @high @critical
- ☐ explain the logic of summing the weighted mean and variance to get the systematic
- ☐ explain that the 'derived systematics' are for the ewk bg prediction
  ☐ why is assuming uncorrelated systematic uncertainties 'conservative'? @high @critical
  ☐ is the minBiasDPhi under the assumption that the mis-measurement effects only a single jet? @high
  ☐ explain biasDPhi better - using diagrams?
  ☐ do I mean to compare to deltaPhi(jet, MHT) instead of deltaR?
- ☐ make sure to give the dead ECAL filter it's name when it's described. the name is used in the next paragraph, but not before
- ☐ clear up the confusion of 'rare detector effects' - explain why they might be undiscovered, and so need to be checked against
 
 Chapter 7 - Results:
  ☐ change title to something including the fit model and description?
@@ -96,6 +84,20 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ clear up the confusion of 'rare detector effects' - explain why they might be undiscovered, and so need to be checked against @done (15-09-25 13:36) @project(Chapter 6 - Background Estimation)
+ ✔ make sure to give the dead ECAL filter it's name when it's described. the name is used in the next paragraph, but not before @done (15-09-25 13:34) @project(Chapter 6 - Background Estimation)
+ ✔ explain the logic of summing the weighted mean and variance to get the systematic @done (15-09-25 13:32) @project(Chapter 6 - Background Estimation)
+ ✔ explain that the 'derived systematics' are for the ewk bg prediction @done (15-09-25 13:32) @project(Chapter 6 - Background Estimation)
+ ✔ state how the closure test prediction is made (exactly the same as the ewk bg pred) @done (15-09-25 13:31) @project(Chapter 6 - Background Estimation)
+ ✔ clarify: 'loosely isolated, eta-restricted' @done (15-09-25 13:28) @project(Chapter 6 - Background Estimation)
+ ✔ explain what is meant by the global likelihood fit (after eq 7.7) @done (15-09-25 13:27) @project(Chapter 6 - Background Estimation)
+ ✔ explain why we remove zinv from the numerator (point to later in chapter where it's explained) @done (15-09-25 13:26) @project(Chapter 6 - Background Estimation)
+ ✔ say that all N_process yields are after all selection and weighting procedures @done (15-09-25 13:19) @project(Chapter 6 - Background Estimation)
+ ✔ make a better connection between what the sideband normalisation is trying to do and the table (purity values etc) @done (15-09-25 12:07) @project(Chapter 5_2 - Samples)
+ ✔ much more detail in 5.3.1 @done (15-09-25 11:46) @project(Chapter 5_2 - Samples)
+ ✔ don't use the word 'trivial'! @done (15-09-25 11:46) @project(Chapter 5_2 - Samples)
+ ✔ add descriptions of the MC samples and what's in them @done (15-09-25 10:17) @project(Chapter 5_2 - Samples)
+ ✔ add descriptions of datasets and which is used for what - include the total lumi @done (15-09-25 10:11) @project(Chapter 5_2 - Samples)
  ✔ reference the btag pog for supplying SF corrs @done (15-09-24 16:26) @project(Chapter 5_2 - Samples)
  ✔ make fig 5.1 bigger @done (15-09-24 16:26) @project(Chapter 5_2 - Samples)
  ✔ add references to CTEQ6L1, MADGRAPH, PYTHIA and GEANT4 @done (15-09-24 16:16) @project(Chapter 5_2 - Samples)
@@ -127,6 +129,21 @@ Archive:
  ✘ back reference objects chapter in selection section @cancelled (15-06-18 17:55) @project(Chapter 5 - Analysis)
  ✘ add ID effs? probably should... @cancelled (15-06-18 17:55) @project(Chapter 4 - Objects)
  ✔ check format after including event display - is it fucked? @done (15-06-18 17:55) @project(Chapter 6 - Background Estimation)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
+  ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
   ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
   ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
   ev display and text to ch6.tex and get rid of app2!  @done (15-06-18 17:55)
