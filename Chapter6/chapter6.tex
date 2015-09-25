@@ -15,7 +15,10 @@ selection of leptons or photons - particles which are subsequently ignored such
 that the selection kinematics of each event is kept similar to the corresponding
 process. For each sample, Transfer Factors (TF) are 
 constructed from yields in MC, to extract a prediction in the signal 
-region for a given process. This process is described in detail in
+region for a given process. The total EWK prediction is comprised of a prediction
+of lost-lepton backgrounds originating predominantly from \ttbar + jets and \wj processes,
+and a prediction of \zj, with the latter being treated differently according to \nb.
+This process is described in detail in
 section~\ref{sec:background_overview}. The validity of this procedure is
 extensively tested using a suite of Closure Tests, probing multiple
 characteristics of the prediction technique while allowing for \HT-dependent
@@ -73,7 +76,8 @@ N_{pred}^{signal}\big(\HT, \nj, \nb\big) = N_{data}^{control}\big(\HT, \nj, \nb\
 The control samples are statistically independent and each used for predicting 
 specific background processes.
 
-MC yields are defined by process from the following samples:
+MC yields, following the application of all MC correction factors described in
+chatper~\ref{ch:samples}, are defined by process from the following samples:
 W + jets (\numw),
 \ttbar + jets (\numtt), DY + jets (\numdy), $\gamma$ + jets(\numgam),
 single top + jets (\numtop), WW + jets, WZ + jets and ZZ + jets (\numdibo), and
@@ -99,7 +103,9 @@ N_{MC}^{control}\big(\HT, \nj, \nb\big) = \numw + \numtt + \numdy + \numgam +
 \end{equation}
 % 
 The numerator is constructed according to the b tag multiplicity being 
-considered. For $\nb \leq 1$, the \mj control region is used to predict 
+considered. Table~\ref{tab:control_prediction_summary} summarises the control
+samples used to determine a background prediction as a function of each analysis
+category. For $\nb \leq 1$, the \mj control region is used to predict 
 lost-lepton background, e.g. \ttbar + jets and W + jets. All MC samples
 are therefore used with the exception of \zinv + jets:
 % 
@@ -134,13 +140,11 @@ N_{MC}^{signal}\big(\HT, \nj, \nb \geq 2 \big) = N_{MC}^{signal}\big(\HT, \nj, \
 
 The \mmj and \gj control samples are not used beyond the $\nb \leq 1$ categories
 due to the statistical limitations of such samples at high b tag multiplicities.
-A full summary of the control regions used for predictions per analysis category
-is shown in table~\ref{tab:control_prediction_summary}.
 
 It should be noted that although two separate control samples are 
 used to estimate the \zinv background contribution, the result of each is
 considered by the global likelihood fit to produce the final background
-prediction.
+prediction (described in section~\ref{sec:results_likelihood}).
 
 \begin{table}[ht!]
   \caption{The control samples used to produce SM background predictions for each 
@@ -212,12 +216,12 @@ signal.
 
 \subsubsection{Triggers}
 \label{sec:mujets_control_trigger}
-Events are collected using the loosely-isolated, $\eta$-restricted
-\verb!HLT_IsoMu24_eta2p1! trigger, which was in place throughout the 8 \tev
+Events are collected using the\verb!HLT_IsoMu24_eta2p1! trigger, which was in
+place throughout the 8~\tev
 data-taking period. The efficiency of this trigger was measured by the muon
 \emph{POG} in bins of the muon \Pt and $\eta$, as summarised 
 in table~\ref{tab:muon-trig-effs}. Statistical uncertainties are at the
-per-mille level, and systematics are taken to be 1\%.
+per-mille level, and systematics are taken to be 1~\%.
 
 % \begin{table}[!ht]
 %   \caption{Muon trigger efficiencies (\%) for the \mj selection listed by \HT bin and
@@ -631,8 +635,11 @@ In order to probe the levels at which the transfer factors are sensitive to
 relevant uncertainties, a statistically powerful ensemble of Closure Tests
 (CT's) have been designed. The CT method works by constructing a TF to
 extrapolate from one sub-region of a particular control sample into another 
-control sample sub-region. In doing so, tests can be designed to specifically 
-probe any potential sources of bias in the transfer factors.
+control sample sub-region. This prediction method is identical to that described
+in section~\ref{sec:background_overview} with the difference that a prediction is
+made from a control region to another control region, rather than to the signal
+region. In doing so, tests can be
+designed to specifically probe any potential sources of bias in the transfer factors.
 
 \subsection{Closure tests}
 \label{sec:closure_tests}
@@ -833,14 +840,17 @@ bins contain a statistical fluctuation as opposed to a systematic bias.
 
 \subsection{Background systematic uncertainty summary}
 Under the assumption of closure for the eight core tests,
-systematic errors are derived for each \nj category in seven regions of \HT.
+systematic errors on the EWK background prediction are derived for each \nj
+category in seven regions of \HT.
 Values are calculated by summing in quadrature the weighted mean and sample 
-variance for all eight tests in a given \HT region. These values are summarised 
+variance for all eight tests in a given \HT region, in order to ensure coverage of all
+test points in that region. These values are summarised 
 in table~\ref{tab:syst_values} and also in the summary plots of figure~\ref{fig:closure_summary},
 shown as grey bands.
 
 \begin{table}[!ht]
-  \caption{Summary of the magnitude of systematic uncertainties (\%) derived 
+  \caption{Summary of the magnitude of systematic uncertainties (\%) on the EWK
+  background prediction, derived 
   from the eight core closure tests, for each \nj category and \HT region.}
   \label{tab:syst_values}
   \centering
@@ -922,10 +932,12 @@ by either under-measurements and over-measurements of a jets energy.
 A small value of $\dphistar_j$ indicates that the momentum vector of the jet $j$
 is aligned with the \mht vector, implying the jet to be mismeasured. Events are
 vetoed if a jet with \dphistar< 0.5 is within $\Delta R < 0.3$ of a known
-dead region of the calorimeter.
+dead region of the calorimeter. This requirement shall hereby be described as
+the `Dead ECAL filter'.
 
 To protect against further jet mismeasurements arising from
-instrumental effects, multiple event filters are applied. However, previously
+instrumental effects, multiple event filters (see table~\ref{tab:met_filters})
+are applied to account for well-understood detector issues. However, previously
 undiscovered and therefore rare detector effects may still be
 present. To check for such issues the
 jet giving the minimum \dphistar value in an event, \mindphistar, is found
@@ -977,8 +989,7 @@ no significant instrumental issues remaining.
 \subsection{Heavy-flavour jet decays}
 
 Jets can also appear to be mismeasured if the parton
-shower contains heavy flavour mesons which decay semi-leptonically. In
-rare
+shower contains heavy flavour mesons which decay semi-leptonically. In rare
 circumstances, these decays can give the largest fraction of the available
 momenta to the subsequent neutrino, leading to significant amounts of real \met
 and soft-leptons which can evade the lepton vetoes.
