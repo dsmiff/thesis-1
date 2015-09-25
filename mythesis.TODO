@@ -54,11 +54,8 @@ Chapter 6 - Background Estimation:
  ☐ do I mean to compare to deltaPhi(jet, MHT) instead of deltaR?
 
 Chapter 7 - Results:
- ☐ change title to something including the fit model and description?
- ☐ correct the 'using their difference from the ML value as their uncert' part - should be 68% coverage
  ☐ explain in more detail what we see in the HT fits
  ☐ why are the fit results (assume the control samples?) apparently 'too good'? @high @critical
- ☐ what's the error for the data?
  ☐ add labels to 8.1 plots
  ☐ describe the 8.1 plots in more detail - e.g. what is the 'profile likelihood method' @high
  ☐ what do we learn from the results?
@@ -67,11 +64,7 @@ Chapter 9 - Interpretation:
  ☐ justify the inclusive cat for JES syst, and remove 'negate this effect' @high @critical
  ☐ what are the extra partons? They aren't ISR or FSR, they will just help model their spectrum... @high @critical
  ☐ compare limits to previous experimental limit
- ☐ explain that we rank bins by considering backgrounds, and only using green fits (i.e. not signal data, which would bias the result)
- ☐ consider promoting ISR plots to main text? or discuss their content?
  ☐ rework the fastsim btag correction factor - include what SF_ terms are
- ☐ how did i generate the cartoon example q_mu diagram? @high
- ☐ how do we generate the pseudo-experiments? @high
 
 Chapter 10 - Conclusion:
 
@@ -84,6 +77,13 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ change title to something including the fit model and description? @done (15-09-25 13:49) @project(Chapter 7 - Results)
+ ✔ correct the 'using their difference from the ML value as their uncert' part - should be 68% coverage @done (15-09-25 13:57) @project(Chapter 7 - Results)
+ ✔ what's the error for the data? @done (15-09-25 13:50) @project(Chapter 7 - Results)
+ ✔ explain that we rank bins by considering backgrounds, and only using green fits (i.e. not signal data, which would bias the result) @done (15-09-25 14:00) @project(Chapter 9 - Interpretation)
+ ✔ consider promoting ISR plots to main text? or discuss their content? @done (15-09-25 14:10) @project(Chapter 9 - Interpretation)
+ ✔ how did i generate the cartoon example q_mu diagram? @high @done (15-09-25 14:13) @project(Chapter 9 - Interpretation)
+ ✔ how do we generate the pseudo-experiments? @high @done (15-09-25 14:18) @project(Chapter 9 - Interpretation)
  ✔ clear up the confusion of 'rare detector effects' - explain why they might be undiscovered, and so need to be checked against @done (15-09-25 13:36) @project(Chapter 6 - Background Estimation)
  ✔ make sure to give the dead ECAL filter it's name when it's described. the name is used in the next paragraph, but not before @done (15-09-25 13:34) @project(Chapter 6 - Background Estimation)
  ✔ explain the logic of summing the weighted mean and variance to get the systematic @done (15-09-25 13:32) @project(Chapter 6 - Background Estimation)
