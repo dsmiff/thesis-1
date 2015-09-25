@@ -17,9 +17,14 @@ Model acceptance is determined as a function of analysis category (\nb, \nj) and
 scan plane for both the hadronic and muon selections (to determine 
 signal contamination in the control region). Interpretations are made using a
 selected subset of the most sensitive analysis 
-categories, but an inclusive \HT selection. The analysis categories are 
-selected after an inspection of each for their significance given signal 
-injection from specific mass points.
+categories, but an inclusive \HT selection. 
+% The analysis categories are 
+% selected after an inspection of each for their significance given signal 
+% injection from specific mass points.
+The four most sensitive analysis categories are selected after an inspection of
+each categories expected limit reach. This is tested by setting data observations
+as equal to the result of the `a priori' fit, so as to not allow the signal
+observation in data to influence the result.
 
 \subsection{Charm decay}
 \label{sec:t2cc_eff}
@@ -488,10 +493,12 @@ diagonal, ISR jets are still important, instead to boost
 the soft SUSY decay system. Subsequently, systematics due to ISR variations are 
 observed to be largest nearest the diagonal for all analysis categories, as shown in
 figure~\ref{fig:sms-isr-t2cc} and \ref{fig:sms-isr-t2degen} for the charm 
-and four-body decay models respectively. Due to the overall dependence on ISR,
-the
-related systematics are the largest contribution to the total systematic value
-for the compressed models considered here.
+and four-body decay models respectively. For both models uncertainties in the range
+of $18\mbox{-}22~\%$ are observed at the
+smallest \deltam, with uncertainties dropping to $10\mbox{-}25~\%$ at larger \deltam. 
+Due to the overall dependence on ISR,
+this source of systematic uncertainty is the largest contribution to the total
+signal systematic for the compressed models considered here.
 
 
 \subsection{B tag scale factors}
@@ -803,7 +810,7 @@ nuisance parameters for a given $\mu$, $\hat {\mu}$ is the Maximum Likelihood
 (ML) value of $\mu$, and $\hat{\theta}$ is the corresponding ML set of nuisance
 parameters.
 
-A cartoon example of distributions of the test statistic, $q_{\mu}$, is
+A cartoon example of distributions of some arbitrary version of a test statistic, $q_{\mu}$, is
 shown in figure~\ref{fig:cartoon_cls_obs}. 
 Distributions of $q_{\mu}$ are populated from pseudo-experiments under
 signal + background and background only hypotheses. For a given observation, 1
@@ -828,7 +835,9 @@ $CL_s \leq 0.05$.
 \end{figure}
 
 \subsection{Limits}
-Limits are calculated using 1000 pseudo-experiments per model mass point.
+Limits are calculated per model mass point using 1000 pseudo-experiments generated
+with the likelihood function using the maximum-likelihood values of the
+nuisance parameters under the background-only and signal-plus-background hypotheses.
 Expected limits are determined by considering a scenario where data observations
 are assumed to be equal to the result of the green-band fits
 (section~\ref{sec:results_fit_green}), and observed
@@ -869,4 +878,14 @@ calculated with an inclusive \HT>200~\gev selection, and the analysis categories
 \njhigh$).}
 \label{fig:t2degen_limit}
 \end{figure}
+
+In comparison to the previous experimental interpretations shown in
+figure~\ref{sec:current_limits}, the reach in terms of $m_{\sTop}$ is 
+comparable for both models. However, the limits presented here are produced with a single analysis,
+while maintaining sensitivity across the \deltam range relevent to both models -
+a result which has not yet been accomplished by any other analysis from either experiment.
+Similarly, previous searches have been highly optimised towards these specific models, 
+whereas the analysis presented in this thesis remains generic to a wide range of
+potential hadronic SUSY signatures, yet still remains very competitive with these
+targetted searches.
 
