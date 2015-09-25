@@ -10,9 +10,13 @@
 
 \section{Datasets}
 
-The datasets used in this analysis are listed in Table~\ref{tab:datasets}. These
-include the primary signal sample datasets, named `HTMHTParked', and other
-datasets containing events from triggers used for background estimation.
+The datasets used in this analysis are listed in Table~\ref{tab:datasets}, each containing
+events from a specific trigger of interest. The primary 
+signal samples are named `HTMHTParked', spanning over the 2012 run periods B, C and D,
+with a total combined integrated luminosity of 18.49~\fb. Control samples used for
+predictions of SM backgrounds include `JetHT', `SingleMu' and `SinglePhoton', covering 
+run periods A, B, C and D, with
+combined integrated luminosities of 18.48~\fb, 19.13~\fb and 19.12~\fb, respectively.
 
 \begin{table}[ht]
 \caption{8 \tev Datasets with the integrated luminosity for each.}
@@ -77,7 +81,8 @@ SF_{light,c,b} = \frac{\epsilon^{data}_{light,c,b}(\Pt, \eta)}{\epsilon^
 \end{equation}
 % 
 where $\epsilon^{X}_{light, c, b}$ represents \Pt and $\eta$ dependent
-b tagging efficiencies measured in data and MC.
+b tagging efficiencies measured in data and MC. These are calculated and provided
+centrally by the BTAG \emph{POG} \cite{btagpog-scalefactors}.
 
 \begin{landscape}
   \begin{center}
