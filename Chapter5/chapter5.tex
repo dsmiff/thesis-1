@@ -40,7 +40,8 @@ entirely negligible level using the dimensionless kinematic variable \alphat.
 % are reduced to a negligible level using the kinematic 
 % variable \alphat.
 
-In this analysis events are binned in exclusive categories of \HT, 
+In this analysis, following the generic selection criteria (described in
+Section~\ref{sec:selec_crit}), events are binned in exclusive categories of \HT, 
 and the multiplicity of jets and b-tagged jets,  
 \nj and \nb, as summarised in Table~\ref{tab:ht-bins}. Such binning allows for
 targeted interpretations across the vast array of
@@ -477,12 +478,14 @@ They are categorised by \HT, with jet \Pt
 requirements on the two leading and the remaining additional jets separately.
 The jet \Pt thresholds vary as a function of the \HT bin of the event, as shown in
 Table~\ref{tab:analysis_thresholds}, in order to maintain a similar kinematic
-phase space throughout the \HT range.
+phase space throughout the \HT range. Additionally, the leading jet is required to be
+in the barrel region of the calorimeter, $\eta_{lead-jet} < 2.5$.
 
 \item[Leptons]
 Any events containing leptons are vetoed to ensure only hadronic events
 are considered, thereby suppressing events with genuine \met from leptonic decays to
-neutrinos such as \wlnu.
+neutrinos such as \wlnu. Furthermore, events are vetoed that contain a jet within
+$\Delta R < 0.5$ of a muon which fails the ID criteria. 
 
 \item[Photons]
 Events containing photons are vetoed, for similar reasons as the leptonic 
@@ -503,8 +506,8 @@ considered, chosen such that the signal triggers are in the efficiency
 plateau, as summarised in Table~\ref{tab:analysis_thresholds}. While no
 absolute \met requirement is made, the cut on
 \alphat imposes an implied threshold, maintaining the analysis'
-sensitivity to very low regions of \met as shown by Figure~\ref
-{fig:alphat_mht_corr}. Furthermore, events are required to have
+sensitivity to very low regions of \met as shown by Figure~\ref{fig:alphat_mht_corr}.
+Furthermore, events are required to have
 \mhtmet < 1.25 and \mindphistar > 0.3 (defined later in
 chapter~\ref{ch:background}).
 
@@ -526,11 +529,18 @@ processes as a function of \nj and \nb, for \HT>200~\gev.}
 
 \section{Example distributions and cutflow}
 
-Example distributions from MC simulations of \alphat, \HT, \mht and jet \Pt  are
-shown in Figure~\ref{fig:datamc_had_inc}. Example cutflow yields are shown in
-Table~\ref{tab:had_data_cutflow} for data in the \HT > 375~\gev region, with an
-inclusive selection on \nj and \nb.
+Example distributions of \alphat, \HT, \mht and jet \Pt  are
+shown in Figure~\ref{fig:datamc_had_inc} for simulated SM processes,
+following the full hadronic selection criteria, with an inclusive selection on \HT,
+\nj and \nb.
 
+Example cutflow yields are shown in
+Table~\ref{tab:had_data_cutflow} for data in the \HT > 375~\gev region, employing
+the full hadronic selection criteria, with an inclusive selection on \nj and \nb.
+The cuts relate to those describe in this chapter, specifically in
+Section~\ref{sec:selec_crit}. The requirement on \alphat is shown to reject many
+orders of magnitude of events, as well as other `cleaning' cuts such as the deadECAL
+filter and \mhtmet.
 
 \begin{figure}[!ht]
   \centering
@@ -625,9 +635,7 @@ inclusive selection on \nj and \nb.
     Sub-Leading jet \Pt > 100 \gev  & 84.24  & 2343910.00 \\
     $n_{j, fail} = 0$ & 83.45  & 1955899.00 \\
     $\Delta R(\mu^i_{fail}, jet^j) < 0.5$ & 98.87  & 1933858.00 \\
-    $(\sum_{}^{n_{vertices}}{\Pt}$) / \HT & 100.00  & 1933855.00 \\
-    recHitCut & 98.44  & 1903597.00 \\
-    $n_{SIT} = 0$ & 85.61  & 1629716.00 \\
+    $n_{SIT} = 0$ & 84.27 & 1629716.00 \\
     \HT > 375 \gev  & 93.45  & 1522986.00 \\
     \alphat > 0.55  & 0.55  & 8305.00 \\
     \mhtmet < 1.25  & 66.82  & 5549.00 \\
