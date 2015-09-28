@@ -7,6 +7,7 @@ General:
  ☐ Add in section describing exactly what my contributions were - couple of pages at the start?
  ☐ tighten up the use of 'control region' and 'control sample' interchangeably
  ☐ it's!!
+ ☐ remove all "CMS Preliminary"
 
 Abstract:
   
@@ -21,41 +22,45 @@ Chapter 3 - Detector:
 
 Chapter 4 - Objects:
  ☐ make sure description of 'Particle Flow' is consistent (define at the beginning in Jet section?)
- ☐ find out how PFMET plays with calojets - PFMET_NoCalo? @critical
+ ✔ find out how PFMET plays with calojets - PFMET_NoCalo? @critical @done (15-09-28 17:26)
  ☐ state explicitly that I implemented SITV?
 
 Chapter 5 - Analysis:
  ☐ why is QCD 2D distribution not peaked around 0.5? maybe include 1D projection? @high
  ☐ are the alphaT curves correct?!
+ ☐ repear the alphaT correlation plots - something seems wrong!
  ☐ HT-slash instead of MHT on the 6.1 axes
  ☐ what's the deal with spikes in diff trig turn-ons? @high
- ☐ explain the difference between 'online' and 'offline' HT thresholds
+   - difference between online and offline objects/alphaT calculation?
  ☐ why the pedestal in the cumulative turn-ons? @high
+   - difference between online and offline objects/alphaT calculation?
  ☐ what do the example plots show?
  ☐ Summary - in this chapter we learned...
 
 Chapter 5_2 - Samples:
  ☐ find out exactly what partonHT is, and include a description @high
+   - look up email from S Mrenna which gave us the code snippet - maybe a twiki somewhere?
  ☐ more detail in formula method - even a whole page?
 
 Chapter 6 - Background Estimation:
  ☐ think about the ordering - describe control samples first, then the procedure? @high
- ☐ make seperate closure test fit plots @high
  ☐ think of a better way to argue away the two dodgy bins!! @high @critical
- ☐ why is assuming uncorrelated systematic uncertainties 'conservative'? @high @critical
+   - maybe remove and not draw attention to it...
  ☐ is the minBiasDPhi under the assumption that the mis-measurement effects only a single jet? @high
  ☐ explain biasDPhi better - using diagrams?
 
 Chapter 7 - Results:
  ☐ explain in more detail what we see in the HT fits
  ☐ why are the fit results (assume the control samples?) apparently 'too good'? @high @critical
+   explain that the green plots aren't really a fit, but the muon is fixed (no fit = nothing pull on the expected BG shape, so it [likely] set to obs)
+   and the mumu and pho 'predictions' are actually an average of the two observations
+   these can only disagree in the blue band plots where a fit is actually performed and the pred in the control samples can be pulled by the had obs
+   however, even then the stats are so huge compared to had that they don't change a whole lot
  ☐ add labels to 8.1 plots
  ☐ describe the 8.1 plots in more detail - e.g. what is the 'profile likelihood method' @high
  ☐ what do we learn from the results?
 
 Chapter 9 - Interpretation:
- ☐ justify the inclusive cat for JES syst, and remove 'negate this effect' @high @critical
- ☐ what are the extra partons? They aren't ISR or FSR, they will just help model their spectrum... @high @critical
  ☐ remake plots without text? (can't reproduce T2cc numbers...!!)
 
 Chapter 10 - Conclusion:
@@ -69,6 +74,14 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ explain the difference between 'online' and 'offline' HT thresholds @done (15-09-28 17:17) @project(Chapter 5 - Analysis)
+ ✔ make seperate closure test fit plots @high @done (15-09-28 17:07) @project(Chapter 6 - Background Estimation)
+ ✔ rotate and make bigger - or two per page @done (15-09-28 17:07) @project(Chapter 6 - Background Estimation)
+ ✔ why is assuming uncorrelated systematic uncertainties 'conservative'? @high @critical @done (15-09-28 17:13) @project(Chapter 6 - Background Estimation)
+ ✔ fix the shape, much more likely to have a disagreement which could be seen as a signal - more conservative to allow the shape to move @done (15-09-28 17:13) @project(Chapter 6 - Background Estimation)
+ ✔ justify the inclusive cat for JES syst, and remove 'negate this effect' @high @critical @done (15-09-28 16:55) @project(Chapter 9 - Interpretation)
+ ✔ 'only interested in events moving in and out of total acceptance' @done (15-09-28 16:55) @project(Chapter 9 - Interpretation)
+ ✔ what are the extra partons? They aren't ISR or FSR, they will just help model their spectrum... @high @critical @done (15-09-28 17:01) @project(Chapter 9 - Interpretation)
  ✔ explain why we don't use PF jets (trigger rate) @done (15-09-28 13:24) @project(Chapter 4 - Objects)
  ✔ is PFMET constructed with energy sums or PF objects? @high @done (15-09-28 13:40) @project(Chapter 4 - Objects)
  ✔ make sure the 'example' cutflow is clear - where does it come from? @done (15-09-28 14:07) @project(Chapter 5 - Analysis)
