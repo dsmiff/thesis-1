@@ -84,16 +84,16 @@ L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot r^i_{\mu} \cdot ttW^i + s
 \end{equation}
 % 
 Both equations~\ref{eq:lterm_pho} and \ref{eq:lterm_mumu} are used to estimate the 
-maximum likelihood value for $Z^i_{\text{inv}}$, alongside equation~\ref{eq:lterm_mu} 
+maximum likelihood value for $Z^i_{\text{inv}}$, alongside Equation~\ref{eq:lterm_mu} 
 for $ttW^i$, all considered simultaneously through the relationships defined in
 equations~\ref{eq:ewk_frac_z} and \ref{eq:ewk_frac_ttw}.
 
 The terms \rhopz, \rhommz and \rhomw are correction factors accommodating the
 systematic uncertainties associated with the control sample based background 
 predictions. The relative uncertainties are derived in
-section~\ref{sec:background_systematics} and represented by the terms \sigmapz, \sigmammz
+Section~\ref{sec:background_systematics} and represented by the terms \sigmapz, \sigmammz
 and \sigmamw, their 
-values summarised in table~\ref{tab:syst_values}. Systematics enter the total
+values summarised in Table~\ref{tab:syst_values}. Systematics enter the total
 likelihood as:
 % 
 \begin{equation}
@@ -171,7 +171,7 @@ L^k_{total} = L^k_{hadronic} \times L^k_{\mu} \times L^k_{\gamma} \times L^k_{\m
 % 
 The number of nuisance parameters varies between different analysis categories, 
 dependent on the number of \HT bins and control samples, as summarised in
-table~\ref{tab:nuisance_param_summary}.
+Table~\ref{tab:nuisance_param_summary}.
 
 \begin{table}[ht!]
   \caption{Summary of likelihood nuisance parameters.}
@@ -233,7 +233,7 @@ L = L_{signal} \times \prod_k L^k_{total} .
 %********************************** % Second Section  *************************************
 \section{Fit Results}  %Section - 1.2
 \label{sec:results_fit}
-The likelihood model described in section~\ref{sec:results_likelihood} is used
+The likelihood model described in Section~\ref{sec:results_likelihood} is used
 to relate the observations in the signal and control samples, accommodate the
 calculated background systematic uncertainties, and allow for the presence of
 any potential signal. In order to test the compatibility with a Standard
@@ -243,8 +243,7 @@ maximized over all parameters using \ROOFIT \cite{roofit} and \MINUIT
 
 Uncertainties are determined by performing a number of pseudo-experiments for
 each (\nb, \nj) category and \HT bin, with the fit yields being entered into a
-histogram, appropriate quantiles taken, using their difference from the maximum 
-likelihood (ML) value taken as the fit uncertainty value.
+histogram, using the 68~\% quantiles as the fit uncertainties.
 
 Two different procedures are used to determine fits to observations, as described
 in the following sections.
@@ -254,14 +253,14 @@ in the following sections.
 An ``a priori'' fit is made by considering only yields from the control samples,
 and not data observations in the hadronic signal region. The results of this fit
 are shown in \cref{fig:green_fits_0b_ge4j,fig:green_fits_1b_ge4j,fig:green_fits_2b_ge4j,fig:green_fits_3b_ge4j,fig:green_fits_ge4b_ge4j,fig:green_fits_0b_le3j,fig:green_fits_1b_le3j,fig:green_fits_1b_le3j}
-and summarised in table~\ref{tab:ensemble-summary-priori}.
+and summarised in Table~\ref{tab:ensemble-summary-priori}.
 
 
 \subsection{Fit with Signal region}
 An ``a posteriori'' fit is made by considering every region, including the
 hadronic signal region observation in data, and is shown in
 \cref{fig:green_fits_0b_ge4j,fig:green_fits_1b_ge4j,fig:green_fits_2b_ge4j,fig:green_fits_3b_ge4j,fig:green_fits_ge4b_ge4j,fig:green_fits_0b_le3j,fig:green_fits_1b_le3j,fig:green_fits_1b_le3j}
-and summarised in table~\ref{tab:ensemble-summary-posteriori}.
+and summarised in Table~\ref{tab:ensemble-summary-posteriori}.
 
 \begin{landscape}
 \begin{center}
@@ -381,11 +380,11 @@ and summarised in table~\ref{tab:ensemble-summary-posteriori}.
     \label{fig:pvalue_per_cat}
   \end{subfigure}
   \caption{Pulls for each analysis bin shown as a 1D distribution
-  (figure~\ref{fig:pull_distro}) and as a function of the \HT bin and analysis
-  category (\nj, \nb) (figure~\ref{fig:french_flag}). P-values for every
-  analysis bin shown as a 1D distribution (figure~\ref{fig:pvalue_distro}) and
+  (Figure~\ref{fig:pull_distro}) and as a function of the \HT bin and analysis
+  category (\nj, \nb) (Figure~\ref{fig:french_flag}). P-values for every
+  analysis bin shown as a 1D distribution (Figure~\ref{fig:pvalue_distro}) and
   for each analysis category, for an inclusive \HT range
-  (figure~\ref{fig:pvalue_per_cat}).}
+  (Figure~\ref{fig:pvalue_per_cat}).}
   \label{fig:pull_analysis}
 \end{figure}
 
@@ -397,19 +396,19 @@ and summarised in table~\ref{tab:ensemble-summary-posteriori}.
 
 Pulls and p-values are determined using a profile-likelihood method and are
 summarised for various different analysis categories and individual \HT bins
-in the plots shown in figure~\ref{fig:pull_analysis}.
+in the plots shown in Figure~\ref{fig:pull_analysis}.
 
 The 1D distribution of the
-pulls is shown in figure~\ref{fig:pull_distro}, with a Gaussian fit (red)
+pulls is shown in Figure~\ref{fig:pull_distro}, with a Gaussian fit (red)
 indicating good Gaussian behaviour, with mean and sigma values statistically
 compatible with 0 and 1, respectively. Furthermore, the distribution of
 these pulls as a function of the \HT bin and
-the analysis category (\nb, \nj) is shown in figure~\ref{fig:french_flag} to be
+the analysis category (\nb, \nj) is shown in Figure~\ref{fig:french_flag} to be
 randomly distributed, with no apparent pattern to a given region.
 
 The distribution of p-values for every bin of \HT and analysis category can be
-seen in figure~\ref{fig:pvalue_distro} to be uniformly distributed between 0
-and 1. The same information is shown in figure~\ref{fig:pvalue_per_cat} when a
+seen in Figure~\ref{fig:pvalue_distro} to be uniformly distributed between 0
+and 1. The same information is shown in Figure~\ref{fig:pvalue_per_cat} when a
 single p-value is calculated for an entire \HT range, for each analysis
 category, where the lowest value is 0.19.
 
