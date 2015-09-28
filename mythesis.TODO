@@ -3,8 +3,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 General:
- ☐ should figures/chapters/tables have captial letters? ie. 'blah blah Figure 1'
- ☐ work out why url's get chopped in bib
  ☐ check why references are starting at SUSY Primer
  ☐ Add in section describing exactly what my contributions were - couple of pages at the start?
  ☐ tighten up the use of 'control region' and 'control sample' interchangeably
@@ -17,13 +15,13 @@ Chapter 1 - Introduction:
 Chapter 2 - Theory:
  ☐ add the most relevant 4body decay feynman diagram
  ☐ state charm and bquark gen plots are mine (or infer...)
+ ☐ fab comment on SMS 3rd gen (pg 12)
 
 Chapter 3 - Detector:
 
 Chapter 4 - Objects:
- ☐ explain why we don't use PF jets (trigger rate)
- ☐ find out how PFMET plays with calojets - PFMET_NoCalo?
- ☐ is PFMET constructed with energy sums or PF objects? @high
+ ☐ make sure description of 'Particle Flow' is consistent (define at the beginning in Jet section?)
+ ☐ find out how PFMET plays with calojets - PFMET_NoCalo? @critical
  ☐ state explicitly that I implemented SITV?
 
 Chapter 5 - Analysis:
@@ -33,8 +31,7 @@ Chapter 5 - Analysis:
  ☐ what's the deal with spikes in diff trig turn-ons? @high
  ☐ explain the difference between 'online' and 'offline' HT thresholds
  ☐ why the pedestal in the cumulative turn-ons? @high
- ☐ make sure the 'example' cutflow is clear - where does it come from?
- ☐ explain each cut?
+ ☐ what do the example plots show?
  ☐ Summary - in this chapter we learned...
 
 Chapter 5_2 - Samples:
@@ -43,13 +40,11 @@ Chapter 5_2 - Samples:
 
 Chapter 6 - Background Estimation:
  ☐ think about the ordering - describe control samples first, then the procedure? @high
- ☐ how do we make the photon turn-on curves? @high
  ☐ make seperate closure test fit plots @high
  ☐ think of a better way to argue away the two dodgy bins!! @high @critical
  ☐ why is assuming uncorrelated systematic uncertainties 'conservative'? @high @critical
  ☐ is the minBiasDPhi under the assumption that the mis-measurement effects only a single jet? @high
  ☐ explain biasDPhi better - using diagrams?
- ☐ do I mean to compare to deltaPhi(jet, MHT) instead of deltaR?
 
 Chapter 7 - Results:
  ☐ explain in more detail what we see in the HT fits
@@ -61,8 +56,7 @@ Chapter 7 - Results:
 Chapter 9 - Interpretation:
  ☐ justify the inclusive cat for JES syst, and remove 'negate this effect' @high @critical
  ☐ what are the extra partons? They aren't ISR or FSR, they will just help model their spectrum... @high @critical
- ☐ compare limits to previous experimental limit
- ☐ rework the fastsim btag correction factor - include what SF_ terms are
+ ☐ remake plots without text? (can't reproduce T2cc numbers...!!)
 
 Chapter 10 - Conclusion:
 
@@ -75,6 +69,17 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ explain why we don't use PF jets (trigger rate) @done (15-09-28 13:24) @project(Chapter 4 - Objects)
+ ✔ is PFMET constructed with energy sums or PF objects? @high @done (15-09-28 13:40) @project(Chapter 4 - Objects)
+ ✔ make sure the 'example' cutflow is clear - where does it come from? @done (15-09-28 14:07) @project(Chapter 5 - Analysis)
+ ✔ explain each cut? @done (15-09-28 14:01) @project(Chapter 5 - Analysis)
+ ✔ should figures/chapters/tables have captial letters? ie. 'blah blah Figure 1' @done (15-09-28 13:17) @project(General)
+ ✘ work out why url's get chopped in bib @cancelled (15-09-28 13:17) @project(General)
+ ✔ more description in the caption of current experimental limits @done (15-09-28 13:03) @project(Chapter 2 - Theory)
+ ✔ how do we make the photon turn-on curves? @high @done (15-09-28 11:05) @project(Chapter 6 - Background Estimation)
+ ✘ do I mean to compare to deltaPhi(jet, MHT) instead of deltaR? @cancelled (15-09-28 11:06) @project(Chapter 6 - Background Estimation)
+ ✔ compare limits to previous experimental limit @done (15-09-25 15:31) @project(Chapter 9 - Interpretation)
+ ✔ rework the fastsim btag correction factor - include what SF_ terms are @done (15-09-28 12:24) @project(Chapter 9 - Interpretation)
  ✔ Add description of existing limits @done (15-09-25 15:22) @project(Chapter 2 - Theory)
  ✔ understand Jonas' lorentz invariance comments about eta @done (15-09-25 14:27) @project(Chapter 3 - Detector)
  ✔ how do we generate the pseudo-experiments? @high @done (15-09-25 14:18) @project(Chapter 9 - Interpretation)
