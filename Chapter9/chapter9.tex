@@ -506,8 +506,8 @@ Specifically for \FASTSIM signal samples, events are not weighted using the
 b tag formula method described in section~\ref{sec:formula_method}, but instead
 using the 
 recommended method for \FULLSIM samples with an additional \FULLSIM to \FASTSIM 
-correction factor applied. The original correction is dependent on the generator
-level content of an event, and is defined as:
+correction factor applied. The \FULLSIM correction is applied as an event weight
+dependent on the generator level content of an event, and is defined as:
 % 
 \begin{equation}
 w = \frac{SF_b \epsilon \times (1-SF_b \epsilon) \times SF_{c,light} m \times (1
@@ -517,7 +517,10 @@ w = \frac{SF_b \epsilon \times (1-SF_b \epsilon) \times SF_{c,light} m \times (1
 % 
 where $\epsilon(\Pt, \eta)$ and $m(\Pt, \eta)$ are the b tagging efficiency and 
 mistagging rate, respectively. These factors are functions of \Pt and $\eta$, and
-are measured in SM MC for both the hadronic and \mj samples, in each \HT bin.
+are measured in SM MC for both the hadronic and \mj samples, in each \HT bin. $SF_b$
+and $SF_{c,light}$ are the prescribed scalefactors (equation~\ref{eq:btag_scalefactor})
+for b quarks and u/d/c/s quarks, respectively, as prescribed centrally by the BTAG
+\emph{POG} \cite{btagpog-scalefactors}.
 
 Applying this event weight provides `corrected' MC yields, which then 
 have further \FASTSIM to \FULLSIM correction factors applied, as recommended by
