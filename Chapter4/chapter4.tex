@@ -22,9 +22,12 @@ and are described in the following sections.
 \label{sec:objects_jets}
 
 Jets objects occur when a single quark or gluon is produced, subsequently 
-hadronizing and showering throughout the calorimeter systems. Energy deposits in
-the hadronic calorimeter are clustered using the anti-$k_T$ algorithm \cite{antikt} with
-an $R=0.5$ cone size parameter.
+hadronizing and showering throughout the calorimeter systems. Energy deposits 
+are clustered using the anti-$k_T$ algorithm \cite{antikt} with
+an $R=0.5$ cone size parameter. Jet objects produced are based only
+on calorimeter information and are widely known as `calojets'. While many analyses use
+Particle Flow techniques to reconstruct `PFJets', this analysis continues to use `caloJets'
+for compatiblility with our well studied, caloJet-based signal triggers.
 Table~\ref{tab:jet_id_loose} summarises the ID requirements used in this 
 analysis, which correspond to the ``Loose'' working point \cite{ref:jet-id}.
 % The raw energy measurements are subject to 
