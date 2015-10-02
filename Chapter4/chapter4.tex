@@ -26,7 +26,8 @@ through the calorimeter systems.Energy deposits
 are clustered using the anti-$k_T$ algorithm \cite{antikt} with
 an $R=0.5$ cone size parameter. Jet objects produced are based only
 on calorimeter information and are widely known as `calojets'. While many analyses use
-`Particle Flow' techniques to reconstruct `PFJets', this analysis continues to use `caloJets'
+`Particle Flow' (PF) techniques to reconstruct `PFJets' - jets constructed using information
+from combinations of multiple sub-detector systems - this analysis continues to use `caloJets'
 for compatiblility with our well studied, caloJet-based signal triggers.
 Table~\ref{tab:jet_id_loose} summarises the ID requirements used in this 
 analysis, which correspond to the ``Loose'' working point \cite{ref:jet-id}.
@@ -332,9 +333,8 @@ estimator of the events missing energy.
 Single Isolated Tracks are used to identify hadronically decaying $\tau$ leptons
 and leptonically decaying W bosons where the corresponding lepton has failed
 identification for whatever reason.
-Summarised in Table~\ref{tab:sit-id}, the selection is based on particle flow
-candidates - objects which have been constructed from energy deposits in various
-detector subsystems according to `Particle Flow' algorithms. This ID is used as
+Summarised in Table~\ref{tab:sit-id}, the selection is based on PF
+candidates. This ID is used as
 a veto in all selections, with the selected `tag' lepton ignored in the \mj and
 \mmj control selections. The ID definition is taken from \cite{singleleptonstop}.
 
