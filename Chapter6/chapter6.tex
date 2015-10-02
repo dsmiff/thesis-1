@@ -745,12 +745,12 @@ bins contain a statistical fluctuation as opposed to a systematic bias.
 \begin{figure}[p]
   \centering
   \begin{subfigure}[b]{0.9\textwidth}
-    \includegraphics[width=\textwidth]{Figs/syst/v0/le3j/summary_plot_pol0}
+    \includegraphics[width=\textwidth]{Figs/syst/v0/le3j/summary_plot_pol0_img}
     \caption{Constant function}
     \label{fig:closure_fit_le3j_pol0}
   \end{subfigure}
   \begin{subfigure}[b]{0.9\textwidth}
-    \includegraphics[width=\textwidth]{Figs/syst/v0/le3j/summary_plot_pol1}
+    \includegraphics[width=\textwidth]{Figs/syst/v0/le3j/summary_plot_pol1_img}
     \caption{Linear function}
     \label{fig:closure_fit_le3j_pol1}
   \end{subfigure}
@@ -763,12 +763,12 @@ bins contain a statistical fluctuation as opposed to a systematic bias.
 
 \begin{figure}[p]
   \begin{subfigure}[b]{0.9\textwidth}
-    \includegraphics[width=\textwidth]{Figs/syst/v0/ge4j/summary_plot_pol0}
+    \includegraphics[width=\textwidth]{Figs/syst/v0/ge4j/summary_plot_pol0_img}
     \caption{Constant function}
     \label{fig:closure_fit_ge4j_pol0}
   \end{subfigure}
   \begin{subfigure}[b]{0.9\textwidth}
-    \includegraphics[width=\textwidth]{Figs/syst/v0/ge4j/summary_plot_pol1}
+    \includegraphics[width=\textwidth]{Figs/syst/v0/ge4j/summary_plot_pol1_img}
     \caption{Linear function}
     \label{fig:closure_fit_ge4j_pol1}
   \end{subfigure}
@@ -972,7 +972,9 @@ no significant instrumental issues remaining.
 \begin{figure}[h!]
   \begin{center}
     \begin{subfigure}[b]{0.46\textwidth}
-      \includegraphics[width=\textwidth]{Figs/dphi/HT_dependent_AlphaT_thresholds/th2d_denom_summed_ge2j_ge0b_200.pdf}
+      \begin{overpic}[width=\textwidth]{Figs/dphi/HT_dependent_AlphaT_thresholds/th2d_denom_summed_ge2j_ge0b_200.pdf}
+        \put(10,60){\includegraphics[width=1.6cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
+      \end{overpic}
       \caption{No ``dead ECAL filter''.}
       \label{fig:hotspots_2d_nodeadECAL}
     \end{subfigure}
@@ -982,7 +984,9 @@ no significant instrumental issues remaining.
       \label{fig:hotspots_1d_nodeadECAL}
     \end{subfigure} \\ 
     \begin{subfigure}[b]{0.46\textwidth}
-      \includegraphics[width=\textwidth]{Figs/dphi/Nominal_AlphaT_thresholds/th2d_numer_summed_ge2j_ge0b_200.pdf}
+      \begin{overpic}[width=\textwidth]{Figs/dphi/Nominal_AlphaT_thresholds/th2d_numer_summed_ge2j_ge0b_200.pdf}
+        \put(10,60){\includegraphics[width=1.6cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
+      \end{overpic}
       \caption{With ``dead ECAL filter''.}
       \label{fig:hotspots_2d_withdeadECAL}
     \end{subfigure}
@@ -1035,8 +1039,11 @@ nominal analysis.
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=0.6\textwidth]
-  {Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/Prediction_ComMinBiasDPhi_acceptedJets_all_775_upwards_QCD}
+  % \includegraphics[width=0.6\textwidth]
+  % {Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/Prediction_ComMinBiasDPhi_acceptedJets_all_775_upwards_QCD}
+  \begin{overpic}[width=0.6\textwidth]{Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/Prediction_ComMinBiasDPhi_acceptedJets_all_775_upwards_QCD}
+    \put(62,70){\includegraphics[width=1.3cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
+  \end{overpic}
   \caption{Data (black points) against the EWK background prediction 
   (stacked, yellow and purple) as a function of \mindphistar. The expected yield
   from QCD MC (cyan) is stacked on top of the EWK prediction, but not included
@@ -1208,14 +1215,18 @@ events are removed by the application of the \mindphistar > 0.3 requirement.
 \begin{figure}[t]
   \centering
   \begin{subfigure}[b]{0.46\textwidth}
-    \includegraphics[width=\textwidth]
-    {Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/Prediction_MHT_all_775_upwards_QCD.pdf}
+    \begin{overpic}[width=\textwidth]{Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/Prediction_MHT_all_775_upwards_QCD.pdf}
+      \put(60,70){\includegraphics[width=1.1cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
+    \end{overpic}
     \caption{\mindphistar < 0.3}
     \label{fig:datapred_mht_lt0p3}
   \end{subfigure}
   \begin{subfigure}[b]{0.46\textwidth}
-    \includegraphics[width=\textwidth]
-    {Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/gt0p3/Prediction_MHT_all_775_upwards_QCD.pdf}
+    % \includegraphics[width=\textwidth]
+    % {Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/gt0p3/Prediction_MHT_all_775_upwards_QCD.pdf}
+    \begin{overpic}[width=\textwidth]{Figs/datapred/qcd_study_region/ge2j_ge0b_775_upwards/gt0p3/Prediction_MHT_all_775_upwards_QCD.pdf}
+      \put(64,70){\includegraphics[width=0.91cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
+    \end{overpic}
     \caption{\mindphistar > 0.3}
     \label{fig:datapred_mht_gt0p3}
   \end{subfigure}
