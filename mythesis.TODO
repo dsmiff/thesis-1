@@ -15,7 +15,7 @@ Chapter 1 - Introduction:
 Chapter 2 - Theory:
  ☐ add the most relevant 4body decay feynman diagram
  ☐ state charm and bquark gen plots are mine (or infer...)
- ☐ fab comment on SMS 3rd gen (pg 12)
+ ☐ fabrizio comment on SMS 3rd gen (pg 12)
 
 Chapter 3 - Detector:
 
@@ -33,27 +33,15 @@ Chapter 5 - Analysis:
  ☐ what do the example plots show?
 
 Chapter 5_2 - Samples:
- ✔ find out exactly what partonHT is, and include a description @high @done (15-10-02 11:57)
-   ✔ look up email from S Mrenna which gave us the code snippet - maybe a twiki somewhere? @done (15-10-02 11:57)
- ☐ more detail in formula method - even a whole page?
 
 Chapter 6 - Background Estimation:
- ☐ think about the ordering - describe control samples first, then the procedure? @high
  ☐ think of a better way to argue away the two dodgy bins!! @high @critical
    - maybe remove and not draw attention to it...
  ☐ is the minBiasDPhi under the assumption that the mis-measurement effects only a single jet? @high
  ☐ explain biasDPhi better - using diagrams?
- ✔ remove CMS prelim from closure fits @done (15-10-02 12:12)
- ✔ remove CMS prelim from deadecal detector maps @done (15-10-02 12:46)
- ✔ remove CMS 2012 from dphistar pred plots @done (15-10-02 12:46)
 
 Chapter 7 - Results:
- ☐ explain in more detail what we see in the HT fits
- ☐ why are the fit results (assume the control samples?) apparently 'too good'? @high @critical
-   explain that the green plots aren't really a fit, but the muon is fixed (no fit = nothing pull on the expected BG shape, so it [likely] set to obs)
-   and the mumu and pho 'predictions' are actually an average of the two observations
-   these can only disagree in the blue band plots where a fit is actually performed and the pred in the control samples can be pulled by the had obs
-   however, even then the stats are so huge compared to had that they don't change a whole lot
+ ✔ explain in more detail what we see in the HT fits @done (15-10-05 13:01)
  ☐ describe the 8.1 plots in more detail - e.g. what is the 'profile likelihood method' @high
  ☐ what do we learn from the results?
 
@@ -63,7 +51,6 @@ Chapter 9 - Interpretation:
 Chapter 10 - Conclusion:
 
 Appendix 1 - Signal systematic plots:
- ✔ replace deadECAL plots @done (15-10-02 11:27)
 
 Appendix 2 - DPhiStar in signal region:
 
@@ -71,6 +58,20 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ update to newer CMS summary plot @done (15-10-05 10:35) @project(Chapter 2 - Theory)
+ ✔ think about the ordering - describe control samples first, then the procedure? @high @done (15-10-05 12:31) @project(Chapter 6 - Background Estimation)
+ ✔ why are the fit results (assume the control samples?) apparently 'too good'? @high @critical @done (15-10-05 13:01) @project(Chapter 7 - Results)
+  explain that the green plots aren't really a fit, but the muon is fixed (no fit = nothing pull on the expected BG shape, so it [likely] set to obs)
+  and the mumu and pho 'predictions' are actually an average of the two observations
+  these can only disagree in the blue band plots where a fit is actually performed and the pred in the control samples can be pulled by the had obs
+  however, even then the stats are so huge compared to had that they don't change a whole lot
+ ✔ find out exactly what partonHT is, and include a description @high @done (15-10-02 11:57) @project(Chapter 5_2 - Samples)
+ ✔ look up email from S Mrenna which gave us the code snippet - maybe a twiki somewhere? @done (15-10-02 11:57) @project(Chapter 5_2 - Samples)
+ ✔ more detail in formula method - even a whole page? @done (15-10-02 13:59) @project(Chapter 5_2 - Samples)
+ ✔ remove CMS prelim from closure fits @done (15-10-02 12:12) @project(Chapter 6 - Background Estimation)
+ ✔ remove CMS prelim from deadecal detector maps @done (15-10-02 12:46) @project(Chapter 6 - Background Estimation)
+ ✔ remove CMS 2012 from dphistar pred plots @done (15-10-02 12:46) @project(Chapter 6 - Background Estimation)
+ ✔ replace deadECAL plots @done (15-10-02 11:27) @project(Appendix 1 - Signal systematic plots)
  ✘ Summary - in this chapter we learned... @cancelled (15-10-02 11:20) @project(Chapter 5 - Analysis)
  ✔ make sure description of 'Particle Flow' is consistent (define at the beginning in Jet section?) @done (15-10-02 11:19) @project(Chapter 4 - Objects)
  ✔ remove all "CMS Preliminary" @done (15-10-02 11:15) @project(General)
