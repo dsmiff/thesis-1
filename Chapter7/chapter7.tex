@@ -253,14 +253,28 @@ in the following sections.
 An ``a priori'' fit is made by considering only yields from the control samples,
 and not data observations in the hadronic signal region. The results of this fit
 are shown in \cref{fig:green_fits_0b_ge4j,fig:green_fits_1b_ge4j,fig:green_fits_2b_ge4j,fig:green_fits_3b_ge4j,fig:green_fits_ge4b_ge4j,fig:green_fits_0b_le3j,fig:green_fits_1b_le3j,fig:green_fits_1b_le3j}
-and summarised in Table~\ref{tab:ensemble-summary-priori}.
+and summarised in Table~\ref{tab:ensemble-summary-priori}. As data
+observations from the signal region are not considered, it should be noted that
+the `EWK Prediction' is simply the result of the transfer factor method
+(described in Chapter~\ref{ch:background}). Due to this the `EWK 
+Prediction' in the \mj control region is equal to the data observation in
+that region, as the fit is not `pulled' by observations from the signal region.
+Differences between the prediction and the data observations are found in the
+\mmj and \gj control regions, due to the fit considering both control regions
+separately to predict the \zinv background component.
 
 
 \subsection{Fit with Signal region}
 An ``a posteriori'' fit is made by considering every region, including the
 hadronic signal region observation in data, and is shown in
 \cref{fig:green_fits_0b_ge4j,fig:green_fits_1b_ge4j,fig:green_fits_2b_ge4j,fig:green_fits_3b_ge4j,fig:green_fits_ge4b_ge4j,fig:green_fits_0b_le3j,fig:green_fits_1b_le3j,fig:green_fits_1b_le3j}
-and summarised in Table~\ref{tab:ensemble-summary-posteriori}.
+and summarised in Table~\ref{tab:ensemble-summary-posteriori}. Good agreement
+between the SM expectation and data are seen throughout the various analysis
+categories, both in the signal and control regions. In this fit scenario,
+observations in the signal region can affect the
+fit in the control regions. This is most noticeable in the \mmj and \gj samples,
+but only marginally in the \mj sample where the relatively large systematics of
+the control region dominate the fit. 
 
 \begin{landscape}
 \begin{center}
@@ -394,7 +408,8 @@ and summarised in Table~\ref{tab:ensemble-summary-posteriori}.
 % quantile of the distribution of maximised likelihood values for an ensemble of
 % pseudo-experiments.
 
-Pulls and p-values are determined using a profile-likelihood method and are
+Pulls and p-values are determined using a profile-likelihood method for the
+SM only hypothesis. They are
 summarised for various different analysis categories and individual \HT bins
 in the plots shown in Figure~\ref{fig:pull_analysis}.
 
