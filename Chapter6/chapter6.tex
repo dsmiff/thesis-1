@@ -925,28 +925,58 @@ selection of $\nb \geq 0$, $\nj \geq 2$ and \HT > 200~\gev.}
 
 \subsection{Instrumental effects}
 
-Fake \mht may also be produced if jets overlap with areas of the calorimeter 
-system which are damaged or known to be faulty (hereby referred to as `dead'),
-and jets are mismeasured or lost as a result. To protect against this, for a
-given jet $j$ the angular separation between the event \mht, calculated
-excluding jet $j$, and the jet itself is defined as:
+It is possible to observe fake \mht if an event's jet is mismeasured. Such
+mismeasurement can occur due to instrumental effects, such as if a jet
+deposits energy in a region of the calorimeter system known to be damaged or
+faulty (hereby referred to as `dead'). To protect against this, a filter is
+employed that finds such a mismeasured jet, rejecting the event if
+the jet overlaps with a dead region. This filter is known as the `Dead ECAL
+Filter'. To detect such mismeasured jets, the 
+variable \dphistar is used, defined for a jet $j$ as:
 % 
 \begin{equation}
 \dphistar_j = \Delta \phi\big(\overrightarrow{\Pt}_j,-\sum_{i\neq j}
 {\overrightarrow{\Pt}_i}\big) .
 \label{eq:biasdphi}
 \end{equation}
-% 
-An advantage of this variable with respect to the often used
-$\Delta R(\overrightarrow{\Pt}_j, \mht)$ is it's detection of spurious missing
-energy vectors
-caused
-by either under-measurements and over-measurements of a jets energy.
-A small value of $\dphistar_j$ indicates that the momentum vector of the jet $j$
-is aligned with the \mht vector, implying the jet to be mismeasured. Events are
-vetoed if a jet with \dphistar< 0.5 is within $\Delta R < 0.3$ of a known
-dead region of the calorimeter. This requirement shall hereby be described as
-the `Dead ECAL filter'.
+%
+This quantity is the difference in $\phi$ between the jet and the missing
+hadronic energy vector calculated using all other jets in the event. An advantage
+of this variable with respect to the often used
+$\Delta \phi(\overrightarrow{\Pt}_j, \mhtvect)$ is it's detection of spurious missing
+energy vectors caused
+by either under-measurements and over-measurements of a jets energy. In the case
+of an over-measured jet the nominal \mhtvect would point in the opposite direction
+to that jet, whereas \mhtvect calculated from all other jets would point in
+the same direction, thereby giving a low \dphistar.
+
+Events are vetoed if a jet with \dphistar< 0.5 is within $\Delta R < 0.3$ of a known
+dead region of the calorimeter.
+
+
+
+% Fake \mht may also be produced if jets overlap with areas of the calorimeter 
+% system which are damaged or known to be faulty (hereby referred to as `dead'),
+% and jets are mismeasured or lost as a result. To protect against this, for a
+% given jet $j$ the angular separation between the event \mht, calculated
+% excluding jet $j$, and the jet itself is defined as:
+% % 
+% \begin{equation}
+% \dphistar_j = \Delta \phi\big(\overrightarrow{\Pt}_j,-\sum_{i\neq j}
+% {\overrightarrow{\Pt}_i}\big) .
+% \label{eq:biasdphi}
+% \end{equation}
+% % 
+% An advantage of this variable with respect to the often used
+% $\Delta R(\overrightarrow{\Pt}_j, \mht)$ is it's detection of spurious missing
+% energy vectors
+% caused
+% by either under-measurements and over-measurements of a jets energy.
+% A small value of $\dphistar_j$ indicates that the momentum vector of the jet $j$
+% is aligned with the \mht vector, implying the jet to be mismeasured. Events are
+% vetoed if a jet with \dphistar< 0.5 is within $\Delta R < 0.3$ of a known
+% dead region of the calorimeter. This requirement shall hereby be described as
+% the `Dead ECAL filter'.
 
 To protect against further jet mismeasurements arising from
 instrumental effects, multiple event filters (see Table~\ref{tab:met_filters})
@@ -960,9 +990,9 @@ instrumental issue would
 be visible as clusters of high event counts.
 Figures~\ref{fig:hotspots_2d_nodeadECAL} and \ref{fig:hotspots_1d_nodeadECAL}
 show the detector map and the 1D distribution
-of counts before the dead ECAL filter is applied, with areas of
+of counts before the Dead ECAL filter is applied, with areas of
 potential instrumental defects clearly visible, notably as outliers in
-1D distribution. Following the application of the dead
+1D distribution. Following the application of the Dead
 ECAL filter the hotspot areas and the corresponding outliers are removed, as
 seen in figures~\ref{fig:hotspots_2d_withdeadECAL} and
 \ref{fig:hotspots_1d_withdeadECAL}. The lack of localised high-count regions or
@@ -975,29 +1005,29 @@ no significant instrumental issues remaining.
       \begin{overpic}[width=\textwidth]{Figs/dphi/HT_dependent_AlphaT_thresholds/th2d_denom_summed_ge2j_ge0b_200.pdf}
         \put(10,60){\includegraphics[width=1.6cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
       \end{overpic}
-      \caption{No ``dead ECAL filter''.}
+      \caption{No ``Dead ECAL filter''.}
       \label{fig:hotspots_2d_nodeadECAL}
     \end{subfigure}
     \begin{subfigure}[b]{0.46\textwidth}
       \includegraphics[width=\textwidth]{Figs/dphi/HT_dependent_AlphaT_thresholds/th1d_denom_summed_ge2j_ge0b_200.pdf}
-      \caption{No ``dead ECAL filter''.}
+      \caption{No ``Dead ECAL filter''.}
       \label{fig:hotspots_1d_nodeadECAL}
     \end{subfigure} \\ 
     \begin{subfigure}[b]{0.46\textwidth}
       \begin{overpic}[width=\textwidth]{Figs/dphi/Nominal_AlphaT_thresholds/th2d_numer_summed_ge2j_ge0b_200.pdf}
         \put(10,60){\includegraphics[width=1.6cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
       \end{overpic}
-      \caption{With ``dead ECAL filter''.}
+      \caption{With ``Dead ECAL filter''.}
       \label{fig:hotspots_2d_withdeadECAL}
     \end{subfigure}
     \begin{subfigure}[b]{0.46\textwidth}
       \includegraphics[width=\textwidth]{Figs/dphi/Nominal_AlphaT_thresholds/th1d_numer_summed_ge2j_ge0b_200.pdf}
-      \caption{With ``dead ECAL filter''.}
+      \caption{With ``Dead ECAL filter''.}
       \label{fig:hotspots_1d_withdeadECAL}
     \end{subfigure} \\ 
     \caption{Distribution of jets in ($\eta$, $\phi$)-space that are
       responsible for the \mindphistar value of an event, with (a, b) and
-      without (c, d) the ``dead ECAL filter''
+      without (c, d) the ``Dead ECAL filter''
       requirement applied as part of the signal region selection.}
     \label{fig:hotspots}
   \end{center}
