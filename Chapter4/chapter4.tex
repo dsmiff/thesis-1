@@ -274,14 +274,15 @@ known as energy sums. The definitions of the energy sum variables are:
     \Et = \sum_{i}^{} |\Ptvect_i| , \\
     \met = -\big|\sum_{i}^{} \Ptvect_i\big| , \\
     \HT = \sum_{i}^{\textrm{jets}} |\Ptvect_i| , \\
+    \mhtvect = -\sum_{i}^{\textrm{jets}} \Ptvect_i, \\
     \mht = -\big|\sum_{i}^{\textrm{jets}} \Ptvect_i\big|; \\
     \end{split}
 \label{eq:energy_sums}
 \end{equation}
 % 
 namely the total transverse energy, total missing transverse energy, total transverse
-hadronic energy and total transverse missing hadronic energy. These are calculated on
-the fly in the analysis using identified objects,
+hadronic energy, total transverse energy vector and total transverse missing hadronic energy.
+These are calculated on the fly in the analysis using identified objects,
 with the exception of \met which is constructed from PF candidates and subject to type-I
 corrections (jets used for \met calculation are subject to prescribed Jet Energy
 Corrections themselves). A full set of \met filters are defined by the MET \emph{POG} as
