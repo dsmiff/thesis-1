@@ -959,6 +959,17 @@ wish to left align your text}
 }
 
 
+% ****************************** Contributions ********************************
+% The Contributions environment puts a large, bold, centered
+% "Contributions" label at the top of the page.
+
+\newenvironment{contribution}{
+\cleardoublepage
+\setsinglecolumn
+\chapter*{\centering \Large Author's Contribution}
+\thispagestyle{empty}
+}
+
 
 % ******************************* Nomenclature *********************************
 \RequirePackage{nomencl}
