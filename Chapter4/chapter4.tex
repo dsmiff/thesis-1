@@ -81,7 +81,19 @@ displacement from the primary vertex (PV). Each algorithm
 calculates a value used to discriminate between a jet originating from a
 b quark or other sources.
 
-\begin{figure}[t]
+The Combined Secondary Vertex (CSV) algorithm \cite{CMS-PAS-BTV-12-001} is used
+in this analysis. The distribution of discriminator values is shown in
+Figure~\ref {fig:btag_csv_discrim}.
+The ``Medium'' working point corresponds to a discriminator
+threshold of $>0.679$, and is used in this analysis. This working point
+corresponds
+to a mistag rate for gluons/light-quarks of 1\%, and a pT dependent efficiency
+in the range of 60-70\%, as shown in Figure~\ref{fig:btag_csv_eff}. Also
+shown in Figure~\ref{fig:btag_csv_eff} are the MC scale factors, $SF_b$, defined
+as the ratio of the CSV b tagging algorithm efficiency in data and MC, to be
+applied to MC samples.
+
+\begin{figure}[h!]
   \centering
   \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/btag/csv_discrim.pdf}
@@ -100,19 +112,6 @@ b quark or other sources.
   \label{fig:btag_csv}
 \end{figure}
 
-The Combined Secondary Vertex (CSV) algorithm \cite{CMS-PAS-BTV-12-001} is used
-in this analysis. The distribution of discriminator values is shown in
-Figure~\ref {fig:btag_csv_discrim}.
-The ``Medium'' working point corresponds to a discriminator
-threshold of $>0.679$, and is used in this analysis. This working point
-corresponds
-to a mistag rate for gluons/light-quarks of 1\%, and a pT dependent efficiency
-in the range of 60-70\%, as shown in Figure~\ref{fig:btag_csv_eff}. Also
-shown in Figure~\ref{fig:btag_csv_eff} are the MC scale factors, $SF_b$, defined
-as the ratio of the CSV b tagging algorithm efficiency in data and MC, to be
-applied to MC samples.
-
-
 %********************************** % Fourth Section  *************************************
 \section{Muons}  %Section - 1.4
 \label{sec:objects_muons}
@@ -126,7 +125,7 @@ muon veto in the hadronic signal region.
   \caption{Muon identification (Tight working point).\label{tab:muon-id}}
   \centering
   \scriptsize
-  \begin{tabular}{ lcp{8cm} }
+  \begin{tabular}{ lcp{8.7cm} }
     \hline
     \hline
     Variable & Requirement & Description \\
@@ -179,7 +178,7 @@ selection in the \gj control sample and as a veto in the hadronic signal region.
   \caption{Photon identification (Tight working point).\label{tab:photon-id-egamma}}
   \centering
   \scriptsize
-  \begin{tabular}{ cccp{4.4cm} }
+  \begin{tabular}{ cccp{4.2cm} }
     \hline
     \hline
     Categories                    & Barrel                             & Endcap
@@ -221,11 +220,11 @@ summarised in Table~\ref{tab:ele-id}. The final two requirements are
 specifically for the rejection of electrons originating from photons converted
 into $e^-e^+$ pairs.
 
-\begin{table}[t]
+\begin{table}[h]
   \caption{Electron identification (Loose working point).\label{tab:ele-id}}
   \centering
   \scriptsize
-  \begin{tabular}{ lccp{8cm} }
+  \begin{tabular}{ lccp{8.8cm} }
     \hline
     \hline
     Categories                                               & Barrel    &
@@ -290,12 +289,12 @@ summarised in Table~\ref{tab:met_filters}. The filters account for various
 physics and detector effects which can give unphysical or spurious \met 
 signals.
 
-\begin{table}[ht!]
+\begin{table}[b!]
   \caption{\met filters employed in the analysis, as recommended by the MET \emph{POG}.}
   \label{tab:met_filters}
   \centering
   \scriptsize
-  \begin{tabular}{ lp{10cm} }
+  \begin{tabular}{ lp{11.2cm} }
     \hline
     \hline
     Filter Name & Description \\
@@ -343,7 +342,7 @@ a veto in all selections, with the selected `tag' lepton ignored in the \mj and
   \caption{Single Isolated Track identification.\label{tab:sit-id}}
   \centering
   \scriptsize
-  \begin{tabular}{ lcp{8cm} }
+  \begin{tabular}{ lcp{8.6cm} }
     \hline
     \hline
     Variable & Requirement & Description \\
