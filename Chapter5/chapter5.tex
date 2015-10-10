@@ -52,7 +52,7 @@ minimum.
   \caption{\HT bin lower bounds used for each \nj and \nb category.\label
   {tab:ht-bins}}
   \centering
-  \small
+  \footnotesize
   \begin{tabular}{ lrrrrrrrrrrr }
     \hline
     \hline
@@ -147,35 +147,35 @@ for which the difference in \HT between each pseudo-jet, \deltaHT, is minimised.
 
 The \alphat variable leads to a correlation between the two variables of \mht
 and \deltaHT. This relationship is demonstrated in Figure~\ref{fig:alphat_corr}
-by the black contours of constant \alphat. Different physics processes
-will populate various regions of this plane, as also shown in the MC study in
-Figure~\ref{fig:alphat_corr}. Most notably QCD exhibits a strong
-correlation between the two variables at low values of \alphat
-(Figure~\ref{fig:alphat_corr_qcd}), while processes with real \met break this
-correlation, sitting also at higher values of \alphat
-(Figures~\ref{fig:alphat_corr_zinv} and \ref{fig:alphat_corr_t2cc}).
+by the black contours of constant \alphat. 
+% QCD mainly populates a region of low \mht, 
+% sitting below the contours of \alphat,
+% (Figure~\ref{fig:alphat_corr_qcd}), while processes with real \met sit also at
+% higher values of \mht and \alphat, as can be seen with both the SM and SUSY
+% processes (Figures~\ref{fig:alphat_corr_zinv} and \ref{fig:alphat_corr_t2cc}).
 
 \begin{figure}[t!]
   \centering
   \begin{subfigure}[t]{.46\textwidth}
-    \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_QCD.pdf}
+    \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_QCD_ge4j_done3.pdf}
     \caption{QCD}
     \label{fig:alphat_corr_qcd}
   \end{subfigure}
   \begin{subfigure}[t]{.46\textwidth}
-    \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_Zinv.pdf}
+    \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_Zinv_ge4j_done3.pdf}
     \caption{\zinv}
     \label{fig:alphat_corr_zinv}
   \end{subfigure}\\
   \begin{subfigure}[t]{.46\textwidth}
-    \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_T2cc_250_240.pdf}
+    \includegraphics[width=\textwidth]
+    {Figs/alphat/alphat_correlation_T2cc_250_240_ge4j_done3.pdf}
     \caption{Charm decay model (250, 240)}
     \label{fig:alphat_corr_t2cc}
   \end{subfigure}
   \caption{The correlation between \mht and \deltaHT for MC samples of QCD,
   \zinv and an example mass point of the charm decay signal model ($m_{\sTop} =
   250$~\gev, $m_{\chiz} = 240$~\gev). Contours of constant \alphat are shown in
-  black. Each axis is normalised according to the events \HT.}
+  black. Each axis is normalised according to the event \HT.}
   \label{fig:alphat_corr}
 \end{figure}
 
