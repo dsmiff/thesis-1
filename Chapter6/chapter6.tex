@@ -13,8 +13,8 @@ designed to mimic a specific background process observed in the signal region.
 These regions are orthogonal to the signal region due to the
 selection of leptons or photons - particles which are subsequently ignored such 
 that the selection kinematics of each event is kept similar to the corresponding
-process. For each sample, Transfer Factors (TF) are 
-constructed from yields in MC, to extract a prediction in the signal 
+process. For each region, Transfer Factors (TF) are 
+constructed from yields in MC in order to extract a prediction in the signal 
 region for a given process. The total EWK prediction is comprised of a prediction
 of lost-lepton backgrounds originating predominantly from \ttbar + jets and \wj processes,
 and a prediction of \zj, with the latter being treated differently according to \nb.
@@ -73,7 +73,7 @@ N_{pred}^{signal}\big(\HT, \nj, \nb\big) = N_{data}^{control}\big(\HT, \nj, \nb\
 \label{eq:transfer_equation}
 \end{equation}
 % 
-The control samples are statistically independent and each used for predicting 
+The control regions are statistically independent and each used for predicting 
 specific background processes.
 
 MC yields, following the application of all MC correction factors described in
@@ -104,7 +104,7 @@ N_{MC}^{control}\big(\HT, \nj, \nb\big) = \numw + \numtt + \numdy + \numgam +
 % 
 The numerator is constructed according to the b tag multiplicity being 
 considered. Table~\ref{tab:control_prediction_summary} summarises the control
-samples used to determine a background prediction as a function of each analysis
+regions used to determine a background prediction as a function of each analysis
 category. For $\nb \leq 1$, the \mj control region is used to predict 
 lost-lepton background, e.g. \ttbar + jets and W + jets. All MC samples
 are therefore used with the exception of \zinv + jets:
@@ -116,14 +116,14 @@ N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1\big) = \numw + \numtt + \numdy + \numga
 \end{equation}
 % 
 In this \nb region the \zinv + jets component of the background is predicted
-with the \mmj and \gj control samples, using only the \zinv MC yields:
+with the \mmj and \gj control regions, using only the \zinv MC yields:
 % 
 \begin{equation}
 N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1 \big) = \numzinv .
 \label{eq:trans_fact_num_le1b_z}
 \end{equation}
 %
-For $\nb \geq 2$, the \mj sample is used to produce a prediction for all 
+For $\nb \geq 2$, the \mj region is used to produce a prediction for all 
 SM processes, including \zinv, and therefore the numerator of the TF is defined as:
 % 
 \begin{equation}
@@ -138,16 +138,16 @@ or equivalently:
 N_{MC}^{signal}\big(\HT, \nj, \nb \geq 2 \big) = N_{MC}^{signal}\big(\HT, \nj, \nb \leq 1\big) + \numzinv .
 \end{equation}
 
-The \mmj and \gj control samples are not used beyond the $\nb \leq 1$ categories
-due to the statistical limitations of such samples at high b tag multiplicities.
+The \mmj and \gj control regions are not used beyond the $\nb \leq 1$ categories
+due to the statistical limitations of such regions at high b tag multiplicities.
 
-It should be noted that although two separate control samples are 
+It should be noted that although two separate control regions are 
 used to estimate the \zinv background contribution, the result of each is
 considered by the global likelihood fit to produce the final background
 prediction (described in Section\ref{sec:results_likelihood}).
 
 \begin{table}[ht!]
-  \caption{The control samples used to produce SM background predictions for each 
+  \caption{The control regions used to produce SM background predictions for each 
   analysis category (\nb, \nj).}
   \label{tab:control_prediction_summary}
   \centering
@@ -155,7 +155,7 @@ prediction (described in Section\ref{sec:results_likelihood}).
   \begin{tabular}{ lll }
     \hline
     \hline
-    \nj     & \nb     & Control samples \\ [1.0ex]
+    \nj     & \nb     & Control regions \\ [1.0ex]
     \hline
     2--3    & 0       & \mj, \mmj, \gj  \\
     2--3    & 1       & \mj, \mmj, \gj  \\
@@ -182,22 +182,22 @@ in Section\ref{sec:closure_tests}.
 
 
 %********************************** % Second Section  *************************************
-\section{Control samples}  %Section - 1.2
+\section{Control regions}  %Section - 1.2
 \label{sec:background_control}
 
-Control sample definitions are designed such that they are as kinematically
+Control region definitions are designed such that they are as kinematically
 similar as possible
 to the signal region, with the exception of a selected `tag' muon or 
 photon. The `tagged' particle is then subsequently ignored for the calculation of all analysis 
 variables, such as \HT, \met, \alphat etc.
 Other differences include mass-window
-and minor kinematic cuts, aimed at enriching the control samples in certain processes.
+and minor kinematic cuts, aimed at enriching the control regions in certain processes.
 % The samples themselves are statistically independent, and orthogonal to the 
 % signal region
-Due to the selection of the tagged lepton or photon, the control samples are
+Due to the selection of the tagged lepton or photon, the control regions are
 orthogonal to the signal region and therefore minimise any
 possible signal contamination. However, a full treatment of the
-signal-contamination and sample cross-correlation is taken into account in the
+signal-contamination and region cross-correlation is taken into account in the
 background fit and final limit-setting. 
 
 The following sections will describe the control regions in more detail,
@@ -207,7 +207,7 @@ and their trigger requirements.
 \subsection{\mj}
 \label{sec:mujets_control_sample}
 
-The \mj control sample is constructed by selecting a single muon with associated 
+The \mj control region is constructed by selecting a single muon with associated 
 jets. This region is used to predict backgrounds from processes such as \wj and
 \ttj. This covers not only the leptonic decays of such productions, where the 
 lepton is not identified for whatever reason, but also the hadronic decays of tau 
@@ -311,9 +311,9 @@ region as possible, other cuts such as the single isolated track veto and
     }
 \end{figure}
 
-Specifically for the \mj (and \mmj) control samples, no \alphat requirement is
+Specifically for the \mj (and \mmj) control regions, no \alphat requirement is
 made in order to increase the statistics and therefore the predictive power of 
-the samples. This is possible as other requirements, in particular the 
+the regions. This is possible as other requirements, in particular the 
 requirement of
 a single muon and a specific invariant mass window, greatly reduce any potential
 contamination from QCD MJ events. The viability of this is specifically tested 
@@ -324,15 +324,15 @@ are shown in Figure~\ref{fig:datamc_mu_inc}.
 
 
 \subsection{\mmj}
-The \mmj sample is constructed to predict background contributions from \zinv 
+The \mmj region is constructed to predict background contributions from \zinv 
 decays, mimicking this decay via the kinematically similar $Z\to\mu\mu + jets$
 process where both muons are subsequently ignored.
-The sample is used to provide low \HT coverage for the \zinv background 
-prediction, where the \gj sample (Section\ref{sec:gjets_control_sample})
+The region is used to provide low \HT coverage for the \zinv background 
+prediction, where the \gj region (Section\ref{sec:gjets_control_sample})
 is unable to do so.
 
 \subsubsection{Triggers}
-The trigger used is the same as for the \mj sample, as described in
+The trigger used is the same as for the \mj region, as described in
 Section\ref{sec:mujets_control_trigger}. Trigger efficiencies are significantly
 improved for the dimuon selection given that either of the muons 
 can cause a positive trigger decision, as shown in Table~\ref{tab:dimuon-trig-effs}. 
@@ -405,14 +405,14 @@ efficiencies.
     are for $\HT>200$~\gev, $\nj\geq2, \nb\geq0$.}
 \end{figure}
 
-The selection for the \mmj sample is very similar to that of the \mj sample, 
+The selection for the \mmj region is very similar to that of the \mj region, 
 described in Section\ref{sec:mujets_control_selection}, with differences chosen
-to enrich the sample in Z bosons decaying to pairs of muons in the kinematic 
+to enrich the region in Z bosons decaying to pairs of muons in the kinematic 
 phase space of the signal region. Two tight isolated muons are selected, each 
 with $\Pt > 30$~\gev and $|\eta| < 2.1$. Their invariant mass is required to be
 tight around $m_Z$, $m_Z - 25 < M_{\mu_1\mu_2} < m_Z + 25$~\gev. Furthermore, a 
 veto is made on events satisfying $\Delta R(\mu_i, jet_j) < 0.5$, for every muon 
-$i$ and every jet $j$. Similarly as in the \mj sample selection, no \alphat
+$i$ and every jet $j$. Similarly as in the \mj region selection, no \alphat
 requirement is made.
 
 Example distributions of transverse mass of the muon pair, $M_T(\mu\mu)$, and
@@ -420,12 +420,12 @@ $\mu_2$ \Pt for this selection are shown in Figure~\ref{fig:datamc_mumu_inc}.
 
 \subsection{\gj}
 \label{sec:gjets_control_sample}
-The \gj sample is used to predict the \zinv background contribution, given its 
+The \gj region is used to predict the \zinv background contribution, given its 
 similar kinematics when the $\gamma$ is ignored from the event, as well as a
 larger
 production cross section relative to \mmj. Due to trigger thresholds, the \gj
-sample cannot make predictions for $\HT<375$~\gev, and so is complimentary to
-the \mmj sample prediction.
+region cannot make predictions for $\HT<375$~\gev, and so is complimentary to
+the \mmj region prediction.
 
 \subsubsection{Triggers}
 Events are collected using the \verb!HLT_Photon150! trigger. The trigger's 
@@ -638,8 +638,8 @@ in Figure~\ref{fig:datamc_pho_inc}.
 In order to probe the levels at which the transfer factors are sensitive to 
 relevant uncertainties, a statistically powerful ensemble of Closure Tests
 (CT's) have been designed. The CT method works by constructing a TF to
-extrapolate from one sub-region of a particular control sample into another 
-control sample sub-region. This prediction method is identical to that described
+extrapolate from one sub-region of a particular control region into another 
+control region sub-region. This prediction method is identical to that described
 in Section\ref{sec:background_overview} with the difference that a prediction is
 made from a control region to another control region, rather than to the signal
 region. In doing so, tests can be
@@ -681,17 +681,17 @@ numerous other tests are also considered, but that these eight represent those
 deemed most important to the background prediction and are therefore used to
 derive related uncertainties.
 
-The first test, represented by open circles, tests the modelling of the \alphat 
-variable in the \mj control sample. In the analysis a prediction is made 
-between the \mj sample, which has no \alphat requirement, and the 
+The first test, represented by open circles, inspects the modelling of the \alphat 
+variable in the \mj control region. In the analysis a prediction is made 
+between the \mj region, which has no \alphat requirement, and the 
 signal region, with its tight \alphat requirement. This particular test probes
 the validity of the prediction between the `bulk' of the \alphat distribution in
-the control sample
+the control region
 and the `tail' of the distribution in the signal region. A similar test, not
-shown here, is performed for the \mmj control sample.
+shown here, is performed for the \mmj control region.
 
 The next two tests, represented by crosses and open squares, probe the
-different b tag multiplicities in the \mj control sample. The b tag 
+different b tag multiplicities in the \mj control region. The b tag 
 requirements greatly changes the relative admixture of, for example, \wj (\nb=0)
 and \ttj (\nb=1) events.
 It is important to note that this test is 
@@ -709,13 +709,13 @@ multiplicities. These are however already well studied by the muon \emph{POG}
 using data-driven techniques.
 
 As described in Section\ref{sec:background_overview}, the \zinv prediction 
-is made from both the \gj and \mmj samples, and so a test is constructed to 
+is made from both the \gj and \mmj regions, and so a test is constructed to 
 predict between these two orthogonal control regions, as shown by the open 
 crosses.
 
 The final three tests, indicated by open stars, triangles and diamonds, make 
 predictions between the two different jet multiplicity categories in each 
-control sample, thereby 
+control region, thereby 
 testing jet reconstruction and modelling. These tests are also considered 
 conservative as the analysis only predicts between identical \nj categories in 
 the control and signal regions.
@@ -833,7 +833,7 @@ adding to the conclusion that this is indeed due to a statistical fluctuation.
 \begin{table}[!ht]
   \caption{Results of zeroeth (i.e. constant) and first order (i.e. linear) fits
   for the three sets of closure tests probing the accuracy of jet multiplicity 
-  modelling in MC, for each control sample.} 
+  modelling in MC, for each control region.} 
   \label{tab:syst-fits-njet}
   \centering
   \footnotesize
@@ -842,7 +842,7 @@ adding to the conclusion that this is indeed due to a statistical fluctuation.
     \hline
            &                   & \multicolumn{4}{c}{Constant fit} &          & \multicolumn{2}{c}{Linear fit}                        \\
     \cline{3-6}\cline{8-9}
-    Sample & Symbol            & Best fit value                   & $\chi^2$ & d.o.f. & $p$-value &  & Slope ($10^{-4}$) & $p$-value \\
+    Region & Symbol            & Best fit value                   & $\chi^2$ & d.o.f. & $p$-value &  & Slope ($10^{-4}$) & $p$-value \\
     \hline                                                                                                            
     \mj    & Star              & $-0.08 \pm 0.01$                 & 9.3      & 10     & 0.50      &  & $0.6 \pm 0.7$     & 0.48      \\ 
     \gj    & Inverted triangle & $ 0.09 \pm 0.04$                 & 3.7      & 7      & 0.82      &  & $5.1 \pm 3.2$     & 0.98      \\ 
