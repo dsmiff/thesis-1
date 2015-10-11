@@ -4,7 +4,7 @@
 
 General:
  ☐ check why references are starting at SUSY Primer
- ☐ Add in section describing exactly what my contributions were - couple of pages at the start?
+ ✔ Add in section describing exactly what my contributions were - couple of pages at the start? @done (15-10-07 16:00)
  ☐ tighten up the use of 'control region' and 'control sample' interchangeably
  ☐ it's!!
 
@@ -13,35 +13,32 @@ Abstract:
 Chapter 1 - Introduction:
 
 Chapter 2 - Theory:
- ☐ add the most relevant 4body decay feynman diagram
- ☐ state charm and bquark gen plots are mine (or infer...)
+ ✔ add the most relevant 4body decay feynman diagram @done (15-10-11 14:28)
+ ✔ state charm and bquark gen plots are mine (or infer...) @done (15-10-11 14:28)
  ☐ fabrizio comment on SMS 3rd gen (pg 12)
 
 Chapter 3 - Detector:
 
 Chapter 4 - Objects:
- ☐ state explicitly that I implemented SITV?
+ ✔ state explicitly that I implemented SITV? @done (15-10-07 16:00)
 
 Chapter 5 - Analysis:
- ☐ why is QCD 2D distribution not peaked around 0.5? maybe include 1D projection? @high
- ☐ repear the alphaT correlation plots - something seems wrong!
- ☐ HT-slash instead of MHT on the 6.1 axes
- ☐ what's the deal with spikes in diff trig turn-ons? @high
-   - difference between online and offline objects/alphaT calculation?
- ☐ why the pedestal in the cumulative turn-ons? @high
-   - difference between online and offline objects/alphaT calculation?
- ☐ what do the example plots show?
+ ✔ why is QCD 2D distribution not peaked around 0.5? maybe include 1D projection? @high @done (15-10-11 14:28)
+ ✔ repear the alphaT correlation plots - something seems wrong! @done (15-10-11 14:28)
+ ✔ HT-slash instead of MHT on the 6.1 axes @done (15-10-11 14:28)
+ ✔ what's the deal with spikes in diff trig turn-ons? @high @done (15-10-05 13:36)
+   ✔ difference between online and offline objects/alphaT calculation? @done (15-10-11 14:28)
+ ✔ what do the example plots show? @done (15-10-05 13:36)
 
 Chapter 5_2 - Samples:
 
 Chapter 6 - Background Estimation:
  ☐ think of a better way to argue away the two dodgy bins!! @high @critical
    - maybe remove and not draw attention to it...
- ☐ is the minBiasDPhi under the assumption that the mis-measurement effects only a single jet? @high
- ☐ explain biasDPhi better - using diagrams?
+ ✔ is the minBiasDPhi under the assumption that the mis-measurement effects only a single jet? @high @done (15-10-11 14:28)
+ ✔ explain biasDPhi better - using diagrams? @done (15-10-07 15:28)
 
 Chapter 7 - Results:
- ✔ explain in more detail what we see in the HT fits @done (15-10-05 13:01)
  ☐ describe the 8.1 plots in more detail - e.g. what is the 'profile likelihood method' @high
  ☐ what do we learn from the results?
 
@@ -58,6 +55,9 @@ Defintions:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ why the pedestal in the cumulative turn-ons? @high @done (15-10-05 13:26) @project(Chapter 5 - Analysis)
+ ✔ difference between online and offline objects/alphaT calculation? @done (15-10-05 13:26) @project(Chapter 5 - Analysis)
+ ✔ explain in more detail what we see in the HT fits @done (15-10-05 13:01) @project(Chapter 7 - Results)
  ✔ update to newer CMS summary plot @done (15-10-05 10:35) @project(Chapter 2 - Theory)
  ✔ think about the ordering - describe control samples first, then the procedure? @high @done (15-10-05 12:31) @project(Chapter 6 - Background Estimation)
  ✔ why are the fit results (assume the control samples?) apparently 'too good'? @high @critical @done (15-10-05 13:01) @project(Chapter 7 - Results)
