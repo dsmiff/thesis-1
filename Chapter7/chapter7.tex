@@ -71,15 +71,15 @@ r_{\mu}^i = \frac{\mcm}{\mcttw},
 and so likelihoods are written as:
 % 
 \begin{equation}
-L_{\gamma} = \prod_i \text{Pois}(n_{\gamma}^i | \rhopz \cdot r^i_{\gamma} \cdot Z^i_{\text{inv}}),
+L_{\gamma} = \prod_i \text{Pois}(n_{\gamma}^i | \rhopz \cdot r^i_{\gamma} \cdot \text{Z}^i_{\text{inv}}),
 \label{eq:lterm_pho}
 \end{equation}
 \begin{equation}
-L_{\mu\mu} = \prod_i \text{Pois}(n_{\mu\mu}^i | \rhommz \cdot r^i_{\mu\mu} \cdot Z^i_{\text{inv}}),
+L_{\mu\mu} = \prod_i \text{Pois}(n_{\mu\mu}^i | \rhommz \cdot r^i_{\mu\mu} \cdot \text{Z}^i_{\text{inv}}),
 \label{eq:lterm_mumu}
 \end{equation}
 \begin{equation}
-L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot r^i_{\mu} \cdot ttW^i + s_{\mu}^i).
+L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot r^i_{\mu} \cdot \text{ttW}^i + s_{\mu}^i).
 \label{eq:lterm_mu}
 \end{equation}
 % 
@@ -122,11 +122,11 @@ For $\nb \geq 2$ categories, the \mj control region is used to predict \zinv and
 \ttw combined, giving:
 % 
 \begin{equation}
-{r'}^i_{\mu} = \frac{\mcm}{MC^i_{\ttbar + W + Z_{\text{inv}}}};
+{r'}^i_{\mu} = \frac{\mcm}{MC^i_{\ttbar + W + \text{Z}_{\text{inv}}}};
 \end{equation}
 % 
 \begin{equation}
-L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot {r'}_{\mu}^i \cdot {EWK}^i + s_{\mu}^i).
+L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot {r'}_{\mu}^i \cdot \text{EWK}^i + s_{\mu}^i).
 \end{equation}
 % 
 Terms corresponding to the \mmj and \gj regions are subsequently dropped.
@@ -186,9 +186,9 @@ Table~\ref{tab:nuisance_param_summary}.
     \multirow{2}{*}{11 \HT bins, ($\mu, \mu\mu, \gamma$)}    & \multirow{2}{*}{\njlow/\njhigh, \nb = 0, 1}&
     $\{EWK^i, \fzinv\}_{i=0}^{10}, \{ \rhopz \}_{i=3}^{6},$\\
     && $\{ \rhommz, \rhomw \}_{i=0}^{6}$  \\
-    8 \HT bins, ($\mu$)                     & \njlow/\njhigh, \nb = 2, 3, $\geq$4    & $\{EWK^i, \fzinv\}_{i=0}^{
+    8 \HT bins, ($\mu$)                     & \njlow/\njhigh, \nb = 2, 3, $\geq$4    & $\{\text{EWK}^i, \fzinv\}_{i=0}^{
     8}, \{\rhomwz \}_{i=0}^{6}$  \\
-    3 \HT bins, ($\mu$)                     & \njlow/\njhigh, \nb = 2, 3, $\geq$4    & $\{EWK^i\}_{i=0}^{3},
+    3 \HT bins, ($\mu$)                     & \njlow/\njhigh, \nb = 2, 3, $\geq$4    & $\{\text{EWK}^i\}_{i=0}^{3},
     \{\rhomwz \}_{i=0}$\\
     \hline
     \hline
