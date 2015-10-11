@@ -407,10 +407,17 @@ the control region dominate the fit.
 % quantile of the distribution of maximised likelihood values for an ensemble of
 % pseudo-experiments.
 
-Pulls and p-values are determined using a profile-likelihood method for the
-SM only hypothesis. They are
-summarised for various different analysis categories and individual \HT bins
-in the plots shown in Figure~\ref{fig:pull_analysis}.
+The goodness-of-fit of the SM-only hypothesis is determined using a profile-likelihood method
+taken from \cite{Cowan:358560}.
+The observed maximised likelihood value, $L^{data}_{max}$, is used as a
+PDF to generate
+pseudo-experiments for which the likelihood is again maximised giving the 
+value $L_{max}$. These
+values are entered into a histogram from which the $L^{data}_{max}$ quantile is taken, 
+interpreted as the p-value and further converted into a observed significance,
+or pull.
+The p-values and pulls are summarised for various different analysis categories and individual
+\HT bins in the plots shown in Figure~\ref{fig:pull_analysis}.
 
 The 1D distribution of the
 pulls is shown in Figure~\ref{fig:pull_distro}, with a Gaussian fit (red)
