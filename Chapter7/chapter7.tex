@@ -53,10 +53,10 @@ contribution and $\text{ttW}^i$ is the number of expect events from the W boson
 production and top quark decay contribution, all in the $i^{th}$ bin. The variable 
 \fzinv is allowed to float between 0 and 1.
 
-EWK backgrounds are predicted using sideband control samples and transfer 
+EWK backgrounds are predicted using sideband control regions and transfer 
 factors (chapter~\ref{ch:background}). Let $n_{\gamma}^i$, $n_{\mu}^i$ and
 $n_{\mu\mu}^i$ be
-the observed event counts in the \gj, \mj and \mmj control samples, 
+the observed event counts in the \gj, \mj and \mmj control regions, 
 respectively, with corresponding yields in MC: \mcp, \mcm, \mcmm. These are
 further separated into contributions from \zinv, \mczinv, and \text{ttW},
 \mcttw. Purely as an arbitrary convention, transfer factors are defined as
@@ -89,7 +89,7 @@ for $ttW^i$, all considered simultaneously through the relationships defined in
 equations~\ref{eq:ewk_frac_z} and \ref{eq:ewk_frac_ttw}.
 
 The terms \rhopz, \rhommz and \rhomw are correction factors accommodating the
-systematic uncertainties associated with the control sample based background 
+systematic uncertainties associated with the control region based background 
 predictions. The relative uncertainties are derived in
 Section~\ref{sec:background_systematics} and represented by the terms \sigmapz, \sigmammz
 and \sigmamw, their 
@@ -118,7 +118,7 @@ These terms are combined as:
 L_{EWK\text{ syst.}} = L_{\gamma\text{ syst.}} \times L_{\mu\mu\text{ syst.}} \times L_{\mu\text{ syst.}}.
 \end{equation}
 % 
-For $\nb \geq 2$ categories, the \mj control sample is used to predict \zinv and
+For $\nb \geq 2$ categories, the \mj control region is used to predict \zinv and
 \ttw combined, giving:
 % 
 \begin{equation}
@@ -129,7 +129,7 @@ For $\nb \geq 2$ categories, the \mj control sample is used to predict \zinv and
 L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot {r'}_{\mu}^i \cdot {EWK}^i + s_{\mu}^i).
 \end{equation}
 % 
-Terms corresponding to the \mmj and \gj samples are subsequently dropped.
+Terms corresponding to the \mmj and \gj regions are subsequently dropped.
 
 \subsection{Signal Contribution}
 
@@ -140,8 +140,8 @@ $\epsilon^i_{\mu}$ are the signal acceptances of the hadronic and muon
 selections, respectively, for the given signal model. Finally, let $\delta$ be 
 the relative systematic uncertainty on that signal acceptance, and $\rho_{sig}$ 
 be the corrective factor to the signal yield floated to accommodate this uncertainty. 
-Therefore the yield of signal events for the hadronic sample, $s^i$, and the 
-yield of signal events in the muon sample (i.e. ``signal contamination''),
+Therefore the yield of signal events for the hadronic region, $s^i$, and the 
+yield of signal events in the muon region (i.e. ``signal contamination''),
 $s^i_{\mu}$, can be written as:
 % 
 \begin{equation}
@@ -170,7 +170,7 @@ L^k_{total} = L^k_{hadronic} \times L^k_{\mu} \times L^k_{\gamma} \times L^k_{\m
 \end{equation}
 % 
 The number of nuisance parameters varies between different analysis categories, 
-dependent on the number of \HT bins and control samples, as summarised in
+dependent on the number of \HT bins and control regions, as summarised in
 Table~\ref{tab:nuisance_param_summary}.
 
 \begin{table}[ht!]
@@ -234,7 +234,7 @@ L = L_{signal} \times \prod_k L^k_{total} .
 \section{Fit Results}  %Section - 1.2
 \label{sec:results_fit}
 The likelihood model described in Section~\ref{sec:results_likelihood} is used
-to relate the observations in the signal and control samples, accommodate the
+to relate the observations in the signal and control regions, accommodate the
 calculated background systematic uncertainties, and allow for the presence of
 any potential signal. In order to test the compatibility with a Standard
 Model only hypothesis, signal contribution is set to zero and the likelihood is
@@ -250,7 +250,7 @@ in the following sections.
 
 \subsection{Fit without Signal region}
 \label{sec:results_fit_green}
-An ``a priori'' fit is made by considering only yields from the control samples,
+An ``a priori'' fit is made by considering only yields from the control regions,
 and not data observations in the hadronic signal region. The results of this fit
 are shown in \cref{fig:green_fits_0b_ge4j,fig:green_fits_1b_ge4j,fig:green_fits_2b_ge4j,fig:green_fits_3b_ge4j,fig:green_fits_ge4b_ge4j,fig:green_fits_0b_le3j,fig:green_fits_1b_le3j,fig:green_fits_1b_le3j}
 and summarised in Table~\ref{tab:ensemble-summary-priori}. As data
@@ -272,8 +272,8 @@ and summarised in Table~\ref{tab:ensemble-summary-posteriori}. Good agreement
 between the SM expectation and data are seen throughout the various analysis
 categories, both in the signal and control regions. In this fit scenario,
 observations in the signal region can affect the
-fit in the control regions. This is most noticeable in the \mmj and \gj samples,
-but only marginally in the \mj sample where the relatively large systematics of
+fit in the control regions. This is most noticeable in the \mmj and \gj regions,
+but only marginally in the \mj region where the relatively large systematics of
 the control region dominate the fit. 
 
 \begin{landscape}
@@ -443,31 +443,31 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_0b_le3j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_0b_le3j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/muon_0b_le3j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/mumu_0b_le3j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mmj sample}
+    \caption{\mmj region}
   \end{subfigure}\\
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/photon_0b_le3j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\gj sample}
+    \caption{\gj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -483,31 +483,31 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_1b_le3j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_1b_le3j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/muon_1b_le3j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/mumu_1b_le3j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mmj sample}
+    \caption{\mmj region}
   \end{subfigure}\\
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/photon_1b_le3j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\gj sample}
+    \caption{\gj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -523,19 +523,19 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_2b_le3j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_2b_le3j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/muon_2b_le3j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -551,31 +551,31 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_0b_ge4j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_0b_ge4j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/muon_0b_ge4j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/mumu_0b_ge4j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mmj sample}
+    \caption{\mmj region}
   \end{subfigure}\\
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/photon_0b_ge4j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\gj sample}
+    \caption{\gj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -591,31 +591,31 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_1b_ge4j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_1b_ge4j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/muon_1b_ge4j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/mumu_1b_ge4j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mmj sample}
+    \caption{\mmj region}
   \end{subfigure}\\
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/photon_1b_ge4j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\gj sample}
+    \caption{\gj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -631,19 +631,19 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_2b_ge4j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_2b_ge4j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/muon_2b_ge4j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -660,19 +660,19 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_3b_ge4j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_3b_ge4j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/muon_3b_ge4j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -688,19 +688,19 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_ge4b_ge4j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/hadronic_ge4b_ge4j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/greenBand/single_plots/muon_ge4b_ge4j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -720,31 +720,31 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_0b_le3j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_0b_le3j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/muon_0b_le3j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/mumu_0b_le3j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mmj sample}
+    \caption{\mmj region}
   \end{subfigure}\\
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/photon_0b_le3j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\gj sample}
+    \caption{\gj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -760,31 +760,31 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_1b_le3j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_1b_le3j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/muon_1b_le3j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/mumu_1b_le3j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mmj sample}
+    \caption{\mmj region}
   \end{subfigure}\\
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/photon_1b_le3j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\gj sample}
+    \caption{\gj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -800,19 +800,19 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_2b_le3j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_2b_le3j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/muon_2b_le3j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -828,31 +828,31 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_0b_ge4j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_0b_ge4j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/muon_0b_ge4j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/mumu_0b_ge4j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mmj sample}
+    \caption{\mmj region}
   \end{subfigure}\\
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/photon_0b_ge4j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\gj sample}
+    \caption{\gj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -868,31 +868,31 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_1b_ge4j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_1b_ge4j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/muon_1b_ge4j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/mumu_1b_ge4j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mmj sample}
+    \caption{\mmj region}
   \end{subfigure}\\
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/photon_1b_ge4j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\gj sample}
+    \caption{\gj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -908,19 +908,19 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_2b_ge4j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_2b_ge4j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/muon_2b_ge4j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -937,19 +937,19 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_3b_ge4j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_3b_ge4j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/muon_3b_ge4j_logy.pdf}
       \put(12,20){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
@@ -965,19 +965,19 @@ compatible with statistical fluctuations.
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_ge4b_ge4j.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (linear scale)}
+    \caption{Hadronic region (linear scale)}
   \end{subfigure}
   \vspace{0.7cm}\begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/hadronic_ge4b_ge4j_logy.pdf}
       \put(44,62){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{Hadronic sample (logarithmic scale)}
+    \caption{Hadronic region (logarithmic scale)}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \begin{overpic}[width=\textwidth]{Figs/results/v0/blueBand/single_plots/muon_ge4b_ge4j_logy.pdf}
       \put(44,63){\includegraphics[width=1.5cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
     \end{overpic}
-    \caption{\mj sample}
+    \caption{\mj region}
   \end{subfigure}
   \caption{Observations in data for the signal and control
   regions of the analysis, compared to the result of the full likelihood model
