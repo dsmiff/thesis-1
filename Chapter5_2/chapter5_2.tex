@@ -63,12 +63,12 @@ production.
 
 The Parton Density Functions (PDF) of colliding protons are modelled according
 to the
-CTEQ6L1 distribution \cite{Pumplin:2002vw}, the matrix-element level hard-scatter
+CTEQ6L1 distribution~\cite{Pumplin:2002vw}, the matrix-element level hard-scatter
 performed by
-\MADGRAPHFIVE \cite{Alwall:2007st}, \POWHEGONE \cite{Alioli:2010xd} or \PYTHIASIX \cite{Sjostrand:2000wi}, with
+\MADGRAPHFIVE~\cite{Alwall:2007st}, \POWHEGONE~\cite{Alioli:2010xd} or \PYTHIASIX~\cite{Sjostrand:2000wi}, with
 outgoing partons showered in \PYTHIASIX. The
 produced generator level particles are then put through a full detector
-simulation in \GEANTFOUR \cite{Agostinelli2003250}, and detector hits `digitized'
+simulation in \GEANTFOUR~\cite{Agostinelli2003250}, and detector hits `digitized'
 in order to simulate the response of detector electronics. Prior to digitization, a number of
 `MinimumBias' events are overlayed in order to reproduce LHC run conditions. Event-level weights
 are applied to each simulated sample such that both the PU and equivalent
@@ -86,7 +86,7 @@ SF_{light,c,b} = \frac{\epsilon^{data}_{light,c,b}(\Pt, \eta)}{\epsilon^
 % 
 where $\epsilon^{X}_{light, c, b}$ represents \Pt and $\eta$ dependent
 b tagging efficiencies measured in data and MC. These are calculated and provided
-centrally by the BTAG \emph{POG} \cite{btagpog-scalefactors}.
+centrally by the BTAG \emph{POG}~\cite{btagpog-scalefactors}.
 
 \begin{landscape}
   \begin{center}
@@ -160,7 +160,7 @@ radiation (ISR), however supplementary samples were produced with up to three
 additional partons to allow for systematic studies into the effect on 
 analysis acceptance, as detailed in chapter~\ref{ch:interpretation}.
 
-Signal MC samples use the \FASTSIM detector simulation framework \cite{1742-6596-513-2-022012}
+Signal MC samples use the \FASTSIM detector simulation framework~\cite{1742-6596-513-2-022012}
 in order to simulate detector and electronics responses. In comparison to the
 \FULLSIM method used for all other MC backgrounds, \FASTSIM aims to greatly
 reduce the processing time required to generate samples by avoiding the
@@ -210,7 +210,7 @@ Leading order (LO) cross-sections are provided with
 these samples, which are translated into next-to-next-to-leading order (NNLO) 
 cross-sections using scaling-factors (k-factors) derived from corresponding 
 inclusive sample cross-sections (where $k = \sigma_{NNLO}/\sigma_{LO})$. However,
-recent CMS studies \cite{RobXS} have shown that the
+recent CMS studies~\cite{RobXS} have shown that the
 provided LO cross-sections for \HTpart binned samples can 
 be incorrect by up to 10\%. To ensure \HTpart binned samples are fully consistent
 with their corresponding inclusive samples, the following procedure is used:
@@ -220,7 +220,7 @@ with their corresponding inclusive samples, the following procedure is used:
 In the case of \zj where no such inclusive sample exists, k-factors are taken from the \dyj sample.
 \item Compare the distribution of \HTpart between the binned and inclusive samples. Again, \zj binned is compared to \dyj inclusive.
 \item Derive corrections to $\sigma_{NNLO}$ for each \HTpart sample such that the ratio between the \HTpart distributions
-is 1.0, or in the case of \zj vs. \dyj, the ratio of the PDG measured cross-sections 0.505 \cite{Agashe:2014kda}.
+is 1.0, or in the case of \zj vs. \dyj, the ratio of the PDG measured cross-sections 0.505~\cite{Agashe:2014kda}.
 \end{enumerate}
 
 \begin{figure}[b!]
@@ -303,7 +303,7 @@ been developed which considers individual quark-flavour tagging efficiencies and
 the underlying quark flavour distribution (both measured directly from
 simulation) to determine high-\nb event yields with a greater precision.
 This method is employed in this analysis, and while it will not be outlined here,
-it is described in detail elsewhere \cite{an_alphat_hcp_12fb}. 
+it is described in detail elsewhere~\cite{an_alphat_hcp_12fb}. 
 
 % Determining yields for analysis categories that require high numbers of b tagged
 % jets (\nb) 
