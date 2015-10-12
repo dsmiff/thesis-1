@@ -13,7 +13,7 @@
 
 Physics objects are observed as energy deposits in the various detector 
 subsystems throughout CMS. Specific definitions for the different 
-objects used in this analysis are provided by the Physics Object Groups (\emph{POGs})
+objects used in this analysis are provided by the Physics Object Groups (\emph{POG's})
 and are described in the following sections.
 
 
@@ -87,7 +87,7 @@ Figure~\ref {fig:btag_csv_discrim}.
 The ``Medium'' working point corresponds to a discriminator
 threshold of $>0.679$, and is used in this analysis. This working point
 corresponds
-to a mistag rate for gluons/light-quarks of 1\%, and a pT dependent efficiency
+to a mistag rate for gluons/light-quarks of 1\%, and a \Pt dependent efficiency
 in the range of 60-70\%, as shown in Figure~\ref{fig:btag_csv_eff}. Also
 shown in Figure~\ref{fig:btag_csv_eff} are the MC scale factors, $SF_b$, defined
 as the ratio of the CSV b tagging algorithm efficiency in data and MC, to be
@@ -210,7 +210,7 @@ selection in the \gj control region and as a veto in the hadronic signal region.
 %********************************** % Third Section  *************************************
 \section{Electrons}  %Section - 1.3
 \label{sec:objects_electrons}
-The Electron \emph{POGs} Loose working point ID~\cite{ref:electronidtwiki} is
+The Electron \emph{POG's} Loose working point ID~\cite{ref:electronidtwiki} is
 used in this analysis to veto 
 electrons from all areas of the analysis. This cut based identification is 
 defined separately for the barrel and endcap regions of the detector, uses
@@ -280,7 +280,8 @@ known as energy sums. The definitions of the energy sum variables are:
 \end{equation}
 % 
 namely the total transverse energy, total missing transverse energy (`MET'), total transverse
-hadronic energy, total missing transverse energy vector and total missing transverse hadronic energy (`MHT').
+hadronic energy, total missing transverse hadronic energy vector and total missing transverse
+hadronic energy (`MHT').
 These are calculated on the fly in the analysis using identified objects,
 with the exception of \met which is constructed from PF candidates and subject to type-I
 corrections (jets used for \met calculation are subject to prescribed Jet Energy
@@ -331,8 +332,8 @@ estimator of the event's missing energy.
 \section{Single Isolated Tracks}  %Section - 1.7
 \label{sec:objects_sit}
 Single Isolated Tracks are used to identify hadronically decaying $\tau$ leptons
-and leptonically decaying W bosons where the corresponding lepton has failed
-identification for whatever reason.
+and leptonically decaying W bosons where the corresponding lepton has failed the
+identification criteria for whatever reason.
 Summarised in Table~\ref{tab:sit-id}, the selection is based on PF
 candidates. This ID is used as
 a veto in all selections, with the selected `tag' lepton ignored in the \mj and
@@ -353,7 +354,7 @@ a veto in all selections, with the selected `tag' lepton ignored in the \mj and
     track
     from primary vertex. \\
     Relative Track Isolation    & $<0.1$        & Isolation relative to other PF 
-    candidate tracks in cone of $\Delta R <0.3$ \\
+    candidate tracks in cone of $\Delta R <0.3$. \\
     \hline
     \hline
   \end{tabular}
