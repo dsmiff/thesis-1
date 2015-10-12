@@ -54,20 +54,20 @@ combined integrated luminosities of 18.48~\fb, 19.13~\fb and 19.12~\fb, respecti
 
 \section{MonteCarlo Background and Signal samples}
 
-The full list of simulated MonteCarlo (MC) samples used in this analysis are listed in 
+The full set of simulated MonteCarlo (MC) samples used in this analysis are listed in 
 Table~\ref{tab:mc-sm} along with the number of events, next-to-next-to-leading 
 order (NNLO) cross section and an effective integrated luminosity for each. These
 samples contain simulated events of relevant sources of SM backgrounds, specifically
-\ttbar, photon, W boson and Z boson production, each with associated jets, and QCD
-production. 
+\ttbar, photon, W boson and Z boson production, each with associated jets, as well as
+dedicated samples of QCD production. 
 
-The Parton Density Functions (PDF) of colliding protons are modelled according
+The Parton Density Function (PDF) of colliding protons are modelled according
 to the
 CTEQ6L1 distribution~\cite{Pumplin:2002vw}, the matrix-element level hard-scatter
 performed by
 \MADGRAPHFIVE~\cite{Alwall:2007st}, \POWHEGONE~\cite{Alioli:2010xd} or \PYTHIASIX~\cite{Sjostrand:2000wi}, with
 outgoing partons showered in \PYTHIASIX. The
-produced generator level particles are then put through a full detector
+produced generator level particles are then input into a full detector
 simulation in \GEANTFOUR~\cite{Agostinelli2003250}, and detector hits `digitized'
 in order to simulate the response of detector electronics. Prior to digitization, a number of
 `MinimumBias' events are overlayed in order to reproduce LHC run conditions. Event-level weights
@@ -84,8 +84,8 @@ SF_{light,c,b} = \frac{\epsilon^{data}_{light,c,b}(\Pt, \eta)}{\epsilon^
 \label{eq:btag_scalefactor}
 \end{equation}
 % 
-where $\epsilon^{X}_{light, c, b}$ represents \Pt and $\eta$ dependent
-b tagging efficiencies measured in data and MC. These are calculated and provided
+where $\epsilon^{data}_{light, c, b}$ and $\epsilon^{MC}_{light, c, b}$ represent \Pt and $\eta$ dependent
+b tagging efficiencies measured in data and MC respectively. These are calculated and provided
 centrally by the BTAG \emph{POG}~\cite{btagpog-scalefactors}.
 
 \begin{landscape}
@@ -151,7 +151,7 @@ centrally by the BTAG \emph{POG}~\cite{btagpog-scalefactors}.
 \end{landscape}
 
 Interpretations are made using signal MC samples, each representing a scan in 
-the phase space of a specific SMS model. The samples used are listed in
+the phase space of a specific SMS model. These samples are listed in
 Table~\ref{tab:mc-signal}. Each sample is generated at the parton level using \MADGRAPHFIVE and then
 decayed using \PYTHIASIX. Diagrams for up to two additional
 partons are simulated
@@ -164,7 +164,7 @@ Signal MC samples use the \FASTSIM detector simulation framework~\cite{1742-6596
 in order to simulate detector and electronics responses. In comparison to the
 \FULLSIM method used for all other MC backgrounds, \FASTSIM aims to greatly
 reduce the processing time required to generate samples by avoiding the
-CPU-intensive full detector simulation using the \GEANT framework, instead
+CPU-intensive full detector simulation of the \GEANT framework, instead
 employing detector response parametrisations tuned using \FULLSIM samples.
 
 \begin{landscape}
@@ -220,7 +220,7 @@ with their corresponding inclusive samples, the following procedure is used:
 In the case of \zj where no such inclusive sample exists, k-factors are taken from the \dyj sample.
 \item Compare the distribution of \HTpart between the binned and inclusive samples. Again, \zj binned is compared to \dyj inclusive.
 \item Derive corrections to $\sigma_{NNLO}$ for each \HTpart sample such that the ratio between the \HTpart distributions
-is 1.0, or in the case of \zj vs. \dyj, the ratio of the PDG measured cross-sections 0.505~\cite{Agashe:2014kda}.
+is 1.0, or in the case of \zj vs. \dyj, the ratio of the PDG measured cross-sections, 0.505~\cite{Agashe:2014kda}.
 \end{enumerate}
 
 \begin{figure}[b!]
@@ -241,7 +241,7 @@ is 1.0, or in the case of \zj vs. \dyj, the ratio of the PDG measured cross-sect
   \label{fig:xsec_study}
 \end{figure}
 
-The \HTpart distributions before and after this procedure are shown in
+Example \HTpart distributions before and after this procedure are shown in
 Figure~\ref{fig:xsec_study}, where steps are clearly visible in the
 ratio prior to the corrections, and then removed following corrections.
 
@@ -260,7 +260,8 @@ in the $150 \leq \HT < 200$~\gev sideband region. For the three main EWK backgro
 later in chapter~\ref{ch:background}), jet and b-tagged jet multiplicity, is used to ensure
 a pure selection of a given process. The selections and their purities are listed in 
 Table~\ref{tab:ht_sideband}. Also listed are the derived correction factors to
-be applied to MC, indicating the level of disagreement present between data and MC.
+be applied to MC, indicating the level of disagreement present between data and MC
+observed in the sideband region.
 
 \begin{table}[!ht]
   % \caption{Correction factors determined as the ratio of yields in data to
