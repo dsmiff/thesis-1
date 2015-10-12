@@ -23,7 +23,7 @@ categories, but an inclusive \HT selection.
 % injection from specific mass points.
 The four most sensitive analysis categories are selected after an inspection of
 each categories expected limit reach. This is tested by setting data observations
-as equal to the result of the `a priori' fit, so as to not allow the signal
+as equal to the result of the `a-priori' fit, so as to not allow the signal
 observation in data to influence the result.
 
 \subsection{Charm decay}
@@ -153,7 +153,6 @@ near the limits of sensitivity.
   $\nj \geq 2$  & 12.99 & 59.52 \\
   MET Filters & 12.99  & 59.52 \\
   Vertex Noise Filter & 12.99 & 59.52 \\
-  HBHE Noise Filter & 12.99 & 59.52 \\
   DeadECAL Filter & 10.77 & 43.88\\
   $n_{e} = 0$ & 10.77 & 43.88\\
   $n_{\gamma} = 0$  & 10.77 & 43.7\\
@@ -214,7 +213,6 @@ the presence of a jet originating from a real
     $\nj \geq 2$  & 10.80 & 32.33 \\
     MET Filters & 10.80 & 32.33 \\
     Vertex Noise Filter & 10.80 & 32.33 \\
-    HBHE Noise Filter & 10.80 & 32.33 \\
     DeadECAL Filter & 9.13 & 21.30 \\
     $n_{e} = 0$ & 9.13 & 19.70 \\
     $n_{\gamma} = 0$  & 9.13 & 19.55 \\
@@ -382,7 +380,7 @@ two, pair-produced generator level \sTop particles.
   \begin{tabular}{ lc }
     \hline
     \hline
-    $\Pt_{boost}$ (\gev)    & Correction Factor \\
+    boost $\Pt$ (\gev)    & Correction Factor \\
     \hline
     $0 <\Pt\leq120    $          & 1.00 \\
     $120 <\Pt\leq150  $          & 0.95 \\
@@ -411,7 +409,7 @@ conservative approach.
 Although signal systematics are considered in the likelihood model as a function
 of the \HT dimension of the 
 analysis, all results discussed here are representative of an inclusive
-selection of \HT>200~\gev.
+selection of \HT> 200~\gev.
 
 % \subsection{Jet energy scale}
 % The acceptance times signal efficiency is tested for sensitivity to jet energies by measuring
@@ -491,8 +489,8 @@ the soft SUSY decay system. Subsequently, systematics due to ISR variations are
 observed to be largest nearest the diagonal for all analysis categories, as shown in
 Figure~\ref{fig:sms-isr-t2cc} and \ref{fig:sms-isr-t2degen} for the charm 
 and four-body decay models respectively. For both models uncertainties in the range
-of $18\mbox{-}22~\%$ are observed at the
-smallest \deltam, with uncertainties dropping to $10\mbox{-}25~\%$ at larger \deltam. 
+of $18\mbox{-}22\%$ are observed at the
+smallest \deltam, with uncertainties dropping to $10\mbox{-}25\%$ at larger \deltam. 
 Due to the overall dependence on ISR,
 this source of systematic uncertainty is the largest contribution to the total
 signal systematic for the compressed models considered here.
@@ -677,7 +675,7 @@ as flat contributions across the scan plan for all models.
 \begin{table}[!h]
   \caption{Relative change in efficiency times acceptance for the
     2-parton and 3-parton scans in the signal region, with an inclusive 
-    selection on \nb and \HT>200~\gev. The scan points are $m_{\sTop} = 200$~\gev 
+    selection on \nb and \HT> 200~\gev. The scan points are $m_{\sTop} = 200$~\gev 
     and $m_{\chiz} = (120, 190)$~\gev in the charm decay model.}
   \label{tab:sms-t2cc-2v3part}
   \centering
@@ -859,7 +857,17 @@ line, with $\pm1\sigma_{theory}$ uncertainty bands as thin black. The 95\%
 confidence upper limit on the cross section is shown as a colour map as a
 function of the mass plane.
 
-\begin{figure}[h!]
+In comparison to the previous experimental interpretations shown in
+Figure~\ref{sec:current_limits}, the reach in terms of $m_{\sTop}$ is 
+comparable for both models. However, the limits presented here are produced with a single analysis,
+while maintaining sensitivity across the \deltam range relevant to both models -
+a result which has not yet been accomplished by any other analysis from either experiment.
+Similarly, previous searches have been highly optimised towards these specific models, 
+whereas the analysis presented in this thesis remains generic to a wide range of
+potential hadronic SUSY signatures, yet still remains very competitive with these
+targeted searches.
+
+\begin{figure}[p]
 \centering
 \begin{overpic}[width=0.9\textwidth]{Figs/sms/t2cc/limit_v0/T2cc_toys_XSEC.pdf}
       \put(16,90){\includegraphics[width=3.6cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
@@ -874,7 +882,7 @@ calculated with an inclusive \HT>200~\gev selection, and the analysis categories
 \label{fig:t2cc_limit}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[p]
 \centering
 \begin{overpic}[width=0.9\textwidth]{Figs/sms/t2degen/limit_v0/T2degen_toys_XSEC.pdf}
       \put(16,90){\includegraphics[width=3.6cm]{Figs/results/v0/ht_white_cmsprelim_cover.png}}
@@ -888,14 +896,3 @@ calculated with an inclusive \HT>200~\gev selection, and the analysis categories
 \njhigh$).}
 \label{fig:t2degen_limit}
 \end{figure}
-
-In comparison to the previous experimental interpretations shown in
-Figure~\ref{sec:current_limits}, the reach in terms of $m_{\sTop}$ is 
-comparable for both models. However, the limits presented here are produced with a single analysis,
-while maintaining sensitivity across the \deltam range relevant to both models -
-a result which has not yet been accomplished by any other analysis from either experiment.
-Similarly, previous searches have been highly optimised towards these specific models, 
-whereas the analysis presented in this thesis remains generic to a wide range of
-potential hadronic SUSY signatures, yet still remains very competitive with these
-targeted searches.
-
