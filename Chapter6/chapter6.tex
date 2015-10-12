@@ -24,7 +24,7 @@ extensively tested using a suite of Closure Tests, probing multiple
 characteristics of the prediction technique while allowing for \HT-dependent
 systematic errors to be derived on the prediction.
 
-Predictions made using this technique alone are considered as ``primitive'' 
+Predictions made using this technique are considered as ``primitive'' 
 predictions and are used only in analysis development and the derivation of 
 background systematics. In order to determine final background counts for
 interpretation and
@@ -53,9 +53,9 @@ Section\ref{sec:qcd_cleaning}, ensuring no significant QCD background remains.
 % Contributions from Standard Model background processes are estimated using a data-driven 
 % prediction technique, employing dedicated control samples.
 A transfer factor is constructed from MC samples as the ratio 
-of the yield in the signal region, \\$N_{MC}^{signal}\big(\HT, \nj, \nb\big)$,
-and the yield of a given control region, \\$N_{MC}^{control}\big(\HT, \nj,
-\nb\big)$, as a function of the analysis binning, \HT, \nj and \nb, defined as:
+of the yield in the signal region, $N_{MC}^{signal}\big(\HT, \nj, \nb\big)$,
+and the yield of a given control region, $N_{MC}^{control}\big(\HT, \nj, \nb\big)$,
+as a function of the analysis binning, \HT, \nj and \nb, defined as:
 % 
 \begin{equation}
 TF = \frac{N_{MC}^{signal}\big(\HT, \nj, \nb\big)}{N_{MC}^{control}\big(\HT, \nj, \nb\big)} .
@@ -295,7 +295,18 @@ for all jets $i$ in the event. To keep the selection as close to the signal
 region as possible, other cuts such as the single isolated track veto and 
 \mhtmet cuts are also applied.
 
-\begin{figure}[t]
+Specifically for the \mj (and \mmj) control regions, no \alphat requirement is
+made in order to increase the statistics and therefore the predictive power of 
+the regions. This is possible as other requirements, in particular the 
+requirement of
+a single muon and a specific invariant mass window, greatly reduce any potential
+contamination from QCD MJ events. The viability of this is specifically tested 
+by dedicated closure tests described later in Section\ref{sec:closure_tests}.
+
+Example distributions of $\mu$ \Pt and $\mu\text{-corrected}$ \met for this selection
+are shown in Figure~\ref{fig:datamc_mu_inc}.
+
+\begin{figure}[h!]
   \centering
     \begin{subfigure}[b]{0.48\textwidth}
       \includegraphics[width=\textwidth]{Figs/datamc/mu/Stacked_MuPt_all_OneMuon_200_upwards}
@@ -310,18 +321,6 @@ region as possible, other cuts such as the single isolated track veto and
     are for $\HT>200$~\gev, $\nj\geq2, \nb\geq0$.
     }
 \end{figure}
-
-Specifically for the \mj (and \mmj) control regions, no \alphat requirement is
-made in order to increase the statistics and therefore the predictive power of 
-the regions. This is possible as other requirements, in particular the 
-requirement of
-a single muon and a specific invariant mass window, greatly reduce any potential
-contamination from QCD MJ events. The viability of this is specifically tested 
-by dedicated closure tests described later in Section\ref{sec:closure_tests}.
-
-Example distributions of $\mu$ \Pt and $\mu\text{-corrected}$ \met for this selection
-are shown in Figure~\ref{fig:datamc_mu_inc}.
-
 
 \subsection{\mmj}
 The \mmj region is constructed to predict background contributions from \zinv 
@@ -436,7 +435,7 @@ The trigger
 is found to be 100$\%$ efficient for $E_T^{\gamma}>165$~\gev and $\HT>375$~\gev,
 as shown by the turn on curves in Figure~\ref{fig:photon_control_trigeff}.
 
-\begin{figure}[t]
+\begin{figure}[h!]
   \centering
   \begin{subfigure}[b]{0.35\textwidth}
     \includegraphics[width=\textwidth, page=3,trim=40 40 160 120,clip=true]{Figs/trigger/g_barrel_375_caloJet_le3j.pdf}
@@ -461,7 +460,7 @@ $\Delta R(\gamma, jet_i)<1.0$ is satisfied, for all jets $i$ in the event.
 An example distribution of the $\gamma$ \Pt for this selection is shown
 in Figure~\ref{fig:datamc_pho_inc}.
 
-\begin{figure}[!ht]
+\begin{figure}[!h]
   \centering
     \begin{subfigure}[b]{0.48\textwidth}
       \includegraphics[width=\textwidth]{Figs/datamc/pho/Stacked_PhotonPt_all_Photon_375_upwards}
