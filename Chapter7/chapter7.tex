@@ -29,7 +29,7 @@ processes and the expected number of signal events in the bin $i$. Pois is
 the Poisson distribution:
 
 \begin{equation}
-Pois(k;\lambda) = \frac{1}{k!}\lambda^k e^{-\lambda}.
+\text{Pois}(k;\lambda) = \frac{1}{k!}\lambda^k e^{-\lambda}.
 \end{equation}
 
 
@@ -84,8 +84,8 @@ L_{\mu} = \prod_i \text{Pois}(n_{\mu}^i | \rhomw \cdot r^i_{\mu} \cdot \text{ttW
 \end{equation}
 % 
 Both equations~\ref{eq:lterm_pho} and \ref{eq:lterm_mumu} are used to estimate the 
-maximum likelihood value for $Z^i_{\text{inv}}$, alongside Equation~\ref{eq:lterm_mu} 
-for $ttW^i$, all considered simultaneously through the relationships defined in
+maximum likelihood value for $\text{Z}^i_{\text{inv}}$, alongside Equation~\ref{eq:lterm_mu} 
+for $\text{ttW}^i$, all considered simultaneously through the relationships defined in
 equations~\ref{eq:ewk_frac_z} and \ref{eq:ewk_frac_ttw}.
 
 The terms \rhopz, \rhommz and \rhomw are correction factors accommodating the
@@ -115,7 +115,7 @@ where Logn is the log-normal distribution (as recommended by~\cite{cousins-log-n
 These terms are combined as:
 % 
 \begin{equation}
-L_{EWK\text{ syst.}} = L_{\gamma\text{ syst.}} \times L_{\mu\mu\text{ syst.}} \times L_{\mu\text{ syst.}}.
+L_{\text{EWK syst.}} = L_{\gamma\text{ syst.}} \times L_{\mu\mu\text{ syst.}} \times L_{\mu\text{ syst.}}.
 \end{equation}
 % 
 For $\nb \geq 2$ categories, the \mj control region is used to predict \zinv and
@@ -255,18 +255,18 @@ and not data observations in the hadronic signal region. The results of this fit
 are shown in Figures~\ref{fig:green_fits_0b_le3j}, \ref{fig:green_fits_1b_le3j}, \ref{fig:green_fits_2b_le3j}, \ref{fig:green_fits_0b_ge4j}, \ref{fig:green_fits_1b_ge4j}, \ref{fig:green_fits_2b_ge4j}, \ref{fig:green_fits_3b_ge4j} and \ref{fig:green_fits_ge4b_ge4j},
 and summarised in Table~\ref{tab:ensemble-summary-priori}. As data
 observations from the signal region are not considered, it should be noted that
-the SM Expectation is simply the result of the transfer factor method
-(described in Chapter~\ref{ch:background}). Due to this the SM Expectation in
+the SM expectation is simply the result of the transfer factor method
+(described in Chapter~\ref{ch:background}). Due to this the SM expectation in
 the \mj control region is equal to the data observation in
 that region, as the fit is not influenced by observations from the signal region.
-Differences between the prediction and the data observations are found in the
+Differences between the SM expectation and the data observations are found in the
 \mmj and \gj control region plots, due to the fit considering both control regions
 separately to predict the \zinv background component.
 
 \subsection{Fit with Signal region}
 \label{sec:results_fit_blue}
 An ``a posteriori'' fit is made by considering every region, including the
-hadronic signal region observation in data, and is shown in
+hadronic signal region observation in data, is shown in
 Figures~\ref{fig:blue_fits_0b_le3j}, \ref{fig:blue_fits_1b_le3j}, \ref{fig:blue_fits_2b_le3j}, \ref{fig:blue_fits_0b_ge4j}, \ref{fig:blue_fits_1b_ge4j}, \ref{fig:blue_fits_2b_ge4j}, \ref{fig:blue_fits_3b_ge4j} and \ref{fig:blue_fits_ge4b_ge4j},
 and summarised in Table~\ref{tab:ensemble-summary-posteriori}. Good agreement
 between the SM expectation and data are seen throughout the various analysis
@@ -412,10 +412,10 @@ The goodness-of-fit of the SM-only hypothesis is determined using a profile-like
 taken from~\cite{Cowan:358560}.
 The observed maximised likelihood value, $L^{data}_{max}$, is used as a
 PDF to generate
-pseudo-experiments for which the likelihood is again maximised giving the 
-value $L_{max}$. These
+pseudo-experiments for which the likelihood is again maximised, with the 
+new maximised value, $L_{max}$, being noted. These
 values are entered into a histogram from which the $L^{data}_{max}$ quantile is taken, 
-interpreted as the p-value and further converted into a observed significance,
+interpreted as the p-value and further converted into an observed significance,
 or pull.
 The p-values and pulls are summarised for various different analysis categories and individual
 \HT bins in the plots shown in Figure~\ref{fig:pull_analysis}.
@@ -997,16 +997,15 @@ category, where the lowest value is 0.19.
 \subsection{Summary}
 \label{sec:results_summary}
 
-The `a-priori' fit results described in Section~\ref{sec:results_fit_green} shows the comparison
+The `a-priori' fit results described in Section~\ref{sec:results_fit_green} show the comparison
 of the data observations in the signal region with the expected SM background.
 This background prediction is made using the transfer factor technique described in
 Chapter~\ref{ch:background}.
-in general good agree is obs, with only some bins deviating by up to 2.8 sigma.
 In general good agreement is observed, with only some bins deviating with pulls of up 2.8 at
 the most. These bins appear to be uniformly distributed throughout
 the signal region, showing no particular signal-like structure. An analysis of the corresponding
-pulls and p-values, described in Section~\ref{sec:results_fit}, indicates that all data
-observations are statistically in agreement with the background predictions, and that
+pulls and p-values, described in Section~\ref{sec:results_fit}, indicate that all data
+observations are statistically in agreement with the SM background expectation, and that
 any deviations are compatible with statistical fluctuations.
 
 Further to this, the `a-posteriori' result described in Section~\ref{sec:results_fit_blue},
@@ -1016,24 +1015,3 @@ to accommodate the hadronic observations without tension. This is further eviden
 data observations in the hadronic signal region are in agreement with the EWK background
 predictions, and therefore the SM-only hypothesis. It is concluded then that no statistically
 significant signal of BSM physics has been observed.
-
-% a-priori predictions show the `raw' EWK prediction using only transfer factors
-
-% this indicates a good level of agreement, with some apparent disagreement in certain
-% bins of HT
-
-% however, despite this, the fluctuations present appear to show no structure across both
-% HT bins and analysis cats.
-
-% analysis of the pvalues and pulls of this indicate that all data observations statistically
-% agree with the background predictions, and any deviations are compatible with statistical
-% fluctuations
-
-
-% allowing the fit to consider observations in the hadronic signal region causes
-% agreement to improve further, with the fit being able to accommodate the observations
-% without tension.
-
-% this is further evidence that data observations in the hadronic signal region are in agreement
-% with the SM only hypothesis, and that no statistically significant signal of BSM physics has
-% been observed/present.
