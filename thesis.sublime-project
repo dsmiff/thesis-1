@@ -2,46 +2,7 @@
 	"folders":
 	[
 		{
-			"path": "/Users/chrislucas/SUSY/thesis",
-            "file_exclude_patterns": [".DS_Store*",
-                                        "*.aux*",
-                                        "*.log*",
-                                        "*.lof*",
-                                        "*.lot*",
-                                        "*.out*",
-                                        "*.gz*",
-                                        "*.toc*",
-                                        "*.bbl*",
-                                        "*.blg*",
-                                        "*~*",
-                                        "*.nlo*",
-                                        "*make*",
-                                        "*.d*",
-                                        "*.bcf*",
-                                        "*.blg*",
-                                        "*~*",
-                                        "*.nlo*",
-                                        "*make",
-                                        "*.d",
-                                        "*.btmp*",
-                                        "*.fls*",
-                                        "*.glo*",
-                                        "*.idx*",
-                                        "*.ist*",
-                                        "*.ilg*",
-                                        "*.ind*",
-                                        "*cookie*",
-                                        "*#*",
-                                        "*.nls*",
-                                        "*.nlg*",
-                                        "thesis.txt*",
-                                        "thesis.bcf*",
-                                        "thesis.run.xml*",
-                                        "*run.xml*",
-                                        "*.latexmkrc*",
-                                        "*_latexmk*",
-                                        ".*.yml",
-					"*sublime-workspace"]
+			"path": "/Users/chrislucas/SUSY/thesis"
 		}
 	]
 }
