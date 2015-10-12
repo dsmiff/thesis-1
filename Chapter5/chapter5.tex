@@ -40,7 +40,7 @@ entirely negligible level using the dimensionless kinematic variable \alphat.
 % are reduced to a negligible level using the kinematic 
 % variable \alphat.
 
-In this analysis, following the generic selection criteria (described in
+In this analysis, following the generic signal selection criteria (described in
 Section~\ref{sec:selec_crit}), events are binned in exclusive categories of \HT, 
 and the multiplicity of jets and b-tagged jets,  
 \nj and \nb, as summarised in Table~\ref{tab:ht-bins}. Such binning allows for
@@ -86,7 +86,7 @@ Attempting to accurately measure the QCD contribution to the total background is
 particularly challenging given the hadronic environment of the LHC and the lack
 of precise measurements and calculations of the large multijet cross sections
 involved. As an
-alternative approach, the goal of this analysis is to reduce QCD down to an
+alternative approach, the goal of this analysis is to reduce QCD down to
 entirely negligible levels with respect to background processes with genuine
 \met, achieved through the use of the dimensionless kinematic
 variable, \alphat. The di-jet variable
@@ -101,7 +101,7 @@ analyses~\cite{CMS:2008vya, CMS-PAS-SUS-09-001}.
 \end{equation}
 % 
 where $E_T^{j_1}$ and $E_T^{j_2}$ are the reconstructed transverse energies of 
-the first and second \Pt ordered jets respectively, and $\Delta \phi$ is the separation 
+the first and second \Pt-ordered jets respectively, and $\Delta \phi$ is the separation 
 between the two jets in the $\phi$ plane.
 
 A perfectly measured di-jet event containing back to back jets in $\phi$ of equal energy will
@@ -149,16 +149,9 @@ The \alphat variable leads to a correlation between the two variables of \mht
 and \deltaHT, as demonstrated in Figure~\ref{fig:alphat_corr} by the black contours of
 constant \alphat. 
 As QCD events (Figure~\ref{fig:alphat_corr_qcd}) contain no genuine source of missing
-energy they exhibit a correlation between the two variables \mht and \deltaHT. They
-sit at low \mht, where missing energy arises predominantly due to jet
-mismeasurement, thereby largely having \alphat < 0.5. Invisible decays of the Z-boson
-(Figure~\ref{fig:alphat_corr_zinv}) sit at higher values of \mht due to the
-presence of neutrinos in the final state, allowing them to achieve \alphat values
-greater than 0.5. Finally a SUSY decay (Figure~\ref{fig:alphat_corr_t2cc}), with
-genuine invisible transverse energy provided by the neutralino, breaks any correlation
-between the two axis variables, sitting also at higher values of \alphat.
-
-\begin{figure}[t!]
+energy they exhibit a correlation between the two variables \mht and \deltaHT. 
+%
+\begin{figure}[b!]
   \centering
   \begin{subfigure}[t]{.46\textwidth}
     \includegraphics[width=\textwidth]{Figs/alphat/alphat_correlation_QCD_ge4j_done3.pdf}
@@ -182,6 +175,16 @@ between the two axis variables, sitting also at higher values of \alphat.
   black. Each axis is normalised according to the event \HT.}
   \label{fig:alphat_corr}
 \end{figure}
+%
+They
+sit at low \mht, where missing energy arises predominantly due to jet
+mismeasurement, thereby largely having \alphat < 0.5. Invisible decays of the Z-boson
+(Figure~\ref{fig:alphat_corr_zinv}) sit at higher values of \mht due to the
+presence of neutrinos in the final state, allowing them to achieve \alphat values
+greater than 0.5. Finally a SUSY decay (Figure~\ref{fig:alphat_corr_t2cc}), with
+genuine missing transverse energy provided by the neutralino, breaks any correlation
+between \mht and \deltaHT, sitting also at higher values of \alphat.
+
 
 Through the requirement of \alphat in a given region of \HT, a certain missing
 energy threshold is implied. Figure~\ref{fig:alphat_mht_corr} shows this
@@ -261,7 +264,7 @@ order to enter the signal region an event must contain missing energy,
 
 The most common way for a balanced multijet (MJ) event to gain \mht occurs if
 one
-or more of the jets are mismeasured, such that their vectorial sum then leads to non-zero
+or more of the jets are mismeasured, such that their vectorial sum leads to non-zero
 \mht. This can occur due to detector issues, or due to stochastic fluctuations
 within the inherent jet-resolution of the 
 detector. The former is protected against by the \met filters summarised in 
@@ -307,7 +310,7 @@ Exclusively for this analysis, the additional `Parked' trigger
 threshold allows sensitivity to be maintained for softer physics signatures, such
 as those expected from compressed spectra SUSY decays studied in this work.
 
-\begin{table}[!ht]
+\begin{table}[!b]
   \caption{Signal triggers, the L1 seed triggers and their efficiencies measured
   for per \HT and \nj category.}
   \label{tab:sig_trigs}
@@ -348,15 +351,24 @@ low rates in the high PU environment encountered throughout \runone. Lower
 efficiencies are also observed in the \njhigh category due to the presence of 
 softer jets, as an increased number of jets must equate to the same total \HT 
 requirement of a given bin. A small number of events are found at values of
-\alphat lower than the trigger threshold low-\alphat spikes in the differential
-turn-on curves and an efficiency pedestal in the cumulative turn-on curves. Such
+\alphat lower than the trigger threshold leading to spikes in the differential
+turn-on curves at low \alphat values, and an efficiency pedestal in the
+cumulative turn-on curves. Such
 events originate from the difference between the online and offline calculations
 of the \alphat variable, where some approximations are made online to reduce
 latency in the trigger.
 
+All triggers were present throughout \runone, however the 
+\\\verb!HLT_HT200_AlphaT0p57! trigger was used as part of the `Parked' data
+stream which was reconstructed at a later date, following the active data-taking
+period. During data-taking triggers may have `prescale' factors applied to them 
+such that only every $n$ triggered events are actually recorded. Crucially however,
+the full suite of signal triggers remained without a prescale for the entirety of
+the 8~\tev data-taking.
 
+\clearpage
 % \afterpage{%
-\begin{figure}[p!]
+\begin{figure}[h!]
   \centering
     \begin{subfigure}[b]{0.48\textwidth}
       \includegraphics[width=\textwidth,page=11, trim=0 0 0 20, clip=true]{Figs/trigger/HT200_275_73_73_36_AlphaT_le3j_RunAtFNAL}
@@ -391,7 +403,7 @@ latency in the trigger.
 % }
 
 % \afterpage{%
-\begin{figure}[p!]
+\begin{figure}[h!]
   \centering
     \begin{subfigure}[b]{0.48\textwidth}
       \includegraphics[width=\textwidth,page=11]{Figs/trigger/HT200_275_73_73_36_AlphaT_ge4j_RunAtFNAL}
@@ -422,16 +434,8 @@ latency in the trigger.
       Differential (left) and cumulative (right) efficiency turn-on curves for 
       the signal triggers, for the three lowest \HT bins and \njhigh.}
 \end{figure}
-% \clearpage
+\clearpage
 % }
-
-All triggers were present throughout \runone, however the 
-\\\verb!HLT_HT200_AlphaT0p57! trigger was used as part of the `Parked' data
-stream which was reconstructed at a later date, following the active data-taking
-period. During data-taking triggers may have `prescale' factors applied to them 
-such that only every $n$ triggered events are actually recorded, however all of
-the signal triggers remained without a prescale for the entirety of the 8 \tev
-data-taking.
 
 
 \section{Selection Criteria}
@@ -528,7 +532,7 @@ composition is shown in Figure~\ref{fig:background_decomp}, split into the main
 categories of \zinv, \wj, \ttbar and all remaining residual backgrounds, such as
 single top quark, diboson and Drell-Yann processes.
 
-\begin{figure}[t]
+\begin{figure}[hb!]
 \centering
 \hspace{0cm}\includegraphics[width=0.9\textwidth, trim=0 00 0 0, clip=true]
 {Figs/ra1_had_bg_comp_v3.png}
@@ -545,8 +549,9 @@ following the full hadronic selection criteria, with an inclusive selection on \
 \nj and \nb. Even with this inclusive selection, \zinv is shown to be the biggest
 contribution to the total SM background, with the `lost-lepton' sources of \wj and
 \ttbar following. It is interesting to also note that \zinv and \wj have the hardest \mht
-spectra, while \ttbar is softer. This is due to the greater probability of the neutrinos produced
-in the decay being back to back, with their missing momenta cancelling to give lower \mht values.
+spectra, while \ttbar is softer. This is attributed to the greater probability of producing
+back to back neutrinos, with their missing momenta contributions cancelling to give
+lower \mht values.
 
 Example cutflow yields are shown in
 Table~\ref{tab:had_data_cutflow} for data in the \HT > 375~\gev region, employing
