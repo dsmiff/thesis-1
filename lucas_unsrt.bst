@@ -1364,9 +1364,9 @@ FUNCTION {longest.label.pass}
   if$
 }
 
-%EXECUTE {initialize.longest.label}
+EXECUTE {initialize.longest.label}
 
-%ITERATE {longest.label.pass}
+ITERATE {longest.label.pass}
 
 FUNCTION {begin.bib}
 { preamble$ empty$
